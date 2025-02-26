@@ -431,13 +431,31 @@
             <button class="copy-button" onclick="copyGraphLink('epss_percentile_distribution')">Copy a link to this graph</button>
         </div>
 
+        <div class="graph-container" id="epss_coverage_pie">
+            <h2>EPSS Coverage Pie Chart</h2>
+            <img src="./images/epss_coverage_pie.png" alt="EPSS Coverage Pie Chart">
+            <div class="description">
+                Shows the percentage of CVEs that have EPSS scores compared to those that do not.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('epss_coverage_pie')">Copy a link to this graph</button>
+        </div>
+
         <div class="graph-container" id="cvss_epss_correlation">
             <h2>CVSS vs EPSS Correlation</h2>
             <img src="./images/cvss_epss_correlation.png" alt="CVSS vs EPSS Correlation">
             <div class="description">
-                Shows the correlation between CVSS and EPSS scores, providing insight into the relationship between the two.
+                Shows the correlation between CVSS and EPSS scores, providing insight into the relationship between the two. Only scored vulnerabilities are included.
             </div>
             <button class="copy-button" onclick="copyGraphLink('cvss_epss_correlation')">Copy a link to this graph</button>
+        </div>
+
+        <div class="graph-container" id="kev_epss_correlation">
+            <h2>KEV CVSS vs EPSS Correlation</h2>
+            <img src="./images/kev_epss_correlation.png" alt="KEV CVSS vs EPSS Correlation">
+            <div class="description">
+                Shows the correlation between CVSS and EPSS scores for KEV vulnerabilities, providing insight into the relationship between the two. Only scored vulnerabilities are included.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('kev_epss_correlation')">Copy a link to this graph</button>
         </div>
 
         <div class="disclaimer">
