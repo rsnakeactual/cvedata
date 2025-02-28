@@ -68,419 +68,384 @@
         <p>This report provides a comprehensive analysis of
         Common Vulnerabilities and Exposures (<a href="https://github.com/CVEProject/">CVE</a>), 
         Known Exploited Vulnerabilities (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">KEV<a/>) and
-        Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>) data.
+        Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>).
         </p>
 
-        <div class="graph-container" id="cve_scoring_coverage">
-            <h2>CVE Scoring Coverage</h2>
-            <img src="./images/cve_scoring_coverage.png" alt="CVE Scoring Coverage">
-            <div class="description">
-                Illustrates the proportion of CVEs that have been assigned CVSS scores versus those that 
-                remain unscored, providing insight into the completeness of vulnerability scoring.
+            <div class="graph-container" id="cve_scoring_coverage">
+                <h2>CVEs that have CVSS scores assigned</h2>
+                <img src="./images/cve_scoring_coverage.png" alt="CVEs that have CVSS scores assigned">
+                <div class="description">
+                    Illustrates the proportion of CVEs that have been assigned CVSS scores versus those that remain unscored, providing insight into the completeness of vulnerability scoring.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cve_scoring_coverage')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cve_scoring_coverage')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="average_cvss_by_year">
-            <h2>Average CVSS Score Trends</h2>
-            <img src="./images/average_cvss_by_year.png" alt="Average CVSS by Year">
-            <div class="description">
-                Shows the evolution of average CVSS scores over time for all CVEs, 
-                helping identify if vulnerabilities are becoming more or less severe on average.
+            
+            <div class="graph-container" id="average_cvss_by_year">
+                <h2>Average CVSS Score Trends</h2>
+                <img src="./images/average_cvss_by_year.png" alt="Average CVSS Score Trends">
+                <div class="description">
+                    Shows the evolution of average CVSS scores over time for all CVEs, helping identify if vulnerabilities are becoming more or less severe on average.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('average_cvss_by_year')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('average_cvss_by_year')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="average_kev_cvss_by_year">
-            <h2>Average KEV CVSS Score Trends</h2>
-            <img src="./images/average_kev_cvss_by_year.png" alt="Average KEV CVSS by Year">
-            <div class="description">
-                Displays the trend of CVSS scores specifically for Known Exploited Vulnerabilities (KEVs),
-                showing how the severity of actively exploited vulnerabilities has changed over time.
+            
+            <div class="graph-container" id="average_kev_cvss_by_year">
+                <h2>Average KEV CVSS Score Trends</h2>
+                <img src="./images/average_kev_cvss_by_year.png" alt="Average KEV CVSS Score Trends">
+                <div class="description">
+                    Displays the trend of CVSS scores specifically for Known Exploited Vulnerabilities (KEVs), showing how the severity of actively exploited vulnerabilities has changed over time.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('average_kev_cvss_by_year')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('average_kev_cvss_by_year')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="severity-distribution-stacked">
-            <h2>Severity Distribution (Stacked)</h2>
-            <img src="./images/severity_distribution_stacked.png" alt="Severity Distribution Stacked">
-            <div class="description">
-                Shows the relative distribution of severity levels as percentages over time,
-                with each severity level stacked to show the complete composition for each year.
+            
+            <div class="graph-container" id="severity_distribution_stacked">
+                <h2>Severity Distribution (Stacked)</h2>
+                <img src="./images/severity_distribution_stacked.png" alt="Severity Distribution (Stacked)">
+                <div class="description">
+                    Shows the relative distribution of severity levels as percentages over time, with each severity level stacked to show the complete composition for each year.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('severity_distribution_stacked')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('severity-distribution-stacked')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="severity_trends">
-            <h2>Severity Trends</h2>
-            <img src="./images/severity_trends.png" alt="Severity Trends">
-            <div class="description">
-                Displays trend lines for each severity level over time, showing how the proportion
-                of different severity levels has evolved and identifying long-term patterns.
+            
+            <div class="graph-container" id="severity_trends">
+                <h2>Severity Trends</h2>
+                <img src="./images/severity_trends.png" alt="Severity Trends">
+                <div class="description">
+                    Displays trend lines for each severity level over time, showing how the proportion of different severity levels has evolved and identifying long-term patterns.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('severity_trends')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('severity_trends')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="kev_total_distribution">
-            <h2>KEV Distribution in Total CVE Population</h2>
-            <img src="./images/kev_total_distribution.png" alt="KEV vs Total CVE Distribution">
-            <div class="description">
-                Shows what percentage of all CVEs are included in the KEV catalog, highlighting how 
-                selective the KEV list is compared to the total CVE population.
+            
+            <div class="graph-container" id="kev_total_distribution">
+                <h2>KEV Distribution in Total CVE Population</h2>
+                <img src="./images/kev_total_distribution.png" alt="KEV Distribution in Total CVE Population">
+                <div class="description">
+                    Shows what percentage of all CVEs are included in the KEV catalog, highlighting how selective the KEV list is compared to the total CVE population.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('kev_total_distribution')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('kev_total_distribution')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="score_distribution_comparison">
-            <h2>Score Distribution Comparison</h2>
-            <img src="./images/score_distribution_comparison.png" alt="Score Distribution Comparison">
-            <div class="description">
-                This comparison shows the CVSS score distribution between KEV entries and all CVEs, 
-                highlighting how KEV vulnerabilities' severity compares to the general CVE population.
+            
+            <div class="graph-container" id="score_distribution_comparison">
+                <h2>Score Distribution Comparison</h2>
+                <img src="./images/score_distribution_comparison.png" alt="Score Distribution Comparison">
+                <div class="description">
+                    This comparison shows the CVSS score distribution between KEV entries and all CVEs, highlighting how KEV vulnerabilities' severity compares to the general CVE population.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('score_distribution_comparison')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('score_distribution_comparison')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cvss_score_mathematical_probability_v20">
-            <h2>CVSS Score Mathematical Probability for CVSS 2.0</h2>
-            <img src="./images/cvss-score-mathematical-probability-V20.png" alt="CVSS Score Mathematical Probability">
-            <div class="description">
-                This visualization shows the theoretical distribution of all possible CVSS 2.0 base scores based on the scoring formula. 
-                It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
+            
+            <div class="graph-container" id="cvss_score_mathematical_probability_v20">
+                <h2>CVSS Score Mathematical Probability for CVSS 2.0</h2>
+                <img src="./images/cvss_score_mathematical_probability_v20.png" alt="CVSS Score Mathematical Probability for CVSS 2.0">
+                <div class="description">
+                    This visualization shows the theoretical distribution of all possible CVSS 2.0 base scores based on the scoring formula. It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_score_mathematical_probability_v20')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cvss_score_mathematical_probability_v20')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cvss_score_distribution_comparison_v2">
-            <h2>CVSS Score Distribution compared to CVSS Score Mathematical Probability For CVSS 2.0</h2>
-            <img src="./images/cvss_distribution_comparison_v2.png" alt="CVSS Score Distribution">
-            <div class="description">
-                This comparison shows the CVSS score distribution between the theoretical probabilistic distribution and the actual distribution for CVSS 2.0.
+            
+            <div class="graph-container" id="cvss_score_distribution_comparison_v2">
+                <h2>CVSS Score Distribution compared to CVSS Score Mathematical Probability For CVSS 2.0</h2>
+                <img src="./images/cvss_score_distribution_comparison_v2.png" alt="CVSS Score Distribution compared to CVSS Score Mathematical Probability For CVSS 2.0">
+                <div class="description">
+                    This comparison shows the CVSS score distribution between the theoretical probabilistic distribution and the actual distribution for CVSS 2.0.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_score_distribution_comparison_v2')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cvss_score_distribution_comparison_v2')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cvss_score_mathematical_probability_v3">
-            <h2>CVSS Score Mathematical Probability for CVSS 3.x</h2>
-            <img src="./images/cvss-score-mathematical-probability-V30-V31.png" alt="CVSS Score Mathematical Probability">
-            <div class="description">
-                This visualization shows the theoretical distribution of all possible CVSS 3.x base scores based on the scoring formula. 
-                It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
+            
+            <div class="graph-container" id="cvss_score_mathematical_probability_v30_v31">
+                <h2>CVSS Score Mathematical Probability for CVSS 3.x</h2>
+                <img src="./images/cvss_score_mathematical_probability_v30_v31.png" alt="CVSS Score Mathematical Probability for CVSS 3.x">
+                <div class="description">
+                    This visualization shows the theoretical distribution of all possible CVSS 3.x base scores based on the scoring formula. It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_score_mathematical_probability_v30_v31')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cvss_score_mathematical_probability_v3')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cvss_score_distribution_comparison_v3">
-            <h2>CVSS Score Distribution compared to CVSS Score Mathematical Probability For CVSS 3.x</h2>
-            <img src="./images/cvss_distribution_comparison_v3.png" alt="CVSS Score Distribution">
-            <div class="description">
-                This comparison shows the CVSS score distribution between the theoretical probabilistic distribution and the actual distribution for CVSS 3.x.
+            
+            <div class="graph-container" id="cvss_score_distribution_comparison_v3">
+                <h2>CVSS Score Distribution compared to CVSS Score Mathematical Probability For CVSS 3.x</h2>
+                <img src="./images/cvss_score_distribution_comparison_v3.png" alt="CVSS Score Distribution compared to CVSS Score Mathematical Probability For CVSS 3.x">
+                <div class="description">
+                    This comparison shows the CVSS score distribution between the theoretical probabilistic distribution and the actual distribution for CVSS 3.x.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_score_distribution_comparison_v3')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cvss_score_distribution_comparison_v3')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cvss_score_mathematical_probability_v4">
-            <h2>CVSS Score Mathematical Probability for CVSS 4.0</h2>
-            <img src="./images/cvss-score-mathematical-probability-V40.png" alt="CVSS Score Mathematical Probability">
-            <div class="description">
-                This visualization shows the theoretical distribution of all possible CVSS 4.0 base scores based on the scoring formula. 
-                It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
+            
+            <div class="graph-container" id="cvss_score_mathematical_probability_v40">
+                <h2>CVSS Score Mathematical Probability for CVSS 4.0</h2>
+                <img src="./images/cvss_score_mathematical_probability_v40.png" alt="CVSS Score Mathematical Probability for CVSS 4.0">
+                <div class="description">
+                    This visualization shows the theoretical distribution of all possible CVSS 4.0 base scores based on the scoring formula. It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_score_mathematical_probability_v40')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cvss_score_mathematical_probability_v4')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cvss_score_distribution_comparison_v4">
-            <h2>CVSS Score Distribution compared to CVSS Score Mathematical Probability For CVSS 4.0</h2>
-            <img src="./images/cvss_distribution_comparison_v4.png" alt="CVSS Score Distribution">
-            <div class="description">
-                This comparison shows the CVSS score distribution between the theoretical probabilistic distribution and the actual distribution for CVSS 4.0.
+            
+            <div class="graph-container" id="cvss_score_distribution_comparison_v4">
+                <h2>CVSS Score Distribution compared to CVSS Score Mathematical Probability For CVSS 4.0</h2>
+                <img src="./images/cvss_score_distribution_comparison_v4.png" alt="CVSS Score Distribution compared to CVSS Score Mathematical Probability For CVSS 4.0">
+                <div class="description">
+                    This comparison shows the CVSS score distribution between the theoretical probabilistic distribution and the actual distribution for CVSS 4.0.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_score_distribution_comparison_v4')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cvss_score_distribution_comparison_v4')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="critical_cve_distribution">
-            <h2>Critical CVE Distribution compared to KEV</h2>
-            <img src="./images/critical_cve_distribution.png" alt="Critical CVE Distribution">
-            <div class="description">
-                Shows the proportion of critical CVEs (CVSS score ≥ 9.0) that are included in the KEV catalog 
-                versus those that are not, helping understand the relationship between severity and exploitation.
+            
+            <div class="graph-container" id="critical_cve_distribution">
+                <h2>Critical CVE Distribution compared to KEV</h2>
+                <img src="./images/critical_cve_distribution.png" alt="Critical CVE Distribution compared to KEV">
+                <div class="description">
+                    Shows the proportion of critical CVEs (CVSS score ≥ 9.0) that are included in the KEV catalog versus those that are not, helping understand the relationship between severity and exploitation.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('critical_cve_distribution')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('critical_cve_distribution')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="kevs_by_year">
-            <h2>KEVs by Year</h2>
-            <img src="./images/kevs_by_year.png" alt="KEVs by Year">
-            <div class="description">
-                Shows the distribution of Known Exploited Vulnerabilities by the year of their 
-                corresponding CVE ID, indicating trends in vulnerability exploitation over time.
+            
+            <div class="graph-container" id="kevs_by_year">
+                <h2>KEVs by Year</h2>
+                <img src="./images/kevs_by_year.png" alt="KEVs by Year">
+                <div class="description">
+                    Shows the distribution of Known Exploited Vulnerabilities by the year of their corresponding CVE ID, indicating trends in vulnerability exploitation over time.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('kevs_by_year')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('kevs_by_year')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="kev_score_distribution">
-            <h2>CVSS Score Distribution in KEV List</h2>
-            <img src="./images/kev_score_distribution.png" alt="KEV Score Distribution">
-            <div class="description">
-                This bar chart shows the distribution of CVSS scores across different severity levels 
-                (Critical, High, Medium, Low, and Unused) within the Known Exploited Vulnerabilities (KEV) catalog.
+            
+            <div class="graph-container" id="kev_score_distribution">
+                <h2>CVSS Score Distribution in KEV List</h2>
+                <img src="./images/kev_score_distribution.png" alt="CVSS Score Distribution in KEV List">
+                <div class="description">
+                    This bar chart shows the distribution of CVSS scores across different severity levels (Critical, High, Medium, Low, and Unused) within the Known Exploited Vulnerabilities (KEV) catalog.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('kev_score_distribution')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('kev_score_distribution')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="kev_score_distribution_pie">
-            <h2>Percentage Distribution of CVSS Scores</h2>
-            <img src="./images/kev_score_distribution_pie.png" alt="KEV Score Distribution Pie Chart">
-            <div class="description">
-                A pie chart showing the percentage breakdown of CVSS scores by severity level in the KEV list, 
-                providing a clear view of the proportion of vulnerabilities at each severity level.
+            
+            <div class="graph-container" id="kev_score_distribution_pie">
+                <h2>Percentage Distribution of CVSS Scores</h2>
+                <img src="./images/kev_score_distribution_pie.png" alt="Percentage Distribution of CVSS Scores">
+                <div class="description">
+                    A pie chart showing the percentage breakdown of CVSS scores by severity level in the KEV list, providing a clear view of the proportion of vulnerabilities at each severity level.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('kev_score_distribution_pie')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('kev_score_distribution_pie')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cve_delay_distribution">
-            <h2>CVE Publication Delays</h2>
-            <img src="./images/cve_delay_distribution.png" alt="CVE Delay Distribution">
-            <div class="description">
-                Distribution of time delays between CVE reservation and publication dates, showing the 
-                typical lifecycle of vulnerability disclosure.
+            
+            <div class="graph-container" id="cve_delay_distribution">
+                <h2>CVE Publication Delays</h2>
+                <img src="./images/cve_delay_distribution.png" alt="CVE Publication Delays">
+                <div class="description">
+                    Distribution of time delays between CVE reservation and publication dates, showing the typical lifecycle of vulnerability disclosure.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cve_delay_distribution')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cve_delay_distribution')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cve_delay_distribution_log">
-            <h2>CVE Publication Delays (Log Scale)</h2>
-            <img src="./images/cve_delay_distribution_log.png" alt="CVE Delay Distribution (Log Scale)">
-            <div class="description">
-                Log-scale view of publication delays, better highlighting the distribution of both short 
-                and long delays in the vulnerability disclosure process.
+            
+            <div class="graph-container" id="cve_delay_distribution_log">
+                <h2>CVE Publication Delays (Log Scale)</h2>
+                <img src="./images/cve_delay_distribution_log.png" alt="CVE Publication Delays (Log Scale)">
+                <div class="description">
+                    Log-scale view of publication delays, better highlighting the distribution of both short and long delays in the vulnerability disclosure process.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cve_delay_distribution_log')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cve_delay_distribution_log')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cve_growth_over_time">
-            <h2>CVE Growth Over Time</h2>
-            <img src="./images/cve_growth_over_time.png" alt="CVE Growth Over Time">
-            <div class="description">
-                Shows the cumulative growth of CVEs over the years, illustrating the increasing pace 
-                of vulnerability discovery and disclosure.
+            
+            <div class="graph-container" id="cve_growth_over_time">
+                <h2>CVE Growth Over Time</h2>
+                <img src="./images/cve_growth_over_time.png" alt="CVE Growth Over Time">
+                <div class="description">
+                    Shows the cumulative growth of CVEs over the years, illustrating the increasing pace of vulnerability discovery and disclosure.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cve_growth_over_time')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cve_growth_over_time')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="mitre_vs_non_mitre_trend">
-            <h2>MITRE vs Non-MITRE CVEs Over Time</h2>
-            <img src="./images/mitre_vs_non_mitre_trend.png" alt="MITRE vs Non-MITRE CVEs Over Time">
-            <div class="description">
-                Shows the trend of MITRE vs Non-MITRE CVEs assigners over time.
+            
+            <div class="graph-container" id="mitre_vs_non_mitre_trend">
+                <h2>MITRE vs Non-MITRE CVEs Over Time</h2>
+                <img src="./images/mitre_vs_non_mitre_trend.png" alt="MITRE vs Non-MITRE CVEs Over Time">
+                <div class="description">
+                    Shows the trend of MITRE vs Non-MITRE CVEs assigners over time.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('mitre_vs_non_mitre_trend')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('mitre_vs_non_mitre_trend')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cve_kev_growth_over_time">
-            <h2>CVE and KEV Growth Comparison</h2>
-            <img src="./images/cve_kev_growth_over_time.png" alt="CVE and KEV Growth Over Time">
-            <div class="description">
-                Compares the growth rates of CVEs and KEVs over time, showing how the actively exploited 
-                vulnerability landscape has evolved compared to overall vulnerability discoveries.
+            
+            <div class="graph-container" id="cve_kev_growth_over_time">
+                <h2>CVE and KEV Growth Comparison</h2>
+                <img src="./images/cve_kev_growth_over_time.png" alt="CVE and KEV Growth Comparison">
+                <div class="description">
+                    Compares the growth rates of CVEs and KEVs over time, showing how the actively exploited vulnerability landscape has evolved compared to overall vulnerability discoveries.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cve_kev_growth_over_time')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cve_kev_growth_over_time')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cve_tags_distribution">
-            <h2>CVE Tag Distribution</h2>
-            <img src="./images/cve_tags_distribution.png" alt="CVE Tags Distribution">
-            <div class="description">
-                Shows the distribution of different tags used in CVE records, providing insight into 
-                the various categories and attributes of vulnerabilities.
+            
+            <div class="graph-container" id="cve_tags_distribution">
+                <h2>CVE Tag Distribution</h2>
+                <img src="./images/cve_tags_distribution.png" alt="CVE Tag Distribution">
+                <div class="description">
+                    Shows the distribution of different tags used in CVE records, providing insight into the various categories and attributes of vulnerabilities.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cve_tags_distribution')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cve_tags_distribution')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="disputed_cves_by_year">
-            <h2>Disputed CVEs by Year</h2>
-            <img src="./images/disputed_cves_by_year.png" alt="Disputed CVEs by Year">
-            <div class="description">
-                Tracks the number of disputed CVEs over time, showing trends in vulnerability 
-                contestation and verification processes.
+            
+            <div class="graph-container" id="disputed_cves_by_year">
+                <h2>Disputed CVEs by Year</h2>
+                <img src="./images/disputed_cves_by_year.png" alt="Disputed CVEs by Year">
+                <div class="description">
+                    Tracks the number of disputed CVEs over time, showing trends in vulnerability contestation and verification processes.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('disputed_cves_by_year')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('disputed_cves_by_year')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="unscored_cves_by_year">
-            <h2>Unscored CVEs by Year</h2>
-            <img src="./images/unscored_cves_by_year.png" alt="Unscored CVEs by Year">
-            <div class="description">
-                Shows the number and percentage of CVEs without CVSS scores for each year, 
-                helping identify trends in scoring coverage and potential gaps in vulnerability assessment.
+            
+            <div class="graph-container" id="unscored_cves_by_year">
+                <h2>Unscored CVEs by Year</h2>
+                <img src="./images/unscored_cves_by_year.png" alt="Unscored CVEs by Year">
+                <div class="description">
+                    Shows the number and percentage of CVEs without CVSS scores for each year, helping identify trends in scoring coverage and potential gaps in vulnerability assessment.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('unscored_cves_by_year')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('unscored_cves_by_year')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="unscored_kevs_by_year">
-            <h2>Unscored KEVs by Year</h2>
-            <img src="./images/unscored_kevs_by_year.png" alt="Unscored KEVs by Year">
-            <div class="description">
-                Displays the number and percentage of Known Exploited Vulnerabilities (KEVs) that lack 
-                CVSS scores, highlighting potential gaps in severity assessment for actively exploited vulnerabilities.
+            
+            <div class="graph-container" id="unscored_kevs_by_year">
+                <h2>Unscored KEVs by Year</h2>
+                <img src="./images/unscored_kevs_by_year.png" alt="Unscored KEVs by Year">
+                <div class="description">
+                    Displays the number and percentage of Known Exploited Vulnerabilities (KEVs) that lack CVSS scores, highlighting potential gaps in severity assessment for actively exploited vulnerabilities.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('unscored_kevs_by_year')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('unscored_kevs_by_year')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="unscored_comparison">
-            <h2>Unscored Vulnerabilities Comparison</h2>
-            <img src="./images/unscored_comparison.png" alt="Unscored Comparison">
-            <div class="description">
-                Compares the number of unscored CVEs and KEVs over time, showing the relationship 
-                between general vulnerability scoring coverage and that of known exploited vulnerabilities.
+            
+            <div class="graph-container" id="unscored_comparison">
+                <h2>Unscored Vulnerabilities Comparison</h2>
+                <img src="./images/unscored_comparison.png" alt="Unscored Vulnerabilities Comparison">
+                <div class="description">
+                    Compares the growth rates of CVEs and KEVs over time, showing how the actively exploited vulnerability landscape has evolved compared to overall vulnerability discoveries.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('unscored_comparison')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('unscored_comparison')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="unscored_percentage_comparison">
-            <h2>Percentage of Unscored Vulnerabilities</h2>
-            <img src="./images/unscored_percentage_comparison.png" alt="Unscored Percentage Comparison">
-            <div class="description">
-                Shows the percentage of unscored CVEs and KEVs over time, providing a normalized view 
-                of scoring coverage trends between general vulnerabilities and known exploited ones.
+            
+            <div class="graph-container" id="unscored_percentage_comparison">
+                <h2>Percentage of Unscored CVEs</h2>
+                <img src="./images/unscored_percentage_comparison.png" alt="Percentage of Unscored CVEs">
+                <div class="description">
+                    Shows the percentage of unscored CVEs and KEVs over time, providing a normalized view of scoring coverage trends between general vulnerabilities and known exploited ones.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('unscored_percentage_comparison')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('unscored_percentage_comparison')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cvss_versions_over_time">
-            <h2>CVSS Versions Over Time</h2>
-            <img src="./images/cvss_versions_over_time.png" alt="CVSS Versions Over Time">
-            <div class="description">
-                Shows the distribution of CVSS versions over time, providing insight into the evolution of vulnerability scoring standards.
+            
+            <div class="graph-container" id="cvss_versions_over_time">
+                <h2>CVSS Versions Over Time</h2>
+                <img src="./images/cvss_versions_over_time.png" alt="CVSS Versions Over Time">
+                <div class="description">
+                    Shows the distribution of CVSS versions over time, providing insight into the evolution of vulnerability scoring standards.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_versions_over_time')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cvss_versions_over_time')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="severity_trends">
-            <h2>Severity Trends</h2>
-            <img src="./images/severity_trends.png" alt="Severity Trends">
-            <div class="description">
-                Shows trends in the number of CVEs across different severity levels over time.
+            
+            <div class="graph-container" id="rejected_cves_by_year">
+                <h2>Rejected CVEs by Year</h2>
+                <img src="./images/rejected_cves_by_year.png" alt="Rejected CVEs by Year">
+                <div class="description">
+                    Tracks the number of rejected CVEs over time, showing trends in the vulnerability rejection processes.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('rejected_cves_by_year')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('severity_trends')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="rejected_cves_by_year">
-            <h2>Rejected CVEs Over Time</h2>
-            <img src="./images/rejected_cves_by_year.png" alt="Rejected CVEs by Year">
-            <div class="description">
-                Shows both the absolute number and percentage of CVEs that were rejected each year,
-                helping track the evolution of CVE rejection patterns over time.
+            
+            <div class="graph-container" id="active_exploitation_by_year">
+                <h2>Actively Exploited CVEs Over Time</h2>
+                <img src="./images/active_exploitation_by_year.png" alt="Actively Exploited CVEs Over Time">
+                <div class="description">
+                    Shows the number of CVEs by year tagged as exploited, providing insight into the current state of exploited vulnerabilities.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('active_exploitation_by_year')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('rejected_cves_by_year')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="active_exploitation_by_year">
-            <h2>Actively Exploited CVEs Over Time</h2>
-            <img src="./images/active_exploitation_by_year.png" alt="Actively Exploited CVEs by Year">
-            <div class="description">
-                Shows both the absolute number and percentage of CVEs marked as actively exploited each year,
-                helping track the evolution of exploitation patterns over time.
+            
+            <div class="graph-container" id="exploit_references_by_year">
+                <h2>CVE with Exploit References over Time</h2>
+                <img src="./images/exploit_references_by_year.png" alt="CVE with Exploit References over Time">
+                <div class="description">
+                    Shows both the absolute number and percentage of CVEs that have references tagged as exploits, indicating the prevalence of publicly documented exploit code over time.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('exploit_references_by_year')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('active_exploitation_by_year')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="exploit_references_by_year">
-            <h2>CVEs with Exploit References Over Time</h2>
-            <img src="./images/exploit_references_by_year.png" alt="CVEs with Exploit References by Year">
-            <div class="description">
-                Shows both the absolute number and percentage of CVEs that have references tagged as exploits,
-                indicating the prevalence of publicly documented exploit code over time.
+            
+            <div class="graph-container" id="cvss_combinations">
+                <h2>CVSS Combinations</h2>
+                <img src="./images/cvss_combinations.png" alt="CVSS Combinations">
+                <div class="description">
+                    Shows the distribution of CVSS combinations over time, providing insight into the evolution of vulnerability scoring standards.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_combinations')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('exploit_references_by_year')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cvss_combinations">
-            <h2>CVSS Combinations</h2>
-            <img src="./images/cvss_combinations.png" alt="CVSS Combinations">
-            <div class="description">
-                Shows the combinations of CVSS scores by version which shows how different and more complex each of the successive versions are.
+            
+            <div class="graph-container" id="cvss_version_density">
+                <h2>CVSS Version Density</h2>
+                <img src="./images/cvss_version_density.png" alt="CVSS Version Density">
+                <div class="description">
+                    Shows the density of CVSS versions over time, providing insight into the evolution of vulnerability scoring standards.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_version_density')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cvss_combinations')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cvss_version_density">
-            <h2>CVSS Version Density</h2>
-            <img src="./images/cvss_version_density.png" alt="CVSS Version Density">
-            <div class="description">
-                Shows the density of CVSS versions, providing insight into the evolution of vulnerability scoring standards. The different versions have different probabilities of hitting any given score.
+            
+            <div class="graph-container" id="epss_score_distribution">
+                <h2>EPSS Score Distribution</h2>
+                <img src="./images/epss_score_distribution.png" alt="EPSS Score Distribution">
+                <div class="description">
+                    Shows the distribution of EPSS scores over time, providing insight into the evolution of vulnerability scoring standards.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('epss_score_distribution')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cvss_version_density')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="epss_score_distribution">
-            <h2>EPSS Score Distribution</h2>
-            <img src="./images/epss_score_distribution.png" alt="EPSS Score Distribution">
-            <div class="description">
-                Shows the distribution of EPSS scores for all CVEs, providing insight into the severity of vulnerabilities as estimated by the EPSS project.
+            
+            <div class="graph-container" id="epss_score_distribution_log">
+                <h2>EPSS Score Distribution (Log Scale)</h2>
+                <img src="./images/epss_score_distribution_log.png" alt="EPSS Score Distribution (Log Scale)">
+                <div class="description">
+                    Shows the distribution of EPSS scores over time on a log scale, providing a clearer view of the distribution of EPSS scores.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('epss_score_distribution_log')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('epss_score_distribution')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="epss_score_distribution_log">
-            <h2>EPSS Score Distribution (Log Scale)</h2>
-            <img src="./images/epss_score_distribution_log.png" alt="EPSS Score Distribution (Log Scale)">
-            <div class="description">
-                Shows the distribution of EPSS scores for all CVEs on a logarithmic scale, providing a better view of the tail of the distribution.
+            
+            <div class="graph-container" id="epss_percentile_distribution">
+                <h2>EPSS Probability Percentile Distribution</h2>
+                <img src="./images/epss_percentile_distribution.png" alt="EPSS Probability Percentile Distribution">
+                <div class="description">
+                    Shows the distribution of EPSS probability percentiles over time, providing insight into the evolution of vulnerability scoring standards.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('epss_percentile_distribution')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('epss_score_distribution_log')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="epss_percentile_distribution">
-            <h2>EPSS Probability Percentile Distribution</h2>
-            <img src="./images/epss_percentile_distribution.png" alt="EPSS Probability Percentile Distribution">
-            <div class="description">
-                Shows the distribution of EPSS probability percentiles for all CVEs, providing insight into the severity of vulnerabilities.
+            
+            <div class="graph-container" id="epss_coverage_pie">
+                <h2>EPSS Coverage Pie Chart</h2>
+                <img src="./images/epss_coverage_pie.png" alt="EPSS Coverage Pie Chart">
+                <div class="description">
+                    Shows the distribution of EPSS coverage over time, providing insight into the evolution of vulnerability scoring standards.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('epss_coverage_pie')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('epss_percentile_distribution')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="epss_coverage_pie">
-            <h2>EPSS Coverage Pie Chart</h2>
-            <img src="./images/epss_coverage_pie.png" alt="EPSS Coverage Pie Chart">
-            <div class="description">
-                Shows the percentage of CVEs that have EPSS scores compared to those that do not.
+            
+            <div class="graph-container" id="cvss_epss_correlation">
+                <h2>CVSS vs EPSS Correlation</h2>
+                <img src="./images/cvss_epss_correlation.png" alt="CVSS vs EPSS Correlation">
+                <div class="description">
+                    Shows the correlation between CVSS and EPSS scores, providing insight into the relationship between the two. The further from perfect agreement the worse the correlation. Only scored vulnerabilities are included.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_epss_correlation')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('epss_coverage_pie')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="cvss_epss_correlation">
-            <h2>CVSS vs EPSS Correlation</h2>
-            <img src="./images/cvss_epss_correlation.png" alt="CVSS vs EPSS Correlation">
-            <div class="description">
-                Shows the correlation between CVSS and EPSS scores, providing insight into the relationship between the two. Only scored vulnerabilities are included.
+            
+            <div class="graph-container" id="kev_epss_correlation">
+                <h2>KEV CVSS vs EPSS Correlation</h2>
+                <img src="./images/kev_epss_correlation.png" alt="KEV CVSS vs EPSS Correlation">
+                <div class="description">
+                    Shows the correlation between CVSS and EPSS scores for KEV vulnerabilities, providing insight into the relationship between the two. The further from perfect agreement the worse the correlation. Only scored vulnerabilities are included.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('kev_epss_correlation')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('cvss_epss_correlation')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="kev_epss_correlation">
-            <h2>KEV CVSS vs EPSS Correlation</h2>
-            <img src="./images/kev_epss_correlation.png" alt="KEV CVSS vs EPSS Correlation">
-            <div class="description">
-                Shows the correlation between CVSS and EPSS scores for KEV vulnerabilities, providing insight into the relationship between the two. Only scored vulnerabilities are included.
+            
+            <div class="graph-container" id="score_difference_distribution">
+                <h2>Score Difference Distribution</h2>
+                <img src="./images/score_difference_distribution.png" alt="Score Difference Distribution">
+                <div class="description">
+                    Shows the distribution of the delta between CVSS and EPSS scores, normalized to a 0-100 scale. A higher number is more different. Only scored vulnerabilities are included.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('score_difference_distribution')">Copy a link to this graph</button>
             </div>
-            <button class="copy-button" onclick="copyGraphLink('kev_epss_correlation')">Copy a link to this graph</button>
-        </div>
-
-        <div class="graph-container" id="score_difference_distribution">
-            <h2>Score Difference Distribution</h2>
-            <img src="./images/score_difference_distribution.png" alt="Score Difference Distribution">
-            <div class="description">
-                Shows the distribution of the delta between CVSS and EPSS scores, normalized to a 0-100 scale. A higher number is more different. Only scored vulnerabilities are included.
-            </div>
-            <button class="copy-button" onclick="copyGraphLink('score_difference_distribution')">Copy a link to this graph</button>
-        </div>
+            
 
         <div class="disclaimer">
             Compiled by Robert "<a href="https://rsnake.com/">RSnake</a>" Hansen. I do not guarantee the correctness of the data or images and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research.
         </div>
         <div class="timestamp">
-            Report generated on: 2025-02-27
+            Report generated on: 2025-02-28
         </div>
     </body>
     </html>
