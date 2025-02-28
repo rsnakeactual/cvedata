@@ -432,6 +432,15 @@
                 <button class="copy-button" onclick="copyGraphLink('kev_epss_correlation')">Copy a link to this graph</button>
             </div>
             
+            <div class="graph-container" id="score_difference_distribution">
+                <h2>Score Difference Distribution</h2>
+                <img src="./images/score_difference_distribution.png" alt="Score Difference Distribution">
+                <div class="description">
+                    Shows the distribution of the delta between CVSS and EPSS scores, normalized to a 0-100 scale. A higher number is more different. Only scored vulnerabilities are included.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('score_difference_distribution')">Copy a link to this graph</button>
+            </div>
+            
             <div class="graph-container" id="vulncheck_vs_cve">
                 <h2>Vulncheck KEV vs CVE</h2>
                 <img src="./images/vulncheck_vs_cve.png" alt="Vulncheck KEV vs CVE">
@@ -442,10 +451,10 @@
             </div>
             
             <div class="graph-container" id="vulncheck_vs_kev">
-                <h2>Vulncheck KEV vs KEV</h2>
-                <img src="./images/vulncheck_vs_kev.png" alt="Vulncheck KEV vs KEV">
+                <h2>Vulncheck KEV vs CISA KEV</h2>
+                <img src="./images/vulncheck_vs_kev.png" alt="Vulncheck KEV vs CISA KEV">
                 <div class="description">
-                    Shows the distribution of Vulncheck KEV vs KEV, providing insight into the relationship between the two. Only scored vulnerabilities are included.
+                    Shows the distribution of Vulncheck KEV vs CISA KEV, providing insight into the relationship between the two. Only scored vulnerabilities are included.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('vulncheck_vs_kev')">Copy a link to this graph</button>
             </div>
