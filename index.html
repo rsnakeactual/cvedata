@@ -68,7 +68,8 @@
         <p>This report provides a comprehensive analysis of
         Common Vulnerabilities and Exposures (<a href="https://github.com/CVEProject/">CVE</a>), 
         Known Exploited Vulnerabilities (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">KEV<a/>) and
-        Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>).
+        Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>) and
+        VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>) data.
         </p>
 
             <div class="graph-container" id="cve_scoring_coverage">
@@ -438,6 +439,24 @@
                     Shows the distribution of the delta between CVSS and EPSS scores, normalized to a 0-100 scale. A higher number is more different. Only scored vulnerabilities are included.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('score_difference_distribution')">Copy a link to this graph</button>
+            </div>
+            
+            <div class="graph-container" id="vulncheck_vs_cve">
+                <h2>Vulncheck KEV vs CVE</h2>
+                <img src="./images/vulncheck_vs_cve.png" alt="Vulncheck KEV vs CVE">
+                <div class="description">
+                    Shows the distribution of Vulncheck KEV vs CVE, providing insight into the relationship between the two. Only scored vulnerabilities are included.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('vulncheck_vs_cve')">Copy a link to this graph</button>
+            </div>
+            
+            <div class="graph-container" id="vulncheck_vs_kev">
+                <h2>Vulncheck KEV vs KEV</h2>
+                <img src="./images/vulncheck_vs_kev.png" alt="Vulncheck KEV vs KEV">
+                <div class="description">
+                    Shows the distribution of Vulncheck KEV vs KEV, providing insight into the relationship between the two. Only scored vulnerabilities are included.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('vulncheck_vs_kev')">Copy a link to this graph</button>
             </div>
             
 
