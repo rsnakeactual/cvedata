@@ -67,11 +67,20 @@
         <h1>CVEdata.com</h1>
         <p>This report provides a comprehensive analysis of
         Common Vulnerabilities and Exposures (<a href="https://github.com/CVEProject/">CVE</a>), 
-        Known Exploited Vulnerabilities (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">KEV<a/>) and
+        CISA Known Exploited Vulnerabilities (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">KEV<a/>) and
         Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>) and
         VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>) data.
         </p>
 
+            <div class="graph-container" id="cve_growth_over_time">
+                <h2>CVE Growth Over Time</h2>
+                <img src="./images/cve_growth_over_time.png" alt="CVE Growth Over Time">
+                <div class="description">
+                    Shows the cumulative growth of CVEs over the years, illustrating the increasing pace of vulnerability discovery and disclosure.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cve_growth_over_time')">Copy a link to this graph</button>
+            </div>
+            
             <div class="graph-container" id="cve_scoring_coverage">
                 <h2>CVEs that have CVSS scores assigned</h2>
                 <img src="./images/cve_scoring_coverage.png" alt="CVEs that have CVSS scores assigned">
@@ -241,15 +250,6 @@
                     Log-scale view of publication delays, better highlighting the distribution of both short and long delays in the vulnerability disclosure process.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('cve_delay_distribution_log')">Copy a link to this graph</button>
-            </div>
-            
-            <div class="graph-container" id="cve_growth_over_time">
-                <h2>CVE Growth Over Time</h2>
-                <img src="./images/cve_growth_over_time.png" alt="CVE Growth Over Time">
-                <div class="description">
-                    Shows the cumulative growth of CVEs over the years, illustrating the increasing pace of vulnerability discovery and disclosure.
-                </div>
-                <button class="copy-button" onclick="copyGraphLink('cve_growth_over_time')">Copy a link to this graph</button>
             </div>
             
             <div class="graph-container" id="mitre_vs_non_mitre_trend">
@@ -457,6 +457,15 @@
                     Shows the distribution of Vulncheck KEV vs CISA KEV, providing insight into the relationship between the two. Only scored vulnerabilities are included.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('vulncheck_vs_kev')">Copy a link to this graph</button>
+            </div>
+            
+            <div class="graph-container" id="vulncheck_cvss_distribution">
+                <h2>Vulncheck KEV vs CVSS</h2>
+                <img src="./images/vulncheck_cvss_distribution.png" alt="Vulncheck KEV vs CVSS">
+                <div class="description">
+                    Shows the distribution of Vulncheck KEV vs CVSS, providing insight into the relationship between the two.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('vulncheck_cvss_distribution')">Copy a link to this graph</button>
             </div>
             
 
