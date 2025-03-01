@@ -76,7 +76,7 @@
                 <h2>CVE Growth Over Time</h2>
                 <img src="./images/cve_growth_over_time.png" alt="CVE Growth Over Time">
                 <div class="description">
-                    Shows the cumulative growth of CVEs over the years, illustrating the increasing pace of vulnerability discovery and disclosure.
+                    Shows the cumulative growth of CVEs over the years, illustrating the increasing pace of vulnerability discovery and disclosure. This also explains why CNAs have become necessary to keep up with the pace of new CVEs.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('cve_growth_over_time')">Copy a link to this graph</button>
             </div>
@@ -85,7 +85,7 @@
                 <h2>CVEs that have CVSS scores assigned</h2>
                 <img src="./images/cve_scoring_coverage.png" alt="CVEs that have CVSS scores assigned">
                 <div class="description">
-                    Illustrates the proportion of CVEs that have been assigned CVSS scores versus those that remain unscored, providing insight into the completeness of vulnerability scoring.
+                    Illustrates the proportion of CVEs that have been assigned CVSS scores versus those that remain unscored, providing insight into the completeness of vulnerability scoring. The number of scored CVEs appears to be mostly coming from the CNAs.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('cve_scoring_coverage')">Copy a link to this graph</button>
             </div>
@@ -100,8 +100,8 @@
             </div>
             
             <div class="graph-container" id="average_kev_cvss_by_year">
-                <h2>Average KEV CVSS Score Trends</h2>
-                <img src="./images/average_kev_cvss_by_year.png" alt="Average KEV CVSS Score Trends">
+                <h2>Average CISA KEV CVSS Score Trends</h2>
+                <img src="./images/average_kev_cvss_by_year.png" alt="Average CISA KEV CVSS Score Trends">
                 <div class="description">
                     Displays the trend of CVSS scores specifically for Known Exploited Vulnerabilities (KEVs), showing how the severity of actively exploited vulnerabilities has changed over time.
                 </div>
@@ -121,34 +121,43 @@
                 <h2>Severity Trends</h2>
                 <img src="./images/severity_trends.png" alt="Severity Trends">
                 <div class="description">
-                    Displays trend lines for each severity level over time, showing how the proportion of different severity levels has evolved and identifying long-term patterns.
+                    Displays trend lines for each severity level over time, showing how the proportion of different severity levels has evolved and identifying long-term patterns. There does seem to be an increasingly large medium severity cohort.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('severity_trends')">Copy a link to this graph</button>
             </div>
             
             <div class="graph-container" id="kev_total_distribution">
-                <h2>KEV Distribution in Total CVE Population</h2>
-                <img src="./images/kev_total_distribution.png" alt="KEV Distribution in Total CVE Population">
+                <h2>CISA KEV Distribution in Total CVE Population</h2>
+                <img src="./images/kev_total_distribution.png" alt="CISA KEV Distribution in Total CVE Population">
                 <div class="description">
                     Shows what percentage of all CVEs are included in the KEV catalog, highlighting how selective the KEV list is compared to the total CVE population.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('kev_total_distribution')">Copy a link to this graph</button>
             </div>
             
-            <div class="graph-container" id="score_distribution_comparison">
-                <h2>Score Distribution Comparison</h2>
-                <img src="./images/score_distribution_comparison.png" alt="Score Distribution Comparison">
+            <div class="graph-container" id="all_score_distribution">
+                <h2>All CVEs Score Distribution</h2>
+                <img src="./images/all_score_distribution.png" alt="All CVEs Score Distribution">
                 <div class="description">
-                    This comparison shows the CVSS score distribution between KEV entries and all CVEs, highlighting how KEV vulnerabilities' severity compares to the general CVE population.
+                    This shows the CVSS score distribution for all CVEs, highlighting the distribution of scores for all CVEs.
                 </div>
-                <button class="copy-button" onclick="copyGraphLink('score_distribution_comparison')">Copy a link to this graph</button>
+                <button class="copy-button" onclick="copyGraphLink('all_score_distribution')">Copy a link to this graph</button>
+            </div>
+            
+            <div class="graph-container" id="kev_score_distribution">
+                <h2>CISA KEV Score Distribution</h2>
+                <img src="./images/kev_score_distribution.png" alt="CISA KEV Score Distribution">
+                <div class="description">
+                    This shows the CVSS score distribution for CISA KEV, highlighting the distribution of scores for CISA KEV.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('kev_score_distribution')">Copy a link to this graph</button>
             </div>
             
             <div class="graph-container" id="cvss_score_mathematical_probability_v20">
                 <h2>CVSS Score Mathematical Probability for CVSS 2.0</h2>
                 <img src="./images/cvss_score_mathematical_probability_v20.png" alt="CVSS Score Mathematical Probability for CVSS 2.0">
                 <div class="description">
-                    This visualization shows the theoretical distribution of all possible CVSS 2.0 base scores based on the scoring formula. It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
+                    This is a static graph. This visualization shows the theoretical distribution of all possible CVSS 2.0 base scores based on the scoring formula. It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('cvss_score_mathematical_probability_v20')">Copy a link to this graph</button>
             </div>
@@ -166,7 +175,7 @@
                 <h2>CVSS Score Mathematical Probability for CVSS 3.x</h2>
                 <img src="./images/cvss_score_mathematical_probability_v30_v31.png" alt="CVSS Score Mathematical Probability for CVSS 3.x">
                 <div class="description">
-                    This visualization shows the theoretical distribution of all possible CVSS 3.x base scores based on the scoring formula. It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
+                    This is a static graph. This visualization shows the theoretical distribution of all possible CVSS 3.x base scores based on the scoring formula. It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('cvss_score_mathematical_probability_v30_v31')">Copy a link to this graph</button>
             </div>
@@ -184,7 +193,7 @@
                 <h2>CVSS Score Mathematical Probability for CVSS 4.0</h2>
                 <img src="./images/cvss_score_mathematical_probability_v40.png" alt="CVSS Score Mathematical Probability for CVSS 4.0">
                 <div class="description">
-                    This visualization shows the theoretical distribution of all possible CVSS 4.0 base scores based on the scoring formula. It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
+                    This is a static graph. This visualization shows the theoretical distribution of all possible CVSS 4.0 base scores based on the scoring formula. It helps understand which scores are mathematically more likely to occur based on the CVSS calculation algorithm.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('cvss_score_mathematical_probability_v40')">Copy a link to this graph</button>
             </div>
@@ -199,8 +208,8 @@
             </div>
             
             <div class="graph-container" id="critical_cve_distribution">
-                <h2>Critical CVE Distribution compared to KEV</h2>
-                <img src="./images/critical_cve_distribution.png" alt="Critical CVE Distribution compared to KEV">
+                <h2>Critical CVE Distribution compared to CISA KEV</h2>
+                <img src="./images/critical_cve_distribution.png" alt="Critical CVE Distribution compared to CISA KEV">
                 <div class="description">
                     Shows the proportion of critical CVEs (CVSS score ≥ 9.0) that are included in the KEV catalog versus those that are not, helping understand the relationship between severity and exploitation.
                 </div>
@@ -208,8 +217,8 @@
             </div>
             
             <div class="graph-container" id="kevs_by_year">
-                <h2>KEVs by Year</h2>
-                <img src="./images/kevs_by_year.png" alt="KEVs by Year">
+                <h2>CISA KEVs by Year</h2>
+                <img src="./images/kevs_by_year.png" alt="CISA KEVs by Year">
                 <div class="description">
                     Shows the distribution of Known Exploited Vulnerabilities by the year of their corresponding CVE ID, indicating trends in vulnerability exploitation over time.
                 </div>
@@ -217,8 +226,8 @@
             </div>
             
             <div class="graph-container" id="kev_score_distribution">
-                <h2>CVSS Score Distribution in KEV List</h2>
-                <img src="./images/kev_score_distribution.png" alt="CVSS Score Distribution in KEV List">
+                <h2>CVSS Score Distribution in CISA KEV List</h2>
+                <img src="./images/kev_score_distribution.png" alt="CVSS Score Distribution in CISA KEV List">
                 <div class="description">
                     This bar chart shows the distribution of CVSS scores across different severity levels (Critical, High, Medium, Low, and Unused) within the Known Exploited Vulnerabilities (KEV) catalog.
                 </div>
@@ -226,8 +235,8 @@
             </div>
             
             <div class="graph-container" id="kev_score_distribution_pie">
-                <h2>Percentage Distribution of CVSS Scores</h2>
-                <img src="./images/kev_score_distribution_pie.png" alt="Percentage Distribution of CVSS Scores">
+                <h2>Percentage Distribution of CVSS Scores in CISA KEV List</h2>
+                <img src="./images/kev_score_distribution_pie.png" alt="Percentage Distribution of CVSS Scores in CISA KEV List">
                 <div class="description">
                     A pie chart showing the percentage breakdown of CVSS scores by severity level in the KEV list, providing a clear view of the proportion of vulnerabilities at each severity level.
                 </div>
@@ -262,8 +271,8 @@
             </div>
             
             <div class="graph-container" id="cve_kev_growth_over_time">
-                <h2>CVE and KEV Growth Comparison</h2>
-                <img src="./images/cve_kev_growth_over_time.png" alt="CVE and KEV Growth Comparison">
+                <h2>CVE and CISA KEV Growth Comparison</h2>
+                <img src="./images/cve_kev_growth_over_time.png" alt="CVE and CISA KEV Growth Comparison">
                 <div class="description">
                     Compares the growth rates of CVEs and KEVs over time, showing how the actively exploited vulnerability landscape has evolved compared to overall vulnerability discoveries.
                 </div>
@@ -298,8 +307,8 @@
             </div>
             
             <div class="graph-container" id="unscored_kevs_by_year">
-                <h2>Unscored KEVs by Year</h2>
-                <img src="./images/unscored_kevs_by_year.png" alt="Unscored KEVs by Year">
+                <h2>Unscored CISA KEVs by Year</h2>
+                <img src="./images/unscored_kevs_by_year.png" alt="Unscored CISA KEVs by Year">
                 <div class="description">
                     Displays the number and percentage of Known Exploited Vulnerabilities (KEVs) that lack CVSS scores, highlighting potential gaps in severity assessment for actively exploited vulnerabilities.
                 </div>
@@ -331,6 +340,15 @@
                     Shows the distribution of CVSS versions over time, providing insight into the evolution of vulnerability scoring standards.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('cvss_versions_over_time')">Copy a link to this graph</button>
+            </div>
+            
+            <div class="graph-container" id="cvss_severity_pie_chart">
+                <h2>CVSS Severity Breakdown of V3.x and V4.0</h2>
+                <img src="./images/cvss_severity_pie_chart.png" alt="CVSS Severity Breakdown of V3.x and V4.0">
+                <div class="description">
+                    This is a static graph. It shows the distribution of CVSS severity scores for CVSS 3.x and 4.0, which shows that there is not an even breakdown of the various scores. Part of the reason for this but definitely not all, is that there are 101 (0.0 to 10.0 in increments of 0.1) possible values, which is not evenly divisible by five.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('cvss_severity_pie_chart')">Copy a link to this graph</button>
             </div>
             
             <div class="graph-container" id="rejected_cves_by_year">
@@ -424,8 +442,8 @@
             </div>
             
             <div class="graph-container" id="kev_epss_correlation">
-                <h2>KEV CVSS vs EPSS Correlation</h2>
-                <img src="./images/kev_epss_correlation.png" alt="KEV CVSS vs EPSS Correlation">
+                <h2>CISA KEV CVSS vs EPSS Correlation</h2>
+                <img src="./images/kev_epss_correlation.png" alt="CISA KEV CVSS vs EPSS Correlation">
                 <div class="description">
                     Shows the correlation between CVSS and EPSS scores for KEV vulnerabilities, providing insight into the relationship between the two. The further from perfect agreement the worse the correlation. Only scored vulnerabilities are included.
                 </div>
@@ -463,9 +481,27 @@
                 <h2>Vulncheck KEV vs CVSS</h2>
                 <img src="./images/vulncheck_cvss_distribution.png" alt="Vulncheck KEV vs CVSS">
                 <div class="description">
-                    Shows the distribution of Vulncheck KEV vs CVSS, providing insight into the relationship between the two.
+                    Shows the distribution of Vulncheck KEV vs CVE, providing insight into the relationship between the two.
                 </div>
                 <button class="copy-button" onclick="copyGraphLink('vulncheck_cvss_distribution')">Copy a link to this graph</button>
+            </div>
+            
+            <div class="graph-container" id="top_ten_vulncheck_vendors">
+                <h2>Top 10 Vendors in VulnCheck Database</h2>
+                <img src="./images/top_ten_vulncheck_vendors.png" alt="Top 10 Vendors in VulnCheck Database">
+                <div class="description">
+                    Shows the distribution of the top 10 vendors in the VulnCheck KEV database, providing insight into the companies most often exploited according to Vulncheck KEV.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('top_ten_vulncheck_vendors')">Copy a link to this graph</button>
+            </div>
+            
+            <div class="graph-container" id="vulncheck_epss_correlation">
+                <h2>Vulncheck KEV vs EPSS Correlation</h2>
+                <img src="./images/vulncheck_epss_correlation.png" alt="Vulncheck KEV vs EPSS Correlation">
+                <div class="description">
+                    Shows the correlation between Vulncheck KEV CVSS scores and EPSS scores for Vulncheck KEV vulnerabilities, providing insight into the relationship between the two. The further from perfect agreement the worse the correlation. Only scored vulnerabilities are included.
+                </div>
+                <button class="copy-button" onclick="copyGraphLink('vulncheck_epss_correlation')">Copy a link to this graph</button>
             </div>
             
 
@@ -473,7 +509,7 @@
             Compiled by Robert "<a href="https://rsnake.com/">RSnake</a>" Hansen. I do not guarantee the correctness of the data or images and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research.
         </div>
         <div class="timestamp">
-            Report generated on: 2025-02-28
+            Report generated on: 2025-03-01
         </div>
     </body>
     </html>
