@@ -225,15 +225,6 @@
             <button class="copy-button" onclick="copyGraphLink('kevs_by_year')">Copy a link to this graph</button>
         </div>
         
-        <div class="graph-container" id="kev_score_distribution">
-            <h2>CVSS Score Distribution in CISA KEV List</h2>
-            <img src="./images/kev_score_distribution.png" alt="CVSS Score Distribution in CISA KEV List">
-            <div class="description">
-                This bar chart shows the distribution of CVSS scores across different severity levels (Critical, High, Medium, Low, and Unused) within the Known Exploited Vulnerabilities (KEV) catalog.
-            </div>
-            <button class="copy-button" onclick="copyGraphLink('kev_score_distribution')">Copy a link to this graph</button>
-        </div>
-        
         <div class="graph-container" id="kev_score_distribution_pie">
             <h2>Percentage Distribution of CVSS Scores in CISA KEV List</h2>
             <img src="./images/kev_score_distribution_pie.png" alt="Percentage Distribution of CVSS Scores in CISA KEV List">
@@ -538,6 +529,15 @@
                 Shows the correlation between CVSS and EPSS scores for CVSS 3.x and 4.0, providing insight into the relationship between the two. The colors represent the different metrics for the user interaction vector type. The further from perfect agreement the worse the correlation. Only scored vulnerabilities are included.
             </div>
             <button class="copy-button" onclick="copyGraphLink('cvss_epss_correlation_with_vectors_UI')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="cvss_relative_combined_overrepresented">
+            <h2>CVSS Score Distribution: Overrepresented CVSS Scores</h2>
+            <img src="./images/cvss_relative_combined_overrepresented.png" alt="CVSS Score Distribution: Overrepresented CVSS Scores">
+            <div class="description">
+                Shows the distribution of CVSS scores that are overrepresented in the data, providing insight into the relationship between the two. The higher the number the less likely that it matches the probabilistic distribution of CVSS scores based on the probability of landing on any given score. Only scored vulnerabilities are included.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('cvss_relative_combined_overrepresented')">Copy a link to this graph</button>
         </div>
         
 
