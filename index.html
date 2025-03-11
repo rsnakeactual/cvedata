@@ -85,7 +85,7 @@
             <h2>CVEs that have CVSS scores assigned</h2>
             <img src="./images/cve_scoring_coverage.png" alt="CVEs that have CVSS scores assigned">
             <div class="description">
-                Illustrates the proportion of CVEs that have been assigned CVSS scores versus those that remain unscored, providing insight into the completeness of vulnerability scoring. The number of scored CVEs appears to be mostly coming from the CNAs.
+                Illustrates the proportion of CVEs that have been assigned CVSS scores versus those that remain unscored, providing insight into the completeness of vulnerability scoring. The number of scored CVEs appears to be mostly coming from the CNAs recently.
             </div>
             <button class="copy-button" onclick="copyGraphLink('cve_scoring_coverage')">Copy a link to this graph</button>
         </div>
@@ -94,7 +94,7 @@
             <h2>Average CVSS Score Trends</h2>
             <img src="./images/average_cvss_by_year.png" alt="Average CVSS Score Trends">
             <div class="description">
-                Shows the evolution of average CVSS scores over time for all CVEs, helping identify if vulnerabilities are becoming more or less severe on average.
+                Shows the evolution of average CVSS scores over time for all CVEs, helping identify if vulnerabilities are becoming more or less severe on average, which they seem to be on average.
             </div>
             <button class="copy-button" onclick="copyGraphLink('average_cvss_by_year')">Copy a link to this graph</button>
         </div>
@@ -414,15 +414,6 @@
             <button class="copy-button" onclick="copyGraphLink('epss_percentile_distribution')">Copy a link to this graph</button>
         </div>
         
-        <div class="graph-container" id="epss_coverage_pie">
-            <h2>EPSS Coverage Pie Chart</h2>
-            <img src="./images/epss_coverage_pie.png" alt="EPSS Coverage Pie Chart">
-            <div class="description">
-                Shows the distribution of EPSS coverage over time, providing insight into the evolution of vulnerability scoring standards.
-            </div>
-            <button class="copy-button" onclick="copyGraphLink('epss_coverage_pie')">Copy a link to this graph</button>
-        </div>
-        
         <div class="graph-container" id="cvss_epss_correlation">
             <h2>CVSS vs EPSS Correlation</h2>
             <img src="./images/cvss_epss_correlation.png" alt="CVSS vs EPSS Correlation">
@@ -535,7 +526,7 @@
             <h2>CVSS Score Distribution: Overrepresented CVSS Scores</h2>
             <img src="./images/cvss_relative_combined_overrepresented.png" alt="CVSS Score Distribution: Overrepresented CVSS Scores">
             <div class="description">
-                Shows the distribution of CVSS scores that are overrepresented in the data, providing insight into the relationship between the two. The higher the number the less likely that it matches the probabilistic distribution of CVSS scores based on the probability of landing on any given score. The way to read this is that for every 1 possible mathematical combinations that will cause someone to land on any given CVSS score there is Y number of CVEs. If CVSS scores were equally likely there would be little to no deviation in scores. Only scored vulnerabilities are included.
+                Shows the distribution of CVSS scores that are overrepresented in the data, providing insight into which scores seem to be favored. The higher the number the less likely that it matches the probabilistic distribution of CVSS scores based on the probability of landing on any given score. The way to read this is that for every 1 possible mathematical combinations that will cause someone to land on any given CVSS score there is Y number of CVEs. If CVSS scores were equally likely there would be little to no deviation in scores. Only scored vulnerabilities are included.
             </div>
             <button class="copy-button" onclick="copyGraphLink('cvss_relative_combined_overrepresented')">Copy a link to this graph</button>
         </div>
@@ -545,7 +536,7 @@
             Compiled by Robert "<a href="https://rsnake.com/">RSnake</a>" Hansen. I do not guarantee the correctness of the data or images and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research.
         </div>
         <div class="timestamp">
-            Report generated on: 2025-03-10
+            Report generated on: 2025-03-11
         </div>
     </body>
     </html>
