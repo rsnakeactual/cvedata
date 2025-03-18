@@ -1,0 +1,130 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CVEdata.com</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                color: #333;
+            }
+            h1, h2 {
+                color: #2c3e50;
+                border-bottom: 2px solid #eee;
+                padding-bottom: 10px;
+            }
+            .graph-container {
+                margin: 30px 0;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .graph-container img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 20px auto;
+            }
+            .description {
+                margin: 15px 0;
+            }
+            .timestamp {
+                color: #666;
+                font-style: italic;
+                margin-top: 50px;
+            }
+            .copy-button {
+                background-color: #f0f0f0;
+                border: 1px solid #ddd;
+                padding: 5px 10px;
+                border-radius: 4px;
+                cursor: pointer;
+                margin: 10px 0;
+            }
+            .copy-button:hover {
+                background-color: #e0e0e0;
+            }
+        </style>
+        <script>
+            function copyGraphLink(graphId) {
+                const url = 'https://cvedata.com/#' + graphId;
+                navigator.clipboard.writeText(url).then(() => {
+                    alert('Link copied to clipboard!');
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <h1>CVEdata.com</h1>
+        <p>This report provides a comprehensive analysis of
+        Common Vulnerabilities and Exposures (<a href="https://github.com/CVEProject/">CVE</a>), 
+        CISA Known Exploited Vulnerabilities (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">KEV<a/>) and
+        Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>) and
+        VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>) and
+        National Vulnerability Database (<a href="https://nvd.nist.gov/developers/vulnerabilities">NVD CVSS</a>) data.
+        </p>
+
+        <div class="graph-container" id="ice_epss_correlation">
+            <h2>ICE vs EPSS Correlation</h2>
+            <img src="./images/ice_epss_correlation.png" alt="ICE vs EPSS Correlation">
+            <div class="description">
+                Shows the correlation between ICE and EPSS scores, providing insight into the relationship between the two. The further from perfect agreement the worse the correlation. Only scored vulnerabilities are included.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('ice_epss_correlation')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="ice_cvss_score_distribution">
+            <h2>ICE CVSS Score Distribution</h2>
+            <img src="./images/ice_cvss_score_distribution.png" alt="ICE CVSS Score Distribution">
+            <div class="description">
+                Shows the distribution of ICE CVSS scores over time, providing insight into the evolution of vulnerability scoring standards.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('ice_cvss_score_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="ice_cvss_severity_distribution">
+            <h2>ICE CVSS Severity Distribution</h2>
+            <img src="./images/ice_cvss_severity_distribution.png" alt="ICE CVSS Severity Distribution">
+            <div class="description">
+                Shows the distribution of ICE CVSS severity scores over time, providing insight into the evolution of vulnerability scoring standards.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('ice_cvss_severity_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="ice_vulns_by_year">
+            <h2>ICE Vulns by Year</h2>
+            <img src="./images/ice_vulns_by_year.png" alt="ICE Vulns by Year">
+            <div class="description">
+                Shows the distribution of ICE vulnerabilities by year, providing insight into the evolution of vulnerability discovery and disclosure over time.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('ice_vulns_by_year')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="ice_vendors_distribution">
+            <h2>ICE Vendors Distribution</h2>
+            <img src="./images/ice_vendors_distribution.png" alt="ICE Vendors Distribution">
+            <div class="description">
+                Shows the distribution of ICE vendors over time, providing insight into the evolution of vulnerability discovery and disclosure over time.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('ice_vendors_distribution')">Copy a link to this graph</button>
+        </div>
+        
+
+        <div class="disclaimer">
+            Compiled by Robert "<a href="https://rsnake.com/">RSnake</a>" Hansen. I do not guarantee the correctness of the data or images and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research.
+        </div>
+        <div class="timestamp">
+            Report generated on: 2025-03-18
+        </div>
+    </body>
+    </html>
+    
