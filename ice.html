@@ -86,7 +86,7 @@
             <h2>ICE CVSS Score Distribution</h2>
             <img src="./images/ice_cvss_score_distribution.png" alt="ICE CVSS Score Distribution">
             <div class="description">
-                Shows the distribution of ICE CVSS scores over time, providing insight into the evolution of vulnerability scoring standards.
+                Shows the distribution of ICE CVSS scores, providing insight into the evolution of vulnerability scoring standards.
             </div>
             <button class="copy-button" onclick="copyGraphLink('ice_cvss_score_distribution')">Copy a link to this graph</button>
         </div>
@@ -95,7 +95,7 @@
             <h2>ICE CVSS Severity Distribution</h2>
             <img src="./images/ice_cvss_severity_distribution.png" alt="ICE CVSS Severity Distribution">
             <div class="description">
-                Shows the distribution of ICE CVSS severity scores over time, providing insight into the evolution of vulnerability scoring standards.
+                Shows the distribution of ICE CVSS severity scores, providing insight into the evolution of vulnerability scoring standards.
             </div>
             <button class="copy-button" onclick="copyGraphLink('ice_cvss_severity_distribution')">Copy a link to this graph</button>
         </div>
@@ -113,9 +113,36 @@
             <h2>ICE Vendors Distribution</h2>
             <img src="./images/ice_vendors_distribution.png" alt="ICE Vendors Distribution">
             <div class="description">
-                Shows the distribution of ICE vendors over time, providing insight into the evolution of vulnerability discovery and disclosure over time.
+                Shows the distribution of ICE vendors across all ICE vulns.
             </div>
             <button class="copy-button" onclick="copyGraphLink('ice_vendors_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="ice_epss_score_distribution">
+            <h2>ICE EPSS Score Distribution</h2>
+            <img src="./images/ice_epss_score_distribution.png" alt="ICE EPSS Score Distribution">
+            <div class="description">
+                Shows the distribution of ICE EPSS scores, providing insight into the efficacy of ICE vs EPSS.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('ice_epss_score_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="ice_kev_overlap">
+            <h2>CISA KEV-ICE Overlap</h2>
+            <img src="./images/ice_kev_overlap.png" alt="CISA KEV-ICE Overlap">
+            <div class="description">
+                Shows the overlap between KEV and ICE vulnerabilities.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('ice_kev_overlap')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="ice_vulncheck_overlap">
+            <h2>VulnCheck KEV-ICE Overlap</h2>
+            <img src="./images/ice_vulncheck_overlap.png" alt="VulnCheck KEV-ICE Overlap">
+            <div class="description">
+                Shows the overlap between VulnCheck KEV and ICE vulnerabilities.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('ice_vulncheck_overlap')">Copy a link to this graph</button>
         </div>
         
 
