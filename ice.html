@@ -54,7 +54,7 @@
         </style>
         <script>
             function copyGraphLink(graphId) {
-                const url = 'https://cvedata.com/#' + graphId;
+                const url = window.location.origin + window.location.pathname + '#' + graphId;
                 navigator.clipboard.writeText(url).then(() => {
                     alert('Link copied to clipboard!');
                 }).catch(err => {
