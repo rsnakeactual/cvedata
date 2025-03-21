@@ -66,8 +66,9 @@
     <body>
         <h1>CVEdata.com</h1>
         <p>This report provides a comprehensive analysis of
-        Common Vulnerabilities and Exposures (<a href="https://github.com/CVEProject/">CVE</a>), 
+        Common Vulnerabilities and Exposures (<a href="https://github.com/CVEProject/cvelistV5">CVE cvelistV5</a>), 
         CISA Known Exploited Vulnerabilities (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">KEV<a/>) and
+        CISA ADP (<a href="https://github.com/cisagov/vulnrichment">Vulnrichment</a>) and
         Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>) and
         VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>) and
         National Vulnerability Database (<a href="https://nvd.nist.gov/developers/vulnerabilities">NVD CVSS</a>) data.
@@ -530,6 +531,42 @@
                 Shows the distribution of CVSS scores that are overrepresented in the data, providing insight into which scores seem to be favored. The higher the number the less likely that it matches the probabilistic distribution of CVSS scores based on the probability of landing on any given score. The way to read this is that for every 1 possible mathematical combinations that will cause someone to land on any given CVSS score there is Y number of CVEs. If CVSS scores were equally likely there would be little to no deviation in scores. Only scored vulnerabilities are included.
             </div>
             <button class="copy-button" onclick="copyGraphLink('cvss_relative_combined_overrepresented')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="cisa_adp_cna_nvd_score_sources_overlap">
+            <h2>CVSS Score Overlap: NVD vs CISA ADP/CNA</h2>
+            <img src="./images/cisa_adp_cna_nvd_score_sources_overlap.png" alt="CVSS Score Overlap: NVD vs CISA ADP/CNA">
+            <div class="description">
+                Shows the overlap of CVEs that have been scored by NVD or by CISA or the delegate CNA.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('cisa_adp_cna_nvd_score_sources_overlap')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="cisa_adp_cna_nvd_cvss_score_scatter">
+            <h2>CVSS Score Distribution: NVD vs CISA ADP/CNA</h2>
+            <img src="./images/cisa_adp_cna_nvd_cvss_score_scatter.png" alt="CVSS Score Distribution: NVD vs CISA ADP/CNA">
+            <div class="description">
+                Shows the distribution of CVSS scores and how they compare when scored by CISA ADP/CNA vs NVD. The way to read this is that the closer to the center the better the agreement. The further from the center the worse the agreement. Only scored vulnerabilities are included.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('cisa_adp_cna_nvd_cvss_score_scatter')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="nvd_cisa_adp_cna_cvss_score_deltas">
+            <h2>CVSS Score Delta Distribution: NVD vs CISA ADP/CNA</h2>
+            <img src="./images/nvd_cisa_adp_cna_cvss_score_deltas.png" alt="CVSS Score Delta Distribution: NVD vs CISA ADP/CNA">
+            <div class="description">
+                Shows the distribution of CVSS scores deltas between NVD and CISA ADP/CNA. The closer to zero the more they agree.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('nvd_cisa_adp_cna_cvss_score_deltas')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="nvd_score_coverage_pie">
+            <h2>NVD Score Coverage</h2>
+            <img src="./images/nvd_score_coverage_pie.png" alt="NVD Score Coverage">
+            <div class="description">
+                Shows the coverage of NVD scores in the data. The closer to 100% the better the coverage of scored CVEs.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('nvd_score_coverage_pie')">Copy a link to this graph</button>
         </div>
         
 
