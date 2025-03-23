@@ -533,14 +533,22 @@
             <button class="copy-button" onclick="copyGraphLink('cvss_relative_combined_overrepresented')">Copy a link to this graph</button>
         </div>
         
-<!--
         <div class="graph-container" id="cisa_adp_cna_nvd_score_sources_overlap">
             <h2>CVSS Score Overlap: NVD vs CISA ADP/CNA</h2>
             <img src="./images/cisa_adp_cna_nvd_score_sources_overlap.png" alt="CVSS Score Overlap: NVD vs CISA ADP/CNA">
             <div class="description">
-                Shows the overlap of CVEs that have been scored by NVD or by CISA or the delegate CNA.
+                Shows the overlap of CVEs that have been scored by NVD or by CISA or the delegate CNA. Note that this does not include CVEs that have not been scored by either.
             </div>
             <button class="copy-button" onclick="copyGraphLink('cisa_adp_cna_nvd_score_sources_overlap')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="nvd_score_coverage_pie">
+            <h2>NVD Score Coverage</h2>
+            <img src="./images/nvd_score_coverage_pie.png" alt="NVD Score Coverage">
+            <div class="description">
+                Shows the coverage of NVD scores in the data vs CVEs with no CVSS score. The closer to 100% the better the coverage of scored CVEs by NVD.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('nvd_score_coverage_pie')">Copy a link to this graph</button>
         </div>
         
         <div class="graph-container" id="cisa_adp_cna_nvd_cvss_score_scatter">
@@ -561,21 +569,12 @@
             <button class="copy-button" onclick="copyGraphLink('nvd_cisa_adp_cna_cvss_score_deltas')">Copy a link to this graph</button>
         </div>
         
-        <div class="graph-container" id="nvd_score_coverage_pie">
-            <h2>NVD Score Coverage</h2>
-            <img src="./images/nvd_score_coverage_pie.png" alt="NVD Score Coverage">
-            <div class="description">
-                Shows the coverage of NVD scores in the data. The closer to 100% the better the coverage of scored CVEs.
-            </div>
-            <button class="copy-button" onclick="copyGraphLink('nvd_score_coverage_pie')">Copy a link to this graph</button>
-        </div>
-        
--->
+
         <div class="disclaimer">
             Compiled by Robert "<a href="https://rsnake.com/">RSnake</a>" Hansen. I do not guarantee the correctness of the data or images and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research.
         </div>
         <div class="timestamp">
-            Report generated on: 2025-03-21
+            Report generated on: 2025-03-23
         </div>
     </body>
     </html>
