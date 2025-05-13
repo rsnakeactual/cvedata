@@ -65,12 +65,14 @@
     </head>
     <body>
         <h1>CVEdata.com</h1>
-        <p>This report provides a comprehensive analysis of
+        <p>
+        This report aims to provide a comprehensive analysis of:
         Common Vulnerabilities and Exposures (<a href="https://github.com/CVEProject/cvelistV5">CVE cvelistV5</a>), 
         CISA Known Exploited Vulnerabilities (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">KEV<a/>),
         CISA ADP (<a href="https://github.com/cisagov/vulnrichment">Vulnrichment</a>),
         Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>),
-        VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>) and
+        VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>), 
+        KEVIntel (<a href="https://kevintel.com/">KEVIntel KEV</a>) and
         National Vulnerability Database (<a href="https://nvd.nist.gov/developers/vulnerabilities">NVD CVSS</a>) data.
         </p>
 
@@ -567,6 +569,33 @@
                 Shows the distribution of CVSS scores deltas between NVD and CISA ADP/CNA. The closer to zero the more they agree.
             </div>
             <button class="copy-button" onclick="copyGraphLink('nvd_cisa_adp_cna_cvss_score_deltas')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="kevintel_cvss">
+            <h2>KEVIntel CVSS Chart</h2>
+            <img src="./images/kevintel_cvss.png" alt="KEVIntel CVSS Chart">
+            <div class="description">
+                KEVIntel KEVs mapped against the CVSS scores for the vulnerabilities that are most commonly exploited according to KEVIntel.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('kevintel_cvss')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="kevintel_epss">
+            <h2>KEVIntel EPSS Diagram</h2>
+            <img src="./images/kevintel_epss.png" alt="KEVIntel EPSS Diagram">
+            <div class="description">
+                KEVIntel KEVs ranked by their current EPSS scores showing how likely EPSS believes KEVIntel is to be exploited in the next 30 days.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('kevintel_epss')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="cisa_kev_vs_kevintel_venn">
+            <h2>KEVIntel KEV vs EPSS</h2>
+            <img src="./images/cisa_kev_vs_kevintel_venn.png" alt="KEVIntel KEV vs EPSS">
+            <div class="description">
+                Shows the KEVIntel KEVs compared to the venn overlap between CISA KEVs to show overlap in coverage.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('cisa_kev_vs_kevintel_venn')">Copy a link to this graph</button>
         </div>
         
 

@@ -65,13 +65,18 @@
     </head>
     <body>
         <h1>CVEdata.com</h1>
-        <p>This report provides a comprehensive analysis of
+        <p>
+        This report aims to provide a comprehensive analysis of:
         Common Vulnerabilities and Exposures (<a href="https://github.com/CVEProject/cvelistV5">CVE cvelistV5</a>), 
         CISA Known Exploited Vulnerabilities (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">KEV<a/>),
         CISA ADP (<a href="https://github.com/cisagov/vulnrichment">Vulnrichment</a>),
         Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>),
-        VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>) and
-        National Vulnerability Database (<a href="https://nvd.nist.gov/developers/vulnerabilities">NVD CVSS</a>) data.
+        VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>),
+        KEVIntel (<a href="https://kevintel.com/">KEVIntel KEV</a>),
+        National Vulnerability Database (<a href="https://nvd.nist.gov/developers/vulnerabilities">NVD CVSS</a>),
+        Metasploit (<a href="https://github.com/rapid7/metasploit-framework">Metasploit</a>),
+        Nuclei (<a href="https://github.com/projectdiscovery/nuclei-templates">Nuclei Templates</a>),
+        and ICE data from Insurance carrier(s).
         </p>
 
         <div class="graph-container" id="ice_epss_correlation">
@@ -198,6 +203,15 @@
                 Shows the overlap between Metasploit CVEs and ICE vulnerabilities.
             </div>
             <button class="copy-button" onclick="copyGraphLink('metasploit_ice_venn')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="kevintel_ice_venn">
+            <h2>KEVIntel-ICE Overlap</h2>
+            <img src="./images/kevintel_ice_venn.png" alt="KEVIntel-ICE Overlap">
+            <div class="description">
+                Shows the overlap between KEVIntel CVEs and ICE vulnerabilities.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('kevintel_ice_venn')">Copy a link to this graph</button>
         </div>
         
 
