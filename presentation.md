@@ -411,8 +411,6 @@ Neither of them seem to be based in real-world evidence, or they wouldn't diverg
 
 ![](preso/ISSA_CVE_Scores_Presentation_20240327_41.png)
 
-![](preso/ISSA_CVE_Scores_Presentation_20240327_42.png)
-
 ---
 
 # Is KEV Outdated?
