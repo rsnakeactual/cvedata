@@ -311,7 +311,7 @@ You are thousands of times more likely to have a CVSS 7.8 than a 1.3. But... why
 
 ---
 
-# Density Probability Is 14% Better with CVSS V4 Than v3
+# Density Probability Is Better with CVSS v3 Than v4
 
 ==This is a static graph==
 
