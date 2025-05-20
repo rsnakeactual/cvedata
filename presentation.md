@@ -423,7 +423,7 @@ It’s delayed 18 months in some cases.
 
 ---
 
-# Vulncheck KEV vS CISA KEV
+# Vulncheck KEV vs CISA KEV
 
 ![](https://cvedata.com/images/vulncheck_vs_kev.png)
 
