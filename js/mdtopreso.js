@@ -5,10 +5,43 @@ class MarkdownPresentation {
         this.slides = [];
         this.imageUrls = new Set();
         this.isNavMinimized = false;  // Add state tracking for nav
+        this.highlighter = null;  // Add highlighter instance
+        this.isPresenterMode = false;  // Add presenter mode state
+        this.mermaidBlocks = []; // Add this line to store Mermaid blocks at class level
         this.init();
     }
 
     async init() {
+        // Initialize Shiki
+        try {
+            const { codeToHtml } = await import('https://esm.sh/shiki@3.4.2');
+            this.highlighter = {
+                codeToHtml: (code, options) => codeToHtml(code, options)
+            };
+        } catch (error) {
+            console.error('Failed to initialize Shiki:', error);
+        }
+
+        // Initialize Mermaid
+        try {
+            await new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js';
+                script.onload = () => {
+                    mermaid.initialize({
+                        startOnLoad: false,  // We'll handle initialization manually
+                        theme: 'default',
+                        securityLevel: 'loose'
+                    });
+                    resolve();
+                };
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        } catch (error) {
+            console.error('Failed to initialize Mermaid:', error);
+        }
+
         // Parse URL parameters from hash
         const hash = window.location.hash.substring(1); // Remove the # symbol
         const params = new URLSearchParams(hash);
@@ -46,8 +79,14 @@ class MarkdownPresentation {
             }
         }
 
-        this.parseMarkdown();
+        await this.parseMarkdown();
         this.prefetchImages();
+        
+        // Create initial bottom bar
+        const bottomBar = document.createElement('div');
+        bottomBar.className = 'bottom-bar';
+        document.body.appendChild(bottomBar);
+        
         this.setupEventListeners();
         
         // Check for slide number
@@ -59,7 +98,7 @@ class MarkdownPresentation {
         this.renderSlide(0);
     }
 
-    parseMarkdown() {
+    async parseMarkdown() {
         const content = document.body.innerHTML;
         
         // Extract all image URLs first
@@ -75,9 +114,83 @@ class MarkdownPresentation {
             this.imageUrls.add(match[1]);
         }
 
-        this.slides = content.split('---').map(slide => {
-            return this.convertMarkdownToHtml(slide.trim());
+        // Process slides asynchronously
+        const slidePromises = content.split('---').map(async slide => {
+            // Extract speaker notes (HTML comments) from the end of the slide
+            const lines = slide.trim().split('\n');
+            let speakerNotes = [];
+            let contentLines = [];
+            
+            // Process from bottom to top to find trailing comments
+            let inComment = false;
+            let commentContent = [];
+            
+            for (let i = lines.length - 1; i >= 0; i--) {
+                const line = lines[i].trim();
+                
+                if (line.includes('-->')) {
+                    inComment = true;
+                    const commentText = line.split('-->')[0].trim();
+                    if (commentText) {
+                        commentContent.unshift(commentText);
+                    }
+                } else if (line.includes('<!--')) {
+                    inComment = false;
+                    const commentText = line.split('<!--')[1].trim();
+                    if (commentText) {
+                        commentContent.unshift(commentText);
+                    }
+                    speakerNotes.unshift(commentContent.join('\n'));
+                    commentContent = [];
+                } else if (inComment) {
+                    commentContent.unshift(line);
+                } else {
+                    // Once we hit non-comment content, stop processing
+                    contentLines = lines.slice(0, i + 1);
+                    break;
+                }
+            }
+
+            // Join the content lines and process Mermaid blocks first
+            let content = contentLines.join('\n');
+            
+            // Extract Mermaid blocks and replace with placeholders
+            const mermaidBlocks = []; // Local array for this slide
+            content = content.replace(/```\s*mermaid(?:\s*\{[^}]*\})?\n([\s\S]*?)```/g, (match, code) => {
+                const id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
+                mermaidBlocks.push({ id, code: code.trim() });
+                return `@@MERMAID-BLOCK-${mermaidBlocks.length - 1}@@`;
+            });
+
+            // Convert the main content to HTML
+            let html = await this.convertMarkdownToHtml(content);
+            
+            // Restore Mermaid blocks after all other processing
+            html = html.replace(/@@MERMAID-BLOCK-(\d+)@@/g, (match, idx) => {
+                const blockIndex = parseInt(idx, 10);
+                if (!mermaidBlocks || !mermaidBlocks[blockIndex]) {
+                    console.error('Mermaid block not found:', { idx, blockIndex, mermaidBlocks });
+                    return ''; // Return empty string if block not found
+                }
+                const block = mermaidBlocks[blockIndex];
+                return `<div class="content-block mermaid-container"><div class="mermaid" id="${block.id}">${block.code}</div></div>`;
+            });
+            
+            // Add speaker notes if they exist
+            if (speakerNotes.length > 0) {
+                return {
+                    content: html,
+                    notes: speakerNotes.join('\n')
+                };
+            }
+            
+            return {
+                content: html,
+                notes: null
+            };
         });
+        
+        this.slides = await Promise.all(slidePromises);
     }
 
     prefetchImages() {
@@ -87,8 +200,19 @@ class MarkdownPresentation {
         });
     }
 
-    convertMarkdownToHtml(markdown) {
-        // Process lists first, before any other processing
+    async convertMarkdownToHtml(markdown) {
+        // Step 1: Process the markdown as usual
+        const markdownLines = markdown.split('\n');
+        let processedMarkdownLines = [];
+
+        for (let i = 0; i < markdownLines.length; i++) {
+            const line = markdownLines[i];
+            processedMarkdownLines.push(line);
+        }
+
+        let html = processedMarkdownLines.join('\n');
+
+        // Process lists
         const processLists = (text) => {
             // First normalize all indentation to spaces
             text = text.replace(/\t/g, '    '); // Convert tabs to 4 spaces
@@ -114,17 +238,19 @@ class MarkdownPresentation {
                         };
                     }
 
+                    // Process markdown formatting in list item content
+                    let itemContent = listMatch[2];
+                    // Replace highlighted sections first
+                    itemContent = itemContent.replace(/==(.*?)==/g, '<mark>$1</mark>');
+                    // Then replace bold sections
+                    itemContent = itemContent.replace(/(\*\*|__)(.*?)\1/g, '<strong>$2</strong>');
+                    // Finally replace italic sections
+                    itemContent = itemContent.replace(/(\*|_)(.*?)\1/g, '<em>$2</em>');
+
                     const item = {
-                        content: listMatch[2],
+                        content: itemContent,
                         nested: []
                     };
-
-                    // Debug logging
-                    console.log(`Line ${i + 1}:`);
-                    console.log(`  Content: "${content}"`);
-                    console.log(`  Indent: ${indent}`);
-                    console.log(`  Last Indent: ${lastIndent}`);
-                    console.log(`  Is Nested: ${indent > lastIndent}`);
 
                     // Handle indentation levels
                     if (indent > lastIndent) {
@@ -137,23 +263,19 @@ class MarkdownPresentation {
                                 currentParent.nested = [];
                             }
                             currentParent.nested.push(item);
-                            console.log(`  Added as nested item under: "${currentParent.content}"`);
                         }
                     } else if (indent < lastIndent) {
                         // We're going back to a previous indentation level
                         currentList.items.push(item);
                         currentParent = null;
-                        console.log(`  Added as top-level item (indent decreased)`);
                     } else {
                         // Same indentation level
                         if (currentParent) {
                             // If we're at the same indentation level and have a parent, add to parent's nested list
                             currentParent.nested.push(item);
-                            console.log(`  Added as sibling to previous nested item`);
                         } else {
                             // If we're at the same indentation level but no parent, add to top level
                             currentList.items.push(item);
-                            console.log(`  Added as top-level item (same indent)`);
                         }
                     }
                     
@@ -238,13 +360,36 @@ class MarkdownPresentation {
 
             return result.join('\n');
         };
+        html = processLists(html);
 
-        // Process lists first, before any other processing
-        let html = processLists(markdown);
+        // Process code blocks with language specification
+        const codeBlockPromises = [];
+        html = html.replace(/```\s*(\w+)?(?:\s*\{[^}]*\})?\n([\s\S]*?)```/g, (match, lang, code) => {
+            const placeholder = `<div class="code-placeholder" data-index="${codeBlockPromises.length}"></div>`;
+            if (this.highlighter && lang) {
+                codeBlockPromises.push(
+                    this.highlighter.codeToHtml(code.trim(), { 
+                        lang,
+                        theme: 'github-dark'
+                    }).then(highlighted => {
+                        return `<div class="content-block">${highlighted}</div>`;
+                    }).catch(error => {
+                        console.error(`Failed to highlight code for language ${lang}:`, error);
+                        return `<div class="content-block"><pre><code>${code.trim()}</code></pre></div>`;
+                    })
+                );
+            } else {
+                codeBlockPromises.push(Promise.resolve(
+                    `<div class="content-block"><pre><code>${code.trim()}</code></pre></div>`
+                ));
+            }
+            return placeholder;
+        });
 
-        // Process code blocks
-        html = html.replace(/```([\s\S]*?)```/g, (match, code) => {
-            return `<div class="content-block"><pre><code>${code.trim()}</code></pre></div>`;
+        // Wait for all code blocks to be processed
+        const processedBlocks = await Promise.all(codeBlockPromises);
+        processedBlocks.forEach((block, index) => {
+            html = html.replace(`<div class="code-placeholder" data-index="${index}"></div>`, block);
         });
 
         // Process slide background
@@ -259,7 +404,7 @@ class MarkdownPresentation {
 
         // Process regular images without positioning
         html = html.replace(/!\[(.*?)\]\((.*?)\)/g, (match, alt, src) => {
-            return `<div class="content-block"><img src="${src}" alt="${alt || ''}" style="max-width: 100%; max-height: calc(100vh - 200px); width: auto; height: auto; display: block; margin: 1rem 0; object-fit: contain; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>`;
+            return `<div class="content-block"><img src="${src}" alt="${alt || ''}" style="max-width: 100%; max-height: calc(100vh - 200px); width: auto; height: auto; display: block; margin: 1rem auto; object-fit: contain; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>`;
         });
 
         // Process positioned text blocks
@@ -350,7 +495,7 @@ class MarkdownPresentation {
             .replace(/^# (.*$)/gm, '<div class="content-block"><h1>$1</h1></div>')
             .replace(/^## (.*$)/gm, '<div class="content-block"><h2>$1</h2></div>')
             .replace(/^### (.*$)/gm, '<div class="content-block"><h3>$1</h3></div>')
-            .replace(/\[(.*?)\]\((.*?)\)(.*?)(?=\n|$)/g, '<a href="$2">$1</a>$3')
+            .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
             .replace(/^(?!<[a-z])(.*$)/gm, '<div class="content-block"><p>$1</p></div>');
 
         // Process blockquotes after paragraph conversion
@@ -359,16 +504,15 @@ class MarkdownPresentation {
         });
 
         // Process formatting within div content blocks that contain plain text
-        // First, process paragraphs
         html = html.replace(/<div class="content-block"><p>(.*?)<\/p><\/div>/g, (match, content) => {
-            // Replace highlighted sections first
             content = content.replace(/==(.*?)==/g, '<mark>$1</mark>');
-            // Then replace bold sections
             content = content.replace(/(\*\*|__)(.*?)\1/g, '<strong>$2</strong>');
-            // Finally replace italic sections
             content = content.replace(/(\*|_)(.*?)\1/g, '<em>$2</em>');
             return `<div class="content-block"><p>${content}</p></div>`;
         });
+
+        // Convert remaining text to paragraphs, but only if it's not already wrapped in a div
+        html = html.replace(/^(?!<div class="content-block">)(.*$)/gm, '<div class="content-block"><p>$1</p></div>');
 
         return html;
     }
@@ -377,15 +521,37 @@ class MarkdownPresentation {
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-                e.preventDefault(); // Prevent default scrolling
+                e.preventDefault();
                 this.nextSlide();
             } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-                e.preventDefault(); // Prevent default scrolling
+                e.preventDefault();
                 this.previousSlide();
+            } else if (e.key === 'p' && e.ctrlKey) {  // Add Ctrl+P shortcut for presenter mode
+                e.preventDefault();
+                this.togglePresenterMode();
+            }
+        });
+
+        // Add hash change listener to handle direct URL navigation
+        window.addEventListener('hashchange', () => {
+            const params = new URLSearchParams(window.location.hash.substring(1));
+            const slideNumber = parseInt(params.get('slide') || '1') - 1;
+            if (slideNumber >= 0 && slideNumber < this.slides.length) {
+                this.renderSlide(slideNumber);
             }
         });
 
         this.createNavigationButtons();
+    }
+
+    togglePresenterMode() {
+        this.isPresenterMode = !this.isPresenterMode;
+        document.body.classList.toggle('presenter-mode', this.isPresenterMode);
+        // Update the presenter mode button state
+        const presenterBtn = document.getElementById('presenterModeBtn');
+        if (presenterBtn) {
+            presenterBtn.classList.toggle('active', this.isPresenterMode);
+        }
     }
 
     createNavigationButtons() {
@@ -411,63 +577,109 @@ class MarkdownPresentation {
                     <span>of ${this.slides.length}</span>
                 </div>
                 <button id="nextBtn" class="${this.currentSlide === this.slides.length - 1 ? 'disabled' : ''}">Next</button>
+                <button id="presenterModeBtn" class="${this.isPresenterMode ? 'active' : ''}" title="Toggle Presenter Mode (Ctrl+P)">🎥</button>
             </div>
         `;
         
-        document.body.appendChild(nav);
+        const bottomBar = document.querySelector('.bottom-bar');
+        if (bottomBar) {
+            bottomBar.appendChild(nav);
+        }
 
         // Add button event listeners
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         const toggleBtn = document.getElementById('toggleNav');
+        const presenterBtn = document.getElementById('presenterModeBtn');
         
-        prevBtn.addEventListener('click', () => {
-            if (!prevBtn.classList.contains('disabled')) {
-                this.previousSlide();
-            }
-        });
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (!prevBtn.classList.contains('disabled')) {
+                    this.previousSlide();
+                }
+            });
+        }
         
-        nextBtn.addEventListener('click', () => {
-            if (!nextBtn.classList.contains('disabled')) {
-                this.nextSlide();
-            }
-        });
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                if (!nextBtn.classList.contains('disabled')) {
+                    this.nextSlide();
+                }
+            });
+        }
 
-        toggleBtn.addEventListener('click', () => {
-            nav.classList.toggle('collapsed');
-            this.isNavMinimized = nav.classList.contains('collapsed');
-            // Update the arrow direction
-            toggleBtn.textContent = this.isNavMinimized ? '▲' : '▼';
-        });
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', () => {
+                nav.classList.toggle('collapsed');
+                this.isNavMinimized = nav.classList.contains('collapsed');
+                toggleBtn.textContent = this.isNavMinimized ? '▲' : '▼';
+            });
+        }
+
+        if (presenterBtn) {
+            presenterBtn.addEventListener('click', () => {
+                this.togglePresenterMode();
+            });
+        }
         
         // Add select event listener
         const slideSelect = document.getElementById('slideSelect');
-        slideSelect.addEventListener('change', (e) => {
-            const newSlide = parseInt(e.target.value) - 1;
-            this.renderSlide(newSlide);
-        });
+        if (slideSelect) {
+            slideSelect.addEventListener('change', (e) => {
+                const newSlide = parseInt(e.target.value) - 1;
+                this.renderSlide(newSlide);
+            });
+        }
     }
 
     renderSlide(index) {
         if (index >= 0 && index < this.slides.length) {
             this.currentSlide = index;
-            document.body.innerHTML = this.slides[index];
-            this.createNavigationButtons();
-            document.getElementById('slideSelect').value = index + 1;
-            // Restore nav state after slide change
-            if (this.isNavMinimized) {
-                document.querySelector('.presentation-nav').classList.add('collapsed');
+            
+            // Update URL hash with current slide number
+            const params = new URLSearchParams(window.location.hash.substring(1));
+            params.set('slide', index + 1);
+            window.location.hash = params.toString();
+            
+            // Clear the body first
+            document.body.innerHTML = '';
+            
+            // Create main content container
+            const mainContent = document.createElement('div');
+            mainContent.className = 'presentation-content';
+            mainContent.innerHTML = this.slides[index].content;
+            
+            // Create bottom bar container
+            const bottomBar = document.createElement('div');
+            bottomBar.className = 'bottom-bar';
+            
+            // Create speaker notes only if they exist
+            if (this.slides[index].notes) {
+                const speakerNotes = document.createElement('div');
+                speakerNotes.className = 'speaker-notes';
+                speakerNotes.innerHTML = this.slides[index].notes;
+                bottomBar.appendChild(speakerNotes);
             }
             
-            // Update URL with current slide number while preserving page parameter
-            const params = new URLSearchParams(window.location.hash.substring(1));
-            const markdownFile = params.get('page');
-            const newHash = markdownFile ? 
-                `#page=${markdownFile}&slide=${index + 1}` :
-                `#slide=${index + 1}`;
+            // Append elements in the correct order
+            document.body.appendChild(mainContent);
+            document.body.appendChild(bottomBar);
             
-            if (window.location.hash !== newHash) {
-                window.history.replaceState(null, '', newHash);
+            // Create navigation after the DOM is set up
+            this.createNavigationButtons();
+            
+            // Initialize Mermaid diagrams
+            if (typeof mermaid !== 'undefined') {
+                mermaid.contentLoaded();
+                mermaid.init(undefined, '.mermaid');
+            } else {
+                console.warn('Mermaid is not loaded yet. Diagrams will not be rendered.');
+            }
+            
+            // Update slide select
+            const slideSelect = document.getElementById('slideSelect');
+            if (slideSelect) {
+                slideSelect.value = index + 1;
             }
         }
     }
@@ -491,17 +703,131 @@ style.textContent = `
     body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         margin: 0;
-        padding: 1rem;
-        padding-top: 2rem;
+        padding: 0;
         background: #f5f5f5;
         min-height: 100vh;
-        position: relative;
-        overflow: hidden;
         box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .presentation-content {
+        padding: 1rem;
+        padding-top: 2rem;
+        flex: 1;
+        overflow: hidden;
+        position: relative;
         max-width: 100vw;
         max-height: 100vh;
         display: flex;
         flex-direction: column;
+    }
+
+    /* Presenter mode aspect ratio enforcement */
+    body.presenter-mode {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        min-height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body.presenter-mode .presentation-content {
+        flex: 1;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body.presenter-mode .presentation-content > * {
+        width: 100%;
+        max-width: calc(100vh * 16 / 9); /* Maintain 16:9 aspect ratio */
+    }
+
+    /* Speaker notes styling */
+    .speaker-notes {
+        display: none; /* Hidden by default */
+        background: #2c3e50;
+        color: white;
+        padding: 1rem;
+        font-size: 0.9em;
+        text-align: left;
+        border-bottom: 1px solid #34495e;
+        white-space: pre-line;
+        width: 100%;
+    }
+
+    /* Show speaker notes only in presenter mode */
+    body.presenter-mode .speaker-notes {
+        display: block;
+    }
+
+    /* Hide speaker notes when nav is collapsed */
+    .presentation-nav.collapsed .speaker-notes {
+        display: none !important;
+    }
+
+    .presentation-nav {
+        position: relative;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1000;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    .presentation-nav.collapsed {
+        width: 40px;
+        height: 40px;
+        right: 0;
+        left: auto;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .presentation-nav.collapsed .nav-content {
+        display: none;
+    }
+
+    .nav-content {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    /* Presenter mode button styles */
+    #presenterModeBtn {
+        background: none;
+        border: none;
+        font-size: 1.2em;
+        cursor: pointer;
+        padding: 0.5rem;
+        color: #666;
+        transition: all 0.2s ease;
+    }
+
+    #presenterModeBtn:hover {
+        color: #007bff;
+    }
+
+    #presenterModeBtn.active {
+        color: #007bff;
+        background: rgba(0, 123, 255, 0.1);
+        border-radius: 4px;
     }
 
     h1, h2, h3 {
@@ -513,9 +839,6 @@ style.textContent = `
         max-width: calc(100vw - 2rem);
         height: auto;
         position: relative;
-        box-sizing: border-box;
-        flex: 0 1 auto;
-        align-self: flex-start;
     }
 
     h1 {
@@ -603,29 +926,6 @@ style.textContent = `
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
-    .presentation-nav.collapsed .nav-content {
-        display: none;
-    }
-
-    .nav-toggle {
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-        background: none;
-        border: none;
-        font-size: 1rem;
-        cursor: pointer;
-        padding: 0.5rem;
-        color: #333;
-        transition: all 0.3s ease;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     .presentation-nav.collapsed .nav-toggle {
         position: static;
         transform: none;
@@ -641,11 +941,23 @@ style.textContent = `
         background: rgba(0, 0, 0, 0.05);
     }
 
-    .nav-content {
+    .nav-toggle {
+        position: absolute;
+        right: 3rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        color: #333;
+        transition: all 0.3s ease;
+        width: 30px;
+        height: 30px;
         display: flex;
         align-items: center;
-        gap: 1rem;
-        transition: all 0.3s ease;
+        justify-content: center;
     }
 
     .presentation-nav button {
@@ -728,7 +1040,6 @@ style.textContent = `
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
     }
 
     /* Add table styles */
@@ -835,6 +1146,119 @@ style.textContent = `
         border: 1px solid #dc3545;
         border-radius: 4px;
         background-color: #f8d7da;
+    }
+
+    /* Shiki code block styles */
+    .shiki {
+        background-color: #0d1117;
+        border-radius: 6px;
+        padding: 1rem;
+        margin: 1rem 0;
+        overflow-x: auto;
+        font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    .shiki code {
+        font-family: inherit;
+        white-space: pre;
+        word-wrap: normal;
+    }
+
+    .shiki .line {
+        display: block;
+        min-height: 1.5em;
+    }
+
+    .shiki .line-number {
+        display: inline-block;
+        width: 2.5em;
+        padding-right: 1em;
+        text-align: right;
+        color: #6e7681;
+        user-select: none;
+    }
+
+    /* Ensure code blocks don't overflow */
+    pre, code {
+        max-width: 100%;
+        overflow-x: auto;
+        white-space: pre;
+        word-wrap: normal;
+    }
+
+    /* Add styles for Mermaid diagrams */
+    .mermaid {
+        width: 100%;
+        min-height: 300px;
+        margin: 1rem 0;
+        font-size: 16px;
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .mermaid svg {
+        width: 100%;
+        height: auto;
+        max-height: 70vh;
+    }
+
+    /* Ensure the diagram container takes up appropriate space */
+    .content-block.mermaid-container {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    /* Adjust text size in diagrams */
+    .mermaid .label {
+        font-size: 14px;
+    }
+
+    .mermaid .section {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .mermaid .title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /* Ensure the diagram container takes up appropriate space */
+    .content-block .mermaid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .bottom-bar {
+        background: white;
+        border-top: 1px solid #ddd;
+        width: 100%;
+    }
+
+    /* Add styles for images */
+    .content-block img {
+        display: block;
+        margin: 1rem auto;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Center images in presenter mode */
+    body.presenter-mode .content-block img {
+        margin: 1rem auto;
+        display: block;
     }
 `;
 document.head.appendChild(style);
