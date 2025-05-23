@@ -7,8 +7,8 @@
 # About me
 
 - Managing Director – Grossman Ventures
-- Former CTO of Bit Discovery
-- 30 years in IT Security
+- Former CTO of Bit Discovery which was acquired by Tenable (TENB)
+- 30 years in information security
 - 4 books
 
 ---
@@ -78,6 +78,10 @@ Let's say you want to use CVEs to identify issues in products you have using the
 
 My "favorite" is the last one since there is a space at the end of the vendor name. *sigh*
 
+<!-- Don't forget to mention the thing wooty woot woot woot
+super important thing
+so so important -->
+
 ---
 
 # Missing Data Depending on Exact Match
@@ -129,10 +133,9 @@ CVE has no concept of “user interaction is required”.
 - CVSS baseScore is overwritten by the CVE Numbering Authority (CNA) in the CVE Project (cve.org – run by MITRE, funded by Homeland Security): [https://github.com/CVEProject/cvelistV5/](https://github.com/CVEProject/cvelistV5/)
 - Does not include NVD at all.
 
-```
+```bash
 $ grep -i score CVE-2024-4001.json
-"baseScore": 6.4,
-```
+"baseScore": 6.4,```
 
 ---
 
@@ -411,6 +414,8 @@ Neither of them seem to be based in real-world evidence, or they wouldn't diverg
 
 ![](preso/ISSA_CVE_Scores_Presentation_20240327_41.png)
 
+![](preso/ISSA_CVE_Scores_Presentation_20240327_42.png)
+
 ---
 
 # Is KEV Outdated?
@@ -522,7 +527,7 @@ CISA changed it without telling anyone.
 
 # The So What…
 
-> “Based on the anonymized customer data we are observing, CISA’s KEV Catalog is a cornerstone of collective defense, helping security teams swiftly identify, prioritize, and address critical threats. CISA’s proactive sharing of these risks fosters unity and keeps defenders ahead. Notably, many organizations respond promptly to newly listed KEVs, and vulnerabilities are remediated faster when they are in CISA KEV list.” - Qualys
+> "Based on the anonymized customer data we are observing, CISA’s KEV Catalog is a cornerstone of collective defense, helping security teams swiftly identify, prioritize, and address critical threats. CISA’s proactive sharing of these risks fosters unity and keeps defenders ahead. Notably, many organizations respond promptly to newly listed KEVs, and vulnerabilities are remediated faster when they are in CISA KEV list." - Qualys
 
 Netsec/Appsec is doomed if you rely on CVSS alone. We’re working on too much that doesn’t matter. We need to start thinking about the vulns that lead to verifiable loss, not the ones that are never exploited.  We need  *evidence-based*  risk.  __We need ROSI__!
 
