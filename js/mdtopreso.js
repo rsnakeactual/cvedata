@@ -1,4 +1,5 @@
-// Presentation.js - A simple markdown to presentation converter
+// mdtopreso.js - A simple markdown to presentation converter
+// Written by: @rsnake
 class MarkdownPresentation {
     constructor() {
         this.currentSlide = 0;
@@ -42,11 +43,11 @@ class MarkdownPresentation {
             console.error('Failed to initialize Mermaid:', error);
         }
 
-        // Parse URL parameters from hash
+        // Parse URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const markdownFile = urlParams.get('page');
         const hash = window.location.hash.substring(1); // Remove the # symbol
-        const params = new URLSearchParams(hash);
-        const markdownFile = params.get('page');
-        const slideNumber = parseInt(params.get('slide') || '1') - 1;
+        const slideNumber = parseInt(hash.replace('slide=', '')) - 1;
 
         if (markdownFile) {
             try {
@@ -59,6 +60,7 @@ class MarkdownPresentation {
                     xhr.onreadystatechange = function() {
                         if (xhr.readyState === 4) {
                             if (xhr.status === 200) {
+                                console.log('Initial markdown content:', xhr.responseText);
                                 resolve(xhr.responseText);
                             } else {
                                 reject(new Error(`Failed to load markdown file: ${xhr.statusText}`));
@@ -71,7 +73,9 @@ class MarkdownPresentation {
                     xhr.send();
                 });
                 
-                document.body.innerHTML = markdown;
+                // Store the raw markdown content without parsing it as HTML
+                this.rawMarkdown = markdown;
+                document.body.innerHTML = ''; // Clear the body instead
             } catch (error) {
                 console.error('Error loading markdown file:', error);
                 document.body.innerHTML = `<div class="error">Error loading markdown file: ${error.message}</div>`;
@@ -99,7 +103,68 @@ class MarkdownPresentation {
     }
 
     async parseMarkdown() {
-        const content = document.body.innerHTML;
+        let content = this.rawMarkdown || document.body.innerHTML;
+        
+        // Check for frontmatter
+        const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---\n/);
+        if (frontmatterMatch) {
+            const frontmatterContent = frontmatterMatch[1];
+            const frontmatterLines = frontmatterContent.split('\n');
+            const frontmatter = {};
+            
+            for (const line of frontmatterLines) {
+                const [key, ...valueParts] = line.split(':');
+                if (key && valueParts.length > 0) {
+                    const value = valueParts.join(':').trim();
+                    frontmatter[key.trim()] = value;
+                }
+            }
+            
+            // Process frontmatter settings
+            if (frontmatter['Frontmatter'] === 'True') {
+                // Remove the frontmatter from content
+                content = content.replace(/^---\n[\s\S]*?\n---\n/, '');
+                
+                // Apply frontmatter settings
+                if (frontmatter['Refresh']) {
+                    const refreshSeconds = parseInt(frontmatter['Refresh']);
+                    if (!isNaN(refreshSeconds)) {
+                        setInterval(() => {
+                            window.location.reload();
+                        }, refreshSeconds * 1000);
+                    }
+                }
+                
+                if (frontmatter['Title']) {
+                    document.title = frontmatter['Title'];
+                }
+                
+                if (frontmatter['Author']) {
+                    // Handle author name with quotes
+                    const author = frontmatter['Author'].replace(/^["']|["']$/g, '');
+                    const metaAuthor = document.querySelector('meta[name="author"]');
+                    if (metaAuthor) {
+                        metaAuthor.content = author;
+                    } else {
+                        const meta = document.createElement('meta');
+                        meta.name = 'author';
+                        meta.content = author;
+                        document.head.appendChild(meta);
+                    }
+                }
+                
+                if (frontmatter['Bgcolor']) {
+                    document.body.style.backgroundColor = frontmatter['Bgcolor'];
+                }
+                
+                if (frontmatter['Bgimage']) {
+                    document.body.style.backgroundImage = `url('${frontmatter['Bgimage']}')`;
+                    document.body.style.backgroundSize = 'cover';
+                    document.body.style.backgroundPosition = 'center';
+                    document.body.style.backgroundRepeat = 'no-repeat';
+                }
+            }
+        }
         
         // Extract all image URLs first
         const imageRegex = /!\[(.*?)\]\((.*?)\)/g;
@@ -158,8 +223,19 @@ class MarkdownPresentation {
             const mermaidBlocks = []; // Local array for this slide
             content = content.replace(/```\s*mermaid(?:\s*\{[^}]*\})?\n([\s\S]*?)```/g, (match, code) => {
                 const id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
-                mermaidBlocks.push({ id, code: code.trim() });
+                // Store the exact code without any modifications
+                mermaidBlocks.push({ id, code: code });
                 return `@@MERMAID-BLOCK-${mermaidBlocks.length - 1}@@`;
+            });
+
+            // Extract code blocks and replace with placeholders
+            const codeBlocks = []; // Local array for this slide
+            content = content.replace(/```\s*(\w+)?(?:\s*\{[^}]*\})?\n((?:.|\n)*?)```/g, (match, lang, code) => {
+                const id = 'code-' + Math.random().toString(36).substr(2, 9);
+                // Store the exact code and language without any modifications
+                console.log("This should have <DOCTYPE IN IT: " + code);
+                codeBlocks.push({ id, lang, code: code });
+                return `@@CODE-BLOCK-${codeBlocks.length - 1}@@`;
             });
 
             // Convert the main content to HTML
@@ -174,6 +250,43 @@ class MarkdownPresentation {
                 }
                 const block = mermaidBlocks[blockIndex];
                 return `<div class="content-block mermaid-container"><div class="mermaid" id="${block.id}">${block.code}</div></div>`;
+            });
+
+            // Restore code blocks after all other processing
+            const codeBlockPromises = [];
+            html = html.replace(/@@CODE-BLOCK-(\d+)@@/g, (match, idx) => {
+                const blockIndex = parseInt(idx, 10);
+                if (!codeBlocks || !codeBlocks[blockIndex]) {
+                    console.error('Code block not found:', { idx, blockIndex, codeBlocks });
+                    return ''; // Return empty string if block not found
+                }
+                const block = codeBlocks[blockIndex];
+                const placeholder = `@@CODE-PLACEHOLDER-${codeBlockPromises.length}@@`;
+                
+                if (this.highlighter && block.lang) {
+                    codeBlockPromises.push(
+                        this.highlighter.codeToHtml(block.code, { 
+                            lang: block.lang,
+                            theme: 'github-dark'
+                        }).then(highlighted => {
+                            return highlighted;
+                        }).catch(error => {
+                            console.error(`Failed to highlight code for language ${block.lang}:`, error);
+                            return `<pre><code class="language-${block.lang}">${block.code}</code></pre>`;
+                        })
+                    );
+                } else {
+                    codeBlockPromises.push(Promise.resolve(
+                        `<pre><code>${block.code}</code></pre>`
+                    ));
+                }
+                return placeholder;
+            });
+
+            // Wait for all code blocks to be processed
+            const processedBlocks = await Promise.all(codeBlockPromises);
+            processedBlocks.forEach((block, index) => {
+                html = html.replace(`@@CODE-PLACEHOLDER-${index}@@`, `<div class="content-block">${block}</div>`);
             });
             
             // Add speaker notes if they exist
@@ -361,36 +474,6 @@ class MarkdownPresentation {
             return result.join('\n');
         };
         html = processLists(html);
-
-        // Process code blocks with language specification
-        const codeBlockPromises = [];
-        html = html.replace(/```\s*(\w+)?(?:\s*\{[^}]*\})?\n([\s\S]*?)```/g, (match, lang, code) => {
-            const placeholder = `<div class="code-placeholder" data-index="${codeBlockPromises.length}"></div>`;
-            if (this.highlighter && lang) {
-                codeBlockPromises.push(
-                    this.highlighter.codeToHtml(code.trim(), { 
-                        lang,
-                        theme: 'github-dark'
-                    }).then(highlighted => {
-                        return `<div class="content-block">${highlighted}</div>`;
-                    }).catch(error => {
-                        console.error(`Failed to highlight code for language ${lang}:`, error);
-                        return `<div class="content-block"><pre><code>${code.trim()}</code></pre></div>`;
-                    })
-                );
-            } else {
-                codeBlockPromises.push(Promise.resolve(
-                    `<div class="content-block"><pre><code>${code.trim()}</code></pre></div>`
-                ));
-            }
-            return placeholder;
-        });
-
-        // Wait for all code blocks to be processed
-        const processedBlocks = await Promise.all(codeBlockPromises);
-        processedBlocks.forEach((block, index) => {
-            html = html.replace(`<div class="code-placeholder" data-index="${index}"></div>`, block);
-        });
 
         // Process slide background
         html = html.replace(/^background\s*\{([^}]*)\}/gm, (match, style) => {
@@ -637,9 +720,7 @@ class MarkdownPresentation {
             this.currentSlide = index;
             
             // Update URL hash with current slide number
-            const params = new URLSearchParams(window.location.hash.substring(1));
-            params.set('slide', index + 1);
-            window.location.hash = params.toString();
+            window.location.hash = `slide=${index + 1}`;
             
             // Clear the body first
             document.body.innerHTML = '';
@@ -796,6 +877,7 @@ style.textContent = `
         background: rgba(255, 255, 255, 0.7);
         border-radius: 50%;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
     }
 
     .presentation-nav.collapsed .nav-content {
@@ -935,10 +1017,13 @@ style.textContent = `
         align-items: center;
         justify-content: center;
         border-radius: 50%;
+        background: transparent;
+        color: #333;
+        opacity: 50%;
     }
 
     .presentation-nav.collapsed .nav-toggle:hover {
-        background: rgba(0, 0, 0, 0.05);
+        background: transparent;
     }
 
     .nav-toggle {
@@ -1046,13 +1131,13 @@ style.textContent = `
     .markdown-table {
         border-collapse: collapse;
         width: 100%;
-        margin: 1rem 0;
+        margin: 1rem 0; 
     }
 
     .markdown-table th,
     .markdown-table td {
         border: 1px solid #ddd;
-        padding: 8px;
+        padding: 4px;
         text-align: left;
     }
 
@@ -1062,7 +1147,11 @@ style.textContent = `
     }
 
     .markdown-table tr:nth-child(even) {
-        background-color: #f9f9f9;
+        background-color: #f0f0f0;
+    }
+
+    .markdown-table tr:nth-child(odd) {
+        background-color: #ffffff;
     }
 
     /* Add styles for content blocks */
@@ -1153,11 +1242,12 @@ style.textContent = `
         background-color: #0d1117;
         border-radius: 6px;
         padding: 1rem;
+        padding-bottom: 0;
         margin: 1rem 0;
         overflow-x: auto;
         font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
         font-size: 0.9em;
-        line-height: 1.5;
+        line-height: .3;
     }
 
     .shiki code {
@@ -1168,7 +1258,7 @@ style.textContent = `
 
     .shiki .line {
         display: block;
-        min-height: 1.5em;
+        min-height: 1.2em;
     }
 
     .shiki .line-number {
