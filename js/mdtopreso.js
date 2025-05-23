@@ -579,12 +579,8 @@ class MarkdownPresentation {
             .replace(/^## (.*$)/gm, '<div class="content-block"><h2>$1</h2></div>')
             .replace(/^### (.*$)/gm, '<div class="content-block"><h3>$1</h3></div>')
             .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
+            .replace(/^> (.*$)/gm, '<div class="content-block"><blockquote>$1</blockquote></div>')
             .replace(/^(?!<[a-z])(.*$)/gm, '<div class="content-block"><p>$1</p></div>');
-
-        // Process blockquotes after paragraph conversion
-        html = html.replace(/<div class="content-block"><p>&gt; (.*?)<\/p><\/div>/g, (match, content) => {
-            return `<div class="content-block"><blockquote>${content}</blockquote></div>`;
-        });
 
         // Process formatting within div content blocks that contain plain text
         html = html.replace(/<div class="content-block"><p>(.*?)<\/p><\/div>/g, (match, content) => {
