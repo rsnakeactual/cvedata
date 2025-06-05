@@ -2,6 +2,8 @@
 
 ## Robert “RSnake” Hansen
 
+![](preso/CVElogo.png)
+
 ---
 
 # About me
@@ -514,22 +516,7 @@ CISA changed it without telling anyone.
 
 ---
 
-# Analysis for VulncheckDB as of 20250605
-
-## Total VulncheckDB CVEs: 3706
-## Total High and Critical CVEs: 51198 (out of 296510 total CVEs)
-
-Method 1: Random coin flips (51198 times - the number of High+Critical CVEs)
-  - Finds 658 out of 3706 (17.8%)
-  - Misses 82.2% of VulncheckDB
-  - Does 98.7% more work than necessary to achieve the same result (wasted effort)
-
-Method 2: Only check High+Critical CVEs
-  - Finds 1899 out of 3706 (51.2%)
-  - Misses 48.8% of VulncheckDB
-  - Does 96.3% more work than necessary to achieve the same result (wasted effort)
-
-## Targeting High+Critical CVEs is 2.89x more effective than random selection.
+![[vulncheck_stats]]
 
 ---
 
