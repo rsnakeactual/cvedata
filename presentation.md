@@ -8,6 +8,7 @@ bgimage: preso/bg.jpg
 bgopacity: 30%
 font-color: 000000
 ---
+
 # At the RISK of CVE
 
 ## Robert “RSnake” Hansen
