@@ -200,11 +200,48 @@ class MarkdownPresentation {
                     document.body.style.backgroundColor = frontmatter['bgcolor'];
                 }
                 
+                // Add support for font color
+                if (frontmatter['font-color']) {
+                    const fontColor = frontmatter['font-color'].startsWith('#') ? 
+                        frontmatter['font-color'] : 
+                        `#${frontmatter['font-color']}`;
+                    document.body.style.color = fontColor;
+                }
+                
                 if (frontmatter['bgimage']) {
                     document.body.style.backgroundImage = `url('${frontmatter['bgimage']}')`;
                     document.body.style.backgroundSize = 'cover';
                     document.body.style.backgroundPosition = 'center';
                     document.body.style.backgroundRepeat = 'no-repeat';
+                    
+                    // Add support for background opacity
+                    if (frontmatter['bgopacity']) {
+                        const opacity = parseFloat(frontmatter['bgopacity']) / 100;
+                        if (!isNaN(opacity) && opacity >= 0 && opacity <= 1) {
+                            // Create a pseudo-element for the background with opacity
+                            const style = document.createElement('style');
+                            style.textContent = `
+                                body::before {
+                                    content: '';
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-image: url('${frontmatter['bgimage']}');
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    opacity: ${opacity};
+                                    z-index: -1;
+                                }
+                                body {
+                                    background-image: none !important;
+                                }
+                            `;
+                            document.head.appendChild(style);
+                        }
+                    }
                 }
             }
         }

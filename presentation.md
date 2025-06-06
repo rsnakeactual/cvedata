@@ -1,3 +1,13 @@
+---
+frontmatter: True
+refresh: 86400
+title: At The Risk of CVE
+author: Robert "RSnake" Hansen
+bgcolor: FFFFFF
+bgimage: preso/bg.jpg
+bgopacity: 30%
+font-color: 000000
+---
 # At the RISK of CVE
 
 ## Robert “RSnake” Hansen
