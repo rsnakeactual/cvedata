@@ -1,16 +1,16 @@
-# Analysis for ICE as of 20250717
+# Analysis for ICE as of 20250718
 
 ## Total ICE CVEs: 318
-## Total High and Critical CVEs: 53,597 (out of 302,141 total CVEs)
+## Total High and Critical CVEs: 53,640 (out of 302,247 total CVEs)
 
-Method 1: Random coin flips (53,597 times - the number of High+Critical CVEs)
-  - Finds 64 out of 318 (20.1%)
-  - Misses 79.9% of ICE
-  - Requires 99.9% wasted work to achieve 20.1% results
+Method 1: Random coin flips (53,640 times - the number of High+Critical CVEs)
+  - Finds 59 out of 318 (18.6%)
+  - Misses 81.4% of ICE
+  - Requires 99.9% wasted work to achieve 18.6% results
 
 Method 2: Only check High+Critical CVEs
   - Finds 248 out of 318 (78.0%)
   - Misses 22.0% of ICE
   - Requires 99.5% wasted work to achieve 78.0% results
 
-## Targeting High+Critical CVEs is 3.88x more effective than random selection.
+## Targeting High+Critical CVEs is 4.20x more effective than random selection.
