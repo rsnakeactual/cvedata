@@ -8,7 +8,6 @@ bgimage: preso/bg.jpg
 bgopacity: 30%
 font-color: 000000
 ---
-
 # At the RISK of CVE
 
 ## Robert “RSnake” Hansen
@@ -59,6 +58,33 @@ Components of the CVSS: Base, Temporal, and Environmental scores. Though almost 
 # Why Does Infosec Spend $200BN a Year and Still Get Hacked Anyway?
 
 ![](https://cvedata.com/images/cve_growth_over_time.png)
+
+
+---
+
+# Current (Scored) Breakdown
+
+```sql
+TABLE x = file('preso/cvss_score_frequency.csv')
+SELECT
+  CASE
+    WHEN CAST(cvss_score AS REAL) >= 9.0 THEN 'Critical >= 9.0'
+    WHEN CAST(cvss_score AS REAL) >= 7.0 THEN 'High >= 7.0 < 9.0'
+    WHEN CAST(cvss_score AS REAL) >= 4.0 THEN 'Medium >= 4.0 < 7.0'
+    ELSE 'Low < 4.0'
+  END AS severity,
+  SUM(CAST(number_of_cves AS INTEGER)) AS total_cves
+FROM x
+GROUP BY severity
+ORDER BY
+  CASE severity
+    WHEN 'Critical' THEN 1
+    WHEN 'High' THEN 2
+    WHEN 'Medium' THEN 3
+    WHEN 'Low' THEN 4
+    ELSE 5
+  END
+```
 
 ---
 
