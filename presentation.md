@@ -62,16 +62,16 @@ Components of the CVSS: Base, Temporal, and Environmental scores. Though almost 
 
 ---
 
-# Current (Scored) Breakdown
+# Current (Scored by CISA/CNAs) CVSS Breakdown
 
-```sql
+```sql table:myresult
 TABLE x = file('preso/cvss_score_frequency.csv')
 SELECT
   CASE
-    WHEN CAST(cvss_score AS REAL) >= 9.0 THEN 'Critical >= 9.0'
-    WHEN CAST(cvss_score AS REAL) >= 7.0 THEN 'High >= 7.0 < 9.0'
-    WHEN CAST(cvss_score AS REAL) >= 4.0 THEN 'Medium >= 4.0 < 7.0'
-    ELSE 'Low < 4.0'
+    WHEN CAST(cvss_score AS REAL) >= 9.0 THEN 'Critical'
+    WHEN CAST(cvss_score AS REAL) >= 7.0 THEN 'High'
+    WHEN CAST(cvss_score AS REAL) >= 4.0 THEN 'Medium'
+    ELSE 'Low'
   END AS severity,
   SUM(CAST(number_of_cves AS INTEGER)) AS total_cves
 FROM x
@@ -84,6 +84,14 @@ ORDER BY
     WHEN 'Low' THEN 4
     ELSE 5
   END
+```
+```plotly
+data:
+  - type: pie
+    labels: $severity
+    values: $total_cves
+    textinfo: label+percent
+    insidetextorientation: horizontal
 ```
 
 ---
