@@ -76,7 +76,8 @@
         CISA ADP (<a href="https://github.com/cisagov/vulnrichment">Vulnrichment</a>),
         Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>),
         VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>), 
-        KEVIntel (<a href="https://kevintel.com/">KEVIntel KEV</a>) and
+        KEVIntel (<a href="https://kevintel.com/">KEVIntel KEV</a>),
+        Mandiant (<a href="https://services.google.com/fh/files/misc/m-trends-2025-en.pdf">2025 M-Trends</a>) and
         National Vulnerability Database (<a href="https://nvd.nist.gov/developers/vulnerabilities">NVD CVSS</a>) data.
         </p>
 
@@ -609,6 +610,15 @@
                 KEVIntel KEVs and the venn overlap between Vulncheck KEVs to show overlap in coverage.
             </div>
             <button class="copy-button" onclick="copyGraphLink('vulncheck_kev_vs_kevintel_venn')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="mandiant_cvss_distribution">
+            <h2>Mandiant CVSS Distribution</h2>
+            <img src="./images/mandiant_cvss_distribution.png" alt="Mandiant CVSS Distribution">
+            <div class="description">
+                This is a static graph from Mandiant's M-Trends 2025 report. It shows the distribution of Mandiant CVSS scores, which shows how each vulnerability ranks in terms of severity.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('mandiant_cvss_distribution')">Copy a link to this graph</button>
         </div>
         
 
