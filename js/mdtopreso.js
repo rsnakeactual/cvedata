@@ -167,12 +167,12 @@ async function processSqlBlock(sqlBlock) {
     console.log('SQL result:', result);
     if (!result.length) {
         window._lastSqlResult = [];
-        return '<div>No results</div>';
+        return { html: '<div>No results</div>', data: [] };
     }
     const columns = result[0].columns.map(name => ({ name, type: 'auto' }));
     const data = result[0].values.map(row => Object.fromEntries(row.map((v, i) => [columns[i].name, v])));
     window._lastSqlResult = data;
-    return renderTable({ columns, data });
+    return { html: renderTable({ columns, data }), data: data };
 }
 
 async function fetchText(url) {
@@ -520,7 +520,11 @@ class MarkdownPresentation {
                         await injectJsYaml();
                         const plotId = 'plotly-' + Math.random().toString(36).substr(2, 9);
                         const sqlName = plotlyBlockMatch[1];
+                        console.log('Plotly block found, sqlName:', sqlName);
+                        console.log('window._sqlResults:', window._sqlResults);
+                        console.log('window._lastSqlResult:', window._lastSqlResult);
                         let sqlData = sqlName ? (window._sqlResults[sqlName] || []) : (window._lastSqlResult || []);
+                        console.log('sqlData being used:', sqlData);
                         console.log('Plotly YAML code:', code);
                         let plotSpec;
                         try {
@@ -545,45 +549,46 @@ class MarkdownPresentation {
                             }
                         }
                         console.log('After $var substitution:', plotSpec.data);
+                        // Store the plotly code and data for re-rendering
+                        const plotlyData = {
+                            code: code,
+                            plotSpec: plotSpec,
+                            sqlData: sqlData
+                        };
+                        result += `<div class="content-block"><div id="${plotId}" data-plotly-code='${JSON.stringify(plotlyData).replace(/'/g, "&apos;")}'></div></div>`;
+                        // Call Plotly.newPlot after the result is added to the DOM
                         setTimeout(() => {
                             try {
                                 console.log('Calling Plotly.newPlot with:', plotId, plotSpec.data, plotSpec.layout);
-                                window.Plotly.newPlot(plotId, plotSpec.data, plotSpec.layout);
+                                const plotElement = document.getElementById(plotId);
+                                if (plotElement) {
+                                    window.Plotly.newPlot(plotId, plotSpec.data, plotSpec.layout);
+                                } else {
+                                    console.error('Plotly element not found:', plotId);
+                                }
                             } catch (e) {
                                 console.error('Plotly.newPlot error:', e);
                             }
-                        }, 0);
-                        result += `<div class="content-block"><div id="${plotId}"></div></div>`;
+                        }, 100); // Small delay to ensure DOM is ready
                     } else if (sqlBlockMatch) {
                         const tableName = sqlBlockMatch[1];
                         // Process SQL code block
-                        const tableHtml = await processSqlBlock(code);
-                        // Parse the SQL result as an array of objects
-                        let sqlResultArr = [];
-                        try {
-                            const SQL = await window.initSqlJs({ locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}` });
-                            const db = new SQL.Database();
-                            // (re-run the SQL to get the result as array of objects)
-                            // This is a bit redundant but ensures we have the right format
-                            // (You may want to refactor processSqlBlock to return the array directly)
-                            // For now, parse the result from processSqlBlock
-                            // (Assume processSqlBlock returns the HTML table, not the data)
-                            // Instead, update processSqlBlock to store the result in window._sqlResults if tableName is given
-                        } catch (e) {}
+                        const result = await processSqlBlock(code);
                         if (tableName) {
                             // Store the result and suppress output
-                            window._sqlResults[tableName] = window._lastSqlResult || [];
+                            window._sqlResults[tableName] = result.data || [];
+                            console.log(`Stored SQL result for '${tableName}':`, window._sqlResults[tableName]);
                             // No output
                         } else {
                             // Store as last result and output as before
-                            window._lastSqlResult = window._lastSqlResult || [];
-                            result += `<div class="content-block">${tableHtml}</div>`;
+                            window._lastSqlResult = result.data || [];
+                            result += `<div class="content-block">${result.html}</div>`;
                         }
                     } else if (lang && lang.trim().toLowerCase() === 'sql') {
                         // Fallback for plain sql blocks
-                        const tableHtml = await processSqlBlock(code);
-                        window._lastSqlResult = window._lastSqlResult || [];
-                        result += `<div class="content-block">${tableHtml}</div>`;
+                        const result = await processSqlBlock(code);
+                        window._lastSqlResult = result.data || [];
+                        result += `<div class="content-block">${result.html}</div>`;
                     } else {
                 const id = 'code-' + Math.random().toString(36).substr(2, 9);
                         codeBlocks.push({ id, lang, code });
@@ -677,8 +682,8 @@ class MarkdownPresentation {
             markdown,
             /```sql\s*([\s\S]*?)```/g,
             async (match, sqlCode) => {
-                const tableHtml = await processSqlBlock(sqlCode);
-                return `<div class="content-block">${tableHtml}</div>`;
+                const result = await processSqlBlock(sqlCode);
+                return `<div class="content-block">${result.html}</div>`;
             }
         );
 
@@ -1115,6 +1120,9 @@ class MarkdownPresentation {
             const tempContainer = document.createElement('div');
             tempContainer.innerHTML = this.slides[index].content;
             
+            // Process SQL and plotly blocks for this slide
+            this.processSlideBlocks(tempContainer);
+            
             // Remove any duplicate content blocks
             const seenContent = new Set();
             const contentBlocks = tempContainer.querySelectorAll('.content-block');
@@ -1161,6 +1169,120 @@ class MarkdownPresentation {
             if (slideSelect) {
                 slideSelect.value = index + 1;
             }
+            
+            // Re-render plotly charts for this slide
+            this.renderPlotlyCharts();
+        }
+    }
+
+    renderPlotlyCharts() {
+        // Find all plotly divs and re-render them
+        const plotlyDivs = document.querySelectorAll('[id^="plotly-"]');
+        plotlyDivs.forEach(async (div) => {
+            const plotId = div.id;
+            // Get the stored plotly data from the data attribute
+            const plotlyDataAttr = div.getAttribute('data-plotly-code');
+            if (plotlyDataAttr) {
+                try {
+                    const plotlyData = JSON.parse(plotlyDataAttr);
+                    await this.renderPlotlyChart(plotId, plotlyData);
+                } catch (e) {
+                    console.error('Error parsing plotly data:', e);
+                }
+            }
+        });
+    }
+
+    async renderPlotlyChart(plotId, plotlyData) {
+        await injectPlotly();
+        await injectJsYaml();
+        
+        // Use the stored plotly data
+        const { plotSpec, sqlData } = plotlyData;
+        
+        // Substitute $column with arrays from sqlData if needed
+        if (sqlData && sqlData.length && plotSpec.data) {
+            const columns = Object.keys(sqlData[0]);
+            for (let trace of plotSpec.data) {
+                for (let key in trace) {
+                    if (typeof trace[key] === 'string' && trace[key].startsWith('$')) {
+                        const col = trace[key].slice(1);
+                        if (columns.includes(col)) {
+                            trace[key] = sqlData.map(row => row[col]);
+                        }
+                    }
+                }
+            }
+        }
+        
+        try {
+            window.Plotly.newPlot(plotId, plotSpec.data, plotSpec.layout);
+        } catch (e) {
+            console.error('Plotly.newPlot error:', e);
+        }
+    }
+
+    async processSlideBlocks(container) {
+        // Find and process SQL blocks first
+        const sqlBlocks = container.querySelectorAll('pre code.language-sql');
+        for (const sqlBlock of sqlBlocks) {
+            const code = sqlBlock.textContent;
+            const result = await processSqlBlock(code);
+            const wrapper = sqlBlock.closest('.content-block');
+            if (wrapper) {
+                wrapper.innerHTML = result.html;
+            }
+        }
+        
+        // Find and process plotly blocks
+        const plotlyBlocks = container.querySelectorAll('pre code.language-plotly');
+        for (const plotlyBlock of plotlyBlocks) {
+            const code = plotlyBlock.textContent;
+            await this.processPlotlyBlock(code, plotlyBlock);
+        }
+    }
+
+    async processPlotlyBlock(code, plotlyBlock) {
+        await injectPlotly();
+        await injectJsYaml();
+        const plotId = 'plotly-' + Math.random().toString(36).substr(2, 9);
+        
+        // Try to find SQL data from previous blocks
+        let sqlData = window._lastSqlResult || [];
+        
+        let plotSpec;
+        try {
+            plotSpec = window.jsyaml.load(code);
+        } catch (e) {
+            console.error('YAML parse error:', e, code);
+            plotSpec = {};
+        }
+        
+        // Substitute $column with arrays from sqlData
+        if (sqlData && sqlData.length && plotSpec.data) {
+            const columns = Object.keys(sqlData[0]);
+            for (let trace of plotSpec.data) {
+                for (let key in trace) {
+                    if (typeof trace[key] === 'string' && trace[key].startsWith('$')) {
+                        const col = trace[key].slice(1);
+                        if (columns.includes(col)) {
+                            trace[key] = sqlData.map(row => row[col]);
+                        }
+                    }
+                }
+            }
+        }
+        
+        const wrapper = plotlyBlock.closest('.content-block');
+        if (wrapper) {
+            wrapper.innerHTML = `<div id="${plotId}" style="width:100%;height:400px;"></div>`;
+            setTimeout(() => {
+                try {
+                    window.Plotly.newPlot(plotId, plotSpec.data, plotSpec.layout);
+                } catch (e) {
+                    console.error('Plotly.newPlot error:', e);
+                }
+            }, 0);
         }
     }
 
