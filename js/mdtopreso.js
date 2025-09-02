@@ -1311,7 +1311,7 @@ style.textContent = `
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        font-size: clamp(0.875rem, 3vw, 1.25rem); /* Reduced max size */
+        font-size: clamp(1.75rem, 6vw, 2.5rem); /* Doubled from 0.875rem, 3vw, 1.25rem */
     }
 
     .presentation-content {
@@ -1359,7 +1359,7 @@ style.textContent = `
         background: #2c3e50;
         color: white;
         padding: 1rem;
-        font-size: 0.9em;
+        font-size: 1.8em; /* Doubled from 0.9em */
         text-align: left;
         border-bottom: 1px solid #34495e;
         white-space: pre-line;
@@ -1417,7 +1417,7 @@ style.textContent = `
     #presenterModeBtn {
         background: none;
         border: none;
-        font-size: 1.2em;
+        font-size: 2.4em; /* Doubled from 1.2em */
         cursor: pointer;
         padding: 0.5rem;
         color: #666;
@@ -1436,7 +1436,7 @@ style.textContent = `
 
     /* Responsive font sizes with more reasonable maximums */
     h1 {
-        font-size: clamp(1.25rem, 6vw, 2.5rem);
+        font-size: clamp(2.5rem, 12vw, 5rem); /* Doubled from 1.25rem, 6vw, 2.5rem */
         margin-top: 0;
         padding-top: 0;
         word-wrap: break-word;
@@ -1444,33 +1444,33 @@ style.textContent = `
     }
 
     h2 {
-        font-size: clamp(1.1rem, 5vw, 2rem);
+        font-size: clamp(2.2rem, 10vw, 4rem); /* Doubled from 1.1rem, 5vw, 2rem */
         word-wrap: break-word;
         max-width: 100%;
     }
 
     h3 {
-        font-size: clamp(1rem, 4vw, 1.75rem);
+        font-size: clamp(2rem, 8vw, 3.5rem); /* Doubled from 1rem, 4vw, 1.75rem */
         word-wrap: break-word;
         max-width: 100%;
     }
 
     p {
-        font-size: clamp(0.875rem, 3vw, 1.25rem);
+        font-size: clamp(1.75rem, 6vw, 2.5rem); /* Doubled from 0.875rem, 3vw, 1.25rem */
         word-wrap: break-word;
         max-width: 100%;
     }
 
     /* Adjust list font sizes */
     .markdown-list {
-        font-size: clamp(0.875rem, 3vw, 1.25rem);
+        font-size: clamp(1.75rem, 6vw, 2.5rem); /* Doubled from 0.875rem, 3vw, 1.25rem */
         margin: 0.5rem 0;
         padding-left: 2rem;
     }
 
     /* Adjust blockquote font size */
     blockquote {
-        font-size: clamp(0.875rem, 3vw, 1.25rem);
+        font-size: clamp(1.75rem, 6vw, 2.5rem); /* Doubled from 0.875rem, 3vw, 1.25rem */
         border-left: 4px solid #007bff;
         margin: 1rem 0;
         padding: 0.5rem 1rem;
@@ -1481,7 +1481,7 @@ style.textContent = `
 
     /* Adjust table font size */
     .markdown-table {
-        font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+        font-size: clamp(1.5rem, 5vw, 2.2rem); /* Doubled from 0.75rem, 2.5vw, 1.1rem */
         border-collapse: collapse;
         width: 100%;
         margin: 1rem 0;
@@ -1489,7 +1489,7 @@ style.textContent = `
 
     /* Adjust code block font size */
     .shiki {
-        font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+        font-size: clamp(1.5rem, 5vw, 2.2rem); /* Doubled from 0.75rem, 2.5vw, 1.1rem */
         background-color: #0d1117;
         border-radius: 6px;
         padding: 1rem;
@@ -1502,7 +1502,7 @@ style.textContent = `
 
     /* Adjust Mermaid diagram font sizes */
     .mermaid {
-        font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+        font-size: clamp(1.5rem, 5vw, 2.2rem); /* Doubled from 0.75rem, 2.5vw, 1.1rem */
         width: 100%;
         min-height: 300px;
         margin: 1rem 0;
@@ -1513,22 +1513,22 @@ style.textContent = `
     }
 
     .mermaid .label {
-        font-size: clamp(0.7rem, 2vw, 1rem);
+        font-size: clamp(1.4rem, 4vw, 2rem); /* Doubled from 0.7rem, 2vw, 1rem */
     }
 
     .mermaid .section {
-        font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+        font-size: clamp(1.5rem, 5vw, 2.2rem); /* Doubled from 0.75rem, 2.5vw, 1.1rem */
         font-weight: bold;
     }
 
     .mermaid .title {
-        font-size: clamp(0.875rem, 3vw, 1.25rem);
+        font-size: clamp(1.75rem, 6vw, 2.5rem); /* Doubled from 0.875rem, 3vw, 1.25rem */
         font-weight: bold;
     }
 
     /* Adjust navigation font sizes */
     .presentation-nav button {
-        font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+        font-size: clamp(1.5rem, 5vw, 2.2rem); /* Doubled from 0.75rem, 2.5vw, 1.1rem */
         padding: 0.5rem 1rem;
         border: none;
         background: #007bff;
@@ -1540,7 +1540,7 @@ style.textContent = `
     }
 
     #slideSelect {
-        font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+        font-size: clamp(1.5rem, 5vw, 2.2rem); /* Doubled from 0.75rem, 2.5vw, 1.1rem */
         padding: 0.5rem;
         border: 1px solid #ddd;
         border-radius: 4px;

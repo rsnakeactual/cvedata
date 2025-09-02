@@ -43,7 +43,7 @@ How are CVE scores determined via the calculator? Depends on the person.
 
 Components of the CVSS: Base, Temporal, and Environmental scores. Though almost no one I’ve talked to uses temporal or environmental scores.
 
-## By way of example, behold! The Common Fruit Scoring System:
+## By way of example: The Common Fruit Scoring System:
 
 | Name | Edibility | Nutrition | Flavor | Stability | Sweetness | Total |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -55,7 +55,7 @@ Components of the CVSS: Base, Temporal, and Environmental scores. Though almost 
 
 ---
 
-# Why Does Infosec Spend $200BN a Year and Still Get Hacked Anyway?
+# Spending $200BN/yr to Still Get Hacked?
 
 ![](https://cvedata.com/images/cve_growth_over_time.png)
 
@@ -159,7 +159,7 @@ CVE has no concept of “user interaction is required”.
 
 # Scored vs Unscored
 
-## This does not count NVD, because MITRE doesn't count it.
+This does not count NVD as MITRE doesn't count it.
 
 ![](https://cvedata.com/images/cve_scoring_coverage.png)
 
@@ -186,7 +186,7 @@ $ grep -i score CVE-2024-4001.json
 
 ---
 
-# Numbering Authority Inconsistencies (Who Do You Trust?)
+# CNA Inconsistencies (Who Do You Trust?)
 
 ![](preso/ISSA_CVE_Scores_Presentation_20240327_8.png)
 
@@ -204,7 +204,7 @@ $ grep -i score CVE-2024-4001.json
 
 ---
 
-# There is Decent Overlap Between Scoring, But That's Not Necessarily a Good Thing It Turns Out
+# Scoring Overlap: NVD vs CISA/CNAs
 
 ![](https://cvedata.com/images/cisa_adp_cna_nvd_cvss_score_scatter.png)
 
@@ -216,13 +216,13 @@ $ grep -i score CVE-2024-4001.json
 
 ---
 
-# Only Around 6.6% of CVES Have References to Public Exploit Code
+# <10% of CVES Have Public Exploit Code
 
 ![](https://cvedata.com/images/exploit_references_by_year.png)
 
 ---
 
-# Introducing CISA KEV (Known Exploited Vulnerabilities)
+# CISA KEV (Known Exploited Vulnerabilities)
 
 ![](https://cvedata.com/images/kev_total_distribution.png)
 
@@ -241,7 +241,7 @@ $ grep -i score CVE-2024-4001.json
 
 ---
 
-# Average KEV CVSS Scores Make More Sense, Given What They Are
+# Average KEV CVSS Scores Make More Sense
 
 ![](https://cvedata.com/images/average_kev_cvss_by_year.png)
 
@@ -253,7 +253,7 @@ $ grep -i score CVE-2024-4001.json
 
 ---
 
-# Some CVSS Scores Are Far More Common Than Others
+# Some KEV Scores Are Far More
 
 ![](https://cvedata.com/images/kev_score_distribution.png)
 
@@ -276,8 +276,7 @@ $ grep -i score CVE-2024-4001.json
 | 1.4 | | |
 | 1.5 | | |
 
-This is from 20240327, so this may change a bit but likely it will only look more disproportionate, not more uniform.
-You are thousands of times more likely to have a CVSS 7.8 than a 1.3. But... why?
+This is sample data from 20240327, so this may change a bit.
 
 ---
 
@@ -291,11 +290,11 @@ You are thousands of times more likely to have a CVSS 7.8 than a 1.3. But... why
 
 # CVSS 3.x Math
 
-## Base Score=
- - If Impact ≤ 0, then 0
- - Base Score = Roundup( min(1.08 × (Impact + Exploitability), 10))
+Base Score = 
+- If Impact ≤ 0, then 0
+- Base Score = Roundup( min(1.08 × (Impact + Exploitability), 10))
 
-## A scaling factor of 1.08 is used to give the impact more weight in the final score. But… why?
+A scaling factor of 1.08 juices the impact score. Why?
 
 
 ![](preso/ISSA_CVE_Scores_Presentation_20240327_21.png)
@@ -304,7 +303,7 @@ You are thousands of times more likely to have a CVSS 7.8 than a 1.3. But... why
 
 ---
 
-# Why Can’t We Get CVSS 9.5 in CVE Version 3.x
+# Why No CVSS 9.5 in CVE Version 3.x?
 
 ## Working backwards
  - Score = RoundUp(Min(1.08 · C),10).
@@ -313,19 +312,21 @@ You are thousands of times more likely to have a CVSS 7.8 than a 1.3. But... why
  - Dividing through by 1.08 gives
  - Impact + Exploitability ∈ (9.4/1.08, 9.5/1.08] ≈ (8.7037, 8.7963].
 
-## In words, for a CVSS score of 9.5 you’d need the sum of Exploitability and Impact to fall somewhere in the very narrow interval (approximately 8.7037, 8.7963).
+For a CVSS score of 9.5 you’d need the sum of Exploitability and Impact to fall somewhere in the very narrow interval (approximately 8.7037, 8.7963).
 
-## The Common Fruit Scoring System is way better... Just saying. 
+## The Common Fruit Scoring System is way better... 
 
 ---
 
-# If CVSS V3 Can’t Be 0.1-1.5 (~14% of the key-space) That Might Account for the Bulk of the Double Digit % Shift
+# CVSS V3 Can’t Be 0.1-1.5 
+
+(~14% of the key-space) That Might Account for the Bulk of the Double Digit % Shift Up
 
 ![](https://cvedata.com/images/average_cvss_by_year.png)
 
 ---
 
-# Mathematical Spikes on Certain Numbers Regarding Brute Force Calculation of All Possible Values in CVSS v3
+# All Possible Values in CVSS v3
 
 ==This is a static graph==
 
@@ -333,15 +334,17 @@ You are thousands of times more likely to have a CVSS 7.8 than a 1.3. But... why
 
 ---
 
-# CVSS v3 Favors Certain Values, Eg: 7.8 and 7.5 and Disfavors 0.1-1.5 & 9.5.
+# CVSS v3 Favors Certain Values
+
+Eg: 7.8 and 7.5 and Disfavors 0.1-1.5 & 9.5.
 
 ![](https://cvedata.com/images/cvss_score_distribution_comparison_v3.png)
 
 ---
 
-# A Quick Aside About 2.0 Distribution (the Average Was Better but Overall It Was Worse)
+# A Quick Aside About 2.0 Distribution
 
-==This is a static graph==
+The average was better but overall it was worse.  ==This is a static graph==
 
 ![](https://cvedata.com/images/cvss_score_mathematical_probability_v20.png)
 
@@ -361,7 +364,7 @@ You are thousands of times more likely to have a CVSS 7.8 than a 1.3. But... why
 
 ---
 
-# Density Probability Is Better with CVSS v3 Than v4
+# Density Probability In Different Versions
 
 ==This is a static graph==
 
@@ -369,7 +372,7 @@ You are thousands of times more likely to have a CVSS 7.8 than a 1.3. But... why
 
 ---
 
-# Yet the Complexity of 4.0 Is Much Higher to Get Fewer Possibilities
+# The Complexity of 4.0 Is Much Higher
 
 ==This is a static graph==
 
@@ -383,7 +386,7 @@ You are thousands of times more likely to have a CVSS 7.8 than a 1.3. But... why
 
 ---
 
-# And a Decreasing Criticality (a Different View of the Same Data)
+# Decreasing Criticality
 
 ![](https://cvedata.com/images/severity_trends.png)
 
@@ -395,19 +398,19 @@ You are thousands of times more likely to have a CVSS 7.8 than a 1.3. But... why
 
 ---
 
-# Worse Yet! Critical CVE Analysis (CVSS >= 9.0):
+# Critical CVE Analysis (CVSS >= 9.0):
 
 ![](https://cvedata.com/images/critical_cve_distribution.png)
 
 ---
 
-# KEV Breakdown per Year (Notice Nothing Before 2002)
+# KEV Breakdown per Year (2002 Earliest)
 
 ![](https://cvedata.com/images/kevs_by_year.png)
 
 ---
 
-# Percentage Distribution of CVSS Scores in CISA KEV List
+# CVSS Scores in CISA KEV List
 
 ![](https://cvedata.com/images/kev_score_distribution_pie.png)
 
@@ -415,7 +418,9 @@ What is up with those lows...?
 
 ---
 
-# How is that possible? I give you the CNA (CVE numbering authorities)
+# How is that possible? 
+
+I give you the CNA (CVE numbering authorities).
 
 ![](preso/ISSA_CVE_Scores_Presentation_20240327_36.png)
 
@@ -433,13 +438,13 @@ Neither of them seem to be based in real-world evidence, or they wouldn't diverg
 
 ---
 
-# RAW # of Unscored CVEs and KEVs over the Years (Not NVD)
+# Raw # of Unscored CVEs and KEVs (Not NVD)
 
 ![](https://cvedata.com/images/unscored_comparison.png)
 
 ---
 
-# The CNAs Do Appear to Be Working (NVD Should Be Added)
+# The CNAs Appear to Be Working (Not NVD)
 
 ![](https://cvedata.com/images/unscored_percentage_comparison.png)
 
@@ -555,7 +560,9 @@ CISA changed it without telling anyone.
 
 ---
 
-# It's not even a flip of the coin @ > 50% difference
+# Not even a flip of the coin
+
+@ > 50% difference
 
 ![](https://cvedata.com/images/score_difference_distribution.png)
 
@@ -588,8 +595,11 @@ CVSS != Risk in the same way CFSS != Fruit
 
 # Q&A
 
-Robert “RSnake” Hansen - Managing Director 
+Robert “RSnake” Hansen
 
-Work: [Grossman Ventures](https://grossman.vc/) 
+- Managing Director, [Grossman Ventures](https://grossman.vc/)
+- CTO, [Evidence](https://www.rootevidence.com/)
+
 Me: [https://rsnake.com/](https://rsnake.com/)
+X: [https://x.com/rsnake](https://x.com/rsnake)
 The data: [https://cvedata.com/](https://cvedata.com/)
