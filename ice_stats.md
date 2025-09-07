@@ -1,9 +1,9 @@
-# Analysis for ICE as of 20250906
+# Analysis for ICE as of 20250907
 
 ## Total ICE CVEs: 318
-### Total High and Critical: 56,185 (out of 308,520 total scored CVEs)
+### Total High and Critical: 56,197 (out of 308,564 total scored CVEs)
 
-Method 1: Random coin flips (56,185 times - the number of High+Critical CVEs)
+Method 1: Random coin flips (56,197 times - the number of High+Critical CVEs)
   - Finds 67 out of 318 (21.1%)
   - Misses 78.9% of ICE
   - Requires 99.9% wasted work to achieve 21.1% results
