@@ -253,7 +253,7 @@ $ grep -i score CVE-2024-4001.json
 
 ---
 
-# Some KEV Scores Are Far More
+# Some KEV Scores Are Far More Likely Than Others
 
 ![](https://cvedata.com/images/kev_score_distribution.png)
 
