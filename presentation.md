@@ -19,6 +19,7 @@ font-color: 000000
 # About me
 
 - Managing Director – Grossman Ventures
+- CTO - Root Evidence, Inc
 - Former CTO of Bit Discovery which was acquired by Tenable (TENB)
 - 30 years in information security
 - 4 books
@@ -230,7 +231,9 @@ $ grep -i score CVE-2024-4001.json
 
 # KEV Compared to CVE
 
-## “Known Exploited Vulnerabilities” [https://www.cisa.gov/known-exploited-vulnerabilities-catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+## “Known Exploited Vulnerabilities”
+
+[https://www.cisa.gov/known-exploited-vulnerabilities-catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
 * But what about other vulnerabilities that we know are exploited?
 * Shhhhhh… that’s “other known exploited vulnerabilities”
 * KEV population/CVE population = ~0.4% - 0.5%
@@ -589,7 +592,7 @@ CISA changed it without telling anyone.
 
 Netsec/Appsec is doomed if you rely on CVSS alone. We’re working on too much that doesn’t matter. We need to start thinking about the vulns that lead to verifiable loss, not the ones that are never exploited.  We need  *evidence-based*  risk.  __We need ROSI__!
 
-CVSS != Risk in the same way CFSS != Fruit
+CVSS != Risk in the same way that CFSS != Fruit
 
 ---
 
@@ -598,7 +601,7 @@ CVSS != Risk in the same way CFSS != Fruit
 Robert “RSnake” Hansen
 
 - Managing Director, [Grossman Ventures](https://grossman.vc/)
-- CTO, [Evidence](https://www.rootevidence.com/)
+- CTO, [Root Evidence, Inc.](https://www.rootevidence.com/)
 
 Me: [https://rsnake.com/](https://rsnake.com/)
 X: [https://x.com/rsnake](https://x.com/rsnake)
