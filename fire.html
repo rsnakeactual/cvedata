@@ -1,0 +1,260 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CVEdata.com</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                color: #333;
+            }
+            h1, h2 {
+                color: #2c3e50;
+                border-bottom: 2px solid #eee;
+                padding-bottom: 10px;
+            }
+            .graph-container {
+                margin: 30px 0;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .graph-container img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 20px auto;
+            }
+            .description {
+                margin: 15px 0;
+            }
+            .timestamp {
+                color: #666;
+                font-style: italic;
+                margin-top: 50px;
+            }
+            .copy-button {
+                background-color: #f0f0f0;
+                border: 1px solid #ddd;
+                padding: 5px 10px;
+                border-radius: 4px;
+                cursor: pointer;
+                margin: 10px 0;
+            }
+            .copy-button:hover {
+                background-color: #e0e0e0;
+            }
+        </style>
+        <script>
+            function copyGraphLink(graphId) {
+                const url = window.location.origin + window.location.pathname + '#' + graphId;
+                navigator.clipboard.writeText(url).then(() => {
+                    alert('Link copied to clipboard!');
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <h1>CVEdata.com</h1>
+        <p>
+        This report aims to provide a comprehensive analysis of:
+        Common Vulnerabilities and Exposures (<a href="https://github.com/CVEProject/cvelistV5">CVE cvelistV5</a>), 
+        CISA Known Exploited Vulnerabilities (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">KEV<a/>),
+        CISA ADP (<a href="https://github.com/cisagov/vulnrichment">Vulnrichment</a>),
+        Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>),
+        VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>),
+        <strike>KEVIntel (<a href="https://kevintel.com/">KEVIntel KEV</a>) (now defunct)</strike>,
+        Mandiant (<a href="https://services.google.com/fh/files/misc/m-trends-2025-en.pdf">2025 M-Trends</a>),
+        National Vulnerability Database (<a href="https://nvd.nist.gov/developers/vulnerabilities">NVD CVSS</a>),
+        Metasploit (<a href="https://github.com/rapid7/metasploit-framework">Metasploit</a>),
+        Nuclei (<a href="https://github.com/projectdiscovery/nuclei-templates">Nuclei Templates</a>),
+        Google Project Zero (<a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view?gid=0#gid=0">"Oday in the wild"</a>),
+        ExploitDB (<a href="https://gitlab.com/exploit-database/exploitdb/">ExploitDB</a>),
+        and FIRE (Financial Risk Exposure) data from Insurance carrier(s).
+        </p>
+
+        <div class="graph-container" id="fire_epss_correlation">
+            <h2>FIRE vs EPSS Correlation</h2>
+            <img src="./images/fire_epss_correlation.png" alt="FIRE vs EPSS Correlation">
+            <div class="description">
+                Shows the correlation between FIRE and EPSS scores, providing insight into the relationship between the two. The further from perfect agreement the worse the correlation. Only scored vulnerabilities are included.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_epss_correlation')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_cvss_score_distribution">
+            <h2>FIRE CVSS Score Distribution</h2>
+            <img src="./images/fire_cvss_score_distribution.png" alt="FIRE CVSS Score Distribution">
+            <div class="description">
+                Shows the distribution of FIRE CVSS scores, providing insight into the evolution of vulnerability scoring standards.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_cvss_score_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_cvss_severity_distribution">
+            <h2>FIRE CVSS Severity Distribution</h2>
+            <img src="./images/fire_cvss_severity_distribution.png" alt="FIRE CVSS Severity Distribution">
+            <div class="description">
+                Shows the distribution of FIRE CVSS severity scores, providing insight into the evolution of vulnerability scoring standards.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_cvss_severity_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_vulns_by_year">
+            <h2>FIRE Vulns by Year</h2>
+            <img src="./images/fire_vulns_by_year.png" alt="FIRE Vulns by Year">
+            <div class="description">
+                Shows the distribution of FIRE vulnerabilities by year, providing insight into the evolution of vulnerability discovery and disclosure over time.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_vulns_by_year')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_vendors_distribution">
+            <h2>FIRE Vendors Distribution</h2>
+            <img src="./images/fire_vendors_distribution.png" alt="FIRE Vendors Distribution">
+            <div class="description">
+                Shows the distribution of FIRE vendors across all FIRE vulns.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_vendors_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_epss_score_distribution">
+            <h2>FIRE EPSS Score Distribution</h2>
+            <img src="./images/fire_epss_score_distribution.png" alt="FIRE EPSS Score Distribution">
+            <div class="description">
+                Shows the distribution of FIRE EPSS scores, providing insight into the efficacy of FIRE vs EPSS.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_epss_score_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_kev_overlap">
+            <h2>CISA KEV-FIRE Overlap</h2>
+            <img src="./images/fire_kev_overlap.png" alt="CISA KEV-FIRE Overlap">
+            <div class="description">
+                Shows the overlap between KEV and FIRE vulnerabilities.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_kev_overlap')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_vulncheck_overlap">
+            <h2>VulnCheck KEV-FIRE Overlap</h2>
+            <img src="./images/fire_vulncheck_overlap.png" alt="VulnCheck KEV-FIRE Overlap">
+            <div class="description">
+                Shows the overlap between VulnCheck KEV and FIRE vulnerabilities.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_vulncheck_overlap')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_dbir_overlap">
+            <h2>FIRE Verizon DBIR Overlap</h2>
+            <img src="./images/fire_dbir_overlap.png" alt="FIRE Verizon DBIR Overlap">
+            <div class="description">
+                Shows the overlap between FIRE and Verizon DBIR vulnerabilities.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_dbir_overlap')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="vulncheck_dbir_overlap">
+            <h2>Vulncheck vs Verizon DBIR Overlap</h2>
+            <img src="./images/vulncheck_dbir_overlap.png" alt="Vulncheck vs Verizon DBIR Overlap">
+            <div class="description">
+                Shows the overlap between Vulncheck KEV and Verizon DBIR vulnerabilities.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('vulncheck_dbir_overlap')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="dbir_year_distribution">
+            <h2>DBIR Year Distribution</h2>
+            <img src="./images/dbir_year_distribution.png" alt="DBIR Year Distribution">
+            <div class="description">
+                Shows the distribution of DBIR CVEs by publication year.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('dbir_year_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="dbir_epss_correlation">
+            <h2>DBIR-EPSS Correlation</h2>
+            <img src="./images/dbir_epss_correlation.png" alt="DBIR-EPSS Correlation">
+            <div class="description">
+                Shows the correlation between DBIR and EPSS scores. The more right the better the correlation. Only scored vulnerabilities are included.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('dbir_epss_correlation')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="nuclei_fire_venn">
+            <h2>FIRE-Nuclei Overlap</h2>
+            <img src="./images/nuclei_fire_venn.png" alt="FIRE-Nuclei Overlap">
+            <div class="description">
+                Shows the overlap between FIRE and Nuclei templates.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('nuclei_fire_venn')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="metasploit_fire_venn">
+            <h2>Metasploit-FIRE Overlap</h2>
+            <img src="./images/metasploit_fire_venn.png" alt="Metasploit-FIRE Overlap">
+            <div class="description">
+                Shows the overlap between Metasploit CVEs and FIRE vulnerabilities.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('metasploit_fire_venn')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_mandiant_venn">
+            <h2>FIRE-Mandiant Overlap</h2>
+            <img src="./images/fire_mandiant_venn.png" alt="FIRE-Mandiant Overlap">
+            <div class="description">
+                Shows the overlap between FIRE and Mandiant 2025 M-Trends CVEs.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_mandiant_venn')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_google_p0_venn">
+            <h2>FIRE-Google Project Zero "Oday in the wild" Overlap</h2>
+            <img src="./images/fire_google_p0_venn.png" alt="FIRE-Google Project Zero "Oday in the wild" Overlap">
+            <div class="description">
+                Shows the overlap between FIRE and Google Project Zero "Oday in the wild" CVEs.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_google_p0_venn')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_exploit_references_venn">
+            <h2>FIRE-Exploit References Overlap</h2>
+            <img src="./images/fire_exploit_references_venn.png" alt="FIRE-Exploit References Overlap">
+            <div class="description">
+                Shows the overlap between FIRE and CVEs with exploit references.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_exploit_references_venn')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_exploitdb_venn">
+            <h2>FIRE-ExploitDB Overlap</h2>
+            <img src="./images/fire_exploitdb_venn.png" alt="FIRE-ExploitDB Overlap">
+            <div class="description">
+                Shows the overlap between FIRE and ExploitDB CVEs.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_exploitdb_venn')">Copy a link to this graph</button>
+        </div>
+        
+
+        <div class="disclaimer">
+            Compiled by Robert "<a href="https://rsnake.com/">RSnake</a>" Hansen. I do not guarantee the correctness of the data or images and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research. Are you looking for the presentation I did on this? The deck is <a href="https://www.dropbox.com/scl/fi/409684twgg15igqd2g5b8/HouSecCon_CVE_Scores_Presentation_20250930.pptx?rlkey=vf1d5hkqy6w5u6bb391wt9n30&dl=0">here</a>, or you can find the most current version <a href="https://cvedata.com/presentation.html?page=presentation.md#slide=1">here</a> (like this site, the deck updates automatically).
+        </div>
+        <div class="timestamp">
+            Report generated on: 2025-10-31
+        </div>
+    </body>
+    </html>
+    
