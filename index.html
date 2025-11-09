@@ -77,8 +77,10 @@
         Exploit Prediction Scoring System (<a href="https://epss.cyentia.com/">EPSS</a>),
         VulnCheck (<a href="https://vulncheck.io/">VulnCheck KEV</a>), 
         <strike>KEVIntel (<a href="https://kevintel.com/">KEVIntel KEV</a>) (now defunct)</strike>,
-        Mandiant (<a href="https://services.google.com/fh/files/misc/m-trends-2025-en.pdf">2025 M-Trends</a>) and
-        National Vulnerability Database (<a href="https://nvd.nist.gov/developers/vulnerabilities">NVD CVSS</a>) data.
+        Mandiant (<a href="https://services.google.com/fh/files/misc/m-trends-2025-en.pdf">2025 M-Trends</a>)
+        National Vulnerability Database (<a href="https://nvd.nist.gov/developers/vulnerabilities">NVD CVSS</a>) data,
+        EUVD (<a href="https://euvd.enisa.europa.eu/apidoc">EUVD</a>) data and
+        ENISA EU CSIRT Network (<a href="https://github.com/enisaeu/CNW/">KEV</a>) data.
         </p>
 
         <div class="graph-container" id="cve_growth_over_time">
@@ -585,12 +587,48 @@
             <button class="copy-button" onclick="copyGraphLink('mandiant_cvss_distribution')">Copy a link to this graph</button>
         </div>
         
+        <div class="graph-container" id="cve_euvd_venn">
+            <h2>CVE-EUVD Overlap</h2>
+            <img src="./images/cve_euvd_venn.png" alt="CVE-EUVD Overlap">
+            <div class="description">
+                Shows the overlap between CVE and EUVD vulnerabilities.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('cve_euvd_venn')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="cve_euvd_score_scatter">
+            <h2>CVE CVSS vs EUVD Base Score Comparison</h2>
+            <img src="./images/cve_euvd_score_scatter.png" alt="CVE CVSS vs EUVD Base Score Comparison">
+            <div class="description">
+                Shows the comparison between CVE CVSS and EUVD Base Score. The closer to the center the better the agreement. The further from the center the worse the agreement. Only scored vulnerabilities are included. Notice how EUVD tends to rank things slightly higher than CVE CVSS.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('cve_euvd_score_scatter')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="cve_euvd_score_differences">
+            <h2>CVE CVSS vs EUVD Base Score Comparison</h2>
+            <img src="./images/cve_euvd_score_differences.png" alt="CVE CVSS vs EUVD Base Score Comparison">
+            <div class="description">
+                Shows the comparison between CVE CVSS and EUVD Base Score. The closer to the center the better the agreement. The further from the center the worse the agreement. Only scored vulnerabilities are included. Notice how EUVD when it does rank things differently the delta tends to be higher than CVE CVSS.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('cve_euvd_score_differences')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="enisa_cisa_kev_venn">
+            <h2>ENISA EU KEV vs CISA KEV Overlap</h2>
+            <img src="./images/enisa_cisa_kev_venn.png" alt="ENISA EU KEV vs CISA KEV Overlap">
+            <div class="description">
+                Shows the overlap between ENISA EU KEV and CISA KEV.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('enisa_cisa_kev_venn')">Copy a link to this graph</button>
+        </div>
+        
 
         <div class="disclaimer">
             Compiled by Robert "<a href="https://rsnake.com/">RSnake</a>" Hansen. I do not guarantee the correctness of the data or images and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research. Are you looking for the presentation I did on this? The deck is <a href="https://www.dropbox.com/scl/fi/409684twgg15igqd2g5b8/HouSecCon_CVE_Scores_Presentation_20250930.pptx?rlkey=vf1d5hkqy6w5u6bb391wt9n30&dl=0">here</a>, or you can find the most current version <a href="https://cvedata.com/presentation.html?page=presentation.md#slide=1">here</a> (like this site, the deck updates automatically).
         </div>
         <div class="timestamp">
-            Report generated on: 2025-11-08
+            Report generated on: 2025-11-09
         </div>
     </body>
     </html>

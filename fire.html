@@ -83,6 +83,8 @@
         Nuclei (<a href="https://github.com/projectdiscovery/nuclei-templates">Nuclei Templates</a>),
         Google Project Zero (<a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view?gid=0#gid=0">"Oday in the wild"</a>),
         ExploitDB (<a href="https://gitlab.com/exploit-database/exploitdb/">ExploitDB</a>),
+        EUVD (<a href="https://euvd.enisa.europa.eu/apidoc">EUVD</a>),
+        ENISA EU CSIRT Network (<a href="https://github.com/enisaeu/CNW/">KEV</a>),
         and FIRE (Financial Risk Exposure) data from Insurance carrier(s).
         </p>
 
@@ -111,6 +113,24 @@
                 Shows the distribution of FIRE CVSS severity scores, providing insight into the evolution of vulnerability scoring standards.
             </div>
             <button class="copy-button" onclick="copyGraphLink('fire_cvss_severity_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_euvd_cvss_score_distribution">
+            <h2>FIRE vs EUVD CVSS score comparison</h2>
+            <img src="./images/fire_euvd_cvss_score_distribution.png" alt="FIRE vs EUVD CVSS score comparison">
+            <div class="description">
+                Shows the comparison between FIRE CVSS and EUVD Base Score. The closer to the center the better the agreement. The further from the center the worse the agreement. Only scored vulnerabilities are included. Notice how EUVD tends to rank things slightly higher than FIRE CVSS.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_euvd_cvss_score_distribution')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="fire_euvd_severity_distribution">
+            <h2>FIRE vs EUVD CVSS score severity distribution</h2>
+            <img src="./images/fire_euvd_severity_distribution.png" alt="FIRE vs EUVD CVSS score severity distribution">
+            <div class="description">
+                Shows the distribution of FIRE CVSS severity scores compared to EUVD Base Score. The closer to the center the better the agreement. The further from the center the worse the agreement. Only scored vulnerabilities are included. Notice how EUVD when it does rank things differently the delta tends to be higher than FIRE CVSS.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('fire_euvd_severity_distribution')">Copy a link to this graph</button>
         </div>
         
         <div class="graph-container" id="fire_vulns_by_year">
@@ -248,12 +268,21 @@
             <button class="copy-button" onclick="copyGraphLink('fire_exploitdb_venn')">Copy a link to this graph</button>
         </div>
         
+        <div class="graph-container" id="enisa_fire_venn">
+            <h2>ENISA EU KEV-FIRE Overlap</h2>
+            <img src="./images/enisa_fire_venn.png" alt="ENISA EU KEV-FIRE Overlap">
+            <div class="description">
+                Shows the overlap between ENISA EU KEV and FIRE vulnerabilities.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('enisa_fire_venn')">Copy a link to this graph</button>
+        </div>
+        
 
         <div class="disclaimer">
             Compiled by Robert "<a href="https://rsnake.com/">RSnake</a>" Hansen. I do not guarantee the correctness of the data or images and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research. Are you looking for the presentation I did on this? The deck is <a href="https://www.dropbox.com/scl/fi/409684twgg15igqd2g5b8/HouSecCon_CVE_Scores_Presentation_20250930.pptx?rlkey=vf1d5hkqy6w5u6bb391wt9n30&dl=0">here</a>, or you can find the most current version <a href="https://cvedata.com/presentation.html?page=presentation.md#slide=1">here</a> (like this site, the deck updates automatically).
         </div>
         <div class="timestamp">
-            Report generated on: 2025-11-08
+            Report generated on: 2025-11-09
         </div>
     </body>
     </html>
