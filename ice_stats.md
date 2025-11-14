@@ -1,16 +1,16 @@
-# Analysis for FIRE as of 20251113
+# Analysis for FIRE as of 20251114
 
-## Total FIRE CVEs: 415
-### Total High and Critical: 59,579 (out of 318,044 total scored CVEs)
+## Total FIRE CVEs: 426
+### Total High and Critical: 59,633 (out of 318,196 total scored CVEs)
 
-Method 1: Random coin flips (59,579 times - the number of High+Critical CVEs)
-  - Finds 78 out of 415 (18.8%)
-  - Misses 81.2% of FIRE
-  - Requires 99.9% wasted work to achieve 18.8% results
+Method 1: Random coin flips (59,633 times - the number of High+Critical CVEs)
+  - Finds 88 out of 426 (20.7%)
+  - Misses 79.3% of FIRE
+  - Requires 99.9% wasted work to achieve 20.7% results
 
 Method 2: Only check High+Critical CVEs
-  - Finds 338 out of 415 (81.4%)
-  - Misses 18.6% of FIRE
-  - Requires 99.4% wasted work to achieve 81.4% results
+  - Finds 348 out of 426 (81.7%)
+  - Misses 18.3% of FIRE
+  - Requires 99.4% wasted work to achieve 81.7% results
 
-## Targeting High+Critical CVEs is 4.33x more effective than random selection.
+## Targeting High+Critical CVEs is 3.95x more effective than random selection.
