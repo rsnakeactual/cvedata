@@ -1,4 +1,4 @@
-# Analysis for FIRE as of 20251225
+# Analysis for FIRE as of 20251226
 
 ## Total FIRE CVEs: 426
 ### Total High and Critical: 60,855 (out of 321,586 total scored CVEs)
