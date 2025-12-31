@@ -1,16 +1,16 @@
-# Analysis for VulncheckDB as of 20251230
+# Analysis for VulncheckDB as of 20251231
 
-## Total VulncheckDB CVEs: 4,442
+## Total VulncheckDB CVEs: 4,448
 ### Total High and Critical: 60,855 (out of 321,586 total scored CVEs)
 
 Method 1: Random coin flips (60,855 times - the number of High+Critical CVEs)
-  - Finds 857 out of 4,442 (19.3%)
-  - Misses 80.7% of VulncheckDB
-  - Requires 98.6% wasted work to achieve 19.3% results
+  - Finds 845 out of 4,448 (19.0%)
+  - Misses 81.0% of VulncheckDB
+  - Requires 98.6% wasted work to achieve 19.0% results
 
 Method 2: Only check High+Critical CVEs
-  - Finds 2,346 out of 4,442 (52.8%)
+  - Finds 2,350 out of 4,448 (52.8%)
   - Misses 47.2% of VulncheckDB
   - Requires 96.1% wasted work to achieve 52.8% results
 
-## Targeting High+Critical CVEs is 2.74x more effective than random selection.
+## Targeting High+Critical CVEs is 2.78x more effective than random selection.
