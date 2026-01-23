@@ -87,8 +87,8 @@
         ENISA EU CSIRT Network (<a href="https://github.com/enisaeu/CNW/">KEV</a>),
         FSTEC of Russia (<a href="https://bdu.fstec.ru/vul">BDU</a>) data,
         JVN iPedia (<a href="https://jvndb.jvn.jp/ja/feed/">JVNDBRSS</a>) data,
-        MITRE (<a href="https://cwe.mitre.org/">CWE</a>) and <a href="https://cwe.mitre.org/top25/archive/2025/2025_cwe_top25.html">CWE-Top25</a>) data,
-        OWASP Top 10 (<a href="https://github.com/OWASP/Top10">OWASP Top 10</a>) data
+        MITRE (<a href="https://cwe.mitre.org/">CWE</a> and <a href="https://cwe.mitre.org/top25/archive/2025/2025_cwe_top25.html">CWE-Top25</a>) data,
+        OWASP (<a href="https://github.com/OWASP/Top10">Top 10</a>) data
         and FIRE (Financial Risk Exposure) data from Insurance carrier(s).
         </p>
 
@@ -315,6 +315,15 @@
                 Shows the MITRE Top 25 CWEs ranked by FIRE vulnerability counts, providing insight into which CWEs are most prevalent in FIRE vulnerabilities.
             </div>
             <button class="copy-button" onclick="copyGraphLink('fire_mitre_top25')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="cwe_fire_coverage_pie">
+            <h2>CWE FIRE Coverage</h2>
+            <img src="./images/cwe_fire_coverage_pie.png" alt="CWE FIRE Coverage">
+            <div class="description">
+                Shows a pie chart of the proportion of CWEs that have FIRE vulnerabilities versus those that do not.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('cwe_fire_coverage_pie')">Copy a link to this graph</button>
         </div>
         
 
