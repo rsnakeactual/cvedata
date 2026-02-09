@@ -382,6 +382,33 @@
             <button class="copy-button" onclick="copyGraphLink('ransomfeed_it_mitre_venn')">Copy a link to this graph</button>
         </div>
         
+        <div class="graph-container" id="zywave_mitre_venn">
+            <h2>Zywave vs MITRE ATT&CK Groups</h2>
+            <img src="./images/zywave_mitre_venn.png" alt="Zywave vs MITRE ATT&CK Groups">
+            <div class="description">
+                Venn diagram of actor groups in Zywave cyber claims vs MITRE ATT&CK groups (canonical groups, aliases de-duped).
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('zywave_mitre_venn')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="zywave_claims_by_actor">
+            <h2>Zywave cyber claims by actor</h2>
+            <img src="./images/zywave_claims_by_actor.png" alt="Zywave cyber claims by actor">
+            <div class="description">
+                Scatter: average claim size (USD) vs number of claims per actor group from Zywave cyber incident data (canonical groups, aliases de-duped).
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('zywave_claims_by_actor')">Copy a link to this graph</button>
+        </div>
+        
+        <div class="graph-container" id="zywave_naics_bubble">
+            <h2>Zywave cyber claims by NAICS sector</h2>
+            <img src="./images/zywave_naics_bubble.png" alt="Zywave cyber claims by NAICS sector">
+            <div class="description">
+                Bubble chart: one bubble per 2-digit NAICS sector; x = number of events, y = total amount (USD), size/color = avg claim size; legend shows NAICS code and sector description.
+            </div>
+            <button class="copy-button" onclick="copyGraphLink('zywave_naics_bubble')">Copy a link to this graph</button>
+        </div>
+        
         <div class="graph-container" id="fire_cvss_attributes_bars">
             <h2>FIRE CVSS Vector Attributes</h2>
             <img src="./images/fire_cvss_attributes_bars.png" alt="FIRE CVSS Vector Attributes">
@@ -405,7 +432,7 @@
             Compiled by Robert "<a href="https://rsnake.com/">RSnake</a>" Hansen. I do not guarantee the correctness of the data or images and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research. Are you looking for the presentation I did on this? The deck is <a href="https://www.dropbox.com/scl/fi/409684twgg15igqd2g5b8/HouSecCon_CVE_Scores_Presentation_20250930.pptx?rlkey=vf1d5hkqy6w5u6bb391wt9n30&dl=0">here</a>, or you can find the most current version <a href="https://cvedata.com/presentation.html?page=presentation.md#slide=1">here</a> (like this site, the deck updates automatically).
         </div>
         <div class="timestamp">
-            Report generated on: 2026-02-08
+            Report generated on: 2026-02-09
         </div>
     </body>
     </html>
