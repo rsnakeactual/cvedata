@@ -1,32 +1,32 @@
 {
   "available": true,
-  "cvelistTotal": 347320,
+  "cvelistTotal": 347394,
   "bars": [
     {
       "name": "EUVD (EU)",
       "overlapPct": 100,
       "overlapCount": 347081,
       "dbTotal": 405539,
-      "scoreDisagreePct": 19
+      "scoreDisagreePct": 18
     },
     {
       "name": "JVN iPedia (Japan)",
       "overlapPct": 79,
       "overlapCount": 274544,
       "dbTotal": 274611,
-      "scoreDisagreePct": 19
+      "scoreDisagreePct": 18
     },
     {
       "name": "CNVD (China)",
       "overlapPct": 30,
       "overlapCount": 105160,
       "dbTotal": 105355,
-      "scoreDisagreePct": 20
+      "scoreDisagreePct": 19
     }
   ],
   "stats": [
     {
-      "number": "347,320",
+      "number": "347,394",
       "desc": "CVEs in cvelistV5 (baseline)"
     },
     {
