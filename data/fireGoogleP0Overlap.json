@@ -1,0 +1,22 @@
+{
+  "available": true,
+  "fireTotal": 558,
+  "p0Total": 402,
+  "both": 54,
+  "fireOnly": 504,
+  "p0Only": 348,
+  "stats": [
+    {
+      "number": "558",
+      "desc": "FIRE vulnerabilities"
+    },
+    {
+      "number": "54",
+      "desc": "In both FIRE and Google P0 \"0day in the wild\""
+    },
+    {
+      "number": "402",
+      "desc": "Google Project Zero catalog"
+    }
+  ]
+}

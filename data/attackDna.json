@@ -1,0 +1,86 @@
+{
+  "available": true,
+  "categories": [
+    {
+      "title": "Attack Vector",
+      "key": "av"
+    },
+    {
+      "title": "Attack Complexity",
+      "key": "ac"
+    },
+    {
+      "title": "Privileges Required",
+      "key": "pr"
+    },
+    {
+      "title": "User Interaction",
+      "key": "ui"
+    }
+  ],
+  "av": {
+    "labels": [
+      "Network",
+      "Adjacent",
+      "Local",
+      "Physical"
+    ],
+    "all": [
+      72,
+      3,
+      24,
+      1
+    ],
+    "exploited": [
+      73,
+      2,
+      25,
+      0
+    ]
+  },
+  "ac": {
+    "labels": [
+      "Low",
+      "High"
+    ],
+    "all": [
+      91,
+      9
+    ],
+    "exploited": [
+      92,
+      8
+    ]
+  },
+  "pr": {
+    "labels": [
+      "None",
+      "Low",
+      "High"
+    ],
+    "all": [
+      56,
+      35,
+      9
+    ],
+    "exploited": [
+      72,
+      23,
+      5
+    ]
+  },
+  "ui": {
+    "labels": [
+      "None",
+      "Required"
+    ],
+    "all": [
+      68,
+      32
+    ],
+    "exploited": [
+      73,
+      27
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "available": true,
+  "labels": [
+    "CWEs with ICE vulns",
+    "CWEs without ICE vulns"
+  ],
+  "data": [
+    227,
+    742
+  ],
+  "stats": [
+    {
+      "number": "227",
+      "desc": "CWEs with ≥1 ICE vulnerability"
+    },
+    {
+      "number": "23.4%",
+      "desc": "Of all CWEs in CWE catalog"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "available": true,
+  "chartLabels": [
+    "Ransomware-linked",
+    "Other exploited"
+  ],
+  "chartData": [
+    1518,
+    0
+  ],
+  "chartColors": [
+    "#E63946",
+    "#64748B"
+  ],
+  "facts": [
+    {
+      "number": "1 in 5",
+      "desc": "exploited vulnerabilities are linked to ransomware campaigns",
+      "color": "#E63946"
+    },
+    {
+      "number": "1,518",
+      "desc": "KEVs used in known ransomware campaigns"
+    },
+    {
+      "number": "100%",
+      "desc": "of all KEVs have ransomware linkage"
+    }
+  ]
+}

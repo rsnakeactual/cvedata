@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "vulncheckTotal": 4804,
+  "dbirTotal": 35,
+  "both": 33,
+  "vulncheckOnly": 4771,
+  "dbirOnly": 2,
+  "labels": [
+    "VulnCheck only",
+    "Both",
+    "DBIR only"
+  ],
+  "data": [
+    4771,
+    33,
+    2
+  ],
+  "stats": [
+    {
+      "number": "4,804",
+      "desc": "VulnCheck KEV"
+    },
+    {
+      "number": "33",
+      "desc": "In both VulnCheck and DBIR"
+    },
+    {
+      "number": "35",
+      "desc": "Verizon DBIR"
+    }
+  ]
+}

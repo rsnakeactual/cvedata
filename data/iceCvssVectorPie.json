@@ -1,0 +1,25 @@
+{
+  "available": true,
+  "ice": {
+    "labels": [
+      "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "Other vectors"
+    ],
+    "data": [
+      1108,
+      2979
+    ],
+    "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+  },
+  "allCves": {
+    "labels": [
+      "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "Other vectors"
+    ],
+    "data": [
+      17817,
+      225342
+    ],
+    "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+  }
+}

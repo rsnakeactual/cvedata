@@ -1,0 +1,236 @@
+{
+  "available": true,
+  "points": [
+    {
+      "x": 579,
+      "y": 13566199762.969501,
+      "r": 25.510712314295017,
+      "naicsCode": "31",
+      "naicsIndustry": "MANUFACTURING",
+      "events": 579,
+      "totalAmount": 13566199762.969501,
+      "avgAmount": 23430396.827235755,
+      "label": "MANUFACTURING"
+    },
+    {
+      "x": 983,
+      "y": 28331611529.279995,
+      "r": 30,
+      "naicsCode": "51",
+      "naicsIndustry": "INFORMATION",
+      "events": 983,
+      "totalAmount": 28331611529.279995,
+      "avgAmount": 28821578.361424208,
+      "label": "INFORMATION"
+    },
+    {
+      "x": 1565,
+      "y": 26022188032.089993,
+      "r": 19.84595609147673,
+      "naicsCode": "52",
+      "naicsIndustry": "FINANCE AND INSURANCE",
+      "events": 1565,
+      "totalAmount": 26022188032.089993,
+      "avgAmount": 16627596.186638974,
+      "label": "FINANCE AND INSURANCE"
+    },
+    {
+      "x": 862,
+      "y": 9675311853.743898,
+      "r": 15.3465468548866,
+      "naicsCode": "54",
+      "naicsIndustry": "PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES",
+      "events": 862,
+      "totalAmount": 9675311853.743898,
+      "avgAmount": 11224259.691118212,
+      "label": "PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"
+    },
+    {
+      "x": 257,
+      "y": 4280448682.17,
+      "r": 19.869143848443343,
+      "naicsCode": "N/A",
+      "naicsIndustry": "Unknown",
+      "events": 257,
+      "totalAmount": 4280448682.17,
+      "avgAmount": 16655442.34307393,
+      "label": "Unknown"
+    },
+    {
+      "x": 209,
+      "y": 3078992231.07,
+      "r": 18.267492134911176,
+      "naicsCode": "42",
+      "naicsIndustry": "WHOLESALE TRADE",
+      "events": 209,
+      "totalAmount": 3078992231.07,
+      "avgAmount": 14732020.244354067,
+      "label": "WHOLESALE TRADE"
+    },
+    {
+      "x": 1297,
+      "y": 6300722315.272199,
+      "r": 10.045235827504264,
+      "naicsCode": "56",
+      "naicsIndustry": "ADMINISTRATIVE AND SUPPORT AND WASTE MANAGEMENT AND REMEDIATION SERVICES",
+      "events": 1297,
+      "totalAmount": 6300722315.272199,
+      "avgAmount": 4857920.05803562,
+      "label": "ADMINISTRATIVE AND SUPPORT AND WASTE MANAGEMENT AND REMEDIATION SERVICES"
+    },
+    {
+      "x": 710,
+      "y": 16856875569.425,
+      "r": 25.77025238720971,
+      "naicsCode": "92",
+      "naicsIndustry": "PUBLIC ADMINISTRATION",
+      "events": 710,
+      "totalAmount": 16856875569.425,
+      "avgAmount": 23742078.266795773,
+      "label": "PUBLIC ADMINISTRATION"
+    },
+    {
+      "x": 474,
+      "y": 6744547419.889999,
+      "r": 17.84862492993217,
+      "naicsCode": "44",
+      "naicsIndustry": "RETAIL TRADE",
+      "events": 474,
+      "totalAmount": 6744547419.889999,
+      "avgAmount": 14229002.995548522,
+      "label": "RETAIL TRADE"
+    },
+    {
+      "x": 793,
+      "y": 12483523422.759003,
+      "r": 19.10863510112293,
+      "naicsCode": "62",
+      "naicsIndustry": "HEALTH CARE AND SOCIAL ASSISTANCE",
+      "events": 793,
+      "totalAmount": 12483523422.759003,
+      "avgAmount": 15742148.074097103,
+      "label": "HEALTH CARE AND SOCIAL ASSISTANCE"
+    },
+    {
+      "x": 131,
+      "y": 611531771.6899999,
+      "r": 9.887238711004528,
+      "naicsCode": "23",
+      "naicsIndustry": "CONSTRUCTION",
+      "events": 131,
+      "totalAmount": 611531771.6899999,
+      "avgAmount": 4668181.463282443,
+      "label": "CONSTRUCTION"
+    },
+    {
+      "x": 402,
+      "y": 1917898327.3962,
+      "r": 9.972766211638941,
+      "naicsCode": "61",
+      "naicsIndustry": "EDUCATIONAL SERVICES",
+      "events": 402,
+      "totalAmount": 1917898327.3962,
+      "avgAmount": 4770891.361682089,
+      "label": "EDUCATIONAL SERVICES"
+    },
+    {
+      "x": 254,
+      "y": 1941461207.8699994,
+      "r": 12.364854526671476,
+      "naicsCode": "81",
+      "naicsIndustry": "OTHER SERVICES (EXCEPT PUBLIC ADMINISTRATION)",
+      "events": 254,
+      "totalAmount": 1941461207.8699994,
+      "avgAmount": 7643548.062480313,
+      "label": "OTHER SERVICES (EXCEPT PUBLIC ADMINISTRATION)"
+    },
+    {
+      "x": 138,
+      "y": 754145666.002,
+      "r": 10.550610183649457,
+      "naicsCode": "53",
+      "naicsIndustry": "REAL ESTATE AND RENTAL AND LEASING",
+      "events": 138,
+      "totalAmount": 754145666.002,
+      "avgAmount": 5464823.666681159,
+      "label": "REAL ESTATE AND RENTAL AND LEASING"
+    },
+    {
+      "x": 105,
+      "y": 442028243.74,
+      "r": 9.50553414783835,
+      "naicsCode": "22",
+      "naicsIndustry": "UTILITIES",
+      "events": 105,
+      "totalAmount": 442028243.74,
+      "avgAmount": 4209792.79752381,
+      "label": "UTILITIES"
+    },
+    {
+      "x": 91,
+      "y": 854612665.8209997,
+      "r": 13.820263991058571,
+      "naicsCode": "71",
+      "naicsIndustry": "ARTS, ENTERTAINMENT, AND RECREATION",
+      "events": 91,
+      "totalAmount": 854612665.8209997,
+      "avgAmount": 9391347.976054942,
+      "label": "ARTS, ENTERTAINMENT, AND RECREATION"
+    },
+    {
+      "x": 186,
+      "y": 1226443111.2799997,
+      "r": 11.490702905012906,
+      "naicsCode": "72",
+      "naicsIndustry": "ACCOMMODATION AND FOOD SERVICES",
+      "events": 186,
+      "totalAmount": 1226443111.2799997,
+      "avgAmount": 6593780.168172042,
+      "label": "ACCOMMODATION AND FOOD SERVICES"
+    },
+    {
+      "x": 218,
+      "y": 4479464170.692,
+      "r": 23.110513956162496,
+      "naicsCode": "55",
+      "naicsIndustry": "MANAGEMENT OF COMPANIES AND ENTERPRISES",
+      "events": 218,
+      "totalAmount": 4479464170.692,
+      "avgAmount": 20548000.78299083,
+      "label": "MANAGEMENT OF COMPANIES AND ENTERPRISES"
+    },
+    {
+      "x": 142,
+      "y": 2303627855.81,
+      "r": 19.508821349484503,
+      "naicsCode": "48",
+      "naicsIndustry": "TRANSPORTATION AND WAREHOUSING",
+      "events": 142,
+      "totalAmount": 2303627855.81,
+      "avgAmount": 16222731.378943661,
+      "label": "TRANSPORTATION AND WAREHOUSING"
+    },
+    {
+      "x": 21,
+      "y": 290316674,
+      "r": 17.51187767757745,
+      "naicsCode": "11",
+      "naicsIndustry": "AGRICULTURE, FORESTRY, FISHING AND HUNTING",
+      "events": 21,
+      "totalAmount": 290316674,
+      "avgAmount": 13824603.523809524,
+      "label": "AGRICULTURE, FORESTRY, FISHING AND HUNTING"
+    },
+    {
+      "x": 30,
+      "y": 163893956.41000003,
+      "r": 10.549201417209304,
+      "naicsCode": "21",
+      "naicsIndustry": "MINING, QUARRYING, AND OIL AND GAS EXTRACTION",
+      "events": 30,
+      "totalAmount": 163893956.41000003,
+      "avgAmount": 5463131.880333334,
+      "label": "MINING, QUARRYING, AND OIL AND GAS EXTRACTION"
+    }
+  ]
+}

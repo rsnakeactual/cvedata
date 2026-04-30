@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risk breakdown — infographic v2 (horizontal)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0c0f14;
+      --panel: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.14);
+      --text: #e8eaef;
+      --muted: #9aa3b2;
+      --accent: #6d98ff;
+      /* ~half the viewport per stop */
+      --panel-width: 50vw;
+      --chrome-h: 3.25rem;
+      /* Fixed chart area: slices stack top → bottom and grow vertically */
+      --chart-area-h: clamp(220px, 48vh, 520px);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    .chrome {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.5rem 1rem;
+      min-height: var(--chrome-h);
+      background: rgba(12, 15, 20, 0.92);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+
+    .chrome h1 {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+
+    .chrome__hint {
+      font-size: 0.78rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .chrome__progress {
+      flex: 1;
+      max-width: 220px;
+      height: 4px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+    }
+
+    .chrome__progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent), #22d3ee);
+      transition: width 0.15s ease-out;
+    }
+
+    .h-scroll {
+      margin-top: var(--chrome-h);
+      width: 100%;
+      height: calc(100vh - var(--chrome-h));
+      min-height: 520px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scrollbar-color: rgba(109, 152, 255, 0.45) rgba(255, 255, 255, 0.06);
+    }
+
+    .track {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      width: max-content;
+    }
+
+    .flow-connectors {
+      position: absolute;
+      left: 0;
+      top: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: visible;
+    }
+
+    .flow-connectors .conn-fill {
+      fill: rgba(109, 152, 255, 0.07);
+      stroke: none;
+    }
+
+    .flow-connectors .conn-line {
+      fill: none;
+      stroke: rgba(109, 152, 255, 0.65);
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+
+    .panel {
+      position: relative;
+      z-index: 1;
+      flex: 0 0 var(--panel-width);
+      width: var(--panel-width);
+      min-width: var(--panel-width);
+      height: 100%;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      padding: clamp(0.75rem, 2vw, 1.5rem);
+      border-right: 1px solid transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .panel__inner {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: linear-gradient(180deg, var(--panel) 0%, transparent 100%);
+      padding: clamp(1rem, 2vw, 1.75rem);
+      min-height: min(76vh, 820px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transform: scale(0.96);
+      opacity: 0.55;
+      transition: transform 0.45s ease, opacity 0.45s ease;
+    }
+
+    .panel.is-active .panel__inner {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .panel__kicker {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 0.5rem;
+    }
+
+    .panel__title {
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.15rem, 2.1vw, 1.65rem);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .panel__sub {
+      margin: 0 0 1.25rem;
+      color: var(--muted);
+      font-size: clamp(0.85rem, 1.2vw, 0.98rem);
+      line-height: 1.45;
+    }
+
+    /* Vertical stack: larger / “rest” on top, focus slice below (then grows to full height) */
+    .chart-stack {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: var(--chart-area-h);
+      min-height: var(--chart-area-h);
+      gap: 0.45rem;
+    }
+
+    .chart-stack .block {
+      min-height: 0;
+      width: 100%;
+    }
+
+    .block {
+      position: relative;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 0.85rem 1rem;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      transition: opacity 0.35s ease, filter 0.35s ease;
+    }
+
+    .block__label {
+      font-size: clamp(0.78rem, 1.05vw, 0.92rem);
+      line-height: 1.25;
+      font-weight: 600;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    }
+
+    .block__value {
+      margin-top: 0.35rem;
+      font-size: clamp(0.72rem, 0.95vw, 0.85rem);
+      color: rgba(232, 234, 239, 0.85);
+    }
+
+    /* Grow panel: focus starts as a short band (fraction of chart height), expands vertically to 100% */
+    /* Align the growing band to the bottom (same position as the focus band in split views). */
+    .panel--grow .chart-stack--grow {
+      justify-content: flex-end;
+    }
+
+    .panel--grow .chart-stack--grow .block--grow {
+      flex: 0 0 var(--grow-from, 30%);
+      max-height: var(--grow-from, 30%);
+      width: 100%;
+      transition: flex 0.8s cubic-bezier(0.22, 1, 0.36, 1), max-height 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .panel--grow.is-active .chart-stack--grow .block--grow {
+      flex: 1 1 100%;
+      max-height: 100%;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 0.35rem;
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* Step 3: two isolated stacks (human-centric above, technical exploitation below). */
+    .dual-branch-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      width: 100%;
+      height: var(--chart-area-h);
+      min-height: var(--chart-area-h);
+    }
+
+    .isolated-box {
+      flex: 1 1 0;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 0.5rem 0.65rem 0.55rem;
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .isolated-box__header {
+      flex: 0 0 auto;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin: 0 0 0.35rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .isolated-box .chart-stack {
+      flex: 1 1 auto;
+      min-height: 0;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="chrome">
+    <h1 id="chromeTitle">Risk breakdown — infographic v2</h1>
+    <span class="chrome__hint" id="chromeHint">Scroll sideways → stacked splits; Step 7 expands the focus band</span>
+    <div class="chrome__progress" aria-hidden="true"><div class="chrome__progress-fill" id="scrollProgress"></div></div>
+  </header>
+
+  <div class="h-scroll" id="hScroll" tabindex="0" aria-label="Horizontal infographic panels">
+    <div class="track" id="track"></div>
+  </div>
+
+  <script>
+    const INFOGRAPHIC_V2 = {
+      pageTitle: "Risk breakdown",
+      chromeTitle: "Risk breakdown",
+      hint: "Scroll sideways to see the breakdown of the risk",
+
+      colors: {
+        nonTechnical: "#64748b",
+        human: "#14b8a6",
+        technical: "#3b82f6",
+        cve: "#f59e0b",
+        losses: "#ef4444",
+        covered: "#a855f7",
+        scannable: "#06b6d4",
+      },
+
+      // Same numeric scale as infographic.html SANKEY_CONFIG (100 = 100% of total exposure).
+      values: {
+        total: 100,
+        nonTechnical: 50,
+        technical: 50,
+        humanCentric: 25,
+        technicalExploitation: 25,
+        phishing: 15,
+        driveBy: 5,
+        attachments: 5,
+        brute: 6.25,
+        credentialStuffing: 5,
+        cves: 13.75,
+        noKnownBreach: 13.4475,
+        breachesOnly: 0.275,
+        breachesAndLosses: 0.0275,
+        neverReported: 0.006875,
+        notInsured: 0.006875,
+        nonCveOrIncomplete: 0.006875,
+        covered: 0.006875,
+        coveredCves: 0.006875,
+        scannable: 0.003596,
+        notScannable: 0.003214,
+        unclassifiedTail: 0.000065,
+      },
+
+      // Display labels — must match infographic.html SANKEY_CONFIG.labels (source of truth).
+      labels: {
+        total: "100% total exposure",
+        nonTechnical: "Non-technical losses",
+        technical: "Technical losses / compromises",
+        humanCentric: "Human-centric exploitation (50%)",
+        technicalExploitation: "Technical exploitation (50%)",
+        phishing: "Phishing / vishing / smishing / spear phishing (30%)",
+        driveBy: "Drive-by downloads (10%)",
+        attachments: "Malicious attachments (10%)",
+        cves: "CVEs (25-30%)",
+        brute: "Brute force (10-15%)",
+        credentialStuffing: "Credential stuffing (10%)",
+        noKnownBreach: "Unused CVEs (97.8-98.6% of CVEs)",
+        breachesOnly: "Breaches only (1.2-2.1% of CVEs)",
+        breachesAndLosses: "Breaches and losses (0.2% of CVEs)",
+        neverReported: "Never reported (?%)",
+        notInsured: "Not insured (?%)",
+        nonCveOrIncomplete: "Incomplete DFIR (?%)",
+        covered: "Covered (?%)",
+        coveredCves: "558 CVEs",
+        scannable: "292 scannable remotely (52.3%)",
+        notScannable: "266 not remotely scannable (48.1%)",
+      },
+    };
+
+    window.INFOGRAPHIC_V2 = INFOGRAPHIC_V2;
+
+    function esc(s) {
+      const n = document.createElement("div");
+      n.textContent = String(s);
+      return n.innerHTML;
+    }
+
+    function blockSegment(label, color, flexWt, extraClass = "") {
+      return `<div class="block ${extraClass}" style="flex:${flexWt} 1 0;min-height:0;background:linear-gradient(180deg, ${color}55 0%, ${color}18 100%);border-color:${color}66">
+        <div class="block__label">${esc(label)}</div>
+      </div>`;
+    }
+
+    /** Rest on top, focus on bottom — heights follow focusShare (e.g. 0.3 → 30% bottom band). */
+    function blockVerticalSplit(restLabel, restColor, focusLabel, focusColor, focusShare) {
+      const r = Math.max(1, Math.round((1 - focusShare) * 100));
+      const f = Math.max(1, Math.round(focusShare * 100));
+      return `<div class="chart-stack chart-stack--split">
+        ${blockSegment(restLabel, restColor, r, "block--rest")}
+        ${blockSegment(focusLabel, focusColor, f, "block--focus")}
+      </div>`;
+    }
+
+    function blockGrow(label, color, growFromFrac) {
+      const pct = Math.max(8, Math.round(growFromFrac * 100));
+      return `<div class="chart-stack chart-stack--grow">
+        <div class="block block--grow" style="--grow-from:${pct}%;background:linear-gradient(180deg, ${color}55 0%, ${color}18 100%);border-color:${color}66">
+          <div class="block__label">${esc(label)}</div>
+          <span class="badge">Expands to full chart height when active</span>
+        </div>
+      </div>`;
+    }
+
+    function blockTripleVertical(a, b, c) {
+      return `<div class="chart-stack chart-stack--split">
+        ${blockSegment(a.label, a.color, a.flex, "block--rest")}
+        ${blockSegment(b.label, b.color, b.flex, "block--rest")}
+        ${blockSegment(c.label, c.color, c.flex, "block--focus")}
+      </div>`;
+    }
+
+    /** Human-centric branch only (no highlight path through this stack). */
+    function blockTripleVerticalAllRest(items) {
+      return `<div class="chart-stack chart-stack--split">
+        ${items.map((it) => blockSegment(it.label, it.color, it.flex, "block--rest")).join("")}
+      </div>`;
+    }
+
+    /** Step 3: separate boxes — human vectors (top) vs technical exploitation drill-down (bottom). */
+    function step3DualIsolatedHtml(cfg) {
+      const C = cfg.colors;
+      const V = cfg.values;
+      const L = cfg.labels;
+      const notCveVectors = V.brute + V.credentialStuffing;
+      const brutePlusCredLabel = `${L.brute} + ${L.credentialStuffing}`;
+      const humanChart = blockTripleVerticalAllRest([
+        { label: L.phishing, color: C.human, flex: V.phishing },
+        { label: L.driveBy, color: C.human, flex: V.driveBy },
+        { label: L.attachments, color: C.human, flex: V.attachments },
+      ]);
+      const techChart = blockVerticalSplit(
+        brutePlusCredLabel,
+        C.technical,
+        L.cves,
+        C.technical,
+        V.cves / (V.cves + notCveVectors)
+      );
+      return `<div class="dual-branch-stack">
+        <div class="isolated-box isolated-box--human">
+          <div class="isolated-box__header">${esc(L.humanCentric)}</div>
+          ${humanChart}
+        </div>
+        <div class="isolated-box isolated-box--technical">
+          <div class="isolated-box__header">${esc(L.technicalExploitation)}</div>
+          ${techChart}
+        </div>
+      </div>`;
+    }
+
+    function blockQuadVertical(items) {
+      return `<div class="chart-stack chart-stack--split">
+        ${items.map((it, idx) => blockSegment(it.label, it.color, it.flex, idx === items.length - 1 ? "block--focus" : "block--rest")).join("")}
+      </div>`;
+    }
+
+    /**
+     * Six split panels (stacked bands) + one final grow panel (scannable).
+     * Band heights use the same normalized values as infographic.html SANKEY_CONFIG.
+     */
+    function buildBeats(cfg) {
+      const C = cfg.colors;
+      const V = cfg.values;
+      const L = cfg.labels;
+      const splits = [
+        {
+          kicker: "Step 1",
+          title: "Non-technical vs technical",
+          sub: "Band heights follow the Sankey model scale (same as infographic.html).",
+          splitRow: blockVerticalSplit(L.nonTechnical, C.nonTechnical, L.technical, C.technical, 0.5),
+        },
+        {
+          kicker: "Step 2",
+          title: "Inside technical",
+          sub: "Human-centric vs technical exploitation — labels match the Sankey infographic.",
+          splitRow: blockVerticalSplit(L.humanCentric, C.human, L.technicalExploitation, C.technical, 0.5),
+        },
+        {
+          kicker: "Step 3",
+          title: "Human-centric vs technical exploitation",
+          sub: "Two isolated boxes (stacked): human vectors on top; technical exploitation (CVE path) below.",
+          splitRow: step3DualIsolatedHtml(cfg),
+        },
+        {
+          kicker: "Step 4",
+          title: "Inside CVE outcomes",
+          sub: "Three outcomes; next step follows breaches and losses.",
+          splitRow: blockTripleVertical(
+            { label: L.noKnownBreach, color: C.cve, flex: V.noKnownBreach },
+            { label: L.breachesOnly, color: C.cve, flex: V.breachesOnly },
+            { label: L.breachesAndLosses, color: C.losses, flex: V.breachesAndLosses }
+          ),
+        },
+        {
+          kicker: "Step 5",
+          title: "Inside losses (breaches + losses)",
+          sub: "Equal placeholder splits; next step follows covered.",
+          splitRow: blockQuadVertical([
+            { label: L.neverReported, color: C.losses, flex: 25 },
+            { label: L.notInsured, color: C.losses, flex: 25 },
+            { label: L.nonCveOrIncomplete, color: C.losses, flex: 25 },
+            { label: L.covered, color: C.covered, flex: 25 },
+          ]),
+        },
+        {
+          kicker: "Step 6",
+          title: `${L.coveredCves}: remote scannability`,
+          sub: "Split of covered CVEs; Step 7 focuses the scannable slice (Sankey highlight path).",
+          splitRow: blockVerticalSplit(L.notScannable, C.covered, L.scannable, C.scannable, V.scannable / (V.scannable + V.notScannable)),
+        },
+      ];
+
+      const finalGrow = {
+        kicker: "Step 7",
+        title: "Scannable remotely",
+        sub: `Focus on ${L.scannable} within ${L.coveredCves} (same highlight path as the Sankey chart).`,
+        growRow: blockGrow(L.scannable, C.scannable, V.scannable / (V.scannable + V.notScannable)),
+      };
+
+      return { splits, finalGrow };
+    }
+
+    function renderTrack(cfg) {
+      const { splits, finalGrow } = buildBeats(cfg);
+      const parts = [];
+      splits.forEach((b, i) => {
+        parts.push(`<section class="panel panel--split" data-beat="${i}" data-phase="split" aria-label="${esc(b.kicker)}">
+          <div class="panel__inner">
+            <p class="panel__kicker">${esc(b.kicker)}</p>
+            <h2 class="panel__title">${esc(b.title)}</h2>
+            <p class="panel__sub">${esc(b.sub)}</p>
+            ${b.splitRow}
+          </div>
+        </section>`);
+      });
+      parts.push(`<section class="panel panel--grow" data-beat="${splits.length}" data-phase="grow" aria-label="${esc(finalGrow.kicker)}">
+        <div class="panel__inner">
+          <p class="panel__kicker">${esc(finalGrow.kicker)}</p>
+          <h2 class="panel__title">${esc(finalGrow.title)}</h2>
+          <p class="panel__sub">${esc(finalGrow.sub)}</p>
+          ${finalGrow.growRow}
+        </div>
+      </section>`);
+      return parts.join("");
+    }
+
+    function init() {
+      const cfg = INFOGRAPHIC_V2;
+      document.title = cfg.pageTitle;
+      document.getElementById("chromeTitle").textContent = cfg.chromeTitle;
+      document.getElementById("chromeHint").textContent = cfg.hint;
+
+      const track = document.getElementById("track");
+      track.innerHTML = renderTrack(cfg);
+
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("class", "flow-connectors");
+      svg.setAttribute("aria-hidden", "true");
+      track.insertBefore(svg, track.firstChild);
+
+      const hScroll = document.getElementById("hScroll");
+      const progress = document.getElementById("scrollProgress");
+      const panels = Array.from(track.querySelectorAll(".panel"));
+
+      /** Positions relative to the track box (works with scroll + CSS transforms on .panel__inner). */
+      function offsetInTrack(el, trackEl) {
+        const tr = trackEl.getBoundingClientRect();
+        const r = el.getBoundingClientRect();
+        return {
+          x: r.left - tr.left,
+          y: r.top - tr.top,
+          w: r.width,
+          h: r.height,
+        };
+      }
+
+      function drawPanelConnectors() {
+        const w = track.scrollWidth;
+        const h = track.clientHeight;
+        svg.setAttribute("width", String(w));
+        svg.setAttribute("height", String(h));
+        svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+        svg.style.width = `${w}px`;
+        svg.style.height = `${h}px`;
+
+        while (svg.firstChild) svg.removeChild(svg.firstChild);
+
+        const defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
+        const grad = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
+        grad.setAttribute("id", "connGrad");
+        grad.setAttribute("x1", "0%");
+        grad.setAttribute("y1", "0%");
+        grad.setAttribute("x2", "100%");
+        grad.setAttribute("y2", "0%");
+        const s0 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+        s0.setAttribute("offset", "0%");
+        s0.setAttribute("stop-color", "rgba(109, 152, 255, 0.2)");
+        const s1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+        s1.setAttribute("offset", "100%");
+        s1.setAttribute("stop-color", "rgba(109, 152, 255, 0.03)");
+        grad.appendChild(s0);
+        grad.appendChild(s1);
+        defs.appendChild(grad);
+        svg.appendChild(defs);
+
+        const panelList = track.querySelectorAll(".panel");
+
+        function addBand(x1r, yTop, yBot, x2l, yTopR, yBotR) {
+          const poly = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+          poly.setAttribute("class", "conn-fill");
+          poly.setAttribute("points", `${x1r},${yTop} ${x2l},${yTopR} ${x2l},${yBotR} ${x1r},${yBot}`);
+          poly.setAttribute("fill", "url(#connGrad)");
+          svg.appendChild(poly);
+          const line1 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+          line1.setAttribute("class", "conn-line");
+          line1.setAttribute("x1", String(x1r));
+          line1.setAttribute("y1", String(yTop));
+          line1.setAttribute("x2", String(x2l));
+          line1.setAttribute("y2", String(yTopR));
+          const line2 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+          line2.setAttribute("class", "conn-line");
+          line2.setAttribute("x1", String(x1r));
+          line2.setAttribute("y1", String(yBot));
+          line2.setAttribute("x2", String(x2l));
+          line2.setAttribute("y2", String(yBotR));
+          svg.appendChild(line1);
+          svg.appendChild(line2);
+        }
+
+        function connectRects(leftEl, rightEl) {
+          const L = offsetInTrack(leftEl, track);
+          const R = offsetInTrack(rightEl, track);
+          const x1r = L.x + L.w;
+          const x2l = R.x;
+          addBand(x1r, L.y, L.y + L.h, x2l, R.y, R.y + R.h);
+        }
+
+        /** Sankey fork: focus band on the left splits into N target bands on the next split panel. */
+        function forkFromFocusToSplit(focusEl, targetBlocks) {
+          const G = offsetInTrack(focusEl, track);
+          const rects = targetBlocks.map((el) => offsetInTrack(el, track));
+          const sumTarget = rects.reduce((s, r) => s + r.h, 0);
+          if (sumTarget <= 0 || rects.length === 0) return;
+          let y = G.y;
+          for (let i = 0; i < rects.length; i += 1) {
+            const segH = G.h * (rects[i].h / sumTarget);
+            const y0 = y;
+            const y1 = y + segH;
+            y = y1;
+            const x1r = G.x + G.w;
+            const x2l = rects[i].x;
+            addBand(x1r, y0, y1, x2l, rects[i].y, rects[i].y + rects[i].h);
+          }
+        }
+
+        for (let i = 0; i < panelList.length - 1; i += 1) {
+          const leftPanel = panelList[i];
+          const rightPanel = panelList[i + 1];
+          const leftSplit = leftPanel.classList.contains("panel--split");
+          const rightGrow = rightPanel.classList.contains("panel--grow");
+          const rightSplit = rightPanel.classList.contains("panel--split");
+
+          if (leftSplit && rightGrow) {
+            const focus = leftPanel.querySelector(".chart-stack .block--focus");
+            const grow = rightPanel.querySelector(".block--grow");
+            if (focus && grow) connectRects(focus, grow);
+            continue;
+          }
+
+          if (leftSplit && rightSplit) {
+            if (rightPanel.querySelector(".dual-branch-stack")) {
+              const leftBands = leftPanel.querySelectorAll(".chart-stack--split .block");
+              const humanBox = rightPanel.querySelector(".isolated-box--human");
+              const techBox = rightPanel.querySelector(".isolated-box--technical");
+              if (leftBands.length === 2 && humanBox && techBox) {
+                connectRects(leftBands[0], humanBox);
+                connectRects(leftBands[1], techBox);
+              }
+              continue;
+            }
+
+            if (leftPanel.querySelector(".dual-branch-stack")) {
+              const focus = leftPanel.querySelector(".isolated-box--technical .block--focus");
+              const targets = rightPanel.querySelectorAll(".chart-stack--split .block");
+              if (focus && targets.length) forkFromFocusToSplit(focus, [...targets]);
+              continue;
+            }
+
+            const focus = leftPanel.querySelector(".chart-stack .block--focus");
+            const targets = rightPanel.querySelectorAll(".chart-stack--split .block");
+            if (focus && targets.length) forkFromFocusToSplit(focus, [...targets]);
+          }
+        }
+      }
+
+      const paintConnectors = () => {
+        requestAnimationFrame(() => {
+          drawPanelConnectors();
+        });
+      };
+
+      paintConnectors();
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(paintConnectors);
+      }
+      window.addEventListener("resize", paintConnectors);
+      hScroll.addEventListener("scroll", paintConnectors, { passive: true });
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((en) => {
+            if (en.isIntersecting) en.target.classList.add("is-active");
+            else en.target.classList.remove("is-active");
+          });
+          paintConnectors();
+        },
+        { root: hScroll, threshold: 0.52 }
+      );
+      panels.forEach((p) => io.observe(p));
+
+      function updateProgress() {
+        const max = hScroll.scrollWidth - hScroll.clientWidth;
+        const t = max > 0 ? hScroll.scrollLeft / max : 0;
+        progress.style.width = `${Math.round(Math.min(1, Math.max(0, t)) * 100)}%`;
+      }
+
+      hScroll.addEventListener("scroll", updateProgress, { passive: true });
+      window.addEventListener("resize", updateProgress);
+      updateProgress();
+
+      hScroll.addEventListener("keydown", (e) => {
+        const panelW = panels[0] ? panels[0].offsetWidth : hScroll.clientWidth * 0.5;
+        if (e.key === "ArrowRight") hScroll.scrollBy({ left: panelW, behavior: "smooth" });
+        else if (e.key === "ArrowLeft") hScroll.scrollBy({ left: -panelW, behavior: "smooth" });
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>

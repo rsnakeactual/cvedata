@@ -1,0 +1,50 @@
+{
+  "available": true,
+  "labels": [
+    "Critical",
+    "High",
+    "Medium",
+    "Low",
+    "No-score"
+  ],
+  "nvd": {
+    "data": [
+      269,
+      207,
+      68,
+      1,
+      13
+    ],
+    "total": 558
+  },
+  "euvd": {
+    "data": [
+      269,
+      207,
+      68,
+      1,
+      11
+    ],
+    "total": 556
+  },
+  "cnvd": {
+    "data": [
+      128,
+      110,
+      24,
+      0,
+      0
+    ],
+    "total": 262
+  },
+  "jvn": {
+    "data": [
+      265,
+      203,
+      67,
+      1,
+      1
+    ],
+    "total": 537
+  }
+}

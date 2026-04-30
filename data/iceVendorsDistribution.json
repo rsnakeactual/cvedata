@@ -1,0 +1,43 @@
+{
+  "available": true,
+  "labels": [
+    "Microsoft",
+    "Apple",
+    "Apache Software Foundation",
+    "Google",
+    "Cisco",
+    "Oracle",
+    "Fortinet",
+    "Ivanti",
+    "Adobe",
+    "Other"
+  ],
+  "data": [
+    399,
+    129,
+    87,
+    87,
+    74,
+    43,
+    39,
+    32,
+    31,
+    4261
+  ],
+  "iceTotal": 4764,
+  "naCount": 2293,
+  "stats": [
+    {
+      "number": "399",
+      "desc": "Largest vendor bucket: Microsoft"
+    },
+    {
+      "number": "4,261",
+      "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
+    },
+    {
+      "number": "2,293",
+      "desc": "ICE CVEs missing from CVElist or without CNA vendor field"
+    }
+  ]
+}

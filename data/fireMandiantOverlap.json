@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "fireTotal": 558,
+  "otherTotal": 25,
+  "both": 19,
+  "fireOnly": 539,
+  "otherOnly": 6,
+  "stats": [
+    {
+      "number": "558",
+      "desc": "FIRE vulnerabilities"
+    },
+    {
+      "number": "19",
+      "desc": "In both FIRE and Mandiant M-Trends"
+    },
+    {
+      "number": "25",
+      "desc": "Mandiant M-Trends catalog"
+    }
+  ],
+  "labels": [
+    "FIRE only",
+    "Both",
+    "Mandiant only"
+  ],
+  "data": [
+    539,
+    19,
+    6
+  ]
+}

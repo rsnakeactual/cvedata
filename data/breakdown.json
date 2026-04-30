@@ -1,0 +1,108 @@
+{
+  "available": true,
+  "fireTotal": 558,
+  "scannableFire": 290,
+  "scannableFirePresence": 141,
+  "scannableFireComplete": 149,
+  "notScannableFire": 268,
+  "cveUniverseSplit": {
+    "noKnownBreach": "339,521 (98.6%)",
+    "breachesOnly": "4,338 (1.3%)",
+    "breachesLosses": "558 (0.2%)"
+  },
+  "modals": {
+    "root": {
+      "title": "Total exposure",
+      "body": "This represents all known paths of risk into a company. It is 100% of pathways that can lead to unwanted access, disruption, or compromise."
+    },
+    "nontch": {
+      "title": "Non-technical losses",
+      "body": "Losses that do not primarily hinge on a software vulnerability. For example things like physical theft, insider attacks, force mejeure outages, etcetera might fall into risks that are not necessarily technical, even if they can impact areas of the business that are technical. The percentage of how often this happens is unknown."
+    },
+    "tech": {
+      "title": "Technical losses / compromises",
+      "body": "Cyber incidents attributed to technical attack paths. These are what people typically think of when they trigger an insurance claim, because a loss has been created, associated with an external adversary."
+    },
+    "human": {
+      "title": "Human-centric exploitation",
+      "body": "Paths where a person is tricked or convinced into doing something harmful. Most commonly this is broken into phishing, malicious attachments, drive-by etc. but all originating from social engineering or requiring a victim to do something. This percentage of loss data was gathered from anecdotal loss data from a Cyber Insurer."
+    },
+    "phish": {
+      "title": "Phishing / Vishing / Smishing / Spear Phishing",
+      "body": "Credential theft via deceptive messages or calls to employees of a company. These credentials are replayed into other systems and allow the attacker external access to the environment, particularly when 2nd factor authentication isn't in use. This percentage of loss data was gathered from anecdotal loss data from a Cyber Insurer."
+    },
+    "drby": {
+      "title": "Drive-by downloads",
+      "body": "Malware from visiting a malicious or compromised site, often combined with browser/plugin issues to run them automatically, though it still requires them to visit a site or view a malicious ad that triggers the execution. This gives the external adversary a foothold on the device that downloaded the exploit and ran it. This percentage of loss data was gathered from anecdotal loss data from a Cyber Insurer."
+    },
+    "malat": {
+      "title": "Malicious attachments",
+      "body": "Malware or links to malicious code delivered via email, chat, or documents. This typically requires a lot more user interaction because it requires them to click on things and often execute them, which is a higher bar. This percentage of loss data was gathered from anecdotal loss data from a Cyber Insurer."
+    },
+    "techex": {
+      "title": "Technical exploitation",
+      "body": "Attacks that exploit software, protocols, or credentials without relying on the same social-engineering emphasis as the “human-centric” issues above. This percentage of loss data was gathered from anecdotal loss data from a Cyber Insurer."
+    },
+    "brute": {
+      "title": "Brute force",
+      "body": "Automated guessing of passwords or keys. In the case of passwods, this only works on external interfaces where the user isn't using 2nd factor authentication. This percentage of loss data was gathered from anecdotal loss data from a Cyber Insurer."
+    },
+    "cred": {
+      "title": "Credential stuffing",
+      "body": "Reuse of leaked credentials across services. This percentage of loss data was gathered from anecdotal loss data from a Cyber Insurer."
+    },
+    "cves": {
+      "title": "CVEs (Common Vulnerability Enumeration)",
+      "body": "All of this section requires a CVE identifier. The three-way split below reflects how many CVEs sit in different “outcome” buckets in public discourse. Only the covered/FIRE (Financial Risk Exposure) branch is tied to insurance-linked losses. This percentage of loss data was gathered from anecdotal loss data from a Cyber Insurer."
+    },
+    "unused": {
+      "title": "No breach / loss on record (NVD universe)",
+      "body": "CVEs with no ICE (Incident Causing Exposures) breach record and not in FIRE (Financial Risk Exposures)."
+    },
+    "bonly": {
+      "title": "Breaches only (ICE)",
+      "body": "CVEs that have lead to a breach and have ended up on one or more KEV (Known Exploited Vulnerability) lists. Also known as ICE (Incident Causing Exposure). Notably these have never lead to a known loss, despite being a breach."
+    },
+    "bloss": {
+      "title": "Breaches + losses",
+      "body": "CVEs that passed the threshold of breach and have now also become a financial loss. This is regardless of whether it was seen by an insurance carrier or not."
+    },
+    "norep": {
+      "title": "Never reported",
+      "body": "Loss may have occurred but was not publicly disclosed. This can happen when companies choose to self-insure, or feel that it is not worth telling the insurance provider, or forget that they can use cyber insurance, etc."
+    },
+    "noins": {
+      "title": "Not insured",
+      "body": "Breach or loss without cyber insurance coverage. This is less and less likely in the United States in particular because often contracts require businesses to carry a certain amount of cyber insurance before customers will work with the company."
+    },
+    "nodfir": {
+      "title": "Incomplete DFIR",
+      "body": "No forensic report that cleanly links a specific CVE to financial loss. Depending on the vendor you speak to between 40-50% of DFIR cases do not result in identifying the initial access vectors, because they do not have the necessary logs or are on a compressed time scale, or logs are overwritten to bring the site back online, etc. There is also perverse incentives to get through claims quickly and document less to reduce claim sizes, despite the fact it is bad for actuarial data."
+    },
+    "cov": {
+      "title": "Covered losses",
+      "body": "Cyber insurance claims filed and attributed to a CVE in carrier-linked loss data."
+    },
+    "c558": {
+      "title": "FIRE CVE count",
+      "body": "Number of CVEs in the merged FIRE catalog. This is the population of CVEs that have lead to a loss."
+    },
+    "scan": {
+      "title": "Remotely scannable",
+      "body": "CVEs that have lead to a cyber insurance loss that appear to be scannable via a remote adversary. These are candidates for external scanning validation."
+    },
+    "noscan": {
+      "title": "Not remotely scannable",
+      "body": "FIRE CVEs that are not remotely scannable because they are internal-only, unsafe to scan from the internet, or not feasible to scan due to the complexity of doing so because, for example, the URL path is not easily knowable."
+    },
+    "scanpres": {
+      "title": "Presence check",
+      "body": "FIRE-linked where the vulnerability can only be detected by presence, not complete. This is a safe remote fingerprinting / version or product indicator without attempting the exploit path. It is more error prone."
+    },
+    "scancomp": {
+      "title": "Complete",
+      "body": "FIRE-linked where the vulnerability can be detected by a completed test, not detection by presence. This is a more direct check that validates the vulnerable condition (still within template safety constraints). It is less error prone."
+    }
+  },
+  "note": "cveUniverseSplit is read from fireSankey.json when that graph output exists; otherwise editorial placeholders. fireTotal/scannableFire/notScannableFire and presence/complete splits are computed from FIRE_vulns.csv (or raw sources) and vulnerabilities/templates/scannable YAML tags."
+}

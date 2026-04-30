@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "iceTotal": 4764,
+  "otherTotal": 25,
+  "both": 25,
+  "iceOnly": 4739,
+  "otherOnly": 0,
+  "stats": [
+    {
+      "number": "4,764",
+      "desc": "ICE vulnerabilities"
+    },
+    {
+      "number": "25",
+      "desc": "In both ICE and Mandiant M-Trends"
+    },
+    {
+      "number": "25",
+      "desc": "Mandiant M-Trends catalog"
+    }
+  ],
+  "labels": [
+    "ICE only",
+    "Both",
+    "Mandiant only"
+  ],
+  "data": [
+    4739,
+    25,
+    0
+  ]
+}

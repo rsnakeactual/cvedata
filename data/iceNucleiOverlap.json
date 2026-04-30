@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "iceTotal": 4764,
+  "otherTotal": 4092,
+  "both": 1723,
+  "iceOnly": 3041,
+  "otherOnly": 2369,
+  "stats": [
+    {
+      "number": "4,764",
+      "desc": "ICE vulnerabilities"
+    },
+    {
+      "number": "1,723",
+      "desc": "In both ICE and Nuclei"
+    },
+    {
+      "number": "4,092",
+      "desc": "Nuclei catalog"
+    }
+  ],
+  "labels": [
+    "ICE only",
+    "Both",
+    "Nuclei only"
+  ],
+  "data": [
+    3041,
+    1723,
+    2369
+  ]
+}

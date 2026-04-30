@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVEdata.com - The State of Software Vulnerabilities</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="static/css/main-20260212.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-brand">CVE<span>data</span></div>
+    <ul class="nav-links">
+      <li><a href="#flood">The CVE Flood</a></li>
+      <li><a href="#severity">Scoring</a></li>
+      <li><a href="#kev">Exploitation</a></li>
+      <li><a href="#epss">Prediction</a></li>
+      <li><a href="#coverage">Coverage</a></li>
+      <li><a href="#takeaways">Takeaways</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div>
+        <h1 id="heroHeadline"></h1>
+        <p id="heroSubtext"></p>
+        <div class="scroll-hint">
+          <div class="arrow">&darr;</div>
+          <span>Scroll to explore the data</span>
+        </div>
+      </div>
+      <div class="hero-stats" id="heroStats">
+        <!-- Filled by JS from DATA.hero.stats -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 01: THE FLOOD -->
+<section id="flood">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">01: The CVE Flood</span>
+      <h2>The number of CVEs are growing and accelerating</h2>
+      <p>Every year, researchers and companies discover more software flaws. A "CVE" or Common Vulnerabilities and Exposures is the ID assigned to each one. The chart shows the cumulative total of all CVEs ever published by that year. The line only goes up and is increasing.</p>
+    </div>
+    <div class="chart-container fade-in">
+      <canvas id="growthChart"></canvas>
+    </div>
+    <div class="insight-cards fade-in" id="floodInsights">
+      <!-- Filled by JS from DATA.flood.insights -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 02: WHO'S FILING -->
+<section id="filing">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">02: Who's Filing</span>
+      <h2>MITRE used to assign CVSS scores for CVEs. Not anymore.</h2>
+      <p id="filingIntro">As the volume exploded, MITRE authorized companies called CNAs (CVE Numbering Authorities) to assign their own CVE IDs. Today, companies assign the majority of new CVEs.</p>
+    </div>
+    <div class="chart-container fade-in">
+      <canvas id="filingChart"></canvas>
+    </div>
+    <div class="explanation fade-in">
+      <p>MITRE is the organization that originally managed CVE assignment. As the volume exploded, they authorized companies called CNAs (CVE Numbering Authorities) to assign their own. CNAs include Microsoft, Google, Red Hat, and hundreds of others.</p>
+    </div>
+    <div class="insight-cards fade-in" style="grid-template-columns: repeat(2, 1fr);" id="filingInsights">
+      <!-- Filled by JS from DATA.filing.insights -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 03: SEVERITY SPECTRUM -->
+<section id="severity">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">03: Severity Spectrum</span>
+      <h2>Not all vulnerabilities are created equal</h2>
+      <p>Each vulnerability gets a severity score from 0 to 10. The score measures how much damage it could cause if exploited. Click a category below to learn what each level means.</p>
+    </div>
+    <div class="severity-bar-container fade-in" id="severityBar">
+      <!-- Filled by JS from DATA.severity.bar -->
+    </div>
+    <div class="severity-grid fade-in" id="severityGrid">
+      <!-- Filled by JS from DATA.severity.cards -->
+    </div>
+    <div class="severity-detail" id="detail-critical">
+      <h3>Critical (Score 9.0 &ndash; 10.0)</h3>
+      <p>CVSS base scores of 9.0&ndash;10.0 are considered the most &ldquo;severe.&rdquo; In practice, these are supposed to be the most dangerous flaws: an attacker could take full control of your system remotely, often without needing a password or any interaction from the victim. As an example, someone can access your computer from across the internet, just by visiting a malicious website. These are typically treated as emergencies and get emergency patches.</p>
+    </div>
+    <div class="severity-detail" id="detail-high">
+      <h3>High (Score 7.0 &ndash; 8.9)</h3>
+      <p>Serious vulnerabilities that could let attackers steal data, crash systems, or gain significant access. They usually require some preconditions (like being on the same network or tricking you into clicking a link), but the damage potential is high.</p>
+    </div>
+    <div class="severity-detail" id="detail-medium">
+      <h3>Medium (Score 4.0 &ndash; 6.9)</h3>
+      <p>Moderate-risk flaws. These typically need multiple conditions to exploit and cause limited damage. By themselves they're not percieved as emergencies, but attackers sometimes chain several medium-severity bugs together to build a full attack. This is the cutoff point for compliance for standards like PCI-DSS, the payment card industry's security standard.</p>
+    </div>
+    <div class="severity-detail" id="detail-low">
+      <h3>Low (Score 0.0 &ndash; 3.9)</h3>
+      <p>Minor issues with minimal direct impact. An attacker would gain very little from exploiting these alone. They're worth fixing eventually, but they don't typically keep security teams up at night.</p>
+    </div>
+    <div class="chart-container fade-in" style="height: 350px; margin-top: 48px;">
+      <canvas id="severityChart"></canvas>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 04: SCORE REALITY -->
+<section id="scores">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">04: Score Reality</span>
+      <h2>What the score distributions actually look like</h2>
+      <p>CVSS scores aren't evenly distributed. Exploited vulnerabilities cluster at higher scores, but not exclusively. Some medium-severity bugs are targeted by hackers too, according to CISA's Known Exploited Vulnerabilities (KEV) list. Hackers do not seem to mind what the CVSS base score is, as long as the vulnerability can accomplish the task.</p>
+    </div>
+    <div class="fade-in">
+      <h3>Score Distribution</h3>
+      <div class="toggle-group" id="scoreToggle">
+        <button class="toggle-btn active" data-set="all">All CVEs</button>
+        <button class="toggle-btn" data-set="kev">CISA's Known Exploited Vulnerabilities (KEV)</button>
+      </div>
+    </div>
+    <div class="chart-container fade-in" style="height: 350px;">
+      <canvas id="scoreDistChart"></canvas>
+    </div>
+    <div class="explanation fade-in">
+      <p>When you toggle to CISA's Known Exploited Vulnerabilities (KEV), the distribution shifts toward higher scores, but not exclusively. Some medium-severity vulnerabilities and even low-severity vulnerabilities are exploited too.</p>
+    </div>
+    <h3 class="fade-in" style="margin-top: calc(var(--grid) * 6);">Average Score Trends</h3>
+    <div class="chart-container fade-in" style="height: 300px;">
+      <canvas id="avgScoreChart"></canvas>
+    </div>
+    <div class="insight-cards fade-in" style="grid-template-columns: repeat(2, 1fr);" id="scoreInsights">
+      <!-- Filled by JS from DATA.scores.insights -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 05: THE SCORING GAP -->
+<section id="scoring-gap">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">05: The Scoring Gap</span>
+      <h2>Thousands of vulnerabilities have no score at all</h2>
+      <p>The National Vulnerability Database (NVD) fell behind processing CVEs, and therefore many vulnerabilities have no score at all. You can't easily prioritize what you can't measure.</p>
+    </div>
+    <div class="fade-in" id="progressBars">
+      <!-- Filled by JS -->
+    </div>
+    <div class="stat-row fade-in" style="grid-template-columns: repeat(2, 1fr); margin-top: calc(var(--grid) * 5);" id="scoringGapStats">
+      <!-- Filled by JS from DATA.scoringGap.stats -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 06: THE GOVERNMENT'S LIST -->
+<section id="kev">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">06: The Government's List</span>
+      <h2>CISA tracks what's actually being exploited</h2>
+      <p>CISA (the US Cybersecurity and Infrastructure Security Agency) maintains a list of vulnerabilities that are known to be actively exploited. Federal agencies are required to patch these. Many companies also use this list to prioritize patching. It does not appear that hackers care about when a vulnerability was released, as long as it is useful to them.</p>
+    </div>
+    <div class="chart-container fade-in" style="height: 350px;">
+      <canvas id="kevChart"></canvas>
+    </div>
+    <div class="explanation fade-in">
+      <p id="kevExplanation">The high numbers years subsequent to 2021 are because the catalog launched in 2021 with a large backfill of historically exploited vulnerabilities.</p>
+    </div>
+    <div class="stat-row fade-in" id="kevStats">
+      <!-- Filled by JS from DATA.kev.stats -->
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 07: CRITICAL VS EXPLOITED (DARK) -->
+<section class="dark-section" id="critical-vs-exploited">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">07: Critical vs Exploited</span>
+      <h2>"Critical" doesn't mean "exploited"</h2>
+      <p>A severity label measures potential damage, not likelihood of use by adversaries. Most critical CVEs are never exploited. And many exploited CVEs aren't rated Critical.</p>
+    </div>
+    <div class="fade-in">
+      <p style="color: var(--gray-400); margin-bottom: calc(var(--grid) * 2); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;">Out of 100 Critical CVEs, how many are actually exploited, according to CISA?</p>
+      <div class="dot-grid" id="criticalDotGrid"></div>
+      <p style="color: var(--gray-400); margin-top: calc(var(--grid) * 4); margin-bottom: calc(var(--grid) * 2); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;">Out of 100 Exploited CVEs, what severity were they?</p>
+      <div class="dot-grid" id="exploitedDotGrid"></div>
+    </div>
+    <div class="stat-row fade-in" style="grid-template-columns: repeat(2, 1fr);" id="critExploitStats">
+      <!-- Filled by JS from DATA.criticalVsExploited.stats -->
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 08: ACTIVE EXPLOITATION -->
+<section id="exploitation">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">08: Active Exploitation</span>
+      <h2>Exploitation doesn't appear to correlate with PoC code availability</h2>
+      <p>Proof-of-concept exploit code exists for far more vulnerabilities than are actually exploited in the wild. Having exploit code doesn't mean anyone will use it.</p>
+    </div>
+    <div class="fade-in">
+      <p style="color: var(--gray-500); font-size: 0.875rem;">CVEs with exploit code (cvelistV5 references) vs. actually exploited (CISA KEV). The gap shows they are not correlated.</p>
+    </div>
+    <div class="chart-container fade-in" style="height: 350px;">
+      <canvas id="exploitTrendChart"></canvas>
+    </div>
+    <div class="insight-cards fade-in" style="grid-template-columns: repeat(2, 1fr);" id="exploitInsights">
+      <!-- Filled by JS from DATA.exploitation.insights -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 09: THE RACE -->
+<section id="speed">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">09: The Race</span>
+      <h2>The publication delay problem</h2>
+      <p>When a vulnerability is discovered, it takes time before it gets an official CVE publication. That delay leaves a gap where the flaw is added to the CVE catalog but details are withheld from the public.</p>
+    </div>
+    <div class="speed-comparison fade-in" id="speedMetrics">
+      <!-- Filled by JS from DATA.race.speedMetrics -->
+    </div>
+    <div class="timeline fade-in" id="raceTimeline">
+      <!-- Filled by JS from DATA.race.timeline -->
+    </div>
+    <h3 class="fade-in" style="margin-top: calc(var(--grid) * 6);">Publication Delays</h3>
+    <p class="fade-in">How long between a vulnerability being discovered and its CVE being published?</p>
+    <div class="chart-container fade-in" style="height: 300px;">
+      <canvas id="delayChart"></canvas>
+    </div>
+    <div class="explanation fade-in">
+      <p id="raceExplanation">Publication delays vary widely. Run the pipeline to see median, 90th percentile, and mean delay from real data.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 10: THE SCORING SYSTEM -->
+<section id="cvss-versions">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">10: The Scoring System</span>
+      <h2>CVSS has evolved and scores aren't comparable across versions</h2>
+      <p>Comparing scores across CVSS versions is like comparing Fahrenheit to Celsius. The numbers mean different things.</p>
+    </div>
+    <div class="chart-container fade-in" style="height: 350px;">
+      <canvas id="cvssVersionChart"></canvas>
+    </div>
+    <div class="version-cards fade-in" id="versionCards">
+      <!-- Filled by JS from DATA.cvssVersions.cards -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 11: SCORING QUIRKS -->
+<section id="scoring-quirks">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">11: Scoring Quirks</span>
+      <h2>The formula has "favorite numbers"</h2>
+      <p>CVSS scores aren't evenly distributed. The formula's math creates spikes at certain scores. 7.5 and 9.8 appear far more often than 7.4 or 9.7. This spikiness is a quirk of the CVSS calculators, not a reflection of a meaningful gradient of risk.</p>
+    </div>
+    <div class="chart-container fade-in" style="height: 380px;">
+      <canvas id="quirksChart"></canvas>
+    </div>
+    <div class="explanation fade-in">
+      <p>The CVSS formula uses discrete inputs (like "Low/High" for complexity) that collapse into certain numeric outputs. This means some scores are mathematically impossible to reach, creating gaps and spikes in the distribution.</p>
+    </div>
+    <h3 class="fade-in" style="margin-top: calc(var(--grid) * 6);">CVSS Score Mathematical Probability</h3>
+    <p class="fade-in" style="margin-bottom: calc(var(--grid) * 2);">The mathematical distribution of all possible base scores from each CVSS formula. Each bar shows how many metric combinations produce that score. Some numbers cannot be reached in any version, giving the numerical illusion that there is a wider distribution than there actually is. Note that not all scores are possible, and some scores are more likely than others. CVSS 4.0 has the fewest possible scores but requires the most input to calculate.</p>
+    <div class="fade-in">
+      <div class="toggle-group" id="cvssMathProbToggle">
+        <button class="toggle-btn active" data-tab="v20">CVSS 2.0</button>
+        <button class="toggle-btn" data-tab="v3x">CVSS 3.x</button>
+        <button class="toggle-btn" data-tab="v40">CVSS 4.0</button>
+      </div>
+    </div>
+    <div class="chart-container fade-in" style="height: 350px;">
+      <canvas id="cvssMathProbChart"></canvas>
+    </div>
+    <div class="fade-in" id="cvssMathProbStats" style="margin-top: calc(var(--grid) * 2); font-size: 0.875rem; color: var(--gray-600);">
+      <!-- Filled by JS -->
+    </div>
+    <div class="insight-cards fade-in" style="grid-template-columns: repeat(3, 1fr); margin-top: calc(var(--grid) * 4);" id="cvssMathProbScores">
+      <!-- Filled by JS: X CVSS vY scores possible out of 101 (Z%) -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 12: PREDICTING ATTACKS (EPSS) -->
+<section id="epss">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">12: Predicting Attacks</span>
+      <h2>EPSS attempts to predict what will actually be exploited</h2>
+      <p>EPSS (Exploit Prediction Scoring System) tries to predict which vulnerabilities will actually be exploited in the next 30 days. Unlike CVSS which measures theoretical severity, EPSS attempts to measure the likelihood of exploitation.</p>
+    </div>
+    <div class="chart-container fade-in" style="height: 350px;">
+      <canvas id="epssChart"></canvas>
+    </div>
+    <div class="insight-cards fade-in" style="grid-template-columns: repeat(2, 1fr);" id="epssInsights">
+      <!-- Filled by JS from DATA.epss.insights -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 13: KEV CVSS VS EPSS -->
+<section id="kev-vs-epss">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">13: KEV CVSS vs EPSS</span>
+      <h2>CVSS and EPSS are both poor predictors</h2>
+      <p>CISA KEV vulnerabilities are confirmed as actively exploited. If CVSS (severity) and EPSS (exploitation probability) agreed, points would fall on the diagonal line. Instead the scores scatter widely and flatly disagree. Neither score reliably predicts the other and neither appear to predict actual exploitation activity.</p>
+    </div>
+    <div class="chart-container fade-in" style="height: 400px;">
+      <canvas id="kevCvssEpssChart"></canvas>
+    </div>
+    <div class="explanation fade-in" style="margin-top: calc(var(--grid) * 4);">
+      <p>Points on the diagonal = perfect agreement (CVSS 10 would mean EPSS 100%). The scatter shows that high-severity KEVs often have low EPSS, and low-severity KEVs can have high EPSS. Both metrics have limited predictive value for actual exploitation.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 14: ATTACK DNA -->
+<section id="attack-dna">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">14: Attack DNA</span>
+      <h2>Attackers choose easy targets</h2>
+      <p>Attackers overwhelmingly target vulnerabilities that are network-accessible, low complexity, no authentication required, no user interaction needed, according to CISA KEV.</p>
+    </div>
+    <div class="fade-in">
+      <div class="toggle-group" id="dnaToggle">
+        <button class="toggle-btn active" data-set="all">All CVEs</button>
+        <button class="toggle-btn" data-set="exploited">Exploited Only</button>
+      </div>
+    </div>
+    <div class="fade-in" id="dnaCharts">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 15: WHO'S WATCHING -->
+<section id="coverage">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">15: Who's Watching</span>
+      <h2>No single tracker catches everything</h2>
+      <p>Different organizations track exploited vulnerabilities. They don't agree on what to include. Are they all wrong, or is one of them right? Because they can't all be correct.</p>
+    </div>
+    <h3 class="fade-in">Tracker Comparison</h3>
+    <div class="fade-in" id="trackerBars">
+      <!-- Filled by JS -->
+    </div>
+    <div class="explanation fade-in">
+      <p id="coverageExplanation">Different criteria produce wildly different counts. CVSS Critical is a severity threshold; EPSS Critical is a probability threshold; KEV lists track confirmed exploitation. No single list is comprehensive.</p>
+    </div>
+    <h3 class="fade-in" style="margin-top: calc(var(--grid) * 6);">Top Vendors by Tracker</h3>
+    <div class="fade-in">
+      <div class="toggle-group" id="vendorTrackerToggle">
+        <button class="toggle-btn" data-tracker="CVSS Critical (≥9.0)">CVSS ≥9.0</button>
+        <button class="toggle-btn" data-tracker="EPSS Critical (≥0.9)">EPSS ≥0.9</button>
+        <button class="toggle-btn" data-tracker="VulnCheck KEV">VulnCheck KEV</button>
+        <button class="toggle-btn" data-tracker="CISA KEV">CISA KEV</button>
+        <button class="toggle-btn" data-tracker="ENISA KEV">ENISA KEV</button>
+      </div>
+    </div>
+    <div class="chart-container fade-in" style="height: 380px;">
+      <canvas id="vendorChart"></canvas>
+    </div>
+    <div class="explanation fade-in">
+      <p>Products at the top of the list account are not necessarily there because they're less secure, but often because they're the most widely deployed. Researchers and attackers go where the users are.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 16: EXPERTS DISAGREE -->
+<section id="disagreement">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">16: Experts Disagree</span>
+      <h2>NVD and CISA score the same bugs differently</h2>
+      <p id="disagreementIntro">When both NVD and CISA ADP/CNA score the same vulnerability, agreement rates vary. Run the pipeline to see exact agreement and disagreement percentages from real data.</p>
+    </div>
+    <div class="chart-container fade-in" style="height: 350px;">
+      <canvas id="deltaChart"></canvas>
+    </div>
+    <div class="stat-row fade-in" id="disagreementStats">
+      <!-- Filled by JS from DATA.disagreement.stats -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 17: GLOBAL COVERAGE -->
+<section id="global">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">17: Global Coverage</span>
+      <h2>Different regions, different viewpoints on risk</h2>
+      <p>EUVD (European Union), JVN (Japan), BDU (Russia, when available), and CNVD (China) each maintain their own vulnerability lists. They don't agree on what to include, and when they overlap with cvelistV5 they often don't agree on base scores either. Since none of them agree, either one of them is correct, or they all are incomplete. Which do you think it is?</p>
+    </div>
+    <h3 class="fade-in">cvelistV5 vs regional databases</h3>
+    <div class="fade-in" id="globalBars">
+      <!-- Filled by JS -->
+    </div>
+    <div class="explanation fade-in" style="margin-top: calc(var(--grid) * 4);">
+      <p id="globalExplanation">Each bar shows what % of cvelistV5 CVEs appear in that database. Score disagreement: when the same CVE is scored by both cvelistV5 and NVD (US), how often do they assign different CVSS values?</p>
+    </div>
+    <div class="stat-row fade-in" style="grid-template-columns: repeat(2, 1fr);" id="globalStats">
+      <!-- Filled by JS from DATA.global.stats -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 18: QUALITY CONTROL -->
+<section id="quality">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">18: Quality Control</span>
+      <h2>The CVE system is straining under the load</h2>
+      <p id="qualityIntro">As CVE volume has exploded, so have quality problems. Run the pipeline to see how many CVEs have been rejected due to duplicates, errors, and non-vulnerabilities that slipped through the system.</p>
+    </div>
+    <div class="chart-container fade-in" style="height: 350px;">
+      <canvas id="qualityChart"></canvas>
+    </div>
+    <div class="stat-row fade-in" id="qualityStats">
+      <!-- Filled by JS from DATA.quality.stats -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 19: OVERREPRESENTED CVSS SCORES -->
+<section id="cvss-overrepresented">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">19: Overrepresented CVSS Scores</span>
+      <h2>Certain CVSS scores are wildly overrepresented</h2>
+      <p>CVSS calculators have many possible vector combinations that can produce each score. If scores were chosen purely by the math, we'd see a roughly even distribution. Instead, certain scores appear far more often than expected. For every 1 theoretical combination that could produce a given score, there are many more CVEs assigned to it. This suggests researchers and hackers have strong preferences for certain scores, despite the calculators not favoring them.</p>
+    </div>
+    <div class="chart-container fade-in" style="height: 380px;">
+      <canvas id="cvssOverrepresentedChart"></canvas>
+    </div>
+    <div class="stat-row fade-in" id="cvssOverrepresentedStats">
+      <!-- Filled by JS from DATA.cvssOverrepresented.stats -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SECTION 20: TAKEAWAYS -->
+<section id="takeaways">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">20: What It All Means</span>
+      <h2>Six things everyone should know</h2>
+    </div>
+    <div class="takeaway-grid fade-in" style="grid-template-columns: repeat(2, 1fr);" id="takeawayGrid">
+      <!-- Filled by JS from DATA.takeaways -->
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-left">
+      Data compiled and analyzed by Robert "<a href="https://rsnake.com/" target="_blank">RSnake</a>" Hansen and UX graciously designed by Lex Arquette. I do not guarantee the correctness of the data or charts and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research.
+    </div>
+    <div class="footer-sources">
+      Sources for this page: 
+      <a href="https://github.com/CVEProject/cvelistV5" target="_blank">CVE cvelistV5</a>,
+      <a href="https://nvd.nist.gov/" target="_blank">NVD</a>,
+      <a href="https://github.com/cisagov/vulnrichment" target="_blank">CISA ADP (Vulnrichment)</a>,
+      <a href="https://euvd.enisa.europa.eu/apidoc" target="_blank">EUVD</a>,
+      <a href="https://github.com/enisaeu/CNW/" target="_blank">ENISA EU CSIRT Network</a>,
+      <a href="https://bdu.fstec.ru/vul" target="_blank">BDU (Russia)</a>,
+      <a href="https://jvndb.jvn.jp/ja/feed/" target="_blank">JVN iPedia (Japan)</a>,
+      <a href="https://cnvd.org.cn/" target="_blank">CNVD (China)</a>,
+      <a href="https://github.com/mitre-attack/attack-stix-data" target="_blank">ATT&CK STIX</a>,
+      <a href="https://github.com/center-for-threat-informed-defense/mappings-explorer" target="_blank">ATT&CK–KEV mappings</a>,
+      <a href="https://services.google.com/fh/files/misc/m-trends-2025-en.pdf" target="_blank">Mandiant (2025 M-Trends)</a>,
+      <a href="https://github.com/vz-risk/VCDB" target="_blank">VCDB</a>,
+      <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV</a>,
+      <a href="https://www.first.org/epss/" target="_blank">FIRST EPSS</a>,
+      <a href="https://vulncheck.io/" target="_blank">VulnCheck KEV</a>,
+      and <a href="https://github.com/vulndb/vulndb" target="_blank">VulnDB</a>
+    </div>
+  </div>
+  <div class="container"><div class="footer-updated" id="footerLastUpdated" style="display:none">Last updated: <span id="lastUpdated"></span></div></div>
+</footer>
+
+
+<!-- SCRIPTS (at end of body so HTML renders first) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="static/js/chart-entrance.js"></script>
+<script src="static/js/data.js"></script>
+<script>
+(function() {
+  'use strict';
+  var d = window.__CVEDATA_OVERRIDES || window.__FIRE_OVERRIDES;
+  if (d && d.lastUpdated) {
+    var el = document.getElementById('footerLastUpdated');
+    var span = document.getElementById('lastUpdated');
+    if (el && span) { span.textContent = d.lastUpdated; el.style.display = ''; }
+  }
+
+  /* ################################################################
+     #                                                              #
+     #   DATA OBJECT — No hardcoded numbers, labels, or charts.     #
+     #   Charts and data are generated by the pipeline (v3/code).   #
+     #                                                              #
+     ################################################################ */
+
+  var DATA = Object.assign({
+    /* ============================================================
+       HERO SECTION — The headline and 4 stat cards at the top
+       ============================================================ */
+    hero: {
+      headlineHTML: 'CVEdata.com<br><span>Run the pipeline to load data.</span>',
+      subtext: 'Software vulnerabilities are flaws that attackers can exploit to break into systems. Run the pipeline to generate statistics.',
+      stats: []
+    },
+
+    /* ============================================================
+       SECTION 01 — THE FLOOD: CVE growth over time
+       No fake defaults. Pipeline must run to populate. Default = unavailable.
+       ============================================================ */
+    flood: { available: false },
+
+    /* ============================================================
+       SECTION 02 — WHO'S FILING: MITRE vs CNA assignments
+       No fake defaults. Pipeline must run to populate.
+       ============================================================ */
+    filing: { available: false },
+
+    /* ============================================================
+       SECTION 03 — SEVERITY SPECTRUM: severity breakdown + trend
+       No fake defaults. Pipeline must run to populate.
+       ============================================================ */
+    severity: { available: false },
+
+    /* ============================================================
+       SECTION 04 — SCORE REALITY: score distributions + averages
+       No fake defaults. Pipeline must run to populate.
+       ============================================================ */
+    scores: { available: false },
+
+    /* ============================================================
+       SECTION 05 — THE SCORING GAP: NVD scoring coverage by year
+       No fake defaults. Pipeline must run to populate.
+       ============================================================ */
+    scoringGap: { available: false },
+
+    /* ============================================================
+       SECTION 06 — THE GOVERNMENT'S LIST: CISA KEV catalog
+       No fake defaults. Pipeline must run to populate.
+       ============================================================ */
+    kev: { available: false },
+
+    /* ============================================================
+       SECTION 07 — CRITICAL VS EXPLOITED: dot grid visualizations
+       No fake defaults. Pipeline must run to populate.
+       ============================================================ */
+    criticalVsExploited: { available: false },
+
+    /* ============================================================
+       SECTION 08 — ACTIVE EXPLOITATION: exploited vs PoC trends
+       ============================================================ */
+    exploitation: { available: false },
+
+    /* ============================================================
+       SECTION 09 — THE RACE: publication delay metrics
+       ============================================================ */
+    race: { available: false },
+
+    /* ============================================================
+       SECTION 10 — THE SCORING SYSTEM: CVSS version adoption
+       ============================================================ */
+    cvssVersions: { available: false },
+
+    /* ============================================================
+       SECTION 11 — SCORING QUIRKS: CVSS formula favorite scores
+       ============================================================ */
+    quirks: { available: false },
+    cvssMathProbability: { available: false },
+
+    /* ============================================================
+       SECTION 12 — PREDICTING ATTACKS: EPSS distribution
+       ============================================================ */
+    epss: { available: false },
+
+    /* ============================================================
+       SECTION 13 — SEVERITY VS PREDICTION: CVSS x EPSS heatmap
+       Each row = CVSS level, each column = EPSS level
+       ============================================================ */
+    heatmap: { available: false },
+
+    /* ============================================================
+       SECTION 14 — ATTACK DNA: CVSS vector breakdown
+       ============================================================ */
+    attackDna: { available: false },
+
+    /* ============================================================
+       SECTION 15 — WHO'S WATCHING: tracker comparison + vendors
+       ============================================================ */
+    trackers: { available: false },
+
+    /* ============================================================
+       SECTION 16 — EXPERTS DISAGREE: NVD vs CISA score deltas
+       ============================================================ */
+    disagreement: { available: false },
+
+    /* ============================================================
+       SECTION 17 — GLOBAL COVERAGE: international database overlap
+       ============================================================ */
+    global: { available: false },
+
+    /* ============================================================
+       SECTION 18 — QUALITY CONTROL: rejected & disputed CVEs
+       ============================================================ */
+    quality: { available: false },
+
+    /* ============================================================
+       SECTION 19 — OVERREPRESENTED CVSS SCORES
+       ============================================================ */
+    cvssOverrepresented: { available: false },
+
+    /* ============================================================
+       SECTION 20 — TAKEAWAYS: 6 key conclusions
+       ============================================================ */
+    takeaways: { available: false, items: [] }
+
+  }, window.__CVEDATA_OVERRIDES || {}); /* END OF DATA OBJECT */
+
+
+  /* ================================================================
+     CHART.JS DEFAULTS (Swiss Design)
+     ================================================================ */
+  function brightenColor(color, amount) {
+    if (!color || typeof color !== 'string') return color;
+    amount = amount || 25;
+    var m;
+    if ((m = color.match(/^#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/))) {
+      var r = Math.min(255, parseInt(m[1], 16) + amount);
+      var g = Math.min(255, parseInt(m[2], 16) + amount);
+      var b = Math.min(255, parseInt(m[3], 16) + amount);
+      return 'rgb(' + r + ',' + g + ',' + b + ')';
+    }
+    if ((m = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)$/))) {
+      var r = Math.min(255, parseInt(m[1], 10) + amount);
+      var g = Math.min(255, parseInt(m[2], 10) + amount);
+      var b = Math.min(255, parseInt(m[3], 10) + amount);
+      var a = m[4] != null ? parseFloat(m[4]) : 1;
+      return 'rgba(' + r + ',' + g + ',' + b + ',' + Math.min(1, a + 0.15) + ')';
+    }
+    return color;
+  }
+  Chart.defaults.font.family = "'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif";
+  Chart.defaults.font.size = 12;
+  Chart.defaults.color = '#737373';
+  Chart.defaults.plugins.legend.display = false;
+  Chart.defaults.plugins.tooltip.backgroundColor = '#111111';
+  Chart.defaults.plugins.tooltip.titleFont = { weight: '600', size: 13 };
+  Chart.defaults.plugins.tooltip.bodyFont = { size: 12 };
+  Chart.defaults.plugins.tooltip.cornerRadius = 2;
+  Chart.defaults.plugins.tooltip.padding = { top: 8, bottom: 8, left: 12, right: 12 };
+  Chart.defaults.elements.bar.borderRadius = 1;
+  Chart.defaults.elements.bar.hoverBorderWidth = 2;
+  Chart.defaults.elements.bar.hoverBackgroundColor = function(ctx) {
+    var c = ctx.dataset.backgroundColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : c;
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.elements.bar.hoverBorderColor = function(ctx) {
+    var c = ctx.dataset.borderColor || ctx.dataset.backgroundColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : c;
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.elements.point.radius = 0;
+  Chart.defaults.elements.point.hoverRadius = 6;
+  Chart.defaults.elements.point.hoverBackgroundColor = function(ctx) {
+    var c = ctx.dataset.pointBackgroundColor || ctx.dataset.backgroundColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : c;
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.elements.point.hoverBorderColor = function(ctx) {
+    var c = ctx.dataset.pointBorderColor || ctx.dataset.borderColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : (c || ctx.dataset.backgroundColor);
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.elements.line.tension = 0.3;
+  Chart.defaults.animations = Chart.defaults.animations || {};
+  Chart.defaults.animations.colors = false;
+
+  /* ================================================================
+     REUSABLE CHART FACTORIES
+     ================================================================ */
+  function createLineChart(canvasId, labels, datasets, extraOpts) {
+    var ctx = document.getElementById(canvasId);
+    if (!ctx) return null;
+    var opts = {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      scales: {
+        x: { grid: { display: false }, border: { display: false }, ticks: { font: { weight: '500' } } },
+        y: { grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { callback: function(v) { return v >= 1000 ? (v/1000).toFixed(0) + 'k' : v; } } }
+      },
+      plugins: { tooltip: { callbacks: { label: function(ctx) { return ctx.dataset.label + ': ' + ctx.parsed.y.toLocaleString(); } } } }
+    };
+    if (window.CHART_ANIMATION && window.CHART_ANIMATION.line) {
+      Object.assign(opts, window.CHART_ANIMATION.line);
+    }
+    if (extraOpts) {
+      if (extraOpts.scales) { Object.assign(opts.scales.x, extraOpts.scales.x || {}); Object.assign(opts.scales.y, extraOpts.scales.y || {}); }
+      if (extraOpts.plugins) { Object.assign(opts.plugins, extraOpts.plugins); }
+      if (extraOpts.interaction) { Object.assign(opts.interaction, extraOpts.interaction); }
+      if (extraOpts.animation) { opts.animation = opts.animation ? Object.assign({}, opts.animation, extraOpts.animation) : extraOpts.animation; }
+    }
+    return new Chart(ctx.getContext('2d'), { type: 'line', data: { labels: labels, datasets: datasets }, options: opts });
+  }
+
+  function createBarChart(canvasId, labels, datasets, extraOpts) {
+    var ctx = document.getElementById(canvasId);
+    if (!ctx) return null;
+    var opts = {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index' },
+      scales: {
+        x: { grid: { display: false }, border: { display: false }, ticks: { font: { weight: '500' } } },
+        y: { grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { callback: function(v) { return v >= 1000 ? (v/1000).toFixed(0) + 'k' : v; } } }
+      },
+      plugins: { tooltip: { callbacks: { label: function(ctx) { var v = ctx.parsed.y != null ? ctx.parsed.y : ctx.parsed.x; return ctx.dataset.label + ': ' + v.toLocaleString(); } } } }
+    };
+    if (window.CHART_ANIMATION && window.CHART_ANIMATION.bar) {
+      Object.assign(opts, window.CHART_ANIMATION.bar);
+    }
+    if (extraOpts) {
+      if (extraOpts.indexAxis) {
+        opts.indexAxis = extraOpts.indexAxis;
+        if (extraOpts.indexAxis === 'y') { delete opts.scales.y.ticks; }
+      }
+      if (extraOpts.scales) {
+        if (extraOpts.scales.x) Object.assign(opts.scales.x, extraOpts.scales.x);
+        if (extraOpts.scales.y) Object.assign(opts.scales.y, extraOpts.scales.y);
+      }
+      if (extraOpts.plugins) Object.assign(opts.plugins, extraOpts.plugins);
+      if (extraOpts.animation) { opts.animation = opts.animation ? Object.assign({}, opts.animation, extraOpts.animation) : extraOpts.animation; }
+    }
+    return new Chart(ctx.getContext('2d'), { type: 'bar', data: { labels: labels, datasets: datasets }, options: opts });
+  }
+
+  /* ================================================================
+     HELPER: Build stat cards / insight cards from DATA arrays
+     ================================================================ */
+  function renderInsightCards(containerId, items) {
+    var el = document.getElementById(containerId);
+    if (!el) return;
+    items.forEach(function(item) {
+      var card = document.createElement('div');
+      card.className = 'insight-card';
+      card.innerHTML = '<div class="number">' + item.number + '</div><div class="desc">' + item.desc + '</div>';
+      el.appendChild(card);
+    });
+  }
+
+  function renderStatRow(containerId, items) {
+    var el = document.getElementById(containerId);
+    if (!el) return;
+    items.forEach(function(item) {
+      var s = document.createElement('div');
+      s.className = 'stat-item';
+      var numClass = 'number' + (item.isAccent ? ' accent' : '');
+      var style = item.color ? ' style="color:' + item.color + ';"' : '';
+      s.innerHTML = '<div class="' + numClass + '"' + style + '>' + item.number + '</div><div class="desc">' + item.desc + '</div>';
+      el.appendChild(s);
+    });
+  }
+
+  /* ================================================================
+     RENDER: HERO SECTION
+     ================================================================ */
+  document.getElementById('heroHeadline').innerHTML = DATA.hero.headlineHTML;
+  document.getElementById('heroSubtext').innerHTML = DATA.hero.subtext;
+  var heroStatsEl = document.getElementById('heroStats');
+  DATA.hero.stats.forEach(function(stat) {
+    var card = document.createElement('div');
+    card.className = 'hero-stat';
+    var numClass = 'number' + (stat.isAccent ? ' accent' : '');
+    if (stat.isStatic) {
+      card.innerHTML = '<div class="' + numClass + '">' + stat.value + '</div><div class="desc">' + stat.desc + '</div>';
+    } else {
+      var suffix = stat.suffix || '';
+      card.innerHTML = '<div class="' + numClass + '" data-count="' + stat.value + '"' +
+        (suffix ? ' data-suffix="' + suffix + '"' : '') +
+        '>0' + suffix + '</div><div class="desc">' + stat.desc + '</div>';
+    }
+    heroStatsEl.appendChild(card);
+  });
+
+  /* ================================================================
+     RENDER: SECTION 01 - THE FLOOD
+     ================================================================ */
+  whenChartInView('growthChart', function() {
+    if (DATA.flood && DATA.flood.available !== false && DATA.flood.labels && DATA.flood.labels.length > 0) {
+      createLineChart('growthChart', DATA.flood.labels,
+        [{ label: 'Total CVEs', data: DATA.flood.data,
+           borderColor: '#E63946', backgroundColor: 'rgba(230,57,70,0.06)', borderWidth: 2.5, fill: true,
+           pointBackgroundColor: '#E63946', pointBorderColor: '#fff', pointBorderWidth: 2, pointHoverRadius: 7 }]
+      );
+      renderInsightCards('floodInsights', DATA.flood.insights);
+    } else {
+      document.getElementById('growthChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate CVE growth statistics.</p>';
+      document.getElementById('floodInsights').innerHTML = '';
+    }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 02 - WHO'S FILING
+     ================================================================ */
+  whenChartInView('filingChart', function() {
+    if (DATA.filing && DATA.filing.available !== false && DATA.filing.labels && DATA.filing.labels.length > 0) {
+      createLineChart('filingChart', DATA.filing.labels,
+        [
+          { label: 'MITRE', data: DATA.filing.mitre,
+            borderColor: '#A3A3A3', backgroundColor: 'rgba(163,163,163,0.15)', borderWidth: 2, fill: true },
+          { label: 'CNAs (Companies)', data: DATA.filing.cna,
+            borderColor: '#E63946', backgroundColor: 'rgba(230,57,70,0.12)', borderWidth: 2, fill: true }
+        ],
+        { plugins: { legend: { display: true, position: 'top', align: 'start', labels: { boxWidth: 12, boxHeight: 12, padding: 20, font: { size: 12, weight: '500' } } },
+          tooltip: { callbacks: { label: function(ctx) {
+            var total = 0; ctx.chart.data.datasets.forEach(function(ds) { total += ds.data[ctx.dataIndex]; });
+            var pct = ((ctx.parsed.y / total) * 100).toFixed(0);
+            return ctx.dataset.label + ': ' + ctx.parsed.y.toLocaleString() + ' (' + pct + '%)';
+          } } } } }
+      );
+      renderInsightCards('filingInsights', DATA.filing.insights);
+      var intro = document.getElementById('filingIntro');
+      if (intro && typeof DATA.filing.cnaPctLatest === 'number') {
+        intro.textContent = 'As the volume exploded, MITRE authorized companies called CNAs (CVE Numbering Authorities) to assign their own CVE IDs. This year, companies assign ' + DATA.filing.cnaPctLatest + '% of new CVSS scores.';
+      }
+    } else {
+      document.getElementById('filingChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate CVE filing statistics.</p>';
+      document.getElementById('filingInsights').innerHTML = '';
+    }
+  });
+
+
+  /* ================================================================
+     RENDER: SECTION 03 - SEVERITY SPECTRUM
+     ================================================================ */
+  whenChartInView('severityChart', function() {
+    if (DATA.severity && DATA.severity.available !== false && DATA.severity.bar && DATA.severity.bar.length > 0) {
+      var severityBarEl = document.getElementById('severityBar');
+      DATA.severity.bar.forEach(function(seg) {
+        var div = document.createElement('div');
+        div.className = 'severity-bar-segment ' + seg.level;
+        div.style.flex = seg.flex;
+        div.setAttribute('data-severity', seg.level);
+        div.innerHTML = '<span class="bar-tooltip">' + seg.tooltipText + '</span>';
+        severityBarEl.appendChild(div);
+      });
+
+      var severityGridEl = document.getElementById('severityGrid');
+      DATA.severity.cards.forEach(function(card) {
+        var div = document.createElement('div');
+        div.className = 'severity-card ' + card.level;
+        div.setAttribute('data-severity', card.level);
+        div.innerHTML = '<div class="severity-name">' + card.name + '</div>' +
+          '<div class="severity-count">' + card.count + '</div>' +
+          '<div class="severity-pct">' + card.pct + '</div>';
+        severityGridEl.appendChild(div);
+      });
+
+      createBarChart('severityChart', DATA.severity.chartLabels,
+        [
+          { label: 'Critical', data: DATA.severity.critical, backgroundColor: '#E63946' },
+          { label: 'High',     data: DATA.severity.high,     backgroundColor: '#F97316' },
+          { label: 'Medium',   data: DATA.severity.medium,   backgroundColor: '#EAB308' },
+          { label: 'Low',      data: DATA.severity.low,      backgroundColor: '#22C55E' }
+        ],
+        { scales: { x: { stacked: true }, y: { stacked: true } },
+          plugins: { legend: { display: true, position: 'top', align: 'start', labels: { boxWidth: 12, boxHeight: 12, padding: 20, font: { size: 12, weight: '500' } } } } }
+      );
+      document.querySelectorAll('.severity-card, .severity-bar-segment').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var severity = this.dataset.severity;
+          document.querySelectorAll('.severity-detail').forEach(function(d) { d.classList.remove('visible'); });
+          document.querySelectorAll('.severity-card').forEach(function(c) { c.classList.remove('active'); });
+          var detail = document.getElementById('detail-' + severity);
+          var card = document.querySelector('.severity-card.' + severity);
+          if (detail && !detail.classList.contains('visible')) {
+            detail.classList.add('visible');
+            if (card) card.classList.add('active');
+            detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        });
+      });
+    } else {
+      document.getElementById('severityBar').innerHTML = '';
+      document.getElementById('severityGrid').innerHTML = '';
+      document.getElementById('severityChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate severity statistics.</p>';
+    }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 04 - SCORE REALITY
+     ================================================================ */
+  whenChartInView('scoreDistChart', function() {
+    if (DATA.scores && DATA.scores.available !== false && DATA.scores.distLabels && DATA.scores.distLabels.length > 0) {
+      var scoreDistChart = createBarChart('scoreDistChart', DATA.scores.distLabels,
+        [{ label: 'CVE Count', data: DATA.scores.allData, backgroundColor: '#E63946' }],
+        { scales: { x: { ticks: { maxTicksLimit: 21 } } },
+          animation: { duration: 64, delay: function(ctx) { return (ctx.type === 'data' && ctx.mode === 'default') ? ctx.dataIndex * 8 : 0; } } }
+      );
+
+      document.querySelectorAll('#scoreToggle .toggle-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('#scoreToggle .toggle-btn').forEach(function(b) { b.classList.remove('active'); });
+          this.classList.add('active');
+          var set = this.dataset.set;
+          scoreDistChart.data.datasets[0].data = set === 'kev' ? DATA.scores.kevData : DATA.scores.allData;
+          scoreDistChart.data.datasets[0].backgroundColor = '#E63946';
+          scoreDistChart.data.datasets[0].label = set === 'kev' ? 'KEV Count' : 'CVE Count';
+          scoreDistChart.update();
+        });
+      });
+
+      createLineChart('avgScoreChart', DATA.scores.avgLabels,
+        [
+          { label: 'All CVEs Avg', data: DATA.scores.avgAll,
+            borderColor: '#A3A3A3', backgroundColor: 'transparent', borderWidth: 2, borderDash: [5,3] },
+          { label: 'KEV Avg', data: DATA.scores.avgKev,
+            borderColor: '#E63946', backgroundColor: 'transparent', borderWidth: 2.5, spanGaps: false }
+        ],
+        {
+          scales: { y: { min: 0, max: 10, ticks: { callback: function(v) { return v.toFixed(1); } } } },
+          plugins: {
+            legend: { display: true, position: 'top', align: 'start', labels: { boxWidth: 12, boxHeight: 12, padding: 20, font: { size: 12, weight: '500' } } },
+            tooltip: { callbacks: { label: function(ctx) { return ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(1); } } }
+          },
+          animation: { duration: 64, delay: function(ctx) { return (ctx.type === 'data' && ctx.mode === 'default') ? ctx.dataIndex * 8 : 0; } }
+        }
+      );
+      renderInsightCards('scoreInsights', DATA.scores.insights);
+    } else {
+      document.getElementById('scoreToggle').style.display = 'none';
+      document.getElementById('scoreDistChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate score distribution statistics.</p>';
+      document.getElementById('avgScoreChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable.</p>';
+      document.getElementById('scoreInsights').innerHTML = '';
+    }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 05 - THE SCORING GAP
+     ================================================================ */
+  if (DATA.scoringGap && DATA.scoringGap.available !== false && DATA.scoringGap.progressBars && DATA.scoringGap.progressBars.length > 0) {
+    var pbContainer = document.getElementById('progressBars');
+    DATA.scoringGap.progressBars.forEach(function(d) {
+      var row = document.createElement('div');
+      row.className = 'progress-bar-row';
+      var unscoredPct = (100 - d.pct).toFixed(1);
+      var barClass = d.pct >= 45 ? 'progress-bar-fill wide-bar' : 'progress-bar-fill narrow-bar';
+      row.innerHTML = '<div class="pb-label">' + d.year + '</div>' +
+        '<div class="progress-bar-track"><div class="' + barClass + '" data-width="' + d.pct + '" style="width:0"><span>' + d.pct + '% scored</span></div></div>' +
+        '<div class="pb-value">' + unscoredPct + '% unscored</div>';
+      pbContainer.appendChild(row);
+    });
+    renderStatRow('scoringGapStats', DATA.scoringGap.stats);
+  } else {
+    document.getElementById('progressBars').innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate NVD scoring coverage statistics.</p>';
+    document.getElementById('scoringGapStats').innerHTML = '';
+  }
+
+  /* ================================================================
+     RENDER: SECTION 06 - KEV CHART
+     ================================================================ */
+  whenChartInView('kevChart', function() {
+    if (DATA.kev && DATA.kev.available !== false && DATA.kev.labels && DATA.kev.labels.length > 0) {
+      createBarChart('kevChart', DATA.kev.labels,
+        [{ label: 'KEVs Added', data: DATA.kev.data, backgroundColor: '#E63946' }]
+      );
+      renderStatRow('kevStats', DATA.kev.stats);
+      if (DATA.kev.firstYear) {
+        var fy = DATA.kev.firstYear;
+        var explEl = document.getElementById('kevExplanation');
+        if (explEl) explEl.innerHTML = 'The high numbers in ' + fy + (fy < 2022 ? '&ndash;2022' : '') + ' are because the catalog launched in November 2021 with a large backfill of historically exploited vulnerabilities. Ongoing additions are lower but steady.';
+      }
+    } else {
+      document.getElementById('kevChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate KEV statistics.</p>';
+      document.getElementById('kevStats').innerHTML = '';
+    }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 07 - CRITICAL VS EXPLOITED DOT GRIDS
+     ================================================================ */
+  if (DATA.criticalVsExploited && DATA.criticalVsExploited.available !== false && typeof DATA.criticalVsExploited.criticalExploitedCount === 'number') {
+    var critGrid = document.getElementById('criticalDotGrid');
+    for (var i = 0; i < 100; i++) {
+      var dot = document.createElement('div');
+      dot.className = 'dot' + (i < DATA.criticalVsExploited.criticalExploitedCount ? ' exploited' : '');
+      dot.title = i < DATA.criticalVsExploited.criticalExploitedCount ? 'Exploited' : 'Never exploited';
+      critGrid.appendChild(dot);
+    }
+    var expGrid = document.getElementById('exploitedDotGrid');
+    var eb = DATA.criticalVsExploited.exploitedBreakdown;
+    for (var j = 0; j < 100; j++) {
+      var dot2 = document.createElement('div');
+      if (j < eb.critical) { dot2.className = 'dot exploited'; dot2.title = 'Critical severity'; }
+      else if (j < eb.critical + eb.high) { dot2.className = 'dot high-sev'; dot2.title = 'High severity'; }
+      else { dot2.className = 'dot med-sev'; dot2.title = 'Medium severity'; }
+      expGrid.appendChild(dot2);
+    }
+    renderStatRow('critExploitStats', DATA.criticalVsExploited.stats);
+  } else {
+    document.getElementById('criticalDotGrid').innerHTML = '';
+    document.getElementById('exploitedDotGrid').innerHTML = '';
+    document.getElementById('critExploitStats').innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate critical vs exploited statistics.</p>';
+  }
+
+  /* ================================================================
+     RENDER: SECTION 08 - EXPLOITATION TRENDS
+     ================================================================ */
+  whenChartInView('exploitTrendChart', function() {
+    if (DATA.exploitation && DATA.exploitation.available !== false && DATA.exploitation.labels && DATA.exploitation.labels.length > 0) {
+      var exploitDatasets = [
+        { label: 'CVEs with Exploit Code', data: DATA.exploitation.exploitCodeData || [],
+          borderColor: '#F97316', backgroundColor: 'rgba(249,115,22,0.08)', borderWidth: 2.5, fill: true,
+          pointBackgroundColor: '#F97316', pointBorderColor: '#fff', pointBorderWidth: 2, pointHoverRadius: 7 },
+        { label: 'Actually Exploited (KEV)', data: DATA.exploitation.exploitedData || [],
+          borderColor: '#E63946', backgroundColor: 'rgba(230,57,70,0.06)', borderWidth: 2.5, fill: true,
+          pointBackgroundColor: '#E63946', pointBorderColor: '#fff', pointBorderWidth: 2, pointHoverRadius: 7 }
+      ];
+      createLineChart('exploitTrendChart', DATA.exploitation.labels, exploitDatasets,
+        { plugins: { legend: { display: true, position: 'top', align: 'start', labels: { boxWidth: 12, boxHeight: 12, padding: 20, font: { size: 12, weight: '500' } } } } }
+      );
+      renderInsightCards('exploitInsights', DATA.exploitation.insights);
+    } else {
+      document.getElementById('exploitTrendChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate exploitation trend statistics.</p>';
+      document.getElementById('exploitInsights').innerHTML = '';
+    }
+  });
+
+
+  /* ================================================================
+     RENDER: SECTION 09 - THE RACE
+     ================================================================ */
+  if (DATA.race && DATA.race.available !== false && DATA.race.speedMetrics && DATA.race.speedMetrics.length > 0) {
+    var speedEl = document.getElementById('speedMetrics');
+    DATA.race.speedMetrics.forEach(function(m) {
+      var div = document.createElement('div');
+      div.className = 'speed-metric';
+      var labelLine = m.sublabel ? (m.label + ' - ' + m.sublabel) : m.label;
+      div.innerHTML = '<div class="day-range">' + m.dayRange + '</div>' +
+        '<div class="big-number" style="color:' + m.color + ';">' + m.value + '</div>' +
+        '<div class="unit">days</div>' +
+        '<div class="context">' + labelLine + '</div>' +
+        '<div class="desc">' + m.desc + '</div>';
+      speedEl.appendChild(div);
+    });
+
+    var timelineEl = document.getElementById('raceTimeline');
+    timelineEl.classList.remove('empty');
+    if (DATA.race.timeline && DATA.race.timeline.length > 0) {
+      DATA.race.timeline.forEach(function(t) {
+        var div = document.createElement('div');
+        div.className = 'timeline-item' + (t.isActive ? ' active' : '');
+        div.setAttribute('data-delay', t.delay);
+        div.innerHTML = '<div class="tl-year">' + t.days + '</div>' +
+          '<div class="tl-value"' + (t.isActive ? ' style="color: var(--accent);"' : '') + '>' + t.title + '</div>' +
+          '<div class="tl-desc">' + t.desc + '</div>';
+        timelineEl.appendChild(div);
+      });
+    } else {
+      timelineEl.innerHTML = '';
+      timelineEl.classList.add('empty');
+    }
+
+    var raceExpl = document.getElementById('raceExplanation');
+    if (raceExpl && DATA.race.speedMetrics && DATA.race.speedMetrics.length >= 3) {
+      var median = DATA.race.speedMetrics[0].value;
+      var mean = DATA.race.speedMetrics[1].value;
+      var p90 = DATA.race.speedMetrics[2].value;
+      raceExpl.textContent = '50% of CVEs are published within ' + median + ' days, but 10% take over ' + p90 + ' days. The mean delay of ' + mean + ' days is dragged up by these outliers.';
+    }
+  } else {
+    document.getElementById('speedMetrics').innerHTML = '';
+    document.getElementById('raceTimeline').innerHTML = '';
+  }
+  whenChartInView('delayChart', function() {
+    if (DATA.race && DATA.race.available !== false && DATA.race.delayLabels && DATA.race.delayLabels.length > 0) {
+      createBarChart('delayChart', DATA.race.delayLabels,
+        [{ label: '% of CVEs', data: DATA.race.delayData, backgroundColor: DATA.race.delayColors }],
+        { plugins: { tooltip: { callbacks: { label: function(ctx) { return ctx.parsed.y + '% of all CVEs'; } } } },
+          scales: { y: { ticks: { callback: function(v) { return v + '%'; } } } } }
+      );
+    } else {
+      document.getElementById('delayChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate discovery-to-publication delay statistics.</p>';
+    }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 10 - CVSS VERSION ADOPTION
+     ================================================================ */
+  whenChartInView('cvssVersionChart', function() {
+    if (DATA.cvssVersions && DATA.cvssVersions.available !== false && DATA.cvssVersions.labels && DATA.cvssVersions.labels.length > 0) {
+    createLineChart('cvssVersionChart', DATA.cvssVersions.labels,
+      [
+        { label: 'CVSS v2', data: DATA.cvssVersions.v2,
+          borderColor: '#A3A3A3', backgroundColor: 'rgba(163,163,163,0.15)', borderWidth: 2, fill: true },
+        { label: 'CVSS v3', data: DATA.cvssVersions.v3,
+          borderColor: '#F97316', backgroundColor: 'rgba(249,115,22,0.12)', borderWidth: 2, fill: true },
+        { label: 'CVSS v4', data: DATA.cvssVersions.v4,
+          borderColor: '#E63946', backgroundColor: 'rgba(230,57,70,0.12)', borderWidth: 2, fill: true }
+      ],
+      { scales: { y: { max: 100, ticks: { callback: function(v) { return v + '%'; } } } },
+        plugins: { legend: { display: true, position: 'top', align: 'start', labels: { boxWidth: 12, boxHeight: 12, padding: 20, font: { size: 12, weight: '500' } } },
+          tooltip: { callbacks: { label: function(ctx) { return ctx.dataset.label + ': ' + ctx.parsed.y + '%'; } } } } }
+    );
+
+    var versionCardsEl = document.getElementById('versionCards');
+    DATA.cvssVersions.cards.forEach(function(card) {
+      var div = document.createElement('div');
+      div.className = 'version-card';
+      div.innerHTML = '<h4>' + card.title + '</h4><p>' + card.desc + '</p>';
+      versionCardsEl.appendChild(div);
+    });
+  } else {
+    document.getElementById('cvssVersionChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate CVSS version adoption statistics.</p>';
+    document.getElementById('versionCards').innerHTML = '';
+  }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 11 - SCORING QUIRKS
+     ================================================================ */
+  whenChartInView('quirksChart', function() {
+    if (DATA.quirks && DATA.quirks.available !== false && DATA.quirks.labels && DATA.quirks.labels.length > 0) {
+      var quirksColors = DATA.quirks.labels.map(function(l) {
+        return DATA.quirks.peakScores.indexOf(l) >= 0 ? '#E63946' : '#D4D4D4';
+      });
+      createBarChart('quirksChart', DATA.quirks.labels,
+        [{ label: 'Frequency (thousands)', data: DATA.quirks.data, backgroundColor: quirksColors }],
+        { plugins: { tooltip: { callbacks: { label: function(ctx) { return 'Score ' + ctx.label + ': ~' + (ctx.parsed.y * 1000).toLocaleString() + ' CVEs'; } } } },
+          animation: { duration: 64, delay: function(ctx) { return (ctx.type === 'data' && ctx.mode === 'default') ? ctx.dataIndex * 8 : 0; } },
+          scales: { y: { ticks: { callback: function(v) { return v + 'k'; } } }, x: { ticks: { maxRotation: 45 } } } }
+      );
+    } else {
+      document.getElementById('quirksChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate CVSS score distribution.</p>';
+    }
+  });
+
+  /* ================================================================
+     RENDER: CVSS MATH PROBABILITY (below quirks)
+     ================================================================ */
+  var cvssMathProbChart = null;
+  function renderCvssMathProb(tab) {
+    var d = DATA.cvssMathProbability;
+    if (!d || !d.available || !d[tab] || !d[tab].labels || d[tab].labels.length === 0) {
+      document.getElementById('cvssMathProbChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate CVSS mathematical probability.</p>';
+      document.getElementById('cvssMathProbStats').textContent = '';
+      return;
+    }
+    var dist = d[tab];
+    if (cvssMathProbChart) cvssMathProbChart.destroy();
+    var maxVal = Math.max(1, Math.max.apply(null, dist.data));
+    var chartData = dist.data.map(function(v) { return v === 0 ? maxVal : v; });
+    var barColors = dist.data.map(function(v) { return v === 0 ? '#e5e7eb' : '#7dd3fc'; });
+    var borderColors = dist.data.map(function(v) { return v === 0 ? '#9ca3af' : '#0ea5e9'; });
+    cvssMathProbChart = createBarChart('cvssMathProbChart', dist.labels,
+      [{ label: 'Number of Combinations', data: chartData, backgroundColor: barColors, borderColor: borderColors, borderWidth: 1 }],
+      { plugins: { tooltip: { callbacks: { label: function(ctx) {
+        var n = dist.data[ctx.dataIndex];
+        return 'Score ' + ctx.label + ': ' + n.toLocaleString() + ' combination' + (n === 1 ? '' : 's') + (n === 0 ? ' (mathematically impossible)' : '');
+      } } } },
+        scales: { y: { beginAtZero: true }, x: { ticks: { maxRotation: 45, maxTicksLimit: 51 } } },
+        animation: { duration: 64, delay: function(ctx) { return (ctx.type === 'data' && ctx.mode === 'default') ? ctx.dataIndex * 8 : 0; } } }
+    );
+    document.getElementById('cvssMathProbStats').innerHTML =
+      'Total combinations: ' + dist.totalCombinations.toLocaleString() + ' &bull; ' +
+      'Most common score: ' + dist.mostCommonScore + ' (' + dist.mostCommonCount.toLocaleString() + ' combinations) &bull; ' +
+      'Average score: ' + dist.averageScore;
+  }
+  whenChartInView('cvssMathProbChart', function() {
+    if (DATA.cvssMathProbability && DATA.cvssMathProbability.available) {
+      renderCvssMathProb('v20');
+      document.querySelectorAll('#cvssMathProbToggle .toggle-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('#cvssMathProbToggle .toggle-btn').forEach(function(b) { b.classList.remove('active'); });
+          this.classList.add('active');
+          renderCvssMathProb(this.getAttribute('data-tab'));
+        });
+      });
+      var scoresEl = document.getElementById('cvssMathProbScores');
+      if (scoresEl) {
+        var versions = [{ key: 'v20', label: '2.0' }, { key: 'v3x', label: '3.x' }, { key: 'v40', label: '4.0' }];
+        scoresEl.innerHTML = '';
+        versions.forEach(function(v) {
+          var dist = DATA.cvssMathProbability[v.key];
+          if (!dist || !dist.data) return;
+          var possible = dist.data.filter(function(n) { return n > 0; }).length;
+          var pct = Math.round((possible / 101) * 100);
+          var card = document.createElement('div');
+          card.className = 'insight-card';
+          card.innerHTML = '<div class="number">' + possible + '</div><div class="desc">CVSS v' + v.label + ' scores are possible out of 101 (' + pct + '%)</div>';
+          scoresEl.appendChild(card);
+        });
+      }
+    } else {
+      document.getElementById('cvssMathProbChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate CVSS mathematical probability.</p>';
+      document.getElementById('cvssMathProbStats').textContent = '';
+      var scoresEl = document.getElementById('cvssMathProbScores');
+      if (scoresEl) scoresEl.innerHTML = '';
+    }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 12 - EPSS DISTRIBUTION
+     ================================================================ */
+  whenChartInView('epssChart', function() {
+    if (DATA.epss && DATA.epss.available !== false && DATA.epss.labels && DATA.epss.labels.length > 0) {
+      createBarChart('epssChart', DATA.epss.labels,
+        [{ label: '% of CVEs', data: DATA.epss.data, backgroundColor: DATA.epss.colors }],
+        { plugins: { tooltip: { callbacks: { label: function(ctx) { return ctx.parsed.y + '% of all CVEs fall in this EPSS range'; } } } },
+          scales: { y: { ticks: { callback: function(v) { return v + '%'; } } } } }
+      );
+      renderInsightCards('epssInsights', DATA.epss.insights);
+    } else {
+      document.getElementById('epssChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate EPSS distribution statistics.</p>';
+      document.getElementById('epssInsights').innerHTML = '';
+    }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 13 - KEV CVSS VS EPSS CORRELATION
+     ================================================================ */
+  whenChartInView('kevCvssEpssChart', function() {
+    if (DATA.heatmap && DATA.heatmap.available !== false && DATA.heatmap.points && DATA.heatmap.points.length > 0) {
+      var pts = DATA.heatmap.points;
+      var scatterData = pts.map(function(p) { return { x: p.cvss, y: p.epss, cve: p.cve }; });
+      var perfectLine = [{ x: 0, y: 0 }, { x: 10, y: 100 }];
+      new Chart(document.getElementById('kevCvssEpssChart').getContext('2d'), {
+        type: 'scatter',
+        data: {
+          datasets: [
+            { label: 'KEV CVEs', data: scatterData, backgroundColor: 'rgba(230, 57, 70, 0.6)', borderColor: '#E63946', pointRadius: 4, pointHoverRadius: 6 },
+            { label: 'Perfect agreement', data: perfectLine, type: 'line', borderColor: '#9ca3af', borderDash: [5, 5], pointRadius: 0, fill: false }
+          ]
+        },
+        options: Object.assign({
+          responsive: true, maintainAspectRatio: false,
+          interaction: { mode: 'nearest', intersect: true },
+          scales: {
+            x: { min: 0, max: 10, title: { display: true, text: 'KEV CVSS Score (0-10)' }, grid: { color: '#F5F5F5' } },
+            y: { min: 0, max: 100, title: { display: true, text: 'EPSS Score (0-100%)' }, ticks: { callback: function(v) { return v + '%'; } }, grid: { color: '#F5F5F5' } }
+          },
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: function(ctx) {
+                  if (ctx.raw && ctx.raw.cve) return ctx.raw.cve + ': CVSS ' + ctx.raw.x + ', EPSS ' + ctx.raw.y + '%';
+                  return null;
+                }
+              }
+            }
+          }
+        }, window.CHART_ANIMATION && window.CHART_ANIMATION.scatter || {})
+      });
+    } else {
+      document.getElementById('kevCvssEpssChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline (process KEV, NVD, EPSS) to generate KEV CVSS vs EPSS correlation.</p>';
+    }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 14 - ATTACK DNA
+     ================================================================ */
+  if (DATA.attackDna && DATA.attackDna.available !== false && DATA.attackDna.categories && DATA.attackDna.categories.length > 0) {
+    var currentDnaSet = 'all';
+
+    function renderDnaBars() {
+      var container = document.getElementById('dnaCharts');
+      container.innerHTML = '';
+      DATA.attackDna.categories.forEach(function(cat) {
+        var section = document.createElement('div');
+        section.className = 'paired-bar-section';
+        var h4 = document.createElement('h4');
+        h4.textContent = cat.title;
+        section.appendChild(h4);
+        var d = DATA.attackDna[cat.key];
+        var values = currentDnaSet === 'all' ? d.all : d.exploited;
+        d.labels.forEach(function(label, i) {
+          var row = document.createElement('div');
+          row.className = 'hbar-row';
+          row.innerHTML = '<div class="hbar-label">' + label + '</div>' +
+            '<div class="hbar-track"><div class="hbar-fill ' + (currentDnaSet === 'exploited' ? 'red' : 'gray') + '" style="width:' + values[i] + '%"><span>' + values[i] + '%</span></div></div>' +
+            '<div class="hbar-value">' + values[i] + '%</div>';
+          section.appendChild(row);
+        });
+        container.appendChild(section);
+      });
+    }
+    renderDnaBars();
+
+    document.querySelectorAll('#dnaToggle .toggle-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('#dnaToggle .toggle-btn').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        currentDnaSet = this.dataset.set;
+        renderDnaBars();
+      });
+    });
+  } else {
+    document.getElementById('dnaToggle').style.display = 'none';
+    document.getElementById('dnaCharts').innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate attack vector statistics.</p>';
+  }
+
+  /* ================================================================
+     RENDER: SECTION 15 - TRACKER COMPARISON + VENDORS
+     ================================================================ */
+  whenChartInView('vendorChart', function() {
+  if (DATA.trackers && DATA.trackers.available !== false && DATA.trackers.items && DATA.trackers.items.length > 0) {
+    var trackerContainer = document.getElementById('trackerBars');
+    DATA.trackers.items.forEach(function(t) {
+      var row = document.createElement('div');
+      row.className = 'hbar-row';
+      var pct = DATA.trackers.maxValue > 0 ? (t.value / DATA.trackers.maxValue * 100).toFixed(0) : 0;
+      var fillStyle = 'width:' + pct + '%';
+      if (t.color && t.color.startsWith('#')) fillStyle += ';background:' + t.color;
+      var fillClass = 'hbar-fill' + (t.color && !t.color.startsWith('#') ? ' ' + t.color : '');
+      row.innerHTML = '<div class="hbar-label">' + t.name + '</div>' +
+        '<div class="hbar-track"><div class="' + fillClass + '" style="' + fillStyle + '"><span>' + t.value.toLocaleString() + '</span></div></div>' +
+        '<div class="hbar-value">' + t.value.toLocaleString() + '</div>';
+      trackerContainer.appendChild(row);
+    });
+
+    var vendorsByTracker = DATA.trackers.vendorsByTracker || {};
+    var vendorChartInstance = null;
+    var vendorChartContainer = document.getElementById('vendorChart').parentElement;
+
+    function renderVendorChart(trackerName) {
+      var v = vendorsByTracker[trackerName];
+      var canvas = document.getElementById('vendorChart');
+      var noDataEl = vendorChartContainer.querySelector('.vendor-no-data');
+      if (v && v.labels && v.labels.length > 0 && v.data && v.data.length > 0) {
+        if (noDataEl) noDataEl.style.display = 'none';
+        canvas.style.display = '';
+        if (vendorChartInstance) vendorChartInstance.destroy();
+        var cohortTotal = v.data.reduce(function(a, b) { return a + b; }, 0);
+        vendorChartInstance = createBarChart('vendorChart', v.labels,
+          [{ label: 'Count', data: v.data, backgroundColor: '#E63946' }],
+          { indexAxis: 'y', scales: { x: { grid: { color: '#F5F5F5' }, border: { display: false } }, y: { grid: { display: false }, border: { display: false } } },
+            plugins: { tooltip: { callbacks: { label: function(ctx) {
+              var x = ctx.parsed.x != null ? ctx.parsed.x : ctx.parsed.y;
+              var pct = cohortTotal > 0 ? ((x / cohortTotal) * 100).toFixed(1) : '0';
+              return 'Count: ' + x.toLocaleString() + ' (' + pct + '%)';
+            } } } } }
+        );
+      } else {
+        if (vendorChartInstance) { vendorChartInstance.destroy(); vendorChartInstance = null; }
+        canvas.style.display = 'none';
+        var wrap = noDataEl || vendorChartContainer.querySelector('.vendor-no-data');
+        if (wrap) {
+          wrap.textContent = 'No vendor data for ' + trackerName + '.';
+          wrap.style.display = 'flex';
+        } else {
+          wrap = document.createElement('div');
+          wrap.className = 'vendor-no-data';
+          wrap.style.cssText = 'position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--gray-500);';
+          wrap.textContent = 'No vendor data for ' + trackerName + '.';
+          vendorChartContainer.style.position = 'relative';
+          vendorChartContainer.appendChild(wrap);
+        }
+      }
+    }
+
+    var firstTrackerWithData = DATA.trackers.items && DATA.trackers.items.length > 0
+      ? DATA.trackers.items.find(function(t) { return vendorsByTracker[t.name] && vendorsByTracker[t.name].labels && vendorsByTracker[t.name].labels.length > 0; })
+      : null;
+    var activeTracker = (firstTrackerWithData && firstTrackerWithData.name) || 'CISA KEV';
+    document.querySelectorAll('#vendorTrackerToggle .toggle-btn').forEach(function(btn) {
+      if (btn.dataset.tracker === activeTracker) btn.classList.add('active');
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('#vendorTrackerToggle .toggle-btn').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        renderVendorChart(this.dataset.tracker);
+      });
+    });
+
+    renderVendorChart(activeTracker);
+  } else {
+    document.getElementById('trackerBars').innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate tracker comparison and vendor statistics.</p>';
+    document.getElementById('vendorChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable.</p>';
+  }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 16 - EXPERTS DISAGREE
+     ================================================================ */
+  if (DATA.disagreement && DATA.disagreement.available !== false && DATA.disagreement.labels && DATA.disagreement.labels.length > 0) {
+    createBarChart('deltaChart', DATA.disagreement.labels,
+      [{ label: '% of CVEs', data: DATA.disagreement.data, backgroundColor: DATA.disagreement.colors }],
+      { plugins: { tooltip: { callbacks: { label: function(ctx) { return 'Delta ' + ctx.label + ': ' + ctx.parsed.y + '% of jointly-scored CVEs'; } } } },
+        scales: { y: { ticks: { callback: function(v) { return v + '%'; } } },
+          x: { title: { display: true, text: 'Absolute score difference (NVD vs CISA ADP/CNA)', font: { size: 11, weight: '500' }, color: '#737373' } } } }
+    );
+    renderStatRow('disagreementStats', DATA.disagreement.stats);
+    var disagreeIntro = document.getElementById('disagreementIntro');
+    if (disagreeIntro && DATA.disagreement.stats && DATA.disagreement.stats.length >= 2) {
+      var agreePct = DATA.disagreement.stats[0].number;
+      var disagreePct = DATA.disagreement.stats[1].number;
+      disagreeIntro.textContent = 'When both NVD and CISA ADP/CNA score the same vulnerability, they agree ' + agreePct + ' of the time. But for the remaining ' + disagreePct + ', the disagreements can be significant. It means that the scores are subjective.';
+    }
+  } else {
+    document.getElementById('deltaChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate NVD vs CISA score disagreement statistics.</p>';
+    document.getElementById('disagreementStats').innerHTML = '';
+  }
+
+  /* ================================================================
+     RENDER: SECTION 17 - GLOBAL COVERAGE
+     ================================================================ */
+  if (DATA.global && DATA.global.available !== false && DATA.global.bars && DATA.global.bars.length > 0) {
+    var globalContainer = document.getElementById('globalBars');
+    globalContainer.classList.add('hbar-group');
+    DATA.global.bars.forEach(function(d) {
+      var pct = d.overlapPct || 0;
+      var disagreePct = d.scoreDisagreePct != null ? d.scoreDisagreePct : 0;
+      var block = document.createElement('div');
+      block.className = 'global-coverage-block';
+      block.innerHTML =
+        '<div class="hbar-row">' +
+          '<div class="hbar-label">' + d.name + '</div>' +
+          '<div class="hbar-track"><div class="hbar-fill red" style="width:' + pct + '%"><span>' + pct + '% overlap</span></div></div>' +
+          '<div class="hbar-value">' + pct + '%</div>' +
+        '</div>' +
+        '<div class="hbar-row hbar-row-sub">' +
+          '<div class="hbar-label"><span class="hbar-sublabel">Score disagreement</span></div>' +
+          '<div class="hbar-track"><div class="hbar-fill orange" style="width:' + disagreePct + '%"><span>' + disagreePct + '%</span></div></div>' +
+          '<div class="hbar-value">' + disagreePct + '%</div>' +
+        '</div>';
+      globalContainer.appendChild(block);
+    });
+    renderStatRow('globalStats', DATA.global.stats);
+    var globalExpl = document.getElementById('globalExplanation');
+    if (globalExpl && DATA.global.cvelistTotal) {
+      var hasBdu = DATA.global.bars.some(function(b) { return b.name.indexOf('BDU') >= 0; });
+      var base = 'cvelistV5 has ' + DATA.global.cvelistTotal.toLocaleString() + ' CVEs. Top bar: % overlap with each database. Bottom bar: % of overlapping CVEs where cvelistV5 and NVD (US) assign different CVSS scores.';
+      if (!hasBdu) base += ' The BDU (Russia) dataset has been unavailable for some time, most recently due to the war in Ukraine.';
+      globalExpl.textContent = base;
+    }
+  } else {
+    document.getElementById('globalBars').innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline (cvelistV5, euvd, jvndb, cnvd) to generate global coverage. The BDU (Russia) dataset has been offline for some time, likely due to the war in Ukraine.</p>';
+    document.getElementById('globalStats').innerHTML = '';
+    var expl = document.getElementById('globalExplanation');
+    if (expl) expl.textContent = 'Requires cvelistV5 as baseline plus EUVD (EU), JVN (Japan), and CNVD (China). The BDU (Russia) dataset has been offline, likely due to the war in Ukraine.';
+  }
+
+
+  /* ================================================================
+     RENDER: SECTION 18 - QUALITY CONTROL
+     ================================================================ */
+  whenChartInView('qualityChart', function() {
+    if (DATA.quality && DATA.quality.available !== false && DATA.quality.labels && DATA.quality.labels.length > 0) {
+      createLineChart('qualityChart', DATA.quality.labels,
+      [
+        { label: 'Rejected CVEs', data: DATA.quality.rejected,
+          borderColor: '#E63946', backgroundColor: 'rgba(230,57,70,0.06)', borderWidth: 2.5, fill: true,
+          pointBackgroundColor: '#E63946', pointBorderColor: '#fff', pointBorderWidth: 2 },
+        { label: 'Disputed CVEs', data: DATA.quality.disputed,
+          borderColor: '#F97316', backgroundColor: 'rgba(249,115,22,0.06)', borderWidth: 2, fill: true, borderDash: [5,3],
+          pointBackgroundColor: '#F97316', pointBorderColor: '#fff', pointBorderWidth: 2 }
+      ],
+      { plugins: { legend: { display: true, position: 'top', align: 'start', labels: { boxWidth: 12, boxHeight: 12, padding: 20, font: { size: 12, weight: '500' } } } } }
+    );
+    renderStatRow('qualityStats', DATA.quality.stats);
+    var qualIntro = document.getElementById('qualityIntro');
+    if (qualIntro && DATA.quality.stats && DATA.quality.stats.length > 0) {
+      var rejected = DATA.quality.stats[0].number;
+      qualIntro.textContent = 'As CVE volume has exploded, so have quality problems. ' + rejected + ' CVEs have been rejected due to duplicates, errors, and non-vulnerabilities that slipped through the system. Will AI make this better or worse?';
+    }
+    } else {
+      document.getElementById('qualityChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate rejected/disputed CVE statistics.</p>';
+      document.getElementById('qualityStats').innerHTML = '';
+    }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 19 - OVERREPRESENTED CVSS SCORES
+     ================================================================ */
+  whenChartInView('cvssOverrepresentedChart', function() {
+  if (DATA.cvssOverrepresented && DATA.cvssOverrepresented.available !== false && DATA.cvssOverrepresented.labels && DATA.cvssOverrepresented.actualCves) {
+    var ovLabels = DATA.cvssOverrepresented.labels;
+    var ovActual = DATA.cvssOverrepresented.actualCves;
+    var ovRatio = DATA.cvssOverrepresented.relativeRatio || [];
+    var step = Math.max(1, Math.floor(ovLabels.length / 21));
+    var tickLabels = ovLabels.filter(function(_, i) { return i % step === 0; });
+    new Chart(document.getElementById('cvssOverrepresentedChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ovLabels,
+        datasets: [
+          { label: 'CVEs', data: ovActual, backgroundColor: 'rgba(100, 149, 237, 0.5)', borderColor: 'rgba(100, 149, 237, 0.8)', borderWidth: 1, yAxisID: 'y', order: 2 },
+          { label: 'Ratio (CVEs per combination)', data: ovRatio, type: 'line', borderColor: '#E63946', backgroundColor: 'rgba(230, 57, 70, 0.1)', borderWidth: 2, fill: false, tension: 0.2, pointRadius: 0, pointHoverRadius: 4, yAxisID: 'y1', order: 1 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        scales: {
+          x: {
+            grid: { display: false }, border: { display: false },
+            ticks: { maxRotation: 0, autoSkip: true, maxTicksLimit: 21, callback: function(_, i) { return i % step === 0 ? ovLabels[i] : ''; } }
+          },
+          y: { type: 'linear', position: 'left', grid: { color: '#F5F5F5' }, border: { display: false }, title: { display: true, text: 'Number of CVEs' }, ticks: { callback: function(v) { return v >= 1000 ? (v/1000).toFixed(0) + 'k' : v; } } },
+          y1: { type: 'linear', position: 'right', grid: { drawOnChartArea: false }, border: { display: false }, title: { display: true, text: 'Ratio (CVEs per combination)' } }
+        },
+        plugins: {
+          legend: { display: true, position: 'top', labels: { boxWidth: 12, padding: 16 } },
+          tooltip: { callbacks: { label: function(ctx) { if (ctx.datasetIndex === 0) return 'CVEs: ' + ctx.parsed.y.toLocaleString(); return 'Ratio: ' + ctx.parsed.y.toFixed(1) + ':1'; } } }
+        }
+      }
+    });
+    renderStatRow('cvssOverrepresentedStats', DATA.cvssOverrepresented.stats || []);
+  } else {
+    document.getElementById('cvssOverrepresentedChart').parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline (NVD + cvss-math-probability) to generate overrepresented CVSS score statistics.</p>';
+    document.getElementById('cvssOverrepresentedStats').innerHTML = '';
+  }
+  });
+
+  /* ================================================================
+     RENDER: SECTION 20 - TAKEAWAYS
+     ================================================================ */
+  var takeawayEl = document.getElementById('takeawayGrid');
+  var takeawayItems = (DATA.takeaways && DATA.takeaways.items) ? DATA.takeaways.items : [];
+  if (DATA.takeaways && DATA.takeaways.available === true && takeawayItems.length > 0) {
+    takeawayItems.forEach(function(t) {
+      var card = document.createElement('div');
+      card.className = 'takeaway-card';
+      card.innerHTML = '<div class="takeaway-num">' + t.num + '</div><h3>' + t.title + '</h3><p>' + t.body + '</p>';
+      takeawayEl.appendChild(card);
+    });
+  } else {
+    takeawayEl.innerHTML = '<p class="data-unavailable">Data unavailable. Run the pipeline to generate takeaways from real statistics.</p>';
+  }
+
+  /* ================================================================
+     ANIMATED COUNTERS
+     ================================================================ */
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute('data-count'));
+    var suffix = el.getAttribute('data-suffix') || '';
+    var finalText = target.toLocaleString() + suffix;
+    el.textContent = finalText;
+    el.style.minWidth = el.offsetWidth + 'px';
+    el.style.minHeight = el.offsetHeight + 'px';
+    el.textContent = '0' + suffix;
+    var duration = 1500;
+    var start = performance.now();
+    function update(now) {
+      var elapsed = now - start;
+      var progress = Math.min(elapsed / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = Math.floor(eased * target);
+      el.textContent = current.toLocaleString() + suffix;
+      if (progress < 1) requestAnimationFrame(update);
+      else el.textContent = target.toLocaleString() + suffix;
+    }
+    requestAnimationFrame(update);
+  }
+
+  /* ================================================================
+     PROGRESS BAR ANIMATION ON SCROLL
+     ================================================================ */
+  function animateProgressBars(container) {
+    container.querySelectorAll('.progress-bar-fill').forEach(function(bar) {
+      if (!bar.dataset.animated) {
+        bar.dataset.animated = 'true';
+        var targetWidth = bar.dataset.width;
+        setTimeout(function() { bar.style.width = targetWidth + '%'; }, 100);
+      }
+    });
+  }
+
+  /* ================================================================
+     SCROLL OBSERVER
+     ================================================================ */
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        if (entry.target.closest('.hero')) {
+          entry.target.querySelectorAll('[data-count]').forEach(function(el) {
+            if (!el.dataset.animated) { el.dataset.animated = 'true'; animateCounter(el); }
+          });
+        }
+        if (entry.target.classList.contains('timeline')) {
+          entry.target.querySelectorAll('.timeline-item').forEach(function(item, i) {
+            setTimeout(function() { item.classList.add('visible'); }, parseInt(item.dataset.delay) || i * 200);
+          });
+        }
+        if (entry.target.id === 'progressBars') { animateProgressBars(entry.target); }
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade-in, .timeline, #progressBars').forEach(function(el) { observer.observe(el); });
+  document.querySelectorAll('.hero-stats').forEach(function(el) { el.classList.add('fade-in'); observer.observe(el); });
+
+  /* ================================================================
+     SMOOTH NAV SCROLL
+     ================================================================ */
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  /* ================================================================
+     COPY LINK BUTTONS - Add to all sections with id
+     ================================================================ */
+  var toast = document.createElement('div');
+  toast.className = 'copy-toast';
+  toast.textContent = 'Link copied to clipboard';
+  document.body.appendChild(toast);
+
+  function showToast() {
+    toast.classList.add('visible');
+    clearTimeout(toast._tid);
+    toast._tid = setTimeout(function() {
+      toast.classList.remove('visible');
+    }, 2000);
+  }
+
+  var linkSvg = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+  document.querySelectorAll('section[id] .section-header').forEach(function(header) {
+    var section = header.closest('section');
+    var anchor = section && section.id;
+    if (!anchor) return;
+    var row = header.querySelector('.section-label-row');
+    var labelEl = row ? row.querySelector('.label') : header.querySelector('.label');
+    if (!labelEl) return;
+    if (!row) {
+      row = document.createElement('div');
+      row.className = 'section-label-row';
+      labelEl.parentNode.insertBefore(row, labelEl);
+      row.appendChild(labelEl);
+    }
+    if (row.querySelector('.copy-link-btn')) return;
+    var btn = document.createElement('button');
+    btn.className = 'copy-link-btn';
+    btn.setAttribute('data-anchor', anchor);
+    btn.setAttribute('title', 'Copy link');
+    btn.setAttribute('aria-label', 'Copy section link');
+    btn.innerHTML = linkSvg;
+    row.appendChild(btn);
+  });
+
+  document.querySelectorAll('.copy-link-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var anchor = this.getAttribute('data-anchor');
+      var url = (window.location.href.split('#')[0]) + '#' + anchor;
+      navigator.clipboard.writeText(url).then(function() {
+        showToast();
+      }).catch(function() {
+        toast.textContent = 'Copy failed';
+        showToast();
+        setTimeout(function() { toast.textContent = 'Link copied to clipboard'; }, 2500);
+      });
+    });
+  });
+
+})();
+</script>
+
+</body>
+</html>

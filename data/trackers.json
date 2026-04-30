@@ -1,0 +1,205 @@
+{
+  "available": true,
+  "items": [
+    {
+      "name": "CVSS Critical (≥9.0)",
+      "value": 40260,
+      "color": "#E63946"
+    },
+    {
+      "name": "EPSS Critical (≥0.9)",
+      "value": 1368,
+      "color": "#F97316"
+    },
+    {
+      "name": "VulnCheck KEV",
+      "value": 4804,
+      "color": "#EAB308"
+    },
+    {
+      "name": "CISA KEV",
+      "value": 1585,
+      "color": "#DC2626"
+    },
+    {
+      "name": "ENISA KEV",
+      "value": 19,
+      "color": "#2563EB"
+    }
+  ],
+  "maxValue": 40260,
+  "vendorsByTracker": {
+    "CVSS Critical (≥9.0)": {
+      "labels": [
+        "Unknown",
+        "Microsoft",
+        "Adobe",
+        "Google",
+        "Apple",
+        "Mozilla",
+        "Oracle",
+        "Tenda",
+        "Cisco",
+        "Hp",
+        "Qualcomm",
+        "Ibm"
+      ],
+      "data": [
+        2420,
+        1864,
+        1779,
+        982,
+        916,
+        767,
+        708,
+        563,
+        562,
+        540,
+        529,
+        521
+      ]
+    },
+    "EPSS Critical (≥0.9)": {
+      "labels": [
+        "Microsoft",
+        "Apache",
+        "Oracle",
+        "Adobe",
+        "Dlink",
+        "Vmware",
+        "Unknown",
+        "Ivanti",
+        "Cisco",
+        "Atlassian",
+        "Zohocorp",
+        "Citrix"
+      ],
+      "data": [
+        119,
+        109,
+        54,
+        49,
+        31,
+        30,
+        29,
+        26,
+        25,
+        21,
+        15,
+        14
+      ]
+    },
+    "VulnCheck KEV": {
+      "labels": [
+        "Microsoft",
+        "Apple",
+        "Adobe",
+        "Cisco",
+        "Apache",
+        "Google",
+        "Oracle",
+        "D-link",
+        "Vmware",
+        "Totolink",
+        "Linux",
+        "Ivanti"
+      ],
+      "data": [
+        672,
+        150,
+        145,
+        126,
+        120,
+        89,
+        79,
+        69,
+        53,
+        51,
+        47,
+        44
+      ]
+    },
+    "CISA KEV": {
+      "labels": [
+        "Microsoft",
+        "Apple",
+        "Cisco",
+        "Adobe",
+        "Google",
+        "Oracle",
+        "Apache",
+        "Ivanti",
+        "D-link",
+        "Fortinet",
+        "Vmware",
+        "Linux"
+      ],
+      "data": [
+        370,
+        93,
+        89,
+        78,
+        71,
+        42,
+        39,
+        33,
+        26,
+        26,
+        26,
+        24
+      ]
+    },
+    "ENISA KEV": {
+      "labels": [
+        "Red Hat",
+        "Fortinet",
+        "Microsoft",
+        "Ivanti",
+        "Citrix",
+        "Apache",
+        "Atlassian",
+        "F5",
+        "Omnissa"
+      ],
+      "data": [
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "vendorLabels": [
+    "Microsoft",
+    "Apple",
+    "Cisco",
+    "Adobe",
+    "Google",
+    "Oracle",
+    "Apache",
+    "Ivanti",
+    "D-link",
+    "Fortinet",
+    "Vmware",
+    "Linux"
+  ],
+  "vendorData": [
+    370,
+    93,
+    89,
+    78,
+    71,
+    42,
+    39,
+    33,
+    26,
+    26,
+    26,
+    24
+  ]
+}

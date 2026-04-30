@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security threat hierarchy | CVEdata.com</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="static/css/main-20260212.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    .breakdown-page {
+      min-height: 100vh;
+      background: var(--white);
+      padding: calc(var(--grid) * 10) 0 calc(var(--grid) * 16);
+    }
+
+    .breakdown-page .section-header {
+      margin-bottom: calc(var(--grid) * 6);
+    }
+
+    .breakdown-page .section-header h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--black);
+      margin-bottom: calc(var(--grid) * 2);
+    }
+
+    .breakdown-page .section-header p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      color: var(--gray-600);
+      max-width: 640px;
+    }
+
+    .breakdown-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: calc(var(--grid) * 2);
+      align-items: center;
+      margin-bottom: calc(var(--grid) * 4);
+      padding: calc(var(--grid) * 2) calc(var(--grid) * 3);
+      background: var(--gray-100);
+      border: 1px solid var(--gray-200);
+      border-radius: 4px;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--gray-600);
+    }
+
+    .breakdown-legend .li {
+      display: flex;
+      align-items: center;
+      gap: calc(var(--grid) * 1);
+    }
+
+    .breakdown-legend .ld {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .ld-hc { background: var(--orange); }
+    .ld-tech { background: #3b82f6; }
+    .ld-teal { background: var(--green); }
+    .ld-amber { background: var(--yellow); }
+    .ld-red { background: var(--accent); }
+    .ld-neutral { background: var(--gray-400); }
+
+    .breakdown-controls {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: calc(var(--grid) * 4);
+    }
+
+    .breakdown-controls .toggle-group {
+      margin: 0;
+    }
+
+    .breakdown-data-banner {
+      font-size: 0.75rem;
+      color: var(--gray-500);
+      margin-bottom: calc(var(--grid) * 3);
+      padding: calc(var(--grid) * 2);
+      background: var(--off-white);
+      border: 1px dashed var(--gray-300);
+      border-radius: 4px;
+    }
+
+    .breakdown-page .tnode { margin: 0; }
+
+    .breakdown-page .trow {
+      display: flex;
+      align-items: flex-start;
+      gap: calc(var(--grid) * 1.5);
+      padding: calc(var(--grid) * 1.5) calc(var(--grid) * 2);
+      border-radius: 4px;
+      transition: background 0.15s ease;
+    }
+
+    .breakdown-page .trow.clickable { cursor: pointer; }
+
+    .breakdown-page .cbar {
+      width: 3px;
+      height: 20px;
+      border-radius: 2px;
+      flex-shrink: 0;
+      margin-top: 3px;
+      transform-origin: bottom center;
+    }
+
+    .breakdown-page .cbar.chart-enter {
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: bottom center;
+      will-change: transform, opacity;
+    }
+    .breakdown-page .cbar.chart-enter-active {
+      opacity: 1;
+      transform: scaleY(1);
+      transition: opacity 320ms ease-in-out, transform 320ms cubic-bezier(0.34, 1.56, 0.64, 1);
+      transition-delay: var(--enter-delay, 0ms);
+    }
+
+    .breakdown-page .tinfo { flex: 1; min-width: 0; }
+
+    .breakdown-page .trow-meta {
+      display: flex;
+      align-items: flex-start;
+      gap: calc(var(--grid) * 1);
+      flex-shrink: 0;
+    }
+
+    .breakdown-page .tlabel {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--black);
+      line-height: 1.4;
+    }
+
+    .breakdown-page .tnote {
+      font-size: 0.8125rem;
+      color: var(--gray-500);
+      margin-top: 2px;
+      line-height: 1.45;
+    }
+
+    .breakdown-page .tpct {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+
+    .breakdown-page .tchev {
+      font-size: 0.625rem;
+      color: var(--gray-400);
+      width: 14px;
+      text-align: center;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+      margin-top: 5px;
+    }
+
+    .breakdown-page .tnode.open > .tnode__rowwrap > .trow .tchev {
+      transform: rotate(90deg);
+    }
+
+    .breakdown-page .tspacer {
+      width: 14px;
+      flex-shrink: 0;
+    }
+
+    .breakdown-page .tchildren {
+      padding-left: calc(var(--grid) * 2);
+      border-left: 1px solid var(--gray-200);
+      margin-left: calc(var(--grid) * 2);
+    }
+
+    .breakdown-page .tnode.closed > .tchildren {
+      display: none;
+    }
+
+    .breakdown-page .cb-gray   { background: var(--gray-400); }
+    .breakdown-page .cb-blue   { background: #3b82f6; }
+    .breakdown-page .cb-coral  { background: var(--orange); }
+    .breakdown-page .cb-teal   { background: var(--green); }
+    .breakdown-page .cb-amber  { background: var(--yellow); }
+    .breakdown-page .cb-red    { background: var(--accent); }
+
+    .breakdown-page .tb-gray   { background: var(--gray-100); color: var(--gray-600); border: 1px solid var(--gray-200); }
+    .breakdown-page .tb-blue   { background: rgba(59, 130, 246, 0.12); color: #1d4ed8; border: 1px solid rgba(59, 130, 246, 0.25); }
+    .breakdown-page .tb-coral  { background: rgba(249, 115, 22, 0.12); color: #c2410c; border: 1px solid rgba(249, 115, 22, 0.25); }
+    .breakdown-page .tb-teal   { background: rgba(34, 197, 94, 0.12); color: #15803d; border: 1px solid rgba(34, 197, 94, 0.25); }
+    .breakdown-page .tb-amber  { background: rgba(234, 179, 8, 0.15); color: #a16207; border: 1px solid rgba(234, 179, 8, 0.35); }
+    .breakdown-page .tb-red    { background: var(--accent-light); color: var(--accent); border: 1px solid var(--accent-medium); }
+
+    /* Swiss-style inline drawer: opens beneath each row (hover/focus on row + drawer) */
+    .breakdown-page .tnode__rowwrap {
+      border-radius: 4px;
+    }
+
+    .breakdown-page .tnode__rowwrap:hover,
+    .breakdown-page .tnode__rowwrap:focus-within {
+      background: var(--gray-100);
+    }
+
+    /* Height is driven by JS (inline max-height) so collapsed drawers take no space — CSS grid 0fr was still reserving ~full text height in several browsers. */
+    .breakdown-row-drawer {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transition: max-height 320ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 280ms ease-in-out;
+    }
+
+    .breakdown-page .tnode__rowwrap.is-drawer-open .breakdown-row-drawer {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .breakdown-row-drawer__inner {
+      overflow: hidden;
+      min-height: 0;
+      padding: calc(var(--grid) * 1.5) calc(var(--grid) * 2);
+      padding-left: calc(var(--grid) * 2 + 3px + var(--grid) * 1.5);
+      border-top: 1px solid var(--gray-200);
+      border-left: 3px solid var(--black);
+      background: var(--white);
+    }
+
+    .breakdown-page .tnode__rowwrap.is-drawer-open .breakdown-row-drawer__inner {
+      box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.04);
+    }
+
+    .breakdown-row-drawer__body {
+      margin: 0;
+      max-width: none;
+      font-size: 0.9375rem;
+      line-height: 1.65;
+      color: var(--gray-600);
+      white-space: pre-wrap;
+    }
+
+    .breakdown-page .trow {
+      outline: none;
+    }
+
+    .breakdown-page .trow:focus-visible {
+      outline: 2px solid var(--black);
+      outline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .breakdown-row-drawer {
+        transition: opacity 0.12s ease;
+      }
+      .breakdown-page .cbar.chart-enter {
+        opacity: 1;
+        transform: scaleY(1);
+        will-change: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="nav-brand"><a href="index.html">CVE<span>data</span></a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Main report</a></li>
+        <li><a href="fire.html">FIRE</a></li>
+        <li><a href="breakdown.html" aria-current="page">Breakdown</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="breakdown-page">
+    <div class="container">
+      <header class="section-header">
+        <span class="label">Threat model</span>
+        <h1>Security threat hierarchy</h1>
+        <p>All pathways to unwanted data access, business disruption, or compromise, broken down by attack vector and measured impact. Click any row to expand or collapse. Hover a row (or move into the panel below it) to open a short explanation for that slice.</p>
+      </header>
+
+      <p id="breakdownBanner" class="breakdown-data-banner" hidden></p>
+
+      <div class="breakdown-legend" aria-label="Legend">
+        <span class="li"><span class="ld ld-hc"></span> Human-centric</span>
+        <span class="li"><span class="ld ld-tech"></span> Technical</span>
+        <span class="li"><span class="ld ld-teal"></span> Covered / actionable</span>
+        <span class="li"><span class="ld ld-amber"></span> Partial impact</span>
+        <span class="li"><span class="ld ld-red"></span> Full breach + loss</span>
+        <span class="li"><span class="ld ld-neutral"></span> Unknown / neutral</span>
+      </div>
+
+      <div class="breakdown-controls">
+        <div class="toggle-group" role="group" aria-label="Expand or collapse tree">
+          <button type="button" class="toggle-btn" onclick="setAll(true)">Expand all</button>
+          <button type="button" class="toggle-btn" onclick="setAll(false)">Collapse all</button>
+        </div>
+      </div>
+
+      <div id="tt"></div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <footer>
+    <div class="container">
+      <div class="footer-left">
+        Data compiled and analyzed by Robert "<a href="https://rsnake.com/" target="_blank">RSnake</a>" Hansen and designed by Lex Arquette.
+        Breakdown view is a working model that combines computed values and editorial placeholders.
+      </div>
+      <div class="footer-sources">
+        Sources for this page:
+        <a href="https://github.com/CVEProject/cvelistV5" target="_blank">CVE cvelistV5</a>,
+        <a href="https://nvd.nist.gov/" target="_blank">NVD</a>,
+        <a href="https://github.com/vz-risk/VCDB" target="_blank">VCDB</a>,
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV</a>,
+        <a href="https://vulncheck.io/" target="_blank">VulnCheck</a>,
+        <a href="https://github.com/projectdiscovery/nuclei-templates" target="_blank">Nuclei templates</a>,
+        <a href="https://www.zywave.com/" target="_blank">Zywave</a>,
+        and FIRE (insurance carrier data).
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-updated" id="footerLastUpdated" style="display:none">Last updated: <span id="lastUpdated"></span></div>
+    </div>
+  </footer>
+
+  <script src="static/js/fire-data.js"></script>
+  <script src="static/js/breakdown-data.js"></script>
+  <script>
+    function escapeHtml(s) {
+      return String(s ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    /** Same catalog total fire.html uses when pipeline has written fire-data.js */
+    function getFireTotalFromFireOverrides() {
+      var F = window.__FIRE_OVERRIDES || {};
+      var y = F.fireVulnsByYear;
+      if (y && y.available && typeof y.total === 'number') return y.total;
+      var k = F.fireKevOverlap;
+      if (k && k.available && typeof k.fireTotal === 'number') return k.fireTotal;
+      return 0;
+    }
+
+    function getFireLastUpdatedFromOverrides() {
+      var F = window.__FIRE_OVERRIDES || {};
+      return F.lastUpdated || '';
+    }
+
+    /** Three outcome buckets (no breach/loss, ICE, FIRE) from fire-data when present. */
+    function computeCveUniverseSplit() {
+      var outcomeFlow = (window.__FIRE_OVERRIDES && window.__FIRE_OVERRIDES.fireSankey) || null;
+      if (!outcomeFlow || !outcomeFlow.available || !outcomeFlow.link || !outcomeFlow.node || !outcomeFlow.node.label) return null;
+      var tgt = outcomeFlow.link.target;
+      var val = outcomeFlow.link.value;
+      if (!tgt || !val || tgt.length !== val.length) return null;
+      var nLabels = outcomeFlow.node.label.length;
+      var nCat = 3;
+      var nLeft = nLabels - nCat;
+      if (nLeft < 0) return null;
+      var iNo = nLeft;
+      var iIce = nLeft + 1;
+      var iFire = nLeft + 2;
+      var noBreach = 0;
+      var ice = 0;
+      var fire = 0;
+      for (var i = 0; i < tgt.length; i++) {
+        var t = tgt[i];
+        var v = val[i];
+        if (t === iNo) noBreach += v;
+        else if (t === iIce) ice += v;
+        else if (t === iFire) fire += v;
+      }
+      var total = noBreach + ice + fire;
+      if (total <= 0) return null;
+      function fmt(n) {
+        return n.toLocaleString() + ' (' + ((100 * n) / total).toFixed(1) + '%)';
+      }
+      return {
+        noKnownBreach: fmt(noBreach),
+        breachesOnly: fmt(ice),
+        breachesLosses: fmt(fire),
+      };
+    }
+
+    var EDITORIAL_CVE_UNIVERSE = { noKnownBreach: '97.8-98.6%', breachesOnly: '1.2-2.1%', breachesLosses: '0.2%' };
+
+    function buildTree(m) {
+      var cveSplit = computeCveUniverseSplit();
+      var U = cveSplit
+        ? { noKnownBreach: cveSplit.noKnownBreach, breachesOnly: cveSplit.breachesOnly, breachesLosses: cveSplit.breachesLosses }
+        : ((m && m.cveUniverseSplit) || EDITORIAL_CVE_UNIVERSE);
+      var cvesPctStr = '25-30%';
+      var ftFromBreakdown = (m && typeof m.fireTotal === 'number' && m.fireTotal > 0) ? m.fireTotal : 0;
+      var ftFromFire = getFireTotalFromFireOverrides();
+      var ft = ftFromBreakdown || ftFromFire || 0;
+      var hasScanSplit =
+        m &&
+        Object.prototype.hasOwnProperty.call(m, 'scannableFire') &&
+        Object.prototype.hasOwnProperty.call(m, 'notScannableFire') &&
+        typeof m.scannableFire === 'number' &&
+        typeof m.notScannableFire === 'number';
+      var sc = hasScanSplit ? m.scannableFire : null;
+      var ns = hasScanSplit ? m.notScannableFire : null;
+      var pctSc = ft > 0 && sc != null ? ((sc / ft) * 100).toFixed(1) : '';
+      var pctNs = ft > 0 && ns != null ? ((ns / ft) * 100).toFixed(1) : '';
+      var scanPctStr = hasScanSplit && sc != null && ns != null
+        ? (sc.toLocaleString() + ' (' + pctSc + '%)')
+        : '-';
+      var noscanPctStr = hasScanSplit && sc != null && ns != null
+        ? (ns.toLocaleString() + ' (' + pctNs + '%)')
+        : '-';
+      var hasTagSplit =
+        hasScanSplit &&
+        m &&
+        Object.prototype.hasOwnProperty.call(m, 'scannableFirePresence') &&
+        Object.prototype.hasOwnProperty.call(m, 'scannableFireComplete') &&
+        typeof m.scannableFirePresence === 'number' &&
+        typeof m.scannableFireComplete === 'number';
+      var pres = hasTagSplit ? m.scannableFirePresence : null;
+      var comp = hasTagSplit ? m.scannableFireComplete : null;
+      var pctPres = hasTagSplit && sc != null && sc > 0 && pres != null ? ((100 * pres) / sc).toFixed(1) : '';
+      var pctComp = hasTagSplit && sc != null && sc > 0 && comp != null ? ((100 * comp) / sc).toFixed(1) : '';
+      var presPctStr = hasTagSplit && pres != null && sc != null && sc > 0
+        ? (pres.toLocaleString() + ' (' + pctPres + '%)')
+        : '-';
+      var compPctStr = hasTagSplit && comp != null && sc != null && sc > 0
+        ? (comp.toLocaleString() + ' (' + pctComp + '%)')
+        : '-';
+      var scanChildren = [];
+      if (hasTagSplit && pres != null && comp != null) {
+        scanChildren.push({
+          id: 'scanpres',
+          label: 'Presence check',
+          note: 'templates/scannable YAML tags include presence (FIRE + fire-cve)',
+          pct: presPctStr,
+          color: 'teal',
+          children: [],
+        });
+        scanChildren.push({
+          id: 'scancomp',
+          label: 'Complete',
+          note: 'templates/scannable YAML tags include complete (FIRE + fire-cve)',
+          pct: compPctStr,
+          color: 'teal',
+          children: [],
+        });
+      }
+      var fireLabel = ft > 0 ? (ft.toLocaleString() + ' CVEs') : 'FIRE CVEs';
+
+      return {
+        id: 'root',
+        label: '100% total exposure',
+        note: 'All pathways to unwanted data access, disruption, or compromise',
+        pct: '100%',
+        color: 'gray',
+        open: true,
+        children: [
+          { id: 'nontch', label: 'Non-technical losses', note: 'Stolen laptops, physical theft, outages, insider threats', pct: '?%', color: 'gray', children: [] },
+          {
+            id: 'tech',
+            label: 'Technical losses / compromises',
+            note: 'Measurable cyber incidents, split below',
+            pct: '?%',
+            color: 'blue',
+            open: true,
+            children: [
+              {
+                id: 'human',
+                label: 'Human-centric exploitation',
+                note: 'Attacks that rely on a person taking action: clicks, calls, or opening content',
+                pct: '50%',
+                color: 'coral',
+                open: true,
+                children: [
+                  {
+                    id: 'phish',
+                    label: 'Phishing / vishing / smishing / spear phishing',
+                    note: 'Fraudulent email, SMS, voice, or chat to steal secrets or install malware',
+                    pct: '30%',
+                    color: 'coral',
+                    children: [],
+                  },
+                  { id: 'drby', label: 'Drive-by downloads', note: 'Malicious sites exploiting unpatched browsers', pct: '10%', color: 'coral', children: [] },
+                  { id: 'malat', label: 'Malicious attachments', note: 'Via email and chat platforms', pct: '10%', color: 'coral', children: [] }
+                ]
+              },
+              {
+                id: 'techex',
+                label: 'Technical exploitation',
+                note: 'Attacks aimed at systems and credentials; less emphasis on tricking a user than the branch above',
+                pct: '50%',
+                color: 'blue',
+                open: true,
+                children: [
+                  { id: 'brute', label: 'Brute force', note: 'Automated password guessing attacks', pct: '10-15%', color: 'blue', children: [] },
+                  { id: 'cred', label: 'Credential stuffing', note: 'Reuse of previously leaked credentials', pct: '10%', color: 'blue', children: [] },
+                  {
+                    id: 'cves',
+                    label: 'CVEs',
+                    note: 'Known vulnerability exploits',
+                    pct: cvesPctStr,
+                    color: 'blue',
+                    open: true,
+                    children: [
+                      { id: 'unused', label: 'No breach / loss', note: 'NVD CVEs with no ICE breach or FIRE loss linkage (no breach/loss outcome)', pct: U.noKnownBreach, color: 'gray', children: [] },
+                      { id: 'bonly', label: 'Breaches only (ICE)', note: 'Breach on record (ICE) but not in the FIRE loss-linked set', pct: U.breachesOnly, color: 'amber', children: [] },
+                      {
+                        id: 'bloss',
+                        label: 'Breaches + losses (FIRE)',
+                        note: 'CVEs in the FIRE insurance-linked catalog',
+                        pct: U.breachesLosses,
+                        color: 'red',
+                        open: true,
+                        children: [
+                          { id: 'norep', label: 'Never reported', note: 'Loss occurred but was never disclosed', pct: '?%', color: 'gray', children: [] },
+                          { id: 'noins', label: 'Not insured', note: 'No cyber insurance coverage', pct: '?%', color: 'gray', children: [] },
+                          { id: 'nodfir', label: 'Incomplete DFIR', note: 'No forensic report linking CVE to loss', pct: '?%', color: 'gray', children: [] },
+                          {
+                            id: 'cov',
+                            label: 'Covered losses',
+                            note: 'Cyber insurance claim filed and attributed to a CVE',
+                            pct: '?%',
+                            color: 'teal',
+                            open: true,
+                            children: [
+                              {
+                                id: 'c558',
+                                label: fireLabel,
+                                note: 'CVEs in the merged FIRE catalog tied to covered losses',
+                                pct: '100%',
+                                color: 'teal',
+                                open: true,
+                                children: [
+                                  {
+                                    id: 'noscan',
+                                    label: 'Not remotely scannable',
+                                    note: 'FIRE total minus scannable (computed)',
+                                    pct: noscanPctStr,
+                                    color: 'gray',
+                                    children: [],
+                                  },
+                                  {
+                                    id: 'scan',
+                                    label: 'Remotely scannable',
+                                    note: 'templates/scannable with fire-cve tag (vulnerabilities repo)',
+                                    pct: scanPctStr,
+                                    color: 'teal',
+                                    open: true,
+                                    children: scanChildren,
+                                  },
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      };
+    }
+
+    function getDrawerBodyForNode(id) {
+      var d = window.__BREAKDOWN_DATA || {};
+      var raw = (d.modals && d.modals[id]) || {};
+      if ('body' in raw) return raw.body;
+      return 'No explanation has been added for this node yet.';
+    }
+
+    function render(n) {
+      var hc = n.children && n.children.length > 0;
+      var isOpen = n.open !== false;
+      var drawerBody = escapeHtml(getDrawerBodyForNode(n.id));
+      var drawer =
+        '<div class="breakdown-row-drawer" aria-hidden="true">' +
+          '<div class="breakdown-row-drawer__inner">' +
+            '<div class="breakdown-row-drawer__body">' + drawerBody + '</div>' +
+          '</div>' +
+        '</div>';
+      return (
+        '<div class="tnode ' + (hc ? (isOpen ? 'open' : 'closed') : '') + '" id="n-' + n.id + '">' +
+          '<div class="tnode__rowwrap">' +
+            '<div class="trow ' + (hc ? 'clickable' : '') + '" tabindex="0" ' + (hc ? 'onclick="tog(\'' + n.id + '\')"' : '') + '>' +
+              '<div class="cbar cb-' + n.color + '"></div>' +
+              '<div class="tinfo">' +
+                '<div class="tlabel">' + n.label + '</div>' +
+                (n.note ? '<div class="tnote">' + n.note + '</div>' : '') +
+              '</div>' +
+              '<div class="trow-meta">' +
+                (n.pct && n.pct !== '?%' ? '<span class="tpct tb-' + n.color + '">' + n.pct + '</span>' : '') +
+                (hc ? '<span class="tchev">&#9658;</span>' : '<span class="tspacer"></span>') +
+              '</div>' +
+            '</div>' +
+            drawer +
+          '</div>' +
+          (hc ? '<div class="tchildren">' + n.children.map(function(c) { return render(c); }).join('') + '</div>' : '') +
+        '</div>'
+      );
+    }
+
+    function tog(id) {
+      var el = document.getElementById('n-' + id);
+      el.classList.toggle('open');
+      el.classList.toggle('closed');
+    }
+
+    function setAll(open) {
+      document.querySelectorAll('.tnode').forEach(function(el) {
+        if (el.querySelector('.tchildren')) {
+          el.classList.toggle('open', open);
+          el.classList.toggle('closed', !open);
+        }
+      });
+    }
+
+    var DATA = window.__BREAKDOWN_DATA || {};
+    var lastUp = (DATA && DATA.lastUpdated) || getFireLastUpdatedFromOverrides();
+    if (lastUp) {
+      var footerWrap = document.getElementById('footerLastUpdated');
+      var footerDate = document.getElementById('lastUpdated');
+      if (footerWrap && footerDate) {
+        footerDate.textContent = lastUp;
+        footerWrap.style.display = '';
+      }
+    }
+    var banner = document.getElementById('breakdownBanner');
+    var fireTotalFallback = getFireTotalFromFireOverrides();
+    var hasAnyFireMetrics = (DATA && DATA.available) || fireTotalFallback > 0;
+    if (!hasAnyFireMetrics) {
+      banner.hidden = false;
+      banner.textContent = 'FIRE catalog totals are not loaded. Run the v3 pipeline (process fire + render) so static/js/fire-data.js and breakdown-data.js are generated, or open this page from a built site that includes those files.';
+    } else {
+      banner.hidden = true;
+    }
+
+    var treeRoot = buildTree(DATA);
+    document.getElementById('tt').innerHTML = render(treeRoot);
+
+    (function initHierarchyBarEntrance() {
+      var STAGGER = 40;
+      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var rows = document.querySelectorAll('.trow');
+      rows.forEach(function(row, i) {
+        var bar = row.querySelector('.cbar');
+        if (!bar) return;
+        bar.classList.add('chart-enter');
+        bar.style.setProperty('--enter-delay', Math.min(i * STAGGER, 2000) + 'ms');
+        if (reduceMotion) {
+          row.setAttribute('data-animated', '');
+          bar.setAttribute('data-animated', '');
+          bar.classList.remove('chart-enter');
+          bar.classList.add('chart-enter-active');
+        }
+      });
+      if (reduceMotion) return;
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (!entry.isIntersecting) return;
+          var row = entry.target;
+          if (row.getAttribute('data-animated')) return;
+          row.setAttribute('data-animated', '');
+          var bar = row.querySelector('.cbar');
+          if (bar) {
+            bar.setAttribute('data-animated', '');
+            bar.classList.remove('chart-enter');
+            bar.classList.add('chart-enter-active');
+            bar.style.willChange = 'transform, opacity';
+            var cleared = false;
+            var onEnd = function(ev) {
+              if (ev.target !== bar || (ev.propertyName !== 'opacity' && ev.propertyName !== 'transform')) return;
+              if (cleared) return;
+              cleared = true;
+              bar.removeEventListener('transitionend', onEnd);
+              bar.style.willChange = '';
+            };
+            bar.addEventListener('transitionend', onEnd);
+          }
+          obs.unobserve(row);
+        });
+      }, { threshold: 0.15 });
+      rows.forEach(function(row) {
+        if (row.querySelector('.cbar')) obs.observe(row);
+      });
+    })();
+
+    (function initInlineDrawer() {
+      function syncExpanded(wrap, open) {
+        var dr = wrap.querySelector('.breakdown-row-drawer');
+        var inner = wrap.querySelector('.breakdown-row-drawer__inner');
+        if (!dr || !inner) return;
+        if (open) {
+          wrap.classList.add('is-drawer-open');
+          dr.setAttribute('aria-hidden', 'false');
+          dr.style.maxHeight = Math.ceil(inner.scrollHeight) + 4 + 'px';
+        } else {
+          wrap.classList.remove('is-drawer-open');
+          dr.setAttribute('aria-hidden', 'true');
+          dr.style.maxHeight = '0px';
+        }
+      }
+
+      document.querySelectorAll('.tnode__rowwrap').forEach(function(wrap) {
+        var dr = wrap.querySelector('.breakdown-row-drawer');
+        if (!dr) return;
+        dr.style.maxHeight = '0px';
+
+        wrap.addEventListener('mouseenter', function() { syncExpanded(wrap, true); });
+        wrap.addEventListener('mouseleave', function(e) {
+          if (!wrap.contains(e.relatedTarget)) syncExpanded(wrap, false);
+        });
+        wrap.addEventListener('focusin', function() { syncExpanded(wrap, true); });
+        wrap.addEventListener('focusout', function(e) {
+          if (!wrap.contains(e.relatedTarget)) syncExpanded(wrap, false);
+        });
+      });
+
+      window.addEventListener('resize', function() {
+        document.querySelectorAll('.tnode__rowwrap.is-drawer-open').forEach(function(wrap) {
+          var dr = wrap.querySelector('.breakdown-row-drawer');
+          var inner = wrap.querySelector('.breakdown-row-drawer__inner');
+          if (dr && inner) dr.style.maxHeight = Math.ceil(inner.scrollHeight) + 4 + 'px';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

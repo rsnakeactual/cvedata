@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "fireTotal": 7821,
+  "otherTotal": 602,
+  "both": 79,
+  "fireOnly": 7742,
+  "otherOnly": 523,
+  "stats": [
+    {
+      "number": "7,821",
+      "desc": "FIRE vulnerabilities"
+    },
+    {
+      "number": "79",
+      "desc": "In both FIRE and ATT&CK"
+    },
+    {
+      "number": "602",
+      "desc": "ATT&CK catalog"
+    }
+  ],
+  "labels": [
+    "Zywave only",
+    "Both",
+    "ATT&CK only"
+  ],
+  "data": [
+    7742,
+    79,
+    523
+  ]
+}

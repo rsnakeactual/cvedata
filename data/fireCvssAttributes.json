@@ -1,0 +1,127 @@
+{
+  "available": true,
+  "categories": [
+    {
+      "title": "Attack Vector",
+      "key": "av"
+    },
+    {
+      "title": "Attack Complexity",
+      "key": "ac"
+    },
+    {
+      "title": "Privileges Required",
+      "key": "pr"
+    },
+    {
+      "title": "User Interaction",
+      "key": "ui"
+    },
+    {
+      "title": "Scope",
+      "key": "scope"
+    },
+    {
+      "title": "Confidentiality Impact",
+      "key": "confidentiality"
+    },
+    {
+      "title": "Integrity Impact",
+      "key": "integrity"
+    },
+    {
+      "title": "Availability Impact",
+      "key": "availability"
+    }
+  ],
+  "av": {
+    "labels": [
+      "Network",
+      "Adjacent",
+      "Local"
+    ],
+    "data": [
+      446,
+      8,
+      73
+    ]
+  },
+  "ac": {
+    "labels": [
+      "Low",
+      "High"
+    ],
+    "data": [
+      490,
+      37
+    ]
+  },
+  "pr": {
+    "labels": [
+      "None",
+      "Low",
+      "High"
+    ],
+    "data": [
+      396,
+      95,
+      36
+    ]
+  },
+  "ui": {
+    "labels": [
+      "None",
+      "Required"
+    ],
+    "data": [
+      444,
+      83
+    ]
+  },
+  "scope": {
+    "labels": [
+      "Unchanged",
+      "Changed"
+    ],
+    "data": [
+      444,
+      83
+    ]
+  },
+  "confidentiality": {
+    "labels": [
+      "None",
+      "Low",
+      "High"
+    ],
+    "data": [
+      29,
+      25,
+      473
+    ]
+  },
+  "integrity": {
+    "labels": [
+      "None",
+      "Low",
+      "High"
+    ],
+    "data": [
+      66,
+      33,
+      428
+    ]
+  },
+  "availability": {
+    "labels": [
+      "None",
+      "Low",
+      "High"
+    ],
+    "data": [
+      107,
+      16,
+      404
+    ]
+  }
+}

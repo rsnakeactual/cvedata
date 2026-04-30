@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVEdata.com - KEVs Report</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="static/css/main-20260212.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-brand"><a href="index.html">CVE<span>data</span></a></div>
+    <ul class="nav-links">
+      <li><a href="#kev-vulns-year">Year</a></li>
+      <li><a href="#kev-kev-overlap">KEV</a></li>
+      <li><a href="#kev-google-p0">Google P0</a></li>
+      <li><a href="#kev-epss">EPSS</a></li>
+      <li><a href="#kev-severity">Severity</a></li>
+      <li><a href="#kev-sankey">Sankey</a></li>
+      <li><a href="#kev-forensics">Forensics</a></li>
+      <li><a href="#kev-pentesting">Pentesting</a></li>
+      <li><a href="#kev-exploit-refs">Exploit refs</a></li>
+      <li><a href="#kev-cwe">CWE</a></li>
+      <li><a href="#kev-owasp">OWASP</a></li>
+      <li><a href="#kev-ransomware">Ransomware</a></li>
+      <li><a href="#kev-cvss-attributes">Vectors</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div>
+        <h1>KEVs Report</h1>
+        <p>Known Exploited Vulnerabilities (KEVs) are CVEs with public evidence of being exploited by attackers in the wild. This page is built strictly from publicly available KEV catalogs. Private KEV lists held by incident response firms, intelligence vendors, and government partners almost certainly see and track exploitation that is not visible here, so treating these public sources as a complete picture will understate what is really being exploited. No single public catalog is complete on its own either, so this page combines eight of them: CISA KEV, the ENISA EU CSIRT Network KEV list, ENISA EUVD entries flagged exploited-in-the-wild (EUVD KEV), VCDB, VulnCheck, Google Project Zero, Mandiant M-Trends, and the CrowdStrike Global Threat Report.</p>
+        <div class="scroll-hint">
+          <div class="arrow">&darr;</div>
+          <span>Scroll to explore</span>
+        </div>
+      </div>
+      <div class="hero-stats fade-in" id="heroStats"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 01: KEVs BY YEAR AND VENDOR -->
+<section id="kev-vulns-year" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">01: KEVs by Year and Vendor</span><button class="copy-link-btn" data-anchor="kev-vulns-year" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>KEVs by publication year</h2>
+      <p>It does not appear that attackers care much about when a vulnerability was published; they exploit what works. This chart pushes back on the idea that adversaries only care about zero-day exploits.</p>
+    </div>
+    <div class="chart-container" style="height: 350px;">
+      <canvas id="kevVulnsYearChart"></canvas>
+    </div>
+    <div class="insight-cards" id="kevVulnsYearInsights"></div>
+    <div class="section-header" style="margin-top: 2.5rem;">
+      <h3 id="kev-vendors">KEVs by affected vendor</h3>
+      <p>Vendors come from the CVE Program CNA &ldquo;affected&rdquo; metadata in CVElist V5 (same approach as the legacy site). A single CVE can list multiple vendors; each vendor row counts once. The top nine vendors are shown individually; everything else is grouped into Other, including CVEs with no vendor in the CNA record or not present in CVElist.</p>
+    </div>
+    <div class="chart-container" style="height: 380px;">
+      <canvas id="kevVendorsChart"></canvas>
+    </div>
+    <div class="insight-cards" id="kevVendorsInsights"></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 02–05,13,14: KEV OVERLAP (tabs) -->
+<section id="kev-kev-overlap" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">02: KEV Overlap</span><button class="copy-link-btn" data-anchor="kev-kev-overlap" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>KEVs vs individual Known Exploited catalogs</h2>
+      <p>The KEVs catalog on this page is the union of multiple KEV lists and DFIR-style sources, because no single list is complete on its own. Each catalog has different inclusion criteria, and even the largest individual list misses a significant fraction of what the others flag. The components shown in these tabs are CISA KEV, VulnCheck, the ENISA EU CSIRT Network KEV list, and ENISA EUVD entries flagged as exploited in the wild (EUVD KEV); the full union additionally incorporates VCDB, Google Project Zero, Mandiant M-Trends, and the CrowdStrike Global Threat Report.</p>
+    </div>
+    <div class="toggle-group" id="kevOverlapTabs">
+      <button class="toggle-btn active" data-tab="kev">CISA KEV</button>
+      <button class="toggle-btn" data-tab="vulncheck">VulnCheck</button>
+      <button class="toggle-btn" data-tab="enisa">ENISA EU KEV</button>
+      <button class="toggle-btn" data-tab="euvd-kev">EUVD KEV</button>
+    </div>
+    <div class="tab-panel active" id="tab-kev">
+      <div class="chart-container" style="height: 350px;">
+        <canvas id="kevCisaOverlapChart"></canvas>
+      </div>
+      <div class="insight-cards" id="kevCisaOverlapStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-vulncheck">
+      <div class="chart-container" style="height: 350px;" id="kevVulncheckContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and vulncheck processors.</p>
+      </div>
+      <div class="insight-cards" id="kevVulncheckStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-enisa">
+      <div class="chart-container" style="height: 350px;" id="kevEnisaContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and enisa-kev processors.</p>
+      </div>
+      <div class="insight-cards" id="kevEnisaStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-euvd-kev">
+      <div class="chart-container" style="height: 350px;" id="kevEuvdContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and euvd-kev processors, then regenerate graphs.</p>
+      </div>
+      <div class="insight-cards" id="kevEuvdStats"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 03: KEVs vs GOOGLE P0 -->
+<section id="kev-google-p0" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">03: KEVs vs Google P0</span><button class="copy-link-btn" data-anchor="kev-google-p0" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Overlap with Google Project Zero &ldquo;0day in the wild&rdquo;</h2>
+      <p>Google Project Zero tracks CVEs exploited in the wild before a patch existed. There does not appear to be a significant overlap between KEVs and Google Project Zero. This may indicate the type of adversary that uses zero-day exploits is not the same as the type of adversary that is interested in KEVs.</p>
+    </div>
+    <div class="chart-container" style="height: 350px;">
+      <canvas id="kevGoogleP0Chart"></canvas>
+    </div>
+    <div class="insight-cards" id="kevGoogleP0Stats"></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 04: KEVs EPSS (tabs: distribution + correlation) -->
+<section id="kev-epss" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">04: KEVs EPSS</span><button class="copy-link-btn" data-anchor="kev-epss" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>EPSS score distribution and correlation</h2>
+      <p>How do KEVs score on EPSS? EPSS is a machine learning model that claims to predict the likelihood of a vulnerability being exploited in the next 30 days. It is not a perfect measure, by their own admission, and should not be used instead of KEV lists according to first.org guidance. Even so, it is instructive to see how EPSS lines up with CVEs that are actually being exploited in the wild.</p>
+    </div>
+    <div class="toggle-group" id="epssTabs">
+      <button class="toggle-btn active" data-tab="epss-dist">Distribution</button>
+      <button class="toggle-btn" data-tab="epss-corr">Correlation (scatter)</button>
+    </div>
+    <div class="tab-panel active" id="tab-epss-dist">
+      <div class="chart-container" style="height: 350px;">
+        <canvas id="kevEpssChart"></canvas>
+      </div>
+      <div class="insight-cards" id="kevEpssStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-epss-corr">
+      <div class="chart-container" style="height: 800px; aspect-ratio: 1; max-width: 1000px;" id="kevEpssCorrelationContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and epss processors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 05: KEVs severity breakdown by source (tabs) -->
+<section id="kev-severity" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">05: KEVs severity by source</span><button class="copy-link-btn" data-anchor="kev-severity" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>KEVs by CVSS severity</h2>
+      <p>The various different sources for CVE and CVSS data each have different inclusion criteria and severity ratings for KEVs. A number of these sources are incomplete and do not include all KEVs, carry different severity ratings, or even fail to score actively-exploited CVEs at all.</p>
+    </div>
+    <div class="toggle-group" id="severityTabs">
+      <button class="toggle-btn active" data-tab="nvd">cvelistV5 + NVD</button>
+      <button class="toggle-btn" data-tab="euvd">EUVD</button>
+      <button class="toggle-btn" data-tab="cnvd">CNVD</button>
+      <button class="toggle-btn" data-tab="jvn">JVN iPedia</button>
+    </div>
+    <div class="tab-panel active" id="tab-nvd">
+      <div class="chart-container" style="height: 350px;" id="kevSeverityNvdContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and nvd processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-euvd">
+      <div class="chart-container" style="height: 350px;" id="kevSeverityEuvdContainer">
+        <p class="data-unavailable">Data unavailable. Run kev, nvd, and euvd processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-cnvd">
+      <div class="chart-container" style="height: 350px;" id="kevSeverityCnvdContainer">
+        <p class="data-unavailable">Data unavailable. Run kev, nvd, and cnvd processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-jvn">
+      <div class="chart-container" style="height: 350px;" id="kevSeverityJvnContainer">
+        <p class="data-unavailable">Data unavailable. Run kev, nvd, and jvndb processors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 06: CVE Sankey (Severity → KEVs / No breach) -->
+<section id="kev-sankey" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">06: CVE Sankey</span><button class="copy-link-btn" data-anchor="kev-sankey" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Severity → KEVs / No breach</h2>
+    <p>Every CVE NVD knows about is bucketed by severity on the left. On the right, each CVE ends up in "KEVs" if at least one of our eight KEV sources has flagged it exploited, otherwise "No breach". The takeaway is that the overwhelming majority of CVEs never show up in any public exploitation record. That includes most Critical and High ones. Attackers&rsquo; real target list does not track CVSS severity the way most people assume.</p>
+    </div>
+    <div class="chart-container" style="height: 500px;" id="kevSankeyContainer">
+      <p class="data-unavailable">Data unavailable. Run nvd, kev, enisa-kev, euvd-kev, vcdb, vulncheck, and google-p0 processors.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 07: FORENSICS (tabs) -->
+<section id="kev-forensics" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">07: Forensics</span><button class="copy-link-btn" data-anchor="kev-forensics" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>KEVs vs breach forensics data</h2>
+      <p>Verizon DBIR and Mandiant M-Trends track CVEs from breach investigations for a single year at a time. They overlap with KEVs to some extent, but so few new vulnerabilities are used in breaches each year that the year-over-year numbers are very low.</p>
+    </div>
+    <div class="toggle-group" id="forensicsTabs">
+      <button class="toggle-btn active" data-tab="dbir">Verizon DBIR (VCDB)</button>
+      <button class="toggle-btn" data-tab="mandiant">Mandiant M-Trends</button>
+    </div>
+    <div class="tab-panel active" id="tab-dbir">
+      <div class="chart-container" style="height: 350px;" id="kevDbirContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and vcdb processors.</p>
+      </div>
+      <div class="insight-cards" id="kevDbirStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-mandiant">
+      <div class="chart-container" style="height: 350px;" id="kevMandiantContainer">
+        <p class="data-unavailable">Data unavailable. Place <code>mandiant-m-trends-YYYY.csv</code> files under <code>data/raw/Mandiant/</code> and run the pipeline.</p>
+      </div>
+      <div class="insight-cards" id="kevMandiantStats"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 08: PENTESTING TOOLS (tabs) -->
+<section id="kev-pentesting" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">08: Pentesting tools</span><button class="copy-link-btn" data-anchor="kev-pentesting" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Metasploit & Nuclei vs KEVs</h2>
+      <p>The common wisdom about the &ldquo;Metasploit metric&rdquo; appears to be wrong: there is only modest overlap between Metasploit CVEs and what actually gets exploited in the wild. The same holds for Nuclei, which has become the new standard among penetration testers.</p>
+    </div>
+    <div class="toggle-group" id="pentestingTabs">
+      <button class="toggle-btn active" data-tab="metasploit">Metasploit</button>
+      <button class="toggle-btn" data-tab="nuclei">Nuclei</button>
+    </div>
+    <div class="tab-panel active" id="tab-metasploit">
+      <div class="chart-container" style="height: 350px;" id="kevMetasploitContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and metasploit processors.</p>
+      </div>
+      <div class="insight-cards" id="kevMetasploitStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-nuclei">
+      <div class="chart-container" style="height: 350px;" id="kevNucleiContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and nuclei processors.</p>
+      </div>
+      <div class="insight-cards" id="kevNucleiStats"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 09: EXPLOIT REFERENCES (tabs) -->
+<section id="kev-exploit-refs" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">09: Exploit references</span><button class="copy-link-btn" data-anchor="kev-exploit-refs" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>KEVs vs exploit databases</h2>
+      <p>The common understanding that CVEs with exploit references are the ones actually used by attackers is only partially true. Percentages below show how KEVs map to ExploitDB and to CVEs carrying exploit references in cvelistV5.</p>
+    </div>
+    <div class="toggle-group" id="exploitRefsTabs">
+      <button class="toggle-btn active" data-tab="exploitrefs">Exploit references (cvelistV5)</button>
+      <button class="toggle-btn" data-tab="exploitdb">ExploitDB</button>
+    </div>
+    <div class="tab-panel active" id="tab-exploitrefs">
+      <div class="chart-container" style="height: 350px;" id="kevExploitRefsContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and cvelistV5 processors.</p>
+      </div>
+      <div class="insight-cards" id="kevExploitRefsStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-exploitdb">
+      <div class="chart-container" style="height: 350px;" id="kevExploitdbContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and exploitdb processors.</p>
+      </div>
+      <div class="insight-cards" id="kevExploitdbStats"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 10: CWE (dark section, tabs) -->
+<section id="kev-cwe" class="dark-section fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">10: KEVs by CWE</span><button class="copy-link-btn" data-anchor="kev-cwe" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>KEVs by weakness type</h2>
+      <p>CWE is a common weakness enumeration (CWE) list that is used to classify vulnerabilities. Not all CWEs seem to have even one KEV, but some do have many. MITRE Top 25 is a list of the most common weaknesses in the CWE list according to MITRE.</p>
+    </div>
+    <div class="toggle-group" id="cweTabs">
+      <button class="toggle-btn active" data-tab="cwe-bars">CWE horizontal bars</button>
+      <button class="toggle-btn" data-tab="mitre-top25">MITRE Top 25</button>
+    </div>
+    <div class="tab-panel active" id="tab-cwe-bars">
+      <div class="chart-container" style="height: 2600px;" id="kevCweContainer">
+        <p class="data-unavailable">Data unavailable. Run kev, cwe, and cvelistV5 processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-mitre-top25">
+      <div class="chart-container" style="height: 2600px;" id="kevMitreTop25Container">
+        <p class="data-unavailable">Data unavailable. Run kev, cwe, and cvelistV5 processors.</p>
+      </div>
+    </div>
+    <h3 style="margin-top: calc(var(--grid) * 6); margin-bottom: calc(var(--grid) * 2);">CWE KEV coverage</h3>
+    <p style="margin-bottom: calc(var(--grid) * 3);">Proportion of CWEs with at least one KEV.</p>
+    <div class="chart-container" style="height: 350px;" id="cweKevCoverageContainer">
+      <p class="data-unavailable">Data unavailable. Run kev, cwe, and cvelistV5 processors.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 11: OWASP Top 10 for KEVs -->
+<section id="kev-owasp" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">11: OWASP Top 10 for KEVs</span><button class="copy-link-btn" data-anchor="kev-owasp" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>OWASP Top 10 controls ranked by KEVs</h2>
+      <p>The Open Web Application Security Project (OWASP) Top 10 is a list of the vulnerabilities that are most often found by security vendors who test web applications. Not all OWASP Top 10 categories appear to map to CVEs that show up in exploitation-in-the-wild catalogs.</p>
+    </div>
+    <div class="chart-container" style="height: 350px;" id="kevOwaspContainer">
+      <p class="data-unavailable">Data unavailable. Run kev, owasp, and cvelistV5 processors.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 12: RANSOMWARE vs ATT&CK (tabs) -->
+<section id="kev-ransomware" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">12: Ransomware groups vs ATT&CK</span><button class="copy-link-btn" data-anchor="kev-ransomware" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Overlap between ransomware lists and MITRE ATT&CK</h2>
+      <p>The overlap is very low between ransomware group names (PrivTools EU, RansomFeed.it) and MITRE ATT&CK identified groups. MITRE ATT&CK does not appear to be tracking most ransomware groups in their dataset.</p>
+    </div>
+    <div class="toggle-group" id="ransomwareTabs">
+      <button class="toggle-btn active" data-tab="privtools">PrivTools EU</button>
+      <button class="toggle-btn" data-tab="ransomfeed">RansomFeed.it</button>
+    </div>
+    <div class="tab-panel active" id="tab-privtools">
+      <div class="chart-container" style="height: 350px;" id="privtoolsMitreContainer">
+        <p class="data-unavailable">Data unavailable. Run privtools-eu, attack-stix processors.</p>
+      </div>
+      <div class="insight-cards" id="privtoolsMitreStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-ransomfeed">
+      <div class="chart-container" style="height: 350px;" id="ransomfeedMitreContainer">
+        <p class="data-unavailable">Data unavailable. Run ransomfeed-it, attack-stix processors.</p>
+      </div>
+      <div class="insight-cards" id="ransomfeedMitreStats"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 13: KEVs CVSS Vector Attributes -->
+<section id="kev-cvss-attributes" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">13: KEVs CVSS Vector Attributes</span><button class="copy-link-btn" data-anchor="kev-cvss-attributes" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Counts of KEVs per CVSS vector attribute</h2>
+      <p>The most common CVSS vector attributes for KEVs give us a window into what attackers are actually exploiting in the wild. The 8 CVSS vector attributes in CVSS 3.x are Attack Vector, Attack Complexity, Privileges Required, User Interaction, Scope, Confidentiality, Integrity, and Availability.</p>
+    </div>
+    <div class="kev-cvss-attr-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: calc(var(--grid) * 2);">
+      <div class="chart-container" style="height: 180px;" id="kevCvssAttrAvContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Attack Vector</h4>
+        <p class="data-unavailable">Data unavailable. Run kev and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="kevCvssAttrAcContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Attack Complexity</h4>
+        <p class="data-unavailable">Data unavailable. Run kev and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="kevCvssAttrPrContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Privileges Required</h4>
+        <p class="data-unavailable">Data unavailable. Run kev and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="kevCvssAttrUiContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">User Interaction</h4>
+        <p class="data-unavailable">Data unavailable. Run kev and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="kevCvssAttrScopeContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Scope</h4>
+        <p class="data-unavailable">Data unavailable. Run kev and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="kevCvssAttrConfidentialityContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Confidentiality Impact</h4>
+        <p class="data-unavailable">Data unavailable. Run kev and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="kevCvssAttrIntegrityContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Integrity Impact</h4>
+        <p class="data-unavailable">Data unavailable. Run kev and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="kevCvssAttrAvailabilityContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Availability Impact</h4>
+        <p class="data-unavailable">Data unavailable. Run kev and nvd processors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 14: KEVs CVSS Vector Pie -->
+<section id="kev-cvss-vector-pie" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">14: KEVs CVSS Vector Pie</span><button class="copy-link-btn" data-anchor="kev-cvss-vector-pie" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Most common CVSS vector vs other</h2>
+      <p>The most commonly used CVSS Vector while used often is not used enough to limit our view to it alone. The following is a breakdown of the most common CVSS vector used in KEVs or all CVEs (NVD).</p>
+    </div>
+    <div class="toggle-group" id="cvssVectorPieTabs">
+      <button class="toggle-btn active" data-tab="kev-pie">KEVs</button>
+      <button class="toggle-btn" data-tab="allcves-pie">All CVEs</button>
+    </div>
+    <div class="tab-panel active" id="tab-kev-pie">
+      <div class="chart-container" style="height: 350px;" id="kevCvssVectorPieContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and nvd processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-allcves-pie">
+      <div class="chart-container" style="height: 350px;" id="allCvesCvssVectorPieContainer">
+        <p class="data-unavailable">Data unavailable. Run nvd processor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-left">
+      Data compiled and analyzed by Robert "<a href="https://rsnake.com/" target="_blank">RSnake</a>" Hansen and designed by Lex Arquette.  I do not guarantee the correctness of the data or charts and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research.
+    </div>
+    <div class="footer-sources">
+      Sources for this page: 
+      <a href="https://github.com/CVEProject/cvelistV5" target="_blank">CVE cvelistV5</a>,
+      <a href="https://nvd.nist.gov/" target="_blank">NVD</a>,
+      <a href="https://github.com/cisagov/vulnrichment" target="_blank">CISA ADP (Vulnrichment)</a>,
+      <a href="https://euvd.enisa.europa.eu/apidoc" target="_blank">EUVD</a>,
+      <a href="https://github.com/enisaeu/CNW/" target="_blank">ENISA EU CSIRT Network</a>,
+      <a href="https://bdu.fstec.ru/vul" target="_blank">BDU (Russia)</a>,
+      <a href="https://jvndb.jvn.jp/ja/feed/" target="_blank">JVN iPedia (Japan)</a>,
+      <a href="https://cnvd.org.cn/" target="_blank">CNVD (China)</a>,
+      <a href="https://github.com/mitre-attack/attack-stix-data" target="_blank">ATT&CK STIX</a>,
+      <a href="https://github.com/center-for-threat-informed-defense/mappings-explorer" target="_blank">ATT&CK–KEV mappings</a>,
+      <a href="https://services.google.com/fh/files/misc/m-trends-2025-en.pdf" target="_blank">Mandiant (2025 M-Trends)</a>,
+      <a href="https://www.crowdstrike.com/en-us/global-threat-report/" target="_blank">CrowdStrike (2026 Global Threat Report)</a>,
+      <a href="https://github.com/vz-risk/VCDB" target="_blank">VCDB</a>,
+      <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV</a>,
+      <a href="https://www.first.org/epss/" target="_blank">FIRST EPSS</a>,
+      <a href="https://vulncheck.io/" target="_blank">VulnCheck</a>,
+      <a href="https://github.com/vulndb/vulndb" target="_blank">VulnDB</a>,
+      <a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view?gid=0#gid=0" target="_blank">Google Project Zero</a>,
+      <a href="https://github.com/rapid7/metasploit-framework" target="_blank">Metasploit</a>,
+      <a href="https://github.com/projectdiscovery/nuclei-templates" target="_blank">Nuclei</a>,
+      <a href="https://gitlab.com/exploit-database/exploitdb/" target="_blank">ExploitDB</a>,
+      <a href="https://cwe.mitre.org/" target="_blank">MITRE CWE</a>,
+      <a href="https://github.com/OWASP/Top10" target="_blank">OWASP Top 10</a>,
+      <a href="https://ransom.privtools.eu/" target="_blank">PrivTools EU</a>,
+      and <a href="https://ransomfeed.it/" target="_blank">RansomFeed.it</a>.
+    </div>
+  </div>
+  <div class="container"><div class="footer-updated" id="footerLastUpdated" style="display:none">Last updated: <span id="lastUpdated"></span></div></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-venn@4/build/index.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
+<script src="static/js/chart-entrance.js"></script>
+<script src="static/js/kev-data.js"></script>
+<script>
+(function() {
+  'use strict';
+  var d = window.__CVEDATA_OVERRIDES || window.__KEV_OVERRIDES;
+  if (d && d.lastUpdated) {
+    var el = document.getElementById('footerLastUpdated');
+    var span = document.getElementById('lastUpdated');
+    if (el && span) { span.textContent = d.lastUpdated; el.style.display = ''; }
+  }
+
+  var DATA = Object.assign({
+    kevHero: {
+      stats: [
+        { value: 0, suffix: '', isAccent: false, isStatic: false, desc: 'KEVs: exploited in the wild' },
+        { value: '0%', isAccent: true, isStatic: true, desc: 'KEVs that overlap with CISA KEV' },
+        { value: 0, suffix: '', isAccent: false, isStatic: false, desc: 'KEV sources combined' },
+        { value: '0%', isAccent: true, isStatic: true, desc: 'KEVs CVSS ≥9.0' }
+      ]
+    },
+    kevVulnsByYear: { available: false },
+    kevVendorsDistribution: { available: false },
+    kevCisaOverlap: { available: false },
+    kevEuvdOverlap: { available: false },
+    kevGoogleP0Overlap: { available: false },
+    kevEpssDistribution: { available: false },
+    kevSankey: { available: false },
+    kevSeverityBreakdown: { available: false },
+    kevMandiantOverlap: { available: false }
+  }, window.__KEV_OVERRIDES || {});
+
+  /* Chart.js defaults: vibrant hover (no green flicker), disable color animation */
+  function brightenColor(color, amount) {
+    if (!color || typeof color !== 'string') return color;
+    amount = amount || 25;
+    var m;
+    if ((m = color.match(/^#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/))) {
+      var r = Math.min(255, parseInt(m[1], 16) + amount);
+      var g = Math.min(255, parseInt(m[2], 16) + amount);
+      var b = Math.min(255, parseInt(m[3], 16) + amount);
+      return 'rgb(' + r + ',' + g + ',' + b + ')';
+    }
+    if ((m = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)$/))) {
+      var r = Math.min(255, parseInt(m[1], 10) + amount);
+      var g = Math.min(255, parseInt(m[2], 10) + amount);
+      var b = Math.min(255, parseInt(m[3], 10) + amount);
+      var a = m[4] != null ? parseFloat(m[4]) : 1;
+      return 'rgba(' + r + ',' + g + ',' + b + ',' + Math.min(1, a + 0.15) + ')';
+    }
+    return color;
+  }
+  Chart.defaults.elements.bar.hoverBorderWidth = 2;
+  Chart.defaults.elements.bar.hoverBackgroundColor = function(ctx) {
+    var c = ctx.dataset.backgroundColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : c;
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.elements.bar.hoverBorderColor = function(ctx) {
+    var c = ctx.dataset.borderColor || ctx.dataset.backgroundColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : c;
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.elements.point.hoverRadius = 6;
+  Chart.defaults.elements.point.hoverBackgroundColor = function(ctx) {
+    var c = ctx.dataset.pointBackgroundColor || ctx.dataset.backgroundColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : c;
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.elements.point.hoverBorderColor = function(ctx) {
+    var c = ctx.dataset.pointBorderColor || ctx.dataset.borderColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : (c || ctx.dataset.backgroundColor);
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.animations = Chart.defaults.animations || {};
+  Chart.defaults.animations.colors = false;
+
+  function createBarChart(id, labels, datasets, opts) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var baseOpts = {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { display: false }, border: { display: false }, ticks: { font: { weight: '500' } } },
+        y: { beginAtZero: true, grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { callback: function(v) { return v >= 1000 ? (v/1000).toFixed(0) + 'k' : v; } } }
+      }
+    };
+    var merged = Object.assign({}, baseOpts, window.CHART_ANIMATION && window.CHART_ANIMATION.bar || {}, opts || {});
+    if (opts && opts.scales) {
+      var bx = baseOpts.scales.x || {};
+      var by = baseOpts.scales.y || {};
+      var ox = opts.scales.x || {};
+      var oy = opts.scales.y || {};
+      merged.scales = {
+        x: Object.assign({}, bx, ox),
+        y: Object.assign({}, by, oy)
+      };
+      merged.scales.x.ticks = Object.assign({}, bx.ticks || {}, ox.ticks || {});
+      merged.scales.y.ticks = Object.assign({}, by.ticks || {}, oy.ticks || {});
+    }
+    destroyExistingChart(id);
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'bar',
+      data: { labels: labels || [], datasets: datasets || [] },
+      options: merged
+    });
+  }
+
+  function createHorizontalBarChart(id, labels, data, opts) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var fullNames = (opts && opts.fullNames) || null;
+    var lightMode = (opts && opts.lightMode) || false;
+    var baseOpts = {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: fullNames ? {
+          callbacks: {
+            label: function(ctx) {
+              var idx = ctx.dataIndex;
+              var full = fullNames[idx];
+              return (full || ctx.label) + ': ' + ctx.parsed.x;
+            }
+          }
+        } : {}
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grid: { color: lightMode ? '#E5E7EB' : 'rgba(255,255,255,0.1)' },
+          border: { display: false },
+          ticks: { color: lightMode ? '#374151' : 'rgba(255,255,255,0.7)' }
+        },
+        y: {
+          grid: { display: false },
+          border: { display: false },
+          ticks: { color: lightMode ? '#374151' : 'rgba(255,255,255,0.7)', font: { size: 11 } }
+        }
+      }
+    };
+    var merged = Object.assign({}, baseOpts, opts || {});
+    delete merged.fullNames;
+    delete merged.lightMode;
+    destroyExistingChart(id);
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'bar',
+      data: { labels: labels || [], datasets: [{ label: 'KEVs', data: data || [], backgroundColor: '#1565c0' }] },
+      options: merged
+    });
+  }
+
+  function createPieChart(id, labels, data, colors, darkMode) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var textColor = darkMode ? 'rgba(255,255,255,0.9)' : '#374151';
+    var baseOpts = {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { color: textColor } } }
+    };
+    var merged = Object.assign({}, baseOpts, window.CHART_ANIMATION && window.CHART_ANIMATION.pie || {});
+    destroyExistingChart(id);
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'pie',
+      data: {
+        labels: labels || [],
+        datasets: [{ data: data || [], backgroundColor: colors || ['#1565c0', '#A3A3A3', '#6B7280'] }]
+      },
+      options: merged
+    });
+  }
+
+  function createLineChart(id, labels, datasets, opts) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var baseOpts = {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { display: false }, border: { display: false }, ticks: { font: { weight: '500' } } },
+        y: { beginAtZero: true, grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { callback: function(v) { return v >= 1000 ? (v/1000).toFixed(0) + 'k' : v; } } }
+      }
+    };
+    var merged = Object.assign({}, baseOpts, window.CHART_ANIMATION && window.CHART_ANIMATION.line || {}, opts || {});
+    destroyExistingChart(id);
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'line',
+      data: { labels: labels || [], datasets: datasets || [] },
+      options: merged
+    });
+  }
+
+  /* Euler: proportional sizes. First set = right, second = left. Pass (other, KEVs, otherOnly, kevsOnly) so KEVs is left. */
+  function destroyExistingChart(id) {
+    if (window.Chart && typeof Chart.getChart === 'function') {
+      var existing = Chart.getChart(id);
+      if (existing) existing.destroy();
+    }
+  }
+
+  function createVennChart(id, setA, setB, valA, valB, valBoth, labelA, labelB) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var la = labelA || setA || 'Set A';
+    var lb = labelB || setB || 'Set B';
+    var a = valA || 0, b = valB || 0, both = valBoth || 0;
+    /* Subset cases (one side fully contained in the other) skip the Venn entirely
+       and let the caller fall back to a bar chart. This also avoids an Euler-layout
+       crash in chartjs-chart-venn when a referenced set has zero exclusive size. */
+    if (a <= 0 || b <= 0) return null;
+    destroyExistingChart(id);
+    try {
+      return new Chart(el.getContext ? el.getContext('2d') : el, {
+        type: 'euler',
+        data: {
+          labels: [la, lb, 'Overlap'],
+          datasets: [{
+            label: 'Overlap',
+            data: [
+              { sets: [setA], value: a },
+              { sets: [setB], value: b },
+              { sets: [setA, setB], value: both }
+            ],
+            backgroundColor: ['rgba(173, 216, 230, 0.85)', 'rgba(144, 238, 144, 0.85)', 'rgba(173, 230, 200, 0.9)'],
+            borderColor: ['rgba(100, 149, 237, 0.9)', 'rgba(34, 139, 34, 0.9)', 'rgba(70, 130, 180, 0.8)']
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+      });
+    } catch (e) { console.warn('Venn chart:', e); return null; }
+  }
+
+  function createScatterChart(id, points, opts) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var pointColors = (opts && opts.pointColors) || null;
+    var tooltipLabel = (opts && opts.tooltipLabel) || null;
+    var referenceLineMax = (opts && opts.referenceLineMax);
+    var referenceLineData = (opts && opts.referenceLineData);
+    var referenceLineLabel = (opts && opts.referenceLineLabel) || 'Line of Agreement';
+    var ds = {
+      label: 'KEVs',
+      data: points,
+      backgroundColor: Array.isArray(pointColors) ? pointColors : 'rgba(21,101,192,0.6)',
+      borderColor: Array.isArray(pointColors) ? pointColors.map(function(c) { return (c || '').replace(/[\d.]+\)$/, '1)') || '#1565c0'; }) : '#1565c0',
+      pointRadius: 5,
+      pointHoverRadius: 7
+    };
+    var datasets = [ds];
+    var lineData = null;
+    if (referenceLineData && referenceLineData.length >= 2) {
+      lineData = referenceLineData;
+    } else if (referenceLineMax != null && referenceLineMax > 0) {
+      lineData = [{ x: 0, y: 0 }, { x: referenceLineMax, y: referenceLineMax }];
+    }
+    if (lineData) {
+      datasets.push({
+        type: 'line',
+        label: referenceLineLabel,
+        data: lineData,
+        borderColor: 'rgba(107,114,128,0.7)',
+        borderWidth: 1,
+        borderDash: [5, 5],
+        pointRadius: 0,
+        pointHoverRadius: 0
+      });
+    }
+    var pluginOpts = { legend: { display: false } };
+    if (tooltipLabel) {
+      pluginOpts.tooltip = {
+        filter: function(tooltipItem) { return tooltipItem.dataset.type !== 'line'; },
+        callbacks: {
+          label: function(ctx) {
+            return tooltipLabel(ctx.raw, ctx);
+          }
+        }
+      };
+    }
+    destroyExistingChart(id);
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'scatter',
+      data: { datasets: datasets },
+      options: Object.assign({
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: pluginOpts,
+        scales: {
+          x: { title: { display: true, text: 'CVSS Score (0-10)' }, min: 0, max: 10, grid: { color: '#F5F5F5' }, border: { display: false } },
+          y: { title: { display: true, text: 'EPSS Score (0-100%)' }, min: 0, max: 100, grid: { color: '#F5F5F5' }, border: { display: false } }
+        }
+      }, window.CHART_ANIMATION && window.CHART_ANIMATION.scatter || {}, opts || {})
+    });
+  }
+
+  function renderInsightCards(containerId, items) {
+    var el = document.getElementById(containerId);
+    if (!el || !items || !items.length) return;
+    el.innerHTML = '';
+    items.forEach(function(item) {
+      var card = document.createElement('div');
+      card.className = 'insight-card';
+      card.innerHTML = '<div class="insight-number">' + (item.number || '') + '</div><div class="insight-desc">' + (item.desc || '') + '</div>';
+      el.appendChild(card);
+    });
+  }
+
+  /* HERO */
+  var heroStatsEl = document.getElementById('heroStats');
+  if (heroStatsEl && DATA.kevHero && DATA.kevHero.stats) {
+    heroStatsEl.innerHTML = '';
+    DATA.kevHero.stats.forEach(function(stat) {
+      var card = document.createElement('div');
+      card.className = 'hero-stat';
+      var numClass = 'number' + (stat.isAccent ? ' accent' : '');
+      if (stat.isStatic) {
+        card.innerHTML = '<div class="' + numClass + '">' + stat.value + '</div><div class="desc">' + stat.desc + '</div>';
+      } else {
+        var suffix = stat.suffix || '';
+        card.innerHTML = '<div class="' + numClass + '" data-count="' + stat.value + '"' +
+          (suffix ? ' data-suffix="' + suffix + '"' : '') +
+          '>0' + suffix + '</div><div class="desc">' + stat.desc + '</div>';
+      }
+      heroStatsEl.appendChild(card);
+    });
+  }
+
+  /* 01: KEVs BY YEAR */
+  whenChartInView('kevVulnsYearChart', function() {
+    if (DATA.kevVulnsByYear && DATA.kevVulnsByYear.available && DATA.kevVulnsByYear.labels && DATA.kevVulnsByYear.labels.length > 0) {
+      try {
+        createLineChart('kevVulnsYearChart', DATA.kevVulnsByYear.labels,
+          [{ label: 'KEVs', data: DATA.kevVulnsByYear.data,
+             borderColor: '#1565c0', backgroundColor: 'rgba(21,101,192,0.08)', borderWidth: 2.5, fill: true }]
+        );
+        renderInsightCards('kevVulnsYearInsights', DATA.kevVulnsByYear.stats || []);
+      } catch (e) { console.warn('kevVulnsYearChart:', e); }
+    } else {
+      var el = document.getElementById('kevVulnsYearChart');
+      if (el && el.parentElement) {
+        el.parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Place ICE_vulns.csv in data/raw/ and run the pipeline.</p>';
+      }
+      document.getElementById('kevVulnsYearInsights').innerHTML = '';
+    }
+  });
+
+  /* 01b: KEVs by vendor (CVElist CNA affected) */
+  whenChartInView('kevVendorsChart', function() {
+    var fv = DATA.kevVendorsDistribution;
+    if (fv && fv.available && fv.labels && fv.labels.length > 0 && fv.data && fv.data.length > 0) {
+      try {
+        createBarChart('kevVendorsChart', fv.labels,
+          [{ label: 'KEV vendor rows', data: fv.data, backgroundColor: '#1565c0' }],
+          {
+            scales: {
+              x: {
+                ticks: { maxRotation: 50, minRotation: 40, autoSkip: false, font: { size: 11 } }
+              }
+            }
+          }
+        );
+        renderInsightCards('kevVendorsInsights', fv.stats || []);
+      } catch (e) { console.warn('kevVendorsChart:', e); }
+    } else {
+      var vel = document.getElementById('kevVendorsChart');
+      if (vel && vel.parentElement) {
+        vel.parentElement.innerHTML = '<p class="data-unavailable">Vendor breakdown unavailable. Run the cvelistV5 and kev processors, regenerate graphs, then render.</p>';
+      }
+      var ins = document.getElementById('kevVendorsInsights');
+      if (ins) ins.innerHTML = '';
+    }
+  });
+
+  /* 02: KEVs-CISA-KEV OVERLAP (Venn) - render all 4 tabs when section in view (hidden tabs need trigger from visible one) */
+  whenChartInView('kevCisaOverlapChart', function() {
+    if (DATA.kevCisaOverlap && DATA.kevCisaOverlap.available) {
+      try {
+        var overlap = DATA.kevCisaOverlap;
+        var venn = createVennChart('kevCisaOverlapChart', 'KEV', 'KEVs', overlap.cisaOnly || 0, overlap.kevOnly || 0, overlap.both || 0, 'CISA KEV', 'KEVs');
+        if (!venn) {
+          var cisaLabels = ['KEVs only', 'Both', 'CISA KEV only'];
+          var cisaData = [overlap.kevOnly || 0, overlap.both || 0, overlap.cisaOnly || 0];
+          var cisaColors = ['#F97316', '#1565c0', '#A3A3A3'];
+          var cisaKeep = cisaData.map(function(v, i) { return v > 0 ? i : -1; }).filter(function(i) { return i >= 0; });
+          createBarChart('kevCisaOverlapChart',
+            cisaKeep.map(function(i) { return cisaLabels[i]; }),
+            [{ label: 'Count', data: cisaKeep.map(function(i) { return cisaData[i]; }), backgroundColor: cisaKeep.map(function(i) { return cisaColors[i]; }) }]);
+        }
+        renderInsightCards('kevCisaOverlapStats', overlap.stats || []);
+      } catch (e) { console.warn('kevCisaOverlapChart:', e); }
+    } else {
+      var el = document.getElementById('kevCisaOverlapChart');
+      if (el && el.parentElement) {
+        el.parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run kev and cvelistV5 processors.</p>';
+      }
+      if (document.getElementById('kevCisaOverlapStats')) document.getElementById('kevCisaOverlapStats').innerHTML = '';
+    }
+    /* Pre-render VulnCheck, ENISA, EUVD tabs so cards appear when switching */
+    renderOverlapInto('kevVulncheckContainer', 'kevVulncheckChart', 'kevVulncheckOverlap', 'VC', 'KEVs', 'VulnCheck KEV', 'KEVs', ['#F97316', '#1565c0', '#3B82F6'], 'kevVulncheckStats');
+    renderOverlapInto('kevEnisaContainer', 'kevEnisaChart', 'kevEnisaOverlap', 'ENISA', 'KEVs', 'ENISA EU KEV', 'KEVs', ['#F97316', '#1565c0', '#06B6D4'], 'kevEnisaStats');
+    renderOverlapInto('kevEuvdContainer', 'kevEuvdChart', 'kevEuvdOverlap', 'EUVD', 'KEVs', 'EUVD KEV', 'KEVs', ['#F97316', '#1565c0', '#7C3AED'], 'kevEuvdStats');
+  });
+
+  /* 03: KEVs vs GOOGLE P0 (Venn) */
+  whenChartInView('kevGoogleP0Chart', function() {
+    if (DATA.kevGoogleP0Overlap && DATA.kevGoogleP0Overlap.available) {
+      try {
+        var p0 = DATA.kevGoogleP0Overlap;
+        var vennP0 = createVennChart('kevGoogleP0Chart', 'P0', 'KEVs', p0.p0Only || 0, p0.kevOnly || 0, p0.both || 0, 'Google P0', 'KEVs');
+        if (!vennP0) {
+          var p0Labels = ['KEVs only', 'Both', 'Google P0 only'];
+          var p0Data = [p0.kevOnly || 0, p0.both || 0, p0.p0Only || 0];
+          var p0Colors = ['#F97316', '#1565c0', '#3B82F6'];
+          var p0Keep = p0Data.map(function(v, i) { return v > 0 ? i : -1; }).filter(function(i) { return i >= 0; });
+          createBarChart('kevGoogleP0Chart',
+            p0Keep.map(function(i) { return p0Labels[i]; }),
+            [{ label: 'Count', data: p0Keep.map(function(i) { return p0Data[i]; }), backgroundColor: p0Keep.map(function(i) { return p0Colors[i]; }) }]);
+        }
+        renderInsightCards('kevGoogleP0Stats', p0.stats || []);
+      } catch (e) { console.warn('kevGoogleP0Chart:', e); }
+    } else {
+      var el = document.getElementById('kevGoogleP0Chart');
+      if (el && el.parentElement) {
+        el.parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run kev and google-p0 processors.</p>';
+      }
+      if (document.getElementById('kevGoogleP0Stats')) document.getElementById('kevGoogleP0Stats').innerHTML = '';
+    }
+  });
+
+  /* 04: KEVs EPSS */
+  whenChartInView('kevEpssChart', function() {
+    if (DATA.kevEpssDistribution && DATA.kevEpssDistribution.available && DATA.kevEpssDistribution.labels && DATA.kevEpssDistribution.labels.length > 0) {
+      try {
+        createBarChart('kevEpssChart', DATA.kevEpssDistribution.labels,
+          [{ label: 'KEVs', data: DATA.kevEpssDistribution.data, backgroundColor: '#1565c0' }],
+          { animation: { duration: 64, delay: function(ctx) { return (ctx.type === 'data' && ctx.mode === 'default') ? ctx.dataIndex * 8 : 0; } } }
+        );
+        renderInsightCards('kevEpssStats', DATA.kevEpssDistribution.stats || []);
+      } catch (e) { console.warn('kevEpssChart:', e); }
+    } else {
+      var el = document.getElementById('kevEpssChart');
+      if (el && el.parentElement) {
+        el.parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run kev and epss processors.</p>';
+      }
+      document.getElementById('kevEpssStats').innerHTML = '';
+    }
+  });
+
+  /* Helper: render overlap Venn (or bar fallback) into container. Euler: first=right, second=left. Pass (other, KEVs) so KEVs is left. statsContainerId optional. */
+  function renderOverlapInto(containerId, canvasId, dataKey, setA, setB, labelA, labelB, colors, statsContainerId) {
+    var container = document.getElementById(containerId);
+    var d = DATA[dataKey];
+    if (!container) return;
+    if (!d || !d.available) return;
+    /* "primary-only" = the exclusive count for the subject of the comparison.
+       Current schema uses d.kevOnly; legacy FIRE-era JSONs (privtoolsMitre, ransomfeedMitre)
+       still use d.fireOnly. */
+    var primaryOnly = (d.kevOnly !== undefined) ? d.kevOnly : (d.fireOnly || 0);
+    var otherOnly = d.otherOnly || 0;
+    var valA = (labelB === 'KEVs') ? otherOnly : primaryOnly;
+    var valB = (labelB === 'KEVs') ? primaryOnly : otherOnly;
+    var valBoth = d.both || 0;
+    container.innerHTML = '<canvas id="' + canvasId + '"></canvas>';
+    var venn = createVennChart(canvasId, setA, setB, valA, valB, valBoth, labelA, labelB);
+    if (!venn && d.labels && d.data) {
+      /* Filter out zero-valued bars when falling back to a bar chart */
+      var kept = d.data.map(function(v, i) { return v > 0 ? i : -1; }).filter(function(i) { return i >= 0; });
+      var defaultColors = colors || ['#F97316', '#1565c0', '#A3A3A3'];
+      var barColors = kept.map(function(i) { return defaultColors[i] || defaultColors[0]; });
+      createBarChart(canvasId,
+        kept.map(function(i) { return d.labels[i]; }),
+        [{ label: 'Count', data: kept.map(function(i) { return d.data[i]; }), backgroundColor: barColors }]);
+    }
+    if (statsContainerId && d.stats) {
+      var statsEl = document.getElementById(statsContainerId);
+      if (statsEl) renderInsightCards(statsContainerId, d.stats);
+    }
+  }
+
+  /* 04b: KEVs vs EPSS Correlation (scatter) - square chart, 0-100 both axes, true 45° line */
+  whenChartInView('kevEpssCorrelationContainer', function() {
+  if (DATA.kevEpssCorrelation && DATA.kevEpssCorrelation.available && DATA.kevEpssCorrelation.points && DATA.kevEpssCorrelation.points.length > 0) {
+    try {
+      var corrContainer = document.getElementById('kevEpssCorrelationContainer');
+      if (corrContainer) {
+        corrContainer.innerHTML = '<canvas id="kevEpssCorrelationChart"></canvas>';
+        var pts = DATA.kevEpssCorrelation.points.map(function(p) { return { x: (p.x || 0) * 10, y: p.y || 0 }; });
+        createScatterChart('kevEpssCorrelationChart', pts, {
+          referenceLineData: [{ x: 0, y: 0 }, { x: 100, y: 100 }],
+          referenceLineLabel: 'Line of Agreement',
+          scales: {
+            x: {
+              title: { display: true, text: 'CVSS Score (0-10)' },
+              min: 0, max: 100,
+              ticks: { callback: function(v) { return v / 10; } }
+            },
+            y: {
+              title: { display: true, text: 'EPSS Score (0-100%)' },
+              min: 0, max: 100
+            }
+          }
+        });
+      }
+    } catch (e) { console.warn('kevEpssCorrelationChart:', e); }
+  }
+  });
+
+  /* 05: KEVs severity breakdown by source */
+  (function() {
+    var sb = DATA.kevSeverityBreakdown;
+    var sevLabels = sb && sb.labels;
+    var colors = ['#c62828', '#ef6c00', '#f9a825', '#2e7d32', '#9e9e9e'];
+    function renderSeverityChart(containerId, sourceData) {
+      var container = document.getElementById(containerId);
+      if (!container || !sourceData || !sourceData.data) return;
+      container.innerHTML = '<canvas id="' + containerId + 'Chart"></canvas>';
+      createBarChart(containerId + 'Chart', sevLabels, [{ label: 'KEVs', data: sourceData.data, backgroundColor: colors }]);
+    }
+    ['kevSeverityNvdContainer', 'kevSeverityEuvdContainer', 'kevSeverityCnvdContainer', 'kevSeverityJvnContainer'].forEach(function(cid) {
+      whenChartInView(cid, function() {
+        if (sb && sb.available && sevLabels) {
+          try {
+            var src = cid === 'kevSeverityNvdContainer' ? sb.nvd : cid === 'kevSeverityEuvdContainer' ? sb.euvd : cid === 'kevSeverityCnvdContainer' ? sb.cnvd : sb.jvn;
+            renderSeverityChart(cid, src);
+          } catch (e) { console.warn('kevSeverityBreakdown:', e); }
+        }
+      });
+    });
+  })();
+
+  /* 06: CVE Sankey (Severity → KEVs / No breach) - Plotly */
+  whenChartInView('kevSankeyContainer', function() {
+  if (DATA.kevSankey && DATA.kevSankey.available && typeof Plotly !== 'undefined') {
+    try {
+      var sankeyContainer = document.getElementById('kevSankeyContainer');
+      if (sankeyContainer) {
+        sankeyContainer.innerHTML = '<div id="kevSankeyChart" style="width:100%;height:100%;min-height:450px;"></div>';
+        var sankeyDiv = document.getElementById('kevSankeyChart');
+        if (sankeyDiv) {
+          Plotly.newPlot(sankeyDiv, [{
+            type: 'sankey',
+            node: {
+              pad: 15,
+              thickness: 20,
+              line: { color: '#333', width: 0.5 },
+              label: DATA.kevSankey.node.label,
+              color: DATA.kevSankey.node.color
+            },
+            link: {
+              source: DATA.kevSankey.link.source,
+              target: DATA.kevSankey.link.target,
+              value: DATA.kevSankey.link.value,
+              color: 'rgba(180, 180, 180, 0.35)'
+            }
+          }], {
+            title: { text: DATA.kevSankey.title || 'CVE Severity → KEVs / No breach', x: 0.5, xanchor: 'center' },
+            font: { size: 12 },
+            height: 450,
+            margin: { t: 50, b: 20, l: 20, r: 20 },
+            paper_bgcolor: '#fafafa',
+            plot_bgcolor: '#fafafa'
+          }, { responsive: true });
+        }
+      }
+    } catch (e) { console.warn('kevSankeyChart:', e); }
+  }
+  });
+
+  /* CWE horizontal bars (when data exists) - long-tail all CWEs, full name on hover */
+  whenChartInView('kevCweContainer', function() {
+    if (DATA.kevCwe && DATA.kevCwe.available && DATA.kevCwe.labels && DATA.kevCwe.labels.length > 0) {
+      try {
+        var cweContainer = document.getElementById('kevCweContainer');
+        if (cweContainer) {
+          cweContainer.innerHTML = '<canvas id="kevCweChart"></canvas>';
+          createHorizontalBarChart('kevCweChart', DATA.kevCwe.labels, DATA.kevCwe.data, { fullNames: DATA.kevCwe.fullNames });
+        }
+      } catch (e) { console.warn('kevCweChart:', e); }
+    }
+  });
+
+  /* MITRE Top 25 (when data exists) - reordered by KEV count, full name on hover */
+  whenChartInView('kevMitreTop25Container', function() {
+    if (DATA.kevMitreTop25 && DATA.kevMitreTop25.available && DATA.kevMitreTop25.labels && DATA.kevMitreTop25.labels.length > 0) {
+      try {
+        var mt25Container = document.getElementById('kevMitreTop25Container');
+        if (mt25Container) {
+          mt25Container.innerHTML = '<canvas id="kevMitreTop25Chart"></canvas>';
+          createHorizontalBarChart('kevMitreTop25Chart', DATA.kevMitreTop25.labels, DATA.kevMitreTop25.data, { fullNames: DATA.kevMitreTop25.fullNames });
+        }
+      } catch (e) { console.warn('kevMitreTop25Chart:', e); }
+    }
+  });
+
+  /* CWE KEV coverage (when data exists) - pie chart */
+  whenChartInView('cweKevCoverageContainer', function() {
+    if (DATA.cweKevCoverage && DATA.cweKevCoverage.available && DATA.cweKevCoverage.labels && DATA.cweKevCoverage.data) {
+      try {
+        var cweCovContainer = document.getElementById('cweKevCoverageContainer');
+        if (cweCovContainer) {
+          cweCovContainer.innerHTML = '<canvas id="cweKevCoverageChart"></canvas>';
+          createPieChart('cweKevCoverageChart', DATA.cweKevCoverage.labels, DATA.cweKevCoverage.data, ['#1565c0', '#A3A3A3'], true);
+        }
+      } catch (e) { console.warn('cweKevCoverageChart:', e); }
+    }
+  });
+
+  /* OWASP Top 10 (when data exists) - light mode for visibility */
+  whenChartInView('kevOwaspContainer', function() {
+    if (DATA.kevOwasp && DATA.kevOwasp.available && DATA.kevOwasp.labels && DATA.kevOwasp.labels.length > 0) {
+      try {
+        var owaspContainer = document.getElementById('kevOwaspContainer');
+        if (owaspContainer) {
+          owaspContainer.innerHTML = '<canvas id="kevOwaspChart"></canvas>';
+          createHorizontalBarChart('kevOwaspChart', DATA.kevOwasp.labels, DATA.kevOwasp.data, { lightMode: true });
+        }
+      } catch (e) { console.warn('kevOwaspChart:', e); }
+    }
+  });
+
+  /* 05: VulnCheck-KEVs Overlap (Venn) */
+  whenChartInView('kevVulncheckContainer', function() { renderOverlapInto('kevVulncheckContainer', 'kevVulncheckChart', 'kevVulncheckOverlap', 'VC', 'KEVs', 'VulnCheck KEV', 'KEVs', ['#F97316', '#1565c0', '#3B82F6'], 'kevVulncheckStats'); });
+
+  /* 06: KEVs-DBIR Overlap (Venn) */
+  whenChartInView('kevDbirContainer', function() { renderOverlapInto('kevDbirContainer', 'kevDbirChart', 'kevDbirOverlap', 'DBIR', 'KEVs', 'Verizon DBIR', 'KEVs', ['#F97316', '#1565c0', '#22C55E'], 'kevDbirStats'); });
+
+  /* 07: Vulncheck-DBIR Overlap (Venn) */
+  /* 08: KEVs-Nuclei Overlap (Venn) */
+  whenChartInView('kevNucleiContainer', function() { renderOverlapInto('kevNucleiContainer', 'kevNucleiChart', 'kevNucleiOverlap', 'Nuclei', 'KEVs', 'Nuclei', 'KEVs', ['#F97316', '#1565c0', '#8B5CF6'], 'kevNucleiStats'); });
+
+  /* 09: Metasploit-KEVs Overlap (Venn) */
+  whenChartInView('kevMetasploitContainer', function() { renderOverlapInto('kevMetasploitContainer', 'kevMetasploitChart', 'kevMetasploitOverlap', 'MSF', 'KEVs', 'Metasploit', 'KEVs', ['#F97316', '#1565c0', '#EC4899'], 'kevMetasploitStats'); });
+
+  /* 09: KEVs-Exploit Refs + ExploitDB (tabs) - pre-render both when section in view */
+  whenChartInView('kevExploitRefsContainer', function() {
+    renderOverlapInto('kevExploitRefsContainer', 'kevExploitRefsChart', 'kevExploitRefsOverlap', 'ExploitRefs', 'KEVs', 'ExploitRefs', 'KEVs', ['#F97316', '#1565c0', '#8B5CF6'], 'kevExploitRefsStats');
+    renderOverlapInto('kevExploitdbContainer', 'kevExploitdbChart', 'kevExploitdbOverlap', 'EDB', 'KEVs', 'ExploitDB', 'KEVs', ['#F97316', '#1565c0', '#F59E0B'], 'kevExploitdbStats');
+  });
+
+  /* 13: ENISA-KEVs Overlap (Venn) */
+  whenChartInView('kevEnisaContainer', function() { renderOverlapInto('kevEnisaContainer', 'kevEnisaChart', 'kevEnisaOverlap', 'ENISA', 'KEVs', 'ENISA EU KEV', 'KEVs', ['#F97316', '#1565c0', '#06B6D4'], 'kevEnisaStats'); });
+
+  /* 13b: EUVD KEV–KEVs Overlap (Venn) */
+  whenChartInView('kevEuvdContainer', function() { renderOverlapInto('kevEuvdContainer', 'kevEuvdChart', 'kevEuvdOverlap', 'EUVD', 'KEVs', 'EUVD KEV', 'KEVs', ['#F97316', '#1565c0', '#7C3AED'], 'kevEuvdStats'); });
+
+  /* KEVs-Mandiant (when data exists) */
+  whenChartInView('kevMandiantContainer', function() { renderOverlapInto('kevMandiantContainer', 'kevMandiantChart', 'kevMandiantOverlap', 'Mandiant', 'KEVs', 'Mandiant M-Trends', 'KEVs', ['#F97316', '#1565c0', '#c62828'], 'kevMandiantStats'); });
+
+  /* Ransomware tabs - PrivTools, RansomFeed vs ATT&CK */
+  whenChartInView('privtoolsMitreContainer', function() { renderOverlapInto('privtoolsMitreContainer', 'privtoolsMitreChart', 'privtoolsMitre', 'PrivTools', 'ATT&CK', 'PrivTools EU', 'ATT&CK', ['#F97316', '#1565c0', '#6B7280'], 'privtoolsMitreStats'); });
+  whenChartInView('ransomfeedMitreContainer', function() { renderOverlapInto('ransomfeedMitreContainer', 'ransomfeedMitreChart', 'ransomfeedMitre', 'RansomFeed', 'ATT&CK', 'RansomFeed.it', 'ATT&CK', ['#F97316', '#1565c0', '#6B7280'], 'ransomfeedMitreStats'); });
+
+  /* 26: KEVs CVSS attributes - separate charts per category */
+  (function() {
+    var fcaKeys = ['av', 'ac', 'pr', 'ui', 'scope', 'confidentiality', 'integrity', 'availability'];
+    fcaKeys.forEach(function(key) {
+      var containerId = 'kevCvssAttr' + key.charAt(0).toUpperCase() + key.slice(1) + 'Container';
+      whenChartInView(containerId, function() {
+        if (DATA.kevCvssAttributes && DATA.kevCvssAttributes.available && DATA.kevCvssAttributes.categories) {
+          try {
+            var container = document.getElementById(containerId);
+            var d = DATA.kevCvssAttributes[key];
+            if (!container || !d || !d.labels || !d.data) return;
+            var cat = DATA.kevCvssAttributes.categories.find(function(c) { return c.key === key; });
+            container.innerHTML = '<h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">' + (cat && cat.title || key) + '</h4><canvas id="kevCvssAttr_' + key + '"></canvas>';
+            createBarChart('kevCvssAttr_' + key, d.labels, [{ label: 'Count', data: d.data, backgroundColor: '#1565c0' }]);
+          } catch (e) { console.warn('kevCvssAttributes:', e); }
+        }
+      });
+    });
+  })();
+
+  /* 27: KEVs CVSS vector pie - two tabs: KEVs and All CVEs */
+  whenChartInView('kevCvssVectorPieContainer', function() {
+    if (DATA.kevCvssVectorPie && DATA.kevCvssVectorPie.available) {
+      try {
+        var kevPieData = DATA.kevCvssVectorPie.kev || DATA.kevCvssVectorPie.ice || (DATA.kevCvssVectorPie.labels && DATA.kevCvssVectorPie.data ? { labels: DATA.kevCvssVectorPie.labels, data: DATA.kevCvssVectorPie.data } : null);
+        if (kevPieData && kevPieData.labels && kevPieData.data && (kevPieData.data[0] || kevPieData.data[1])) {
+          var fcvpContainer = document.getElementById('kevCvssVectorPieContainer');
+          if (fcvpContainer) {
+            fcvpContainer.innerHTML = '<canvas id="kevCvssVectorPieChart"></canvas>';
+            createPieChart('kevCvssVectorPieChart', kevPieData.labels, kevPieData.data, ['#1565c0', '#A3A3A3'], false);
+          }
+        }
+      } catch (e) { console.warn('kevCvssVectorPieChart:', e); }
+    }
+  });
+  whenChartInView('allCvesCvssVectorPieContainer', function() {
+    if (DATA.kevCvssVectorPie && DATA.kevCvssVectorPie.available) {
+      try {
+        var allData = DATA.kevCvssVectorPie.allCves;
+        if (allData && allData.labels && allData.data && (allData.data[0] || allData.data[1])) {
+          var acvpContainer = document.getElementById('allCvesCvssVectorPieContainer');
+          if (acvpContainer) {
+            acvpContainer.innerHTML = '<canvas id="allCvesCvssVectorPieChart"></canvas>';
+            createPieChart('allCvesCvssVectorPieChart', allData.labels, allData.data, ['#3B82F6', '#A3A3A3'], false);
+          }
+        }
+      } catch (e) { console.warn('allCvesCvssVectorPieChart:', e); }
+    }
+  });
+
+  /* Animate hero counters */
+  document.querySelectorAll('.hero-stat [data-count]').forEach(function(el) {
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    if (isNaN(target)) return;
+    var start = 0;
+    var duration = 1200;
+    var startTime = null;
+    function step(ts) {
+      if (!startTime) startTime = ts;
+      var p = Math.min((ts - startTime) / duration, 1);
+      var ease = 1 - Math.pow(1 - p, 3);
+      var val = Math.round(start + (target - start) * ease);
+      el.textContent = val.toLocaleString() + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+
+  /* Smooth nav scroll */
+  document.querySelectorAll('.nav-links a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  /* Tab switching */
+  function initTabs(toggleId, tabPrefix) {
+    var grp = document.getElementById(toggleId);
+    if (!grp) return;
+    grp.querySelectorAll('.toggle-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var tab = this.getAttribute('data-tab');
+        grp.querySelectorAll('.toggle-btn').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        document.querySelectorAll('#' + toggleId.replace('Tabs','') + ' ~ .tab-panel').forEach(function(p) { p.classList.remove('active'); });
+        var panel = document.getElementById('tab-' + tab);
+        if (panel) panel.classList.add('active');
+      });
+    });
+  }
+  function initTabsByParent(toggleId) {
+    var grp = document.getElementById(toggleId);
+    if (!grp) return;
+    var container = grp.closest('.container');
+    if (!container) return;
+    grp.querySelectorAll('.toggle-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var tab = this.getAttribute('data-tab');
+        grp.querySelectorAll('.toggle-btn').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        container.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+        var panel = document.getElementById('tab-' + tab);
+        if (panel) panel.classList.add('active');
+      });
+    });
+  }
+  initTabsByParent('kevOverlapTabs');
+  initTabsByParent('epssTabs');
+  initTabsByParent('severityTabs');
+  initTabsByParent('forensicsTabs');
+  initTabsByParent('pentestingTabs');
+  initTabsByParent('exploitRefsTabs');
+  initTabsByParent('cweTabs');
+  initTabsByParent('ransomwareTabs');
+  initTabsByParent('cvssVectorPieTabs');
+
+  /* Copy link buttons - add to all sections with id */
+  var toast = document.createElement('div');
+  toast.className = 'copy-toast';
+  toast.textContent = 'Link copied to clipboard';
+  document.body.appendChild(toast);
+  function showToast() {
+    toast.classList.add('visible');
+    clearTimeout(toast._tid);
+    toast._tid = setTimeout(function() { toast.classList.remove('visible'); }, 2000);
+  }
+  var linkSvg = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+  document.querySelectorAll('section[id] .section-header').forEach(function(header) {
+    var section = header.closest('section');
+    var anchor = section && section.id;
+    if (!anchor) return;
+    var row = header.querySelector('.section-label-row');
+    var labelEl = row ? row.querySelector('.label') : header.querySelector('.label');
+    if (!labelEl) return;
+    if (!row) {
+      row = document.createElement('div');
+      row.className = 'section-label-row';
+      labelEl.parentNode.insertBefore(row, labelEl);
+      row.appendChild(labelEl);
+    }
+    if (row.querySelector('.copy-link-btn')) return;
+    var btn = document.createElement('button');
+    btn.className = 'copy-link-btn';
+    btn.setAttribute('data-anchor', anchor);
+    btn.setAttribute('title', 'Copy link');
+    btn.setAttribute('aria-label', 'Copy section link');
+    btn.innerHTML = linkSvg;
+    row.appendChild(btn);
+  });
+  document.querySelectorAll('.copy-link-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var anchor = this.getAttribute('data-anchor');
+      var url = (window.location.href.split('#')[0]) + '#' + anchor;
+      navigator.clipboard.writeText(url).then(function() { showToast(); }).catch(function() {
+        toast.textContent = 'Copy failed';
+        showToast();
+        setTimeout(function() { toast.textContent = 'Link copied to clipboard'; }, 2500);
+      });
+    });
+  });
+
+  /* Fade-in on scroll (like index.html) */
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+})();
+</script>
+</body>
+</html>

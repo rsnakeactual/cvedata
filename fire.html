@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVEdata.com - FIRE Report</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="static/css/main-20260212.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-brand"><a href="index.html">CVE<span>data</span></a></div>
+    <ul class="nav-links">
+      <li><a href="#fire-vulns-year">Year</a></li>
+      <li><a href="#fire-kev-overlap">KEV</a></li>
+      <li><a href="#fire-google-p0">Google P0</a></li>
+      <li><a href="#fire-epss">EPSS</a></li>
+      <li><a href="#fire-severity">Severity</a></li>
+      <li><a href="#fire-sankey">Sankey</a></li>
+      <li><a href="#fire-forensics">Forensics</a></li>
+      <li><a href="#fire-pentesting">Pentesting</a></li>
+      <li><a href="#fire-exploit-refs">Exploit refs</a></li>
+      <li><a href="#fire-cwe">CWE</a></li>
+      <li><a href="#fire-owasp">OWASP</a></li>
+      <li><a href="#fire-vs-other-kev">ATT&CK</a></li>
+      <li><a href="#fire-ransomware">Ransomware</a></li>
+      <li><a href="#fire-cvss-attributes">Vectors</a></li>
+      <li><a href="#claims">Claims</a></li>
+      <li><a href="breakdown.html">Breakdown</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div>
+        <h1>FIRE Report</h1>
+        <p>Financial Risk Exposure (FIRE) vulnerabilities are CVEs identified by insurance carriers as linked to insurance claims are a proxy for losses. Incident Causing Exposures (ICE) are vulnerabilities that are known to be exploited by attackers but have no evidence of being associated with a financial loss. There is a huge difference between a vulnerability, a breach and a financial loss.</p>
+        <div class="scroll-hint">
+          <div class="arrow">&darr;</div>
+          <span>Scroll to explore</span>
+        </div>
+      </div>
+      <div class="hero-stats fade-in" id="heroStats"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 01: FIRE VULNS BY YEAR AND VENDOR -->
+<section id="fire-vulns-year" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">01: FIRE by Year and Vendor</span><button class="copy-link-btn" data-anchor="fire-vulns-year" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>FIRE vulnerabilities by publication year</h2>
+      <p>It does not appear that financially motivated attackers care about when a vulnerability is published; they exploit what works. This chart pushes back on the idea that financial adversaries prefer zero-day exploits.</p>
+    </div>
+    <div class="chart-container" style="height: 350px;">
+      <canvas id="fireVulnsYearChart"></canvas>
+    </div>
+    <div class="insight-cards" id="fireVulnsYearInsights"></div>
+    <div class="section-header" style="margin-top: 2.5rem;">
+      <h3 id="fire-vendors">FIRE by affected vendor</h3>
+      <p>Vendors come from the CVE Program CNA &ldquo;affected&rdquo; metadata in CVElist V5 (same approach as the legacy site). A single CVE can list multiple vendors; each vendor row counts once. The top nine vendors are shown individually; everything else is grouped into Other, including CVEs with no vendor in the CNA record or not present in CVElist.</p>
+    </div>
+    <div class="chart-container" style="height: 380px;">
+      <canvas id="fireVendorsChart"></canvas>
+    </div>
+    <div class="insight-cards" id="fireVendorsInsights"></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 02–05,13,14: KEV OVERLAP (tabs) -->
+<section id="fire-kev-overlap" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">02: KEV Overlap</span><button class="copy-link-btn" data-anchor="fire-kev-overlap" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>FIRE vs Known Exploited catalogs</h2>
+      <p>There is overlap between FIRE and various KEV lists, but none of them are complete. Each catalog has different inclusion criteria. Even when the KEV lists are combined, they still miss a significant number of FIRE vulnerabilities. ICE (Incident Causing Exposures) means breaches with no evidence of financial loss in carrier data yet. ICE sources used here include DFIR-style signals, CISA KEV, the ENISA EU CSIRT Network KEV list, ENISA EUVD entries flagged as exploited in the wild (EUVD KEV), VCDB, VulnCheck, Google P0, Mandiant M-Trends, and CrowdStrike Global Threat Report.</p>
+    </div>
+    <div class="toggle-group" id="kevOverlapTabs">
+      <button class="toggle-btn active" data-tab="kev">CISA KEV</button>
+      <button class="toggle-btn" data-tab="vulncheck">VulnCheck</button>
+      <button class="toggle-btn" data-tab="enisa">ENISA EU KEV</button>
+      <button class="toggle-btn" data-tab="euvd-kev">EUVD KEV</button>
+      <button class="toggle-btn" data-tab="ice">ICE (combined)</button>
+    </div>
+    <div class="tab-panel active" id="tab-kev">
+      <div class="chart-container" style="height: 350px;">
+        <canvas id="fireKevOverlapChart"></canvas>
+      </div>
+      <div class="insight-cards" id="fireKevOverlapStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-vulncheck">
+      <div class="chart-container" style="height: 350px;" id="fireVulncheckContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and vulncheck processors.</p>
+      </div>
+      <div class="insight-cards" id="fireVulncheckStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-enisa">
+      <div class="chart-container" style="height: 350px;" id="enisaFireContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and enisa-kev processors.</p>
+      </div>
+      <div class="insight-cards" id="fireEnisaStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-euvd-kev">
+      <div class="chart-container" style="height: 350px;" id="euvdKevFireContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and euvd-kev processors, then regenerate graphs.</p>
+      </div>
+      <div class="insight-cards" id="fireEuvdKevStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-ice">
+      <div class="chart-container" style="height: 350px;" id="fireIceContainer">
+        <p class="data-unavailable">Data unavailable. Run the pipeline (requires fire, kev, enisa-kev, euvd-kev, vcdb, vulncheck, google-p0).</p>
+      </div>
+      <div class="insight-cards" id="fireIceStats"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 03: FIRE vs GOOGLE P0 -->
+<section id="fire-google-p0" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">03: FIRE vs Google P0</span><button class="copy-link-btn" data-anchor="fire-google-p0" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Overlap with Google Project Zero &ldquo;0day in the wild&rdquo;</h2>
+      <p>Google Project Zero tracks CVEs exploited in the wild before a patch existed. There does not appear to be a significant overlap between FIRE and Google Project Zero. This may indicate the type of adversary that uses zero-day exploits is not the same as the type of adversary that is interested in FIRE vulnerabilities.</p>
+    </div>
+    <div class="chart-container" style="height: 350px;">
+      <canvas id="fireGoogleP0Chart"></canvas>
+    </div>
+    <div class="insight-cards" id="fireGoogleP0Stats"></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 04: FIRE EPSS (tabs: distribution + correlation) -->
+<section id="fire-epss" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">04: FIRE EPSS</span><button class="copy-link-btn" data-anchor="fire-epss" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>EPSS score distribution and correlation</h2>
+      <p>How do FIRE vulnerabilities score on EPSS? EPSS is a machine learning model that claims to predict the likelihood of a vulnerability being exploited in the next 30 days. It is not a perfect measure, by their own admission, and should not be used instead of KEV lists according to first.org guidance, but even with that in mind, it does not seem to be a good proxy for loss prediction.</p>
+    </div>
+    <div class="toggle-group" id="epssTabs">
+      <button class="toggle-btn active" data-tab="epss-dist">Distribution</button>
+      <button class="toggle-btn" data-tab="epss-corr">Correlation (scatter)</button>
+    </div>
+    <div class="tab-panel active" id="tab-epss-dist">
+      <div class="chart-container" style="height: 350px;">
+        <canvas id="fireEpssChart"></canvas>
+      </div>
+      <div class="insight-cards" id="fireEpssStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-epss-corr">
+      <div class="chart-container" style="height: 800px; aspect-ratio: 1; max-width: 1000px;" id="fireEpssCorrelationContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and epss processors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 05: FIRE severity breakdown by source (tabs) -->
+<section id="fire-severity" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">05: FIRE severity by source</span><button class="copy-link-btn" data-anchor="fire-severity" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>FIRE vulnerabilities by CVSS severity</h2>
+      <p>The various different sources for CVE and CVSS data each have different inclusion criteria and severity ratings for FIRE vulnerabilities. A number of these sources are incomplete and do not include all FIRE vulnerabilities or have different severity ratings or rate the CVEs that lead to losses as low or even fail to score them at all.</p>
+    </div>
+    <div class="toggle-group" id="severityTabs">
+      <button class="toggle-btn active" data-tab="nvd">cvelistV5 + NVD</button>
+      <button class="toggle-btn" data-tab="euvd">EUVD</button>
+      <button class="toggle-btn" data-tab="cnvd">CNVD</button>
+      <button class="toggle-btn" data-tab="jvn">JVN iPedia</button>
+    </div>
+    <div class="tab-panel active" id="tab-nvd">
+      <div class="chart-container" style="height: 350px;" id="fireSeverityNvdContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and nvd processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-euvd">
+      <div class="chart-container" style="height: 350px;" id="fireSeverityEuvdContainer">
+        <p class="data-unavailable">Data unavailable. Run fire, nvd, and euvd processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-cnvd">
+      <div class="chart-container" style="height: 350px;" id="fireSeverityCnvdContainer">
+        <p class="data-unavailable">Data unavailable. Run fire, nvd, and cnvd processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-jvn">
+      <div class="chart-container" style="height: 350px;" id="fireSeverityJvnContainer">
+        <p class="data-unavailable">Data unavailable. Run fire, nvd, and jvndb processors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 06: CVE Sankey (Severity → Breach/loss) -->
+<section id="fire-sankey" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">06: CVE Sankey</span><button class="copy-link-btn" data-anchor="fire-sankey" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Severity → Breach/loss category</h2>
+    <p>The relationship between the severity of a CVE and the breach/loss category is virtually non-existent. The left side of the diagram shows the severity of the CVE, and the right side of the diagram shows the breach/loss category. Attackers do not appear to care about the severity of the CVE, they just want to exploit what works for them.</p>
+    </div>
+    <div class="chart-container" style="height: 500px;" id="fireSankeyContainer">
+      <p class="data-unavailable">Data unavailable. Run fire, kev, enisa-kev, euvd-kev, vcdb, vulncheck, google-p0, and nvd processors.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 07: FORENSICS (tabs) -->
+<section id="fire-forensics" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">07: Forensics</span><button class="copy-link-btn" data-anchor="fire-forensics" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>FIRE vs breach forensics data</h2>
+      <p>Verizon DBIR and Mandiant M-Trends track CVEs from breach investigations for a single year at a time. They overlap with FIRE to some extent, but so few new vulnerabilities are used in breaches each year that the year-over-year numbers are very low.</p>
+    </div>
+    <div class="toggle-group" id="forensicsTabs">
+      <button class="toggle-btn active" data-tab="dbir">Verizon DBIR (VCDB)</button>
+      <button class="toggle-btn" data-tab="mandiant">Mandiant M-Trends</button>
+    </div>
+    <div class="tab-panel active" id="tab-dbir">
+      <div class="chart-container" style="height: 350px;" id="fireDbirContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and vcdb processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-mandiant">
+      <div class="chart-container" style="height: 350px;" id="fireMandiantContainer">
+        <p class="data-unavailable">Data unavailable. Place <code>mandiant-m-trends-YYYY.csv</code> files under <code>data/raw/Mandiant/</code> and run the pipeline.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 08: PENTESTING TOOLS (tabs) -->
+<section id="fire-pentesting" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">08: Pentesting tools</span><button class="copy-link-btn" data-anchor="fire-pentesting" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Metasploit & Nuclei vs FIRE</h2>
+      <p>The common wisdom about the &ldquo;Metasploit metric&rdquo; appears to be wrong: there is very little overlap between Metasploit CVEs and actual losses. The same holds for Nuclei, which has become the new standard among penetration testers.</p>
+    </div>
+    <div class="toggle-group" id="pentestingTabs">
+      <button class="toggle-btn active" data-tab="metasploit">Metasploit</button>
+      <button class="toggle-btn" data-tab="nuclei">Nuclei</button>
+    </div>
+    <div class="tab-panel active" id="tab-metasploit">
+      <div class="chart-container" style="height: 350px;" id="fireMetasploitContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and metasploit processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-nuclei">
+      <div class="chart-container" style="height: 350px;" id="fireNucleiContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and nuclei processors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 09: EXPLOIT REFERENCES (tabs) -->
+<section id="fire-exploit-refs" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">09: Exploit references</span><button class="copy-link-btn" data-anchor="fire-exploit-refs" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>FIRE vs exploit databases</h2>
+      <p>The common understanding that CVEs with exploit references are frequently used to lead to losses appears to be wrong. Percentages below show how infrequently FIRE maps to ExploitDB or CVEs with exploit references in cvelistV5.</p>
+    </div>
+    <div class="toggle-group" id="exploitRefsTabs">
+      <button class="toggle-btn active" data-tab="exploitrefs">Exploit references (cvelistV5)</button>
+      <button class="toggle-btn" data-tab="exploitdb">ExploitDB</button>
+    </div>
+    <div class="tab-panel active" id="tab-exploitrefs">
+      <div class="chart-container" style="height: 350px;" id="fireExploitRefsContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and cvelistV5 processors.</p>
+      </div>
+      <div class="insight-cards" id="fireExploitRefsStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-exploitdb">
+      <div class="chart-container" style="height: 350px;" id="fireExploitdbContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and exploitdb processors.</p>
+      </div>
+      <div class="insight-cards" id="fireExploitdbStats"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 10: CWE (dark section, tabs) -->
+<section id="fire-cwe" class="dark-section fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">10: FIRE by CWE</span><button class="copy-link-btn" data-anchor="fire-cwe" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>FIRE vulnerabilities by weakness type</h2>
+      <p>CWE is a common weakness enumeration (CWE) list that is used to classify vulnerabilities. Not all CWEs seem to have even one FIRE vulnerability, but some do have many. MITRE Top 25 is a list of the most common weaknesses in the CWE list according to MITRE.</p>
+    </div>
+    <div class="toggle-group" id="cweTabs">
+      <button class="toggle-btn active" data-tab="cwe-bars">CWE horizontal bars</button>
+      <button class="toggle-btn" data-tab="mitre-top25">MITRE Top 25</button>
+    </div>
+    <div class="tab-panel active" id="tab-cwe-bars">
+      <div class="chart-container" style="height: 2600px;" id="fireCweContainer">
+        <p class="data-unavailable">Data unavailable. Run fire, cwe, and cvelistV5 processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-mitre-top25">
+      <div class="chart-container" style="height: 2600px;" id="fireMitreTop25Container">
+        <p class="data-unavailable">Data unavailable. Run fire, cwe, and cvelistV5 processors.</p>
+      </div>
+    </div>
+    <h3 style="margin-top: calc(var(--grid) * 6); margin-bottom: calc(var(--grid) * 2);">CWE FIRE coverage</h3>
+    <p style="margin-bottom: calc(var(--grid) * 3);">Proportion of CWEs with one or more FIRE vulnerabilities.</p>
+    <div class="chart-container" style="height: 350px;" id="cweFireCoverageContainer">
+      <p class="data-unavailable">Data unavailable. Run fire, cwe, and cvelistV5 processors.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 11: OWASP Top 10 for FIRE -->
+<section id="fire-owasp" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">11: OWASP Top 10 for FIRE</span><button class="copy-link-btn" data-anchor="fire-owasp" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>OWASP Top 10 controls ranked by FIRE vulnerability counts</h2>
+      <p>The Open Web Application Security Project (OWASP) Top 10 is a list of the vulnerabilities that are most often found by security vendors who test web applications. Not all OWASP Top 10 appear to have CVEs that have ever been used in a cyber insurance claim.</p>
+    </div>
+    <div class="chart-container" style="height: 350px;" id="fireOwaspContainer">
+      <p class="data-unavailable">Data unavailable. Run fire, owasp, and cvelistV5 processors.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 12: ATT&CK groups FIRE vs Non-FIRE KEV scatter -->
+<section id="fire-vs-other-kev" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">12: ATT&CK groups</span><button class="copy-link-btn" data-anchor="fire-vs-other-kev" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Normalized MITRE ATT&CK groups</h2>
+      <p>The MITRE Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK) framework attempts to document what adversaries use in practice. Each point in the following graph is one ATT&CK group. The scatter shows what percentage of their TTPs use CISA KEV CVEs vs FIRE CVEs. A hole in the data appears on the bottom right hand quadrant. There is little representation of groups that primarily use FIRE vulns, suggesting MITRE ATT&CK may not be tracking many financial-fraud-focused groups.</p>
+    </div>
+    <div class="chart-container" style="height: 750px; aspect-ratio: 1; max-width: 750px;" id="fireVsOtherKevContainer">
+      <p class="data-unavailable">Data unavailable. Run fire, kev, attack-stix, and mappings-explorer processors.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 13: RANSOMWARE vs ATT&CK (tabs) -->
+<section id="fire-ransomware" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">13: Ransomware groups vs ATT&CK</span><button class="copy-link-btn" data-anchor="fire-ransomware" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Overlap between ransomware lists and MITRE ATT&CK</h2>
+      <p>The overlap is very low between ransomware group names (PrivTools EU, RansomFeed.it, Zywave claims) and MITRE ATT&CK identified groups. MITRE ATT&CK does not appear to be tracking most financial fraud and ransomware groups in their dataset.</p>
+    </div>
+    <div class="toggle-group" id="ransomwareTabs">
+      <button class="toggle-btn active" data-tab="privtools">PrivTools EU</button>
+      <button class="toggle-btn" data-tab="ransomfeed">RansomFeed.it</button>
+      <button class="toggle-btn" data-tab="zywave">Zywave claims</button>
+    </div>
+    <div class="tab-panel active" id="tab-privtools">
+      <div class="chart-container" style="height: 350px;" id="privtoolsMitreContainer">
+        <p class="data-unavailable">Data unavailable. Run privtools-eu, attack-stix processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-ransomfeed">
+      <div class="chart-container" style="height: 350px;" id="ransomfeedMitreContainer">
+        <p class="data-unavailable">Data unavailable. Run ransomfeed-it, attack-stix processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-zywave">
+      <div class="chart-container" style="height: 350px;" id="zywaveMitreContainer">
+        <p class="data-unavailable">Data unavailable. Place cyber_incident*.csv in data/raw/Zywave/zywave-archive-*/ and run attack-stix.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 14: Cyber claims (NAICS sector + by actor) -->
+<section id="claims" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">14: Cyber claims</span><button class="copy-link-btn" data-anchor="claims" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Average Claim Sizes</h2>
+      <p>Not all industries suffer the same sized losses according to Zywave. One bubble represents one sector or actor the X axis shows the number of claims where the Y axis shows the total amount of claims (USD), and the bubble size shows the average dollar amount per breach. Hover for details including group name.</p>
+    </div>
+    <div class="toggle-group" id="zywaveNaicsTabs">
+      <button class="toggle-btn active" data-tab="zywave-naics-sector">NAICS sector</button>
+      <button class="toggle-btn" data-tab="zywave-naics-actor">By actor</button>
+    </div>
+    <div class="tab-panel active" id="tab-zywave-naics-sector">
+      <div class="chart-container" style="height: 800px; aspect-ratio: 1; max-width: 1000px;" id="zywaveNaicsContainer">
+        <p class="data-unavailable">Data unavailable. Place cyber_incident*.csv in data/raw/Zywave/zywave-archive-*/.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-zywave-naics-actor">
+      <div class="chart-container" style="height: 800px; aspect-ratio: 1; max-width: 1000px;" id="zywaveClaimsContainer">
+        <p class="data-unavailable">Data unavailable. Place cyber_incident*.csv in data/raw/Zywave/zywave-archive-*/.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 15: FIRE CVSS Vector Attributes -->
+<section id="fire-cvss-attributes" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">15: FIRE CVSS Vector Attributes</span><button class="copy-link-btn" data-anchor="fire-cvss-attributes" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Counts of FIRE vulns per CVSS vector attribute</h2>
+      <p>The most common CVSS vector attributes for FIRE vulnerabilities give us some window into what financial attackers find most valuable when attacking based on claims data. The 8 CVSS vector attributes in CVSS 3.x are Attack Vector, Attack Complexity, Privileges Required, User Interaction, Scope, Confidentiality, Integrity, and Availability.</p>
+    </div>
+    <div class="fire-cvss-attr-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: calc(var(--grid) * 2);">
+      <div class="chart-container" style="height: 180px;" id="fireCvssAttrAvContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Attack Vector</h4>
+        <p class="data-unavailable">Data unavailable. Run fire and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="fireCvssAttrAcContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Attack Complexity</h4>
+        <p class="data-unavailable">Data unavailable. Run fire and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="fireCvssAttrPrContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Privileges Required</h4>
+        <p class="data-unavailable">Data unavailable. Run fire and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="fireCvssAttrUiContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">User Interaction</h4>
+        <p class="data-unavailable">Data unavailable. Run fire and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="fireCvssAttrScopeContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Scope</h4>
+        <p class="data-unavailable">Data unavailable. Run fire and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="fireCvssAttrConfidentialityContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Confidentiality Impact</h4>
+        <p class="data-unavailable">Data unavailable. Run fire and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="fireCvssAttrIntegrityContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Integrity Impact</h4>
+        <p class="data-unavailable">Data unavailable. Run fire and nvd processors.</p>
+      </div>
+      <div class="chart-container" style="height: 180px;" id="fireCvssAttrAvailabilityContainer">
+        <h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">Availability Impact</h4>
+        <p class="data-unavailable">Data unavailable. Run fire and nvd processors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- 16: FIRE CVSS Vector Pie -->
+<section id="fire-cvss-vector-pie" class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label-row"><span class="label">16: FIRE CVSS Vector Pie</span><button class="copy-link-btn" data-anchor="fire-cvss-vector-pie" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Most common CVSS vector vs other</h2>
+      <p>The most commonly used CVSS Vector while used often is not used enough to limit our view to it alone. The following is a breakdown of the most common CVSS vector used in FIRE vulns or all CVEs (NVD).</p>
+    </div>
+    <div class="toggle-group" id="cvssVectorPieTabs">
+      <button class="toggle-btn active" data-tab="fire">FIRE</button>
+      <button class="toggle-btn" data-tab="allcves">All CVEs</button>
+    </div>
+    <div class="tab-panel active" id="tab-fire">
+      <div class="chart-container" style="height: 350px;" id="fireCvssVectorPieContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and nvd processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-allcves">
+      <div class="chart-container" style="height: 350px;" id="allCvesCvssVectorPieContainer">
+        <p class="data-unavailable">Data unavailable. Run nvd processor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-left">
+      Data compiled and analyzed by Robert "<a href="https://rsnake.com/" target="_blank">RSnake</a>" Hansen and designed by Lex Arquette.  I do not guarantee the correctness of the data or charts and further disclaim the reliability of the original data used or how it has been processed or represented in this report. Use your own judgement and do your own research. Use the charts with or without attribution (it's always appreciated), but if you do use it, please include me if you do any additional interesting research.
+    </div>
+    <div class="footer-sources">
+      Sources for this page: 
+      <a href="https://github.com/CVEProject/cvelistV5" target="_blank">CVE cvelistV5</a>,
+      <a href="https://nvd.nist.gov/" target="_blank">NVD</a>,
+      <a href="https://github.com/cisagov/vulnrichment" target="_blank">CISA ADP (Vulnrichment)</a>,
+      <a href="https://euvd.enisa.europa.eu/apidoc" target="_blank">EUVD</a>,
+      <a href="https://github.com/enisaeu/CNW/" target="_blank">ENISA EU CSIRT Network</a>,
+      <a href="https://bdu.fstec.ru/vul" target="_blank">BDU (Russia)</a>,
+      <a href="https://jvndb.jvn.jp/ja/feed/" target="_blank">JVN iPedia (Japan)</a>,
+      <a href="https://cnvd.org.cn/" target="_blank">CNVD (China)</a>,
+      <a href="https://github.com/mitre-attack/attack-stix-data" target="_blank">ATT&CK STIX</a>,
+      <a href="https://github.com/center-for-threat-informed-defense/mappings-explorer" target="_blank">ATT&CK–KEV mappings</a>,
+      <a href="https://services.google.com/fh/files/misc/m-trends-2025-en.pdf" target="_blank">Mandiant (2025 M-Trends)</a>,
+      <a href="https://www.crowdstrike.com/en-us/global-threat-report/" target="_blank">CrowdStrike (2026 Global Threat Report)</a>,
+      <a href="https://github.com/vz-risk/VCDB" target="_blank">VCDB</a>,
+      <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV</a>,
+      <a href="https://www.first.org/epss/" target="_blank">FIRST EPSS</a>,
+      <a href="https://vulncheck.io/" target="_blank">VulnCheck</a>,
+      <a href="https://github.com/vulndb/vulndb" target="_blank">VulnDB</a>,
+      <a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view?gid=0#gid=0" target="_blank">Google Project Zero</a>,
+      <a href="https://github.com/rapid7/metasploit-framework" target="_blank">Metasploit</a>,
+      <a href="https://github.com/projectdiscovery/nuclei-templates" target="_blank">Nuclei</a>,
+      <a href="https://gitlab.com/exploit-database/exploitdb/" target="_blank">ExploitDB</a>,
+      <a href="https://cwe.mitre.org/" target="_blank">MITRE CWE</a>,
+      <a href="https://github.com/OWASP/Top10" target="_blank">OWASP Top 10</a>,
+      <a href="https://ransom.privtools.eu/" target="_blank">PrivTools EU</a>,
+      <a href="https://ransomfeed.it/" target="_blank">RansomFeed.it</a>,
+      <a href="https://www.zywave.com/" target="_blank">Zywave</a>,
+      and FIRE (insurance carrier data).
+    </div>
+  </div>
+  <div class="container"><div class="footer-updated" id="footerLastUpdated" style="display:none">Last updated: <span id="lastUpdated"></span></div></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-venn@4/build/index.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
+<script src="static/js/chart-entrance.js"></script>
+<script src="static/js/fire-data.js"></script>
+<script>
+(function() {
+  'use strict';
+  var d = window.__CVEDATA_OVERRIDES || window.__FIRE_OVERRIDES;
+  if (d && d.lastUpdated) {
+    var el = document.getElementById('footerLastUpdated');
+    var span = document.getElementById('lastUpdated');
+    if (el && span) { span.textContent = d.lastUpdated; el.style.display = ''; }
+  }
+
+  var DATA = Object.assign({
+    fireHero: {
+      stats: [
+        { value: 0, suffix: '', isAccent: false, isStatic: false, desc: 'FIRE vulnerabilities: loss' },
+        { value: '0%', isAccent: true, isStatic: true, desc: 'FIRE overlap with CISA KEV' },
+        { value: 0, suffix: '', isAccent: false, isStatic: false, desc: 'ICE vulnerabilities: breach but not loss' },
+        { value: '0%', isAccent: true, isStatic: true, desc: 'FIRE vulns CVSS ≥9.0' }
+      ]
+    },
+    fireVulnsByYear: { available: false },
+    fireVendorsDistribution: { available: false },
+    fireKevOverlap: { available: false },
+    fireEuvdKevOverlap: { available: false },
+    fireGoogleP0Overlap: { available: false },
+    fireEpssDistribution: { available: false },
+    fireSankey: { available: false },
+    fireSeverityBreakdown: { available: false },
+    fireIceOverlap: { available: false },
+    fireMandiantOverlap: { available: false }
+  }, window.__FIRE_OVERRIDES || {});
+
+  /* Chart.js defaults: vibrant hover (no green flicker), disable color animation */
+  function brightenColor(color, amount) {
+    if (!color || typeof color !== 'string') return color;
+    amount = amount || 25;
+    var m;
+    if ((m = color.match(/^#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/))) {
+      var r = Math.min(255, parseInt(m[1], 16) + amount);
+      var g = Math.min(255, parseInt(m[2], 16) + amount);
+      var b = Math.min(255, parseInt(m[3], 16) + amount);
+      return 'rgb(' + r + ',' + g + ',' + b + ')';
+    }
+    if ((m = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)$/))) {
+      var r = Math.min(255, parseInt(m[1], 10) + amount);
+      var g = Math.min(255, parseInt(m[2], 10) + amount);
+      var b = Math.min(255, parseInt(m[3], 10) + amount);
+      var a = m[4] != null ? parseFloat(m[4]) : 1;
+      return 'rgba(' + r + ',' + g + ',' + b + ',' + Math.min(1, a + 0.15) + ')';
+    }
+    return color;
+  }
+  Chart.defaults.elements.bar.hoverBorderWidth = 2;
+  Chart.defaults.elements.bar.hoverBackgroundColor = function(ctx) {
+    var c = ctx.dataset.backgroundColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : c;
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.elements.bar.hoverBorderColor = function(ctx) {
+    var c = ctx.dataset.borderColor || ctx.dataset.backgroundColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : c;
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.elements.point.hoverRadius = 6;
+  Chart.defaults.elements.point.hoverBackgroundColor = function(ctx) {
+    var c = ctx.dataset.pointBackgroundColor || ctx.dataset.backgroundColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : c;
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.elements.point.hoverBorderColor = function(ctx) {
+    var c = ctx.dataset.pointBorderColor || ctx.dataset.borderColor;
+    var raw = Array.isArray(c) ? c[ctx.dataIndex] : (c || ctx.dataset.backgroundColor);
+    return brightenColor(raw, 28);
+  };
+  Chart.defaults.animations = Chart.defaults.animations || {};
+  Chart.defaults.animations.colors = false;
+
+  function createBarChart(id, labels, datasets, opts) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var baseOpts = {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { display: false }, border: { display: false }, ticks: { font: { weight: '500' } } },
+        y: { beginAtZero: true, grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { callback: function(v) { return v >= 1000 ? (v/1000).toFixed(0) + 'k' : v; } } }
+      }
+    };
+    var merged = Object.assign({}, baseOpts, window.CHART_ANIMATION && window.CHART_ANIMATION.bar || {}, opts || {});
+    if (opts && opts.scales) {
+      var bx = baseOpts.scales.x || {};
+      var by = baseOpts.scales.y || {};
+      var ox = opts.scales.x || {};
+      var oy = opts.scales.y || {};
+      merged.scales = {
+        x: Object.assign({}, bx, ox),
+        y: Object.assign({}, by, oy)
+      };
+      merged.scales.x.ticks = Object.assign({}, bx.ticks || {}, ox.ticks || {});
+      merged.scales.y.ticks = Object.assign({}, by.ticks || {}, oy.ticks || {});
+    }
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'bar',
+      data: { labels: labels || [], datasets: datasets || [] },
+      options: merged
+    });
+  }
+
+  function createHorizontalBarChart(id, labels, data, opts) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var fullNames = (opts && opts.fullNames) || null;
+    var lightMode = (opts && opts.lightMode) || false;
+    var baseOpts = {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: fullNames ? {
+          callbacks: {
+            label: function(ctx) {
+              var idx = ctx.dataIndex;
+              var full = fullNames[idx];
+              return (full || ctx.label) + ': ' + ctx.parsed.x;
+            }
+          }
+        } : {}
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grid: { color: lightMode ? '#E5E7EB' : 'rgba(255,255,255,0.1)' },
+          border: { display: false },
+          ticks: { color: lightMode ? '#374151' : 'rgba(255,255,255,0.7)' }
+        },
+        y: {
+          grid: { display: false },
+          border: { display: false },
+          ticks: { color: lightMode ? '#374151' : 'rgba(255,255,255,0.7)', font: { size: 11 } }
+        }
+      }
+    };
+    var merged = Object.assign({}, baseOpts, opts || {});
+    delete merged.fullNames;
+    delete merged.lightMode;
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'bar',
+      data: { labels: labels || [], datasets: [{ label: 'FIRE CVEs', data: data || [], backgroundColor: '#E63946' }] },
+      options: merged
+    });
+  }
+
+  function createPieChart(id, labels, data, colors, darkMode) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var textColor = darkMode ? 'rgba(255,255,255,0.9)' : '#374151';
+    var baseOpts = {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { color: textColor } } }
+    };
+    var merged = Object.assign({}, baseOpts, window.CHART_ANIMATION && window.CHART_ANIMATION.pie || {});
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'pie',
+      data: {
+        labels: labels || [],
+        datasets: [{ data: data || [], backgroundColor: colors || ['#E63946', '#A3A3A3', '#6B7280'] }]
+      },
+      options: merged
+    });
+  }
+
+  function createLineChart(id, labels, datasets, opts) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var baseOpts = {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { display: false }, border: { display: false }, ticks: { font: { weight: '500' } } },
+        y: { beginAtZero: true, grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { callback: function(v) { return v >= 1000 ? (v/1000).toFixed(0) + 'k' : v; } } }
+      }
+    };
+    var merged = Object.assign({}, baseOpts, window.CHART_ANIMATION && window.CHART_ANIMATION.line || {}, opts || {});
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'line',
+      data: { labels: labels || [], datasets: datasets || [] },
+      options: merged
+    });
+  }
+
+  /* Euler: proportional sizes. First set = right, second = left. Pass (other, FIRE, otherOnly, fireOnly) so FIRE is left. */
+  function createVennChart(id, setA, setB, valA, valB, valBoth, labelA, labelB) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var la = labelA || setA || 'Set A';
+    var lb = labelB || setB || 'Set B';
+    try {
+      return new Chart(el.getContext ? el.getContext('2d') : el, {
+        type: 'euler',
+        data: {
+          labels: [la, lb, 'Overlap'],
+          datasets: [{
+            label: 'Overlap',
+            data: [
+              { sets: [setA], value: valA },
+              { sets: [setB], value: valB },
+              { sets: [setA, setB], value: valBoth }
+            ],
+            backgroundColor: ['rgba(173, 216, 230, 0.85)', 'rgba(144, 238, 144, 0.85)', 'rgba(173, 230, 200, 0.9)'],
+            borderColor: ['rgba(100, 149, 237, 0.9)', 'rgba(34, 139, 34, 0.9)', 'rgba(70, 130, 180, 0.8)']
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+      });
+    } catch (e) { console.warn('Venn chart:', e); return null; }
+  }
+
+  function formatDollars(n) {
+    if (n >= 1e9) return '$' + (n / 1e9).toFixed(1) + 'B';
+    if (n >= 1e6) return '$' + (n / 1e6).toFixed(1) + 'M';
+    if (n >= 1e3) return '$' + (n / 1e3).toFixed(0) + 'K';
+    return '$' + Math.round(n);
+  }
+
+  function createBubbleChart(id, points, opts) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var mergedOpts = Object.assign({}, window.CHART_ANIMATION && window.CHART_ANIMATION.bubble || {}, opts || {});
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'bubble',
+      data: {
+        datasets: [{
+          label: 'NAICs',
+          data: points,
+          backgroundColor: 'rgba(230,57,70,0.6)',
+          borderColor: '#E63946',
+          borderWidth: 1
+        }]
+      },
+      options: Object.assign(mergedOpts, {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: opts && opts.tooltipLabel ? {
+            callbacks: { label: function(ctx) { return opts.tooltipLabel(ctx.raw, ctx); } }
+          } : {}
+        },
+        scales: {
+          x: { title: { display: true, text: 'Number of claims' }, min: 0, grid: { color: '#F5F5F5' }, border: { display: false } },
+          y: { title: { display: true, text: 'Total amount (USD)' }, min: 0, grid: { color: '#F5F5F5' }, border: { display: false } }
+        }
+      }, opts || {})
+    });
+  }
+
+  function createScatterChart(id, points, opts) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var pointColors = (opts && opts.pointColors) || null;
+    var tooltipLabel = (opts && opts.tooltipLabel) || null;
+    var referenceLineMax = (opts && opts.referenceLineMax);
+    var referenceLineData = (opts && opts.referenceLineData);
+    var referenceLineLabel = (opts && opts.referenceLineLabel) || 'Line of Agreement';
+    var ds = {
+      label: 'FIRE CVEs',
+      data: points,
+      backgroundColor: Array.isArray(pointColors) ? pointColors : 'rgba(230,57,70,0.6)',
+      borderColor: Array.isArray(pointColors) ? pointColors.map(function(c) { return (c || '').replace(/[\d.]+\)$/, '1)') || '#E63946'; }) : '#E63946',
+      pointRadius: 5,
+      pointHoverRadius: 7
+    };
+    var datasets = [ds];
+    var lineData = null;
+    if (referenceLineData && referenceLineData.length >= 2) {
+      lineData = referenceLineData;
+    } else if (referenceLineMax != null && referenceLineMax > 0) {
+      lineData = [{ x: 0, y: 0 }, { x: referenceLineMax, y: referenceLineMax }];
+    }
+    if (lineData) {
+      datasets.push({
+        type: 'line',
+        label: referenceLineLabel,
+        data: lineData,
+        borderColor: 'rgba(107,114,128,0.7)',
+        borderWidth: 1,
+        borderDash: [5, 5],
+        pointRadius: 0,
+        pointHoverRadius: 0
+      });
+    }
+    var pluginOpts = { legend: { display: false } };
+    if (tooltipLabel) {
+      pluginOpts.tooltip = {
+        filter: function(tooltipItem) { return tooltipItem.dataset.type !== 'line'; },
+        callbacks: {
+          label: function(ctx) {
+            return tooltipLabel(ctx.raw, ctx);
+          }
+        }
+      };
+    }
+    return new Chart(el.getContext ? el.getContext('2d') : el, {
+      type: 'scatter',
+      data: { datasets: datasets },
+      options: Object.assign({
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: pluginOpts,
+        scales: {
+          x: { title: { display: true, text: 'CVSS Score (0-10)' }, min: 0, max: 10, grid: { color: '#F5F5F5' }, border: { display: false } },
+          y: { title: { display: true, text: 'EPSS Score (0-100%)' }, min: 0, max: 100, grid: { color: '#F5F5F5' }, border: { display: false } }
+        }
+      }, window.CHART_ANIMATION && window.CHART_ANIMATION.scatter || {}, opts || {})
+    });
+  }
+
+  function renderInsightCards(containerId, items) {
+    var el = document.getElementById(containerId);
+    if (!el || !items || !items.length) return;
+    el.innerHTML = '';
+    items.forEach(function(item) {
+      var card = document.createElement('div');
+      card.className = 'insight-card';
+      card.innerHTML = '<div class="insight-number">' + (item.number || '') + '</div><div class="insight-desc">' + (item.desc || '') + '</div>';
+      el.appendChild(card);
+    });
+  }
+
+  /* HERO */
+  var heroStatsEl = document.getElementById('heroStats');
+  if (heroStatsEl && DATA.fireHero && DATA.fireHero.stats) {
+    heroStatsEl.innerHTML = '';
+    DATA.fireHero.stats.forEach(function(stat) {
+      var card = document.createElement('div');
+      card.className = 'hero-stat';
+      var numClass = 'number' + (stat.isAccent ? ' accent' : '');
+      if (stat.isStatic) {
+        card.innerHTML = '<div class="' + numClass + '">' + stat.value + '</div><div class="desc">' + stat.desc + '</div>';
+      } else {
+        var suffix = stat.suffix || '';
+        card.innerHTML = '<div class="' + numClass + '" data-count="' + stat.value + '"' +
+          (suffix ? ' data-suffix="' + suffix + '"' : '') +
+          '>0' + suffix + '</div><div class="desc">' + stat.desc + '</div>';
+      }
+      heroStatsEl.appendChild(card);
+    });
+  }
+
+  /* 01: FIRE VULNS BY YEAR */
+  whenChartInView('fireVulnsYearChart', function() {
+    if (DATA.fireVulnsByYear && DATA.fireVulnsByYear.available && DATA.fireVulnsByYear.labels && DATA.fireVulnsByYear.labels.length > 0) {
+      try {
+        createLineChart('fireVulnsYearChart', DATA.fireVulnsByYear.labels,
+          [{ label: 'FIRE CVEs', data: DATA.fireVulnsByYear.data,
+             borderColor: '#E63946', backgroundColor: 'rgba(230,57,70,0.06)', borderWidth: 2.5, fill: true }]
+        );
+        renderInsightCards('fireVulnsYearInsights', DATA.fireVulnsByYear.stats || []);
+      } catch (e) { console.warn('fireVulnsYearChart:', e); }
+    } else {
+      var el = document.getElementById('fireVulnsYearChart');
+      if (el && el.parentElement) {
+        el.parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Place FIRE_vulns.csv in data/raw/ and run the pipeline.</p>';
+      }
+      document.getElementById('fireVulnsYearInsights').innerHTML = '';
+    }
+  });
+
+  /* 01b: FIRE by vendor (CVElist CNA affected) */
+  whenChartInView('fireVendorsChart', function() {
+    var fv = DATA.fireVendorsDistribution;
+    if (fv && fv.available && fv.labels && fv.labels.length > 0 && fv.data && fv.data.length > 0) {
+      try {
+        createBarChart('fireVendorsChart', fv.labels,
+          [{ label: 'FIRE CVE vendor rows', data: fv.data, backgroundColor: '#E63946' }],
+          {
+            scales: {
+              x: {
+                ticks: { maxRotation: 50, minRotation: 40, autoSkip: false, font: { size: 11 } }
+              }
+            }
+          }
+        );
+        renderInsightCards('fireVendorsInsights', fv.stats || []);
+      } catch (e) { console.warn('fireVendorsChart:', e); }
+    } else {
+      var vel = document.getElementById('fireVendorsChart');
+      if (vel && vel.parentElement) {
+        vel.parentElement.innerHTML = '<p class="data-unavailable">Vendor breakdown unavailable. Run the cvelistV5 and fire processors, regenerate graphs, then render.</p>';
+      }
+      var ins = document.getElementById('fireVendorsInsights');
+      if (ins) ins.innerHTML = '';
+    }
+  });
+
+  /* 02: FIRE-KEV OVERLAP (Venn) - render all 4 tabs when section in view (hidden tabs need trigger from visible one) */
+  whenChartInView('fireKevOverlapChart', function() {
+    if (DATA.fireKevOverlap && DATA.fireKevOverlap.available) {
+      try {
+        var overlap = DATA.fireKevOverlap;
+        var venn = createVennChart('fireKevOverlapChart', 'KEV', 'FIRE', overlap.kevOnly || 0, overlap.fireOnly || 0, overlap.both || 0, 'CISA KEV', 'FIRE');
+        if (!venn) createBarChart('fireKevOverlapChart', ['FIRE only', 'Both', 'KEV only'], [{ label: 'Count', data: [overlap.fireOnly || 0, overlap.both || 0, overlap.kevOnly || 0], backgroundColor: ['#F97316', '#E63946', '#A3A3A3'] }]);
+        renderInsightCards('fireKevOverlapStats', overlap.stats || []);
+      } catch (e) { console.warn('fireKevOverlapChart:', e); }
+    } else {
+      var el = document.getElementById('fireKevOverlapChart');
+      if (el && el.parentElement) {
+        el.parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run fire and kev processors.</p>';
+      }
+      if (document.getElementById('fireKevOverlapStats')) document.getElementById('fireKevOverlapStats').innerHTML = '';
+    }
+    /* Pre-render VulnCheck, ENISA, ICE tabs so cards appear when switching */
+    renderOverlapInto('fireVulncheckContainer', 'fireVulncheckChart', 'fireVulncheckOverlap', 'VC', 'FIRE', 'VulnCheck KEV', 'FIRE', ['#F97316', '#E63946', '#3B82F6'], 'fireVulncheckStats');
+    renderOverlapInto('enisaFireContainer', 'enisaFireChart', 'fireEnisaOverlap', 'ENISA', 'FIRE', 'ENISA EU KEV', 'FIRE', ['#F97316', '#E63946', '#06B6D4'], 'fireEnisaStats');
+    renderOverlapInto('euvdKevFireContainer', 'euvdKevFireChart', 'fireEuvdKevOverlap', 'EUVD', 'FIRE', 'EUVD KEV', 'FIRE', ['#F97316', '#E63946', '#7C3AED'], 'fireEuvdKevStats');
+    renderOverlapInto('fireIceContainer', 'fireIceChart', 'fireIceOverlap', 'ICE', 'FIRE', 'ICE (combined)', 'FIRE', ['#F97316', '#E63946', '#1565c0'], 'fireIceStats');
+  });
+
+  /* 03: FIRE vs GOOGLE P0 (Venn) */
+  whenChartInView('fireGoogleP0Chart', function() {
+    if (DATA.fireGoogleP0Overlap && DATA.fireGoogleP0Overlap.available) {
+      try {
+        var p0 = DATA.fireGoogleP0Overlap;
+        var vennP0 = createVennChart('fireGoogleP0Chart', 'P0', 'FIRE', p0.p0Only || 0, p0.fireOnly || 0, p0.both || 0, 'Google P0', 'FIRE');
+        if (!vennP0) createBarChart('fireGoogleP0Chart', ['FIRE only', 'Both', 'Google P0 only'], [{ label: 'Count', data: [p0.fireOnly || 0, p0.both || 0, p0.p0Only || 0], backgroundColor: ['#F97316', '#E63946', '#3B82F6'] }]);
+        renderInsightCards('fireGoogleP0Stats', p0.stats || []);
+      } catch (e) { console.warn('fireGoogleP0Chart:', e); }
+    } else {
+      var el = document.getElementById('fireGoogleP0Chart');
+      if (el && el.parentElement) {
+        el.parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run fire and google-p0 processors.</p>';
+      }
+      if (document.getElementById('fireGoogleP0Stats')) document.getElementById('fireGoogleP0Stats').innerHTML = '';
+    }
+  });
+
+  /* 04: FIRE EPSS */
+  whenChartInView('fireEpssChart', function() {
+    if (DATA.fireEpssDistribution && DATA.fireEpssDistribution.available && DATA.fireEpssDistribution.labels && DATA.fireEpssDistribution.labels.length > 0) {
+      try {
+        createBarChart('fireEpssChart', DATA.fireEpssDistribution.labels,
+          [{ label: 'FIRE CVEs', data: DATA.fireEpssDistribution.data, backgroundColor: '#E63946' }],
+          { animation: { duration: 64, delay: function(ctx) { return (ctx.type === 'data' && ctx.mode === 'default') ? ctx.dataIndex * 8 : 0; } } }
+        );
+        renderInsightCards('fireEpssStats', DATA.fireEpssDistribution.stats || []);
+      } catch (e) { console.warn('fireEpssChart:', e); }
+    } else {
+      var el = document.getElementById('fireEpssChart');
+      if (el && el.parentElement) {
+        el.parentElement.innerHTML = '<p class="data-unavailable">Data unavailable. Run fire and epss processors.</p>';
+      }
+      document.getElementById('fireEpssStats').innerHTML = '';
+    }
+  });
+
+  /* Helper: render overlap Venn (or bar fallback) into container. Euler: first=right, second=left. Pass (other, FIRE) so FIRE is left. statsContainerId optional. */
+  function renderOverlapInto(containerId, canvasId, dataKey, setA, setB, labelA, labelB, colors, statsContainerId) {
+    var container = document.getElementById(containerId);
+    var d = DATA[dataKey];
+    if (!container) return;
+    if (!d || !d.available) return;
+    var fireOnly = d.fireOnly || 0;
+    var otherOnly = d.vulncheckOnly !== undefined ? d.vulncheckOnly : (d.dbirOnly !== undefined ? d.dbirOnly : (d.otherOnly || d.kevOnly || d.p0Only || 0));
+    var valA = (labelB === 'FIRE') ? otherOnly : (d.vulncheckOnly !== undefined ? d.vulncheckOnly : fireOnly);
+    var valB = (labelB === 'FIRE') ? fireOnly : (d.dbirOnly !== undefined ? d.dbirOnly : otherOnly);
+    var valBoth = d.both || 0;
+    container.innerHTML = '<canvas id="' + canvasId + '"></canvas>';
+    var venn = createVennChart(canvasId, setA, setB, valA, valB, valBoth, labelA, labelB);
+    if (!venn && d.labels && d.data) createBarChart(canvasId, d.labels, [{ label: 'Count', data: d.data, backgroundColor: colors || ['#F97316', '#E63946', '#A3A3A3'] }]);
+    if (statsContainerId && d.stats) {
+      var statsEl = document.getElementById(statsContainerId);
+      if (statsEl) renderInsightCards(statsContainerId, d.stats);
+    }
+  }
+
+  /* 04b: FIRE vs EPSS Correlation (scatter) - square chart, 0-100 both axes, true 45° line */
+  whenChartInView('fireEpssCorrelationContainer', function() {
+  if (DATA.fireEpssCorrelation && DATA.fireEpssCorrelation.available && DATA.fireEpssCorrelation.points && DATA.fireEpssCorrelation.points.length > 0) {
+    try {
+      var corrContainer = document.getElementById('fireEpssCorrelationContainer');
+      if (corrContainer) {
+        corrContainer.innerHTML = '<canvas id="fireEpssCorrelationChart"></canvas>';
+        var pts = DATA.fireEpssCorrelation.points.map(function(p) { return { x: (p.x || 0) * 10, y: p.y || 0 }; });
+        createScatterChart('fireEpssCorrelationChart', pts, {
+          referenceLineData: [{ x: 0, y: 0 }, { x: 100, y: 100 }],
+          referenceLineLabel: 'Line of Agreement',
+          scales: {
+            x: {
+              title: { display: true, text: 'CVSS Score (0-10)' },
+              min: 0, max: 100,
+              ticks: { callback: function(v) { return v / 10; } }
+            },
+            y: {
+              title: { display: true, text: 'EPSS Score (0-100%)' },
+              min: 0, max: 100
+            }
+          }
+        });
+      }
+    } catch (e) { console.warn('fireEpssCorrelationChart:', e); }
+  }
+  });
+
+  /* 05: FIRE severity breakdown by source */
+  (function() {
+    var sb = DATA.fireSeverityBreakdown;
+    var sevLabels = sb && sb.labels;
+    var colors = ['#c62828', '#ef6c00', '#f9a825', '#2e7d32', '#9e9e9e'];
+    function renderSeverityChart(containerId, sourceData) {
+      var container = document.getElementById(containerId);
+      if (!container || !sourceData || !sourceData.data) return;
+      container.innerHTML = '<canvas id="' + containerId + 'Chart"></canvas>';
+      createBarChart(containerId + 'Chart', sevLabels, [{ label: 'FIRE CVEs', data: sourceData.data, backgroundColor: colors }]);
+    }
+    ['fireSeverityNvdContainer', 'fireSeverityEuvdContainer', 'fireSeverityCnvdContainer', 'fireSeverityJvnContainer'].forEach(function(cid) {
+      whenChartInView(cid, function() {
+        if (sb && sb.available && sevLabels) {
+          try {
+            var src = cid === 'fireSeverityNvdContainer' ? sb.nvd : cid === 'fireSeverityEuvdContainer' ? sb.euvd : cid === 'fireSeverityCnvdContainer' ? sb.cnvd : sb.jvn;
+            renderSeverityChart(cid, src);
+          } catch (e) { console.warn('fireSeverityBreakdown:', e); }
+        }
+      });
+    });
+  })();
+
+  /* 04c: CVE Sankey (Severity → Breach/loss) - Plotly */
+  whenChartInView('fireSankeyContainer', function() {
+  if (DATA.fireSankey && DATA.fireSankey.available && typeof Plotly !== 'undefined') {
+    try {
+      var sankeyContainer = document.getElementById('fireSankeyContainer');
+      if (sankeyContainer) {
+        sankeyContainer.innerHTML = '<div id="fireSankeyChart" style="width:100%;height:100%;min-height:450px;"></div>';
+        var sankeyDiv = document.getElementById('fireSankeyChart');
+        if (sankeyDiv) {
+          Plotly.newPlot(sankeyDiv, [{
+            type: 'sankey',
+            node: {
+              pad: 15,
+              thickness: 20,
+              line: { color: '#333', width: 0.5 },
+              label: DATA.fireSankey.node.label,
+              color: DATA.fireSankey.node.color
+            },
+            link: {
+              source: DATA.fireSankey.link.source,
+              target: DATA.fireSankey.link.target,
+              value: DATA.fireSankey.link.value,
+              color: 'rgba(180, 180, 180, 0.35)'
+            }
+          }], {
+            title: { text: DATA.fireSankey.title || 'CVE Severity → Breach/loss', x: 0.5, xanchor: 'center' },
+            font: { size: 12 },
+            height: 450,
+            margin: { t: 50, b: 20, l: 20, r: 20 },
+            paper_bgcolor: '#fafafa',
+            plot_bgcolor: '#fafafa'
+          }, { responsive: true });
+        }
+      }
+    } catch (e) { console.warn('fireSankeyChart:', e); }
+  }
+  });
+
+  /* CWE horizontal bars (when data exists) - long-tail all CWEs, full name on hover */
+  whenChartInView('fireCweContainer', function() {
+    if (DATA.fireCwe && DATA.fireCwe.available && DATA.fireCwe.labels && DATA.fireCwe.labels.length > 0) {
+      try {
+        var cweContainer = document.getElementById('fireCweContainer');
+        if (cweContainer) {
+          cweContainer.innerHTML = '<canvas id="fireCweChart"></canvas>';
+          createHorizontalBarChart('fireCweChart', DATA.fireCwe.labels, DATA.fireCwe.data, { fullNames: DATA.fireCwe.fullNames });
+        }
+      } catch (e) { console.warn('fireCweChart:', e); }
+    }
+  });
+
+  /* MITRE Top 25 (when data exists) - reordered by FIRE count, full name on hover */
+  whenChartInView('fireMitreTop25Container', function() {
+    if (DATA.fireMitreTop25 && DATA.fireMitreTop25.available && DATA.fireMitreTop25.labels && DATA.fireMitreTop25.labels.length > 0) {
+      try {
+        var mt25Container = document.getElementById('fireMitreTop25Container');
+        if (mt25Container) {
+          mt25Container.innerHTML = '<canvas id="fireMitreTop25Chart"></canvas>';
+          createHorizontalBarChart('fireMitreTop25Chart', DATA.fireMitreTop25.labels, DATA.fireMitreTop25.data, { fullNames: DATA.fireMitreTop25.fullNames });
+        }
+      } catch (e) { console.warn('fireMitreTop25Chart:', e); }
+    }
+  });
+
+  /* CWE FIRE coverage (when data exists) - pie chart */
+  whenChartInView('cweFireCoverageContainer', function() {
+    if (DATA.cweFireCoverage && DATA.cweFireCoverage.available && DATA.cweFireCoverage.labels && DATA.cweFireCoverage.data) {
+      try {
+        var cweCovContainer = document.getElementById('cweFireCoverageContainer');
+        if (cweCovContainer) {
+          cweCovContainer.innerHTML = '<canvas id="cweFireCoverageChart"></canvas>';
+          createPieChart('cweFireCoverageChart', DATA.cweFireCoverage.labels, DATA.cweFireCoverage.data, ['#E63946', '#A3A3A3'], true);
+        }
+      } catch (e) { console.warn('cweFireCoverageChart:', e); }
+    }
+  });
+
+  /* OWASP Top 10 (when data exists) - light mode for visibility */
+  whenChartInView('fireOwaspContainer', function() {
+    if (DATA.fireOwasp && DATA.fireOwasp.available && DATA.fireOwasp.labels && DATA.fireOwasp.labels.length > 0) {
+      try {
+        var owaspContainer = document.getElementById('fireOwaspContainer');
+        if (owaspContainer) {
+          owaspContainer.innerHTML = '<canvas id="fireOwaspChart"></canvas>';
+          createHorizontalBarChart('fireOwaspChart', DATA.fireOwasp.labels, DATA.fireOwasp.data, { lightMode: true });
+        }
+      } catch (e) { console.warn('fireOwaspChart:', e); }
+    }
+  });
+
+  /* 05: VulnCheck-FIRE Overlap (Venn) */
+  whenChartInView('fireVulncheckContainer', function() { renderOverlapInto('fireVulncheckContainer', 'fireVulncheckChart', 'fireVulncheckOverlap', 'VC', 'FIRE', 'VulnCheck KEV', 'FIRE', ['#F97316', '#E63946', '#3B82F6'], 'fireVulncheckStats'); });
+
+  /* 06: FIRE-DBIR Overlap (Venn) */
+  whenChartInView('fireDbirContainer', function() { renderOverlapInto('fireDbirContainer', 'fireDbirChart', 'fireDbirOverlap', 'DBIR', 'FIRE', 'Verizon DBIR', 'FIRE', ['#F97316', '#E63946', '#22C55E']); });
+
+  /* 07: Vulncheck-DBIR Overlap (Venn) */
+  /* 08: FIRE-Nuclei Overlap (Venn) */
+  whenChartInView('fireNucleiContainer', function() { renderOverlapInto('fireNucleiContainer', 'fireNucleiChart', 'fireNucleiOverlap', 'Nuclei', 'FIRE', 'Nuclei', 'FIRE', ['#F97316', '#E63946', '#8B5CF6']); });
+
+  /* 09: Metasploit-FIRE Overlap (Venn) */
+  whenChartInView('fireMetasploitContainer', function() { renderOverlapInto('fireMetasploitContainer', 'fireMetasploitChart', 'fireMetasploitOverlap', 'MSF', 'FIRE', 'Metasploit', 'FIRE', ['#F97316', '#E63946', '#EC4899']); });
+
+  /* 09: FIRE-Exploit Refs + ExploitDB (tabs) - pre-render both when section in view */
+  whenChartInView('fireExploitRefsContainer', function() {
+    renderOverlapInto('fireExploitRefsContainer', 'fireExploitRefsChart', 'fireExploitRefsOverlap', 'ExploitRefs', 'FIRE', 'ExploitRefs', 'FIRE', ['#F97316', '#E63946', '#8B5CF6'], 'fireExploitRefsStats');
+    renderOverlapInto('fireExploitdbContainer', 'fireExploitdbChart', 'fireExploitdbOverlap', 'EDB', 'FIRE', 'ExploitDB', 'FIRE', ['#F97316', '#E63946', '#F59E0B'], 'fireExploitdbStats');
+  });
+
+  /* 13: ENISA-FIRE Overlap (Venn) */
+  whenChartInView('enisaFireContainer', function() { renderOverlapInto('enisaFireContainer', 'enisaFireChart', 'fireEnisaOverlap', 'ENISA', 'FIRE', 'ENISA EU KEV', 'FIRE', ['#F97316', '#E63946', '#06B6D4'], 'fireEnisaStats'); });
+
+  /* 13b: EUVD KEV–FIRE Overlap (Venn) */
+  whenChartInView('euvdKevFireContainer', function() { renderOverlapInto('euvdKevFireContainer', 'euvdKevFireChart', 'fireEuvdKevOverlap', 'EUVD', 'FIRE', 'EUVD KEV', 'FIRE', ['#F97316', '#E63946', '#7C3AED'], 'fireEuvdKevStats'); });
+
+  /* Fire-ICE, Fire-Mandiant (when data exists) */
+  whenChartInView('fireIceContainer', function() { renderOverlapInto('fireIceContainer', 'fireIceChart', 'fireIceOverlap', 'ICE', 'FIRE', 'ICE (combined)', 'FIRE', ['#F97316', '#E63946', '#1565c0'], 'fireIceStats'); });
+  whenChartInView('fireMandiantContainer', function() { renderOverlapInto('fireMandiantContainer', 'fireMandiantChart', 'fireMandiantOverlap', 'Mandiant', 'FIRE', 'Mandiant M-Trends', 'FIRE', ['#F97316', '#E63946', '#c62828']); });
+
+  /* 21: ATT&CK FIRE vs other KEV scatter - square, 45° line, tooltip: group, CISA KEV, FIRE; color: blue=more KEV, red=more FIRE */
+  whenChartInView('fireVsOtherKevContainer', function() {
+  if (DATA.fireVsOtherKev && DATA.fireVsOtherKev.available && DATA.fireVsOtherKev.points && DATA.fireVsOtherKev.points.length > 0) {
+    try {
+      var fvokContainer = document.getElementById('fireVsOtherKevContainer');
+      if (fvokContainer) {
+        fvokContainer.innerHTML = '<canvas id="fireVsOtherKevChart"></canvas>';
+        var pts = DATA.fireVsOtherKev.points;
+        var maxVal = Math.max.apply(null, pts.map(function(p) { return Math.max(p.x || 0, p.y || 0); }).concat([1]));
+        var colors = pts.map(function(p) {
+          var fc = p.fireCount || p.x || 0, kc = p.kevCount || p.y || 0;
+          var total = fc + kc;
+          var ratio = total > 0 ? fc / total : 0.5;
+          var hue = 240 * (1 - ratio);
+          return 'hsla(' + hue + ', 70%, 55%, 0.75)';
+        });
+        createScatterChart('fireVsOtherKevChart', pts.map(function(p) { return { x: p.x, y: p.y, label: p.label, fireCount: p.fireCount || p.x, kevCount: p.kevCount || p.y }; }), {
+          pointColors: colors,
+          tooltipLabel: function(r) {
+            return [r.label || '', 'CISA KEV: ' + (r.kevCount ?? r.y ?? 0), 'FIRE: ' + (r.fireCount ?? r.x ?? 0)];
+          },
+          referenceLineMax: maxVal,
+          scales: {
+            x: { title: { display: true, text: 'FIRE vulns used' }, min: 0, max: maxVal },
+            y: { title: { display: true, text: 'CISA KEV vulns used' }, min: 0, max: maxVal }
+          }
+        });
+      }
+    } catch (e) { console.warn('fireVsOtherKevChart:', e); }
+  }
+  });
+
+  /* 22: Ransomware tabs - PrivTools, RansomFeed, Zywave vs ATT&CK */
+  whenChartInView('privtoolsMitreContainer', function() { renderOverlapInto('privtoolsMitreContainer', 'privtoolsMitreChart', 'privtoolsMitre', 'PrivTools', 'ATT&CK', 'PrivTools EU', 'ATT&CK', ['#F97316', '#E63946', '#6B7280']); });
+  whenChartInView('ransomfeedMitreContainer', function() { renderOverlapInto('ransomfeedMitreContainer', 'ransomfeedMitreChart', 'ransomfeedMitre', 'RansomFeed', 'ATT&CK', 'RansomFeed.it', 'ATT&CK', ['#F97316', '#E63946', '#6B7280']); });
+  whenChartInView('zywaveMitreContainer', function() { renderOverlapInto('zywaveMitreContainer', 'zywaveMitreChart', 'zywaveMitre', 'Zywave', 'ATT&CK', 'Zywave claims', 'ATT&CK', ['#F97316', '#E63946', '#6B7280']); });
+
+  /* 25a: Zywave NAICS bubble - size = avg claim, tooltip: NAICS code, industry, avg $, total $, count */
+  whenChartInView('zywaveNaicsContainer', function() {
+  if (DATA.zywaveNaics && DATA.zywaveNaics.available && DATA.zywaveNaics.points && DATA.zywaveNaics.points.length > 0) {
+    try {
+      var znContainer = document.getElementById('zywaveNaicsContainer');
+      if (znContainer) {
+        znContainer.innerHTML = '<canvas id="zywaveNaicsChart"></canvas>';
+        var bubbleData = DATA.zywaveNaics.points.map(function(p) {
+          return { x: p.x, y: p.y, r: p.r || 10, naicsCode: p.naicsCode, naicsIndustry: p.naicsIndustry, events: p.events, totalAmount: p.totalAmount, avgAmount: p.avgAmount };
+        });
+        var maxY = Math.max.apply(null, bubbleData.map(function(p) { return p.y; })) || 1;
+        createBubbleChart('zywaveNaicsChart', bubbleData, {
+          tooltipLabel: function(r) {
+            return [
+              'NAICS Code: ' + (r.naicsCode || 'N/A'),
+              'NAICS Industry: ' + (r.naicsIndustry || ''),
+              'Average $ per breach: ' + formatDollars(r.avgAmount || 0),
+              'Total amount for this NAICS: ' + formatDollars(r.totalAmount || 0),
+              'Number of claims that have occurred: ' + (r.events || r.x || 0).toLocaleString()
+            ];
+          },
+          scales: {
+            x: { title: { display: true, text: 'Number of claims' }, min: 0 },
+            y: {
+              title: { display: true, text: 'Total amount (USD)' },
+              min: 0,
+              max: maxY * 1.05,
+              ticks: { callback: function(v) { return formatDollars(v); } }
+            }
+          }
+        });
+      }
+    } catch (e) { console.warn('zywaveNaicsChart:', e); }
+  }
+  });
+
+  /* 15b: Zywave claims by actor - bubble chart, tooltip shows group name */
+  whenChartInView('zywaveClaimsContainer', function() {
+  if (DATA.zywaveClaims && DATA.zywaveClaims.available && DATA.zywaveClaims.points && DATA.zywaveClaims.points.length > 0) {
+    try {
+      var zcContainer = document.getElementById('zywaveClaimsContainer');
+      if (zcContainer) {
+        zcContainer.innerHTML = '<canvas id="zywaveClaimsChart"></canvas>';
+        var actorBubbleData = DATA.zywaveClaims.points.map(function(p) {
+          return { x: p.x, y: p.y, r: p.r || 10, label: p.label, events: p.events, totalAmount: p.totalAmount, avgAmount: p.avgAmount };
+        });
+        var maxYActor = Math.max.apply(null, actorBubbleData.map(function(p) { return p.y; })) || 1;
+        createBubbleChart('zywaveClaimsChart', actorBubbleData, {
+          animation: { duration: 500, delay: 0 },
+          tooltipLabel: function(r) {
+            return [
+              'Actor / Group: ' + (r.label || 'N/A'),
+              'Average $ per breach: ' + formatDollars(r.avgAmount || 0),
+              'Total amount: ' + formatDollars(r.totalAmount || 0),
+              'Number of claims: ' + (r.events || r.x || 0).toLocaleString()
+            ];
+          },
+          scales: {
+            x: { title: { display: true, text: 'Number of claims' }, min: 0 },
+            y: {
+              title: { display: true, text: 'Total amount (USD)' },
+              min: 0,
+              max: maxYActor * 1.05,
+              ticks: { callback: function(v) { return formatDollars(v); } }
+            }
+          }
+        });
+      }
+    } catch (e) { console.warn('zywaveClaimsChart:', e); }
+  }
+  });
+
+  /* 26: FIRE CVSS attributes - separate charts per category */
+  (function() {
+    var fcaKeys = ['av', 'ac', 'pr', 'ui', 'scope', 'confidentiality', 'integrity', 'availability'];
+    fcaKeys.forEach(function(key) {
+      var containerId = 'fireCvssAttr' + key.charAt(0).toUpperCase() + key.slice(1) + 'Container';
+      whenChartInView(containerId, function() {
+        if (DATA.fireCvssAttributes && DATA.fireCvssAttributes.available && DATA.fireCvssAttributes.categories) {
+          try {
+            var container = document.getElementById(containerId);
+            var d = DATA.fireCvssAttributes[key];
+            if (!container || !d || !d.labels || !d.data) return;
+            var cat = DATA.fireCvssAttributes.categories.find(function(c) { return c.key === key; });
+            container.innerHTML = '<h4 style="margin: 0 0 calc(var(--grid)) 0; font-size: 1rem;">' + (cat && cat.title || key) + '</h4><canvas id="fireCvssAttr_' + key + '"></canvas>';
+            createBarChart('fireCvssAttr_' + key, d.labels, [{ label: 'Count', data: d.data, backgroundColor: '#E63946' }]);
+          } catch (e) { console.warn('fireCvssAttributes:', e); }
+        }
+      });
+    });
+  })();
+
+  /* 27: FIRE CVSS vector pie - two tabs: FIRE and All CVEs */
+  whenChartInView('fireCvssVectorPieContainer', function() {
+    if (DATA.fireCvssVectorPie && DATA.fireCvssVectorPie.available) {
+      try {
+        var fireData = DATA.fireCvssVectorPie.fire || (DATA.fireCvssVectorPie.labels && DATA.fireCvssVectorPie.data ? { labels: DATA.fireCvssVectorPie.labels, data: DATA.fireCvssVectorPie.data } : null);
+        if (fireData && fireData.labels && fireData.data && (fireData.data[0] || fireData.data[1])) {
+          var fcvpContainer = document.getElementById('fireCvssVectorPieContainer');
+          if (fcvpContainer) {
+            fcvpContainer.innerHTML = '<canvas id="fireCvssVectorPieChart"></canvas>';
+            createPieChart('fireCvssVectorPieChart', fireData.labels, fireData.data, ['#E63946', '#A3A3A3'], false);
+          }
+        }
+      } catch (e) { console.warn('fireCvssVectorPieChart:', e); }
+    }
+  });
+  whenChartInView('allCvesCvssVectorPieContainer', function() {
+    if (DATA.fireCvssVectorPie && DATA.fireCvssVectorPie.available) {
+      try {
+        var allData = DATA.fireCvssVectorPie.allCves;
+        if (allData && allData.labels && allData.data && (allData.data[0] || allData.data[1])) {
+          var acvpContainer = document.getElementById('allCvesCvssVectorPieContainer');
+          if (acvpContainer) {
+            acvpContainer.innerHTML = '<canvas id="allCvesCvssVectorPieChart"></canvas>';
+            createPieChart('allCvesCvssVectorPieChart', allData.labels, allData.data, ['#3B82F6', '#A3A3A3'], false);
+          }
+        }
+      } catch (e) { console.warn('allCvesCvssVectorPieChart:', e); }
+    }
+  });
+
+  /* Animate hero counters */
+  document.querySelectorAll('.hero-stat [data-count]').forEach(function(el) {
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    if (isNaN(target)) return;
+    var start = 0;
+    var duration = 1200;
+    var startTime = null;
+    function step(ts) {
+      if (!startTime) startTime = ts;
+      var p = Math.min((ts - startTime) / duration, 1);
+      var ease = 1 - Math.pow(1 - p, 3);
+      var val = Math.round(start + (target - start) * ease);
+      el.textContent = val.toLocaleString() + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+
+  /* Smooth nav scroll */
+  document.querySelectorAll('.nav-links a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  /* Tab switching */
+  function initTabs(toggleId, tabPrefix) {
+    var grp = document.getElementById(toggleId);
+    if (!grp) return;
+    grp.querySelectorAll('.toggle-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var tab = this.getAttribute('data-tab');
+        grp.querySelectorAll('.toggle-btn').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        document.querySelectorAll('#' + toggleId.replace('Tabs','') + ' ~ .tab-panel').forEach(function(p) { p.classList.remove('active'); });
+        var panel = document.getElementById('tab-' + tab);
+        if (panel) panel.classList.add('active');
+      });
+    });
+  }
+  function initTabsByParent(toggleId) {
+    var grp = document.getElementById(toggleId);
+    if (!grp) return;
+    var container = grp.closest('.container');
+    if (!container) return;
+    grp.querySelectorAll('.toggle-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var tab = this.getAttribute('data-tab');
+        grp.querySelectorAll('.toggle-btn').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        container.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+        var panel = document.getElementById('tab-' + tab);
+        if (panel) panel.classList.add('active');
+      });
+    });
+  }
+  initTabsByParent('kevOverlapTabs');
+  initTabsByParent('epssTabs');
+  initTabsByParent('severityTabs');
+  initTabsByParent('forensicsTabs');
+  initTabsByParent('pentestingTabs');
+  initTabsByParent('exploitRefsTabs');
+  initTabsByParent('cweTabs');
+  initTabsByParent('ransomwareTabs');
+  initTabsByParent('zywaveNaicsTabs');
+  initTabsByParent('cvssVectorPieTabs');
+
+  /* Copy link buttons - add to all sections with id */
+  var toast = document.createElement('div');
+  toast.className = 'copy-toast';
+  toast.textContent = 'Link copied to clipboard';
+  document.body.appendChild(toast);
+  function showToast() {
+    toast.classList.add('visible');
+    clearTimeout(toast._tid);
+    toast._tid = setTimeout(function() { toast.classList.remove('visible'); }, 2000);
+  }
+  var linkSvg = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+  document.querySelectorAll('section[id] .section-header').forEach(function(header) {
+    var section = header.closest('section');
+    var anchor = section && section.id;
+    if (!anchor) return;
+    var row = header.querySelector('.section-label-row');
+    var labelEl = row ? row.querySelector('.label') : header.querySelector('.label');
+    if (!labelEl) return;
+    if (!row) {
+      row = document.createElement('div');
+      row.className = 'section-label-row';
+      labelEl.parentNode.insertBefore(row, labelEl);
+      row.appendChild(labelEl);
+    }
+    if (row.querySelector('.copy-link-btn')) return;
+    var btn = document.createElement('button');
+    btn.className = 'copy-link-btn';
+    btn.setAttribute('data-anchor', anchor);
+    btn.setAttribute('title', 'Copy link');
+    btn.setAttribute('aria-label', 'Copy section link');
+    btn.innerHTML = linkSvg;
+    row.appendChild(btn);
+  });
+  document.querySelectorAll('.copy-link-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var anchor = this.getAttribute('data-anchor');
+      var url = (window.location.href.split('#')[0]) + '#' + anchor;
+      navigator.clipboard.writeText(url).then(function() { showToast(); }).catch(function() {
+        toast.textContent = 'Copy failed';
+        showToast();
+        setTimeout(function() { toast.textContent = 'Link copied to clipboard'; }, 2500);
+      });
+    });
+  });
+
+  /* Fade-in on scroll (like index.html) */
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+})();
+</script>
+</body>
+</html>

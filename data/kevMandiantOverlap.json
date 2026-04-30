@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "kevTotal": 4807,
+  "otherTotal": 25,
+  "both": 25,
+  "kevOnly": 4782,
+  "otherOnly": 0,
+  "stats": [
+    {
+      "number": "4,807",
+      "desc": "KEVs (combined catalog)"
+    },
+    {
+      "number": "25",
+      "desc": "In both KEVs and Mandiant M-Trends"
+    },
+    {
+      "number": "25",
+      "desc": "Mandiant M-Trends catalog"
+    }
+  ],
+  "labels": [
+    "KEVs only",
+    "Both",
+    "Mandiant only"
+  ],
+  "data": [
+    4782,
+    25,
+    0
+  ]
+}

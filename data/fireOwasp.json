@@ -1,0 +1,27 @@
+{
+  "available": true,
+  "labels": [
+    "A05: Injection",
+    "A01: Broken Access Control",
+    "A07: Authentication Failures",
+    "A08: Software or Data Integrity Failures",
+    "A06: Insecure Design",
+    "A04: Cryptographic Failures",
+    "A02: Security Misconfiguration",
+    "A10: Mishandling of Exceptional Conditions",
+    "A03: Software Supply Chain Failures",
+    "A09: Security Logging & Alerting Failures"
+  ],
+  "data": [
+    124,
+    100,
+    52,
+    34,
+    26,
+    4,
+    3,
+    2,
+    0,
+    0
+  ]
+}

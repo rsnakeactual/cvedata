@@ -1,0 +1,34 @@
+{
+  "available": true,
+  "kevTotal": 4807,
+  "otherTotal": 402,
+  "both": 402,
+  "kevOnly": 4405,
+  "otherOnly": 0,
+  "stats": [
+    {
+      "number": "4,807",
+      "desc": "KEVs"
+    },
+    {
+      "number": "402",
+      "desc": "In both KEVs and Google P0 \"0day in the wild\""
+    },
+    {
+      "number": "402",
+      "desc": "Google Project Zero catalog"
+    }
+  ],
+  "p0Total": 402,
+  "p0Only": 0,
+  "labels": [
+    "KEVs only",
+    "Both",
+    "Google P0 only"
+  ],
+  "data": [
+    4405,
+    402,
+    0
+  ]
+}

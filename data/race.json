@@ -1,0 +1,61 @@
+{
+  "available": true,
+  "speedMetrics": [
+    {
+      "dayRange": "Day 0 – 33",
+      "value": "33",
+      "label": "Median",
+      "sublabel": "50% published",
+      "desc": "Half of all CVEs are published within 33 days of discovery. This is the fastest half of the pipeline.",
+      "color": "#22C55E"
+    },
+    {
+      "dayRange": "Day 34 – 122",
+      "value": "122",
+      "label": "Mean",
+      "sublabel": "average point",
+      "desc": "The average publication point, skewed upward by outliers. Most CVEs in this range are still being processed.",
+      "color": "#F97316"
+    },
+    {
+      "dayRange": "Day 123 – 289",
+      "value": "289",
+      "label": "90th percentile",
+      "sublabel": "10% of CVEs still haven't been published by this point",
+      "desc": "These are the stragglers in the system.",
+      "color": "#E63946"
+    },
+    {
+      "dayRange": "Day 290+",
+      "value": "6,263+",
+      "label": "Long tail",
+      "sublabel": "",
+      "desc": "Some CVEs take years to be officially published. The longest delays stretch to over 6,263 days.",
+      "color": "#E63946"
+    }
+  ],
+  "delayLabels": [
+    "0–7 days",
+    "8–30 days",
+    "31–90 days",
+    "91–180 days",
+    "181–365 days",
+    "365+ days"
+  ],
+  "delayData": [
+    32.8,
+    15.9,
+    19.3,
+    13.9,
+    11.3,
+    6.8
+  ],
+  "delayColors": [
+    "#22C55E",
+    "#84CC16",
+    "#EAB308",
+    "#F97316",
+    "#EF4444",
+    "#E63946"
+  ]
+}

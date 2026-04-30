@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "iceTotal": 4764,
+  "otherTotal": 1577,
+  "both": 1577,
+  "iceOnly": 3187,
+  "otherOnly": 0,
+  "stats": [
+    {
+      "number": "4,764",
+      "desc": "ICE vulnerabilities"
+    },
+    {
+      "number": "1,577",
+      "desc": "In both ICE and EUVD KEV"
+    },
+    {
+      "number": "1,577",
+      "desc": "EUVD KEV catalog"
+    }
+  ],
+  "labels": [
+    "ICE only",
+    "Both",
+    "EUVD KEV only"
+  ],
+  "data": [
+    3187,
+    1577,
+    0
+  ]
+}

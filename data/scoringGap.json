@@ -1,0 +1,129 @@
+{
+  "available": true,
+  "progressBars": [
+    {
+      "year": "1999",
+      "pct": 97.5
+    },
+    {
+      "year": "2000",
+      "pct": 99.4
+    },
+    {
+      "year": "2001",
+      "pct": 98.8
+    },
+    {
+      "year": "2002",
+      "pct": 98.5
+    },
+    {
+      "year": "2003",
+      "pct": 96.7
+    },
+    {
+      "year": "2004",
+      "pct": 97.7
+    },
+    {
+      "year": "2005",
+      "pct": 97
+    },
+    {
+      "year": "2006",
+      "pct": 97.9
+    },
+    {
+      "year": "2007",
+      "pct": 98.1
+    },
+    {
+      "year": "2008",
+      "pct": 97.6
+    },
+    {
+      "year": "2009",
+      "pct": 97.1
+    },
+    {
+      "year": "2010",
+      "pct": 96.2
+    },
+    {
+      "year": "2011",
+      "pct": 94.3
+    },
+    {
+      "year": "2012",
+      "pct": 91.8
+    },
+    {
+      "year": "2013",
+      "pct": 90.7
+    },
+    {
+      "year": "2014",
+      "pct": 93.5
+    },
+    {
+      "year": "2015",
+      "pct": 92.4
+    },
+    {
+      "year": "2016",
+      "pct": 87.9
+    },
+    {
+      "year": "2017",
+      "pct": 86.2
+    },
+    {
+      "year": "2018",
+      "pct": 90.8
+    },
+    {
+      "year": "2019",
+      "pct": 91.3
+    },
+    {
+      "year": "2020",
+      "pct": 91.9
+    },
+    {
+      "year": "2021",
+      "pct": 96.3
+    },
+    {
+      "year": "2022",
+      "pct": 95
+    },
+    {
+      "year": "2023",
+      "pct": 96.3
+    },
+    {
+      "year": "2024",
+      "pct": 93.6
+    },
+    {
+      "year": "2025",
+      "pct": 79
+    },
+    {
+      "year": "2026",
+      "pct": 90.3
+    }
+  ],
+  "stats": [
+    {
+      "number": "1,255",
+      "isAccent": true,
+      "desc": "Unscored CVEs in 2026,  NVD backlog varies by year"
+    },
+    {
+      "number": "9.7%",
+      "isAccent": false,
+      "desc": "Of 2026 CVEs had no severity score — 2.5% unscored in 1999"
+    }
+  ]
+}

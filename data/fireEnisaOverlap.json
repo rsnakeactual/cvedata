@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "fireTotal": 558,
+  "otherTotal": 19,
+  "both": 13,
+  "fireOnly": 545,
+  "otherOnly": 6,
+  "stats": [
+    {
+      "number": "558",
+      "desc": "FIRE vulnerabilities"
+    },
+    {
+      "number": "13",
+      "desc": "In both FIRE and ENISA EU KEV"
+    },
+    {
+      "number": "19",
+      "desc": "ENISA EU KEV catalog"
+    }
+  ],
+  "labels": [
+    "FIRE only",
+    "Both",
+    "ENISA only"
+  ],
+  "data": [
+    545,
+    13,
+    6
+  ]
+}

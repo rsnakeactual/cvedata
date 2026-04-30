@@ -1,0 +1,21 @@
+{
+  "available": true,
+  "labels": [
+    "CWEs with FIRE vulns",
+    "CWEs without FIRE vulns"
+  ],
+  "data": [
+    90,
+    879
+  ],
+  "stats": [
+    {
+      "number": "90",
+      "desc": "CWEs with ≥1 FIRE vulnerability"
+    },
+    {
+      "number": "9.3%",
+      "desc": "Of all CWEs in CWE catalog"
+    }
+  ]
+}

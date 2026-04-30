@@ -1,0 +1,34 @@
+{
+  "totalCVEs": 347320,
+  "headlineHTML": "347,320 CVEs.<br><span>Here's what actually matters.</span>",
+  "subtext": "Software vulnerabilities are flaws that attackers can exploit to break into systems. Thousands are discovered every year. Most of the data about them is hard to parse. Here it is in plain English.",
+  "stats": [
+    {
+      "value": 44128,
+      "suffix": "",
+      "isAccent": false,
+      "isStatic": false,
+      "desc": "New CVEs published in 2025. This is the highest single-year total ever recorded"
+    },
+    {
+      "value": "0.46%",
+      "isAccent": true,
+      "isStatic": true,
+      "desc": "Of all vulnerabilities are in CISA's Known Exploited Vulnerabilities (KEV) list"
+    },
+    {
+      "value": 33,
+      "suffix": " days",
+      "isAccent": false,
+      "isStatic": false,
+      "desc": "Median time between discovery and CVE publication"
+    },
+    {
+      "value": 1585,
+      "suffix": "",
+      "isAccent": true,
+      "isStatic": false,
+      "desc": "Known exploited vulnerabilities in CISA's KEV catalog"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "labels": [
+    "2002",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "data": [
+    1,
+    2,
+    1,
+    2,
+    3,
+    4,
+    13,
+    21,
+    9,
+    22,
+    38,
+    34,
+    44,
+    59,
+    86,
+    89,
+    118,
+    146,
+    213,
+    130,
+    163,
+    163,
+    180,
+    44
+  ],
+  "firstYear": 2002,
+  "stats": [
+    {
+      "number": "1,585",
+      "isAccent": true,
+      "desc": "Total KEVs in CISA's catalog — the definitive list of \"known used\" vulnerabilities"
+    },
+    {
+      "number": "213",
+      "isAccent": false,
+      "desc": "KEVs in 2021 — the peak year"
+    },
+    {
+      "number": "1.2",
+      "isAccent": false,
+      "desc": "New KEVs added per week on average since the catalog's first year of known vulnerabilites in  2002"
+    }
+  ]
+}

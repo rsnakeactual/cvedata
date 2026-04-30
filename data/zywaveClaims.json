@@ -1,0 +1,2996 @@
+{
+  "available": true,
+  "labels": [
+    "CL0P",
+    "BlackCat/ALPHV",
+    "Black Basta",
+    "Roman Valerevich Seleznev, aka 'Track2'",
+    "LockBit",
+    "Wizard Spider",
+    "Anonymous",
+    "BlackCat (ALPHV)",
+    "Frederick Eugene Wood",
+    "ALPHV/BlackCat",
+    "Lazarus Group",
+    "GOLD SOUTHFIELD",
+    "SamSam",
+    "Maze",
+    "Conti",
+    "Rhysida",
+    "Carl Jack Smith",
+    "Sherwin Hue, Edward Morris, David Edme, Veronica Devaughn, Willie Reynolds, Carlos Irwin, Cassandra Davis, Sabrina Smith, Christina Smith and Kayla Brady",
+    "Hive",
+    "DoppelPaymer",
+    "Magecart",
+    "Erica Hall, Jasmin Rembert, Sharelle Finnie, Rufus Bethea, Bianca Cook, Courtney Gissendanner, Brandi Johnson, Demarcus Hough, Darren Baldwin, Aaron Hough, Minnie Powell, and Eloise Sermons",
+    "BlackSuit",
+    "Play",
+    "Michael Mills, Jr., Velente Hill and Aaron Jones",
+    "APT38",
+    "CircusSpider",
+    "Lorenz",
+    "INC Ransom",
+    "Shanell Angelia Bowser and Michelle Courtney Johnson",
+    "Igors Nagaicevs",
+    "Royal",
+    "RansomHub",
+    "NotPetya Ransomware Group",
+    "ShinyHunters",
+    "DarkSide",
+    "Vice Society",
+    "Ragnar_Locker",
+    "Akira",
+    "Qilin"
+  ],
+  "data": [
+    944,
+    22,
+    19,
+    18,
+    16,
+    15,
+    13,
+    12,
+    12,
+    10,
+    10,
+    9,
+    8,
+    8,
+    8,
+    8,
+    7,
+    7,
+    6,
+    6,
+    6,
+    6,
+    6,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3
+  ],
+  "points": [
+    {
+      "x": 944,
+      "y": 7071133659.110001,
+      "r": 6.071909833821458,
+      "label": "CL0P",
+      "events": 944,
+      "totalAmount": 7071133659.110001,
+      "avgAmount": 7490607.68973517
+    },
+    {
+      "x": 22,
+      "y": 6225494510.17,
+      "r": 8.716579422619636,
+      "label": "BlackCat/ALPHV",
+      "events": 22,
+      "totalAmount": 6225494510.17,
+      "avgAmount": 282977023.18954545
+    },
+    {
+      "x": 19,
+      "y": 214294641.35000002,
+      "r": 6.108275187208421,
+      "label": "Black Basta",
+      "events": 19,
+      "totalAmount": 214294641.35000002,
+      "avgAmount": 11278665.334210528
+    },
+    {
+      "x": 18,
+      "y": 2316007.27,
+      "r": 6.001235203877333,
+      "label": "Roman Valerevich Seleznev, aka 'Track2'",
+      "events": 18,
+      "totalAmount": 2316007.27,
+      "avgAmount": 128667.07055555556
+    },
+    {
+      "x": 16,
+      "y": 191785654,
+      "r": 6.1150713924,
+      "label": "LockBit",
+      "events": 16,
+      "totalAmount": 191785654,
+      "avgAmount": 11986603.375
+    },
+    {
+      "x": 15,
+      "y": 165333800,
+      "r": 6.105813632,
+      "label": "Wizard Spider",
+      "events": 15,
+      "totalAmount": 165333800,
+      "avgAmount": 11022253.333333334
+    },
+    {
+      "x": 13,
+      "y": 11119088.620000001,
+      "r": 6.008211019288615,
+      "label": "Anonymous",
+      "events": 13,
+      "totalAmount": 11119088.620000001,
+      "avgAmount": 855314.5092307694
+    },
+    {
+      "x": 12,
+      "y": 267344200.05,
+      "r": 6.21387536004,
+      "label": "BlackCat (ALPHV)",
+      "events": 12,
+      "totalAmount": 267344200.05,
+      "avgAmount": 22278683.337500002
+    },
+    {
+      "x": 12,
+      "y": 24213.680000000004,
+      "r": 6.000019370944,
+      "label": "Frederick Eugene Wood",
+      "events": 12,
+      "totalAmount": 24213.680000000004,
+      "avgAmount": 2017.806666666667
+    },
+    {
+      "x": 10,
+      "y": 135528000,
+      "r": 6.13010688,
+      "label": "ALPHV/BlackCat",
+      "events": 10,
+      "totalAmount": 135528000,
+      "avgAmount": 13552800
+    },
+    {
+      "x": 10,
+      "y": 717495605.6200001,
+      "r": 6.6887957813952,
+      "label": "Lazarus Group",
+      "events": 10,
+      "totalAmount": 717495605.6200001,
+      "avgAmount": 71749560.562
+    },
+    {
+      "x": 9,
+      "y": 34967405,
+      "r": 6.037298565333334,
+      "label": "GOLD SOUTHFIELD",
+      "events": 9,
+      "totalAmount": 34967405,
+      "avgAmount": 3885267.222222222
+    },
+    {
+      "x": 8,
+      "y": 41417756,
+      "r": 6.0497013072,
+      "label": "SamSam",
+      "events": 8,
+      "totalAmount": 41417756,
+      "avgAmount": 5177219.5
+    },
+    {
+      "x": 8,
+      "y": 95829532.58,
+      "r": 6.114995439096,
+      "label": "Maze",
+      "events": 8,
+      "totalAmount": 95829532.58,
+      "avgAmount": 11978691.5725
+    },
+    {
+      "x": 8,
+      "y": 187809600,
+      "r": 6.22537152,
+      "label": "Conti",
+      "events": 8,
+      "totalAmount": 187809600,
+      "avgAmount": 23476200
+    },
+    {
+      "x": 8,
+      "y": 55777015.5,
+      "r": 6.0669324186,
+      "label": "Rhysida",
+      "events": 8,
+      "totalAmount": 55777015.5,
+      "avgAmount": 6972126.9375
+    },
+    {
+      "x": 7,
+      "y": 144700.01875,
+      "r": 6.00019844574,
+      "label": "Carl Jack Smith",
+      "events": 7,
+      "totalAmount": 144700.01875,
+      "avgAmount": 20671.431249999998
+    },
+    {
+      "x": 7,
+      "y": 4242143.01,
+      "r": 6.005817796128,
+      "label": "Sherwin Hue, Edward Morris, David Edme, Veronica Devaughn, Willie Reynolds, Carlos Irwin, Cassandra Davis, Sabrina Smith, Christina Smith and Kayla Brady",
+      "events": 7,
+      "totalAmount": 4242143.01,
+      "avgAmount": 606020.4299999999
+    },
+    {
+      "x": 6,
+      "y": 76646984,
+      "r": 6.1226351744,
+      "label": "Hive",
+      "events": 6,
+      "totalAmount": 76646984,
+      "avgAmount": 12774497.333333334
+    },
+    {
+      "x": 6,
+      "y": 13433000,
+      "r": 6.0214928,
+      "label": "DoppelPaymer",
+      "events": 6,
+      "totalAmount": 13433000,
+      "avgAmount": 2238833.3333333335
+    },
+    {
+      "x": 6,
+      "y": 37974278,
+      "r": 6.0607588448,
+      "label": "Magecart",
+      "events": 6,
+      "totalAmount": 37974278,
+      "avgAmount": 6329046.333333333
+    },
+    {
+      "x": 6,
+      "y": 1047264.5800000001,
+      "r": 6.001675623328,
+      "label": "Erica Hall, Jasmin Rembert, Sharelle Finnie, Rufus Bethea, Bianca Cook, Courtney Gissendanner, Brandi Johnson, Demarcus Hough, Darren Baldwin, Aaron Hough, Minnie Powell, and Eloise Sermons",
+      "events": 6,
+      "totalAmount": 1047264.5800000001,
+      "avgAmount": 174544.09666666668
+    },
+    {
+      "x": 6,
+      "y": 158365787,
+      "r": 6.2533852592,
+      "label": "BlackSuit",
+      "events": 6,
+      "totalAmount": 158365787,
+      "avgAmount": 26394297.833333332
+    },
+    {
+      "x": 5,
+      "y": 13882500,
+      "r": 6.0266544,
+      "label": "Play",
+      "events": 5,
+      "totalAmount": 13882500,
+      "avgAmount": 2776500
+    },
+    {
+      "x": 5,
+      "y": 213925.44000000003,
+      "r": 6.0004107368448,
+      "label": "Michael Mills, Jr., Velente Hill and Aaron Jones",
+      "events": 5,
+      "totalAmount": 213925.44000000003,
+      "avgAmount": 42785.088
+    },
+    {
+      "x": 5,
+      "y": 165316524,
+      "r": 6.31740772608,
+      "label": "APT38",
+      "events": 5,
+      "totalAmount": 165316524,
+      "avgAmount": 33063304.8
+    },
+    {
+      "x": 5,
+      "y": 4013795,
+      "r": 6.0077064864,
+      "label": "CircusSpider",
+      "events": 5,
+      "totalAmount": 4013795,
+      "avgAmount": 802759
+    },
+    {
+      "x": 5,
+      "y": 6266176.49,
+      "r": 6.0120310588608,
+      "label": "Lorenz",
+      "events": 5,
+      "totalAmount": 6266176.49,
+      "avgAmount": 1253235.298
+    },
+    {
+      "x": 5,
+      "y": 3047880,
+      "r": 6.0058519296,
+      "label": "INC Ransom",
+      "events": 5,
+      "totalAmount": 3047880,
+      "avgAmount": 609576
+    },
+    {
+      "x": 5,
+      "y": 407254.22000000003,
+      "r": 6.0007819281024,
+      "label": "Shanell Angelia Bowser and Michelle Courtney Johnson",
+      "events": 5,
+      "totalAmount": 407254.22000000003,
+      "avgAmount": 81450.84400000001
+    },
+    {
+      "x": 5,
+      "y": 874886,
+      "r": 6.00167978112,
+      "label": "Igors Nagaicevs",
+      "events": 5,
+      "totalAmount": 874886,
+      "avgAmount": 174977.2
+    },
+    {
+      "x": 5,
+      "y": 19816571.77,
+      "r": 6.0380478177984,
+      "label": "Royal",
+      "events": 5,
+      "totalAmount": 19816571.77,
+      "avgAmount": 3963314.354
+    },
+    {
+      "x": 5,
+      "y": 87480000,
+      "r": 6.1679616,
+      "label": "RansomHub",
+      "events": 5,
+      "totalAmount": 87480000,
+      "avgAmount": 17496000
+    },
+    {
+      "x": 5,
+      "y": 1884470300,
+      "r": 9.618182976,
+      "label": "NotPetya Ransomware Group",
+      "events": 5,
+      "totalAmount": 1884470300,
+      "avgAmount": 376894060
+    },
+    {
+      "x": 4,
+      "y": 11270000,
+      "r": 6.027048,
+      "label": "ShinyHunters",
+      "events": 4,
+      "totalAmount": 11270000,
+      "avgAmount": 2817500
+    },
+    {
+      "x": 4,
+      "y": 43775000,
+      "r": 6.10506,
+      "label": "DarkSide",
+      "events": 4,
+      "totalAmount": 43775000,
+      "avgAmount": 10943750
+    },
+    {
+      "x": 4,
+      "y": 10828000,
+      "r": 6.0259872,
+      "label": "Vice Society",
+      "events": 4,
+      "totalAmount": 10828000,
+      "avgAmount": 2707000
+    },
+    {
+      "x": 4,
+      "y": 90619994.6,
+      "r": 6.21748798704,
+      "label": "Ragnar_Locker",
+      "events": 4,
+      "totalAmount": 90619994.6,
+      "avgAmount": 22654998.65
+    },
+    {
+      "x": 4,
+      "y": 5673925,
+      "r": 6.01361742,
+      "label": "Akira",
+      "events": 4,
+      "totalAmount": 5673925,
+      "avgAmount": 1418481.25
+    },
+    {
+      "x": 3,
+      "y": 2376475,
+      "r": 6.00760472,
+      "label": "Qilin",
+      "events": 3,
+      "totalAmount": 2376475,
+      "avgAmount": 792158.3333333334
+    },
+    {
+      "x": 3,
+      "y": 5900000,
+      "r": 6.01888,
+      "label": "Embargo",
+      "events": 3,
+      "totalAmount": 5900000,
+      "avgAmount": 1966666.6666666667
+    },
+    {
+      "x": 3,
+      "y": 5000000,
+      "r": 6.016,
+      "label": "Marius Vintila",
+      "events": 3,
+      "totalAmount": 5000000,
+      "avgAmount": 1666666.6666666667
+    },
+    {
+      "x": 3,
+      "y": 10085000,
+      "r": 6.032272,
+      "label": "BianLian",
+      "events": 3,
+      "totalAmount": 10085000,
+      "avgAmount": 3361666.6666666665
+    },
+    {
+      "x": 3,
+      "y": 40027732,
+      "r": 6.1280887424,
+      "label": "CryptoLocker",
+      "events": 3,
+      "totalAmount": 40027732,
+      "avgAmount": 13342577.333333334
+    },
+    {
+      "x": 3,
+      "y": 767159,
+      "r": 6.0024549088,
+      "label": "Martin Gottesfeld",
+      "events": 3,
+      "totalAmount": 767159,
+      "avgAmount": 255719.66666666666
+    },
+    {
+      "x": 3,
+      "y": 27719292,
+      "r": 6.0887017344,
+      "label": "Ransomexx",
+      "events": 3,
+      "totalAmount": 27719292,
+      "avgAmount": 9239764
+    },
+    {
+      "x": 3,
+      "y": 10190000,
+      "r": 6.032608,
+      "label": "Hunters International",
+      "events": 3,
+      "totalAmount": 10190000,
+      "avgAmount": 3396666.6666666665
+    },
+    {
+      "x": 3,
+      "y": 2800000,
+      "r": 6.00896,
+      "label": "Oluwatunji Oluwatosin",
+      "events": 3,
+      "totalAmount": 2800000,
+      "avgAmount": 933333.3333333334
+    },
+    {
+      "x": 3,
+      "y": 66671666,
+      "r": 6.2133493312,
+      "label": "Nathan Leroux, Sanadodeh Nesheiwat, David Pokora, and Austin Alcala",
+      "events": 3,
+      "totalAmount": 66671666,
+      "avgAmount": 22223888.666666668
+    },
+    {
+      "x": 3,
+      "y": 2032500,
+      "r": 6.006504,
+      "label": "Hive Ransomware Group",
+      "events": 3,
+      "totalAmount": 2032500,
+      "avgAmount": 677500
+    },
+    {
+      "x": 3,
+      "y": 801038000,
+      "r": 8.5633216,
+      "label": "Scattered Spider",
+      "events": 3,
+      "totalAmount": 801038000,
+      "avgAmount": 267012666.66666666
+    },
+    {
+      "x": 2,
+      "y": 5170,
+      "r": 6.000024816,
+      "label": "Carlos Bonilla",
+      "events": 2,
+      "totalAmount": 5170,
+      "avgAmount": 2585
+    },
+    {
+      "x": 2,
+      "y": 875000,
+      "r": 6.0042,
+      "label": "FIN7",
+      "events": 2,
+      "totalAmount": 875000,
+      "avgAmount": 437500
+    },
+    {
+      "x": 2,
+      "y": 77732.36,
+      "r": 6.000373115328,
+      "label": "ADIL YAHYA ZAKARIA SHAKOUR",
+      "events": 2,
+      "totalAmount": 77732.36,
+      "avgAmount": 38866.18
+    },
+    {
+      "x": 2,
+      "y": 12127.17,
+      "r": 6.000058210416,
+      "label": "CabinCr3w",
+      "events": 2,
+      "totalAmount": 12127.17,
+      "avgAmount": 6063.585
+    },
+    {
+      "x": 2,
+      "y": 7846969.82,
+      "r": 6.037665455136,
+      "label": "Adam Mudd",
+      "events": 2,
+      "totalAmount": 7846969.82,
+      "avgAmount": 3923484.91
+    },
+    {
+      "x": 2,
+      "y": 77805.33,
+      "r": 6.000373465584,
+      "label": "DD4BC",
+      "events": 2,
+      "totalAmount": 77805.33,
+      "avgAmount": 38902.665
+    },
+    {
+      "x": 2,
+      "y": 3900000,
+      "r": 6.01872,
+      "label": "Zammis Clark",
+      "events": 2,
+      "totalAmount": 3900000,
+      "avgAmount": 1950000
+    },
+    {
+      "x": 2,
+      "y": 2400000,
+      "r": 6.01152,
+      "label": "Akira Ransomware Group",
+      "events": 2,
+      "totalAmount": 2400000,
+      "avgAmount": 1200000
+    },
+    {
+      "x": 2,
+      "y": 77912.66,
+      "r": 6.000373980768,
+      "label": "Curtis Lawrence Luckey",
+      "events": 2,
+      "totalAmount": 77912.66,
+      "avgAmount": 38956.33
+    },
+    {
+      "x": 2,
+      "y": 10085630,
+      "r": 6.048411024,
+      "label": "Matthew Beddoes",
+      "events": 2,
+      "totalAmount": 10085630,
+      "avgAmount": 5042815
+    },
+    {
+      "x": 2,
+      "y": 1223000,
+      "r": 6.0058704,
+      "label": "Lizard Squad",
+      "events": 2,
+      "totalAmount": 1223000,
+      "avgAmount": 611500
+    },
+    {
+      "x": 2,
+      "y": 87221775,
+      "r": 6.41866452,
+      "label": "LockerGoga Ransomware Group",
+      "events": 2,
+      "totalAmount": 87221775,
+      "avgAmount": 43610887.5
+    },
+    {
+      "x": 2,
+      "y": 77777.54,
+      "r": 6.000373332192,
+      "label": "DD4BC Group",
+      "events": 2,
+      "totalAmount": 77777.54,
+      "avgAmount": 38888.77
+    },
+    {
+      "x": 2,
+      "y": 1825000,
+      "r": 6.00876,
+      "label": "Daixin",
+      "events": 2,
+      "totalAmount": 1825000,
+      "avgAmount": 912500
+    },
+    {
+      "x": 2,
+      "y": 1150000,
+      "r": 6.00552,
+      "label": "BlackByte",
+      "events": 2,
+      "totalAmount": 1150000,
+      "avgAmount": 575000
+    },
+    {
+      "x": 2,
+      "y": 12258259.98,
+      "r": 6.058839647904,
+      "label": "Lockbit 3.0",
+      "events": 2,
+      "totalAmount": 12258259.98,
+      "avgAmount": 6129129.99
+    },
+    {
+      "x": 2,
+      "y": 6150000,
+      "r": 6.02952,
+      "label": "BianLian Ransomware Group",
+      "events": 2,
+      "totalAmount": 6150000,
+      "avgAmount": 3075000
+    },
+    {
+      "x": 2,
+      "y": 473084000,
+      "r": 8.2708032,
+      "label": "Peace",
+      "events": 2,
+      "totalAmount": 473084000,
+      "avgAmount": 236542000
+    },
+    {
+      "x": 2,
+      "y": 9312000,
+      "r": 6.0446976,
+      "label": "Vladimir Drinkman, Aleksander Kalinin, Roman Kotov, Dmitriy Smilianets and Mikhail Rytikov",
+      "events": 2,
+      "totalAmount": 9312000,
+      "avgAmount": 4656000
+    },
+    {
+      "x": 2,
+      "y": 6270000,
+      "r": 6.030096,
+      "label": "Black Suit",
+      "events": 2,
+      "totalAmount": 6270000,
+      "avgAmount": 3135000
+    },
+    {
+      "x": 2,
+      "y": 4031,
+      "r": 6.0000193488,
+      "label": "Adam V. Corbett",
+      "events": 2,
+      "totalAmount": 4031,
+      "avgAmount": 2015.5
+    },
+    {
+      "x": 2,
+      "y": 65611000,
+      "r": 6.3149328,
+      "label": "Cactus",
+      "events": 2,
+      "totalAmount": 65611000,
+      "avgAmount": 32805500
+    },
+    {
+      "x": 2,
+      "y": 2100000,
+      "r": 6.01008,
+      "label": "Acid House King",
+      "events": 2,
+      "totalAmount": 2100000,
+      "avgAmount": 1050000
+    },
+    {
+      "x": 2,
+      "y": 901000000,
+      "r": 10.3248,
+      "label": "Sven Jaschan",
+      "events": 2,
+      "totalAmount": 901000000,
+      "avgAmount": 450500000
+    },
+    {
+      "x": 2,
+      "y": 86000,
+      "r": 6.0004128,
+      "label": "Alecia Rae Bolton",
+      "events": 2,
+      "totalAmount": 86000,
+      "avgAmount": 43000
+    },
+    {
+      "x": 2,
+      "y": 2978000,
+      "r": 6.0142944,
+      "label": "Karakurt",
+      "events": 2,
+      "totalAmount": 2978000,
+      "avgAmount": 1489000
+    },
+    {
+      "x": 2,
+      "y": 1355000,
+      "r": 6.006504,
+      "label": "AvosLocker",
+      "events": 2,
+      "totalAmount": 1355000,
+      "avgAmount": 677500
+    },
+    {
+      "x": 2,
+      "y": 74042.51,
+      "r": 6.000355404048,
+      "label": "Pacific North West hacking trio",
+      "events": 2,
+      "totalAmount": 74042.51,
+      "avgAmount": 37021.255
+    },
+    {
+      "x": 2,
+      "y": 1550000,
+      "r": 6.00744,
+      "label": "TheDarkOverlord (TDO)",
+      "events": 2,
+      "totalAmount": 1550000,
+      "avgAmount": 775000
+    },
+    {
+      "x": 2,
+      "y": 5029987,
+      "r": 6.0241439376,
+      "label": "Calin Mateias",
+      "events": 2,
+      "totalAmount": 5029987,
+      "avgAmount": 2514993.5
+    },
+    {
+      "x": 2,
+      "y": 777500,
+      "r": 6.003732,
+      "label": "Ako",
+      "events": 2,
+      "totalAmount": 777500,
+      "avgAmount": 388750
+    },
+    {
+      "x": 2,
+      "y": 706931,
+      "r": 6.0033932688,
+      "label": "Mespinoza",
+      "events": 2,
+      "totalAmount": 706931,
+      "avgAmount": 353465.5
+    },
+    {
+      "x": 2,
+      "y": 102000000,
+      "r": 6.4896,
+      "label": "Dark Angels",
+      "events": 2,
+      "totalAmount": 102000000,
+      "avgAmount": 51000000
+    },
+    {
+      "x": 2,
+      "y": 42500000,
+      "r": 6.204,
+      "label": "Play Ransomware Group",
+      "events": 2,
+      "totalAmount": 42500000,
+      "avgAmount": 21250000
+    },
+    {
+      "x": 1,
+      "y": 90000,
+      "r": 6.000864,
+      "label": "Darkside Hackers",
+      "events": 1,
+      "totalAmount": 90000,
+      "avgAmount": 90000
+    },
+    {
+      "x": 1,
+      "y": 857074,
+      "r": 6.0082279104,
+      "label": "Imtiaz Khan",
+      "events": 1,
+      "totalAmount": 857074,
+      "avgAmount": 857074
+    },
+    {
+      "x": 1,
+      "y": 91814.68,
+      "r": 6.000881420928,
+      "label": "LEUNG",
+      "events": 1,
+      "totalAmount": 91814.68,
+      "avgAmount": 91814.68
+    },
+    {
+      "x": 1,
+      "y": 272354.71,
+      "r": 6.002614605216,
+      "label": "Brett Shannon Johnson & Eric Kasheef Mcfatl",
+      "events": 1,
+      "totalAmount": 272354.71,
+      "avgAmount": 272354.71
+    },
+    {
+      "x": 1,
+      "y": 50000,
+      "r": 6.00048,
+      "label": "Rex Mundi",
+      "events": 1,
+      "totalAmount": 50000,
+      "avgAmount": 50000
+    },
+    {
+      "x": 1,
+      "y": 600000,
+      "r": 6.00576,
+      "label": "Daniel Kaye",
+      "events": 1,
+      "totalAmount": 600000,
+      "avgAmount": 600000
+    },
+    {
+      "x": 1,
+      "y": 7000000,
+      "r": 6.0672,
+      "label": "IsHaKdZ",
+      "events": 1,
+      "totalAmount": 7000000,
+      "avgAmount": 7000000
+    },
+    {
+      "x": 1,
+      "y": 580000,
+      "r": 6.005568,
+      "label": "Cochen International Ltd",
+      "events": 1,
+      "totalAmount": 580000,
+      "avgAmount": 580000
+    },
+    {
+      "x": 1,
+      "y": 250000,
+      "r": 6.0024,
+      "label": "Reyes Daniel Ruiz",
+      "events": 1,
+      "totalAmount": 250000,
+      "avgAmount": 250000
+    },
+    {
+      "x": 1,
+      "y": 6600000,
+      "r": 6.06336,
+      "label": "Alexey Bilyuchenko and Aleksandr Verner",
+      "events": 1,
+      "totalAmount": 6600000,
+      "avgAmount": 6600000
+    },
+    {
+      "x": 1,
+      "y": 95861.1,
+      "r": 6.00092026656,
+      "label": "White Hat Hacker",
+      "events": 1,
+      "totalAmount": 95861.1,
+      "avgAmount": 95861.1
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "r": 6.0000000864,
+      "label": "Killsec",
+      "events": 1,
+      "totalAmount": 9,
+      "avgAmount": 9
+    },
+    {
+      "x": 1,
+      "y": 200000,
+      "r": 6.00192,
+      "label": "HiveLeaks",
+      "events": 1,
+      "totalAmount": 200000,
+      "avgAmount": 200000
+    },
+    {
+      "x": 1,
+      "y": 21254,
+      "r": 6.0002040384,
+      "label": "Daniel Sullivan",
+      "events": 1,
+      "totalAmount": 21254,
+      "avgAmount": 21254
+    },
+    {
+      "x": 1,
+      "y": 1312123.35,
+      "r": 6.01259638416,
+      "label": "Osarhieme Uyi Obaygbona",
+      "events": 1,
+      "totalAmount": 1312123.35,
+      "avgAmount": 1312123.35
+    },
+    {
+      "x": 1,
+      "y": 1000,
+      "r": 6.0000096,
+      "label": "Kia James",
+      "events": 1,
+      "totalAmount": 1000,
+      "avgAmount": 1000
+    },
+    {
+      "x": 1,
+      "y": 515000,
+      "r": 6.004944,
+      "label": "Neil A. Thomsen",
+      "events": 1,
+      "totalAmount": 515000,
+      "avgAmount": 515000
+    },
+    {
+      "x": 1,
+      "y": 500000,
+      "r": 6.0048,
+      "label": "Jason Needham",
+      "events": 1,
+      "totalAmount": 500000,
+      "avgAmount": 500000
+    },
+    {
+      "x": 1,
+      "y": 100000,
+      "r": 6.00096,
+      "label": "GandCrab Ransomware Group",
+      "events": 1,
+      "totalAmount": 100000,
+      "avgAmount": 100000
+    },
+    {
+      "x": 1,
+      "y": 1000000,
+      "r": 6.0096,
+      "label": "Erebus Ransomware Gang",
+      "events": 1,
+      "totalAmount": 1000000,
+      "avgAmount": 1000000
+    },
+    {
+      "x": 1,
+      "y": 2901,
+      "r": 6.0000278496,
+      "label": "Quebec Hamburglar",
+      "events": 1,
+      "totalAmount": 2901,
+      "avgAmount": 2901
+    },
+    {
+      "x": 1,
+      "y": 2950000,
+      "r": 6.02832,
+      "label": "Advanced Persistent Threat 69420 (Arson Cats)",
+      "events": 1,
+      "totalAmount": 2950000,
+      "avgAmount": 2950000
+    },
+    {
+      "x": 1,
+      "y": 47000,
+      "r": 6.0004512,
+      "label": "Daniel Devereux (His Royal Gingerness)",
+      "events": 1,
+      "totalAmount": 47000,
+      "avgAmount": 47000
+    },
+    {
+      "x": 1,
+      "y": 1083645,
+      "r": 6.010402992,
+      "label": "Snatch Ransomware Group",
+      "events": 1,
+      "totalAmount": 1083645,
+      "avgAmount": 1083645
+    },
+    {
+      "x": 1,
+      "y": 48000,
+      "r": 6.0004608,
+      "label": "Damon Charles Dubose",
+      "events": 1,
+      "totalAmount": 48000,
+      "avgAmount": 48000
+    },
+    {
+      "x": 1,
+      "y": 10000000,
+      "r": 6.096,
+      "label": "BO Team",
+      "events": 1,
+      "totalAmount": 10000000,
+      "avgAmount": 10000000
+    },
+    {
+      "x": 1,
+      "y": 350000,
+      "r": 6.00336,
+      "label": "Medusa Locker Group",
+      "events": 1,
+      "totalAmount": 350000,
+      "avgAmount": 350000
+    },
+    {
+      "x": 1,
+      "y": 7000000,
+      "r": 6.0672,
+      "label": "BlackCat",
+      "events": 1,
+      "totalAmount": 7000000,
+      "avgAmount": 7000000
+    },
+    {
+      "x": 1,
+      "y": 9300,
+      "r": 6.00008928,
+      "label": "John Savage III",
+      "events": 1,
+      "totalAmount": 9300,
+      "avgAmount": 9300
+    },
+    {
+      "x": 1,
+      "y": 1000,
+      "r": 6.0000096,
+      "label": "Erick Volonski",
+      "events": 1,
+      "totalAmount": 1000,
+      "avgAmount": 1000
+    },
+    {
+      "x": 1,
+      "y": 43337.51,
+      "r": 6.000416040096,
+      "label": "Dariusz J. Prugar",
+      "events": 1,
+      "totalAmount": 43337.51,
+      "avgAmount": 43337.51
+    },
+    {
+      "x": 1,
+      "y": 50000000,
+      "r": 6.48,
+      "label": "Evaldas Rimasauskas",
+      "events": 1,
+      "totalAmount": 50000000,
+      "avgAmount": 50000000
+    },
+    {
+      "x": 1,
+      "y": 4500000,
+      "r": 6.0432,
+      "label": "Freddie Howard",
+      "events": 1,
+      "totalAmount": 4500000,
+      "avgAmount": 4500000
+    },
+    {
+      "x": 1,
+      "y": 12500,
+      "r": 6.00012,
+      "label": "Jordan Paul Jernigan",
+      "events": 1,
+      "totalAmount": 12500,
+      "avgAmount": 12500
+    },
+    {
+      "x": 1,
+      "y": 205755,
+      "r": 6.001975248,
+      "label": "masterballz",
+      "events": 1,
+      "totalAmount": 205755,
+      "avgAmount": 205755
+    },
+    {
+      "x": 1,
+      "y": 1450000,
+      "r": 6.01392,
+      "label": "IntelBroker and Cyber Niggers",
+      "events": 1,
+      "totalAmount": 1450000,
+      "avgAmount": 1450000
+    },
+    {
+      "x": 1,
+      "y": 5000000,
+      "r": 6.048,
+      "label": "Lapsus$ Group",
+      "events": 1,
+      "totalAmount": 5000000,
+      "avgAmount": 5000000
+    },
+    {
+      "x": 1,
+      "y": 325000,
+      "r": 6.00312,
+      "label": "BlackBasta",
+      "events": 1,
+      "totalAmount": 325000,
+      "avgAmount": 325000
+    },
+    {
+      "x": 1,
+      "y": 1400000,
+      "r": 6.01344,
+      "label": "Edwin Andres Pena",
+      "events": 1,
+      "totalAmount": 1400000,
+      "avgAmount": 1400000
+    },
+    {
+      "x": 1,
+      "y": 400000,
+      "r": 6.00384,
+      "label": "Benjamin Munoz, III",
+      "events": 1,
+      "totalAmount": 400000,
+      "avgAmount": 400000
+    },
+    {
+      "x": 1,
+      "y": 80000,
+      "r": 6.000768,
+      "label": "Walter Powell",
+      "events": 1,
+      "totalAmount": 80000,
+      "avgAmount": 80000
+    },
+    {
+      "x": 1,
+      "y": 33657,
+      "r": 6.0003231072,
+      "label": "Providencia Llanos",
+      "events": 1,
+      "totalAmount": 33657,
+      "avgAmount": 33657
+    },
+    {
+      "x": 1,
+      "y": 1199251,
+      "r": 6.0115128096,
+      "label": "Derek Wai Hung Tam Sing",
+      "events": 1,
+      "totalAmount": 1199251,
+      "avgAmount": 1199251
+    },
+    {
+      "x": 1,
+      "y": 61999,
+      "r": 6.0005951904,
+      "label": "Randolph Hurst",
+      "events": 1,
+      "totalAmount": 61999,
+      "avgAmount": 61999
+    },
+    {
+      "x": 1,
+      "y": 10000,
+      "r": 6.000096,
+      "label": "Michael Leeper",
+      "events": 1,
+      "totalAmount": 10000,
+      "avgAmount": 10000
+    },
+    {
+      "x": 1,
+      "y": 27352.51,
+      "r": 6.000262584096,
+      "label": "David Chesley Goodyear",
+      "events": 1,
+      "totalAmount": 27352.51,
+      "avgAmount": 27352.51
+    },
+    {
+      "x": 1,
+      "y": 6800000,
+      "r": 6.06528,
+      "label": "Snatch",
+      "events": 1,
+      "totalAmount": 6800000,
+      "avgAmount": 6800000
+    },
+    {
+      "x": 1,
+      "y": 39000,
+      "r": 6.0003744,
+      "label": "Rodelyn Lamour and Nestor Armando Ficquire Herrera",
+      "events": 1,
+      "totalAmount": 39000,
+      "avgAmount": 39000
+    },
+    {
+      "x": 1,
+      "y": 850000,
+      "r": 6.00816,
+      "label": "DragonForce",
+      "events": 1,
+      "totalAmount": 850000,
+      "avgAmount": 850000
+    },
+    {
+      "x": 1,
+      "y": 700000,
+      "r": 6.00672,
+      "label": "India_X_Kr3w",
+      "events": 1,
+      "totalAmount": 700000,
+      "avgAmount": 700000
+    },
+    {
+      "x": 1,
+      "y": 1741000,
+      "r": 6.0167136,
+      "label": "c0mrade",
+      "events": 1,
+      "totalAmount": 1741000,
+      "avgAmount": 1741000
+    },
+    {
+      "x": 1,
+      "y": 130000,
+      "r": 6.001248,
+      "label": "Dayton Diaz & Fitzroy Carter",
+      "events": 1,
+      "totalAmount": 130000,
+      "avgAmount": 130000
+    },
+    {
+      "x": 1,
+      "y": 91222.08,
+      "r": 6.000875731968,
+      "label": "Edward Burn",
+      "events": 1,
+      "totalAmount": 91222.08,
+      "avgAmount": 91222.08
+    },
+    {
+      "x": 1,
+      "y": 70000,
+      "r": 6.000672,
+      "label": "The Deceptive Duo",
+      "events": 1,
+      "totalAmount": 70000,
+      "avgAmount": 70000
+    },
+    {
+      "x": 1,
+      "y": 200000,
+      "r": 6.00192,
+      "label": "Ivan Maksakov, Alexander Petro and Denis Stepanov",
+      "events": 1,
+      "totalAmount": 200000,
+      "avgAmount": 200000
+    },
+    {
+      "x": 1,
+      "y": 5000,
+      "r": 6.000048,
+      "label": "Lawrence R. Marino",
+      "events": 1,
+      "totalAmount": 5000,
+      "avgAmount": 5000
+    },
+    {
+      "x": 1,
+      "y": 89578.13,
+      "r": 6.000859950048,
+      "label": "EBK and Slacker",
+      "events": 1,
+      "totalAmount": 89578.13,
+      "avgAmount": 89578.13
+    },
+    {
+      "x": 1,
+      "y": 400000,
+      "r": 6.00384,
+      "label": "Edwin Mejia",
+      "events": 1,
+      "totalAmount": 400000,
+      "avgAmount": 400000
+    },
+    {
+      "x": 1,
+      "y": 65000000,
+      "r": 6.624,
+      "label": "Hieu Minh Ngo",
+      "events": 1,
+      "totalAmount": 65000000,
+      "avgAmount": 65000000
+    },
+    {
+      "x": 1,
+      "y": 10620.32,
+      "r": 6.000101955072,
+      "label": "Fidel Salinas",
+      "events": 1,
+      "totalAmount": 10620.32,
+      "avgAmount": 10620.32
+    },
+    {
+      "x": 1,
+      "y": 230000,
+      "r": 6.002208,
+      "label": "Konrads Voits",
+      "events": 1,
+      "totalAmount": 230000,
+      "avgAmount": 230000
+    },
+    {
+      "x": 1,
+      "y": 1020959.5,
+      "r": 6.0098012112,
+      "label": "LockBit 2.0",
+      "events": 1,
+      "totalAmount": 1020959.5,
+      "avgAmount": 1020959.5
+    },
+    {
+      "x": 1,
+      "y": 10000000,
+      "r": 6.096,
+      "label": "Musacchio, Brown and Kelly",
+      "events": 1,
+      "totalAmount": 10000000,
+      "avgAmount": 10000000
+    },
+    {
+      "x": 1,
+      "y": 10000,
+      "r": 6.000096,
+      "label": "Roman Meydbray",
+      "events": 1,
+      "totalAmount": 10000,
+      "avgAmount": 10000
+    },
+    {
+      "x": 1,
+      "y": 632250,
+      "r": 6.0060696,
+      "label": "Fog",
+      "events": 1,
+      "totalAmount": 632250,
+      "avgAmount": 632250
+    },
+    {
+      "x": 1,
+      "y": 46000,
+      "r": 6.0004416,
+      "label": "USDoD",
+      "events": 1,
+      "totalAmount": 46000,
+      "avgAmount": 46000
+    },
+    {
+      "x": 1,
+      "y": 16800000,
+      "r": 6.16128,
+      "label": "Waste",
+      "events": 1,
+      "totalAmount": 16800000,
+      "avgAmount": 16800000
+    },
+    {
+      "x": 1,
+      "y": 5000,
+      "r": 6.000048,
+      "label": "Eric Burns",
+      "events": 1,
+      "totalAmount": 5000,
+      "avgAmount": 5000
+    },
+    {
+      "x": 1,
+      "y": 2600000,
+      "r": 6.02496,
+      "label": "Glenn Cazenave & Amaya Marinella",
+      "events": 1,
+      "totalAmount": 2600000,
+      "avgAmount": 2600000
+    },
+    {
+      "x": 1,
+      "y": 7000000,
+      "r": 6.0672,
+      "label": "Scott Levine",
+      "events": 1,
+      "totalAmount": 7000000,
+      "avgAmount": 7000000
+    },
+    {
+      "x": 1,
+      "y": 80000,
+      "r": 6.000768,
+      "label": "Jesus Diaz",
+      "events": 1,
+      "totalAmount": 80000,
+      "avgAmount": 80000
+    },
+    {
+      "x": 1,
+      "y": 1616680,
+      "r": 6.015520128,
+      "label": "Olawasegun Adekunle",
+      "events": 1,
+      "totalAmount": 1616680,
+      "avgAmount": 1616680
+    },
+    {
+      "x": 1,
+      "y": 1000000,
+      "r": 6.0096,
+      "label": "Shaheed Bilal",
+      "events": 1,
+      "totalAmount": 1000000,
+      "avgAmount": 1000000
+    },
+    {
+      "x": 1,
+      "y": 7000,
+      "r": 6.0000672,
+      "label": "Remy Charmoz",
+      "events": 1,
+      "totalAmount": 7000,
+      "avgAmount": 7000
+    },
+    {
+      "x": 1,
+      "y": 13137.3,
+      "r": 6.00012611808,
+      "label": "Internet Feds",
+      "events": 1,
+      "totalAmount": 13137.3,
+      "avgAmount": 13137.3
+    },
+    {
+      "x": 1,
+      "y": 15000,
+      "r": 6.000144,
+      "label": "John Kelsey Gammell",
+      "events": 1,
+      "totalAmount": 15000,
+      "avgAmount": 15000
+    },
+    {
+      "x": 1,
+      "y": 5850,
+      "r": 6.00005616,
+      "label": "Armada Collective",
+      "events": 1,
+      "totalAmount": 5850,
+      "avgAmount": 5850
+    },
+    {
+      "x": 1,
+      "y": 600,
+      "r": 6.00000576,
+      "label": "TeslaCrypt",
+      "events": 1,
+      "totalAmount": 600,
+      "avgAmount": 600
+    },
+    {
+      "x": 1,
+      "y": 3000000,
+      "r": 6.0288,
+      "label": "Silence",
+      "events": 1,
+      "totalAmount": 3000000,
+      "avgAmount": 3000000
+    },
+    {
+      "x": 1,
+      "y": 350000,
+      "r": 6.00336,
+      "label": "Nicholas Burks of Antioch",
+      "events": 1,
+      "totalAmount": 350000,
+      "avgAmount": 350000
+    },
+    {
+      "x": 1,
+      "y": 64396.67,
+      "r": 6.000618208032,
+      "label": "Stormous Ransomware Group",
+      "events": 1,
+      "totalAmount": 64396.67,
+      "avgAmount": 64396.67
+    },
+    {
+      "x": 1,
+      "y": 400000,
+      "r": 6.00384,
+      "label": "Quantum",
+      "events": 1,
+      "totalAmount": 400000,
+      "avgAmount": 400000
+    },
+    {
+      "x": 1,
+      "y": 5000000,
+      "r": 6.048,
+      "label": "Ercan Findikoglu",
+      "events": 1,
+      "totalAmount": 5000000,
+      "avgAmount": 5000000
+    },
+    {
+      "x": 1,
+      "y": 30000,
+      "r": 6.000288,
+      "label": "Izz ad-Din al-Qassam Cyber Fighters",
+      "events": 1,
+      "totalAmount": 30000,
+      "avgAmount": 30000
+    },
+    {
+      "x": 1,
+      "y": 235000000,
+      "r": 8.256,
+      "label": "Lazarus",
+      "events": 1,
+      "totalAmount": 235000000,
+      "avgAmount": 235000000
+    },
+    {
+      "x": 1,
+      "y": 1446000,
+      "r": 6.0138816,
+      "label": "Jasper Grayson and James Malloy",
+      "events": 1,
+      "totalAmount": 1446000,
+      "avgAmount": 1446000
+    },
+    {
+      "x": 1,
+      "y": 6000,
+      "r": 6.0000576,
+      "label": "Darnell H. Albert-El",
+      "events": 1,
+      "totalAmount": 6000,
+      "avgAmount": 6000
+    },
+    {
+      "x": 1,
+      "y": 16218.99,
+      "r": 6.000155702304,
+      "label": "Terri Jo Huber",
+      "events": 1,
+      "totalAmount": 16218.99,
+      "avgAmount": 16218.99
+    },
+    {
+      "x": 1,
+      "y": 180000,
+      "r": 6.001728,
+      "label": "Jonathan Cowden",
+      "events": 1,
+      "totalAmount": 180000,
+      "avgAmount": 180000
+    },
+    {
+      "x": 1,
+      "y": 45530.26,
+      "r": 6.000437090496,
+      "label": "LulzKnightz",
+      "events": 1,
+      "totalAmount": 45530.26,
+      "avgAmount": 45530.26
+    },
+    {
+      "x": 1,
+      "y": 340000,
+      "r": 6.003264,
+      "label": "Charles Whitlock",
+      "events": 1,
+      "totalAmount": 340000,
+      "avgAmount": 340000
+    },
+    {
+      "x": 1,
+      "y": 50000,
+      "r": 6.00048,
+      "label": "Juan Rodriguez",
+      "events": 1,
+      "totalAmount": 50000,
+      "avgAmount": 50000
+    },
+    {
+      "x": 1,
+      "y": 2950000,
+      "r": 6.02832,
+      "label": "TeleBots Group",
+      "events": 1,
+      "totalAmount": 2950000,
+      "avgAmount": 2950000
+    },
+    {
+      "x": 1,
+      "y": 220000,
+      "r": 6.002112,
+      "label": "TA505",
+      "events": 1,
+      "totalAmount": 220000,
+      "avgAmount": 220000
+    },
+    {
+      "x": 1,
+      "y": 70092.5,
+      "r": 6.000672888,
+      "label": "Dinesh Kumar",
+      "events": 1,
+      "totalAmount": 70092.5,
+      "avgAmount": 70092.5
+    },
+    {
+      "x": 1,
+      "y": 100000,
+      "r": 6.00096,
+      "label": "NoEscape Ransomware Group",
+      "events": 1,
+      "totalAmount": 100000,
+      "avgAmount": 100000
+    },
+    {
+      "x": 1,
+      "y": 1189536,
+      "r": 6.0114195456,
+      "label": "HAO 'HOWIE' WANG",
+      "events": 1,
+      "totalAmount": 1189536,
+      "avgAmount": 1189536
+    },
+    {
+      "x": 1,
+      "y": 25000000,
+      "r": 6.24,
+      "label": "LockBit 2.0 Ransomware Group",
+      "events": 1,
+      "totalAmount": 25000000,
+      "avgAmount": 25000000
+    },
+    {
+      "x": 1,
+      "y": 250000,
+      "r": 6.0024,
+      "label": "Omega",
+      "events": 1,
+      "totalAmount": 250000,
+      "avgAmount": 250000
+    },
+    {
+      "x": 1,
+      "y": 300000,
+      "r": 6.00288,
+      "label": "Donex",
+      "events": 1,
+      "totalAmount": 300000,
+      "avgAmount": 300000
+    },
+    {
+      "x": 1,
+      "y": 4000,
+      "r": 6.0000384,
+      "label": "Andrew West",
+      "events": 1,
+      "totalAmount": 4000,
+      "avgAmount": 4000
+    },
+    {
+      "x": 1,
+      "y": 40000,
+      "r": 6.000384,
+      "label": "Nicholas Mamich",
+      "events": 1,
+      "totalAmount": 40000,
+      "avgAmount": 40000
+    },
+    {
+      "x": 1,
+      "y": 6620,
+      "r": 6.000063552,
+      "label": "Wang Jiajun",
+      "events": 1,
+      "totalAmount": 6620,
+      "avgAmount": 6620
+    },
+    {
+      "x": 1,
+      "y": 9902.75,
+      "r": 6.0000950664,
+      "label": "Mark Hopkins",
+      "events": 1,
+      "totalAmount": 9902.75,
+      "avgAmount": 9902.75
+    },
+    {
+      "x": 1,
+      "y": 146661292.5,
+      "r": 7.407948408,
+      "label": "Albert Gonzalez",
+      "events": 1,
+      "totalAmount": 146661292.5,
+      "avgAmount": 146661292.5
+    },
+    {
+      "x": 1,
+      "y": 180000,
+      "r": 6.001728,
+      "label": "Nick Luu",
+      "events": 1,
+      "totalAmount": 180000,
+      "avgAmount": 180000
+    },
+    {
+      "x": 1,
+      "y": 5000,
+      "r": 6.000048,
+      "label": "Anonymous / Internet Feds",
+      "events": 1,
+      "totalAmount": 5000,
+      "avgAmount": 5000
+    },
+    {
+      "x": 1,
+      "y": 156580.9,
+      "r": 6.00150317664,
+      "label": "Timothy Darrell Fultz",
+      "events": 1,
+      "totalAmount": 156580.9,
+      "avgAmount": 156580.9
+    },
+    {
+      "x": 1,
+      "y": 23000,
+      "r": 6.0002208,
+      "label": "Rhonda Everett",
+      "events": 1,
+      "totalAmount": 23000,
+      "avgAmount": 23000
+    },
+    {
+      "x": 1,
+      "y": 2000,
+      "r": 6.0000192,
+      "label": "Dodge Watson",
+      "events": 1,
+      "totalAmount": 2000,
+      "avgAmount": 2000
+    },
+    {
+      "x": 1,
+      "y": 11000000,
+      "r": 6.1056,
+      "label": "Obinwanne Okeke",
+      "events": 1,
+      "totalAmount": 11000000,
+      "avgAmount": 11000000
+    },
+    {
+      "x": 1,
+      "y": 2100000,
+      "r": 6.02016,
+      "label": "BitPaymer",
+      "events": 1,
+      "totalAmount": 2100000,
+      "avgAmount": 2100000
+    },
+    {
+      "x": 1,
+      "y": 9494000,
+      "r": 6.0911424,
+      "label": "Hades",
+      "events": 1,
+      "totalAmount": 9494000,
+      "avgAmount": 9494000
+    },
+    {
+      "x": 1,
+      "y": 3750000,
+      "r": 6.036,
+      "label": "Cuba Ransomware Group",
+      "events": 1,
+      "totalAmount": 3750000,
+      "avgAmount": 3750000
+    },
+    {
+      "x": 1,
+      "y": 1134000,
+      "r": 6.0108864,
+      "label": "Black Shadow",
+      "events": 1,
+      "totalAmount": 1134000,
+      "avgAmount": 1134000
+    },
+    {
+      "x": 1,
+      "y": 15994.4,
+      "r": 6.00015354624,
+      "label": "ALTDOS",
+      "events": 1,
+      "totalAmount": 15994.4,
+      "avgAmount": 15994.4
+    },
+    {
+      "x": 1,
+      "y": 40,
+      "r": 6.000000384,
+      "label": "Alexandra Otero",
+      "events": 1,
+      "totalAmount": 40,
+      "avgAmount": 40
+    },
+    {
+      "x": 1,
+      "y": 81419.58,
+      "r": 6.000781627968,
+      "label": "Brad Stephenson",
+      "events": 1,
+      "totalAmount": 81419.58,
+      "avgAmount": 81419.58
+    },
+    {
+      "x": 1,
+      "y": 1000000,
+      "r": 6.0096,
+      "label": "Hardy Jones",
+      "events": 1,
+      "totalAmount": 1000000,
+      "avgAmount": 1000000
+    },
+    {
+      "x": 1,
+      "y": 10200000,
+      "r": 6.09792,
+      "label": "LockBit Ransomware Gang",
+      "events": 1,
+      "totalAmount": 10200000,
+      "avgAmount": 10200000
+    },
+    {
+      "x": 1,
+      "y": 23500000,
+      "r": 6.2256,
+      "label": "Sercan Oyuntur",
+      "events": 1,
+      "totalAmount": 23500000,
+      "avgAmount": 23500000
+    },
+    {
+      "x": 1,
+      "y": 15600000,
+      "r": 6.14976,
+      "label": "Pysa/Mespinoza Ransomware Group",
+      "events": 1,
+      "totalAmount": 15600000,
+      "avgAmount": 15600000
+    },
+    {
+      "x": 1,
+      "y": 5000000,
+      "r": 6.048,
+      "label": "Brain Cipher",
+      "events": 1,
+      "totalAmount": 5000000,
+      "avgAmount": 5000000
+    },
+    {
+      "x": 1,
+      "y": 4700000,
+      "r": 6.04512,
+      "label": "Money Message",
+      "events": 1,
+      "totalAmount": 4700000,
+      "avgAmount": 4700000
+    },
+    {
+      "x": 1,
+      "y": 200000,
+      "r": 6.00192,
+      "label": "Lee Graham Walker and Axel Gembe",
+      "events": 1,
+      "totalAmount": 200000,
+      "avgAmount": 200000
+    },
+    {
+      "x": 1,
+      "y": 71.94,
+      "r": 6.000000690624,
+      "label": "Aderuku Adedayo",
+      "events": 1,
+      "totalAmount": 71.94,
+      "avgAmount": 71.94
+    },
+    {
+      "x": 1,
+      "y": 6816.82,
+      "r": 6.000065441472,
+      "label": "Maxn3y",
+      "events": 1,
+      "totalAmount": 6816.82,
+      "avgAmount": 6816.82
+    },
+    {
+      "x": 1,
+      "y": 50000,
+      "r": 6.00048,
+      "label": "Joseph Patrick Nolan",
+      "events": 1,
+      "totalAmount": 50000,
+      "avgAmount": 50000
+    },
+    {
+      "x": 1,
+      "y": 199727.54,
+      "r": 6.001917384384,
+      "label": "Anthony Johnson",
+      "events": 1,
+      "totalAmount": 199727.54,
+      "avgAmount": 199727.54
+    },
+    {
+      "x": 1,
+      "y": 1430000,
+      "r": 6.013728,
+      "label": "White Hat",
+      "events": 1,
+      "totalAmount": 1430000,
+      "avgAmount": 1430000
+    },
+    {
+      "x": 1,
+      "y": 18200000,
+      "r": 6.17472,
+      "label": "RobbinHood Ransomware Group",
+      "events": 1,
+      "totalAmount": 18200000,
+      "avgAmount": 18200000
+    },
+    {
+      "x": 1,
+      "y": 198000,
+      "r": 6.0019008,
+      "label": "Markus P. Lukawinsky",
+      "events": 1,
+      "totalAmount": 198000,
+      "avgAmount": 198000
+    },
+    {
+      "x": 1,
+      "y": 6450000,
+      "r": 6.06192,
+      "label": "Devman",
+      "events": 1,
+      "totalAmount": 6450000,
+      "avgAmount": 6450000
+    },
+    {
+      "x": 1,
+      "y": 5000,
+      "r": 6.000048,
+      "label": "Andrew Michael Shelnutt",
+      "events": 1,
+      "totalAmount": 5000,
+      "avgAmount": 5000
+    },
+    {
+      "x": 1,
+      "y": 1200000,
+      "r": 6.01152,
+      "label": "Olatunji Oluwatosin",
+      "events": 1,
+      "totalAmount": 1200000,
+      "avgAmount": 1200000
+    },
+    {
+      "x": 1,
+      "y": 1500000,
+      "r": 6.0144,
+      "label": "Bruce W. Bridges, Joseph M. Cherry II and Pamela Dunbar",
+      "events": 1,
+      "totalAmount": 1500000,
+      "avgAmount": 1500000
+    },
+    {
+      "x": 1,
+      "y": 213000,
+      "r": 6.0020448,
+      "label": "Zeekill",
+      "events": 1,
+      "totalAmount": 213000,
+      "avgAmount": 213000
+    },
+    {
+      "x": 1,
+      "y": 48770,
+      "r": 6.000468192,
+      "label": "David Ernest Everett Jr.",
+      "events": 1,
+      "totalAmount": 48770,
+      "avgAmount": 48770
+    },
+    {
+      "x": 1,
+      "y": 1225,
+      "r": 6.00001176,
+      "label": "Basil Galarnyk",
+      "events": 1,
+      "totalAmount": 1225,
+      "avgAmount": 1225
+    },
+    {
+      "x": 1,
+      "y": 734.325,
+      "r": 6.00000704952,
+      "label": "Nilesh Morar",
+      "events": 1,
+      "totalAmount": 734.325,
+      "avgAmount": 734.325
+    },
+    {
+      "x": 1,
+      "y": 600000,
+      "r": 6.00576,
+      "label": "LulzSec",
+      "events": 1,
+      "totalAmount": 600000,
+      "avgAmount": 600000
+    },
+    {
+      "x": 1,
+      "y": 750000,
+      "r": 6.0072,
+      "label": "Hunters",
+      "events": 1,
+      "totalAmount": 750000,
+      "avgAmount": 750000
+    },
+    {
+      "x": 1,
+      "y": 59881.4,
+      "r": 6.00057486144,
+      "label": "Vignesh Kannan",
+      "events": 1,
+      "totalAmount": 59881.4,
+      "avgAmount": 59881.4
+    },
+    {
+      "x": 1,
+      "y": 175875,
+      "r": 6.0016884,
+      "label": "Lawrence Siaw",
+      "events": 1,
+      "totalAmount": 175875,
+      "avgAmount": 175875
+    },
+    {
+      "x": 1,
+      "y": 1000000,
+      "r": 6.0096,
+      "label": "Shao",
+      "events": 1,
+      "totalAmount": 1000000,
+      "avgAmount": 1000000
+    },
+    {
+      "x": 1,
+      "y": 5000,
+      "r": 6.000048,
+      "label": "Jacob Jeremiah Loyd",
+      "events": 1,
+      "totalAmount": 5000,
+      "avgAmount": 5000
+    },
+    {
+      "x": 1,
+      "y": 96000,
+      "r": 6.0009216,
+      "label": "Randall Scott Foster",
+      "events": 1,
+      "totalAmount": 96000,
+      "avgAmount": 96000
+    },
+    {
+      "x": 1,
+      "y": 2800000,
+      "r": 6.02688,
+      "label": "Stormous",
+      "events": 1,
+      "totalAmount": 2800000,
+      "avgAmount": 2800000
+    },
+    {
+      "x": 1,
+      "y": 1790000,
+      "r": 6.017184,
+      "label": "Spiral",
+      "events": 1,
+      "totalAmount": 1790000,
+      "avgAmount": 1790000
+    },
+    {
+      "x": 1,
+      "y": 32000,
+      "r": 6.0003072,
+      "label": "Khoi Nguyen",
+      "events": 1,
+      "totalAmount": 32000,
+      "avgAmount": 32000
+    },
+    {
+      "x": 1,
+      "y": 21636,
+      "r": 6.0002077056,
+      "label": "Richard Glenn Dopps",
+      "events": 1,
+      "totalAmount": 21636,
+      "avgAmount": 21636
+    },
+    {
+      "x": 1,
+      "y": 2000000000,
+      "r": 25.200000000000003,
+      "label": "People's Republic of China (PRC)",
+      "events": 1,
+      "totalAmount": 2000000000,
+      "avgAmount": 2000000000
+    },
+    {
+      "x": 1,
+      "y": 6050,
+      "r": 6.00005808,
+      "label": "Jay Vern Heim",
+      "events": 1,
+      "totalAmount": 6050,
+      "avgAmount": 6050
+    },
+    {
+      "x": 1,
+      "y": 2275000,
+      "r": 6.02184,
+      "label": "IRIDIUM",
+      "events": 1,
+      "totalAmount": 2275000,
+      "avgAmount": 2275000
+    },
+    {
+      "x": 1,
+      "y": 900000,
+      "r": 6.00864,
+      "label": "Mount Locker",
+      "events": 1,
+      "totalAmount": 900000,
+      "avgAmount": 900000
+    },
+    {
+      "x": 1,
+      "y": 4985000,
+      "r": 6.047856,
+      "label": "Ioan Leusca and Dezso Gyapias",
+      "events": 1,
+      "totalAmount": 4985000,
+      "avgAmount": 4985000
+    },
+    {
+      "x": 1,
+      "y": 4060,
+      "r": 6.000038976,
+      "label": "Christopher Doyon aka Commander X",
+      "events": 1,
+      "totalAmount": 4060,
+      "avgAmount": 4060
+    },
+    {
+      "x": 1,
+      "y": 220000,
+      "r": 6.002112,
+      "label": "Reilly Foam Corp",
+      "events": 1,
+      "totalAmount": 220000,
+      "avgAmount": 220000
+    },
+    {
+      "x": 1,
+      "y": 17500000,
+      "r": 6.168,
+      "label": "Kathy Chen",
+      "events": 1,
+      "totalAmount": 17500000,
+      "avgAmount": 17500000
+    },
+    {
+      "x": 1,
+      "y": 2058.4,
+      "r": 6.00001976064,
+      "label": "Harendra Kumar, Ramesh Patel, Ashish Kumar",
+      "events": 1,
+      "totalAmount": 2058.4,
+      "avgAmount": 2058.4
+    },
+    {
+      "x": 1,
+      "y": 304446860,
+      "r": 8.922689856,
+      "label": "DragonForce Ransomware Group",
+      "events": 1,
+      "totalAmount": 304446860,
+      "avgAmount": 304446860
+    },
+    {
+      "x": 1,
+      "y": 13000000,
+      "r": 6.1248,
+      "label": "Endurance",
+      "events": 1,
+      "totalAmount": 13000000,
+      "avgAmount": 13000000
+    },
+    {
+      "x": 1,
+      "y": 672744,
+      "r": 6.0064583424,
+      "label": "SunCrypt",
+      "events": 1,
+      "totalAmount": 672744,
+      "avgAmount": 672744
+    },
+    {
+      "x": 1,
+      "y": 1340477,
+      "r": 6.0128685792,
+      "label": "Sanjay Patel, Leena Patel, Librada Santos Comduran.",
+      "events": 1,
+      "totalAmount": 1340477,
+      "avgAmount": 1340477
+    },
+    {
+      "x": 1,
+      "y": 1550000,
+      "r": 6.01488,
+      "label": "NWGEN",
+      "events": 1,
+      "totalAmount": 1550000,
+      "avgAmount": 1550000
+    },
+    {
+      "x": 1,
+      "y": 4131731.45,
+      "r": 6.03966462192,
+      "label": "LAX or Ebay",
+      "events": 1,
+      "totalAmount": 4131731.45,
+      "avgAmount": 4131731.45
+    },
+    {
+      "x": 1,
+      "y": 2300000,
+      "r": 6.02208,
+      "label": "DarkAngels",
+      "events": 1,
+      "totalAmount": 2300000,
+      "avgAmount": 2300000
+    },
+    {
+      "x": 1,
+      "y": 172000,
+      "r": 6.0016512,
+      "label": "Sherifdeen Mogaji",
+      "events": 1,
+      "totalAmount": 172000,
+      "avgAmount": 172000
+    },
+    {
+      "x": 1,
+      "y": 9933,
+      "r": 6.0000953568,
+      "label": "CryTOX",
+      "events": 1,
+      "totalAmount": 9933,
+      "avgAmount": 9933
+    },
+    {
+      "x": 1,
+      "y": 566261,
+      "r": 6.0054361056,
+      "label": "Stephanie Twyman",
+      "events": 1,
+      "totalAmount": 566261,
+      "avgAmount": 566261
+    },
+    {
+      "x": 1,
+      "y": 90000000,
+      "r": 6.864,
+      "label": "Evil Corp",
+      "events": 1,
+      "totalAmount": 90000000,
+      "avgAmount": 90000000
+    },
+    {
+      "x": 1,
+      "y": 13500000,
+      "r": 6.1296,
+      "label": "Interlock",
+      "events": 1,
+      "totalAmount": 13500000,
+      "avgAmount": 13500000
+    },
+    {
+      "x": 1,
+      "y": 516000,
+      "r": 6.0049536,
+      "label": "Gbenga A. Fadipe",
+      "events": 1,
+      "totalAmount": 516000,
+      "avgAmount": 516000
+    },
+    {
+      "x": 1,
+      "y": 2516890,
+      "r": 6.024162144,
+      "label": "RedAlert",
+      "events": 1,
+      "totalAmount": 2516890,
+      "avgAmount": 2516890
+    },
+    {
+      "x": 1,
+      "y": 7470.8822,
+      "r": 6.00007172046912,
+      "label": "Kami Haxor",
+      "events": 1,
+      "totalAmount": 7470.8822,
+      "avgAmount": 7470.8822
+    },
+    {
+      "x": 1,
+      "y": 57000,
+      "r": 6.0005472,
+      "label": "Evgeniy Mikhaylovich Bogachev",
+      "events": 1,
+      "totalAmount": 57000,
+      "avgAmount": 57000
+    },
+    {
+      "x": 1,
+      "y": 6335546.86,
+      "r": 6.060821249856,
+      "label": "JokerStash (FIN7)",
+      "events": 1,
+      "totalAmount": 6335546.86,
+      "avgAmount": 6335546.86
+    },
+    {
+      "x": 1,
+      "y": 100000,
+      "r": 6.00096,
+      "label": "Sodinokibi Ransomware Group",
+      "events": 1,
+      "totalAmount": 100000,
+      "avgAmount": 100000
+    },
+    {
+      "x": 1,
+      "y": 10000000,
+      "r": 6.096,
+      "label": "Evil Corp.",
+      "events": 1,
+      "totalAmount": 10000000,
+      "avgAmount": 10000000
+    },
+    {
+      "x": 1,
+      "y": 402197,
+      "r": 6.0038610912,
+      "label": "Christopher Hoang Do",
+      "events": 1,
+      "totalAmount": 402197,
+      "avgAmount": 402197
+    },
+    {
+      "x": 1,
+      "y": 1000000,
+      "r": 6.0096,
+      "label": "Michael Martin of Texarkana, Michelle Coppolla of Virginia and Osazuwa Peter Okunoghae",
+      "events": 1,
+      "totalAmount": 1000000,
+      "avgAmount": 1000000
+    },
+    {
+      "x": 1,
+      "y": 844779000,
+      "r": 14.1098784,
+      "label": "Choi",
+      "events": 1,
+      "totalAmount": 844779000,
+      "avgAmount": 844779000
+    },
+    {
+      "x": 1,
+      "y": 48000000,
+      "r": 6.4608,
+      "label": "New York Stock Exchange",
+      "events": 1,
+      "totalAmount": 48000000,
+      "avgAmount": 48000000
+    },
+    {
+      "x": 1,
+      "y": 3750000,
+      "r": 6.036,
+      "label": "ProLock Ransomware gang",
+      "events": 1,
+      "totalAmount": 3750000,
+      "avgAmount": 3750000
+    },
+    {
+      "x": 1,
+      "y": 250000,
+      "r": 6.0024,
+      "label": "PYSA",
+      "events": 1,
+      "totalAmount": 250000,
+      "avgAmount": 250000
+    },
+    {
+      "x": 1,
+      "y": 10000,
+      "r": 6.000096,
+      "label": "Ivy Johnson",
+      "events": 1,
+      "totalAmount": 10000,
+      "avgAmount": 10000
+    },
+    {
+      "x": 1,
+      "y": 409337.83,
+      "r": 6.003929643168,
+      "label": "Jon Paul Oson",
+      "events": 1,
+      "totalAmount": 409337.83,
+      "avgAmount": 409337.83
+    },
+    {
+      "x": 1,
+      "y": 87836.6,
+      "r": 6.00084323136,
+      "label": "Jean-Francois Pare",
+      "events": 1,
+      "totalAmount": 87836.6,
+      "avgAmount": 87836.6
+    },
+    {
+      "x": 1,
+      "y": 5858000,
+      "r": 6.0562368,
+      "label": "RansomHouse",
+      "events": 1,
+      "totalAmount": 5858000,
+      "avgAmount": 5858000
+    },
+    {
+      "x": 1,
+      "y": 14000000,
+      "r": 6.1344,
+      "label": "Qendrim Dobruna",
+      "events": 1,
+      "totalAmount": 14000000,
+      "avgAmount": 14000000
+    },
+    {
+      "x": 1,
+      "y": 32000000,
+      "r": 6.3072,
+      "label": "Buttler",
+      "events": 1,
+      "totalAmount": 32000000,
+      "avgAmount": 32000000
+    },
+    {
+      "x": 1,
+      "y": 199000000,
+      "r": 7.9104,
+      "label": "Federico Jaime",
+      "events": 1,
+      "totalAmount": 199000000,
+      "avgAmount": 199000000
+    },
+    {
+      "x": 1,
+      "y": 97915.91,
+      "r": 6.000939992736,
+      "label": "Gregory V. Revson",
+      "events": 1,
+      "totalAmount": 97915.91,
+      "avgAmount": 97915.91
+    },
+    {
+      "x": 1,
+      "y": 7600,
+      "r": 6.00007296,
+      "label": "Edmund Lee McCall, Nakeisha Rochelle Richardson Moore, Corey Gerard Harris, Rosie Lee Murphy, Andrew Milton Williams, and Vanessa Valease Gordon",
+      "events": 1,
+      "totalAmount": 7600,
+      "avgAmount": 7600
+    },
+    {
+      "x": 1,
+      "y": 500000,
+      "r": 6.0048,
+      "label": "Medusa",
+      "events": 1,
+      "totalAmount": 500000,
+      "avgAmount": 500000
+    },
+    {
+      "x": 1,
+      "y": 4400000,
+      "r": 6.04224,
+      "label": "Marketo",
+      "events": 1,
+      "totalAmount": 4400000,
+      "avgAmount": 4400000
+    },
+    {
+      "x": 1,
+      "y": 65437.6,
+      "r": 6.00062820096,
+      "label": "Ryan James Fisher",
+      "events": 1,
+      "totalAmount": 65437.6,
+      "avgAmount": 65437.6
+    },
+    {
+      "x": 1,
+      "y": 2500000000,
+      "r": 30,
+      "label": "Scattered Lapsus$ Hunters",
+      "events": 1,
+      "totalAmount": 2500000000,
+      "avgAmount": 2500000000
+    },
+    {
+      "x": 1,
+      "y": 13500000,
+      "r": 6.1296,
+      "label": "Roland L.",
+      "events": 1,
+      "totalAmount": 13500000,
+      "avgAmount": 13500000
+    },
+    {
+      "x": 1,
+      "y": 13100000,
+      "r": 6.12576,
+      "label": "MoneyMessage",
+      "events": 1,
+      "totalAmount": 13100000,
+      "avgAmount": 13100000
+    },
+    {
+      "x": 1,
+      "y": 219.81,
+      "r": 6.000002110176,
+      "label": "Harak1r1",
+      "events": 1,
+      "totalAmount": 219.81,
+      "avgAmount": 219.81
+    },
+    {
+      "x": 1,
+      "y": 2700000,
+      "r": 6.02592,
+      "label": "New World Hackers/Anonymous/Spainsquad",
+      "events": 1,
+      "totalAmount": 2700000,
+      "avgAmount": 2700000
+    },
+    {
+      "x": 1,
+      "y": 2839375,
+      "r": 6.027258,
+      "label": "Kateryna Abourched and Mohamed Abourched",
+      "events": 1,
+      "totalAmount": 2839375,
+      "avgAmount": 2839375
+    },
+    {
+      "x": 1,
+      "y": 10000,
+      "r": 6.000096,
+      "label": "Stephen L. Suplita, III",
+      "events": 1,
+      "totalAmount": 10000,
+      "avgAmount": 10000
+    },
+    {
+      "x": 1,
+      "y": 5000,
+      "r": 6.000048,
+      "label": "BRIAN P. JOHNSON",
+      "events": 1,
+      "totalAmount": 5000,
+      "avgAmount": 5000
+    },
+    {
+      "x": 1,
+      "y": 95000000,
+      "r": 6.912,
+      "label": "Solntsepek",
+      "events": 1,
+      "totalAmount": 95000000,
+      "avgAmount": 95000000
+    },
+    {
+      "x": 1,
+      "y": 167000,
+      "r": 6.0016032,
+      "label": "Christopher Andrew Phillips",
+      "events": 1,
+      "totalAmount": 167000,
+      "avgAmount": 167000
+    },
+    {
+      "x": 1,
+      "y": 12000000,
+      "r": 6.1152,
+      "label": "Ashley Mitchell",
+      "events": 1,
+      "totalAmount": 12000000,
+      "avgAmount": 12000000
+    },
+    {
+      "x": 1,
+      "y": 3562164,
+      "r": 6.0341967744,
+      "label": "Adeniyi Ajao",
+      "events": 1,
+      "totalAmount": 3562164,
+      "avgAmount": 3562164
+    },
+    {
+      "x": 1,
+      "y": 10400000,
+      "r": 6.09984,
+      "label": "Advanced Persistent Threat 18 (APT18)",
+      "events": 1,
+      "totalAmount": 10400000,
+      "avgAmount": 10400000
+    },
+    {
+      "x": 1,
+      "y": 90000,
+      "r": 6.000864,
+      "label": "Donte L. Battin, Ted Joe Armstead, Dymond Chappelle, Camron B. Witkowski and Cameron M. Allen",
+      "events": 1,
+      "totalAmount": 90000,
+      "avgAmount": 90000
+    },
+    {
+      "x": 1,
+      "y": 150000,
+      "r": 6.00144,
+      "label": "Robert Unique Haines",
+      "events": 1,
+      "totalAmount": 150000,
+      "avgAmount": 150000
+    },
+    {
+      "x": 1,
+      "y": 87000,
+      "r": 6.0008352,
+      "label": "Cameron Allen and Dymond Chappelle",
+      "events": 1,
+      "totalAmount": 87000,
+      "avgAmount": 87000
+    },
+    {
+      "x": 1,
+      "y": 40000,
+      "r": 6.000384,
+      "label": "Stefan Stojanovic",
+      "events": 1,
+      "totalAmount": 40000,
+      "avgAmount": 40000
+    },
+    {
+      "x": 1,
+      "y": 710738150,
+      "r": 12.82308624,
+      "label": "Adam Arzoomanian; Sanford Wallace; Scott Shaw",
+      "events": 1,
+      "totalAmount": 710738150,
+      "avgAmount": 710738150
+    },
+    {
+      "x": 1,
+      "y": 25007,
+      "r": 6.0002400672,
+      "label": "Sylvestre",
+      "events": 1,
+      "totalAmount": 25007,
+      "avgAmount": 25007
+    },
+    {
+      "x": 1,
+      "y": 62104.18,
+      "r": 6.000596200128,
+      "label": "Laurent Chavet",
+      "events": 1,
+      "totalAmount": 62104.18,
+      "avgAmount": 62104.18
+    },
+    {
+      "x": 1,
+      "y": 230000,
+      "r": 6.002208,
+      "label": "DualPools",
+      "events": 1,
+      "totalAmount": 230000,
+      "avgAmount": 230000
+    },
+    {
+      "x": 1,
+      "y": 1003720,
+      "r": 6.009635712,
+      "label": "Aktia Bank Plc",
+      "events": 1,
+      "totalAmount": 1003720,
+      "avgAmount": 1003720
+    },
+    {
+      "x": 1,
+      "y": 209243,
+      "r": 6.0020087328,
+      "label": "Roderick Dewayne Neal",
+      "events": 1,
+      "totalAmount": 209243,
+      "avgAmount": 209243
+    },
+    {
+      "x": 1,
+      "y": 5000,
+      "r": 6.000048,
+      "label": "Conor LaHiff",
+      "events": 1,
+      "totalAmount": 5000,
+      "avgAmount": 5000
+    },
+    {
+      "x": 1,
+      "y": 200000,
+      "r": 6.00192,
+      "label": "'cam0', '@Freak' and 'leetjones'",
+      "events": 1,
+      "totalAmount": 200000,
+      "avgAmount": 200000
+    },
+    {
+      "x": 1,
+      "y": 141000,
+      "r": 6.0013536,
+      "label": "Goro Nakahashi, Ko Hakata",
+      "events": 1,
+      "totalAmount": 141000,
+      "avgAmount": 141000
+    },
+    {
+      "x": 1,
+      "y": 1300000,
+      "r": 6.01248,
+      "label": "ALEKSANDR KALININ & NIKOLAY NASENKOV",
+      "events": 1,
+      "totalAmount": 1300000,
+      "avgAmount": 1300000
+    },
+    {
+      "x": 1,
+      "y": 920000,
+      "r": 6.008832,
+      "label": "MoneyTaker",
+      "events": 1,
+      "totalAmount": 920000,
+      "avgAmount": 920000
+    },
+    {
+      "x": 1,
+      "y": 25389.99,
+      "r": 6.000243743904,
+      "label": "Sharelle Finnie",
+      "events": 1,
+      "totalAmount": 25389.99,
+      "avgAmount": 25389.99
+    },
+    {
+      "x": 1,
+      "y": 5000,
+      "r": 6.000048,
+      "label": "Jacob Raine",
+      "events": 1,
+      "totalAmount": 5000,
+      "avgAmount": 5000
+    },
+    {
+      "x": 1,
+      "y": 155000000,
+      "r": 7.4879999999999995,
+      "label": "ALPHV",
+      "events": 1,
+      "totalAmount": 155000000,
+      "avgAmount": 155000000
+    },
+    {
+      "x": 1,
+      "y": 40000,
+      "r": 6.000384,
+      "label": "Adam Flanagan",
+      "events": 1,
+      "totalAmount": 40000,
+      "avgAmount": 40000
+    },
+    {
+      "x": 1,
+      "y": 700000,
+      "r": 6.00672,
+      "label": "Steffan Needham",
+      "events": 1,
+      "totalAmount": 700000,
+      "avgAmount": 700000
+    },
+    {
+      "x": 1,
+      "y": 50000,
+      "r": 6.00048,
+      "label": "David Garnett and Quindella Carter",
+      "events": 1,
+      "totalAmount": 50000,
+      "avgAmount": 50000
+    },
+    {
+      "x": 1,
+      "y": 6100000,
+      "r": 6.05856,
+      "label": "Jose R. Diaz, Joel Pichardo, Rodrigo Zamorano and Julian Zamorano",
+      "events": 1,
+      "totalAmount": 6100000,
+      "avgAmount": 6100000
+    },
+    {
+      "x": 1,
+      "y": 400000,
+      "r": 6.00384,
+      "label": "Everest",
+      "events": 1,
+      "totalAmount": 400000,
+      "avgAmount": 400000
+    },
+    {
+      "x": 1,
+      "y": 4400000,
+      "r": 6.04224,
+      "label": "REvil",
+      "events": 1,
+      "totalAmount": 4400000,
+      "avgAmount": 4400000
+    },
+    {
+      "x": 1,
+      "y": 600000,
+      "r": 6.00576,
+      "label": "Chris Suhail Folad and Khaled Nabil Abdel Fattah",
+      "events": 1,
+      "totalAmount": 600000,
+      "avgAmount": 600000
+    },
+    {
+      "x": 1,
+      "y": 15000,
+      "r": 6.000144,
+      "label": "Ragnarok",
+      "events": 1,
+      "totalAmount": 15000,
+      "avgAmount": 15000
+    },
+    {
+      "x": 1,
+      "y": 1000000,
+      "r": 6.0096,
+      "label": "Bibiana Benson and Adedeyo Benson",
+      "events": 1,
+      "totalAmount": 1000000,
+      "avgAmount": 1000000
+    },
+    {
+      "x": 1,
+      "y": 351432,
+      "r": 6.0033737472,
+      "label": "Kok Meng Ng",
+      "events": 1,
+      "totalAmount": 351432,
+      "avgAmount": 351432
+    }
+  ]
+}

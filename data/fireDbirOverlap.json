@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "fireTotal": 558,
+  "otherTotal": 35,
+  "both": 20,
+  "fireOnly": 538,
+  "otherOnly": 15,
+  "stats": [
+    {
+      "number": "558",
+      "desc": "FIRE vulnerabilities"
+    },
+    {
+      "number": "20",
+      "desc": "In both FIRE and Verizon DBIR"
+    },
+    {
+      "number": "35",
+      "desc": "Verizon DBIR catalog"
+    }
+  ],
+  "labels": [
+    "FIRE only",
+    "Both",
+    "DBIR only"
+  ],
+  "data": [
+    538,
+    20,
+    15
+  ]
+}

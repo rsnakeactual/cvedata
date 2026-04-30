@@ -1,0 +1,34 @@
+{
+  "available": true,
+  "iceTotal": 4764,
+  "otherTotal": 1578,
+  "both": 1578,
+  "iceOnly": 3186,
+  "otherOnly": 0,
+  "stats": [
+    {
+      "number": "4,764",
+      "desc": "ICE vulnerabilities"
+    },
+    {
+      "number": "1,578",
+      "desc": "In both ICE and CISA KEV"
+    },
+    {
+      "number": "1,578",
+      "desc": "CISA KEV catalog"
+    }
+  ],
+  "kevTotal": 1578,
+  "kevOnly": 0,
+  "labels": [
+    "ICE only",
+    "Both",
+    "KEV only"
+  ],
+  "data": [
+    3186,
+    1578,
+    0
+  ]
+}

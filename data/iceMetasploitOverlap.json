@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "iceTotal": 4764,
+  "otherTotal": 3128,
+  "both": 937,
+  "iceOnly": 3827,
+  "otherOnly": 2191,
+  "stats": [
+    {
+      "number": "4,764",
+      "desc": "ICE vulnerabilities"
+    },
+    {
+      "number": "937",
+      "desc": "In both ICE and Metasploit"
+    },
+    {
+      "number": "3,128",
+      "desc": "Metasploit catalog"
+    }
+  ],
+  "labels": [
+    "ICE only",
+    "Both",
+    "Metasploit only"
+  ],
+  "data": [
+    3827,
+    937,
+    2191
+  ]
+}

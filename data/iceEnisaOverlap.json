@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "iceTotal": 4764,
+  "otherTotal": 19,
+  "both": 19,
+  "iceOnly": 4745,
+  "otherOnly": 0,
+  "stats": [
+    {
+      "number": "4,764",
+      "desc": "ICE vulnerabilities"
+    },
+    {
+      "number": "19",
+      "desc": "In both ICE and ENISA EU KEV"
+    },
+    {
+      "number": "19",
+      "desc": "ENISA EU KEV catalog"
+    }
+  ],
+  "labels": [
+    "ICE only",
+    "Both",
+    "ENISA only"
+  ],
+  "data": [
+    4745,
+    19,
+    0
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "available": true,
+  "labels": [
+    "Microsoft",
+    "Fortinet",
+    "Cisco",
+    "Ivanti",
+    "SonicWall",
+    "Apache Software Foundation",
+    "Adobe",
+    "Atlassian",
+    "Oracle",
+    "Other"
+  ],
+  "data": [
+    84,
+    23,
+    19,
+    19,
+    17,
+    15,
+    14,
+    10,
+    8,
+    349
+  ],
+  "fireTotal": 558,
+  "naCount": 204,
+  "stats": [
+    {
+      "number": "84",
+      "desc": "Largest vendor bucket: Microsoft"
+    },
+    {
+      "number": "349",
+      "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
+    },
+    {
+      "number": "204",
+      "desc": "FIRE CVEs missing from CVElist or without CNA vendor field"
+    }
+  ]
+}
