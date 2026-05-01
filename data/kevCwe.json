@@ -620,7 +620,7 @@
     "CWE-358: Improperly Implemented Security Check for Standard",
     "CWE-783: Operator Precedence Logic Error",
     "CWE-640: Weak Password Recovery Mechanism for Forgotten Password",
-    "CWE-280: Improper Handling of Insufficient Permissions or Privileges ",
+    "CWE-280: Improper Handling of Insufficient Permissions or Privileges",
     "CWE-823: Use of Out-of-range Pointer Offset",
     "CWE-351: Insufficient Type Distinction",
     "CWE-401: Missing Release of Memory after Effective Lifetime",

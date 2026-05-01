@@ -469,10 +469,10 @@ window.__FIRE_OVERRIDES = {
   "fireMetasploitOverlap": {
     "available": true,
     "fireTotal": 558,
-    "otherTotal": 3129,
+    "otherTotal": 3130,
     "both": 221,
     "fireOnly": 337,
-    "otherOnly": 2908,
+    "otherOnly": 2909,
     "stats": [
       {
         "number": "558",
@@ -483,7 +483,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and Metasploit"
       },
       {
-        "number": "3,129",
+        "number": "3,130",
         "desc": "Metasploit catalog"
       }
     ],
@@ -495,16 +495,16 @@ window.__FIRE_OVERRIDES = {
     "data": [
       337,
       221,
-      2908
+      2909
     ]
   },
   "fireExploitdbOverlap": {
     "available": true,
     "fireTotal": 558,
-    "otherTotal": 24952,
+    "otherTotal": 24970,
     "both": 149,
     "fireOnly": 409,
-    "otherOnly": 24803,
+    "otherOnly": 24821,
     "stats": [
       {
         "number": "26.7%",
@@ -523,16 +523,16 @@ window.__FIRE_OVERRIDES = {
     "data": [
       409,
       149,
-      24803
+      24821
     ]
   },
   "fireExploitRefsOverlap": {
     "available": true,
     "fireTotal": 558,
-    "otherTotal": 31717,
+    "otherTotal": 31738,
     "both": 79,
     "fireOnly": 479,
-    "otherOnly": 31638,
+    "otherOnly": 31659,
     "stats": [
       {
         "number": "14.2%",
@@ -551,7 +551,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       479,
       79,
-      31638
+      31659
     ]
   },
   "fireEnisaOverlap": {
@@ -590,16 +590,16 @@ window.__FIRE_OVERRIDES = {
     "available": true,
     "fireTotal": 558,
     "otherTotal": 1587,
-    "both": 390,
-    "fireOnly": 168,
-    "otherOnly": 1197,
+    "both": 389,
+    "fireOnly": 169,
+    "otherOnly": 1198,
     "stats": [
       {
         "number": "558",
         "desc": "FIRE vulnerabilities"
       },
       {
-        "number": "390",
+        "number": "389",
         "desc": "In both FIRE and EUVD KEV"
       },
       {
@@ -613,9 +613,9 @@ window.__FIRE_OVERRIDES = {
       "EUVD KEV only"
     ],
     "data": [
-      168,
-      390,
-      1197
+      169,
+      389,
+      1198
     ]
   },
   "fireEpssCorrelation": {
@@ -2915,13 +2915,13 @@ window.__FIRE_OVERRIDES = {
     },
     "cnvd": {
       "data": [
-        128,
-        110,
-        24,
+        3,
+        2,
+        0,
         0,
         0
       ],
-      "total": 262
+      "total": 5
     },
     "jvn": {
       "data": [
@@ -4603,14 +4603,14 @@ window.__FIRE_OVERRIDES = {
   },
   "ransomfeedMitre": {
     "available": true,
-    "fireTotal": 255,
+    "fireTotal": 256,
     "otherTotal": 602,
     "both": 6,
-    "fireOnly": 249,
+    "fireOnly": 250,
     "otherOnly": 596,
     "stats": [
       {
-        "number": "255",
+        "number": "256",
         "desc": "RansomFeed.it gangs"
       },
       {
@@ -4628,7 +4628,7 @@ window.__FIRE_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      249,
+      250,
       6,
       596
     ]
@@ -8079,5 +8079,5 @@ window.__FIRE_OVERRIDES = {
       }
     ]
   },
-  "lastUpdated": "2026/04/30"
+  "lastUpdated": "2026/05/01"
 };

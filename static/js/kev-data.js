@@ -146,29 +146,29 @@ window.__KEV_OVERRIDES = {
         2016,
         899,
         32,
-        114
+        117
       ],
-      "total": 4811
+      "total": 4814
     },
     "cnvd": {
       "data": [
-        631,
-        763,
-        272,
-        3,
-        3
+        31,
+        47,
+        22,
+        0,
+        0
       ],
-      "total": 1672
+      "total": 100
     },
     "jvn": {
       "data": [
-        1611,
-        1891,
-        816,
+        1622,
+        1911,
+        819,
         24,
         3
       ],
-      "total": 4345
+      "total": 4379
     }
   },
   "kevCwe": {
@@ -793,7 +793,7 @@ window.__KEV_OVERRIDES = {
       "CWE-358: Improperly Implemented Security Check for Standard",
       "CWE-783: Operator Precedence Logic Error",
       "CWE-640: Weak Password Recovery Mechanism for Forgotten Password",
-      "CWE-280: Improper Handling of Insufficient Permissions or Privileges ",
+      "CWE-280: Improper Handling of Insufficient Permissions or Privileges",
       "CWE-823: Use of Out-of-range Pointer Offset",
       "CWE-351: Insufficient Type Distinction",
       "CWE-401: Missing Release of Memory after Effective Lifetime",
@@ -10044,10 +10044,6 @@ window.__KEV_OVERRIDES = {
         "y": 67.47800000000001
       },
       {
-        "x": 9.8,
-        "y": 92.893
-      },
-      {
         "x": 10,
         "y": 91.42099999999999
       },
@@ -10262,6 +10258,10 @@ window.__KEV_OVERRIDES = {
       {
         "x": 6.5,
         "y": 0.036000000000000004
+      },
+      {
+        "x": 9.8,
+        "y": 92.893
       },
       {
         "x": 8.8,
@@ -12808,10 +12808,6 @@ window.__KEV_OVERRIDES = {
         "y": 82.64
       },
       {
-        "x": 9.8,
-        "y": 93.96799999999999
-      },
-      {
         "x": 8.8,
         "y": 92.945
       },
@@ -12826,6 +12822,10 @@ window.__KEV_OVERRIDES = {
       {
         "x": 7.5,
         "y": 5.174
+      },
+      {
+        "x": 9.8,
+        "y": 93.96799999999999
       },
       {
         "x": 8.8,
@@ -15240,10 +15240,6 @@ window.__KEV_OVERRIDES = {
         "y": 5.5649999999999995
       },
       {
-        "x": 5.3,
-        "y": 88.956
-      },
-      {
         "x": 10,
         "y": 93.944
       },
@@ -15310,6 +15306,10 @@ window.__KEV_OVERRIDES = {
       {
         "x": 5.3,
         "y": 0.074
+      },
+      {
+        "x": 5.3,
+        "y": 88.956
       },
       {
         "x": 10,
@@ -17676,12 +17676,12 @@ window.__KEV_OVERRIDES = {
         "y": 27.189000000000004
       },
       {
-        "x": 5.3,
-        "y": 0.07200000000000001
-      },
-      {
         "x": 7.3,
         "y": 0.10300000000000001
+      },
+      {
+        "x": 5.3,
+        "y": 0.07200000000000001
       },
       {
         "x": 9,
@@ -19960,10 +19960,6 @@ window.__KEV_OVERRIDES = {
         "y": 91.77
       },
       {
-        "x": 9.8,
-        "y": 90.34
-      },
-      {
         "x": 8.5,
         "y": 1.541
       },
@@ -20136,10 +20132,6 @@ window.__KEV_OVERRIDES = {
         "y": 23.107
       },
       {
-        "x": 9.8,
-        "y": 68.916
-      },
-      {
         "x": 7.5,
         "y": 92.672
       },
@@ -20154,6 +20146,14 @@ window.__KEV_OVERRIDES = {
       {
         "x": 6.5,
         "y": 0.145
+      },
+      {
+        "x": 9.8,
+        "y": 90.34
+      },
+      {
+        "x": 9.8,
+        "y": 68.916
       },
       {
         "x": 6.5,
@@ -20398,10 +20398,10 @@ window.__KEV_OVERRIDES = {
   "kevMetasploitOverlap": {
     "available": true,
     "kevTotal": 4818,
-    "otherTotal": 3129,
+    "otherTotal": 3130,
     "both": 940,
     "kevOnly": 3878,
-    "otherOnly": 2189,
+    "otherOnly": 2190,
     "stats": [
       {
         "number": "4,818",
@@ -20412,7 +20412,7 @@ window.__KEV_OVERRIDES = {
         "desc": "In both KEVs and Metasploit"
       },
       {
-        "number": "3,129",
+        "number": "3,130",
         "desc": "Metasploit catalog"
       }
     ],
@@ -20424,7 +20424,7 @@ window.__KEV_OVERRIDES = {
     "data": [
       3878,
       940,
-      2189
+      2190
     ]
   },
   "kevNucleiOverlap": {
@@ -20462,10 +20462,10 @@ window.__KEV_OVERRIDES = {
   "kevExploitdbOverlap": {
     "available": true,
     "kevTotal": 4818,
-    "otherTotal": 24952,
-    "both": 1079,
-    "kevOnly": 3739,
-    "otherOnly": 23873,
+    "otherTotal": 24970,
+    "both": 1081,
+    "kevOnly": 3737,
+    "otherOnly": 23889,
     "stats": [
       {
         "number": "22.4%",
@@ -20482,18 +20482,18 @@ window.__KEV_OVERRIDES = {
       "ExploitDB only"
     ],
     "data": [
-      3739,
-      1079,
-      23873
+      3737,
+      1081,
+      23889
     ]
   },
   "kevExploitRefsOverlap": {
     "available": true,
     "kevTotal": 4818,
-    "otherTotal": 31717,
+    "otherTotal": 31738,
     "both": 779,
     "kevOnly": 4039,
-    "otherOnly": 30938,
+    "otherOnly": 30959,
     "stats": [
       {
         "number": "16.2%",
@@ -20512,7 +20512,7 @@ window.__KEV_OVERRIDES = {
     "data": [
       4039,
       779,
-      30938
+      30959
     ]
   },
   "kevSankey": {
@@ -20611,14 +20611,14 @@ window.__KEV_OVERRIDES = {
   },
   "ransomfeedMitre": {
     "available": true,
-    "fireTotal": 255,
+    "fireTotal": 256,
     "otherTotal": 602,
     "both": 6,
-    "fireOnly": 249,
+    "fireOnly": 250,
     "otherOnly": 596,
     "stats": [
       {
-        "number": "255",
+        "number": "256",
         "desc": "RansomFeed.it gangs"
       },
       {
@@ -20636,7 +20636,7 @@ window.__KEV_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      249,
+      250,
       6,
       596
     ]
@@ -20671,5 +20671,5 @@ window.__KEV_OVERRIDES = {
       }
     ]
   },
-  "lastUpdated": "2026/04/30"
+  "lastUpdated": "2026/05/01"
 };
