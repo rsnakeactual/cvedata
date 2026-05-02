@@ -1,13 +1,13 @@
 {
   "available": true,
-  "fireTotal": 558,
+  "fireTotal": 556,
   "otherTotal": 3130,
   "both": 221,
-  "fireOnly": 337,
+  "fireOnly": 335,
   "otherOnly": 2909,
   "stats": [
     {
-      "number": "558",
+      "number": "556",
       "desc": "FIRE vulnerabilities"
     },
     {
@@ -25,7 +25,7 @@
     "Metasploit only"
   ],
   "data": [
-    337,
+    335,
     221,
     2909
   ]

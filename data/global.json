@@ -1,12 +1,12 @@
 {
   "available": true,
-  "cvelistTotal": 347440,
+  "cvelistTotal": 347708,
   "bars": [
     {
       "name": "EUVD (EU)",
       "overlapPct": 100,
-      "overlapCount": 347190,
-      "dbTotal": 405648,
+      "overlapCount": 347444,
+      "dbTotal": 405902,
       "scoreDisagreePct": 18
     },
     {
@@ -19,27 +19,27 @@
     {
       "name": "CNVD (China)",
       "overlapPct": 2,
-      "overlapCount": 7642,
-      "dbTotal": 7661,
+      "overlapCount": 7255,
+      "dbTotal": 7273,
       "scoreDisagreePct": 12
     }
   ],
   "stats": [
     {
-      "number": "347,440",
+      "number": "347,708",
       "desc": "CVEs in cvelistV5 (baseline)"
     },
     {
-      "number": "347,190 overlap (100% of cvelistV5)",
-      "desc": "EUVD (EU): 405,648 total"
+      "number": "347,444 overlap (100% of cvelistV5)",
+      "desc": "EUVD (EU): 405,902 total"
     },
     {
       "number": "281,425 overlap (81% of cvelistV5)",
       "desc": "JVN iPedia (Japan): 281,506 total"
     },
     {
-      "number": "7,642 overlap (2% of cvelistV5)",
-      "desc": "CNVD (China): 7,661 total"
+      "number": "7,255 overlap (2% of cvelistV5)",
+      "desc": "CNVD (China): 7,273 total"
     }
   ]
 }

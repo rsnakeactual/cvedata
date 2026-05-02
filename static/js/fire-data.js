@@ -39,26 +39,26 @@ window.__FIRE_OVERRIDES = {
       45,
       44,
       37,
-      91,
+      90,
       56,
       77,
-      75,
+      74,
       54,
       4
     ],
-    "total": 558,
+    "total": 556,
     "stats": [
       {
         "number": "20",
         "desc": "The oldest vulnerability used in financial loss is 20 years old."
       },
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities in catalog"
       },
       {
         "number": "2021",
-        "desc": "Peak year (91 FIRE vulns assigned)"
+        "desc": "Peak year (90 FIRE vulns assigned)"
       }
     ]
   },
@@ -86,35 +86,35 @@ window.__FIRE_OVERRIDES = {
       14,
       10,
       8,
-      349
+      347
     ],
-    "fireTotal": 558,
-    "naCount": 204,
+    "fireTotal": 556,
+    "naCount": 202,
     "stats": [
       {
         "number": "84",
         "desc": "Largest vendor bucket: Microsoft"
       },
       {
-        "number": "349",
+        "number": "347",
         "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
       },
       {
-        "number": "204",
+        "number": "202",
         "desc": "FIRE CVEs missing from CVElist or without CNA vendor field"
       }
     ]
   },
   "fireKevOverlap": {
     "available": true,
-    "fireTotal": 558,
-    "kevTotal": 1586,
+    "fireTotal": 556,
+    "kevTotal": 1587,
     "both": 391,
-    "fireOnly": 167,
-    "kevOnly": 1195,
+    "fireOnly": 165,
+    "kevOnly": 1196,
     "stats": [
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -122,7 +122,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and CISA KEV"
       },
       {
-        "number": "1,586",
+        "number": "1,587",
         "desc": "CISA KEV catalog"
       }
     ]
@@ -239,92 +239,92 @@ window.__FIRE_OVERRIDES = {
       7,
       5,
       6,
-      10,
-      4,
-      6,
-      3,
-      4,
-      2,
-      0,
-      1,
-      2,
-      2,
-      2,
-      1,
-      1,
-      3,
-      2,
-      1,
-      2,
-      2,
-      2,
-      4,
-      0,
-      3,
-      1,
-      0,
-      2,
-      1,
-      1,
-      1,
-      2,
-      0,
-      0,
-      2,
-      0,
-      0,
-      1,
-      4,
-      2,
-      1,
-      1,
-      6,
-      3,
-      0,
-      4,
-      0,
-      0,
-      0,
-      3,
-      2,
-      4,
-      1,
-      1,
-      1,
-      1,
-      4,
-      2,
-      1,
-      2,
-      0,
-      1,
-      0,
-      3,
-      3,
-      3,
-      2,
-      3,
-      4,
-      2,
-      2,
-      3,
-      1,
-      2,
-      4,
-      1,
-      2,
-      1,
-      3,
+      9,
       5,
+      6,
+      3,
+      4,
+      2,
+      0,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      3,
+      2,
+      0,
+      2,
+      2,
       1,
       5,
+      0,
+      3,
+      1,
+      0,
+      2,
+      1,
+      1,
+      1,
+      3,
+      0,
+      0,
+      2,
+      0,
+      0,
+      1,
+      4,
+      2,
+      1,
+      2,
+      6,
+      2,
+      1,
+      3,
+      0,
+      1,
+      0,
+      3,
+      1,
+      4,
+      1,
+      1,
+      1,
+      1,
+      4,
+      2,
+      1,
+      2,
+      0,
+      1,
+      0,
+      3,
+      3,
+      3,
+      2,
+      3,
+      4,
+      2,
+      2,
+      4,
+      1,
+      1,
+      4,
+      1,
+      2,
+      1,
+      2,
+      6,
+      1,
+      5,
       2,
       6,
       3,
-      4,
-      8,
-      11,
+      5,
+      7,
       12,
+      11,
       19,
       54,
       160,
@@ -336,11 +336,11 @@ window.__FIRE_OVERRIDES = {
       0
     ],
     "matched": 546,
-    "totalFire": 558,
+    "totalFire": 556,
     "stats": [
       {
         "number": "546",
-        "desc": "FIRE CVEs with EPSS scores (of 558)"
+        "desc": "FIRE CVEs with EPSS scores (of 556)"
       },
       {
         "number": "0.94–0.95",
@@ -350,14 +350,14 @@ window.__FIRE_OVERRIDES = {
   },
   "fireGoogleP0Overlap": {
     "available": true,
-    "fireTotal": 558,
+    "fireTotal": 556,
     "p0Total": 402,
     "both": 54,
-    "fireOnly": 504,
+    "fireOnly": 502,
     "p0Only": 348,
     "stats": [
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -372,14 +372,14 @@ window.__FIRE_OVERRIDES = {
   },
   "fireVulncheckOverlap": {
     "available": true,
-    "fireTotal": 558,
-    "otherTotal": 4815,
+    "fireTotal": 556,
+    "otherTotal": 4820,
     "both": 469,
-    "fireOnly": 89,
-    "otherOnly": 4346,
+    "fireOnly": 87,
+    "otherOnly": 4351,
     "stats": [
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -387,7 +387,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and VulnCheck KEV"
       },
       {
-        "number": "4,815",
+        "number": "4,820",
         "desc": "VulnCheck KEV catalog"
       }
     ],
@@ -397,21 +397,21 @@ window.__FIRE_OVERRIDES = {
       "VulnCheck only"
     ],
     "data": [
-      89,
+      87,
       469,
-      4346
+      4351
     ]
   },
   "fireDbirOverlap": {
     "available": true,
-    "fireTotal": 558,
+    "fireTotal": 556,
     "otherTotal": 35,
     "both": 20,
-    "fireOnly": 538,
+    "fireOnly": 536,
     "otherOnly": 15,
     "stats": [
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -429,21 +429,21 @@ window.__FIRE_OVERRIDES = {
       "DBIR only"
     ],
     "data": [
-      538,
+      536,
       20,
       15
     ]
   },
   "fireNucleiOverlap": {
     "available": true,
-    "fireTotal": 558,
+    "fireTotal": 556,
     "otherTotal": 4119,
     "both": 208,
-    "fireOnly": 350,
+    "fireOnly": 348,
     "otherOnly": 3911,
     "stats": [
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -461,21 +461,21 @@ window.__FIRE_OVERRIDES = {
       "Nuclei only"
     ],
     "data": [
-      350,
+      348,
       208,
       3911
     ]
   },
   "fireMetasploitOverlap": {
     "available": true,
-    "fireTotal": 558,
+    "fireTotal": 556,
     "otherTotal": 3130,
     "both": 221,
-    "fireOnly": 337,
+    "fireOnly": 335,
     "otherOnly": 2909,
     "stats": [
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -493,21 +493,21 @@ window.__FIRE_OVERRIDES = {
       "Metasploit only"
     ],
     "data": [
-      337,
+      335,
       221,
       2909
     ]
   },
   "fireExploitdbOverlap": {
     "available": true,
-    "fireTotal": 558,
+    "fireTotal": 556,
     "otherTotal": 24970,
     "both": 149,
-    "fireOnly": 409,
+    "fireOnly": 407,
     "otherOnly": 24821,
     "stats": [
       {
-        "number": "26.7%",
+        "number": "26.8%",
         "desc": "of FIRE vulns are in ExploitDB"
       },
       {
@@ -521,18 +521,18 @@ window.__FIRE_OVERRIDES = {
       "ExploitDB only"
     ],
     "data": [
-      409,
+      407,
       149,
       24821
     ]
   },
   "fireExploitRefsOverlap": {
     "available": true,
-    "fireTotal": 558,
-    "otherTotal": 31738,
+    "fireTotal": 556,
+    "otherTotal": 31771,
     "both": 79,
-    "fireOnly": 479,
-    "otherOnly": 31659,
+    "fireOnly": 477,
+    "otherOnly": 31692,
     "stats": [
       {
         "number": "14.2%",
@@ -549,21 +549,21 @@ window.__FIRE_OVERRIDES = {
       "Exploit refs only"
     ],
     "data": [
-      479,
+      477,
       79,
-      31659
+      31692
     ]
   },
   "fireEnisaOverlap": {
     "available": true,
-    "fireTotal": 558,
+    "fireTotal": 556,
     "otherTotal": 19,
     "both": 13,
-    "fireOnly": 545,
+    "fireOnly": 543,
     "otherOnly": 6,
     "stats": [
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -581,21 +581,21 @@ window.__FIRE_OVERRIDES = {
       "ENISA only"
     ],
     "data": [
-      545,
+      543,
       13,
       6
     ]
   },
   "fireEuvdKevOverlap": {
     "available": true,
-    "fireTotal": 558,
+    "fireTotal": 556,
     "otherTotal": 1587,
     "both": 389,
-    "fireOnly": 169,
+    "fireOnly": 167,
     "otherOnly": 1198,
     "stats": [
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -613,7 +613,7 @@ window.__FIRE_OVERRIDES = {
       "EUVD KEV only"
     ],
     "data": [
-      169,
+      167,
       389,
       1198
     ]
@@ -639,7 +639,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.093
+        "y": 94.083
       },
       {
         "x": 6,
@@ -1071,11 +1071,11 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 89.78
+        "y": 88.77000000000001
       },
       {
         "x": 9.8,
-        "y": 76.50099999999999
+        "y": 74.663
       },
       {
         "x": 8.8,
@@ -1115,7 +1115,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 48.5
+        "y": 47.037
       },
       {
         "x": 8.8,
@@ -1435,7 +1435,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 6.6,
-        "y": 53.647999999999996
+        "y": 50.443000000000005
       },
       {
         "x": 9,
@@ -1935,7 +1935,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 6.1530000000000005
+        "y": 8.126999999999999
       },
       {
         "x": 7.5,
@@ -1951,7 +1951,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 8.4,
-        "y": 81.62
+        "y": 82.838
       },
       {
         "x": 10,
@@ -2203,7 +2203,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.9,
-        "y": 24.776
+        "y": 25.141000000000002
       },
       {
         "x": 9,
@@ -2279,7 +2279,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.2,
-        "y": 21.038999999999998
+        "y": 34.704
       },
       {
         "x": 8.8,
@@ -2591,11 +2591,11 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 5.4030000000000005
+        "y": 5.085
       },
       {
         "x": 7.8,
-        "y": 8.375
+        "y": 7.9
       },
       {
         "x": 7.8,
@@ -2655,7 +2655,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 4.3,
-        "y": 0.414
+        "y": 0.436
       },
       {
         "x": 5.3,
@@ -2663,7 +2663,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 91.212
+        "y": 90.93599999999999
       },
       {
         "x": 8.8,
@@ -2779,7 +2779,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 6.5,
-        "y": 46.92
+        "y": 44.084
       },
       {
         "x": 9.8,
@@ -2803,20 +2803,20 @@ window.__FIRE_OVERRIDES = {
       }
     ],
     "count": 545,
-    "totalFire": 558
+    "totalFire": 556
   },
   "fireSankey": {
     "available": true,
     "node": {
       "label": [
-        "Critical (40,879, 11.8%)",
-        "High (116,844, 33.6%)",
-        "Medium (153,153, 44.1%)",
-        "Low (14,271, 4.1%)",
-        "No-score (22,140, 6.4%)",
-        "No breach/loss (342,380, 98.6%)",
-        "ICE (4,349, 1.3%)",
-        "FIRE (558, 0.2%)"
+        "Critical (40,890, 11.8%)",
+        "High (116,899, 33.6%)",
+        "Medium (153,238, 44.1%)",
+        "Low (14,273, 4.1%)",
+        "No-score (22,164, 6.4%)",
+        "No breach/loss (342,554, 98.6%)",
+        "ICE (4,354, 1.3%)",
+        "FIRE (556, 0.2%)"
       ],
       "color": [
         "#c62828",
@@ -2865,21 +2865,21 @@ window.__FIRE_OVERRIDES = {
         7
       ],
       "value": [
-        39101,
-        114793,
-        152239,
-        14239,
-        22008,
-        1509,
-        1844,
+        39107,
+        114845,
+        152324,
+        14241,
+        22037,
+        1514,
+        1847,
         846,
         31,
         68,
         207,
         269,
-        119,
+        116,
         1,
-        13
+        11
       ]
     },
     "title": "CVE CVSS (NVD) Severity (left) → Breach/loss category (right)"
@@ -2899,9 +2899,9 @@ window.__FIRE_OVERRIDES = {
         207,
         68,
         1,
-        13
+        11
       ],
-      "total": 558
+      "total": 556
     },
     "euvd": {
       "data": [
@@ -2936,14 +2936,14 @@ window.__FIRE_OVERRIDES = {
   },
   "fireIceOverlap": {
     "available": true,
-    "fireTotal": 558,
-    "otherTotal": 4818,
+    "fireTotal": 556,
+    "otherTotal": 4823,
     "both": 469,
-    "fireOnly": 89,
-    "otherOnly": 4349,
+    "fireOnly": 87,
+    "otherOnly": 4354,
     "stats": [
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -2951,7 +2951,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and ICE (combined)"
       },
       {
-        "number": "4,818",
+        "number": "4,823",
         "desc": "ICE (combined) catalog"
       }
     ],
@@ -2961,21 +2961,21 @@ window.__FIRE_OVERRIDES = {
       "ICE only"
     ],
     "data": [
-      89,
+      87,
       469,
-      4349
+      4354
     ]
   },
   "fireMandiantOverlap": {
     "available": true,
-    "fireTotal": 558,
+    "fireTotal": 556,
     "otherTotal": 25,
     "both": 19,
-    "fireOnly": 539,
+    "fireOnly": 537,
     "otherOnly": 6,
     "stats": [
       {
-        "number": "558",
+        "number": "556",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -2993,7 +2993,7 @@ window.__FIRE_OVERRIDES = {
       "Mandiant only"
     ],
     "data": [
-      539,
+      537,
       19,
       6
     ]
@@ -4571,14 +4571,14 @@ window.__FIRE_OVERRIDES = {
   },
   "privtoolsMitre": {
     "available": true,
-    "fireTotal": 211,
+    "fireTotal": 213,
     "otherTotal": 602,
     "both": 4,
-    "fireOnly": 207,
+    "fireOnly": 209,
     "otherOnly": 598,
     "stats": [
       {
-        "number": "211",
+        "number": "213",
         "desc": "PrivTools EU groups"
       },
       {
@@ -4596,21 +4596,21 @@ window.__FIRE_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      207,
+      209,
       4,
       598
     ]
   },
   "ransomfeedMitre": {
     "available": true,
-    "fireTotal": 256,
+    "fireTotal": 257,
     "otherTotal": 602,
     "both": 6,
-    "fireOnly": 250,
+    "fireOnly": 251,
     "otherOnly": 596,
     "stats": [
       {
-        "number": "256",
+        "number": "257",
         "desc": "RansomFeed.it gangs"
       },
       {
@@ -4628,7 +4628,7 @@ window.__FIRE_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      250,
+      251,
       6,
       596
     ]
@@ -8043,8 +8043,8 @@ window.__FIRE_OVERRIDES = {
         "Other vectors"
       ],
       "data": [
-        17953,
-        234779
+        17961,
+        234927
       ],
       "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
@@ -8052,32 +8052,32 @@ window.__FIRE_OVERRIDES = {
   "fireHero": {
     "stats": [
       {
-        "value": 558,
+        "value": 556,
         "suffix": "",
         "isAccent": false,
         "isStatic": false,
         "desc": "FIRE vulnerabilities in catalog"
       },
       {
-        "value": "70.1%",
+        "value": "70.3%",
         "isAccent": true,
         "isStatic": true,
         "desc": "Overlap with CISA KEV"
       },
       {
-        "value": 4349,
+        "value": 4354,
         "suffix": "",
         "isAccent": false,
         "isStatic": false,
         "desc": "ICE vulns: breach but not loss"
       },
       {
-        "value": "48.2%",
+        "value": "48.4%",
         "isAccent": true,
         "isStatic": true,
         "desc": "FIRE vulns CVSS ≥9.0"
       }
     ]
   },
-  "lastUpdated": "2026/05/01"
+  "lastUpdated": "2026/05/02"
 };
