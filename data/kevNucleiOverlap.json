@@ -1,17 +1,17 @@
 {
   "available": true,
-  "kevTotal": 4823,
+  "kevTotal": 4824,
   "otherTotal": 4119,
-  "both": 1745,
+  "both": 1746,
   "kevOnly": 3078,
-  "otherOnly": 2374,
+  "otherOnly": 2373,
   "stats": [
     {
-      "number": "4,823",
+      "number": "4,824",
       "desc": "KEVs (combined catalog)"
     },
     {
-      "number": "1,745",
+      "number": "1,746",
       "desc": "In both KEVs and Nuclei"
     },
     {
@@ -26,7 +26,7 @@
   ],
   "data": [
     3078,
-    1745,
-    2374
+    1746,
+    2373
   ]
 }
