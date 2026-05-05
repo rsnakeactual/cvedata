@@ -8,12 +8,12 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 1366,
+      "value": 1364,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 4821,
+      "value": 4846,
       "color": "#EAB308"
     },
     {
@@ -75,7 +75,7 @@
         "Citrix"
       ],
       "data": [
-        119,
+        117,
         109,
         54,
         49,
