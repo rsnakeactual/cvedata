@@ -14,7 +14,7 @@
   "data": [
     86.9,
     3.3,
-    4.8,
+    4.9,
     2,
     1.2,
     0.8,
@@ -43,7 +43,7 @@
       "desc": "Disagreement where scores differ by 0.05 or more"
     },
     {
-      "number": "155,382",
+      "number": "155,681",
       "desc": "CVEs jointly scored by NVD and CNA/ADP"
     },
     {
