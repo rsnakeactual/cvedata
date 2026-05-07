@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 4852,
+  "kevTotal": 4853,
   "otherTotal": 402,
   "both": 402,
-  "kevOnly": 4450,
+  "kevOnly": 4451,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "4,852",
+      "number": "4,853",
       "desc": "KEVs"
     },
     {
@@ -27,7 +27,7 @@
     "Google P0 only"
   ],
   "data": [
-    4450,
+    4451,
     402,
     0
   ]

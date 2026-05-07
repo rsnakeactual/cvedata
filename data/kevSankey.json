@@ -6,8 +6,8 @@
       "High (117,103, 33.6%)",
       "Medium (153,437, 44.1%)",
       "Low (14,291, 4.1%)",
-      "No-score (22,255, 6.4%)",
-      "KEVs (4,852, 1.4%)",
+      "No-score (22,256, 6.4%)",
+      "KEVs (4,853, 1.4%)",
       "No breach (343,187, 98.6%)"
     ],
     "color": [
@@ -55,7 +55,7 @@
       2029,
       901,
       32,
-      118
+      119
     ]
   },
   "title": "CVE CVSS (NVD) Severity (left) → KEVs / No breach (right)"
