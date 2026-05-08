@@ -1,21 +1,21 @@
 {
   "available": true,
-  "kevTotal": 4853,
-  "otherTotal": 4133,
-  "both": 1751,
-  "kevOnly": 3102,
-  "otherOnly": 2382,
+  "kevTotal": 4857,
+  "otherTotal": 4135,
+  "both": 1752,
+  "kevOnly": 3105,
+  "otherOnly": 2383,
   "stats": [
     {
-      "number": "4,853",
+      "number": "4,857",
       "desc": "KEVs (combined catalog)"
     },
     {
-      "number": "1,751",
+      "number": "1,752",
       "desc": "In both KEVs and Nuclei"
     },
     {
-      "number": "4,133",
+      "number": "4,135",
       "desc": "Nuclei catalog"
     }
   ],
@@ -25,8 +25,8 @@
     "Nuclei only"
   ],
   "data": [
-    3102,
-    1751,
-    2382
+    3105,
+    1752,
+    2383
   ]
 }
