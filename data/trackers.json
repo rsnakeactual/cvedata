@@ -3,12 +3,12 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 41009,
+      "value": 41059,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 1365,
+      "value": 1367,
       "color": "#F97316"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 41009,
+  "maxValue": 41059,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,8 +45,8 @@
         "Ibm"
       ],
       "data": [
-        2872,
-        1876,
+        2889,
+        1881,
         1785,
         988,
         916,
@@ -75,7 +75,7 @@
         "Citrix"
       ],
       "data": [
-        117,
+        118,
         109,
         55,
         49,
