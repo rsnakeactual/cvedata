@@ -3,12 +3,12 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 41059,
+      "value": 41060,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 1367,
+      "value": 1365,
       "color": "#F97316"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 41059,
+  "maxValue": 41060,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,7 +45,7 @@
         "Ibm"
       ],
       "data": [
-        2889,
+        2890,
         1881,
         1785,
         988,
@@ -68,8 +68,8 @@
         "Vmware",
         "Dlink",
         "Unknown",
-        "Cisco",
         "Ivanti",
+        "Cisco",
         "Atlassian",
         "Zohocorp",
         "Citrix"
@@ -83,7 +83,7 @@
         30,
         29,
         26,
-        26,
+        25,
         21,
         15,
         14
