@@ -1,21 +1,21 @@
 {
   "available": true,
-  "kevTotal": 4858,
-  "otherTotal": 3131,
-  "both": 941,
-  "kevOnly": 3917,
-  "otherOnly": 2190,
+  "kevTotal": 4875,
+  "otherTotal": 3132,
+  "both": 945,
+  "kevOnly": 3930,
+  "otherOnly": 2187,
   "stats": [
     {
-      "number": "4,858",
+      "number": "4,875",
       "desc": "KEVs (combined catalog)"
     },
     {
-      "number": "941",
+      "number": "945",
       "desc": "In both KEVs and Metasploit"
     },
     {
-      "number": "3,131",
+      "number": "3,132",
       "desc": "Metasploit catalog"
     }
   ],
@@ -25,8 +25,8 @@
     "Metasploit only"
   ],
   "data": [
-    3917,
-    941,
-    2190
+    3930,
+    945,
+    2187
   ]
 }
