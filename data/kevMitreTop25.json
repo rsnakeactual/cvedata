@@ -40,7 +40,7 @@
     119,
     111,
     93,
-    80,
+    81,
     79,
     75,
     70,
@@ -52,7 +52,7 @@
     21,
     17,
     13,
-    2
+    3
   ],
   "fullNames": [
     "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",

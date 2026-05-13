@@ -20,7 +20,7 @@
     0.8,
     0.3,
     0.2,
-    0.5
+    0.4
   ],
   "colors": [
     "#22C55E",
@@ -43,7 +43,7 @@
       "desc": "Disagreement where scores differ by 0.05 or more"
     },
     {
-      "number": "156,688",
+      "number": "156,689",
       "desc": "CVEs jointly scored by NVD and CNA/ADP"
     },
     {
