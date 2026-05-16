@@ -25,7 +25,7 @@
     4382
   ],
   "kevTotal": 4896,
-  "naCount": 2335,
+  "naCount": 2334,
   "stats": [
     {
       "number": "405",
@@ -36,7 +36,7 @@
       "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
     },
     {
-      "number": "2,335",
+      "number": "2,334",
       "desc": "KEVs missing from CVElist or without CNA vendor field"
     }
   ]
