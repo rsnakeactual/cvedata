@@ -1,9 +1,9 @@
 {
   "available": true,
-  "vulncheckTotal": 4901,
+  "vulncheckTotal": 4908,
   "dbirTotal": 35,
   "both": 33,
-  "vulncheckOnly": 4868,
+  "vulncheckOnly": 4875,
   "dbirOnly": 2,
   "labels": [
     "VulnCheck only",
@@ -11,13 +11,13 @@
     "DBIR only"
   ],
   "data": [
-    4868,
+    4875,
     33,
     2
   ],
   "stats": [
     {
-      "number": "4,901",
+      "number": "4,908",
       "desc": "VulnCheck KEV"
     },
     {
