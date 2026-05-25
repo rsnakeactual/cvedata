@@ -272,14 +272,14 @@ window.__FIRE_OVERRIDES = {
       0,
       1,
       1,
-      1,
+      2,
       2,
       4,
       1,
       1,
       3,
       3,
-      4,
+      3,
       1,
       2,
       0,
@@ -291,39 +291,39 @@ window.__FIRE_OVERRIDES = {
       2,
       0,
       0,
-      2,
+      1,
       4,
       1,
       2,
       1,
-      0,
+      1,
       1,
       1,
       0,
       3,
       1,
       2,
-      2,
-      2,
       3,
+      2,
+      2,
       1,
       5,
       3,
+      4,
       3,
-      3,
-      1,
+      0,
       5,
       4,
       2,
       2,
-      2,
+      3,
       4,
       3,
+      2,
       3,
-      3,
-      6,
+      7,
       9,
-      10,
+      9,
       11,
       19,
       59,
@@ -437,10 +437,10 @@ window.__FIRE_OVERRIDES = {
   "fireNucleiOverlap": {
     "available": true,
     "fireTotal": 556,
-    "otherTotal": 4159,
+    "otherTotal": 4165,
     "both": 208,
     "fireOnly": 348,
-    "otherOnly": 3951,
+    "otherOnly": 3957,
     "stats": [
       {
         "number": "556",
@@ -451,7 +451,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and Nuclei"
       },
       {
-        "number": "4,159",
+        "number": "4,165",
         "desc": "Nuclei catalog"
       }
     ],
@@ -463,7 +463,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       348,
       208,
-      3951
+      3957
     ]
   },
   "fireMetasploitOverlap": {
@@ -529,10 +529,10 @@ window.__FIRE_OVERRIDES = {
   "fireExploitRefsOverlap": {
     "available": true,
     "fireTotal": 556,
-    "otherTotal": 33002,
+    "otherTotal": 33059,
     "both": 79,
     "fireOnly": 477,
-    "otherOnly": 32923,
+    "otherOnly": 32980,
     "stats": [
       {
         "number": "14.2%",
@@ -551,7 +551,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       477,
       79,
-      32923
+      32980
     ]
   },
   "fireEnisaOverlap": {
@@ -1003,7 +1003,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.473
+        "y": 94.44200000000001
       },
       {
         "x": 9.8,
@@ -1203,7 +1203,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 93.821
+        "y": 93.73899999999999
       },
       {
         "x": 8.8,
@@ -1223,7 +1223,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 93.96900000000001
+        "y": 93.607
       },
       {
         "x": 8.8,
@@ -1355,7 +1355,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 94.222
+        "y": 94.194
       },
       {
         "x": 9,
@@ -1399,7 +1399,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.433
+        "y": 94.391
       },
       {
         "x": 9.8,
@@ -1427,7 +1427,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 94.45
+        "y": 94.465
       },
       {
         "x": 9.8,
@@ -1447,7 +1447,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.484
+        "y": 94.45599999999999
       },
       {
         "x": 9.8,
@@ -1487,7 +1487,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.446
+        "y": 94.408
       },
       {
         "x": 9.8,
@@ -1711,7 +1711,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 84.435
+        "y": 83.284
       },
       {
         "x": 5.4,
@@ -1747,7 +1747,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 93.683
+        "y": 93.638
       },
       {
         "x": 9.8,
@@ -1779,7 +1779,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.368
+        "y": 94.257
       },
       {
         "x": 9.1,
@@ -1831,11 +1831,11 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.241
+        "y": 94.26400000000001
       },
       {
         "x": 7.5,
-        "y": 94.184
+        "y": 94.31
       },
       {
         "x": 10,
@@ -1899,7 +1899,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.4,
-        "y": 94.33
+        "y": 94.353
       },
       {
         "x": 9.8,
@@ -1923,7 +1923,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.319
+        "y": 94.285
       },
       {
         "x": 9.8,
@@ -1931,7 +1931,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 86.02499999999999
+        "y": 84.887
       },
       {
         "x": 10,
@@ -1983,7 +1983,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 94.443
+        "y": 94.41199999999999
       },
       {
         "x": 8.8,
@@ -2043,7 +2043,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 6.8,
-        "y": 78.937
+        "y": 76.999
       },
       {
         "x": 9.8,
@@ -2091,7 +2091,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.41000000000001
+        "y": 94.393
       },
       {
         "x": 9.8,
@@ -2127,7 +2127,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 46.719
+        "y": 42.969
       },
       {
         "x": 2.7,
@@ -2147,7 +2147,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.9,
-        "y": 42.677
+        "y": 39.414
       },
       {
         "x": 7.5,
@@ -2167,7 +2167,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 8.1,
-        "y": 58.120000000000005
+        "y": 63.047
       },
       {
         "x": 9.8,
@@ -2179,11 +2179,11 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.4,
-        "y": 94.158
+        "y": 94.22500000000001
       },
       {
         "x": 7.2,
-        "y": 94.22
+        "y": 94.174
       },
       {
         "x": 9,
@@ -2239,7 +2239,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 90.107
+        "y": 88.937
       },
       {
         "x": 10,
@@ -2287,7 +2287,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 90.645
+        "y": 90.208
       },
       {
         "x": 10,
@@ -2467,7 +2467,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 93.362
+        "y": 93.645
       },
       {
         "x": 8.6,
@@ -2475,7 +2475,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.422
+        "y": 94.393
       },
       {
         "x": 5.9,
@@ -2631,7 +2631,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 1.218
+        "y": 1.028
       },
       {
         "x": 9.8,
@@ -2699,7 +2699,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 72.929
+        "y": 70.71300000000001
       },
       {
         "x": 7.2,
@@ -2809,12 +2809,12 @@ window.__FIRE_OVERRIDES = {
     "available": true,
     "node": {
       "label": [
-        "Critical (41,336, 11.7%)",
-        "High (118,713, 33.7%)",
-        "Medium (155,275, 44.1%)",
-        "Low (14,456, 4.1%)",
-        "No-score (22,462, 6.4%)",
-        "No breach/loss (347,236, 98.6%)",
+        "Critical (41,338, 11.7%)",
+        "High (118,739, 33.7%)",
+        "Medium (155,297, 44.1%)",
+        "Low (14,458, 4.1%)",
+        "No-score (22,464, 6.4%)",
+        "No breach/loss (347,290, 98.6%)",
         "ICE (4,450, 1.3%)",
         "FIRE (556, 0.2%)"
       ],
@@ -2865,11 +2865,11 @@ window.__FIRE_OVERRIDES = {
         7
       ],
       "value": [
-        39513,
-        116617,
-        154344,
-        14423,
-        22339,
+        39515,
+        116643,
+        154366,
+        14425,
+        22341,
         1554,
         1889,
         863,
@@ -2916,12 +2916,12 @@ window.__FIRE_OVERRIDES = {
     "cnvd": {
       "data": [
         3,
-        2,
+        1,
         0,
         0,
         0
       ],
-      "total": 5
+      "total": 4
     },
     "jvn": {
       "data": [
@@ -8043,8 +8043,8 @@ window.__FIRE_OVERRIDES = {
         "Other vectors"
       ],
       "data": [
-        18188,
-        239193
+        18190,
+        239243
       ],
       "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
@@ -8079,5 +8079,5 @@ window.__FIRE_OVERRIDES = {
       }
     ]
   },
-  "lastUpdated": "2026/05/24"
+  "lastUpdated": "2026/05/25"
 };
