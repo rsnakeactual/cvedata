@@ -3,12 +3,12 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 41348,
+      "value": 41365,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 1356,
+      "value": 1357,
       "color": "#F97316"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "name": "CISA KEV",
-      "value": 1602,
+      "value": 1603,
       "color": "#DC2626"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 41348,
+  "maxValue": 41365,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,7 +45,7 @@
         "Ibm"
       ],
       "data": [
-        3012,
+        3029,
         1890,
         1786,
         990,
@@ -79,7 +79,7 @@
         108,
         54,
         49,
-        30,
+        31,
         30,
         28,
         26,
