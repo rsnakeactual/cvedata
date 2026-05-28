@@ -1,25 +1,25 @@
 {
   "available": true,
-  "kevTotal": 4920,
-  "otherTotal": 1603,
-  "both": 1603,
-  "kevOnly": 3317,
+  "kevTotal": 4922,
+  "otherTotal": 1606,
+  "both": 1606,
+  "kevOnly": 3316,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "4,920",
+      "number": "4,922",
       "desc": "KEVs (combined catalog)"
     },
     {
-      "number": "1,603",
+      "number": "1,606",
       "desc": "In both KEVs and CISA KEV"
     },
     {
-      "number": "1,603",
+      "number": "1,606",
       "desc": "CISA KEV catalog"
     }
   ],
-  "cisaTotal": 1603,
+  "cisaTotal": 1606,
   "cisaOnly": 0,
   "labels": [
     "KEVs only",
@@ -27,8 +27,8 @@
     "CISA KEV only"
   ],
   "data": [
-    3317,
-    1603,
+    3316,
+    1606,
     0
   ]
 }
