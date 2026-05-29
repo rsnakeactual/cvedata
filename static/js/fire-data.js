@@ -270,14 +270,14 @@ window.__FIRE_OVERRIDES = {
       1,
       1,
       0,
-      1,
-      1,
+      2,
+      0,
       2,
       3,
-      4,
+      5,
       1,
       1,
-      2,
+      1,
       3,
       3,
       1,
@@ -321,12 +321,12 @@ window.__FIRE_OVERRIDES = {
       3,
       2,
       4,
-      5,
+      6,
+      9,
       10,
       10,
-      10,
-      19,
-      58,
+      20,
+      57,
       157,
       0,
       0,
@@ -529,10 +529,10 @@ window.__FIRE_OVERRIDES = {
   "fireExploitRefsOverlap": {
     "available": true,
     "fireTotal": 556,
-    "otherTotal": 33317,
+    "otherTotal": 33405,
     "both": 79,
     "fireOnly": 477,
-    "otherOnly": 33238,
+    "otherOnly": 33326,
     "stats": [
       {
         "number": "14.2%",
@@ -551,7 +551,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       477,
       79,
-      33238
+      33326
     ]
   },
   "fireEnisaOverlap": {
@@ -899,7 +899,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.4,
-        "y": 91.229
+        "y": 91.757
       },
       {
         "x": 7.2,
@@ -1203,7 +1203,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 93.73899999999999
+        "y": 93.821
       },
       {
         "x": 8.8,
@@ -1723,7 +1723,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 92.42
+        "y": 92.12
       },
       {
         "x": 7.8,
@@ -1819,7 +1819,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 93.003
+        "y": 92.973
       },
       {
         "x": 8.6,
@@ -1895,7 +1895,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.07799999999999
+        "y": 94.038
       },
       {
         "x": 9.4,
@@ -2135,7 +2135,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.125
+        "y": 94.16499999999999
       },
       {
         "x": 9.8,
@@ -2211,7 +2211,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.9,
-        "y": 44.169000000000004
+        "y": 37.653
       },
       {
         "x": 9.8,
@@ -2279,7 +2279,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.2,
-        "y": 38.309
+        "y": 41.568
       },
       {
         "x": 8.8,
@@ -2287,7 +2287,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 90.208
+        "y": 88.536
       },
       {
         "x": 10,
@@ -2795,7 +2795,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 89.925
+        "y": 90.153
       },
       {
         "x": 8.2,
@@ -2809,12 +2809,12 @@ window.__FIRE_OVERRIDES = {
     "available": true,
     "node": {
       "label": [
-        "Critical (41,390, 11.7%)",
-        "High (118,942, 33.7%)",
-        "Medium (155,536, 44.1%)",
-        "Low (14,486, 4.1%)",
-        "No-score (22,486, 6.4%)",
-        "No breach/loss (347,831, 98.6%)",
+        "Critical (41,433, 11.7%)",
+        "High (119,096, 33.7%)",
+        "Medium (155,758, 44.1%)",
+        "Low (14,495, 4.1%)",
+        "No-score (22,771, 6.4%)",
+        "No breach/loss (348,544, 98.6%)",
         "ICE (4,453, 1.3%)",
         "FIRE (556, 0.2%)"
       ],
@@ -2865,19 +2865,19 @@ window.__FIRE_OVERRIDES = {
         7
       ],
       "value": [
-        39564,
-        116846,
-        154605,
-        14453,
-        22363,
-        1557,
-        1889,
-        863,
+        39606,
+        116999,
+        154828,
+        14462,
+        22649,
+        1558,
+        1890,
+        862,
         32,
         68,
         207,
         269,
-        112,
+        111,
         1,
         11
       ]
@@ -2925,13 +2925,13 @@ window.__FIRE_OVERRIDES = {
     },
     "jvn": {
       "data": [
-        181,
-        167,
-        49,
-        0,
+        265,
+        203,
+        67,
+        1,
         1
       ],
-      "total": 398
+      "total": 537
     }
   },
   "fireIceOverlap": {
@@ -3036,6 +3036,7 @@ window.__FIRE_OVERRIDES = {
       "CWE-732",
       "CWE-400",
       "CWE-134",
+      "CWE-116",
       "CWE-798",
       "CWE-200",
       "CWE-470",
@@ -3056,7 +3057,6 @@ window.__FIRE_OVERRIDES = {
       "CWE-285",
       "CWE-706",
       "CWE-674",
-      "CWE-116",
       "CWE-664",
       "CWE-610",
       "CWE-908",
@@ -3141,7 +3141,7 @@ window.__FIRE_OVERRIDES = {
       2,
       2,
       2,
-      1,
+      2,
       1,
       1,
       1,
@@ -3220,6 +3220,7 @@ window.__FIRE_OVERRIDES = {
       "CWE-732: Incorrect Permission Assignment for Critical Resource",
       "CWE-400: Uncontrolled Resource Consumption",
       "CWE-134: Use of Externally-Controlled Format String",
+      "CWE-116: Improper Encoding or Escaping of Output",
       "CWE-798: Use of Hard-coded Credentials",
       "CWE-200: Exposure of Sensitive Information to an Unauthorized Actor",
       "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')",
@@ -3240,7 +3241,6 @@ window.__FIRE_OVERRIDES = {
       "CWE-285: Improper Authorization",
       "CWE-706: Use of Incorrectly-Resolved Name or Reference",
       "CWE-674: Uncontrolled Recursion",
-      "CWE-116: Improper Encoding or Escaping of Output",
       "CWE-664: Improper Control of a Resource Through its Lifetime",
       "CWE-610: Externally Controlled Reference to a Resource in Another Sphere",
       "CWE-908: Use of Uninitialized Resource",
@@ -3397,7 +3397,7 @@ window.__FIRE_OVERRIDES = {
       "A09: Security Logging & Alerting Failures"
     ],
     "data": [
-      124,
+      125,
       100,
       52,
       34,
@@ -4571,14 +4571,14 @@ window.__FIRE_OVERRIDES = {
   },
   "privtoolsMitre": {
     "available": true,
-    "fireTotal": 219,
+    "fireTotal": 220,
     "otherTotal": 602,
     "both": 4,
-    "fireOnly": 215,
+    "fireOnly": 216,
     "otherOnly": 598,
     "stats": [
       {
-        "number": "219",
+        "number": "220",
         "desc": "PrivTools EU groups"
       },
       {
@@ -4596,21 +4596,21 @@ window.__FIRE_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      215,
+      216,
       4,
       598
     ]
   },
   "ransomfeedMitre": {
     "available": true,
-    "fireTotal": 261,
+    "fireTotal": 262,
     "otherTotal": 602,
     "both": 6,
-    "fireOnly": 255,
+    "fireOnly": 256,
     "otherOnly": 596,
     "stats": [
       {
-        "number": "261",
+        "number": "262",
         "desc": "RansomFeed.it gangs"
       },
       {
@@ -4628,7 +4628,7 @@ window.__FIRE_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      255,
+      256,
       6,
       596
     ]
@@ -8043,8 +8043,8 @@ window.__FIRE_OVERRIDES = {
         "Other vectors"
       ],
       "data": [
-        18227,
-        239728
+        18250,
+        240143
       ],
       "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
@@ -8079,5 +8079,5 @@ window.__FIRE_OVERRIDES = {
       }
     ]
   },
-  "lastUpdated": "2026/05/28"
+  "lastUpdated": "2026/05/29"
 };
