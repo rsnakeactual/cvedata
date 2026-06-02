@@ -258,12 +258,13 @@
   <div class="container">
     <div class="section-header">
       <div class="section-label-row"><span class="label">08: Pentesting tools</span><button class="copy-link-btn" data-anchor="kev-pentesting" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
-      <h2>Metasploit & Nuclei vs KEVs</h2>
-      <p>The common wisdom about the &ldquo;Metasploit metric&rdquo; appears to be wrong: there is only modest overlap between Metasploit CVEs and what actually gets exploited in the wild. The same holds for Nuclei, which has become the new standard among penetration testers.</p>
+      <h2>Metasploit, Nuclei & OpenVAS vs KEVs</h2>
+      <p>The common wisdom about the &ldquo;Metasploit metric&rdquo; appears to be wrong: there is only modest overlap between Metasploit CVEs and what actually gets exploited in the wild. The same holds for Nuclei, which has become the new standard among penetration testers, and for the much larger Greenbone OpenVAS NASL coverage.</p>
     </div>
     <div class="toggle-group" id="pentestingTabs">
       <button class="toggle-btn active" data-tab="metasploit">Metasploit</button>
       <button class="toggle-btn" data-tab="nuclei">Nuclei</button>
+      <button class="toggle-btn" data-tab="openvas">OpenVAS</button>
     </div>
     <div class="tab-panel active" id="tab-metasploit">
       <div class="chart-container" style="height: 350px;" id="kevMetasploitContainer">
@@ -276,6 +277,12 @@
         <p class="data-unavailable">Data unavailable. Run kev and nuclei processors.</p>
       </div>
       <div class="insight-cards" id="kevNucleiStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-openvas">
+      <div class="chart-container" style="height: 350px;" id="kevGreenboneContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and greenbone processors.</p>
+      </div>
+      <div class="insight-cards" id="kevGreenboneStats"></div>
     </div>
   </div>
 </section>
@@ -490,6 +497,7 @@
       <a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view?gid=0#gid=0" target="_blank">Google Project Zero</a>,
       <a href="https://github.com/rapid7/metasploit-framework" target="_blank">Metasploit</a>,
       <a href="https://github.com/projectdiscovery/nuclei-templates" target="_blank">Nuclei</a>,
+      <a href="https://github.com/greenbone/greenbone-feed-sync" target="_blank">Greenbone OpenVAS</a>,
       <a href="https://gitlab.com/exploit-database/exploitdb/" target="_blank">ExploitDB</a>,
       <a href="https://cwe.mitre.org/" target="_blank">MITRE CWE</a>,
       <a href="https://github.com/OWASP/Top10" target="_blank">OWASP Top 10</a>,
@@ -1140,6 +1148,7 @@
 
   /* 09: Metasploit-KEVs Overlap (Venn) */
   whenChartInView('kevMetasploitContainer', function() { renderOverlapInto('kevMetasploitContainer', 'kevMetasploitChart', 'kevMetasploitOverlap', 'MSF', 'KEVs', 'Metasploit', 'KEVs', ['#F97316', '#1565c0', '#EC4899'], 'kevMetasploitStats'); });
+  whenChartInView('kevGreenboneContainer', function() { renderOverlapInto('kevGreenboneContainer', 'kevGreenboneChart', 'kevGreenboneOverlap', 'OpenVAS', 'KEVs', 'OpenVAS', 'KEVs', ['#F97316', '#1565c0', '#10B981'], 'kevGreenboneStats'); });
 
   /* 09: KEVs-Exploit Refs + ExploitDB (tabs) - pre-render both when section in view */
   whenChartInView('kevExploitRefsContainer', function() {

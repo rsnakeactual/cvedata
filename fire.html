@@ -34,7 +34,7 @@
       <li><a href="#fire-vs-other-kev">ATT&CK</a></li>
       <li><a href="#fire-ransomware">Ransomware</a></li>
       <li><a href="#fire-cvss-attributes">Vectors</a></li>
-      <li><a href="#claims">Claims</a></li>
+      <li><a href="#claims">Losses</a></li>
       <li><a href="breakdown.html">Breakdown</a></li>
     </ul>
   </div>
@@ -266,12 +266,13 @@
   <div class="container">
     <div class="section-header">
       <div class="section-label-row"><span class="label">08: Pentesting tools</span><button class="copy-link-btn" data-anchor="fire-pentesting" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
-      <h2>Metasploit & Nuclei vs FIRE</h2>
-      <p>The common wisdom about the &ldquo;Metasploit metric&rdquo; appears to be wrong: there is very little overlap between Metasploit CVEs and actual losses. The same holds for Nuclei, which has become the new standard among penetration testers.</p>
+      <h2>Metasploit, Nuclei & OpenVAS vs FIRE</h2>
+      <p>The common wisdom about the &ldquo;Metasploit metric&rdquo; appears to be wrong: there is very little overlap between Metasploit CVEs and actual losses. The same holds for Nuclei, which has become the new standard among penetration testers, and for the much larger Greenbone OpenVAS NASL coverage.</p>
     </div>
     <div class="toggle-group" id="pentestingTabs">
       <button class="toggle-btn active" data-tab="metasploit">Metasploit</button>
       <button class="toggle-btn" data-tab="nuclei">Nuclei</button>
+      <button class="toggle-btn" data-tab="openvas">OpenVAS</button>
     </div>
     <div class="tab-panel active" id="tab-metasploit">
       <div class="chart-container" style="height: 350px;" id="fireMetasploitContainer">
@@ -281,6 +282,11 @@
     <div class="tab-panel" id="tab-nuclei">
       <div class="chart-container" style="height: 350px;" id="fireNucleiContainer">
         <p class="data-unavailable">Data unavailable. Run fire and nuclei processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-openvas">
+      <div class="chart-container" style="height: 350px;" id="fireGreenboneContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and greenbone processors.</p>
       </div>
     </div>
   </div>
@@ -371,7 +377,7 @@
     <div class="section-header">
       <div class="section-label-row"><span class="label">12: ATT&CK groups</span><button class="copy-link-btn" data-anchor="fire-vs-other-kev" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
       <h2>Normalized MITRE ATT&CK groups</h2>
-      <p>The MITRE Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK) framework attempts to document what adversaries use in practice. Each point in the following graph is one ATT&CK group. The scatter shows what percentage of their TTPs use CISA KEV CVEs vs FIRE CVEs. A hole in the data appears on the bottom right hand quadrant. There is little representation of groups that primarily use FIRE vulns, suggesting MITRE ATT&CK may not be tracking many financial-fraud-focused groups.</p>
+      <p>The MITRE Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK) framework attempts to document what adversaries use in practice. Each point is one ATT&CK group. Both axes count CISA KEV CVEs the group is mapped to (the underlying mappings-explorer dataset only links CISA KEV CVEs to ATT&CK groups, so everything plotted here is in CISA KEV by construction): the X axis counts the CISA KEVs that are also in FIRE (a recorded loss), and the Y axis counts the CISA KEVs that are not in FIRE. A hole appears in the bottom-right quadrant, meaning few ATT&CK groups predominantly use FIRE-mapped CVEs. This suggests MITRE ATT&CK is not tracking many financial-fraud-focused groups.</p>
     </div>
     <div class="chart-container" style="height: 750px; aspect-ratio: 1; max-width: 750px;" id="fireVsOtherKevContainer">
       <p class="data-unavailable">Data unavailable. Run fire, kev, attack-stix, and mappings-explorer processors.</p>
@@ -387,12 +393,12 @@
     <div class="section-header">
       <div class="section-label-row"><span class="label">13: Ransomware groups vs ATT&CK</span><button class="copy-link-btn" data-anchor="fire-ransomware" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
       <h2>Overlap between ransomware lists and MITRE ATT&CK</h2>
-      <p>The overlap is very low between ransomware group names (PrivTools EU, RansomFeed.it, Zywave claims) and MITRE ATT&CK identified groups. MITRE ATT&CK does not appear to be tracking most financial fraud and ransomware groups in their dataset.</p>
+      <p>The overlap is very low between ransomware group names (PrivTools EU, RansomFeed.it, Zywave-sourced Loss Data) and MITRE ATT&CK identified groups. MITRE ATT&CK does not appear to be tracking most financial fraud and ransomware groups in their dataset.</p>
     </div>
     <div class="toggle-group" id="ransomwareTabs">
       <button class="toggle-btn active" data-tab="privtools">PrivTools EU</button>
       <button class="toggle-btn" data-tab="ransomfeed">RansomFeed.it</button>
-      <button class="toggle-btn" data-tab="zywave">Zywave claims</button>
+      <button class="toggle-btn" data-tab="zywave">Zywave-sourced Loss Data</button>
     </div>
     <div class="tab-panel active" id="tab-privtools">
       <div class="chart-container" style="height: 350px;" id="privtoolsMitreContainer">
@@ -409,6 +415,14 @@
         <p class="data-unavailable">Data unavailable. Place cyber_incident*.csv in data/raw/Zywave/zywave-archive-*/ and run attack-stix.</p>
       </div>
     </div>
+    <div class="section-header" style="margin-top: calc(var(--grid) * 6);">
+      <h3 id="zywave-mitre-apt">Zywave-sourced Losses compared to MITRE ATT&CK</h3>
+      <p>Each bubble is one MITRE ATT&CK group whose name (or an alias) also appears in the Zywave-sourced Loss Data actor list. Axes match the orientation of the scatter above: the X axis counts the CISA KEV CVEs that group is mapped to which are also in FIRE (a recorded loss), and the Y axis counts the CISA KEV CVEs that are <em>not</em> in FIRE (known-exploited, but no recorded loss). Bubble size scales with the total number of CISA KEV CVEs attributed to the group. Groups farther to the right are the ones whose tradecraft most overlaps with vulnerabilities that actually produced losses.</p>
+    </div>
+    <div class="chart-container" style="height: 600px; aspect-ratio: 1; max-width: 800px;" id="zywaveMitreAptContainer">
+      <p class="data-unavailable">Data unavailable. Run attack-stix, mappings-explorer, fire, and zywave processors, then regenerate graphs.</p>
+    </div>
+    <div class="insight-cards" id="zywaveMitreAptStats"></div>
   </div>
 </section>
 
@@ -418,9 +432,9 @@
 <section id="claims" class="fade-in">
   <div class="container">
     <div class="section-header">
-      <div class="section-label-row"><span class="label">14: Cyber claims</span><button class="copy-link-btn" data-anchor="claims" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
-      <h2>Average Claim Sizes</h2>
-      <p>Not all industries suffer the same sized losses according to Zywave. One bubble represents one sector or actor the X axis shows the number of claims where the Y axis shows the total amount of claims (USD), and the bubble size shows the average dollar amount per breach. Hover for details including group name.</p>
+      <div class="section-label-row"><span class="label">14: Zywave-sourced Loss Data</span><button class="copy-link-btn" data-anchor="claims" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
+      <h2>Average Loss Sizes</h2>
+      <p>Not all industries suffer the same sized losses according to Zywave-sourced Loss Data. One bubble represents one sector or actor; the X axis shows the number of loss events, the Y axis shows the total loss amount (USD), and the bubble size shows the average dollar amount per breach. Hover for details including group name.</p>
     </div>
     <div class="toggle-group" id="zywaveNaicsTabs">
       <button class="toggle-btn active" data-tab="zywave-naics-sector">NAICS sector</button>
@@ -543,6 +557,7 @@
       <a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view?gid=0#gid=0" target="_blank">Google Project Zero</a>,
       <a href="https://github.com/rapid7/metasploit-framework" target="_blank">Metasploit</a>,
       <a href="https://github.com/projectdiscovery/nuclei-templates" target="_blank">Nuclei</a>,
+      <a href="https://github.com/greenbone/greenbone-feed-sync" target="_blank">Greenbone OpenVAS</a>,
       <a href="https://gitlab.com/exploit-database/exploitdb/" target="_blank">ExploitDB</a>,
       <a href="https://cwe.mitre.org/" target="_blank">MITRE CWE</a>,
       <a href="https://github.com/OWASP/Top10" target="_blank">OWASP Top 10</a>,
@@ -812,7 +827,7 @@
           } : {}
         },
         scales: {
-          x: { title: { display: true, text: 'Number of claims' }, min: 0, grid: { color: '#F5F5F5' }, border: { display: false } },
+          x: { title: { display: true, text: 'Number of loss events' }, min: 0, grid: { color: '#F5F5F5' }, border: { display: false } },
           y: { title: { display: true, text: 'Total amount (USD)' }, min: 0, grid: { color: '#F5F5F5' }, border: { display: false } }
         }
       }, opts || {})
@@ -1191,6 +1206,7 @@
 
   /* 09: Metasploit-FIRE Overlap (Venn) */
   whenChartInView('fireMetasploitContainer', function() { renderOverlapInto('fireMetasploitContainer', 'fireMetasploitChart', 'fireMetasploitOverlap', 'MSF', 'FIRE', 'Metasploit', 'FIRE', ['#F97316', '#E63946', '#EC4899']); });
+  whenChartInView('fireGreenboneContainer', function() { renderOverlapInto('fireGreenboneContainer', 'fireGreenboneChart', 'fireGreenboneOverlap', 'OpenVAS', 'FIRE', 'OpenVAS', 'FIRE', ['#F97316', '#E63946', '#10B981']); });
 
   /* 09: FIRE-Exploit Refs + ExploitDB (tabs) - pre-render both when section in view */
   whenChartInView('fireExploitRefsContainer', function() {
@@ -1227,12 +1243,12 @@
         createScatterChart('fireVsOtherKevChart', pts.map(function(p) { return { x: p.x, y: p.y, label: p.label, fireCount: p.fireCount || p.x, kevCount: p.kevCount || p.y }; }), {
           pointColors: colors,
           tooltipLabel: function(r) {
-            return [r.label || '', 'CISA KEV: ' + (r.kevCount ?? r.y ?? 0), 'FIRE: ' + (r.fireCount ?? r.x ?? 0)];
+            return [r.label || '', 'FIRE CISA KEVs: ' + (r.fireCount ?? r.x ?? 0), 'Non-FIRE CISA KEVs: ' + (r.kevCount ?? r.y ?? 0)];
           },
           referenceLineMax: maxVal,
           scales: {
-            x: { title: { display: true, text: 'FIRE vulns used' }, min: 0, max: maxVal },
-            y: { title: { display: true, text: 'CISA KEV vulns used' }, min: 0, max: maxVal }
+            x: { title: { display: true, text: 'FIRE CISA KEVs used' }, min: 0, max: maxVal },
+            y: { title: { display: true, text: 'Non-FIRE CISA KEVs used' }, min: 0, max: maxVal }
           }
         });
       }
@@ -1243,9 +1259,60 @@
   /* 22: Ransomware tabs - PrivTools, RansomFeed, Zywave vs ATT&CK */
   whenChartInView('privtoolsMitreContainer', function() { renderOverlapInto('privtoolsMitreContainer', 'privtoolsMitreChart', 'privtoolsMitre', 'PrivTools', 'ATT&CK', 'PrivTools EU', 'ATT&CK', ['#F97316', '#E63946', '#6B7280']); });
   whenChartInView('ransomfeedMitreContainer', function() { renderOverlapInto('ransomfeedMitreContainer', 'ransomfeedMitreChart', 'ransomfeedMitre', 'RansomFeed', 'ATT&CK', 'RansomFeed.it', 'ATT&CK', ['#F97316', '#E63946', '#6B7280']); });
-  whenChartInView('zywaveMitreContainer', function() { renderOverlapInto('zywaveMitreContainer', 'zywaveMitreChart', 'zywaveMitre', 'Zywave', 'ATT&CK', 'Zywave claims', 'ATT&CK', ['#F97316', '#E63946', '#6B7280']); });
+  whenChartInView('zywaveMitreContainer', function() { renderOverlapInto('zywaveMitreContainer', 'zywaveMitreChart', 'zywaveMitre', 'Zywave', 'ATT&CK', 'Zywave-sourced Loss Data', 'ATT&CK', ['#F97316', '#E63946', '#6B7280']); });
 
-  /* 25a: Zywave NAICS bubble - size = avg claim, tooltip: NAICS code, industry, avg $, total $, count */
+  /* Zywave-sourced Losses vs ATT&CK — one bubble per ATT&CK group; x = KEV-only CVEs, y = KEV+FIRE CVEs */
+  whenChartInView('zywaveMitreAptContainer', function() {
+  if (DATA.zywaveMitreApt && DATA.zywaveMitreApt.available && DATA.zywaveMitreApt.points && DATA.zywaveMitreApt.points.length > 0) {
+    try {
+      var zmaContainer = document.getElementById('zywaveMitreAptContainer');
+      if (zmaContainer) {
+        zmaContainer.innerHTML = '<canvas id="zywaveMitreAptChart"></canvas>';
+        /* Compute x/y locally from fireTotal/kevTotal so the chart matches the scatter
+           orientation above (X = FIRE CISA KEVs, Y = Non-FIRE CISA KEVs) regardless of
+           which orientation the underlying JSON was generated with. Radius is sqrt-scaled
+           on total CISA KEV CVEs, clamped 4..11. */
+        var aptData = DATA.zywaveMitreApt.points.map(function(p) {
+          var kt = p.kevTotal || ((p.x || 0) + (p.y || 0)) || 1;
+          var ft = p.fireTotal != null ? p.fireTotal : 0;
+          var r = Math.max(4, Math.min(11, Math.round(Math.sqrt(kt) * 1.1)));
+          return { x: ft, y: kt - ft, r: r, label: p.label, attackId: p.attackId, kevTotal: kt, fireTotal: ft };
+        });
+        /* Round up so the axis fits the data tightly: pick a 1/2/5 "nice" step
+           targeting ~5 ticks, then ceil to a multiple of that step.
+           E.g. max=23→25, max=47→50, max=8→8, max=12→15, max=120→150. */
+        function niceCeil(v) {
+          if (v <= 0) return 1;
+          var raw = v / 5;
+          var exp = Math.pow(10, Math.floor(Math.log10(raw)));
+          var f = raw / exp;
+          var n = f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10;
+          var step = n * exp;
+          return Math.ceil(v / step) * step;
+        }
+        var maxV = Math.max.apply(null, aptData.map(function(p) { return Math.max(p.x || 0, p.y || 0); }).concat([1]));
+        var axisMax = niceCeil(maxV);
+        createBubbleChart('zywaveMitreAptChart', aptData, {
+          tooltipLabel: function(r) {
+            return [
+              (r.label || 'Unknown') + (r.attackId ? ' (' + r.attackId + ')' : ''),
+              'FIRE CISA KEVs: ' + (r.x || 0),
+              'Non-FIRE CISA KEVs: ' + (r.y || 0),
+              'Total CISA KEV CVEs: ' + (r.kevTotal || 0)
+            ];
+          },
+          scales: {
+            x: { title: { display: true, text: 'FIRE CISA KEVs used' }, min: 0, max: axisMax, grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { precision: 0 } },
+            y: { title: { display: true, text: 'Non-FIRE CISA KEVs used' }, min: 0, max: axisMax, grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { precision: 0 } }
+          }
+        });
+        renderInsightCards('zywaveMitreAptStats', DATA.zywaveMitreApt.stats || []);
+      }
+    } catch (e) { console.warn('zywaveMitreAptChart:', e); }
+  }
+  });
+
+  /* 25a: Zywave NAICS bubble - size = avg loss, tooltip: NAICS code, industry, avg $, total $, count */
   whenChartInView('zywaveNaicsContainer', function() {
   if (DATA.zywaveNaics && DATA.zywaveNaics.available && DATA.zywaveNaics.points && DATA.zywaveNaics.points.length > 0) {
     try {
@@ -1263,11 +1330,11 @@
               'NAICS Industry: ' + (r.naicsIndustry || ''),
               'Average $ per breach: ' + formatDollars(r.avgAmount || 0),
               'Total amount for this NAICS: ' + formatDollars(r.totalAmount || 0),
-              'Number of claims that have occurred: ' + (r.events || r.x || 0).toLocaleString()
+              'Number of loss events: ' + (r.events || r.x || 0).toLocaleString()
             ];
           },
           scales: {
-            x: { title: { display: true, text: 'Number of claims' }, min: 0 },
+            x: { title: { display: true, text: 'Number of loss events' }, min: 0 },
             y: {
               title: { display: true, text: 'Total amount (USD)' },
               min: 0,
@@ -1281,7 +1348,7 @@
   }
   });
 
-  /* 15b: Zywave claims by actor - bubble chart, tooltip shows group name */
+  /* 15b: Zywave-sourced Loss Data by actor - bubble chart, tooltip shows group name */
   whenChartInView('zywaveClaimsContainer', function() {
   if (DATA.zywaveClaims && DATA.zywaveClaims.available && DATA.zywaveClaims.points && DATA.zywaveClaims.points.length > 0) {
     try {
@@ -1299,11 +1366,11 @@
               'Actor / Group: ' + (r.label || 'N/A'),
               'Average $ per breach: ' + formatDollars(r.avgAmount || 0),
               'Total amount: ' + formatDollars(r.totalAmount || 0),
-              'Number of claims: ' + (r.events || r.x || 0).toLocaleString()
+              'Number of loss events: ' + (r.events || r.x || 0).toLocaleString()
             ];
           },
           scales: {
-            x: { title: { display: true, text: 'Number of claims' }, min: 0 },
+            x: { title: { display: true, text: 'Number of loss events' }, min: 0 },
             y: {
               title: { display: true, text: 'Total amount (USD)' },
               min: 0,

@@ -529,10 +529,10 @@ window.__FIRE_OVERRIDES = {
   "fireExploitRefsOverlap": {
     "available": true,
     "fireTotal": 556,
-    "otherTotal": 33717,
+    "otherTotal": 33718,
     "both": 79,
     "fireOnly": 477,
-    "otherOnly": 33638,
+    "otherOnly": 33639,
     "stats": [
       {
         "number": "14.2%",
@@ -551,7 +551,35 @@ window.__FIRE_OVERRIDES = {
     "data": [
       477,
       79,
-      33638
+      33639
+    ]
+  },
+  "fireGreenboneOverlap": {
+    "available": true,
+    "fireTotal": 556,
+    "otherTotal": 75540,
+    "both": 173,
+    "fireOnly": 383,
+    "otherOnly": 75367,
+    "stats": [
+      {
+        "number": "31.1%",
+        "desc": "of FIRE vulns have an OpenVAS NASL"
+      },
+      {
+        "number": "0.2%",
+        "desc": "of OpenVAS NASL CVEs are in FIRE"
+      }
+    ],
+    "labels": [
+      "FIRE only",
+      "Both",
+      "OpenVAS only"
+    ],
+    "data": [
+      383,
+      173,
+      75367
     ]
   },
   "fireEnisaOverlap": {
@@ -2809,12 +2837,12 @@ window.__FIRE_OVERRIDES = {
     "available": true,
     "node": {
       "label": [
-        "Critical (41,514, 11.7%)",
-        "High (119,552, 33.7%)",
-        "Medium (156,025, 44.0%)",
-        "Low (14,530, 4.1%)",
-        "No-score (22,838, 6.4%)",
-        "No breach/loss (349,440, 98.6%)",
+        "Critical (41,544, 11.7%)",
+        "High (119,687, 33.7%)",
+        "Medium (156,196, 44.0%)",
+        "Low (14,567, 4.1%)",
+        "No-score (22,828, 6.4%)",
+        "No breach/loss (349,803, 98.6%)",
         "ICE (4,463, 1.3%)",
         "FIRE (556, 0.2%)"
       ],
@@ -2865,11 +2893,11 @@ window.__FIRE_OVERRIDES = {
         7
       ],
       "value": [
-        39683,
-        117449,
-        155095,
-        14497,
-        22716,
+        39713,
+        117584,
+        155266,
+        14534,
+        22706,
         1562,
         1896,
         862,
@@ -4571,14 +4599,14 @@ window.__FIRE_OVERRIDES = {
   },
   "privtoolsMitre": {
     "available": true,
-    "fireTotal": 220,
+    "fireTotal": 221,
     "otherTotal": 602,
     "both": 4,
-    "fireOnly": 216,
+    "fireOnly": 217,
     "otherOnly": 598,
     "stats": [
       {
-        "number": "220",
+        "number": "221",
         "desc": "PrivTools EU groups"
       },
       {
@@ -4596,21 +4624,21 @@ window.__FIRE_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      216,
+      217,
       4,
       598
     ]
   },
   "ransomfeedMitre": {
     "available": true,
-    "fireTotal": 262,
+    "fireTotal": 263,
     "otherTotal": 602,
     "both": 6,
-    "fireOnly": 256,
+    "fireOnly": 257,
     "otherOnly": 596,
     "stats": [
       {
-        "number": "262",
+        "number": "263",
         "desc": "RansomFeed.it gangs"
       },
       {
@@ -4628,7 +4656,7 @@ window.__FIRE_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      256,
+      257,
       6,
       596
     ]
@@ -7897,6 +7925,547 @@ window.__FIRE_OVERRIDES = {
       523
     ]
   },
+  "zywaveMitreApt": {
+    "available": true,
+    "points": [
+      {
+        "x": 145,
+        "y": 230,
+        "r": 11,
+        "label": "APT28",
+        "attackId": "G0007",
+        "kevTotal": 375,
+        "fireTotal": 145
+      },
+      {
+        "x": 148,
+        "y": 227,
+        "r": 11,
+        "label": "Dragonfly",
+        "attackId": "G0035",
+        "kevTotal": 375,
+        "fireTotal": 148
+      },
+      {
+        "x": 144,
+        "y": 221,
+        "r": 11,
+        "label": "APT29",
+        "attackId": "G0016",
+        "kevTotal": 365,
+        "fireTotal": 144
+      },
+      {
+        "x": 144,
+        "y": 221,
+        "r": 11,
+        "label": "Threat Group-3390",
+        "attackId": "G0027",
+        "kevTotal": 365,
+        "fireTotal": 144
+      },
+      {
+        "x": 143,
+        "y": 215,
+        "r": 11,
+        "label": "FIN7",
+        "attackId": "G0046",
+        "kevTotal": 358,
+        "fireTotal": 143
+      },
+      {
+        "x": 137,
+        "y": 217,
+        "r": 11,
+        "label": "OilRig",
+        "attackId": "G0049",
+        "kevTotal": 354,
+        "fireTotal": 137
+      },
+      {
+        "x": 126,
+        "y": 220,
+        "r": 11,
+        "label": "APT32",
+        "attackId": "G0050",
+        "kevTotal": 346,
+        "fireTotal": 126
+      },
+      {
+        "x": 139,
+        "y": 206,
+        "r": 11,
+        "label": "Sandworm Team",
+        "attackId": "G0034",
+        "kevTotal": 345,
+        "fireTotal": 139
+      },
+      {
+        "x": 129,
+        "y": 196,
+        "r": 11,
+        "label": "Leviathan",
+        "attackId": "G0065",
+        "kevTotal": 325,
+        "fireTotal": 129
+      },
+      {
+        "x": 140,
+        "y": 183,
+        "r": 11,
+        "label": "Fox Kitten",
+        "attackId": "G0117",
+        "kevTotal": 323,
+        "fireTotal": 140
+      },
+      {
+        "x": 134,
+        "y": 181,
+        "r": 11,
+        "label": "APT41",
+        "attackId": "G0096",
+        "kevTotal": 315,
+        "fireTotal": 134
+      },
+      {
+        "x": 129,
+        "y": 184,
+        "r": 11,
+        "label": "Kimsuky",
+        "attackId": "G0094",
+        "kevTotal": 313,
+        "fireTotal": 129
+      },
+      {
+        "x": 120,
+        "y": 186,
+        "r": 11,
+        "label": "Mustang Panda",
+        "attackId": "G0129",
+        "kevTotal": 306,
+        "fireTotal": 120
+      },
+      {
+        "x": 133,
+        "y": 172,
+        "r": 11,
+        "label": "Volt Typhoon",
+        "attackId": "G1017",
+        "kevTotal": 305,
+        "fireTotal": 133
+      },
+      {
+        "x": 111,
+        "y": 192,
+        "r": 11,
+        "label": "APT37",
+        "attackId": "G0067",
+        "kevTotal": 303,
+        "fireTotal": 111
+      },
+      {
+        "x": 128,
+        "y": 169,
+        "r": 11,
+        "label": "BlackByte",
+        "attackId": "G1043",
+        "kevTotal": 297,
+        "fireTotal": 128
+      },
+      {
+        "x": 129,
+        "y": 166,
+        "r": 11,
+        "label": "VOID MANTICORE",
+        "attackId": "G1055",
+        "kevTotal": 295,
+        "fireTotal": 129
+      },
+      {
+        "x": 123,
+        "y": 166,
+        "r": 11,
+        "label": "UNC3886",
+        "attackId": "G1048",
+        "kevTotal": 289,
+        "fireTotal": 123
+      },
+      {
+        "x": 116,
+        "y": 168,
+        "r": 11,
+        "label": "MuddyWater",
+        "attackId": "G0069",
+        "kevTotal": 284,
+        "fireTotal": 116
+      },
+      {
+        "x": 126,
+        "y": 157,
+        "r": 11,
+        "label": "menuPass",
+        "attackId": "G0045",
+        "kevTotal": 283,
+        "fireTotal": 126
+      },
+      {
+        "x": 115,
+        "y": 167,
+        "r": 11,
+        "label": "Axiom",
+        "attackId": "G0001",
+        "kevTotal": 282,
+        "fireTotal": 115
+      },
+      {
+        "x": 122,
+        "y": 160,
+        "r": 11,
+        "label": "Magic Hound",
+        "attackId": "G0059",
+        "kevTotal": 282,
+        "fireTotal": 122
+      },
+      {
+        "x": 122,
+        "y": 157,
+        "r": 11,
+        "label": "HAFNIUM",
+        "attackId": "G0125",
+        "kevTotal": 279,
+        "fireTotal": 122
+      },
+      {
+        "x": 105,
+        "y": 150,
+        "r": 11,
+        "label": "BlackTech",
+        "attackId": "G0098",
+        "kevTotal": 255,
+        "fireTotal": 105
+      },
+      {
+        "x": 114,
+        "y": 127,
+        "r": 11,
+        "label": "Play",
+        "attackId": "G1040",
+        "kevTotal": 241,
+        "fireTotal": 114
+      },
+      {
+        "x": 87,
+        "y": 151,
+        "r": 11,
+        "label": "Lazarus Group",
+        "attackId": "G0032",
+        "kevTotal": 238,
+        "fireTotal": 87
+      },
+      {
+        "x": 85,
+        "y": 148,
+        "r": 11,
+        "label": "APT19",
+        "attackId": "G0073",
+        "kevTotal": 233,
+        "fireTotal": 85
+      },
+      {
+        "x": 111,
+        "y": 119,
+        "r": 11,
+        "label": "INC Ransom",
+        "attackId": "G1032",
+        "kevTotal": 230,
+        "fireTotal": 111
+      },
+      {
+        "x": 92,
+        "y": 135,
+        "r": 11,
+        "label": "Wizard Spider",
+        "attackId": "G0102",
+        "kevTotal": 227,
+        "fireTotal": 92
+      },
+      {
+        "x": 74,
+        "y": 152,
+        "r": 11,
+        "label": "Turla",
+        "attackId": "G0010",
+        "kevTotal": 226,
+        "fireTotal": 74
+      },
+      {
+        "x": 69,
+        "y": 148,
+        "r": 11,
+        "label": "APT33",
+        "attackId": "G0064",
+        "kevTotal": 217,
+        "fireTotal": 69
+      },
+      {
+        "x": 107,
+        "y": 99,
+        "r": 11,
+        "label": "Agrius",
+        "attackId": "G1030",
+        "kevTotal": 206,
+        "fireTotal": 107
+      },
+      {
+        "x": 84,
+        "y": 119,
+        "r": 11,
+        "label": "APT38",
+        "attackId": "G0082",
+        "kevTotal": 203,
+        "fireTotal": 84
+      },
+      {
+        "x": 82,
+        "y": 116,
+        "r": 11,
+        "label": "Scattered Spider",
+        "attackId": "G1015",
+        "kevTotal": 198,
+        "fireTotal": 82
+      },
+      {
+        "x": 99,
+        "y": 95,
+        "r": 11,
+        "label": "BackdoorDiplomacy",
+        "attackId": "G0135",
+        "kevTotal": 194,
+        "fireTotal": 99
+      },
+      {
+        "x": 101,
+        "y": 85,
+        "r": 11,
+        "label": "GOLD SOUTHFIELD",
+        "attackId": "G0115",
+        "kevTotal": 186,
+        "fireTotal": 101
+      },
+      {
+        "x": 64,
+        "y": 121,
+        "r": 11,
+        "label": "Patchwork",
+        "attackId": "G0040",
+        "kevTotal": 185,
+        "fireTotal": 64
+      },
+      {
+        "x": 51,
+        "y": 122,
+        "r": 11,
+        "label": "BITTER",
+        "attackId": "G1002",
+        "kevTotal": 173,
+        "fireTotal": 51
+      },
+      {
+        "x": 64,
+        "y": 98,
+        "r": 11,
+        "label": "APT3",
+        "attackId": "G0022",
+        "kevTotal": 162,
+        "fireTotal": 64
+      },
+      {
+        "x": 88,
+        "y": 74,
+        "r": 11,
+        "label": "Salt Typhoon",
+        "attackId": "G1045",
+        "kevTotal": 162,
+        "fireTotal": 88
+      },
+      {
+        "x": 61,
+        "y": 99,
+        "r": 11,
+        "label": "Tropic Trooper",
+        "attackId": "G0081",
+        "kevTotal": 160,
+        "fireTotal": 61
+      },
+      {
+        "x": 58,
+        "y": 101,
+        "r": 11,
+        "label": "Silence",
+        "attackId": "G0091",
+        "kevTotal": 159,
+        "fireTotal": 58
+      },
+      {
+        "x": 47,
+        "y": 104,
+        "r": 11,
+        "label": "Andariel",
+        "attackId": "G0138",
+        "kevTotal": 151,
+        "fireTotal": 47
+      },
+      {
+        "x": 61,
+        "y": 83,
+        "r": 11,
+        "label": "Indrik Spider",
+        "attackId": "G0119",
+        "kevTotal": 144,
+        "fireTotal": 61
+      },
+      {
+        "x": 46,
+        "y": 92,
+        "r": 11,
+        "label": "ZIRCONIUM",
+        "attackId": "G0128",
+        "kevTotal": 138,
+        "fireTotal": 46
+      },
+      {
+        "x": 38,
+        "y": 98,
+        "r": 11,
+        "label": "Darkhotel",
+        "attackId": "G0012",
+        "kevTotal": 136,
+        "fireTotal": 38
+      },
+      {
+        "x": 36,
+        "y": 97,
+        "r": 11,
+        "label": "Sidewinder",
+        "attackId": "G0121",
+        "kevTotal": 133,
+        "fireTotal": 36
+      },
+      {
+        "x": 49,
+        "y": 79,
+        "r": 11,
+        "label": "TA505",
+        "attackId": "G0092",
+        "kevTotal": 128,
+        "fireTotal": 49
+      },
+      {
+        "x": 37,
+        "y": 72,
+        "r": 11,
+        "label": "Star Blizzard",
+        "attackId": "G1033",
+        "kevTotal": 109,
+        "fireTotal": 37
+      },
+      {
+        "x": 47,
+        "y": 44,
+        "r": 10,
+        "label": "Akira",
+        "attackId": "G1024",
+        "kevTotal": 91,
+        "fireTotal": 47
+      },
+      {
+        "x": 20,
+        "y": 61,
+        "r": 10,
+        "label": "Machete",
+        "attackId": "G0095",
+        "kevTotal": 81,
+        "fireTotal": 20
+      },
+      {
+        "x": 38,
+        "y": 41,
+        "r": 10,
+        "label": "APT1",
+        "attackId": "G0006",
+        "kevTotal": 79,
+        "fireTotal": 38
+      },
+      {
+        "x": 20,
+        "y": 43,
+        "r": 9,
+        "label": "Ajax Security Team",
+        "attackId": "G0130",
+        "kevTotal": 63,
+        "fireTotal": 20
+      },
+      {
+        "x": 20,
+        "y": 43,
+        "r": 9,
+        "label": "IndigoZebra",
+        "attackId": "G0136",
+        "kevTotal": 63,
+        "fireTotal": 20
+      },
+      {
+        "x": 20,
+        "y": 29,
+        "r": 8,
+        "label": "Silent Librarian",
+        "attackId": "G0122",
+        "kevTotal": 49,
+        "fireTotal": 20
+      },
+      {
+        "x": 16,
+        "y": 24,
+        "r": 7,
+        "label": "Winnti Group",
+        "attackId": "G0044",
+        "kevTotal": 40,
+        "fireTotal": 16
+      },
+      {
+        "x": 9,
+        "y": 23,
+        "r": 6,
+        "label": "TA577",
+        "attackId": "G1037",
+        "kevTotal": 32,
+        "fireTotal": 9
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "r": 4,
+        "label": "Putter Panda",
+        "attackId": "G0024",
+        "kevTotal": 2,
+        "fireTotal": 1
+      }
+    ],
+    "stats": [
+      {
+        "number": "63",
+        "desc": "ATT&CK groups also in Zywave-sourced Loss Data"
+      },
+      {
+        "number": "416",
+        "desc": "Unique CISA KEV CVEs they use"
+      },
+      {
+        "number": "259",
+        "desc": "Of those, not in FIRE (no recorded loss)"
+      }
+    ]
+  },
   "fireCvssAttributes": {
     "available": true,
     "categories": [
@@ -8043,8 +8612,8 @@ window.__FIRE_OVERRIDES = {
         "Other vectors"
       ],
       "data": [
-        18285,
-        240966
+        18301,
+        241323
       ],
       "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }

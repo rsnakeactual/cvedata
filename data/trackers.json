@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 41514,
+      "value": 41544,
       "color": "#E63946"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 41514,
+  "maxValue": 41544,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,10 +45,10 @@
         "Ibm"
       ],
       "data": [
-        3104,
+        3112,
         1897,
         1786,
-        992,
+        997,
         915,
         782,
         716,

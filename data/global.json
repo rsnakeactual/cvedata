@@ -1,6 +1,6 @@
 {
   "available": true,
-  "cvelistTotal": 354803,
+  "cvelistTotal": 354845,
   "bars": [
     {
       "name": "EUVD (EU)",
@@ -26,7 +26,7 @@
   ],
   "stats": [
     {
-      "number": "354,803",
+      "number": "354,845",
       "desc": "CVEs in cvelistV5 (baseline)"
     },
     {
