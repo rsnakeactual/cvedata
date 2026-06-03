@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 556,
-  "kevTotal": 1608,
+  "kevTotal": 1610,
   "both": 391,
   "fireOnly": 165,
-  "kevOnly": 1217,
+  "kevOnly": 1219,
   "stats": [
     {
       "number": "556",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and CISA KEV"
     },
     {
-      "number": "1,608",
+      "number": "1,610",
       "desc": "CISA KEV catalog"
     }
   ]
