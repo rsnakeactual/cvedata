@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 556,
-  "otherTotal": 75552,
+  "otherTotal": 75553,
   "both": 173,
   "fireOnly": 383,
-  "otherOnly": 75379,
+  "otherOnly": 75380,
   "stats": [
     {
       "number": "31.1%",
@@ -23,6 +23,6 @@
   "data": [
     383,
     173,
-    75379
+    75380
   ]
 }

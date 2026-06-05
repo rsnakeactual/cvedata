@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 556,
-  "otherTotal": 4936,
+  "otherTotal": 4937,
   "both": 469,
   "fireOnly": 87,
-  "otherOnly": 4467,
+  "otherOnly": 4468,
   "stats": [
     {
       "number": "556",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and ICE (combined)"
     },
     {
-      "number": "4,936",
+      "number": "4,937",
       "desc": "ICE (combined) catalog"
     }
   ],
@@ -27,6 +27,6 @@
   "data": [
     87,
     469,
-    4467
+    4468
   ]
 }
