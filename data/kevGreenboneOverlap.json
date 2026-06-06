@@ -1,9 +1,9 @@
 {
   "available": true,
-  "kevTotal": 4937,
+  "kevTotal": 4942,
   "otherTotal": 75553,
   "both": 1836,
-  "kevOnly": 3101,
+  "kevOnly": 3106,
   "otherOnly": 73717,
   "stats": [
     {
@@ -23,7 +23,7 @@
     "OpenVAS only"
   ],
   "data": [
-    3101,
+    3106,
     1836,
     73717
   ]
