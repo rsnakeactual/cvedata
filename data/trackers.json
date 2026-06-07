@@ -3,12 +3,12 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 41599,
+      "value": 41658,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 1357,
+      "value": 1358,
       "color": "#F97316"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 41599,
+  "maxValue": 41658,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -41,14 +41,14 @@
         "Tenda",
         "Cisco",
         "Hp",
-        "Qualcomm",
-        "Ibm"
+        "Ibm",
+        "Qualcomm"
       ],
       "data": [
-        3117,
-        1897,
+        3142,
+        1899,
         1786,
-        999,
+        1022,
         915,
         782,
         722,
@@ -56,7 +56,7 @@
         563,
         541,
         530,
-        529
+        530
       ]
     },
     "EPSS Critical (≥0.9)": {
