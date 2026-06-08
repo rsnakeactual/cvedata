@@ -1,13 +1,13 @@
 {
   "available": true,
-  "fireTotal": 556,
+  "fireTotal": 560,
   "otherTotal": 25,
   "both": 19,
-  "fireOnly": 537,
+  "fireOnly": 541,
   "otherOnly": 6,
   "stats": [
     {
-      "number": "556",
+      "number": "560",
       "desc": "FIRE vulnerabilities"
     },
     {
@@ -25,7 +25,7 @@
     "Mandiant only"
   ],
   "data": [
-    537,
+    541,
     19,
     6
   ]

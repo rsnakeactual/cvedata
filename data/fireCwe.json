@@ -7,8 +7,8 @@
     "CWE-787",
     "CWE-94",
     "CWE-20",
-    "CWE-416",
     "CWE-306",
+    "CWE-416",
     "CWE-287",
     "CWE-89",
     "CWE-918",
@@ -90,7 +90,8 @@
     "CWE-1393",
     "CWE-93",
     "CWE-501",
-    "CWE-35"
+    "CWE-35",
+    "CWE-494"
   ],
   "data": [
     40,
@@ -100,7 +101,7 @@
     24,
     21,
     17,
-    15,
+    17,
     15,
     13,
     12,
@@ -182,6 +183,7 @@
     1,
     1,
     1,
+    1,
     1
   ],
   "fullNames": [
@@ -191,8 +193,8 @@
     "CWE-787: Out-of-bounds Write",
     "CWE-94: Improper Control of Generation of Code ('Code Injection')",
     "CWE-20: Improper Input Validation",
-    "CWE-416: Use After Free",
     "CWE-306: Missing Authentication for Critical Function",
+    "CWE-416: Use After Free",
     "CWE-287: Improper Authentication",
     "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
     "CWE-918: Server-Side Request Forgery (SSRF)",
@@ -274,6 +276,7 @@
     "CWE-1393: Use of Default Password",
     "CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')",
     "CWE-501: Trust Boundary Violation",
-    "CWE-35: Path Traversal: '.../...//'"
+    "CWE-35: Path Traversal: '.../...//'",
+    "CWE-494: Download of Code Without Integrity Check"
   ]
 }

@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 41659,
+      "value": 41662,
       "color": "#E63946"
     },
     {
@@ -13,12 +13,12 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 4939,
+      "value": 4941,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1612,
+      "value": 1613,
       "color": "#DC2626"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 41659,
+  "maxValue": 41662,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,7 +45,7 @@
         "Qualcomm"
       ],
       "data": [
-        3143,
+        3146,
         1899,
         1786,
         1022,
@@ -77,9 +77,9 @@
       "data": [
         115,
         108,
-        55,
+        56,
         49,
-        31,
+        30,
         30,
         28,
         26,
