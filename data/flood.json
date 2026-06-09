@@ -58,7 +58,7 @@
     248728,
     287850,
     332412,
-    356213
+    356387
   ],
   "peakYear": "2025",
   "peakCount": 44562,
@@ -72,7 +72,7 @@
       "desc": "Increase of new CVEs reported from 2024 to 2025. The number of new CVEs published each year is accelerating."
     },
     {
-      "number": "356,213",
+      "number": "356,387",
       "desc": "Total CVEs since 1999. The first 100,000 took 18 years. The last 100,000 took just 3."
     }
   ]
