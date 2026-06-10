@@ -3,12 +3,12 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 41691,
+      "value": 41722,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 1360,
+      "value": 1359,
       "color": "#F97316"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 41691,
+  "maxValue": 41722,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,10 +45,10 @@
         "Qualcomm"
       ],
       "data": [
-        3142,
+        3156,
         1899,
         1786,
-        1042,
+        1052,
         915,
         782,
         722,
@@ -65,8 +65,8 @@
         "Apache",
         "Oracle",
         "Adobe",
-        "Vmware",
         "Dlink",
+        "Vmware",
         "Unknown",
         "Ivanti",
         "Cisco",
@@ -80,7 +80,7 @@
         55,
         49,
         30,
-        30,
+        29,
         28,
         26,
         25,

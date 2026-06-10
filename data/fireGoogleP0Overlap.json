@@ -1,13 +1,13 @@
 {
   "available": true,
-  "fireTotal": 560,
+  "fireTotal": 606,
   "p0Total": 404,
   "both": 54,
-  "fireOnly": 506,
+  "fireOnly": 552,
   "p0Only": 350,
   "stats": [
     {
-      "number": "560",
+      "number": "606",
       "desc": "FIRE vulnerabilities"
     },
     {
