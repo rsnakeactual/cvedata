@@ -41,30 +41,30 @@
     22948,
     29528,
     36707,
-    41760,
-    47009,
-    51907,
-    57846,
-    64676,
-    73678,
-    82457,
-    93068,
-    110129,
-    127944,
-    145544,
-    166593,
-    190021,
-    217531,
-    248728,
-    287850,
-    332412,
-    356387
+    41761,
+    47010,
+    51908,
+    57847,
+    64677,
+    73679,
+    82458,
+    93073,
+    110143,
+    127958,
+    145558,
+    166607,
+    190035,
+    217545,
+    248745,
+    287867,
+    332451,
+    357063
   ],
   "peakYear": "2025",
-  "peakCount": 44562,
+  "peakCount": 44584,
   "insights": [
     {
-      "number": "44,562",
+      "number": "44,584",
       "desc": "CVEs published in 2025 — the highest single-year total ever recorded"
     },
     {
@@ -72,7 +72,7 @@
       "desc": "Increase of new CVEs reported from 2024 to 2025. The number of new CVEs published each year is accelerating."
     },
     {
-      "number": "356,387",
+      "number": "357,063",
       "desc": "Total CVEs since 1999. The first 100,000 took 18 years. The last 100,000 took just 3."
     }
   ]
