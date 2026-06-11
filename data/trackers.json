@@ -13,7 +13,7 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 4948,
+      "value": 4950,
       "color": "#EAB308"
     },
     {
@@ -116,7 +116,7 @@
         53,
         52,
         51,
-        45
+        46
       ]
     },
     "CISA KEV": {
