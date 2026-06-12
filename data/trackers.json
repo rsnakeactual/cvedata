@@ -3,22 +3,22 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 41722,
+      "value": 28623,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 1359,
+      "value": 1361,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 4950,
+      "value": 4952,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1617,
+      "value": 1618,
       "color": "#DC2626"
     },
     {
@@ -27,66 +27,66 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 41722,
+  "maxValue": 28623,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
-        "Unknown",
         "Microsoft",
         "Adobe",
         "Google",
         "Apple",
-        "Mozilla",
         "Oracle",
-        "Tenda",
-        "Cisco",
+        "Mozilla",
         "Hp",
+        "Cisco",
+        "Qualcomm",
         "Ibm",
-        "Qualcomm"
+        "Apache",
+        "Unknown"
       ],
       "data": [
-        3156,
-        1899,
-        1786,
-        1052,
-        915,
-        782,
-        722,
-        568,
-        563,
-        541,
-        530,
-        530
+        1732,
+        1731,
+        843,
+        778,
+        673,
+        611,
+        524,
+        499,
+        496,
+        470,
+        335,
+        308
       ]
     },
     "EPSS Critical (≥0.9)": {
       "labels": [
+        "Unknown",
         "Microsoft",
         "Apache",
         "Oracle",
         "Adobe",
         "Dlink",
-        "Vmware",
-        "Unknown",
-        "Ivanti",
         "Cisco",
+        "Vmware",
         "Atlassian",
-        "Zohocorp",
-        "Citrix"
+        "Citrix",
+        "Ivanti",
+        "Jenkins"
       ],
       "data": [
-        115,
-        108,
-        55,
-        49,
-        30,
-        29,
-        28,
-        26,
+        329,
+        103,
+        91,
+        50,
+        46,
         25,
-        21,
-        15,
-        14
+        24,
+        22,
+        16,
+        14,
+        13,
+        12
       ]
     },
     "VulnCheck KEV": {
@@ -111,7 +111,7 @@
         128,
         123,
         90,
-        82,
+        83,
         69,
         53,
         52,
@@ -142,7 +142,7 @@
         72,
         43,
         39,
-        34,
+        35,
         26,
         26,
         26,
@@ -196,7 +196,7 @@
     72,
     43,
     39,
-    34,
+    35,
     26,
     26,
     26,
