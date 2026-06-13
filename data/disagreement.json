@@ -12,15 +12,15 @@
     "4.0+"
   ],
   "data": [
-    89,
-    3.3,
-    3.6,
-    1.4,
-    1.2,
-    0.6,
+    83.1,
+    5.4,
+    5.7,
+    2.1,
+    1.7,
+    0.8,
+    0.4,
     0.3,
-    0.2,
-    0.4
+    0.5
   ],
   "colors": [
     "#22C55E",
@@ -35,19 +35,19 @@
   ],
   "stats": [
     {
-      "number": "87%",
+      "number": "81%",
       "desc": "Exact agreement (delta &lt; 0.05) when both NVD and CNA score the same CVE"
     },
     {
-      "number": "13%",
+      "number": "19%",
       "desc": "Disagreement where scores differ by 0.05 or more"
     },
     {
-      "number": "50,462",
+      "number": "26,529",
       "desc": "CVEs jointly scored by NVD and CNA/ADP"
     },
     {
-      "number": "0.17",
+      "number": "0.25",
       "desc": "Average absolute score difference"
     }
   ]

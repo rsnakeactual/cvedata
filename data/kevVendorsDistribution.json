@@ -22,9 +22,9 @@
     40,
     33,
     31,
-    4429
+    4434
   ],
-  "kevTotal": 4955,
+  "kevTotal": 4960,
   "naCount": 2340,
   "stats": [
     {
@@ -32,7 +32,7 @@
       "desc": "Largest vendor bucket: Microsoft"
     },
     {
-      "number": "4,429",
+      "number": "4,434",
       "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
     },
     {
