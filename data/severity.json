@@ -3,49 +3,49 @@
   "bar": [
     {
       "level": "critical",
-      "flex": 14,
-      "tooltipText": "Critical: 14%"
+      "flex": 15,
+      "tooltipText": "Critical: 15%"
     },
     {
       "level": "high",
-      "flex": 36,
-      "tooltipText": "High: 36%"
+      "flex": 33,
+      "tooltipText": "High: 33%"
     },
     {
       "level": "medium",
-      "flex": 45,
-      "tooltipText": "Medium: 45%"
+      "flex": 47,
+      "tooltipText": "Medium: 47%"
     },
     {
       "level": "low",
-      "flex": 4,
-      "tooltipText": "Low: 4%"
+      "flex": 5,
+      "tooltipText": "Low: 5%"
     }
   ],
   "cards": [
     {
       "level": "critical",
       "name": "Critical",
-      "count": "25,159",
-      "pct": "14% of scored CVEs"
+      "count": "17,673",
+      "pct": "15% of scored CVEs"
     },
     {
       "level": "high",
       "name": "High",
-      "count": "64,049",
-      "pct": "36% of scored CVEs"
+      "count": "39,932",
+      "pct": "33% of scored CVEs"
     },
     {
       "level": "medium",
       "name": "Medium",
-      "count": "80,259",
-      "pct": "45% of scored CVEs"
+      "count": "57,103",
+      "pct": "47% of scored CVEs"
     },
     {
       "level": "low",
       "name": "Low",
-      "count": "7,911",
-      "pct": "4% of scored CVEs"
+      "count": "6,337",
+      "pct": "5% of scored CVEs"
     }
   ],
   "chartLabels": [
@@ -70,7 +70,6 @@
     "2017",
     "2018",
     "2019",
-    "2020",
     "2021",
     "2022",
     "2023",
@@ -97,16 +96,15 @@
     1010,
     1532,
     1376,
-    2109,
+    0,
     2228,
     2411,
-    2720,
-    2690,
     0,
     0,
+    3,
     0,
-    0,
-    37
+    1,
+    66
   ],
   "high": [
     580,
@@ -127,16 +125,15 @@
     1521,
     1953,
     4065,
-    6658,
+    0,
     7231,
     6785,
-    8109,
-    9484,
+    0,
     1,
     1,
     0,
-    9,
-    245
+    21,
+    367
   ],
   "medium": [
     563,
@@ -157,16 +154,15 @@
     5270,
     4014,
     3593,
-    5638,
+    1,
     6488,
     6546,
-    8009,
-    9632,
+    2,
     4,
+    6,
     3,
-    3,
-    13,
-    172
+    23,
+    279
   ],
   "low": [
     162,
@@ -187,15 +183,14 @@
     614,
     610,
     295,
-    315,
+    0,
     232,
     328,
-    518,
-    752,
+    1,
     1,
     0,
     1,
     1,
-    21
+    31
   ]
 }

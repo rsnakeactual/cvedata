@@ -1,13 +1,13 @@
 {
   "available": true,
-  "fireTotal": 221,
+  "fireTotal": 222,
   "otherTotal": 602,
   "both": 4,
-  "fireOnly": 217,
+  "fireOnly": 218,
   "otherOnly": 598,
   "stats": [
     {
-      "number": "221",
+      "number": "222",
       "desc": "PrivTools EU groups"
     },
     {
@@ -25,7 +25,7 @@
     "ATT&CK only"
   ],
   "data": [
-    217,
+    218,
     4,
     598
   ]
