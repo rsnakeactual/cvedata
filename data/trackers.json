@@ -3,17 +3,17 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 17677,
+      "value": 41806,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 1363,
+      "value": 758,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 4957,
+      "value": 4962,
       "color": "#EAB308"
     },
     {
@@ -27,66 +27,66 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 17677,
+  "maxValue": 41806,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
+        "Unknown",
         "Microsoft",
         "Adobe",
-        "Apple",
-        "Oracle",
-        "Mozilla",
         "Google",
+        "Apple",
+        "Mozilla",
+        "Oracle",
+        "Tenda",
+        "Cisco",
         "Hp",
         "Ibm",
-        "Cisco",
-        "Qualcomm",
-        "Unknown",
-        "Sun"
+        "Qualcomm"
       ],
       "data": [
-        1625,
-        1612,
-        686,
-        553,
-        548,
-        544,
-        397,
-        382,
-        367,
-        332,
-        192,
-        187
+        3205,
+        1905,
+        1789,
+        1054,
+        915,
+        782,
+        723,
+        568,
+        563,
+        541,
+        530,
+        530
       ]
     },
     "EPSS Critical (≥0.9)": {
       "labels": [
-        "Unknown",
         "Microsoft",
-        "Adobe",
         "Apache",
         "Oracle",
-        "Dlink",
+        "Adobe",
+        "Ivanti",
+        "Zohocorp",
         "Cisco",
-        "Jenkins",
         "Atlassian",
-        "Citrix",
-        "Redhat",
-        "Openssl"
+        "Dlink",
+        "Vmware",
+        "Aladdin",
+        "Fortinet"
       ],
       "data": [
-        928,
-        52,
-        39,
-        37,
-        32,
+        79,
+        78,
+        38,
+        31,
+        28,
+        20,
         15,
+        15,
+        14,
+        14,
         11,
-        10,
-        7,
-        7,
-        6,
-        6
+        9
       ]
     },
     "VulnCheck KEV": {

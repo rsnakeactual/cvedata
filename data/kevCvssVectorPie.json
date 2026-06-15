@@ -6,20 +6,20 @@
       "Other vectors"
     ],
     "data": [
-      192,
-      744
+      1157,
+      3177
     ],
     "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
   },
   "allCves": {
     "labels": [
-      "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
       "Other vectors"
     ],
     "data": [
-      4032,
-      44650
+      18414,
+      244090
     ],
-    "topVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
   }
 }

@@ -7,10 +7,10 @@
     "50-100%"
   ],
   "data": [
-    84.1,
-    9.1,
-    4.7,
-    2.1
+    78.1,
+    16.9,
+    3.8,
+    1.2
   ],
   "colors": [
     "#D4D4D4",
@@ -20,11 +20,11 @@
   ],
   "insights": [
     {
-      "number": "77%",
+      "number": "58%",
       "desc": "Of all vulnerabilities have less than a 1% chance of being exploited in the next month."
     },
     {
-      "number": "2%",
+      "number": "1%",
       "desc": "Of vulnerabilities have a 50%+ EPSS. EPSS helps focus on the small percentage that actually matter."
     }
   ]

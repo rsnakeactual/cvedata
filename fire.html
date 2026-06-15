@@ -192,6 +192,7 @@
       <button class="toggle-btn" data-tab="euvd">EUVD</button>
       <button class="toggle-btn" data-tab="cnvd">CNVD</button>
       <button class="toggle-btn" data-tab="jvn">JVN iPedia</button>
+      <button class="toggle-btn" data-tab="bdu">BDU (Russia)</button>
     </div>
     <div class="tab-panel active" id="tab-nvd">
       <div class="chart-container" style="height: 350px;" id="fireSeverityNvdContainer">
@@ -211,6 +212,11 @@
     <div class="tab-panel" id="tab-jvn">
       <div class="chart-container" style="height: 350px;" id="fireSeverityJvnContainer">
         <p class="data-unavailable">Data unavailable. Run fire, nvd, and jvndb processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-bdu">
+      <div class="chart-container" style="height: 350px;" id="fireSeverityBduContainer">
+        <p class="data-unavailable">Data unavailable. Run fire, nvd, and bdu processors.</p>
       </div>
     </div>
   </div>
@@ -1092,11 +1098,15 @@
       container.innerHTML = '<canvas id="' + containerId + 'Chart"></canvas>';
       createBarChart(containerId + 'Chart', sevLabels, [{ label: 'FIRE CVEs', data: sourceData.data, backgroundColor: colors }]);
     }
-    ['fireSeverityNvdContainer', 'fireSeverityEuvdContainer', 'fireSeverityCnvdContainer', 'fireSeverityJvnContainer'].forEach(function(cid) {
+    ['fireSeverityNvdContainer', 'fireSeverityEuvdContainer', 'fireSeverityCnvdContainer', 'fireSeverityJvnContainer', 'fireSeverityBduContainer'].forEach(function(cid) {
       whenChartInView(cid, function() {
         if (sb && sb.available && sevLabels) {
           try {
-            var src = cid === 'fireSeverityNvdContainer' ? sb.nvd : cid === 'fireSeverityEuvdContainer' ? sb.euvd : cid === 'fireSeverityCnvdContainer' ? sb.cnvd : sb.jvn;
+            var src = cid === 'fireSeverityNvdContainer' ? sb.nvd
+                     : cid === 'fireSeverityEuvdContainer' ? sb.euvd
+                     : cid === 'fireSeverityCnvdContainer' ? sb.cnvd
+                     : cid === 'fireSeverityJvnContainer' ? sb.jvn
+                     : sb.bdu;
             renderSeverityChart(cid, src);
           } catch (e) { console.warn('fireSeverityBreakdown:', e); }
         }

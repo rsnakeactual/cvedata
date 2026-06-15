@@ -182,6 +182,7 @@
       <button class="toggle-btn" data-tab="euvd">EUVD</button>
       <button class="toggle-btn" data-tab="cnvd">CNVD</button>
       <button class="toggle-btn" data-tab="jvn">JVN iPedia</button>
+      <button class="toggle-btn" data-tab="bdu">BDU (Russia)</button>
     </div>
     <div class="tab-panel active" id="tab-nvd">
       <div class="chart-container" style="height: 350px;" id="kevSeverityNvdContainer">
@@ -201,6 +202,11 @@
     <div class="tab-panel" id="tab-jvn">
       <div class="chart-container" style="height: 350px;" id="kevSeverityJvnContainer">
         <p class="data-unavailable">Data unavailable. Run kev, nvd, and jvndb processors.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-bdu">
+      <div class="chart-container" style="height: 350px;" id="kevSeverityBduContainer">
+        <p class="data-unavailable">Data unavailable. Run kev, nvd, and bdu processors.</p>
       </div>
     </div>
   </div>
@@ -1034,11 +1040,15 @@
       container.innerHTML = '<canvas id="' + containerId + 'Chart"></canvas>';
       createBarChart(containerId + 'Chart', sevLabels, [{ label: 'KEVs', data: sourceData.data, backgroundColor: colors }]);
     }
-    ['kevSeverityNvdContainer', 'kevSeverityEuvdContainer', 'kevSeverityCnvdContainer', 'kevSeverityJvnContainer'].forEach(function(cid) {
+    ['kevSeverityNvdContainer', 'kevSeverityEuvdContainer', 'kevSeverityCnvdContainer', 'kevSeverityJvnContainer', 'kevSeverityBduContainer'].forEach(function(cid) {
       whenChartInView(cid, function() {
         if (sb && sb.available && sevLabels) {
           try {
-            var src = cid === 'kevSeverityNvdContainer' ? sb.nvd : cid === 'kevSeverityEuvdContainer' ? sb.euvd : cid === 'kevSeverityCnvdContainer' ? sb.cnvd : sb.jvn;
+            var src = cid === 'kevSeverityNvdContainer' ? sb.nvd
+                     : cid === 'kevSeverityEuvdContainer' ? sb.euvd
+                     : cid === 'kevSeverityCnvdContainer' ? sb.cnvd
+                     : cid === 'kevSeverityJvnContainer' ? sb.jvn
+                     : sb.bdu;
             renderSeverityChart(cid, src);
           } catch (e) { console.warn('kevSeverityBreakdown:', e); }
         }

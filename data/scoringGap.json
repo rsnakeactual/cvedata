@@ -75,7 +75,7 @@
     },
     {
       "year": "2017",
-      "pct": 100
+      "pct": 86.2
     },
     {
       "year": "2018",
@@ -87,41 +87,41 @@
     },
     {
       "year": "2020",
-      "pct": 0
+      "pct": 92
     },
     {
       "year": "2021",
-      "pct": 100
+      "pct": 96.3
     },
     {
       "year": "2022",
-      "pct": 100
+      "pct": 95
     },
     {
       "year": "2023",
-      "pct": 100
+      "pct": 96.3
     },
     {
       "year": "2024",
-      "pct": 100
+      "pct": 96.9
     },
     {
       "year": "2025",
-      "pct": 85.2
+      "pct": 90.5
     },
     {
       "year": "2026",
-      "pct": 82.7
+      "pct": 92.8
     }
   ],
   "stats": [
     {
-      "number": "164",
+      "number": "1,815",
       "isAccent": true,
       "desc": "Unscored CVEs in 2026,  NVD backlog varies by year"
     },
     {
-      "number": "17.3%",
+      "number": "7.2%",
       "isAccent": false,
       "desc": "Of 2026 CVEs had no severity score — 2.5% unscored in 1999"
     }
