@@ -41,40 +41,40 @@ window.__KEV_OVERRIDES = {
       18,
       21,
       38,
-      47,
+      48,
       40,
       77,
       73,
       55,
       65,
-      110,
+      111,
       97,
       106,
       127,
       215,
-      258,
+      262,
       290,
-      373,
-      505,
-      476,
-      539,
-      658,
-      559,
-      183
+      380,
+      511,
+      483,
+      550,
+      666,
+      606,
+      197
     ],
-    "total": 4971,
+    "total": 5077,
     "stats": [
       {
         "number": "27",
         "desc": "The oldest vulnerability in the KEVs catalog is 27 years old."
       },
       {
-        "number": "4,971",
+        "number": "5,077",
         "desc": "KEVs in catalog"
       },
       {
         "number": "2024",
-        "desc": "Peak year (658 KEVs assigned)"
+        "desc": "Peak year (666 KEVs assigned)"
       }
     ]
   },
@@ -83,8 +83,8 @@ window.__KEV_OVERRIDES = {
     "labels": [
       "Microsoft",
       "Apple",
-      "Apache Software Foundation",
       "Google",
+      "Apache Software Foundation",
       "Cisco",
       "Oracle",
       "Fortinet",
@@ -93,30 +93,30 @@ window.__KEV_OVERRIDES = {
       "Other"
     ],
     "data": [
-      408,
+      414,
       130,
-      90,
-      89,
-      77,
-      47,
-      42,
+      94,
+      91,
+      81,
+      48,
+      43,
       33,
       31,
-      4442
+      4530
     ],
-    "kevTotal": 4971,
-    "naCount": 2341,
+    "kevTotal": 5077,
+    "naCount": 2364,
     "stats": [
       {
-        "number": "408",
+        "number": "414",
         "desc": "Largest vendor bucket: Microsoft"
       },
       {
-        "number": "4,442",
+        "number": "4,530",
         "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
       },
       {
-        "number": "2,341",
+        "number": "2,364",
         "desc": "KEVs missing from CVElist or without CNA vendor field"
       }
     ]
@@ -132,53 +132,53 @@ window.__KEV_OVERRIDES = {
     ],
     "nvd": {
       "data": [
-        1821,
-        2083,
-        922,
-        33,
-        112
+        1847,
+        2127,
+        950,
+        37,
+        116
       ],
-      "total": 4971
+      "total": 5077
     },
     "euvd": {
       "data": [
-        1821,
-        2083,
-        922,
-        33,
-        110
+        1847,
+        2127,
+        950,
+        37,
+        114
       ],
-      "total": 4969
+      "total": 5075
     },
     "cnvd": {
       "data": [
-        205,
-        372,
-        99,
-        2,
-        1
+        644,
+        786,
+        283,
+        4,
+        3
       ],
-      "total": 679
+      "total": 1720
     },
     "jvn": {
       "data": [
-        1171,
-        1375,
-        592,
-        21,
+        889,
+        1114,
+        452,
+        14,
         3
       ],
-      "total": 3162
+      "total": 2472
     },
     "bdu": {
       "data": [
-        921,
-        1209,
-        351,
-        11,
-        26
+        936,
+        1238,
+        366,
+        13,
+        29
       ],
-      "total": 2518
+      "total": 2582
     }
   },
   "kevCwe": {
@@ -192,52 +192,53 @@ window.__KEV_OVERRIDES = {
       "CWE-787",
       "CWE-94",
       "CWE-434",
-      "CWE-502",
       "CWE-416",
+      "CWE-502",
       "CWE-20",
       "CWE-77",
       "CWE-306",
       "CWE-287",
-      "CWE-200",
       "CWE-284",
+      "CWE-200",
       "CWE-918",
       "CWE-269",
       "CWE-119",
       "CWE-288",
       "CWE-843",
       "CWE-863",
-      "CWE-121",
       "CWE-74",
+      "CWE-121",
       "CWE-120",
+      "CWE-122",
       "CWE-59",
       "CWE-190",
-      "CWE-122",
-      "CWE-611",
       "CWE-125",
+      "CWE-611",
       "CWE-798",
       "CWE-266",
       "CWE-693",
       "CWE-352",
       "CWE-601",
-      "CWE-98",
       "CWE-400",
+      "CWE-98",
       "CWE-639",
-      "CWE-506",
       "CWE-23",
-      "CWE-73",
       "CWE-347",
+      "CWE-506",
       "CWE-362",
+      "CWE-73",
       "CWE-285",
       "CWE-95",
+      "CWE-552",
       "CWE-399",
       "CWE-522",
-      "CWE-552",
-      "CWE-35",
       "CWE-88",
+      "CWE-35",
       "CWE-415",
       "CWE-367",
       "CWE-290",
       "CWE-451",
+      "CWE-476",
       "CWE-822",
       "CWE-1188",
       "CWE-321",
@@ -245,6 +246,7 @@ window.__KEV_OVERRIDES = {
       "CWE-532",
       "CWE-917",
       "CWE-116",
+      "CWE-426",
       "CWE-444",
       "CWE-912",
       "CWE-707",
@@ -252,41 +254,42 @@ window.__KEV_OVERRIDES = {
       "CWE-203",
       "CWE-1336",
       "CWE-732",
+      "CWE-345",
       "CWE-29",
-      "CWE-426",
+      "CWE-1321",
       "CWE-420",
       "CWE-24",
       "CWE-305",
+      "CWE-908",
       "CWE-404",
+      "CWE-835",
       "CWE-295",
       "CWE-703",
-      "CWE-1321",
+      "CWE-782",
       "CWE-494",
       "CWE-209",
-      "CWE-908",
+      "CWE-913",
+      "CWE-754",
       "CWE-134",
       "CWE-1287",
       "CWE-276",
       "CWE-80",
       "CWE-312",
       "CWE-326",
-      "CWE-782",
       "CWE-264",
       "CWE-620",
       "CWE-319",
+      "CWE-668",
       "CWE-346",
-      "CWE-913",
-      "CWE-476",
       "CWE-250",
       "CWE-829",
       "CWE-424",
-      "CWE-754",
+      "CWE-123",
       "CWE-303",
       "CWE-27",
       "CWE-427",
       "CWE-749",
       "CWE-665",
-      "CWE-345",
       "CWE-755",
       "CWE-706",
       "CWE-497",
@@ -294,7 +297,7 @@ window.__KEV_OVERRIDES = {
       "CWE-359",
       "CWE-489",
       "CWE-201",
-      "CWE-668",
+      "CWE-1284",
       "CWE-565",
       "CWE-158",
       "CWE-669",
@@ -302,14 +305,18 @@ window.__KEV_OVERRIDES = {
       "CWE-667",
       "CWE-25",
       "CWE-807",
-      "CWE-123",
+      "CWE-130",
+      "CWE-457",
+      "CWE-472",
+      "CWE-653",
+      "CWE-114",
       "CWE-191",
       "CWE-591",
       "CWE-1393",
       "CWE-184",
       "CWE-640",
-      "CWE-835",
       "CWE-473",
+      "CWE-401",
       "CWE-824",
       "CWE-281",
       "CWE-124",
@@ -319,33 +326,29 @@ window.__KEV_OVERRIDES = {
       "CWE-300",
       "CWE-364",
       "CWE-259",
-      "CWE-1284",
       "CWE-402",
       "CWE-922",
       "CWE-836",
       "CWE-1392",
       "CWE-75",
+      "CWE-613",
       "CWE-338",
+      "CWE-1390",
       "CWE-1391",
       "CWE-61",
       "CWE-1023",
       "CWE-648",
       "CWE-257",
-      "CWE-130",
       "CWE-267",
       "CWE-940",
       "CWE-129",
       "CWE-93",
       "CWE-501",
       "CWE-436",
-      "CWE-457",
       "CWE-528",
       "CWE-282",
-      "CWE-472",
       "CWE-44",
-      "CWE-653",
       "CWE-647",
-      "CWE-114",
       "CWE-273",
       "CWE-176",
       "CWE-772",
@@ -354,7 +357,6 @@ window.__KEV_OVERRIDES = {
       "CWE-280",
       "CWE-823",
       "CWE-351",
-      "CWE-401",
       "CWE-197",
       "CWE-664",
       "CWE-270",
@@ -384,14 +386,12 @@ window.__KEV_OVERRIDES = {
       "CWE-551",
       "CWE-354",
       "CWE-1286",
-      "CWE-613",
       "CWE-1242",
       "CWE-916",
       "CWE-219",
       "CWE-115",
       "CWE-770",
       "CWE-283",
-      "CWE-1390",
       "CWE-943",
       "CWE-113",
       "CWE-311",
@@ -413,55 +413,60 @@ window.__KEV_OVERRIDES = {
       "CWE-1236",
       "CWE-31",
       "CWE-202",
-      "CWE-248"
+      "CWE-248",
+      "CWE-460",
+      "CWE-144",
+      "CWE-159",
+      "CWE-692"
     ],
     "data": [
-      275,
-      205,
-      192,
-      190,
+      277,
+      212,
+      195,
+      193,
       152,
-      147,
-      142,
-      135,
-      123,
-      121,
-      112,
-      95,
-      87,
-      83,
-      76,
-      73,
+      148,
+      146,
+      136,
+      127,
+      124,
+      114,
+      96,
+      89,
+      84,
+      77,
+      77,
       70,
       62,
-      60,
-      46,
-      41,
-      38,
+      61,
+      47,
+      42,
+      39,
+      35,
       34,
-      34,
-      30,
+      32,
       27,
+      27,
+      25,
       24,
       24,
-      24,
-      23,
       23,
       22,
+      19,
+      18,
       18,
       17,
-      17,
+      16,
       16,
       15,
       15,
       14,
-      14,
+      13,
       13,
       11,
-      11,
-      11,
       10,
       10,
+      10,
       9,
       9,
       9,
@@ -469,13 +474,15 @@ window.__KEV_OVERRIDES = {
       8,
       8,
       8,
-      8,
       7,
       7,
       7,
       7,
       7,
       7,
+      7,
+      6,
+      6,
       6,
       6,
       6,
@@ -492,6 +499,9 @@ window.__KEV_OVERRIDES = {
       5,
       5,
       5,
+      5,
+      5,
+      5,
       4,
       4,
       4,
@@ -524,9 +534,6 @@ window.__KEV_OVERRIDES = {
       3,
       3,
       3,
-      3,
-      3,
-      3,
       2,
       2,
       2,
@@ -559,10 +566,11 @@ window.__KEV_OVERRIDES = {
       2,
       2,
       2,
-      1,
-      1,
-      1,
-      1,
+      2,
+      2,
+      2,
+      2,
+      2,
       1,
       1,
       1,
@@ -656,52 +664,53 @@ window.__KEV_OVERRIDES = {
       "CWE-787: Out-of-bounds Write",
       "CWE-94: Improper Control of Generation of Code ('Code Injection')",
       "CWE-434: Unrestricted Upload of File with Dangerous Type",
-      "CWE-502: Deserialization of Untrusted Data",
       "CWE-416: Use After Free",
+      "CWE-502: Deserialization of Untrusted Data",
       "CWE-20: Improper Input Validation",
       "CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')",
       "CWE-306: Missing Authentication for Critical Function",
       "CWE-287: Improper Authentication",
-      "CWE-200: Exposure of Sensitive Information to an Unauthorized Actor",
       "CWE-284: Improper Access Control",
+      "CWE-200: Exposure of Sensitive Information to an Unauthorized Actor",
       "CWE-918: Server-Side Request Forgery (SSRF)",
       "CWE-269: Improper Privilege Management",
       "CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer",
       "CWE-288: Authentication Bypass Using an Alternate Path or Channel",
       "CWE-843: Access of Resource Using Incompatible Type ('Type Confusion')",
       "CWE-863: Incorrect Authorization",
-      "CWE-121: Stack-based Buffer Overflow",
       "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
+      "CWE-121: Stack-based Buffer Overflow",
       "CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+      "CWE-122: Heap-based Buffer Overflow",
       "CWE-59: Improper Link Resolution Before File Access ('Link Following')",
       "CWE-190: Integer Overflow or Wraparound",
-      "CWE-122: Heap-based Buffer Overflow",
-      "CWE-611: Improper Restriction of XML External Entity Reference",
       "CWE-125: Out-of-bounds Read",
+      "CWE-611: Improper Restriction of XML External Entity Reference",
       "CWE-798: Use of Hard-coded Credentials",
       "CWE-266: Incorrect Privilege Assignment",
       "CWE-693: Protection Mechanism Failure",
       "CWE-352: Cross-Site Request Forgery (CSRF)",
       "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')",
-      "CWE-98: Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')",
       "CWE-400: Uncontrolled Resource Consumption",
+      "CWE-98: Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')",
       "CWE-639: Authorization Bypass Through User-Controlled Key",
-      "CWE-506: Embedded Malicious Code",
       "CWE-23: Relative Path Traversal",
-      "CWE-73: External Control of File Name or Path",
       "CWE-347: Improper Verification of Cryptographic Signature",
+      "CWE-506: Embedded Malicious Code",
       "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
+      "CWE-73: External Control of File Name or Path",
       "CWE-285: Improper Authorization",
       "CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')",
+      "CWE-552: Files or Directories Accessible to External Parties",
       "CWE-399: CWE-399",
       "CWE-522: Insufficiently Protected Credentials",
-      "CWE-552: Files or Directories Accessible to External Parties",
-      "CWE-35: Path Traversal: '.../...//'",
       "CWE-88: Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')",
+      "CWE-35: Path Traversal: '.../...//'",
       "CWE-415: Double Free",
       "CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition",
       "CWE-290: Authentication Bypass by Spoofing",
       "CWE-451: User Interface (UI) Misrepresentation of Critical Information",
+      "CWE-476: NULL Pointer Dereference",
       "CWE-822: Untrusted Pointer Dereference",
       "CWE-1188: Initialization of a Resource with an Insecure Default",
       "CWE-321: Use of Hard-coded Cryptographic Key",
@@ -709,6 +718,7 @@ window.__KEV_OVERRIDES = {
       "CWE-532: Insertion of Sensitive Information into Log File",
       "CWE-917: Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection')",
       "CWE-116: Improper Encoding or Escaping of Output",
+      "CWE-426: Untrusted Search Path",
       "CWE-444: Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')",
       "CWE-912: Hidden Functionality",
       "CWE-707: Improper Neutralization",
@@ -716,41 +726,42 @@ window.__KEV_OVERRIDES = {
       "CWE-203: Observable Discrepancy",
       "CWE-1336: Improper Neutralization of Special Elements Used in a Template Engine",
       "CWE-732: Incorrect Permission Assignment for Critical Resource",
+      "CWE-345: Insufficient Verification of Data Authenticity",
       "CWE-29: Path Traversal: '\\..\\filename'",
-      "CWE-426: Untrusted Search Path",
+      "CWE-1321: Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')",
       "CWE-420: Unprotected Alternate Channel",
       "CWE-24: Path Traversal: '../filedir'",
       "CWE-305: Authentication Bypass by Primary Weakness",
+      "CWE-908: Use of Uninitialized Resource",
       "CWE-404: Improper Resource Shutdown or Release",
+      "CWE-835: Loop with Unreachable Exit Condition ('Infinite Loop')",
       "CWE-295: Improper Certificate Validation",
       "CWE-703: Improper Check or Handling of Exceptional Conditions",
-      "CWE-1321: Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')",
+      "CWE-782: Exposed IOCTL with Insufficient Access Control",
       "CWE-494: Download of Code Without Integrity Check",
       "CWE-209: Generation of Error Message Containing Sensitive Information",
-      "CWE-908: Use of Uninitialized Resource",
+      "CWE-913: Improper Control of Dynamically-Managed Code Resources",
+      "CWE-754: Improper Check for Unusual or Exceptional Conditions",
       "CWE-134: Use of Externally-Controlled Format String",
       "CWE-1287: Improper Validation of Specified Type of Input",
       "CWE-276: Incorrect Default Permissions",
       "CWE-80: Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)",
       "CWE-312: Cleartext Storage of Sensitive Information",
       "CWE-326: Inadequate Encryption Strength",
-      "CWE-782: Exposed IOCTL with Insufficient Access Control",
       "CWE-264: CWE-264",
       "CWE-620: Unverified Password Change",
       "CWE-319: Cleartext Transmission of Sensitive Information",
+      "CWE-668: Exposure of Resource to Wrong Sphere",
       "CWE-346: Origin Validation Error",
-      "CWE-913: Improper Control of Dynamically-Managed Code Resources",
-      "CWE-476: NULL Pointer Dereference",
       "CWE-250: Execution with Unnecessary Privileges",
       "CWE-829: Inclusion of Functionality from Untrusted Control Sphere",
       "CWE-424: Improper Protection of Alternate Path",
-      "CWE-754: Improper Check for Unusual or Exceptional Conditions",
+      "CWE-123: Write-what-where Condition",
       "CWE-303: Incorrect Implementation of Authentication Algorithm",
       "CWE-27: Path Traversal: 'dir/../../filename'",
       "CWE-427: Uncontrolled Search Path Element",
       "CWE-749: Exposed Dangerous Method or Function",
       "CWE-665: Improper Initialization",
-      "CWE-345: Insufficient Verification of Data Authenticity",
       "CWE-755: Improper Handling of Exceptional Conditions",
       "CWE-706: Use of Incorrectly-Resolved Name or Reference",
       "CWE-497: Exposure of Sensitive System Information to an Unauthorized Control Sphere",
@@ -758,7 +769,7 @@ window.__KEV_OVERRIDES = {
       "CWE-359: Exposure of Private Personal Information to an Unauthorized Actor",
       "CWE-489: Active Debug Code",
       "CWE-201: Insertion of Sensitive Information Into Sent Data",
-      "CWE-668: Exposure of Resource to Wrong Sphere",
+      "CWE-1284: Improper Validation of Specified Quantity in Input",
       "CWE-565: Reliance on Cookies without Validation and Integrity Checking",
       "CWE-158: Improper Neutralization of Null Byte or NUL Character",
       "CWE-669: Incorrect Resource Transfer Between Spheres",
@@ -766,14 +777,18 @@ window.__KEV_OVERRIDES = {
       "CWE-667: Improper Locking",
       "CWE-25: Path Traversal: '/../filedir'",
       "CWE-807: Reliance on Untrusted Inputs in a Security Decision",
-      "CWE-123: Write-what-where Condition",
+      "CWE-130: Improper Handling of Length Parameter Inconsistency",
+      "CWE-457: Use of Uninitialized Variable",
+      "CWE-472: External Control of Assumed-Immutable Web Parameter",
+      "CWE-653: Improper Isolation or Compartmentalization",
+      "CWE-114: Process Control",
       "CWE-191: Integer Underflow (Wrap or Wraparound)",
       "CWE-591: Sensitive Data Storage in Improperly Locked Memory",
       "CWE-1393: Use of Default Password",
       "CWE-184: Incomplete List of Disallowed Inputs",
       "CWE-640: Weak Password Recovery Mechanism for Forgotten Password",
-      "CWE-835: Loop with Unreachable Exit Condition ('Infinite Loop')",
       "CWE-473: PHP External Variable Modification",
+      "CWE-401: Missing Release of Memory after Effective Lifetime",
       "CWE-824: Access of Uninitialized Pointer",
       "CWE-281: Improper Preservation of Permissions",
       "CWE-124: Buffer Underwrite ('Buffer Underflow')",
@@ -783,33 +798,29 @@ window.__KEV_OVERRIDES = {
       "CWE-300: Channel Accessible by Non-Endpoint",
       "CWE-364: Signal Handler Race Condition",
       "CWE-259: Use of Hard-coded Password",
-      "CWE-1284: Improper Validation of Specified Quantity in Input",
       "CWE-402: Transmission of Private Resources into a New Sphere ('Resource Leak')",
       "CWE-922: Insecure Storage of Sensitive Information",
       "CWE-836: Use of Password Hash Instead of Password for Authentication",
       "CWE-1392: Use of Default Credentials",
       "CWE-75: Failure to Sanitize Special Elements into a Different Plane (Special Element Injection)",
+      "CWE-613: Insufficient Session Expiration",
       "CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)",
+      "CWE-1390: Weak Authentication",
       "CWE-1391: Use of Weak Credentials",
       "CWE-61: UNIX Symbolic Link (Symlink) Following",
       "CWE-1023: Incomplete Comparison with Missing Factors",
       "CWE-648: Incorrect Use of Privileged APIs",
       "CWE-257: Storing Passwords in a Recoverable Format",
-      "CWE-130: Improper Handling of Length Parameter Inconsistency",
       "CWE-267: Privilege Defined With Unsafe Actions",
       "CWE-940: Improper Verification of Source of a Communication Channel",
       "CWE-129: Improper Validation of Array Index",
       "CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')",
       "CWE-501: Trust Boundary Violation",
       "CWE-436: Interpretation Conflict",
-      "CWE-457: Use of Uninitialized Variable",
       "CWE-528: Exposure of Core Dump File to an Unauthorized Control Sphere",
       "CWE-282: Improper Ownership Management",
-      "CWE-472: External Control of Assumed-Immutable Web Parameter",
       "CWE-44: Path Equivalence: 'file.name' (Internal Dot)",
-      "CWE-653: Improper Isolation or Compartmentalization",
       "CWE-647: Use of Non-Canonical URL Paths for Authorization Decisions",
-      "CWE-114: Process Control",
       "CWE-273: Improper Check for Dropped Privileges",
       "CWE-176: Improper Handling of Unicode Encoding",
       "CWE-772: Missing Release of Resource after Effective Lifetime",
@@ -818,7 +829,6 @@ window.__KEV_OVERRIDES = {
       "CWE-280: Improper Handling of Insufficient Permissions or Privileges",
       "CWE-823: Use of Out-of-range Pointer Offset",
       "CWE-351: Insufficient Type Distinction",
-      "CWE-401: Missing Release of Memory after Effective Lifetime",
       "CWE-197: Numeric Truncation Error",
       "CWE-664: Improper Control of a Resource Through its Lifetime",
       "CWE-270: Privilege Context Switching Error",
@@ -848,14 +858,12 @@ window.__KEV_OVERRIDES = {
       "CWE-551: Incorrect Behavior Order: Authorization Before Parsing and Canonicalization",
       "CWE-354: Improper Validation of Integrity Check Value",
       "CWE-1286: Improper Validation of Syntactic Correctness of Input",
-      "CWE-613: Insufficient Session Expiration",
       "CWE-1242: Inclusion of Undocumented Features or Chicken Bits",
       "CWE-916: Use of Password Hash With Insufficient Computational Effort",
       "CWE-219: Storage of File with Sensitive Data Under Web Root",
       "CWE-115: Misinterpretation of Input",
       "CWE-770: Allocation of Resources Without Limits or Throttling",
       "CWE-283: Unverified Ownership",
-      "CWE-1390: Weak Authentication",
       "CWE-943: Improper Neutralization of Special Elements in Data Query Logic",
       "CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')",
       "CWE-311: Missing Encryption of Sensitive Data",
@@ -877,7 +885,11 @@ window.__KEV_OVERRIDES = {
       "CWE-1236: Improper Neutralization of Formula Elements in a CSV File",
       "CWE-31: Path Traversal: 'dir\\..\\..\\filename'",
       "CWE-202: Exposure of Sensitive Information Through Data Queries",
-      "CWE-248: Uncaught Exception"
+      "CWE-248: Uncaught Exception",
+      "CWE-460: Improper Cleanup on Thrown Exception",
+      "CWE-144: Improper Neutralization of Line Delimiters",
+      "CWE-159: Improper Handling of Invalid Use of Special Elements",
+      "CWE-692: Incomplete Denylist to Cross-Site Scripting"
     ]
   },
   "kevMitreTop25": {
@@ -891,8 +903,8 @@ window.__KEV_OVERRIDES = {
       "CWE-787 (MITRE #24)",
       "CWE-94 (MITRE #15)",
       "CWE-434 (MITRE #16)",
-      "CWE-502 (MITRE #10)",
       "CWE-416 (MITRE #18)",
+      "CWE-502 (MITRE #10)",
       "CWE-20 (MITRE #14)",
       "CWE-77 (MITRE #13)",
       "CWE-306 (MITRE #1)",
@@ -903,38 +915,38 @@ window.__KEV_OVERRIDES = {
       "CWE-119 (MITRE #6)",
       "CWE-863 (MITRE #8)",
       "CWE-190 (MITRE #3)",
-      "CWE-798 (MITRE #4)",
       "CWE-125 (MITRE #20)",
+      "CWE-798 (MITRE #4)",
       "CWE-352 (MITRE #22)",
       "CWE-400 (MITRE #2)",
       "CWE-476 (MITRE #5)"
     ],
     "data": [
-      275,
-      205,
-      192,
-      190,
+      277,
+      212,
+      195,
+      193,
       152,
-      147,
-      142,
-      135,
-      123,
-      121,
-      112,
-      95,
-      87,
-      83,
-      76,
+      148,
+      146,
+      136,
+      127,
+      124,
+      114,
+      96,
+      89,
+      84,
+      77,
       70,
       62,
-      60,
-      38,
+      61,
+      39,
+      25,
       24,
       23,
-      23,
+      18,
       17,
-      15,
-      3
+      7
     ],
     "fullNames": [
       "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
@@ -945,8 +957,8 @@ window.__KEV_OVERRIDES = {
       "CWE-787: Out-of-bounds Write",
       "CWE-94: Improper Control of Generation of Code ('Code Injection')",
       "CWE-434: Unrestricted Upload of File with Dangerous Type",
-      "CWE-502: Deserialization of Untrusted Data",
       "CWE-416: Use After Free",
+      "CWE-502: Deserialization of Untrusted Data",
       "CWE-20: Improper Input Validation",
       "CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')",
       "CWE-306: Missing Authentication for Critical Function",
@@ -957,8 +969,8 @@ window.__KEV_OVERRIDES = {
       "CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer",
       "CWE-863: Incorrect Authorization",
       "CWE-190: Integer Overflow or Wraparound",
-      "CWE-798: Use of Hard-coded Credentials",
       "CWE-125: Out-of-bounds Read",
+      "CWE-798: Use of Hard-coded Credentials",
       "CWE-352: Cross-Site Request Forgery (CSRF)",
       "CWE-400: Uncontrolled Resource Consumption",
       "CWE-476: NULL Pointer Dereference"
@@ -971,16 +983,16 @@ window.__KEV_OVERRIDES = {
       "CWEs without KEVs"
     ],
     "data": [
-      230,
-      739
+      234,
+      735
     ],
     "stats": [
       {
-        "number": "230",
+        "number": "234",
         "desc": "CWEs with ≥1 KEV"
       },
       {
-        "number": "23.7%",
+        "number": "24.1%",
         "desc": "Of all CWEs in CWE catalog"
       }
     ]
@@ -1000,14 +1012,14 @@ window.__KEV_OVERRIDES = {
       "A03: Software Supply Chain Failures"
     ],
     "data": [
-      1113,
-      764,
-      298,
-      285,
-      157,
-      31,
+      1136,
+      779,
+      304,
+      291,
+      162,
+      35,
       28,
-      21,
+      27,
       7,
       2
     ]
@@ -1056,10 +1068,10 @@ window.__KEV_OVERRIDES = {
         "Physical"
       ],
       "data": [
-        3624,
-        93,
-        612,
-        11
+        3699,
+        97,
+        632,
+        12
       ]
     },
     "ac": {
@@ -1068,8 +1080,8 @@ window.__KEV_OVERRIDES = {
         "High"
       ],
       "data": [
-        4025,
-        315
+        4103,
+        337
       ]
     },
     "pr": {
@@ -1079,9 +1091,9 @@ window.__KEV_OVERRIDES = {
         "High"
       ],
       "data": [
-        3213,
-        941,
-        186
+        3269,
+        978,
+        193
       ]
     },
     "ui": {
@@ -1090,8 +1102,8 @@ window.__KEV_OVERRIDES = {
         "Required"
       ],
       "data": [
-        3478,
-        862
+        3555,
+        885
       ]
     },
     "scope": {
@@ -1100,8 +1112,8 @@ window.__KEV_OVERRIDES = {
         "Changed"
       ],
       "data": [
-        3647,
-        693
+        3719,
+        721
       ]
     },
     "confidentiality": {
@@ -1111,9 +1123,9 @@ window.__KEV_OVERRIDES = {
         "High"
       ],
       "data": [
-        337,
-        570,
-        3433
+        364,
+        579,
+        3497
       ]
     },
     "integrity": {
@@ -1123,9 +1135,9 @@ window.__KEV_OVERRIDES = {
         "High"
       ],
       "data": [
-        759,
-        565,
-        3016
+        785,
+        578,
+        3077
       ]
     },
     "availability": {
@@ -1135,9 +1147,9 @@ window.__KEV_OVERRIDES = {
         "High"
       ],
       "data": [
-        1077,
-        288,
-        2975
+        1094,
+        295,
+        3051
       ]
     }
   },
@@ -1149,8 +1161,8 @@ window.__KEV_OVERRIDES = {
         "Other vectors"
       ],
       "data": [
-        1159,
-        3181
+        1168,
+        3272
       ],
       "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     },
@@ -1272,21 +1284,21 @@ window.__KEV_OVERRIDES = {
       "1.00"
     ],
     "data": [
-      672,
-      446,
-      237,
-      223,
+      729,
+      462,
+      241,
+      226,
       157,
       117,
-      95,
+      98,
+      81,
       80,
-      78,
       76,
-      72,
-      48,
+      75,
+      50,
       70,
-      45,
-      48,
+      46,
+      47,
       39,
       40,
       46,
@@ -1295,11 +1307,11 @@ window.__KEV_OVERRIDES = {
       41,
       23,
       33,
-      29,
+      32,
       24,
-      28,
-      36,
-      21,
+      29,
+      35,
+      22,
       26,
       32,
       16,
@@ -1309,27 +1321,27 @@ window.__KEV_OVERRIDES = {
       19,
       18,
       30,
-      24,
-      26,
+      23,
       27,
-      24,
+      27,
+      25,
       22,
-      27,
-      18,
-      26,
+      28,
+      19,
+      25,
       14,
       19,
-      15,
-      23,
       16,
+      21,
+      17,
       20,
       20,
       19,
-      30,
+      29,
       15,
       21,
       19,
-      21,
+      22,
       16,
       19,
       14,
@@ -1342,44 +1354,44 @@ window.__KEV_OVERRIDES = {
       21,
       24,
       20,
-      25,
+      27,
       23,
-      28,
-      31,
-      28,
-      27,
-      22,
-      27,
+      29,
       32,
+      28,
+      26,
       21,
+      28,
+      33,
       20,
-      39,
+      20,
+      38,
       32,
       43,
-      32,
-      29,
-      38,
       33,
+      27,
+      39,
+      34,
       27,
       37,
       33,
-      23,
-      25,
-      34,
-      31,
-      40,
+      22,
+      26,
+      35,
+      32,
       41,
-      48,
-      61,
-      238,
+      41,
+      49,
+      62,
+      239,
       0
     ],
-    "matched": 4959,
-    "totalKev": 4971,
+    "matched": 5065,
+    "totalKev": 5077,
     "stats": [
       {
-        "number": "4,959",
-        "desc": "KEVs with EPSS scores (of 4971)"
+        "number": "5,065",
+        "desc": "KEVs with EPSS scores (of 5077)"
       },
       {
         "number": "0.00–0.01",
@@ -1390,6 +1402,10 @@ window.__KEV_OVERRIDES = {
   "kevEpssCorrelation": {
     "available": true,
     "points": [
+      {
+        "x": 9.8,
+        "y": 1.7309999999999999
+      },
       {
         "x": 8.5,
         "y": 0.654
@@ -1528,7 +1544,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 75.521
+        "y": 94.016
       },
       {
         "x": 9.8,
@@ -1860,7 +1876,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.2,
-        "y": 82.958
+        "y": 84.052
       },
       {
         "x": 9.8,
@@ -2024,7 +2040,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 88.124
+        "y": 88.312
       },
       {
         "x": 8.8,
@@ -2336,7 +2352,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9,
-        "y": 91.662
+        "y": 92.034
       },
       {
         "x": 8.8,
@@ -2428,7 +2444,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.3,
-        "y": 82.955
+        "y": 82.853
       },
       {
         "x": 10,
@@ -2576,7 +2592,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 3.071
+        "y": 3.02
       },
       {
         "x": 8.8,
@@ -2776,7 +2792,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 6.5,
-        "y": 1.818
+        "y": 1.862
       },
       {
         "x": 8,
@@ -2788,7 +2804,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.645
+        "y": 95.132
       },
       {
         "x": 7.5,
@@ -3952,7 +3968,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 15.642
+        "y": 15.519
       },
       {
         "x": 9.8,
@@ -4644,7 +4660,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 99.94800000000001
+        "y": 99.939
       },
       {
         "x": 8.8,
@@ -4664,11 +4680,11 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 70.799
+        "y": 70.595
       },
       {
         "x": 7.8,
-        "y": 84.673
+        "y": 84.554
       },
       {
         "x": 8.6,
@@ -5424,7 +5440,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 99.72
+        "y": 99.677
       },
       {
         "x": 7.8,
@@ -5436,7 +5452,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 97.989
+        "y": 97.836
       },
       {
         "x": 9.8,
@@ -6972,7 +6988,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.6,
-        "y": 3.253
+        "y": 3.293
       },
       {
         "x": 9.8,
@@ -7552,7 +7568,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 54.294
+        "y": 57.19499999999999
       },
       {
         "x": 7.5,
@@ -7875,20 +7891,20 @@ window.__KEV_OVERRIDES = {
         "y": 90.049
       },
       {
-        "x": 6.8,
-        "y": 2.9530000000000003
-      },
-      {
         "x": 9.8,
-        "y": 83.274
+        "y": 23.669999999999998
       },
       {
         "x": 7.5,
         "y": 19.076
       },
       {
+        "x": 6.8,
+        "y": 2.9530000000000003
+      },
+      {
         "x": 9.8,
-        "y": 23.669999999999998
+        "y": 83.274
       },
       {
         "x": 9.1,
@@ -8460,7 +8476,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 3.696
+        "y": 3.533
       },
       {
         "x": 7.5,
@@ -8572,7 +8588,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 2.09
+        "y": 2.073
       },
       {
         "x": 6.5,
@@ -8908,7 +8924,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.3,
-        "y": 53.376999999999995
+        "y": 54.872
       },
       {
         "x": 5.6,
@@ -9092,7 +9108,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 42.994
+        "y": 42.723
       },
       {
         "x": 8.8,
@@ -9344,7 +9360,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 0.40299999999999997
+        "y": 0.41000000000000003
       },
       {
         "x": 8.8,
@@ -9616,7 +9632,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 1.6
+        "y": 1.646
       },
       {
         "x": 7.2,
@@ -9912,7 +9928,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 0.627
+        "y": 0.652
       },
       {
         "x": 9.8,
@@ -10044,7 +10060,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 37.91
+        "y": 38.165
       },
       {
         "x": 9.1,
@@ -10136,7 +10152,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 85.502
+        "y": 86.685
       },
       {
         "x": 9.8,
@@ -10212,7 +10228,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 6.3,
-        "y": 17.761
+        "y": 17.622
       },
       {
         "x": 7.5,
@@ -10388,7 +10404,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 32.793
+        "y": 32.561
       },
       {
         "x": 9.8,
@@ -10436,7 +10452,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 48.11
+        "y": 47.83
       },
       {
         "x": 9.8,
@@ -10520,7 +10536,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.1,
-        "y": 0.49500000000000005
+        "y": 1.7739999999999998
       },
       {
         "x": 8.8,
@@ -10676,7 +10692,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 70.98100000000001
+        "y": 70.779
       },
       {
         "x": 9.3,
@@ -10912,7 +10928,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 2.181
+        "y": 2.163
       },
       {
         "x": 7.8,
@@ -10924,7 +10940,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 6.837
+        "y": 6.782000000000001
       },
       {
         "x": 9.8,
@@ -11572,7 +11588,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 0.464
+        "y": 0.501
       },
       {
         "x": 10,
@@ -11896,7 +11912,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 39.824
+        "y": 40.516999999999996
       },
       {
         "x": 9.8,
@@ -12688,7 +12704,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 79.281
+        "y": 78.812
       },
       {
         "x": 9.8,
@@ -12904,7 +12920,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 76.864
+        "y": 77.251
       },
       {
         "x": 7.5,
@@ -13116,7 +13132,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 89.89
+        "y": 89.783
       },
       {
         "x": 9.8,
@@ -13912,7 +13928,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 83.22800000000001
+        "y": 83.633
       },
       {
         "x": 7.8,
@@ -13948,7 +13964,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 77.582
+        "y": 77.29700000000001
       },
       {
         "x": 4.3,
@@ -14048,7 +14064,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 5.3,
-        "y": 1.165
+        "y": 1.175
       },
       {
         "x": 9.8,
@@ -15212,7 +15228,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 44.023
+        "y": 43.75
       },
       {
         "x": 7.3,
@@ -15229,10 +15245,6 @@ window.__KEV_OVERRIDES = {
       {
         "x": 9.8,
         "y": 7.116
-      },
-      {
-        "x": 9.8,
-        "y": 1.7309999999999999
       },
       {
         "x": 10,
@@ -16100,7 +16112,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 1.886
+        "y": 2.512
       },
       {
         "x": 6.8,
@@ -16664,7 +16676,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.3,
-        "y": 5.286
+        "y": 5.618
       },
       {
         "x": 7.5,
@@ -17040,7 +17052,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 4.3,
-        "y": 0.903
+        "y": 0.911
       },
       {
         "x": 7.4,
@@ -17264,7 +17276,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 26.598
+        "y": 27.017000000000003
       },
       {
         "x": 8.8,
@@ -17520,7 +17532,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.3,
-        "y": 0.43499999999999994
+        "y": 0.47600000000000003
       },
       {
         "x": 8.1,
@@ -17588,7 +17600,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 0.583
+        "y": 0.605
       },
       {
         "x": 7.5,
@@ -17680,7 +17692,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 89.312
+        "y": 89.20400000000001
       },
       {
         "x": 9.8,
@@ -17736,7 +17748,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 18.013
+        "y": 18.703
       },
       {
         "x": 7.5,
@@ -17820,7 +17832,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 29.665999999999997
+        "y": 29.451
       },
       {
         "x": 9.8,
@@ -18228,7 +18240,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.1,
-        "y": 14.453
+        "y": 23.018
       },
       {
         "x": 9,
@@ -18808,7 +18820,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 4.4,
-        "y": 0.515
+        "y": 0.511
       },
       {
         "x": 5.5,
@@ -18948,7 +18960,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 48.083999999999996
+        "y": 47.804
       },
       {
         "x": 7.2,
@@ -19004,7 +19016,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 81.92
+        "y": 82.339
       },
       {
         "x": 7.5,
@@ -20016,7 +20028,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 47.357
+        "y": 42.658
       },
       {
         "x": 9.3,
@@ -20272,7 +20284,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 90.36999999999999
+        "y": 90.183
       },
       {
         "x": 9.8,
@@ -20420,7 +20432,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 90.491
+        "y": 90.387
       },
       {
         "x": 9.8,
@@ -20700,7 +20712,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 5,
-        "y": 85.92699999999999
+        "y": 86.196
       },
       {
         "x": 9.8,
@@ -20752,7 +20764,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 86.357
+        "y": 87.154
       },
       {
         "x": 6.1,
@@ -20825,33 +20837,441 @@ window.__KEV_OVERRIDES = {
       {
         "x": 6.5,
         "y": 0.49300000000000005
+      },
+      {
+        "x": 10,
+        "y": 0.623
+      },
+      {
+        "x": 6.8,
+        "y": 0.318
+      },
+      {
+        "x": 7.4,
+        "y": 0.156
+      },
+      {
+        "x": 9.1,
+        "y": 10.08
+      },
+      {
+        "x": 9.8,
+        "y": 0.302
+      },
+      {
+        "x": 8.3,
+        "y": 0.322
+      },
+      {
+        "x": 9.8,
+        "y": 1.1560000000000001
+      },
+      {
+        "x": 6.5,
+        "y": 0.321
+      },
+      {
+        "x": 7.5,
+        "y": 70.81
+      },
+      {
+        "x": 8.8,
+        "y": 72.648
+      },
+      {
+        "x": 5.3,
+        "y": 98.631
+      },
+      {
+        "x": 7.5,
+        "y": 70.56099999999999
+      },
+      {
+        "x": 6,
+        "y": 0.42900000000000005
+      },
+      {
+        "x": 7.1,
+        "y": 0.3
+      },
+      {
+        "x": 5.3,
+        "y": 0.47600000000000003
+      },
+      {
+        "x": 9.8,
+        "y": 1.008
+      },
+      {
+        "x": 9.8,
+        "y": 23.674
+      },
+      {
+        "x": 9.9,
+        "y": 1.173
+      },
+      {
+        "x": 9.9,
+        "y": 1.093
+      },
+      {
+        "x": 9.9,
+        "y": 1.1280000000000001
+      },
+      {
+        "x": 9.9,
+        "y": 1.1280000000000001
+      },
+      {
+        "x": 9.8,
+        "y": 0.47600000000000003
+      },
+      {
+        "x": 8.8,
+        "y": 49.088
+      },
+      {
+        "x": 7,
+        "y": 0.371
+      },
+      {
+        "x": 6.1,
+        "y": 0.212
+      },
+      {
+        "x": 8.8,
+        "y": 7.093000000000001
+      },
+      {
+        "x": 9.1,
+        "y": 11.963
+      },
+      {
+        "x": 10,
+        "y": 0.618
+      },
+      {
+        "x": 9.3,
+        "y": 23.455000000000002
+      },
+      {
+        "x": 7.5,
+        "y": 1.34
+      },
+      {
+        "x": 8,
+        "y": 0.911
+      },
+      {
+        "x": 7.5,
+        "y": 73.97399999999999
+      },
+      {
+        "x": 8.2,
+        "y": 0.266
+      },
+      {
+        "x": 7.8,
+        "y": 0.11800000000000001
+      },
+      {
+        "x": 9.1,
+        "y": 1.101
+      },
+      {
+        "x": 3.6,
+        "y": 0.22100000000000003
+      },
+      {
+        "x": 9,
+        "y": 0.938
+      },
+      {
+        "x": 7.4,
+        "y": 0.592
+      },
+      {
+        "x": 8.2,
+        "y": 0.618
+      },
+      {
+        "x": 7.2,
+        "y": 0.303
+      },
+      {
+        "x": 7.2,
+        "y": 0.303
+      },
+      {
+        "x": 7.2,
+        "y": 0.232
+      },
+      {
+        "x": 6.1,
+        "y": 0.27599999999999997
+      },
+      {
+        "x": 6.5,
+        "y": 0.11
+      },
+      {
+        "x": 9.8,
+        "y": 6.658
+      },
+      {
+        "x": 6.8,
+        "y": 0.2
+      },
+      {
+        "x": 8.8,
+        "y": 0.571
+      },
+      {
+        "x": 8.1,
+        "y": 0.53
+      },
+      {
+        "x": 2.8,
+        "y": 3.2390000000000003
+      },
+      {
+        "x": 9.8,
+        "y": 0.475
+      },
+      {
+        "x": 8.8,
+        "y": 0.44400000000000006
+      },
+      {
+        "x": 8.8,
+        "y": 10.171
+      },
+      {
+        "x": 8.8,
+        "y": 8.794
+      },
+      {
+        "x": 6.3,
+        "y": 0.964
+      },
+      {
+        "x": 9.8,
+        "y": 99.348
+      },
+      {
+        "x": 8.8,
+        "y": 11.609
+      },
+      {
+        "x": 8.8,
+        "y": 1.476
+      },
+      {
+        "x": 8.1,
+        "y": 6.116
+      },
+      {
+        "x": 8.2,
+        "y": 0.347
+      },
+      {
+        "x": 8.1,
+        "y": 1.1119999999999999
+      },
+      {
+        "x": 7.8,
+        "y": 0.629
+      },
+      {
+        "x": 8.1,
+        "y": 13.547999999999998
+      },
+      {
+        "x": 8.4,
+        "y": 0.6799999999999999
+      },
+      {
+        "x": 8.8,
+        "y": 0.39699999999999996
+      },
+      {
+        "x": 9.3,
+        "y": 93.813
+      },
+      {
+        "x": 9.9,
+        "y": 97.78099999999999
+      },
+      {
+        "x": 6.1,
+        "y": 0.8880000000000001
+      },
+      {
+        "x": 5.5,
+        "y": 0.189
+      },
+      {
+        "x": 5.5,
+        "y": 0.244
+      },
+      {
+        "x": 5.5,
+        "y": 0.21
+      },
+      {
+        "x": 4.7,
+        "y": 0.165
+      },
+      {
+        "x": 5.5,
+        "y": 0.23900000000000002
+      },
+      {
+        "x": 7.5,
+        "y": 2.945
+      },
+      {
+        "x": 6.4,
+        "y": 0.39699999999999996
+      },
+      {
+        "x": 5.5,
+        "y": 0.268
+      },
+      {
+        "x": 5.5,
+        "y": 0.24
+      },
+      {
+        "x": 4.7,
+        "y": 0.182
+      },
+      {
+        "x": 4.4,
+        "y": 0.22
+      },
+      {
+        "x": 5.5,
+        "y": 0.22200000000000003
+      },
+      {
+        "x": 7.1,
+        "y": 0.261
+      },
+      {
+        "x": 6.1,
+        "y": 0.657
+      },
+      {
+        "x": 3.1,
+        "y": 0.6709999999999999
+      },
+      {
+        "x": 3.1,
+        "y": 0.6709999999999999
+      },
+      {
+        "x": 6.1,
+        "y": 0.457
+      },
+      {
+        "x": 7.5,
+        "y": 1.232
+      },
+      {
+        "x": 9.8,
+        "y": 0.966
+      },
+      {
+        "x": 7.6,
+        "y": 0.28500000000000003
+      },
+      {
+        "x": 9.9,
+        "y": 0.971
+      },
+      {
+        "x": 8.3,
+        "y": 1.413
+      },
+      {
+        "x": 6.8,
+        "y": 1.187
+      },
+      {
+        "x": 4.8,
+        "y": 1.0999999999999999
+      },
+      {
+        "x": 8.8,
+        "y": 0.719
+      },
+      {
+        "x": 8.1,
+        "y": 3.52
+      },
+      {
+        "x": 7.5,
+        "y": 1.261
+      },
+      {
+        "x": 9.9,
+        "y": 25.564999999999998
+      },
+      {
+        "x": 10,
+        "y": 4.934
+      },
+      {
+        "x": 6.1,
+        "y": 8.207
+      },
+      {
+        "x": 10,
+        "y": 94.616
+      },
+      {
+        "x": 8.8,
+        "y": 10.36
+      },
+      {
+        "x": 8.8,
+        "y": 0.924
+      },
+      {
+        "x": 8,
+        "y": 39.385
+      },
+      {
+        "x": 5,
+        "y": 2.1950000000000003
       }
     ],
-    "count": 4859,
-    "totalKev": 4971
+    "count": 4961,
+    "totalKev": 5077
   },
   "kevCisaOverlap": {
     "available": true,
-    "kevTotal": 4971,
-    "otherTotal": 1622,
-    "both": 1622,
-    "kevOnly": 3349,
+    "kevTotal": 5077,
+    "otherTotal": 1623,
+    "both": 1623,
+    "kevOnly": 3454,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "4,971",
+        "number": "5,077",
         "desc": "KEVs (combined catalog)"
       },
       {
-        "number": "1,622",
+        "number": "1,623",
         "desc": "In both KEVs and CISA KEV"
       },
       {
-        "number": "1,622",
+        "number": "1,623",
         "desc": "CISA KEV catalog"
       }
     ],
-    "cisaTotal": 1622,
+    "cisaTotal": 1623,
     "cisaOnly": 0,
     "labels": [
       "KEVs only",
@@ -20859,21 +21279,21 @@ window.__KEV_OVERRIDES = {
       "CISA KEV only"
     ],
     "data": [
-      3349,
-      1622,
+      3454,
+      1623,
       0
     ]
   },
   "kevVulncheckOverlap": {
     "available": true,
-    "kevTotal": 4971,
+    "kevTotal": 5077,
     "otherTotal": 4968,
     "both": 4968,
-    "kevOnly": 3,
+    "kevOnly": 109,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "4,971",
+        "number": "5,077",
         "desc": "KEVs (combined catalog)"
       },
       {
@@ -20893,29 +21313,29 @@ window.__KEV_OVERRIDES = {
       "VulnCheck only"
     ],
     "data": [
-      3,
+      109,
       4968,
       0
     ]
   },
   "kevEnisaOverlap": {
     "available": true,
-    "kevTotal": 4971,
-    "otherTotal": 19,
-    "both": 19,
-    "kevOnly": 4952,
+    "kevTotal": 5077,
+    "otherTotal": 32,
+    "both": 32,
+    "kevOnly": 5045,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "4,971",
+        "number": "5,077",
         "desc": "KEVs (combined catalog)"
       },
       {
-        "number": "19",
+        "number": "32",
         "desc": "In both KEVs and ENISA EU KEV"
       },
       {
-        "number": "19",
+        "number": "32",
         "desc": "ENISA EU KEV catalog"
       }
     ],
@@ -20925,21 +21345,21 @@ window.__KEV_OVERRIDES = {
       "ENISA only"
     ],
     "data": [
-      4952,
-      19,
+      5045,
+      32,
       0
     ]
   },
   "kevEuvdOverlap": {
     "available": true,
-    "kevTotal": 4971,
+    "kevTotal": 5077,
     "otherTotal": 1621,
     "both": 1621,
-    "kevOnly": 3350,
+    "kevOnly": 3456,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "4,971",
+        "number": "5,077",
         "desc": "KEVs (combined catalog)"
       },
       {
@@ -20957,21 +21377,21 @@ window.__KEV_OVERRIDES = {
       "EUVD KEV only"
     ],
     "data": [
-      3350,
+      3456,
       1621,
       0
     ]
   },
   "kevGoogleP0Overlap": {
     "available": true,
-    "kevTotal": 4971,
+    "kevTotal": 5077,
     "otherTotal": 404,
     "both": 404,
-    "kevOnly": 4567,
+    "kevOnly": 4673,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "4,971",
+        "number": "5,077",
         "desc": "KEVs"
       },
       {
@@ -20991,21 +21411,21 @@ window.__KEV_OVERRIDES = {
       "Google P0 only"
     ],
     "data": [
-      4567,
+      4673,
       404,
       0
     ]
   },
   "kevDbirOverlap": {
     "available": true,
-    "kevTotal": 4971,
+    "kevTotal": 5077,
     "otherTotal": 35,
     "both": 35,
-    "kevOnly": 4936,
+    "kevOnly": 5042,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "4,971",
+        "number": "5,077",
         "desc": "KEVs (combined catalog)"
       },
       {
@@ -21025,21 +21445,21 @@ window.__KEV_OVERRIDES = {
       "DBIR only"
     ],
     "data": [
-      4936,
+      5042,
       35,
       0
     ]
   },
   "kevMandiantOverlap": {
     "available": true,
-    "kevTotal": 4971,
+    "kevTotal": 5077,
     "otherTotal": 25,
     "both": 25,
-    "kevOnly": 4946,
+    "kevOnly": 5052,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "4,971",
+        "number": "5,077",
         "desc": "KEVs (combined catalog)"
       },
       {
@@ -21057,25 +21477,25 @@ window.__KEV_OVERRIDES = {
       "Mandiant only"
     ],
     "data": [
-      4946,
+      5052,
       25,
       0
     ]
   },
   "kevMetasploitOverlap": {
     "available": true,
-    "kevTotal": 4971,
+    "kevTotal": 5077,
     "otherTotal": 3159,
-    "both": 961,
-    "kevOnly": 4010,
-    "otherOnly": 2198,
+    "both": 966,
+    "kevOnly": 4111,
+    "otherOnly": 2193,
     "stats": [
       {
-        "number": "4,971",
+        "number": "5,077",
         "desc": "KEVs (combined catalog)"
       },
       {
-        "number": "961",
+        "number": "966",
         "desc": "In both KEVs and Metasploit"
       },
       {
@@ -21089,29 +21509,29 @@ window.__KEV_OVERRIDES = {
       "Metasploit only"
     ],
     "data": [
-      4010,
-      961,
-      2198
+      4111,
+      966,
+      2193
     ]
   },
   "kevNucleiOverlap": {
     "available": true,
-    "kevTotal": 4971,
-    "otherTotal": 4229,
-    "both": 1790,
-    "kevOnly": 3181,
-    "otherOnly": 2439,
+    "kevTotal": 5077,
+    "otherTotal": 4231,
+    "both": 1797,
+    "kevOnly": 3280,
+    "otherOnly": 2434,
     "stats": [
       {
-        "number": "4,971",
+        "number": "5,077",
         "desc": "KEVs (combined catalog)"
       },
       {
-        "number": "1,790",
+        "number": "1,797",
         "desc": "In both KEVs and Nuclei"
       },
       {
-        "number": "4,229",
+        "number": "4,231",
         "desc": "Nuclei catalog"
       }
     ],
@@ -21121,25 +21541,25 @@ window.__KEV_OVERRIDES = {
       "Nuclei only"
     ],
     "data": [
-      3181,
-      1790,
-      2439
+      3280,
+      1797,
+      2434
     ]
   },
   "kevExploitdbOverlap": {
     "available": true,
-    "kevTotal": 4971,
+    "kevTotal": 5077,
     "otherTotal": 25025,
-    "both": 1109,
-    "kevOnly": 3862,
-    "otherOnly": 23916,
+    "both": 1120,
+    "kevOnly": 3957,
+    "otherOnly": 23905,
     "stats": [
       {
-        "number": "22.3%",
+        "number": "22.1%",
         "desc": "of KEVs are in ExploitDB"
       },
       {
-        "number": "4.4%",
+        "number": "4.5%",
         "desc": "of ExploitDB are in KEVs"
       }
     ],
@@ -21149,25 +21569,25 @@ window.__KEV_OVERRIDES = {
       "ExploitDB only"
     ],
     "data": [
-      3862,
-      1109,
-      23916
+      3957,
+      1120,
+      23905
     ]
   },
   "kevExploitRefsOverlap": {
     "available": true,
-    "kevTotal": 4971,
-    "otherTotal": 34474,
-    "both": 807,
-    "kevOnly": 4164,
-    "otherOnly": 33667,
+    "kevTotal": 5077,
+    "otherTotal": 34496,
+    "both": 816,
+    "kevOnly": 4261,
+    "otherOnly": 33680,
     "stats": [
       {
-        "number": "16.2%",
+        "number": "16.1%",
         "desc": "of KEVs have exploit refs in cvelistV5"
       },
       {
-        "number": "2.3%",
+        "number": "2.4%",
         "desc": "of exploit refs (cvelistV5) are in KEVs"
       }
     ],
@@ -21177,39 +21597,73 @@ window.__KEV_OVERRIDES = {
       "Exploit refs only"
     ],
     "data": [
-      4164,
-      807,
-      33667
+      4261,
+      816,
+      33680
     ]
   },
   "kevGreenboneOverlap": {
     "available": true,
-    "kevTotal": 4971,
+    "kevTotal": 5077,
     "otherTotal": 75572,
-    "both": 1836,
-    "kevOnly": 3135,
-    "otherOnly": 73736,
+    "both": 1866,
+    "kevOnly": 3211,
+    "otherOnly": 73706,
     "stats": [
       {
-        "number": "36.9%",
+        "number": "36.8%",
         "desc": "of KEVs have an OpenVAS NASL"
       },
       {
-        "number": "2.4%",
+        "number": "2.5%",
         "desc": "of OpenVAS NASL CVEs are in KEVs"
       }
     ],
     "greenboneTotal": 75572,
-    "greenboneOnly": 73736,
+    "greenboneOnly": 73706,
     "labels": [
       "KEVs only",
       "Both",
       "OpenVAS only"
     ],
     "data": [
-      3135,
-      1836,
-      73736
+      3211,
+      1866,
+      73706
+    ]
+  },
+  "kevKevintelOverlap": {
+    "available": true,
+    "kevTotal": 5077,
+    "otherTotal": 2376,
+    "both": 2376,
+    "kevOnly": 2701,
+    "otherOnly": 0,
+    "stats": [
+      {
+        "number": "5,077",
+        "desc": "KEVs (combined catalog)"
+      },
+      {
+        "number": "2,376",
+        "desc": "In both KEVs and KEVIntel"
+      },
+      {
+        "number": "2,376",
+        "desc": "KEVIntel catalog"
+      }
+    ],
+    "kevintelTotal": 2376,
+    "kevintelOnly": 0,
+    "labels": [
+      "KEVs only",
+      "Both",
+      "KEVIntel only"
+    ],
+    "data": [
+      2701,
+      2376,
+      0
     ]
   },
   "kevSankey": {
@@ -21221,8 +21675,8 @@ window.__KEV_OVERRIDES = {
         "Medium (157,673, 44.0%)",
         "Low (14,679, 4.1%)",
         "No-score (22,973, 6.4%)",
-        "KEVs (4,971, 1.4%)",
-        "No breach (353,703, 98.6%)"
+        "KEVs (5,077, 1.4%)",
+        "No breach (353,597, 98.6%)"
       ],
       "color": [
         "#c62828",
@@ -21260,16 +21714,16 @@ window.__KEV_OVERRIDES = {
         5
       ],
       "value": [
-        40199,
-        119246,
-        156751,
-        14646,
-        22861,
-        1821,
-        2083,
-        922,
-        33,
-        112
+        40173,
+        119202,
+        156723,
+        14642,
+        22857,
+        1847,
+        2127,
+        950,
+        37,
+        116
       ]
     },
     "title": "CVE CVSS (NVD) Severity (left) → KEVs / No breach (right)"
@@ -21341,14 +21795,14 @@ window.__KEV_OVERRIDES = {
   "kevHero": {
     "stats": [
       {
-        "value": 4971,
+        "value": 5077,
         "suffix": "",
         "isAccent": false,
         "isStatic": false,
         "desc": "KEVs: exploited in the wild"
       },
       {
-        "value": "32.6%",
+        "value": "32.0%",
         "isAccent": true,
         "isStatic": true,
         "desc": "KEVs that overlap with CISA KEV"
@@ -21361,7 +21815,7 @@ window.__KEV_OVERRIDES = {
         "desc": "KEV sources combined"
       },
       {
-        "value": "36.6%",
+        "value": "36.4%",
         "isAccent": true,
         "isStatic": true,
         "desc": "KEVs scored CVSS ≥9.0"

@@ -8,7 +8,7 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 758,
+      "value": 759,
       "color": "#F97316"
     },
     {
@@ -18,12 +18,12 @@
     },
     {
       "name": "CISA KEV",
-      "value": 1622,
+      "value": 1623,
       "color": "#DC2626"
     },
     {
       "name": "ENISA KEV",
-      "value": 19,
+      "value": 32,
       "color": "#2563EB"
     }
   ],
@@ -151,23 +151,29 @@
     },
     "ENISA KEV": {
       "labels": [
-        "Red Hat",
-        "Fortinet",
-        "Microsoft",
         "Ivanti",
+        "Microsoft",
+        "Fortinet",
+        "Red Hat",
         "Citrix",
         "Apache",
-        "Atlassian",
-        "F5",
-        "Omnissa"
+        "Beyondtrust",
+        "Webpros",
+        "Roundcube",
+        "Meta",
+        "Omnissa",
+        "Atlassian"
       ],
       "data": [
-        3,
-        3,
-        3,
+        8,
+        5,
+        5,
         3,
         2,
         2,
+        1,
+        1,
+        1,
         1,
         1,
         1

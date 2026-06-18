@@ -94,6 +94,7 @@
       <button class="toggle-btn" data-tab="vulncheck">VulnCheck</button>
       <button class="toggle-btn" data-tab="enisa">ENISA EU KEV</button>
       <button class="toggle-btn" data-tab="euvd-kev">EUVD KEV</button>
+      <button class="toggle-btn" data-tab="kevintel">KEVIntel</button>
     </div>
     <div class="tab-panel active" id="tab-kev">
       <div class="chart-container" style="height: 350px;">
@@ -118,6 +119,12 @@
         <p class="data-unavailable">Data unavailable. Run kev and euvd-kev processors, then regenerate graphs.</p>
       </div>
       <div class="insight-cards" id="kevEuvdStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-kevintel">
+      <div class="chart-container" style="height: 350px;" id="kevKevintelContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and kevintel processors. (Disable with KEVINTEL_ENABLED=false.)</p>
+      </div>
+      <div class="insight-cards" id="kevKevintelStats"></div>
     </div>
   </div>
 </section>
@@ -499,6 +506,7 @@
       <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV</a>,
       <a href="https://www.first.org/epss/" target="_blank">FIRST EPSS</a>,
       <a href="https://vulncheck.io/" target="_blank">VulnCheck</a>,
+      <a href="https://kevintel.com/" target="_blank">KEVIntel</a>,
       <a href="https://github.com/vulndb/vulndb" target="_blank">VulnDB</a>,
       <a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view?gid=0#gid=0" target="_blank">Google Project Zero</a>,
       <a href="https://github.com/rapid7/metasploit-framework" target="_blank">Metasploit</a>,
@@ -603,7 +611,11 @@
       plugins: { legend: { display: false } },
       scales: {
         x: { grid: { display: false }, border: { display: false }, ticks: { font: { weight: '500' } } },
-        y: { beginAtZero: true, grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { callback: function(v) { return v >= 1000 ? (v/1000).toFixed(0) + 'k' : v; } } }
+        y: { beginAtZero: true, grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { callback: function(v) {
+          if (Math.abs(v) >= 1e6) return (v / 1e6).toFixed(v % 1e6 === 0 ? 0 : 1) + 'M';
+          if (Math.abs(v) >= 1000) return (v / 1000).toFixed(v % 1000 === 0 ? 0 : 1) + 'k';
+          return v;
+        } } }
       }
     };
     var merged = Object.assign({}, baseOpts, window.CHART_ANIMATION && window.CHART_ANIMATION.bar || {}, opts || {});
@@ -703,7 +715,11 @@
       plugins: { legend: { display: false } },
       scales: {
         x: { grid: { display: false }, border: { display: false }, ticks: { font: { weight: '500' } } },
-        y: { beginAtZero: true, grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { callback: function(v) { return v >= 1000 ? (v/1000).toFixed(0) + 'k' : v; } } }
+        y: { beginAtZero: true, grid: { color: '#F5F5F5' }, border: { display: false }, ticks: { callback: function(v) {
+          if (Math.abs(v) >= 1e6) return (v / 1e6).toFixed(v % 1e6 === 0 ? 0 : 1) + 'M';
+          if (Math.abs(v) >= 1000) return (v / 1000).toFixed(v % 1000 === 0 ? 0 : 1) + 'k';
+          return v;
+        } } }
       }
     };
     var merged = Object.assign({}, baseOpts, window.CHART_ANIMATION && window.CHART_ANIMATION.line || {}, opts || {});
@@ -923,6 +939,7 @@
     renderOverlapInto('kevVulncheckContainer', 'kevVulncheckChart', 'kevVulncheckOverlap', 'VC', 'KEVs', 'VulnCheck KEV', 'KEVs', ['#F97316', '#1565c0', '#3B82F6'], 'kevVulncheckStats');
     renderOverlapInto('kevEnisaContainer', 'kevEnisaChart', 'kevEnisaOverlap', 'ENISA', 'KEVs', 'ENISA EU KEV', 'KEVs', ['#F97316', '#1565c0', '#06B6D4'], 'kevEnisaStats');
     renderOverlapInto('kevEuvdContainer', 'kevEuvdChart', 'kevEuvdOverlap', 'EUVD', 'KEVs', 'EUVD KEV', 'KEVs', ['#F97316', '#1565c0', '#7C3AED'], 'kevEuvdStats');
+    renderOverlapInto('kevKevintelContainer', 'kevKevintelChart', 'kevKevintelOverlap', 'KI', 'KEVs', 'KEVIntel', 'KEVs', ['#F97316', '#1565c0', '#14B8A6'], 'kevKevintelStats');
   });
 
   /* 03: KEVs vs GOOGLE P0 (Venn) */
@@ -1171,6 +1188,7 @@
 
   /* 13b: EUVD KEV–KEVs Overlap (Venn) */
   whenChartInView('kevEuvdContainer', function() { renderOverlapInto('kevEuvdContainer', 'kevEuvdChart', 'kevEuvdOverlap', 'EUVD', 'KEVs', 'EUVD KEV', 'KEVs', ['#F97316', '#1565c0', '#7C3AED'], 'kevEuvdStats'); });
+  whenChartInView('kevKevintelContainer', function() { renderOverlapInto('kevKevintelContainer', 'kevKevintelChart', 'kevKevintelOverlap', 'KI', 'KEVs', 'KEVIntel', 'KEVs', ['#F97316', '#1565c0', '#14B8A6'], 'kevKevintelStats'); });
 
   /* KEVs-Mandiant (when data exists) */
   whenChartInView('kevMandiantContainer', function() { renderOverlapInto('kevMandiantContainer', 'kevMandiantChart', 'kevMandiantOverlap', 'Mandiant', 'KEVs', 'Mandiant M-Trends', 'KEVs', ['#F97316', '#1565c0', '#c62828'], 'kevMandiantStats'); });

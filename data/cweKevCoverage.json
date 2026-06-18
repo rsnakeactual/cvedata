@@ -5,16 +5,16 @@
     "CWEs without KEVs"
   ],
   "data": [
-    230,
-    739
+    234,
+    735
   ],
   "stats": [
     {
-      "number": "230",
+      "number": "234",
       "desc": "CWEs with ≥1 KEV"
     },
     {
-      "number": "23.7%",
+      "number": "24.1%",
       "desc": "Of all CWEs in CWE catalog"
     }
   ]

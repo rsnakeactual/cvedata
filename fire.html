@@ -97,6 +97,7 @@
       <button class="toggle-btn" data-tab="vulncheck">VulnCheck</button>
       <button class="toggle-btn" data-tab="enisa">ENISA EU KEV</button>
       <button class="toggle-btn" data-tab="euvd-kev">EUVD KEV</button>
+      <button class="toggle-btn" data-tab="kevintel">KEVIntel</button>
       <button class="toggle-btn" data-tab="ice">ICE (combined)</button>
     </div>
     <div class="tab-panel active" id="tab-kev">
@@ -122,6 +123,12 @@
         <p class="data-unavailable">Data unavailable. Run fire and euvd-kev processors, then regenerate graphs.</p>
       </div>
       <div class="insight-cards" id="fireEuvdKevStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-kevintel">
+      <div class="chart-container" style="height: 350px;" id="fireKevintelContainer">
+        <p class="data-unavailable">Data unavailable. Run fire and kevintel processors. (Disable with KEVINTEL_ENABLED=false.)</p>
+      </div>
+      <div class="insight-cards" id="fireKevintelStats"></div>
     </div>
     <div class="tab-panel" id="tab-ice">
       <div class="chart-container" style="height: 350px;" id="fireIceContainer">
@@ -559,6 +566,7 @@
       <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV</a>,
       <a href="https://www.first.org/epss/" target="_blank">FIRST EPSS</a>,
       <a href="https://vulncheck.io/" target="_blank">VulnCheck</a>,
+      <a href="https://kevintel.com/" target="_blank">KEVIntel</a>,
       <a href="https://github.com/vulndb/vulndb" target="_blank">VulnDB</a>,
       <a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view?gid=0#gid=0" target="_blank">Google Project Zero</a>,
       <a href="https://github.com/rapid7/metasploit-framework" target="_blank">Metasploit</a>,
@@ -999,6 +1007,7 @@
     renderOverlapInto('fireVulncheckContainer', 'fireVulncheckChart', 'fireVulncheckOverlap', 'VC', 'FIRE', 'VulnCheck KEV', 'FIRE', ['#F97316', '#E63946', '#3B82F6'], 'fireVulncheckStats');
     renderOverlapInto('enisaFireContainer', 'enisaFireChart', 'fireEnisaOverlap', 'ENISA', 'FIRE', 'ENISA EU KEV', 'FIRE', ['#F97316', '#E63946', '#06B6D4'], 'fireEnisaStats');
     renderOverlapInto('euvdKevFireContainer', 'euvdKevFireChart', 'fireEuvdKevOverlap', 'EUVD', 'FIRE', 'EUVD KEV', 'FIRE', ['#F97316', '#E63946', '#7C3AED'], 'fireEuvdKevStats');
+    renderOverlapInto('fireKevintelContainer', 'fireKevintelChart', 'fireKevintelOverlap', 'KI', 'FIRE', 'KEVIntel', 'FIRE', ['#F97316', '#E63946', '#14B8A6'], 'fireKevintelStats');
     renderOverlapInto('fireIceContainer', 'fireIceChart', 'fireIceOverlap', 'ICE', 'FIRE', 'ICE (combined)', 'FIRE', ['#F97316', '#E63946', '#1565c0'], 'fireIceStats');
   });
 
@@ -1232,6 +1241,7 @@
 
   /* Fire-ICE, Fire-Mandiant (when data exists) */
   whenChartInView('fireIceContainer', function() { renderOverlapInto('fireIceContainer', 'fireIceChart', 'fireIceOverlap', 'ICE', 'FIRE', 'ICE (combined)', 'FIRE', ['#F97316', '#E63946', '#1565c0'], 'fireIceStats'); });
+  whenChartInView('fireKevintelContainer', function() { renderOverlapInto('fireKevintelContainer', 'fireKevintelChart', 'fireKevintelOverlap', 'KI', 'FIRE', 'KEVIntel', 'FIRE', ['#F97316', '#E63946', '#14B8A6'], 'fireKevintelStats'); });
   whenChartInView('fireMandiantContainer', function() { renderOverlapInto('fireMandiantContainer', 'fireMandiantChart', 'fireMandiantOverlap', 'Mandiant', 'FIRE', 'Mandiant M-Trends', 'FIRE', ['#F97316', '#E63946', '#c62828']); });
 
   /* 21: ATT&CK FIRE vs other KEV scatter - square, 45° line, tooltip: group, CISA KEV, FIRE; color: blue=more KEV, red=more FIRE */

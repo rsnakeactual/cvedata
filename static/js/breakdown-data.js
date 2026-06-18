@@ -7,8 +7,8 @@ window.__BREAKDOWN_DATA = {
   "scannableFireComplete": 180,
   "notScannableFire": 220,
   "cveUniverseSplit": {
-    "noKnownBreach": "353,613 (98.6%)",
-    "breachesOnly": "4,465 (1.2%)",
+    "noKnownBreach": "353,508 (98.6%)",
+    "breachesOnly": "4,570 (1.3%)",
     "breachesLosses": "606 (0.2%)"
   },
   "modals": {
