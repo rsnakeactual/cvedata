@@ -1,21 +1,21 @@
 {
   "available": true,
   "fireTotal": 606,
-  "otherTotal": 2376,
-  "both": 415,
-  "fireOnly": 191,
-  "otherOnly": 1961,
+  "otherTotal": 2576,
+  "both": 443,
+  "fireOnly": 163,
+  "otherOnly": 2133,
   "stats": [
     {
       "number": "606",
       "desc": "FIRE vulnerabilities"
     },
     {
-      "number": "415",
+      "number": "443",
       "desc": "In both FIRE and KEVIntel"
     },
     {
-      "number": "2,376",
+      "number": "2,576",
       "desc": "KEVIntel catalog"
     }
   ],
@@ -25,8 +25,8 @@
     "KEVIntel only"
   ],
   "data": [
-    191,
-    415,
-    1961
+    163,
+    443,
+    2133
   ]
 }
