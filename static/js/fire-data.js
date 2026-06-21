@@ -255,9 +255,9 @@ window.__FIRE_OVERRIDES = {
       2,
       0,
       2,
+      4,
       5,
-      5,
-      3,
+      4,
       0,
       2,
       3,
@@ -307,8 +307,8 @@ window.__FIRE_OVERRIDES = {
       2,
       2,
       2,
-      3,
       4,
+      3,
       1,
       3,
       5,
@@ -529,10 +529,10 @@ window.__FIRE_OVERRIDES = {
   "fireExploitRefsOverlap": {
     "available": true,
     "fireTotal": 606,
-    "otherTotal": 34572,
+    "otherTotal": 34586,
     "both": 86,
     "fireOnly": 520,
-    "otherOnly": 34486,
+    "otherOnly": 34500,
     "stats": [
       {
         "number": "14.2%",
@@ -551,7 +551,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       520,
       86,
-      34486
+      34500
     ]
   },
   "fireGreenboneOverlap": {
@@ -649,10 +649,10 @@ window.__FIRE_OVERRIDES = {
   "fireEuvdKevOverlap": {
     "available": true,
     "fireTotal": 606,
-    "otherTotal": 1624,
+    "otherTotal": 1623,
     "both": 417,
     "fireOnly": 189,
-    "otherOnly": 1207,
+    "otherOnly": 1206,
     "stats": [
       {
         "number": "606",
@@ -663,7 +663,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and EUVD KEV"
       },
       {
-        "number": "1,624",
+        "number": "1,623",
         "desc": "EUVD KEV catalog"
       }
     ],
@@ -675,7 +675,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       189,
       417,
-      1207
+      1206
     ]
   },
   "fireEpssCorrelation": {
@@ -1827,7 +1827,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 22.114
+        "y": 24.296
       },
       {
         "x": 9.8,
@@ -1923,7 +1923,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.2,
-        "y": 75.103
+        "y": 74.933
       },
       {
         "x": 9.6,
@@ -2227,7 +2227,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 98.239
+        "y": 98.217
       },
       {
         "x": 9.8,
@@ -2459,7 +2459,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 99.977
+        "y": 99.982
       },
       {
         "x": 9.1,
@@ -3171,23 +3171,23 @@ window.__FIRE_OVERRIDES = {
     },
     "cnvd": {
       "data": [
-        19,
-        23,
+        12,
+        22,
         2,
         0,
         0
       ],
-      "total": 44
+      "total": 36
     },
     "jvn": {
       "data": [
-        296,
-        214,
+        294,
+        213,
         69,
         1,
         1
       ],
-      "total": 581
+      "total": 578
     },
     "bdu": {
       "data": [
@@ -8904,5 +8904,5 @@ window.__FIRE_OVERRIDES = {
       }
     ]
   },
-  "lastUpdated": "2026/06/20"
+  "lastUpdated": "2026/06/21"
 };
