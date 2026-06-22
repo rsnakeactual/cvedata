@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 42020,
+      "value": 42107,
       "color": "#E63946"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 42020,
+  "maxValue": 42107,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,13 +45,13 @@
         "Qualcomm"
       ],
       "data": [
-        3402,
-        1905,
+        3418,
+        1906,
         1789,
         1054,
         915,
-        782,
-        723,
+        786,
+        778,
         568,
         563,
         541,
