@@ -45,34 +45,34 @@
     73,
     55,
     65,
-    111,
+    110,
     97,
     106,
     128,
     215,
-    261,
+    258,
     290,
     379,
     509,
-    478,
-    541,
-    662,
-    603,
-    199
+    477,
+    540,
+    659,
+    563,
+    191
   ],
-  "total": 5055,
+  "total": 4998,
   "stats": [
     {
       "number": "27",
       "desc": "The oldest vulnerability in the KEVs catalog is 27 years old."
     },
     {
-      "number": "5,055",
+      "number": "4,998",
       "desc": "KEVs in catalog"
     },
     {
       "number": "2024",
-      "desc": "Peak year (662 KEVs assigned)"
+      "desc": "Peak year (659 KEVs assigned)"
     }
   ]
 }

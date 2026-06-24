@@ -47,34 +47,34 @@ window.__KEV_OVERRIDES = {
       73,
       55,
       65,
-      111,
+      110,
       97,
       106,
       128,
       215,
-      261,
+      258,
       290,
       379,
       509,
-      478,
-      541,
-      662,
-      603,
-      199
+      477,
+      540,
+      659,
+      563,
+      191
     ],
-    "total": 5055,
+    "total": 4998,
     "stats": [
       {
         "number": "27",
         "desc": "The oldest vulnerability in the KEVs catalog is 27 years old."
       },
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs in catalog"
       },
       {
         "number": "2024",
-        "desc": "Peak year (662 KEVs assigned)"
+        "desc": "Peak year (659 KEVs assigned)"
       }
     ]
   },
@@ -83,8 +83,8 @@ window.__KEV_OVERRIDES = {
     "labels": [
       "Microsoft",
       "Apple",
-      "Google",
       "Apache Software Foundation",
+      "Google",
       "Cisco",
       "Oracle",
       "Fortinet",
@@ -93,30 +93,30 @@ window.__KEV_OVERRIDES = {
       "Other"
     ],
     "data": [
-      414,
+      408,
       130,
-      94,
-      92,
-      80,
-      48,
-      43,
+      91,
+      89,
+      78,
+      47,
+      42,
       33,
       31,
-      4508
+      4467
     ],
-    "kevTotal": 5055,
-    "naCount": 2364,
+    "kevTotal": 4998,
+    "naCount": 2354,
     "stats": [
       {
-        "number": "414",
+        "number": "408",
         "desc": "Largest vendor bucket: Microsoft"
       },
       {
-        "number": "4,508",
+        "number": "4,467",
         "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
       },
       {
-        "number": "2,364",
+        "number": "2,354",
         "desc": "KEVs missing from CVElist or without CNA vendor field"
       }
     ]
@@ -132,53 +132,53 @@ window.__KEV_OVERRIDES = {
     ],
     "nvd": {
       "data": [
-        1848,
-        2120,
-        934,
-        35,
-        118
+        1835,
+        2092,
+        924,
+        33,
+        114
       ],
-      "total": 5055
+      "total": 4998
     },
     "euvd": {
       "data": [
-        1848,
-        2120,
-        934,
-        35,
-        115
+        1835,
+        2092,
+        924,
+        33,
+        111
       ],
-      "total": 5052
+      "total": 4995
     },
     "cnvd": {
       "data": [
-        224,
-        395,
-        112,
+        266,
+        440,
+        122,
         2,
         1
       ],
-      "total": 734
+      "total": 831
     },
     "jvn": {
       "data": [
-        1598,
-        1891,
-        778,
-        23,
-        4
+        1683,
+        1959,
+        838,
+        25,
+        3
       ],
-      "total": 4294
+      "total": 4508
     },
     "bdu": {
       "data": [
-        937,
-        1237,
-        357,
-        13,
-        29
+        924,
+        1213,
+        351,
+        11,
+        26
       ],
-      "total": 2573
+      "total": 2525
     }
   },
   "kevCwe": {
@@ -192,26 +192,26 @@ window.__KEV_OVERRIDES = {
       "CWE-787",
       "CWE-94",
       "CWE-434",
-      "CWE-416",
       "CWE-502",
+      "CWE-416",
       "CWE-20",
       "CWE-77",
       "CWE-306",
       "CWE-287",
-      "CWE-284",
       "CWE-200",
+      "CWE-284",
       "CWE-918",
       "CWE-269",
       "CWE-119",
       "CWE-288",
       "CWE-843",
       "CWE-863",
-      "CWE-74",
       "CWE-121",
+      "CWE-74",
       "CWE-120",
-      "CWE-122",
       "CWE-59",
       "CWE-190",
+      "CWE-122",
       "CWE-611",
       "CWE-125",
       "CWE-798",
@@ -220,20 +220,20 @@ window.__KEV_OVERRIDES = {
       "CWE-352",
       "CWE-98",
       "CWE-601",
-      "CWE-639",
       "CWE-400",
-      "CWE-23",
-      "CWE-347",
+      "CWE-639",
       "CWE-506",
-      "CWE-362",
+      "CWE-23",
       "CWE-73",
+      "CWE-347",
+      "CWE-362",
       "CWE-285",
       "CWE-95",
       "CWE-399",
       "CWE-522",
-      "CWE-88",
       "CWE-552",
       "CWE-35",
+      "CWE-88",
       "CWE-415",
       "CWE-367",
       "CWE-290",
@@ -245,7 +245,6 @@ window.__KEV_OVERRIDES = {
       "CWE-532",
       "CWE-917",
       "CWE-116",
-      "CWE-426",
       "CWE-444",
       "CWE-912",
       "CWE-707",
@@ -254,42 +253,40 @@ window.__KEV_OVERRIDES = {
       "CWE-1336",
       "CWE-732",
       "CWE-29",
+      "CWE-426",
       "CWE-420",
       "CWE-24",
       "CWE-305",
-      "CWE-908",
       "CWE-404",
       "CWE-295",
       "CWE-703",
-      "CWE-782",
       "CWE-1321",
       "CWE-494",
       "CWE-209",
-      "CWE-754",
+      "CWE-908",
       "CWE-134",
       "CWE-1287",
       "CWE-276",
       "CWE-80",
       "CWE-312",
       "CWE-326",
-      "CWE-345",
+      "CWE-782",
       "CWE-264",
       "CWE-620",
       "CWE-319",
-      "CWE-668",
       "CWE-346",
       "CWE-913",
       "CWE-476",
       "CWE-250",
       "CWE-829",
       "CWE-424",
-      "CWE-123",
+      "CWE-754",
       "CWE-303",
       "CWE-27",
-      "CWE-835",
       "CWE-427",
       "CWE-749",
       "CWE-665",
+      "CWE-345",
       "CWE-755",
       "CWE-706",
       "CWE-497",
@@ -297,7 +294,7 @@ window.__KEV_OVERRIDES = {
       "CWE-359",
       "CWE-489",
       "CWE-201",
-      "CWE-1284",
+      "CWE-668",
       "CWE-565",
       "CWE-158",
       "CWE-669",
@@ -305,17 +302,14 @@ window.__KEV_OVERRIDES = {
       "CWE-667",
       "CWE-25",
       "CWE-807",
-      "CWE-130",
-      "CWE-472",
-      "CWE-653",
-      "CWE-114",
+      "CWE-123",
       "CWE-191",
       "CWE-591",
       "CWE-1393",
       "CWE-184",
       "CWE-640",
+      "CWE-835",
       "CWE-473",
-      "CWE-401",
       "CWE-824",
       "CWE-281",
       "CWE-124",
@@ -325,19 +319,19 @@ window.__KEV_OVERRIDES = {
       "CWE-300",
       "CWE-364",
       "CWE-259",
+      "CWE-1284",
       "CWE-402",
       "CWE-922",
       "CWE-836",
       "CWE-1392",
       "CWE-75",
-      "CWE-613",
       "CWE-338",
-      "CWE-1390",
       "CWE-1391",
       "CWE-61",
       "CWE-1023",
       "CWE-648",
       "CWE-257",
+      "CWE-130",
       "CWE-267",
       "CWE-940",
       "CWE-129",
@@ -347,8 +341,11 @@ window.__KEV_OVERRIDES = {
       "CWE-457",
       "CWE-528",
       "CWE-282",
+      "CWE-472",
       "CWE-44",
+      "CWE-653",
       "CWE-647",
+      "CWE-114",
       "CWE-273",
       "CWE-176",
       "CWE-772",
@@ -357,6 +354,7 @@ window.__KEV_OVERRIDES = {
       "CWE-280",
       "CWE-823",
       "CWE-351",
+      "CWE-401",
       "CWE-197",
       "CWE-664",
       "CWE-270",
@@ -372,9 +370,9 @@ window.__KEV_OVERRIDES = {
       "CWE-428",
       "CWE-178",
       "CWE-538",
-      "CWE-704",
-      "CWE-698",
       "CWE-419",
+      "CWE-698",
+      "CWE-704",
       "CWE-441",
       "CWE-234",
       "CWE-327",
@@ -386,12 +384,14 @@ window.__KEV_OVERRIDES = {
       "CWE-551",
       "CWE-354",
       "CWE-1286",
+      "CWE-613",
       "CWE-1242",
       "CWE-916",
       "CWE-219",
       "CWE-115",
       "CWE-770",
       "CWE-283",
+      "CWE-1390",
       "CWE-943",
       "CWE-311",
       "CWE-113",
@@ -402,8 +402,8 @@ window.__KEV_OVERRIDES = {
       "CWE-325",
       "CWE-1258",
       "CWE-1327",
-      "CWE-43",
       "CWE-1259",
+      "CWE-43",
       "CWE-1021",
       "CWE-28",
       "CWE-682",
@@ -411,68 +411,65 @@ window.__KEV_OVERRIDES = {
       "CWE-149",
       "CWE-403",
       "CWE-1236",
-      "CWE-202",
       "CWE-31",
-      "CWE-248",
-      "CWE-144",
-      "CWE-159",
-      "CWE-692"
+      "CWE-202",
+      "CWE-248"
     ],
     "data": [
-      278,
-      211,
-      196,
-      192,
+      277,
+      205,
+      195,
+      191,
       152,
       147,
-      147,
-      136,
-      125,
+      145,
+      139,
       124,
-      114,
-      96,
-      89,
+      121,
+      113,
+      95,
+      88,
       83,
       76,
-      76,
+      73,
       71,
       62,
-      61,
+      60,
       47,
-      42,
-      39,
-      35,
+      41,
+      38,
       34,
-      32,
+      34,
+      30,
       27,
-      27,
-      25,
+      24,
+      24,
       24,
       23,
       23,
       22,
-      19,
+      18,
       18,
       17,
       17,
-      16,
-      15,
       15,
       15,
       14,
+      14,
       13,
-      13,
+      11,
+      11,
       11,
       10,
       10,
       9,
       9,
       9,
-      9,
       8,
       8,
       8,
       8,
+      8,
       7,
       7,
       7,
@@ -488,7 +485,6 @@ window.__KEV_OVERRIDES = {
       6,
       6,
       6,
-      6,
       5,
       5,
       5,
@@ -496,7 +492,6 @@ window.__KEV_OVERRIDES = {
       5,
       5,
       5,
-      5,
       4,
       4,
       4,
@@ -511,7 +506,6 @@ window.__KEV_OVERRIDES = {
       4,
       4,
       4,
-      4,
       3,
       3,
       3,
@@ -565,10 +559,10 @@ window.__KEV_OVERRIDES = {
       2,
       2,
       2,
-      2,
-      2,
-      2,
-      2,
+      1,
+      1,
+      1,
+      1,
       1,
       1,
       1,
@@ -662,26 +656,26 @@ window.__KEV_OVERRIDES = {
       "CWE-787: Out-of-bounds Write",
       "CWE-94: Improper Control of Generation of Code ('Code Injection')",
       "CWE-434: Unrestricted Upload of File with Dangerous Type",
-      "CWE-416: Use After Free",
       "CWE-502: Deserialization of Untrusted Data",
+      "CWE-416: Use After Free",
       "CWE-20: Improper Input Validation",
       "CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')",
       "CWE-306: Missing Authentication for Critical Function",
       "CWE-287: Improper Authentication",
-      "CWE-284: Improper Access Control",
       "CWE-200: Exposure of Sensitive Information to an Unauthorized Actor",
+      "CWE-284: Improper Access Control",
       "CWE-918: Server-Side Request Forgery (SSRF)",
       "CWE-269: Improper Privilege Management",
       "CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer",
       "CWE-288: Authentication Bypass Using an Alternate Path or Channel",
       "CWE-843: Access of Resource Using Incompatible Type ('Type Confusion')",
       "CWE-863: Incorrect Authorization",
-      "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
       "CWE-121: Stack-based Buffer Overflow",
+      "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
       "CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
-      "CWE-122: Heap-based Buffer Overflow",
       "CWE-59: Improper Link Resolution Before File Access ('Link Following')",
       "CWE-190: Integer Overflow or Wraparound",
+      "CWE-122: Heap-based Buffer Overflow",
       "CWE-611: Improper Restriction of XML External Entity Reference",
       "CWE-125: Out-of-bounds Read",
       "CWE-798: Use of Hard-coded Credentials",
@@ -690,20 +684,20 @@ window.__KEV_OVERRIDES = {
       "CWE-352: Cross-Site Request Forgery (CSRF)",
       "CWE-98: Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')",
       "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')",
-      "CWE-639: Authorization Bypass Through User-Controlled Key",
       "CWE-400: Uncontrolled Resource Consumption",
-      "CWE-23: Relative Path Traversal",
-      "CWE-347: Improper Verification of Cryptographic Signature",
+      "CWE-639: Authorization Bypass Through User-Controlled Key",
       "CWE-506: Embedded Malicious Code",
-      "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
+      "CWE-23: Relative Path Traversal",
       "CWE-73: External Control of File Name or Path",
+      "CWE-347: Improper Verification of Cryptographic Signature",
+      "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
       "CWE-285: Improper Authorization",
       "CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')",
       "CWE-399: CWE-399",
       "CWE-522: Insufficiently Protected Credentials",
-      "CWE-88: Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')",
       "CWE-552: Files or Directories Accessible to External Parties",
       "CWE-35: Path Traversal: '.../...//'",
+      "CWE-88: Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')",
       "CWE-415: Double Free",
       "CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition",
       "CWE-290: Authentication Bypass by Spoofing",
@@ -715,7 +709,6 @@ window.__KEV_OVERRIDES = {
       "CWE-532: Insertion of Sensitive Information into Log File",
       "CWE-917: Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection')",
       "CWE-116: Improper Encoding or Escaping of Output",
-      "CWE-426: Untrusted Search Path",
       "CWE-444: Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')",
       "CWE-912: Hidden Functionality",
       "CWE-707: Improper Neutralization",
@@ -724,42 +717,40 @@ window.__KEV_OVERRIDES = {
       "CWE-1336: Improper Neutralization of Special Elements Used in a Template Engine",
       "CWE-732: Incorrect Permission Assignment for Critical Resource",
       "CWE-29: Path Traversal: '\\..\\filename'",
+      "CWE-426: Untrusted Search Path",
       "CWE-420: Unprotected Alternate Channel",
       "CWE-24: Path Traversal: '../filedir'",
       "CWE-305: Authentication Bypass by Primary Weakness",
-      "CWE-908: Use of Uninitialized Resource",
       "CWE-404: Improper Resource Shutdown or Release",
       "CWE-295: Improper Certificate Validation",
       "CWE-703: Improper Check or Handling of Exceptional Conditions",
-      "CWE-782: Exposed IOCTL with Insufficient Access Control",
       "CWE-1321: Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')",
       "CWE-494: Download of Code Without Integrity Check",
       "CWE-209: Generation of Error Message Containing Sensitive Information",
-      "CWE-754: Improper Check for Unusual or Exceptional Conditions",
+      "CWE-908: Use of Uninitialized Resource",
       "CWE-134: Use of Externally-Controlled Format String",
       "CWE-1287: Improper Validation of Specified Type of Input",
       "CWE-276: Incorrect Default Permissions",
       "CWE-80: Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)",
       "CWE-312: Cleartext Storage of Sensitive Information",
       "CWE-326: Inadequate Encryption Strength",
-      "CWE-345: Insufficient Verification of Data Authenticity",
+      "CWE-782: Exposed IOCTL with Insufficient Access Control",
       "CWE-264: CWE-264",
       "CWE-620: Unverified Password Change",
       "CWE-319: Cleartext Transmission of Sensitive Information",
-      "CWE-668: Exposure of Resource to Wrong Sphere",
       "CWE-346: Origin Validation Error",
       "CWE-913: Improper Control of Dynamically-Managed Code Resources",
       "CWE-476: NULL Pointer Dereference",
       "CWE-250: Execution with Unnecessary Privileges",
       "CWE-829: Inclusion of Functionality from Untrusted Control Sphere",
       "CWE-424: Improper Protection of Alternate Path",
-      "CWE-123: Write-what-where Condition",
+      "CWE-754: Improper Check for Unusual or Exceptional Conditions",
       "CWE-303: Incorrect Implementation of Authentication Algorithm",
       "CWE-27: Path Traversal: 'dir/../../filename'",
-      "CWE-835: Loop with Unreachable Exit Condition ('Infinite Loop')",
       "CWE-427: Uncontrolled Search Path Element",
       "CWE-749: Exposed Dangerous Method or Function",
       "CWE-665: Improper Initialization",
+      "CWE-345: Insufficient Verification of Data Authenticity",
       "CWE-755: Improper Handling of Exceptional Conditions",
       "CWE-706: Use of Incorrectly-Resolved Name or Reference",
       "CWE-497: Exposure of Sensitive System Information to an Unauthorized Control Sphere",
@@ -767,7 +758,7 @@ window.__KEV_OVERRIDES = {
       "CWE-359: Exposure of Private Personal Information to an Unauthorized Actor",
       "CWE-489: Active Debug Code",
       "CWE-201: Insertion of Sensitive Information Into Sent Data",
-      "CWE-1284: Improper Validation of Specified Quantity in Input",
+      "CWE-668: Exposure of Resource to Wrong Sphere",
       "CWE-565: Reliance on Cookies without Validation and Integrity Checking",
       "CWE-158: Improper Neutralization of Null Byte or NUL Character",
       "CWE-669: Incorrect Resource Transfer Between Spheres",
@@ -775,17 +766,14 @@ window.__KEV_OVERRIDES = {
       "CWE-667: Improper Locking",
       "CWE-25: Path Traversal: '/../filedir'",
       "CWE-807: Reliance on Untrusted Inputs in a Security Decision",
-      "CWE-130: Improper Handling of Length Parameter Inconsistency",
-      "CWE-472: External Control of Assumed-Immutable Web Parameter",
-      "CWE-653: Improper Isolation or Compartmentalization",
-      "CWE-114: Process Control",
+      "CWE-123: Write-what-where Condition",
       "CWE-191: Integer Underflow (Wrap or Wraparound)",
       "CWE-591: Sensitive Data Storage in Improperly Locked Memory",
       "CWE-1393: Use of Default Password",
       "CWE-184: Incomplete List of Disallowed Inputs",
       "CWE-640: Weak Password Recovery Mechanism for Forgotten Password",
+      "CWE-835: Loop with Unreachable Exit Condition ('Infinite Loop')",
       "CWE-473: PHP External Variable Modification",
-      "CWE-401: Missing Release of Memory after Effective Lifetime",
       "CWE-824: Access of Uninitialized Pointer",
       "CWE-281: Improper Preservation of Permissions",
       "CWE-124: Buffer Underwrite ('Buffer Underflow')",
@@ -795,19 +783,19 @@ window.__KEV_OVERRIDES = {
       "CWE-300: Channel Accessible by Non-Endpoint",
       "CWE-364: Signal Handler Race Condition",
       "CWE-259: Use of Hard-coded Password",
+      "CWE-1284: Improper Validation of Specified Quantity in Input",
       "CWE-402: Transmission of Private Resources into a New Sphere ('Resource Leak')",
       "CWE-922: Insecure Storage of Sensitive Information",
       "CWE-836: Use of Password Hash Instead of Password for Authentication",
       "CWE-1392: Use of Default Credentials",
       "CWE-75: Failure to Sanitize Special Elements into a Different Plane (Special Element Injection)",
-      "CWE-613: Insufficient Session Expiration",
       "CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)",
-      "CWE-1390: Weak Authentication",
       "CWE-1391: Use of Weak Credentials",
       "CWE-61: UNIX Symbolic Link (Symlink) Following",
       "CWE-1023: Incomplete Comparison with Missing Factors",
       "CWE-648: Incorrect Use of Privileged APIs",
       "CWE-257: Storing Passwords in a Recoverable Format",
+      "CWE-130: Improper Handling of Length Parameter Inconsistency",
       "CWE-267: Privilege Defined With Unsafe Actions",
       "CWE-940: Improper Verification of Source of a Communication Channel",
       "CWE-129: Improper Validation of Array Index",
@@ -817,8 +805,11 @@ window.__KEV_OVERRIDES = {
       "CWE-457: Use of Uninitialized Variable",
       "CWE-528: Exposure of Core Dump File to an Unauthorized Control Sphere",
       "CWE-282: Improper Ownership Management",
+      "CWE-472: External Control of Assumed-Immutable Web Parameter",
       "CWE-44: Path Equivalence: 'file.name' (Internal Dot)",
+      "CWE-653: Improper Isolation or Compartmentalization",
       "CWE-647: Use of Non-Canonical URL Paths for Authorization Decisions",
+      "CWE-114: Process Control",
       "CWE-273: Improper Check for Dropped Privileges",
       "CWE-176: Improper Handling of Unicode Encoding",
       "CWE-772: Missing Release of Resource after Effective Lifetime",
@@ -827,6 +818,7 @@ window.__KEV_OVERRIDES = {
       "CWE-280: Improper Handling of Insufficient Permissions or Privileges",
       "CWE-823: Use of Out-of-range Pointer Offset",
       "CWE-351: Insufficient Type Distinction",
+      "CWE-401: Missing Release of Memory after Effective Lifetime",
       "CWE-197: Numeric Truncation Error",
       "CWE-664: Improper Control of a Resource Through its Lifetime",
       "CWE-270: Privilege Context Switching Error",
@@ -842,9 +834,9 @@ window.__KEV_OVERRIDES = {
       "CWE-428: Unquoted Search Path or Element",
       "CWE-178: Improper Handling of Case Sensitivity",
       "CWE-538: Insertion of Sensitive Information into Externally-Accessible File or Directory",
-      "CWE-704: Incorrect Type Conversion or Cast",
-      "CWE-698: Execution After Redirect (EAR)",
       "CWE-419: Unprotected Primary Channel",
+      "CWE-698: Execution After Redirect (EAR)",
+      "CWE-704: Incorrect Type Conversion or Cast",
       "CWE-441: Unintended Proxy or Intermediary ('Confused Deputy')",
       "CWE-234: Failure to Handle Missing Parameter",
       "CWE-327: Use of a Broken or Risky Cryptographic Algorithm",
@@ -856,12 +848,14 @@ window.__KEV_OVERRIDES = {
       "CWE-551: Incorrect Behavior Order: Authorization Before Parsing and Canonicalization",
       "CWE-354: Improper Validation of Integrity Check Value",
       "CWE-1286: Improper Validation of Syntactic Correctness of Input",
+      "CWE-613: Insufficient Session Expiration",
       "CWE-1242: Inclusion of Undocumented Features or Chicken Bits",
       "CWE-916: Use of Password Hash With Insufficient Computational Effort",
       "CWE-219: Storage of File with Sensitive Data Under Web Root",
       "CWE-115: Misinterpretation of Input",
       "CWE-770: Allocation of Resources Without Limits or Throttling",
       "CWE-283: Unverified Ownership",
+      "CWE-1390: Weak Authentication",
       "CWE-943: Improper Neutralization of Special Elements in Data Query Logic",
       "CWE-311: Missing Encryption of Sensitive Data",
       "CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')",
@@ -872,8 +866,8 @@ window.__KEV_OVERRIDES = {
       "CWE-325: Missing Cryptographic Step",
       "CWE-1258: Exposure of Sensitive System Information Due to Uncleared Debug Information",
       "CWE-1327: Binding to an Unrestricted IP Address",
-      "CWE-43: Path Equivalence: 'filename....' (Multiple Trailing Dot)",
       "CWE-1259: Improper Restriction of Security Token Assignment",
+      "CWE-43: Path Equivalence: 'filename....' (Multiple Trailing Dot)",
       "CWE-1021: Improper Restriction of Rendered UI Layers or Frames",
       "CWE-28: Path Traversal: '..\\filedir'",
       "CWE-682: Incorrect Calculation",
@@ -881,12 +875,9 @@ window.__KEV_OVERRIDES = {
       "CWE-149: Improper Neutralization of Quoting Syntax",
       "CWE-403: Exposure of File Descriptor to Unintended Control Sphere ('File Descriptor Leak')",
       "CWE-1236: Improper Neutralization of Formula Elements in a CSV File",
-      "CWE-202: Exposure of Sensitive Information Through Data Queries",
       "CWE-31: Path Traversal: 'dir\\..\\..\\filename'",
-      "CWE-248: Uncaught Exception",
-      "CWE-144: Improper Neutralization of Line Delimiters",
-      "CWE-159: Improper Handling of Invalid Use of Special Elements",
-      "CWE-692: Incomplete Denylist to Cross-Site Scripting"
+      "CWE-202: Exposure of Sensitive Information Through Data Queries",
+      "CWE-248: Uncaught Exception"
     ]
   },
   "kevMitreTop25": {
@@ -897,11 +888,11 @@ window.__KEV_OVERRIDES = {
       "CWE-22 (MITRE #21)",
       "CWE-79 (MITRE #25)",
       "CWE-862 (MITRE #17)",
-      "CWE-94 (MITRE #15)",
       "CWE-787 (MITRE #24)",
+      "CWE-94 (MITRE #15)",
       "CWE-434 (MITRE #16)",
-      "CWE-416 (MITRE #18)",
       "CWE-502 (MITRE #10)",
+      "CWE-416 (MITRE #18)",
       "CWE-20 (MITRE #14)",
       "CWE-77 (MITRE #13)",
       "CWE-306 (MITRE #1)",
@@ -919,26 +910,26 @@ window.__KEV_OVERRIDES = {
       "CWE-476 (MITRE #5)"
     ],
     "data": [
-      278,
-      211,
-      196,
-      192,
+      277,
+      205,
+      195,
+      191,
       152,
       147,
-      147,
-      136,
-      125,
+      145,
+      139,
       124,
-      114,
-      96,
-      89,
+      121,
+      113,
+      95,
+      88,
       83,
       76,
       71,
       62,
-      61,
-      39,
-      25,
+      60,
+      38,
+      24,
       23,
       23,
       18,
@@ -951,11 +942,11 @@ window.__KEV_OVERRIDES = {
       "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
       "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
       "CWE-862: Missing Authorization",
-      "CWE-94: Improper Control of Generation of Code ('Code Injection')",
       "CWE-787: Out-of-bounds Write",
+      "CWE-94: Improper Control of Generation of Code ('Code Injection')",
       "CWE-434: Unrestricted Upload of File with Dangerous Type",
-      "CWE-416: Use After Free",
       "CWE-502: Deserialization of Untrusted Data",
+      "CWE-416: Use After Free",
       "CWE-20: Improper Input Validation",
       "CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')",
       "CWE-306: Missing Authentication for Critical Function",
@@ -980,16 +971,16 @@ window.__KEV_OVERRIDES = {
       "CWEs without KEVs"
     ],
     "data": [
-      233,
-      736
+      230,
+      739
     ],
     "stats": [
       {
-        "number": "233",
+        "number": "230",
         "desc": "CWEs with ≥1 KEV"
       },
       {
-        "number": "24.0%",
+        "number": "23.7%",
         "desc": "Of all CWEs in CWE catalog"
       }
     ]
@@ -1009,14 +1000,14 @@ window.__KEV_OVERRIDES = {
       "A03: Software Supply Chain Failures"
     ],
     "data": [
-      1137,
-      777,
-      304,
-      290,
-      160,
-      35,
+      1121,
+      769,
+      302,
+      287,
+      158,
+      31,
       28,
-      22,
+      21,
       7,
       2
     ]
@@ -1065,10 +1056,10 @@ window.__KEV_OVERRIDES = {
         "Physical"
       ],
       "data": [
-        3687,
-        95,
-        622,
-        12
+        3648,
+        93,
+        612,
+        11
       ]
     },
     "ac": {
@@ -1077,8 +1068,8 @@ window.__KEV_OVERRIDES = {
         "High"
       ],
       "data": [
-        4092,
-        324
+        4047,
+        317
       ]
     },
     "pr": {
@@ -1088,9 +1079,9 @@ window.__KEV_OVERRIDES = {
         "High"
       ],
       "data": [
-        3258,
-        966,
-        192
+        3235,
+        943,
+        186
       ]
     },
     "ui": {
@@ -1099,8 +1090,8 @@ window.__KEV_OVERRIDES = {
         "Required"
       ],
       "data": [
-        3541,
-        875
+        3498,
+        866
       ]
     },
     "scope": {
@@ -1109,8 +1100,8 @@ window.__KEV_OVERRIDES = {
         "Changed"
       ],
       "data": [
-        3701,
-        715
+        3665,
+        699
       ]
     },
     "confidentiality": {
@@ -1120,9 +1111,9 @@ window.__KEV_OVERRIDES = {
         "High"
       ],
       "data": [
-        345,
-        578,
-        3493
+        338,
+        572,
+        3454
       ]
     },
     "integrity": {
@@ -1132,9 +1123,9 @@ window.__KEV_OVERRIDES = {
         "High"
       ],
       "data": [
-        766,
-        576,
-        3074
+        760,
+        567,
+        3037
       ]
     },
     "availability": {
@@ -1144,9 +1135,9 @@ window.__KEV_OVERRIDES = {
         "High"
       ],
       "data": [
-        1092,
-        292,
-        3032
+        1081,
+        289,
+        2994
       ]
     }
   },
@@ -1158,8 +1149,8 @@ window.__KEV_OVERRIDES = {
         "Other vectors"
       ],
       "data": [
-        1170,
-        3246
+        1168,
+        3196
       ],
       "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     },
@@ -1281,114 +1272,114 @@ window.__KEV_OVERRIDES = {
       "1.00"
     ],
     "data": [
-      708,
-      454,
-      240,
-      228,
-      157,
-      116,
-      98,
+      670,
+      444,
+      237,
+      224,
+      154,
+      119,
+      95,
+      80,
       82,
-      82,
-      74,
-      74,
-      54,
-      69,
-      46,
-      49,
-      39,
-      39,
-      45,
-      32,
-      39,
-      42,
+      77,
+      72,
+      51,
+      72,
+      43,
+      53,
+      40,
+      36,
+      47,
+      31,
+      35,
+      44,
       23,
       33,
-      36,
-      25,
-      28,
-      35,
-      22,
-      26,
-      35,
-      13,
-      29,
-      27,
-      14,
-      17,
-      18,
-      29,
-      21,
-      26,
-      27,
-      25,
-      23,
-      27,
-      20,
-      23,
-      14,
-      20,
-      15,
-      23,
-      17,
-      20,
-      23,
-      19,
-      29,
-      15,
-      22,
-      19,
-      21,
-      15,
-      16,
-      15,
-      27,
-      14,
-      26,
-      20,
-      19,
-      18,
-      21,
+      34,
       24,
-      20,
-      26,
-      23,
-      29,
-      32,
-      29,
+      28,
+      36,
+      22,
+      28,
+      34,
+      13,
       27,
+      28,
+      14,
+      18,
+      17,
+      27,
+      23,
+      27,
+      27,
+      27,
+      23,
+      28,
       20,
+      22,
+      13,
+      20,
+      16,
+      22,
+      18,
+      20,
+      23,
+      19,
+      29,
+      15,
+      19,
+      21,
+      20,
+      16,
+      16,
+      14,
+      28,
+      14,
+      26,
+      21,
+      19,
+      17,
+      22,
+      23,
+      21,
+      25,
+      26,
+      28,
+      31,
+      29,
+      28,
+      18,
       27,
       34,
-      21,
+      22,
       20,
-      39,
-      32,
-      42,
-      35,
-      25,
-      39,
-      35,
+      37,
+      31,
+      40,
+      37,
+      29,
+      41,
+      34,
       26,
       38,
-      33,
-      22,
-      26,
-      33,
       34,
-      41,
+      23,
+      26,
+      32,
+      35,
       39,
-      50,
+      42,
+      51,
       63,
-      239,
+      238,
       0
     ],
-    "matched": 5040,
-    "totalKev": 5055,
+    "matched": 4985,
+    "totalKev": 4998,
     "stats": [
       {
-        "number": "5,040",
-        "desc": "KEVs with EPSS scores (of 5055)"
+        "number": "4,985",
+        "desc": "KEVs with EPSS scores (of 4998)"
       },
       {
         "number": "0.00–0.01",
@@ -1401,99 +1392,115 @@ window.__KEV_OVERRIDES = {
     "points": [
       {
         "x": 9.8,
-        "y": 10.035
-      },
-      {
-        "x": 9.8,
-        "y": 6.854
-      },
-      {
-        "x": 8.5,
-        "y": 0.654
-      },
-      {
-        "x": 6.5,
-        "y": 1.145
-      },
-      {
-        "x": 9.8,
-        "y": 7.510999999999999
+        "y": 0.469
       },
       {
         "x": 10,
-        "y": 59.524
+        "y": 33.615
+      },
+      {
+        "x": 10,
+        "y": 0.895
+      },
+      {
+        "x": 10,
+        "y": 0.86
+      },
+      {
+        "x": 9.8,
+        "y": 92.10000000000001
+      },
+      {
+        "x": 9.8,
+        "y": 80.425
+      },
+      {
+        "x": 8.5,
+        "y": 1.261
+      },
+      {
+        "x": 6.5,
+        "y": 1.371
+      },
+      {
+        "x": 9.8,
+        "y": 89.793
+      },
+      {
+        "x": 10,
+        "y": 98.937
       },
       {
         "x": 8.8,
-        "y": 0.713
+        "y": 1.654
       },
       {
         "x": 5.8,
-        "y": 0.378
+        "y": 0.836
       },
       {
         "x": 7.8,
-        "y": 0.9520000000000001
+        "y": 9.922
       },
       {
         "x": 8.8,
-        "y": 53.701
+        "y": 74.993
       },
       {
         "x": 9.3,
-        "y": 41.152
+        "y": 71.051
       },
       {
         "x": 7.5,
-        "y": 1.054
+        "y": 10.659
       },
       {
         "x": 9.8,
-        "y": 1.502
+        "y": 27.546
       },
       {
         "x": 7.8,
-        "y": 5.495
+        "y": 5.5280000000000005
       },
       {
         "x": 8.4,
-        "y": 0.15
+        "y": 1.714
       },
       {
         "x": 7.5,
-        "y": 48.244
+        "y": 49.689
       },
       {
         "x": 9.1,
-        "y": 18.583
+        "y": 86.678
       },
       {
         "x": 9.8,
-        "y": 0.9520000000000001
+        "y": 1.8499999999999999
       },
       {
         "x": 9.6,
-        "y": 1.601
+        "y": 2.342
       },
       {
         "x": 9.8,
-        "y": 0.754
+        "y": 1.437
       },
       {
         "x": 9.8,
-        "y": 1.233
+        "y": 18.914
       },
       {
         "x": 9.8,
-        "y": 33.665
+        "y": 84.631
       },
       {
         "x": 8.8,
-        "y": 25.153
+        "y": 78.89
       },
       {
         "x": 6.7,
-        "y": 1.1119999999999999
+        "y": 12.681999999999999
       },
       {
         "x": 9.8,
@@ -1517,39 +1524,39 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 1.172
+        "y": 8.371
       },
       {
         "x": 4,
-        "y": 2.5
+        "y": 63.076
       },
       {
         "x": 8.1,
-        "y": 2.5090000000000003
+        "y": 5.64
       },
       {
         "x": 10,
-        "y": 76.286
+        "y": 87.693
       },
       {
         "x": 9.8,
-        "y": 93.107
+        "y": 95.938
       },
       {
         "x": 7.2,
-        "y": 20.188
+        "y": 34.454
       },
       {
         "x": 9.8,
-        "y": 31.759999999999998
+        "y": 36.157000000000004
       },
       {
         "x": 7.8,
-        "y": 94.016
+        "y": 96.775
       },
       {
         "x": 9.8,
-        "y": 90.54299999999999
+        "y": 98.1
       },
       {
         "x": 8.4,
@@ -1557,7 +1564,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 4.3,
-        "y": 19.985
+        "y": 64.095
       },
       {
         "x": 7.2,
@@ -1581,15 +1588,15 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 6.216
+        "y": 6.749
       },
       {
         "x": 5.4,
-        "y": 6.13
+        "y": 7.016
       },
       {
         "x": 6.5,
-        "y": 8.965
+        "y": 10.245
       },
       {
         "x": 7.2,
@@ -1605,7 +1612,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 4.6
+        "y": 5.269
       },
       {
         "x": 10,
@@ -1617,7 +1624,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 87.048
+        "y": 96.31
       },
       {
         "x": 8.8,
@@ -1657,7 +1664,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 82.002
+        "y": 84.04
       },
       {
         "x": 9.8,
@@ -1669,7 +1676,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 5.492
+        "y": 5.0360000000000005
       },
       {
         "x": 9.8,
@@ -1693,7 +1700,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 92.03
+        "y": 95.247
       },
       {
         "x": 7.8,
@@ -1725,7 +1732,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 2.0820000000000003
+        "y": 2
       },
       {
         "x": 8.8,
@@ -1733,7 +1740,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.9,
-        "y": 98.01100000000001
+        "y": 97.875
       },
       {
         "x": 7.5,
@@ -1781,7 +1788,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 48.158
+        "y": 57.793000000000006
       },
       {
         "x": 8.8,
@@ -1877,7 +1884,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.2,
-        "y": 84.052
+        "y": 84.417
       },
       {
         "x": 9.8,
@@ -1893,7 +1900,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 55.125
+        "y": 85.844
       },
       {
         "x": 7.8,
@@ -1929,7 +1936,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 5.3,
-        "y": 60.288
+        "y": 62.1
       },
       {
         "x": 7.5,
@@ -1945,7 +1952,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 76.94
+        "y": 76.53999999999999
       },
       {
         "x": 8.8,
@@ -1965,7 +1972,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 17.469
+        "y": 18.047
       },
       {
         "x": 9.8,
@@ -1981,7 +1988,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 63.476
+        "y": 65.825
       },
       {
         "x": 9.8,
@@ -1989,7 +1996,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 7.997
+        "y": 8.439
       },
       {
         "x": 8.8,
@@ -1997,7 +2004,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 22.216
+        "y": 22.359
       },
       {
         "x": 8.2,
@@ -2005,7 +2012,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 81.491
+        "y": 86.19200000000001
       },
       {
         "x": 7.8,
@@ -2029,11 +2036,11 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 5.5,
-        "y": 0.231
+        "y": 0.245
       },
       {
         "x": 7.8,
-        "y": 0.215
+        "y": 0.22799999999999998
       },
       {
         "x": 5.4,
@@ -2205,7 +2212,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.3,
-        "y": 48.008
+        "y": 47.467
       },
       {
         "x": 6.1,
@@ -2225,11 +2232,11 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 6.5,
-        "y": 83.68100000000001
+        "y": 85.543
       },
       {
         "x": 9.9,
-        "y": 29.197
+        "y": 40.391
       },
       {
         "x": 9.8,
@@ -2269,7 +2276,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 87.36
+        "y": 93.286
       },
       {
         "x": 9.8,
@@ -2305,7 +2312,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 81.348
+        "y": 85.77799999999999
       },
       {
         "x": 8.8,
@@ -2505,7 +2512,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 6.1,
-        "y": 16.346
+        "y": 17.105
       },
       {
         "x": 7.2,
@@ -2617,7 +2624,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.1,
-        "y": 1.254
+        "y": 1.325
       },
       {
         "x": 7.8,
@@ -2677,7 +2684,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.6,
-        "y": 44.683
+        "y": 41.008
       },
       {
         "x": 8.1,
@@ -2857,7 +2864,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7,
-        "y": 65.887
+        "y": 67.071
       },
       {
         "x": 7.8,
@@ -2909,7 +2916,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 98.217
+        "y": 98.259
       },
       {
         "x": 9.6,
@@ -3037,11 +3044,11 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 99.588
+        "y": 99.59700000000001
       },
       {
         "x": 7.5,
-        "y": 98.393
+        "y": 98.423
       },
       {
         "x": 5.3,
@@ -3097,7 +3104,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 96.503
+        "y": 94.761
       },
       {
         "x": 7.2,
@@ -3385,7 +3392,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 6,
-        "y": 3.772
+        "y": 4.271
       },
       {
         "x": 6.1,
@@ -3425,7 +3432,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 23.582
+        "y": 28.058
       },
       {
         "x": 8.6,
@@ -3533,7 +3540,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 98.531
+        "y": 97.59100000000001
       },
       {
         "x": 9.8,
@@ -3613,7 +3620,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 99.212
+        "y": 99.42800000000001
       },
       {
         "x": 9.8,
@@ -3757,7 +3764,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 16.268
+        "y": 16.54
       },
       {
         "x": 9.8,
@@ -3841,11 +3848,11 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 99.699
+        "y": 99.156
       },
       {
         "x": 10,
-        "y": 90.044
+        "y": 90.14999999999999
       },
       {
         "x": 7.8,
@@ -4001,7 +4008,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 99.343
+        "y": 99.445
       },
       {
         "x": 7.5,
@@ -4045,7 +4052,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 95.80300000000001
+        "y": 96.05799999999999
       },
       {
         "x": 7.3,
@@ -4073,7 +4080,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 51.68000000000001
+        "y": 51.517
       },
       {
         "x": 8.8,
@@ -4113,7 +4120,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 13.533000000000001
+        "y": 14.358
       },
       {
         "x": 9.8,
@@ -4121,7 +4128,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 31.657999999999998
+        "y": 32.724
       },
       {
         "x": 9.8,
@@ -4233,7 +4240,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 40.668
+        "y": 40.798
       },
       {
         "x": 7.8,
@@ -4257,7 +4264,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.1,
-        "y": 13.173000000000002
+        "y": 13.411000000000001
       },
       {
         "x": 8.2,
@@ -4265,7 +4272,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 23.579
+        "y": 23.952
       },
       {
         "x": 7.8,
@@ -4377,7 +4384,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 10.879999999999999
+        "y": 10.853
       },
       {
         "x": 8.8,
@@ -4613,7 +4620,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 81.195
+        "y": 81.218
       },
       {
         "x": 5.5,
@@ -4669,7 +4676,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 99.95100000000001
+        "y": 99.888
       },
       {
         "x": 7.8,
@@ -4857,7 +4864,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 45.298
+        "y": 48.11
       },
       {
         "x": 7.8,
@@ -5021,7 +5028,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 22.113
+        "y": 22.33
       },
       {
         "x": 8.8,
@@ -5229,7 +5236,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 3.4779999999999998
+        "y": 3.595
       },
       {
         "x": 7.8,
@@ -5345,7 +5352,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 34.022999999999996
+        "y": 34.400999999999996
       },
       {
         "x": 9.8,
@@ -5473,7 +5480,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 58.132
+        "y": 57.474000000000004
       },
       {
         "x": 9.8,
@@ -5657,7 +5664,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 3.994
+        "y": 4.362
       },
       {
         "x": 8.8,
@@ -6113,7 +6120,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 10.549999999999999
+        "y": 42.632
       },
       {
         "x": 8.8,
@@ -6197,7 +6204,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7,
-        "y": 83.906
+        "y": 83.524
       },
       {
         "x": 9.8,
@@ -6445,7 +6452,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 99.934
+        "y": 99.993
       },
       {
         "x": 7.8,
@@ -6529,7 +6536,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 73.10600000000001
+        "y": 70.042
       },
       {
         "x": 4.3,
@@ -6657,7 +6664,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 99.869
+        "y": 99.86699999999999
       },
       {
         "x": 7.8,
@@ -6733,7 +6740,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 74.129
+        "y": 73.381
       },
       {
         "x": 8.8,
@@ -6761,7 +6768,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 86.274
+        "y": 86.21
       },
       {
         "x": 8.8,
@@ -7073,7 +7080,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 57.257999999999996
+        "y": 58.07600000000001
       },
       {
         "x": 9.8,
@@ -7217,7 +7224,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 83.23
+        "y": 85.619
       },
       {
         "x": 9.8,
@@ -7397,7 +7404,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 97.24199999999999
+        "y": 96.843
       },
       {
         "x": 7.8,
@@ -7429,7 +7436,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 99.99
+        "y": 99.966
       },
       {
         "x": 7.8,
@@ -7705,7 +7712,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 95.11699999999999
+        "y": 91.97999999999999
       },
       {
         "x": 9,
@@ -7989,7 +7996,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.3,
-        "y": 4.696
+        "y": 5.013999999999999
       },
       {
         "x": 7.1,
@@ -8453,7 +8460,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 76.041
+        "y": 76.604
       },
       {
         "x": 9.8,
@@ -8725,7 +8732,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 78.92099999999999
+        "y": 77.88000000000001
       },
       {
         "x": 9.8,
@@ -8805,7 +8812,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 2.263
+        "y": 9.689
       },
       {
         "x": 5.3,
@@ -8985,7 +8992,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 6.1,
-        "y": 0.441
+        "y": 0.45999999999999996
       },
       {
         "x": 5.3,
@@ -8993,7 +9000,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 35.302
+        "y": 37.349
       },
       {
         "x": 5.5,
@@ -9341,7 +9348,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.2,
-        "y": 1.343
+        "y": 1.353
       },
       {
         "x": 7.8,
@@ -9354,10 +9361,6 @@ window.__KEV_OVERRIDES = {
       {
         "x": 8.5,
         "y": 13.447999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 0.41000000000000003
       },
       {
         "x": 8.8,
@@ -9701,7 +9704,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 2.536
+        "y": 2.626
       },
       {
         "x": 8.1,
@@ -9937,7 +9940,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 3.086
+        "y": 3.1460000000000004
       },
       {
         "x": 9.8,
@@ -9968,20 +9971,20 @@ window.__KEV_OVERRIDES = {
         "y": 59.25899999999999
       },
       {
-        "x": 6.5,
-        "y": 25.006
-      },
-      {
         "x": 4.7,
         "y": 50.053000000000004
       },
       {
-        "x": 9.8,
-        "y": 84.839
+        "x": 6.5,
+        "y": 25.006
       },
       {
         "x": 6.8,
         "y": 2.344
+      },
+      {
+        "x": 9.8,
+        "y": 84.839
       },
       {
         "x": 8.8,
@@ -9990,10 +9993,6 @@ window.__KEV_OVERRIDES = {
       {
         "x": 5.6,
         "y": 79.81700000000001
-      },
-      {
-        "x": 9.1,
-        "y": 15.339
       },
       {
         "x": 5.8,
@@ -10005,15 +10004,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 0.83
-      },
-      {
-        "x": 8.1,
-        "y": 16.872999999999998
-      },
-      {
-        "x": 8.8,
-        "y": 88.267
+        "y": 1.174
       },
       {
         "x": 9.8,
@@ -10028,8 +10019,12 @@ window.__KEV_OVERRIDES = {
         "y": 2.133
       },
       {
-        "x": 8.1,
-        "y": 1.7739999999999998
+        "x": 9.8,
+        "y": 86.919
+      },
+      {
+        "x": 9.8,
+        "y": 22.37
       },
       {
         "x": 5.3,
@@ -10040,24 +10035,16 @@ window.__KEV_OVERRIDES = {
         "y": 5.896
       },
       {
-        "x": 9.8,
-        "y": 22.37
-      },
-      {
-        "x": 9.8,
-        "y": 86.919
-      },
-      {
         "x": 10,
         "y": 80.767
       },
       {
-        "x": 9.8,
-        "y": 50.190999999999995
-      },
-      {
         "x": 10,
         "y": 69.649
+      },
+      {
+        "x": 9.8,
+        "y": 50.190999999999995
       },
       {
         "x": 7.5,
@@ -10073,459 +10060,19 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 34.733000000000004
-      },
-      {
-        "x": 9.8,
-        "y": 17.419999999999998
-      },
-      {
-        "x": 9.8,
-        "y": 39.177
-      },
-      {
-        "x": 4.3,
-        "y": 0.8109999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 29.644
+        "y": 35.775
       },
       {
         "x": 9.4,
-        "y": 16.48
-      },
-      {
-        "x": 9.8,
-        "y": 91.46300000000001
-      },
-      {
-        "x": 7.5,
-        "y": 9.508999999999999
-      },
-      {
-        "x": 6.1,
-        "y": 22.941
-      },
-      {
-        "x": 7.5,
-        "y": 77.027
-      },
-      {
-        "x": 9.8,
-        "y": 47.83
-      },
-      {
-        "x": 9.8,
-        "y": 4.955
-      },
-      {
-        "x": 9.8,
-        "y": 98.811
-      },
-      {
-        "x": 9.8,
-        "y": 8.087
-      },
-      {
-        "x": 8.8,
-        "y": 1.6039999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 7.707
-      },
-      {
-        "x": 6.5,
-        "y": 0.936
-      },
-      {
-        "x": 7.8,
-        "y": 24.563
-      },
-      {
-        "x": 6.1,
-        "y": 1.7389999999999999
-      },
-      {
-        "x": 7.5,
-        "y": 11.66
-      },
-      {
-        "x": 6.1,
-        "y": 2.468
-      },
-      {
-        "x": 9.8,
-        "y": 29.365000000000002
-      },
-      {
-        "x": 9.8,
-        "y": 72.249
-      },
-      {
-        "x": 7.5,
-        "y": 9.803
-      },
-      {
-        "x": 6.5,
-        "y": 1.006
-      },
-      {
-        "x": 7.3,
-        "y": 32.895
-      },
-      {
-        "x": 7.5,
-        "y": 12.062000000000001
-      },
-      {
-        "x": 9.8,
-        "y": 6.096
-      },
-      {
-        "x": 9.8,
-        "y": 96.001
-      },
-      {
-        "x": 5.3,
-        "y": 29.816
-      },
-      {
-        "x": 9.8,
-        "y": 75.315
-      },
-      {
-        "x": 9.8,
-        "y": 39.544000000000004
-      },
-      {
-        "x": 5.4,
-        "y": 37.095
-      },
-      {
-        "x": 9.8,
-        "y": 64.61200000000001
-      },
-      {
-        "x": 9.1,
-        "y": 52.658
-      },
-      {
-        "x": 7.2,
-        "y": 1.4789999999999999
-      },
-      {
-        "x": 8.8,
-        "y": 26.46
-      },
-      {
-        "x": 7.5,
-        "y": 53.52400000000001
-      },
-      {
-        "x": 9.8,
-        "y": 51.77
-      },
-      {
-        "x": 7.5,
-        "y": 36.945
-      },
-      {
-        "x": 9.8,
-        "y": 3.4520000000000004
-      },
-      {
-        "x": 7.5,
-        "y": 24.822
-      },
-      {
-        "x": 9.8,
-        "y": 71.992
-      },
-      {
-        "x": 9.8,
-        "y": 45.302
+        "y": 69.99600000000001
       },
       {
         "x": 5.3,
         "y": 9.687
       },
       {
-        "x": 9.8,
-        "y": 82.25099999999999
-      },
-      {
-        "x": 8.1,
-        "y": 97.432
-      },
-      {
-        "x": 7.5,
-        "y": 2.955
-      },
-      {
-        "x": 9.8,
-        "y": 93.709
-      },
-      {
-        "x": 5.8,
-        "y": 89.157
-      },
-      {
-        "x": 9.9,
-        "y": 67.699
-      },
-      {
-        "x": 9.8,
-        "y": 52.891999999999996
-      },
-      {
-        "x": 10,
-        "y": 40.983999999999995
-      },
-      {
-        "x": 9.8,
-        "y": 3.211
-      },
-      {
-        "x": 9.8,
-        "y": 73.25500000000001
-      },
-      {
-        "x": 5.3,
-        "y": 17.549999999999997
-      },
-      {
-        "x": 7.5,
-        "y": 63.373000000000005
-      },
-      {
-        "x": 5.3,
-        "y": 1.355
-      },
-      {
-        "x": 9.8,
-        "y": 10.272
-      },
-      {
-        "x": 9.8,
-        "y": 86.446
-      },
-      {
-        "x": 7.8,
-        "y": 49.367
-      },
-      {
-        "x": 9.8,
-        "y": 78.141
-      },
-      {
-        "x": 9.8,
-        "y": 60.084
-      },
-      {
-        "x": 6.1,
-        "y": 1.1159999999999999
-      },
-      {
-        "x": 5.3,
-        "y": 36.370999999999995
-      },
-      {
-        "x": 9.8,
-        "y": 8.752
-      },
-      {
-        "x": 6.3,
-        "y": 74.697
-      },
-      {
-        "x": 8.8,
-        "y": 20.067
-      },
-      {
-        "x": 9.8,
-        "y": 12.7
-      },
-      {
-        "x": 9.8,
-        "y": 2.988
-      },
-      {
-        "x": 8.8,
-        "y": 91.557
-      },
-      {
-        "x": 5.4,
-        "y": 24.263
-      },
-      {
-        "x": 9.8,
-        "y": 14.886
-      },
-      {
-        "x": 7.5,
-        "y": 67.72500000000001
-      },
-      {
-        "x": 9.8,
-        "y": 32.704
-      },
-      {
-        "x": 7.5,
-        "y": 73.078
-      },
-      {
-        "x": 9.8,
-        "y": 18.428
-      },
-      {
-        "x": 9.8,
-        "y": 40.058
-      },
-      {
-        "x": 8.6,
-        "y": 55.226
-      },
-      {
-        "x": 9.8,
-        "y": 11.172
-      },
-      {
-        "x": 8.1,
-        "y": 76.4
-      },
-      {
-        "x": 9.8,
-        "y": 54.393
-      },
-      {
-        "x": 9.8,
-        "y": 56.237
-      },
-      {
-        "x": 9.8,
-        "y": 86.685
-      },
-      {
-        "x": 9.8,
-        "y": 49.938
-      },
-      {
-        "x": 7.3,
-        "y": 2.231
-      },
-      {
-        "x": 7.5,
-        "y": 1.7579999999999998
-      },
-      {
-        "x": 9.8,
-        "y": 42.551
-      },
-      {
-        "x": 9.8,
-        "y": 10.825
-      },
-      {
-        "x": 7.5,
-        "y": 17.345
-      },
-      {
-        "x": 9.8,
-        "y": 68.89699999999999
-      },
-      {
-        "x": 7.5,
-        "y": 89.716
-      },
-      {
-        "x": 7.5,
-        "y": 30.894
-      },
-      {
-        "x": 8.6,
-        "y": 1.773
-      },
-      {
-        "x": 6.3,
-        "y": 17.622
-      },
-      {
         "x": 9.1,
-        "y": 8.709999999999999
-      },
-      {
-        "x": 7.3,
-        "y": 1.907
-      },
-      {
-        "x": 9.8,
-        "y": 84.22
-      },
-      {
-        "x": 9.8,
-        "y": 19.405
-      },
-      {
-        "x": 9.8,
-        "y": 9.137
-      },
-      {
-        "x": 9.8,
-        "y": 19.42
-      },
-      {
-        "x": 7.5,
-        "y": 7.93
-      },
-      {
-        "x": 8.2,
-        "y": 61.138999999999996
-      },
-      {
-        "x": 9.8,
-        "y": 83.151
-      },
-      {
-        "x": 7.5,
-        "y": 55.736
-      },
-      {
-        "x": 5.4,
-        "y": 73.142
-      },
-      {
-        "x": 9.8,
-        "y": 0.774
-      },
-      {
-        "x": 8.8,
-        "y": 2.177
-      },
-      {
-        "x": 9.8,
-        "y": 10.352
-      },
-      {
-        "x": 7.5,
-        "y": 32.916000000000004
-      },
-      {
-        "x": 7.5,
-        "y": 55.42700000000001
-      },
-      {
-        "x": 9.8,
-        "y": 86.289
-      },
-      {
-        "x": 9.1,
-        "y": 59.797999999999995
-      },
-      {
-        "x": 9.1,
-        "y": 13.584
+        "y": 15.394
       },
       {
         "x": 9.8,
@@ -10536,20 +10083,488 @@ window.__KEV_OVERRIDES = {
         "y": 0.22300000000000003
       },
       {
-        "x": 9.8,
-        "y": 83.178
+        "x": 7.5,
+        "y": 67.72500000000001
       },
       {
-        "x": 9.9,
-        "y": 9.681
+        "x": 9.8,
+        "y": 19.42
       },
       {
         "x": 9.8,
         "y": 95.086
       },
       {
+        "x": 9.8,
+        "y": 42.551
+      },
+      {
+        "x": 9.8,
+        "y": 6.096
+      },
+      {
+        "x": 6.5,
+        "y": 0.936
+      },
+      {
+        "x": 6.1,
+        "y": 1.1159999999999999
+      },
+      {
+        "x": 10,
+        "y": 40.983999999999995
+      },
+      {
+        "x": 9.8,
+        "y": 19.405
+      },
+      {
+        "x": 9.8,
+        "y": 11.172
+      },
+      {
+        "x": 7.5,
+        "y": 55.42700000000001
+      },
+      {
+        "x": 7.5,
+        "y": 9.508999999999999
+      },
+      {
+        "x": 9.8,
+        "y": 78.141
+      },
+      {
+        "x": 9.8,
+        "y": 3.4520000000000004
+      },
+      {
+        "x": 9.8,
+        "y": 56.237
+      },
+      {
+        "x": 9.1,
+        "y": 52.658
+      },
+      {
+        "x": 6.5,
+        "y": 1.006
+      },
+      {
+        "x": 7.5,
+        "y": 55.736
+      },
+      {
+        "x": 6.1,
+        "y": 22.941
+      },
+      {
+        "x": 5.3,
+        "y": 17.549999999999997
+      },
+      {
+        "x": 9.8,
+        "y": 91.46300000000001
+      },
+      {
+        "x": 9.8,
+        "y": 10.352
+      },
+      {
+        "x": 9.8,
+        "y": 82.25099999999999
+      },
+      {
+        "x": 8.2,
+        "y": 61.138999999999996
+      },
+      {
+        "x": 7.3,
+        "y": 2.231
+      },
+      {
+        "x": 7.5,
+        "y": 1.7579999999999998
+      },
+      {
+        "x": 5.4,
+        "y": 73.142
+      },
+      {
+        "x": 7.5,
+        "y": 2.955
+      },
+      {
+        "x": 5.4,
+        "y": 24.263
+      },
+      {
+        "x": 9.8,
+        "y": 10.272
+      },
+      {
+        "x": 9.8,
+        "y": 71.992
+      },
+      {
+        "x": 9.8,
+        "y": 60.084
+      },
+      {
+        "x": 9.8,
+        "y": 64.61200000000001
+      },
+      {
+        "x": 9.8,
+        "y": 8.087
+      },
+      {
+        "x": 6.1,
+        "y": 1.7389999999999999
+      },
+      {
+        "x": 9.8,
+        "y": 32.704
+      },
+      {
+        "x": 9.8,
+        "y": 49.938
+      },
+      {
+        "x": 6.1,
+        "y": 2.468
+      },
+      {
+        "x": 8.1,
+        "y": 97.432
+      },
+      {
+        "x": 9.8,
+        "y": 17.419999999999998
+      },
+      {
+        "x": 7.5,
+        "y": 73.078
+      },
+      {
+        "x": 9.8,
+        "y": 0.774
+      },
+      {
+        "x": 9.8,
+        "y": 7.707
+      },
+      {
         "x": 8.8,
-        "y": 24.569
+        "y": 91.557
+      },
+      {
+        "x": 9.8,
+        "y": 86.446
+      },
+      {
+        "x": 8.6,
+        "y": 56.95099999999999
+      },
+      {
+        "x": 7.5,
+        "y": 36.945
+      },
+      {
+        "x": 9.8,
+        "y": 40.058
+      },
+      {
+        "x": 7.2,
+        "y": 1.4789999999999999
+      },
+      {
+        "x": 9.8,
+        "y": 54.393
+      },
+      {
+        "x": 5.8,
+        "y": 89.157
+      },
+      {
+        "x": 9.8,
+        "y": 47.83
+      },
+      {
+        "x": 9.8,
+        "y": 51.77
+      },
+      {
+        "x": 9.8,
+        "y": 4.955
+      },
+      {
+        "x": 9.8,
+        "y": 98.811
+      },
+      {
+        "x": 5.3,
+        "y": 37.468
+      },
+      {
+        "x": 7.5,
+        "y": 11.759
+      },
+      {
+        "x": 7.5,
+        "y": 7.93
+      },
+      {
+        "x": 9.8,
+        "y": 43.866
+      },
+      {
+        "x": 9.8,
+        "y": 45.302
+      },
+      {
+        "x": 7.5,
+        "y": 9.803
+      },
+      {
+        "x": 6.3,
+        "y": 74.697
+      },
+      {
+        "x": 7.5,
+        "y": 24.822
+      },
+      {
+        "x": 9.8,
+        "y": 52.891999999999996
+      },
+      {
+        "x": 9.8,
+        "y": 2.988
+      },
+      {
+        "x": 9.8,
+        "y": 68.89699999999999
+      },
+      {
+        "x": 7.8,
+        "y": 49.367
+      },
+      {
+        "x": 7.5,
+        "y": 30.894
+      },
+      {
+        "x": 9.8,
+        "y": 93.709
+      },
+      {
+        "x": 7.5,
+        "y": 89.716
+      },
+      {
+        "x": 9.9,
+        "y": 67.699
+      },
+      {
+        "x": 8.8,
+        "y": 26.46
+      },
+      {
+        "x": 9.8,
+        "y": 84.22
+      },
+      {
+        "x": 9.8,
+        "y": 14.886
+      },
+      {
+        "x": 5.3,
+        "y": 1.355
+      },
+      {
+        "x": 9.8,
+        "y": 18.428
+      },
+      {
+        "x": 7.8,
+        "y": 24.563
+      },
+      {
+        "x": 5.4,
+        "y": 37.095
+      },
+      {
+        "x": 9.8,
+        "y": 83.151
+      },
+      {
+        "x": 5.3,
+        "y": 29.816
+      },
+      {
+        "x": 9.8,
+        "y": 73.25500000000001
+      },
+      {
+        "x": 8.8,
+        "y": 1.6039999999999999
+      },
+      {
+        "x": 7.3,
+        "y": 32.895
+      },
+      {
+        "x": 9.8,
+        "y": 72.249
+      },
+      {
+        "x": 9.1,
+        "y": 8.709999999999999
+      },
+      {
+        "x": 7.5,
+        "y": 63.373000000000005
+      },
+      {
+        "x": 7.3,
+        "y": 1.907
+      },
+      {
+        "x": 6.3,
+        "y": 17.622
+      },
+      {
+        "x": 7.5,
+        "y": 12.062000000000001
+      },
+      {
+        "x": 7.5,
+        "y": 77.027
+      },
+      {
+        "x": 8.8,
+        "y": 2.177
+      },
+      {
+        "x": 4.3,
+        "y": 0.8109999999999999
+      },
+      {
+        "x": 7.5,
+        "y": 17.345
+      },
+      {
+        "x": 8.8,
+        "y": 20.067
+      },
+      {
+        "x": 9.8,
+        "y": 86.685
+      },
+      {
+        "x": 9.8,
+        "y": 75.315
+      },
+      {
+        "x": 9.8,
+        "y": 29.365000000000002
+      },
+      {
+        "x": 9.8,
+        "y": 12.7
+      },
+      {
+        "x": 8.1,
+        "y": 76.4
+      },
+      {
+        "x": 9.8,
+        "y": 39.177
+      },
+      {
+        "x": 9.8,
+        "y": 10.825
+      },
+      {
+        "x": 9.8,
+        "y": 8.752
+      },
+      {
+        "x": 9.8,
+        "y": 3.211
+      },
+      {
+        "x": 9.8,
+        "y": 96.001
+      },
+      {
+        "x": 8.8,
+        "y": 88.267
+      },
+      {
+        "x": 8.6,
+        "y": 1.773
+      },
+      {
+        "x": 7.5,
+        "y": 53.52400000000001
+      },
+      {
+        "x": 9.8,
+        "y": 29.99
+      },
+      {
+        "x": 7.5,
+        "y": 32.916000000000004
+      },
+      {
+        "x": 9.8,
+        "y": 9.137
+      },
+      {
+        "x": 8.1,
+        "y": 16.872999999999998
+      },
+      {
+        "x": 9.1,
+        "y": 15.339
+      },
+      {
+        "x": 9.8,
+        "y": 83.178
+      },
+      {
+        "x": 9.1,
+        "y": 59.797999999999995
+      },
+      {
+        "x": 7.5,
+        "y": 0.555
+      },
+      {
+        "x": 9.8,
+        "y": 0.41000000000000003
+      },
+      {
+        "x": 9.8,
+        "y": 0.659
+      },
+      {
+        "x": 9.8,
+        "y": 86.289
+      },
+      {
+        "x": 8.1,
+        "y": 22.189
+      },
+      {
+        "x": 9.9,
+        "y": 9.681
+      },
+      {
+        "x": 8.8,
+        "y": 25.129
       },
       {
         "x": 7.5,
@@ -10645,7 +10660,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 6.1,
-        "y": 0.688
+        "y": 0.728
       },
       {
         "x": 9.8,
@@ -10653,7 +10668,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 9.209
+        "y": 9.030000000000001
       },
       {
         "x": 9.8,
@@ -11217,7 +11232,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 1.203
+        "y": 1.2489999999999999
       },
       {
         "x": 9.8,
@@ -11929,10 +11944,6 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 42.826
-      },
-      {
-        "x": 9.8,
         "y": 0.9690000000000001
       },
       {
@@ -11957,7 +11968,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 5.9,
-        "y": 94.072
+        "y": 93.305
       },
       {
         "x": 6.9,
@@ -12104,12 +12115,8 @@ window.__KEV_OVERRIDES = {
         "y": 1.313
       },
       {
-        "x": 8.1,
-        "y": 99.652
-      },
-      {
         "x": 6.6,
-        "y": 98.078
+        "y": 97.906
       },
       {
         "x": 7.5,
@@ -12433,11 +12440,11 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 5.4,
-        "y": 22.281000000000002
+        "y": 59.632
       },
       {
         "x": 9.8,
-        "y": 19.746
+        "y": 21.657
       },
       {
         "x": 9.8,
@@ -12449,11 +12456,15 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 0.8580000000000001
+        "y": 0.8210000000000001
       },
       {
         "x": 9.8,
-        "y": 0.358
+        "y": 9.461
+      },
+      {
+        "x": 9.8,
+        "y": 78.19800000000001
       },
       {
         "x": 6.4,
@@ -12461,27 +12472,19 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 78.19800000000001
-      },
-      {
-        "x": 9.8,
         "y": 2.717
       },
       {
         "x": 8.8,
-        "y": 9.563
+        "y": 8.016
       },
       {
         "x": 7.3,
         "y": 88.33
       },
       {
-        "x": 9.8,
-        "y": 36.512
-      },
-      {
         "x": 7.5,
-        "y": 1.0070000000000001
+        "y": 1.383
       },
       {
         "x": 8.8,
@@ -12525,7 +12528,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 2.6599999999999997
+        "y": 23.393
       },
       {
         "x": 9.8,
@@ -12536,16 +12539,12 @@ window.__KEV_OVERRIDES = {
         "y": 3.0949999999999998
       },
       {
-        "x": 9.8,
-        "y": 3.076
-      },
-      {
         "x": 7.5,
         "y": 9.54
       },
       {
-        "x": 8.1,
-        "y": 4.826
+        "x": 9.8,
+        "y": 14.607999999999999
       },
       {
         "x": 9.8,
@@ -12560,20 +12559,20 @@ window.__KEV_OVERRIDES = {
         "y": 40.891
       },
       {
-        "x": 8.8,
-        "y": 2.06
-      },
-      {
-        "x": 8.6,
-        "y": 3.334
-      },
-      {
         "x": 5.3,
         "y": 64.161
       },
       {
         "x": 9.8,
         "y": 54.00899999999999
+      },
+      {
+        "x": 8.8,
+        "y": 2.06
+      },
+      {
+        "x": 8.6,
+        "y": 3.334
       },
       {
         "x": 7.3,
@@ -12584,12 +12583,12 @@ window.__KEV_OVERRIDES = {
         "y": 13.105
       },
       {
-        "x": 10,
-        "y": 13.266
-      },
-      {
         "x": 9.8,
         "y": 99.618
+      },
+      {
+        "x": 10,
+        "y": 13.266
       },
       {
         "x": 7.3,
@@ -12597,123 +12596,39 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 72.02300000000001
-      },
-      {
-        "x": 6.1,
-        "y": 0.404
-      },
-      {
-        "x": 7.6,
-        "y": 95.057
+        "y": 71.647
       },
       {
         "x": 7.5,
         "y": 1.361
       },
       {
-        "x": 8.8,
-        "y": 1.862
-      },
-      {
-        "x": 7.3,
-        "y": 3.573
-      },
-      {
-        "x": 4.3,
-        "y": 0.54
-      },
-      {
-        "x": 9.8,
-        "y": 65.412
-      },
-      {
-        "x": 5.5,
-        "y": 2.5839999999999996
-      },
-      {
-        "x": 9.8,
-        "y": 91.477
-      },
-      {
-        "x": 7.8,
-        "y": 20.514
-      },
-      {
-        "x": 9.8,
-        "y": 8.785
-      },
-      {
-        "x": 9.8,
-        "y": 88.144
-      },
-      {
-        "x": 9.8,
-        "y": 36.516
-      },
-      {
-        "x": 9.8,
-        "y": 1.3639999999999999
-      },
-      {
         "x": 7.5,
-        "y": 40.965
+        "y": 79.77
+      },
+      {
+        "x": 5.6,
+        "y": 0.20600000000000002
+      },
+      {
+        "x": 9.3,
+        "y": 0.38999999999999996
+      },
+      {
+        "x": 9.1,
+        "y": 98.378
       },
       {
         "x": 9.8,
-        "y": 97.924
-      },
-      {
-        "x": 7.5,
-        "y": 57.608000000000004
-      },
-      {
-        "x": 9.8,
-        "y": 12.479999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 7.474
-      },
-      {
-        "x": 9.8,
-        "y": 14.697
-      },
-      {
-        "x": 9.8,
-        "y": 1.6680000000000001
-      },
-      {
-        "x": 8.8,
-        "y": 18.028
-      },
-      {
-        "x": 6.1,
-        "y": 1.791
-      },
-      {
-        "x": 9.8,
-        "y": 48.71
-      },
-      {
-        "x": 8.8,
-        "y": 12.524
-      },
-      {
-        "x": 9.8,
-        "y": 13.142999999999999
+        "y": 2.9499999999999997
       },
       {
         "x": 5.3,
-        "y": 80.00399999999999
+        "y": 13.944999999999999
       },
       {
-        "x": 9.8,
-        "y": 77.653
-      },
-      {
-        "x": 8.8,
-        "y": 78.61
+        "x": 8.1,
+        "y": 4.262
       },
       {
         "x": 6.3,
@@ -12721,319 +12636,43 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 3.06
-      },
-      {
-        "x": 9.8,
-        "y": 53.394
-      },
-      {
-        "x": 9.8,
-        "y": 7.871
-      },
-      {
-        "x": 8.6,
-        "y": 29.345
-      },
-      {
-        "x": 9.8,
-        "y": 78.812
-      },
-      {
-        "x": 7.5,
-        "y": 90.647
-      },
-      {
-        "x": 9.8,
-        "y": 71.666
-      },
-      {
-        "x": 7.8,
-        "y": 9.966
-      },
-      {
-        "x": 5.3,
-        "y": 16
-      },
-      {
-        "x": 8.6,
-        "y": 64.697
-      },
-      {
-        "x": 8.8,
-        "y": 28.285
-      },
-      {
-        "x": 9.8,
-        "y": 11.335
-      },
-      {
-        "x": 5.8,
-        "y": 40.637
-      },
-      {
-        "x": 10,
-        "y": 93.901
-      },
-      {
-        "x": 9.8,
-        "y": 3.6859999999999995
-      },
-      {
-        "x": 9.1,
-        "y": 18.607000000000003
-      },
-      {
-        "x": 9.8,
-        "y": 85.332
-      },
-      {
-        "x": 6.3,
-        "y": 3.7249999999999996
-      },
-      {
-        "x": 6.5,
-        "y": 1.616
-      },
-      {
-        "x": 7.5,
-        "y": 29.698999999999998
-      },
-      {
-        "x": 6.1,
-        "y": 1.636
-      },
-      {
-        "x": 9.8,
-        "y": 46.021
-      },
-      {
-        "x": 6.1,
-        "y": 1.409
-      },
-      {
-        "x": 9.8,
-        "y": 58.324
-      },
-      {
-        "x": 9.8,
-        "y": 82.585
-      },
-      {
-        "x": 7.5,
-        "y": 4.34
-      },
-      {
-        "x": 9.1,
-        "y": 16.408
-      },
-      {
-        "x": 8.8,
-        "y": 67.289
-      },
-      {
-        "x": 8.8,
-        "y": 3.083
-      },
-      {
-        "x": 10,
-        "y": 39.22
-      },
-      {
-        "x": 6.3,
-        "y": 93.4
-      },
-      {
-        "x": 9.8,
-        "y": 99.924
-      },
-      {
-        "x": 9.1,
-        "y": 60.221000000000004
-      },
-      {
-        "x": 7.5,
-        "y": 5.408
-      },
-      {
-        "x": 4.3,
-        "y": 10.317
-      },
-      {
-        "x": 8.6,
-        "y": 44.101
-      },
-      {
-        "x": 7.5,
-        "y": 4.515000000000001
-      },
-      {
-        "x": 10,
-        "y": 89.871
-      },
-      {
-        "x": 5.8,
-        "y": 36.106
-      },
-      {
-        "x": 5.9,
-        "y": 0.35400000000000004
-      },
-      {
-        "x": 7.5,
-        "y": 38.471
-      },
-      {
-        "x": 10,
-        "y": 63.329
-      },
-      {
-        "x": 9.8,
-        "y": 46.300999999999995
-      },
-      {
-        "x": 9.8,
-        "y": 79.522
-      },
-      {
-        "x": 9.8,
-        "y": 42.479
-      },
-      {
-        "x": 9.8,
-        "y": 3.7699999999999996
+        "y": 95.242
       },
       {
         "x": 5.3,
         "y": 69.724
       },
       {
-        "x": 8.8,
-        "y": 0.9079999999999999
+        "x": 9.8,
+        "y": 11.335
       },
       {
-        "x": 8,
-        "y": 12.649
-      },
-      {
-        "x": 8.6,
-        "y": 3.2009999999999996
+        "x": 7.6,
+        "y": 94.70100000000001
       },
       {
         "x": 9.8,
-        "y": 16.826
+        "y": 49.604
       },
       {
         "x": 9.8,
-        "y": 57.02199999999999
-      },
-      {
-        "x": 9.8,
-        "y": 46.921
-      },
-      {
-        "x": 9.8,
-        "y": 60.377
+        "y": 85.33
       },
       {
         "x": 7.5,
-        "y": 48.417
-      },
-      {
-        "x": 8.8,
-        "y": 99.217
-      },
-      {
-        "x": 8,
-        "y": 79.513
+        "y": 40.965
       },
       {
         "x": 9.8,
-        "y": 30.921
+        "y": 12.479999999999999
       },
       {
-        "x": 6.1,
-        "y": 3.2099999999999995
+        "x": 9.8,
+        "y": 46.300999999999995
       },
       {
         "x": 7.5,
-        "y": 2.072
-      },
-      {
-        "x": 9.8,
-        "y": 95.242
-      },
-      {
-        "x": 9.8,
-        "y": 77.251
-      },
-      {
-        "x": 9.8,
-        "y": 3.0429999999999997
-      },
-      {
-        "x": 9.8,
-        "y": 17.166
-      },
-      {
-        "x": 9.8,
-        "y": 77.47
-      },
-      {
-        "x": 9.8,
-        "y": 12.003
-      },
-      {
-        "x": 9.8,
-        "y": 51.696
-      },
-      {
-        "x": 9.8,
-        "y": 15.254000000000001
-      },
-      {
-        "x": 5.3,
-        "y": 37.957
-      },
-      {
-        "x": 5.3,
-        "y": 95.867
-      },
-      {
-        "x": 9.8,
-        "y": 9.519
-      },
-      {
-        "x": 9.3,
-        "y": 72.953
-      },
-      {
-        "x": 9.8,
-        "y": 9.046999999999999
-      },
-      {
-        "x": 7.5,
-        "y": 89.378
-      },
-      {
-        "x": 2.7,
-        "y": 6.249
-      },
-      {
-        "x": 8.8,
-        "y": 59.892999999999994
-      },
-      {
-        "x": 6.5,
-        "y": 4.074
-      },
-      {
-        "x": 9.8,
-        "y": 4.168
-      },
-      {
-        "x": 9.8,
-        "y": 98.947
+        "y": 53.705000000000005
       },
       {
         "x": 7.5,
@@ -13041,115 +12680,35 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 85.33
-      },
-      {
-        "x": 4.3,
-        "y": 55.708999999999996
-      },
-      {
-        "x": 7.5,
-        "y": 2.999
+        "y": 36.516
       },
       {
         "x": 9.8,
-        "y": 50.641000000000005
+        "y": 99.83800000000001
+      },
+      {
+        "x": 10,
+        "y": 93.901
       },
       {
         "x": 9.8,
-        "y": 68.293
-      },
-      {
-        "x": 7.5,
-        "y": 53.705000000000005
-      },
-      {
-        "x": 9.8,
-        "y": 6.765000000000001
-      },
-      {
-        "x": 7.5,
-        "y": 36.171
+        "y": 39.335
       },
       {
         "x": 7.3,
         "y": 1.813
       },
       {
-        "x": 7.5,
-        "y": 13.975000000000001
+        "x": 9.3,
+        "y": 72.953
       },
       {
         "x": 9.8,
-        "y": 68.593
-      },
-      {
-        "x": 9.1,
-        "y": 22.035
-      },
-      {
-        "x": 9.8,
-        "y": 20.8
-      },
-      {
-        "x": 8.1,
-        "y": 76.084
-      },
-      {
-        "x": 9.8,
-        "y": 55.477
-      },
-      {
-        "x": 8.1,
-        "y": 4.262
-      },
-      {
-        "x": 9.8,
-        "y": 18.148
+        "y": 1.3639999999999999
       },
       {
         "x": 7.5,
-        "y": 1.8519999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 4.460999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 4.427
-      },
-      {
-        "x": 9.8,
-        "y": 89.783
-      },
-      {
-        "x": 8.8,
-        "y": 38.038
-      },
-      {
-        "x": 9.8,
-        "y": 90.166
-      },
-      {
-        "x": 9.8,
-        "y": 42.14
-      },
-      {
-        "x": 9.8,
-        "y": 67.091
-      },
-      {
-        "x": 5.3,
-        "y": 13.944999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 40.739
-      },
-      {
-        "x": 8.8,
-        "y": 38.998
+        "y": 9.331
       },
       {
         "x": 7.5,
@@ -13157,7 +12716,387 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 39.335
+        "y": 46.021
+      },
+      {
+        "x": 9.8,
+        "y": 3.06
+      },
+      {
+        "x": 9.8,
+        "y": 58.324
+      },
+      {
+        "x": 6.1,
+        "y": 1.636
+      },
+      {
+        "x": 8.6,
+        "y": 64.697
+      },
+      {
+        "x": 9.8,
+        "y": 18.148
+      },
+      {
+        "x": 8.8,
+        "y": 67.289
+      },
+      {
+        "x": 9.8,
+        "y": 7.474
+      },
+      {
+        "x": 9.8,
+        "y": 68.593
+      },
+      {
+        "x": 9.8,
+        "y": 89.783
+      },
+      {
+        "x": 7.5,
+        "y": 5.408
+      },
+      {
+        "x": 7.5,
+        "y": 2.999
+      },
+      {
+        "x": 7.5,
+        "y": 59.407
+      },
+      {
+        "x": 4.3,
+        "y": 55.708999999999996
+      },
+      {
+        "x": 9.8,
+        "y": 15.254000000000001
+      },
+      {
+        "x": 9.8,
+        "y": 17.166
+      },
+      {
+        "x": 6.5,
+        "y": 4.074
+      },
+      {
+        "x": 7.5,
+        "y": 57.608000000000004
+      },
+      {
+        "x": 9.8,
+        "y": 65.412
+      },
+      {
+        "x": 6.1,
+        "y": 1.791
+      },
+      {
+        "x": 9.8,
+        "y": 3.0429999999999997
+      },
+      {
+        "x": 9.8,
+        "y": 77.47
+      },
+      {
+        "x": 9.8,
+        "y": 4.168
+      },
+      {
+        "x": 9.8,
+        "y": 57.02199999999999
+      },
+      {
+        "x": 6.1,
+        "y": 0.404
+      },
+      {
+        "x": 7.5,
+        "y": 4.34
+      },
+      {
+        "x": 9.8,
+        "y": 40.739
+      },
+      {
+        "x": 8,
+        "y": 12.649
+      },
+      {
+        "x": 7.3,
+        "y": 3.573
+      },
+      {
+        "x": 6.3,
+        "y": 3.7249999999999996
+      },
+      {
+        "x": 6.3,
+        "y": 93.4
+      },
+      {
+        "x": 9.8,
+        "y": 91.477
+      },
+      {
+        "x": 6.1,
+        "y": 1.409
+      },
+      {
+        "x": 9.8,
+        "y": 13.142999999999999
+      },
+      {
+        "x": 9.8,
+        "y": 7.871
+      },
+      {
+        "x": 9.8,
+        "y": 84.311
+      },
+      {
+        "x": 8.6,
+        "y": 3.2009999999999996
+      },
+      {
+        "x": 9.8,
+        "y": 68.293
+      },
+      {
+        "x": 5.8,
+        "y": 36.106
+      },
+      {
+        "x": 7.5,
+        "y": 38.471
+      },
+      {
+        "x": 7.8,
+        "y": 20.514
+      },
+      {
+        "x": 9.8,
+        "y": 16.826
+      },
+      {
+        "x": 7.5,
+        "y": 4.515000000000001
+      },
+      {
+        "x": 6.1,
+        "y": 8.064
+      },
+      {
+        "x": 5.8,
+        "y": 40.637
+      },
+      {
+        "x": 7.5,
+        "y": 1.8519999999999999
+      },
+      {
+        "x": 8.8,
+        "y": 77.282
+      },
+      {
+        "x": 7.5,
+        "y": 2.072
+      },
+      {
+        "x": 9.8,
+        "y": 77.653
+      },
+      {
+        "x": 9.8,
+        "y": 77.251
+      },
+      {
+        "x": 9.1,
+        "y": 18.607000000000003
+      },
+      {
+        "x": 9.8,
+        "y": 97.924
+      },
+      {
+        "x": 9.8,
+        "y": 78.812
+      },
+      {
+        "x": 8.8,
+        "y": 12.524
+      },
+      {
+        "x": 2.7,
+        "y": 6.249
+      },
+      {
+        "x": 7.5,
+        "y": 47.907
+      },
+      {
+        "x": 9.8,
+        "y": 71.666
+      },
+      {
+        "x": 9.8,
+        "y": 46.921
+      },
+      {
+        "x": 9.8,
+        "y": 40.874
+      },
+      {
+        "x": 8.8,
+        "y": 28.285
+      },
+      {
+        "x": 5.3,
+        "y": 98.24199999999999
+      },
+      {
+        "x": 9.8,
+        "y": 67.091
+      },
+      {
+        "x": 5.3,
+        "y": 80.00399999999999
+      },
+      {
+        "x": 8.8,
+        "y": 38.998
+      },
+      {
+        "x": 7.5,
+        "y": 13.975000000000001
+      },
+      {
+        "x": 9.8,
+        "y": 6.765000000000001
+      },
+      {
+        "x": 9.8,
+        "y": 88.144
+      },
+      {
+        "x": 9.8,
+        "y": 36.272
+      },
+      {
+        "x": 9.8,
+        "y": 4.460999999999999
+      },
+      {
+        "x": 10,
+        "y": 89.871
+      },
+      {
+        "x": 9.8,
+        "y": 14.697
+      },
+      {
+        "x": 7.8,
+        "y": 9.966
+      },
+      {
+        "x": 9.8,
+        "y": 85.332
+      },
+      {
+        "x": 9.8,
+        "y": 42.14
+      },
+      {
+        "x": 9.8,
+        "y": 4.427
+      },
+      {
+        "x": 8.8,
+        "y": 3.083
+      },
+      {
+        "x": 7.5,
+        "y": 29.698999999999998
+      },
+      {
+        "x": 5.3,
+        "y": 16
+      },
+      {
+        "x": 8.6,
+        "y": 29.345
+      },
+      {
+        "x": 9.8,
+        "y": 53.394
+      },
+      {
+        "x": 9.8,
+        "y": 8.785
+      },
+      {
+        "x": 7.5,
+        "y": 90.647
+      },
+      {
+        "x": 9.8,
+        "y": 60.377
+      },
+      {
+        "x": 9.8,
+        "y": 98.947
+      },
+      {
+        "x": 5.3,
+        "y": 37.957
+      },
+      {
+        "x": 9.8,
+        "y": 51.696
+      },
+      {
+        "x": 8.8,
+        "y": 18.028
+      },
+      {
+        "x": 8.6,
+        "y": 44.101
+      },
+      {
+        "x": 10,
+        "y": 63.329
+      },
+      {
+        "x": 8.1,
+        "y": 76.084
+      },
+      {
+        "x": 7.7,
+        "y": 79.855
+      },
+      {
+        "x": 5.8,
+        "y": 6.531000000000001
+      },
+      {
+        "x": 9.8,
+        "y": 75.8
+      },
+      {
+        "x": 8.8,
+        "y": 59.892999999999994
+      },
+      {
+        "x": 9.8,
+        "y": 3.73
+      },
+      {
+        "x": 9.8,
+        "y": 9.519
       },
       {
         "x": 9.8,
@@ -13168,8 +13107,68 @@ window.__KEV_OVERRIDES = {
         "y": 50.926
       },
       {
+        "x": 5.5,
+        "y": 2.5839999999999996
+      },
+      {
         "x": 9.8,
-        "y": 40.874
+        "y": 3.6859999999999995
+      },
+      {
+        "x": 5.9,
+        "y": 0.35400000000000004
+      },
+      {
+        "x": 9.1,
+        "y": 60.221000000000004
+      },
+      {
+        "x": 9.8,
+        "y": 50.641000000000005
+      },
+      {
+        "x": 8.8,
+        "y": 78.61
+      },
+      {
+        "x": 8.8,
+        "y": 38.038
+      },
+      {
+        "x": 9.8,
+        "y": 12.003
+      },
+      {
+        "x": 9.8,
+        "y": 48.71
+      },
+      {
+        "x": 10,
+        "y": 39.22
+      },
+      {
+        "x": 9.8,
+        "y": 79.522
+      },
+      {
+        "x": 9.8,
+        "y": 42.479
+      },
+      {
+        "x": 7.5,
+        "y": 36.171
+      },
+      {
+        "x": 8.8,
+        "y": 0.9079999999999999
+      },
+      {
+        "x": 4.3,
+        "y": 0.54
+      },
+      {
+        "x": 9.1,
+        "y": 16.408
       },
       {
         "x": 5.3,
@@ -13177,23 +13176,47 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
+        "y": 9.046999999999999
+      },
+      {
+        "x": 8.8,
+        "y": 99.217
+      },
+      {
+        "x": 4.3,
+        "y": 10.317
+      },
+      {
+        "x": 9.8,
         "y": 14.414
+      },
+      {
+        "x": 9.1,
+        "y": 22.035
+      },
+      {
+        "x": 9.8,
+        "y": 1.6680000000000001
+      },
+      {
+        "x": 7.5,
+        "y": 89.378
+      },
+      {
+        "x": 9.8,
+        "y": 90.166
       },
       {
         "x": 9.8,
         "y": 53.388999999999996
       },
       {
-        "x": 7.5,
-        "y": 59.407
+        "x": 8,
+        "y": 79.513
       },
       {
-        "x": 8.8,
-        "y": 77.282
-      },
-      {
-        "x": 7.7,
-        "y": 79.855
+        "x": 9.8,
+        "y": 20.8
       },
       {
         "x": 9.8,
@@ -13201,55 +13224,55 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 36.272
-      },
-      {
-        "x": 9.8,
-        "y": 75.8
+        "y": 82.585
       },
       {
         "x": 7.5,
-        "y": 47.907
-      },
-      {
-        "x": 7.5,
-        "y": 9.331
-      },
-      {
-        "x": 9.8,
-        "y": 84.311
-      },
-      {
-        "x": 5.8,
-        "y": 6.531000000000001
+        "y": 48.417
       },
       {
         "x": 6.1,
-        "y": 8.064
+        "y": 3.2099999999999995
       },
       {
-        "x": 7.5,
-        "y": 79.45
+        "x": 9.8,
+        "y": 30.921
+      },
+      {
+        "x": 6.5,
+        "y": 1.616
+      },
+      {
+        "x": 8.1,
+        "y": 5.0040000000000004
+      },
+      {
+        "x": 8.8,
+        "y": 1.862
+      },
+      {
+        "x": 9.8,
+        "y": 42.826
       },
       {
         "x": 9.8,
         "y": 50.788999999999994
       },
       {
-        "x": 5.6,
-        "y": 0.172
+        "x": 8.1,
+        "y": 99.652
+      },
+      {
+        "x": 9.8,
+        "y": 36.512
+      },
+      {
+        "x": 7.3,
+        "y": 0.753
       },
       {
         "x": 8.6,
-        "y": 0.5660000000000001
-      },
-      {
-        "x": 9.3,
-        "y": 0.38999999999999996
-      },
-      {
-        "x": 9.1,
-        "y": 98.378
+        "y": 20.442
       },
       {
         "x": 10,
@@ -13509,7 +13532,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 42.678
+        "y": 43.638
       },
       {
         "x": 8.8,
@@ -13681,7 +13704,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 76.215
+        "y": 90.89399999999999
       },
       {
         "x": 7.5,
@@ -14249,7 +14272,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 27.244
+        "y": 29.125
       },
       {
         "x": 5,
@@ -14361,7 +14384,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 1.123
+        "y": 0.9339999999999999
       },
       {
         "x": 7.8,
@@ -14681,7 +14704,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 6.3,
-        "y": 15.223
+        "y": 15.103
       },
       {
         "x": 6.3,
@@ -15049,7 +15072,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 57.314
+        "y": 58.447
       },
       {
         "x": 9.8,
@@ -15068,10 +15091,6 @@ window.__KEV_OVERRIDES = {
         "y": 0.557
       },
       {
-        "x": 5.3,
-        "y": 0.198
-      },
-      {
         "x": 6.3,
         "y": 0.441
       },
@@ -15081,7 +15100,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 0.635
+        "y": 0.815
       },
       {
         "x": 10,
@@ -15169,7 +15188,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.3,
-        "y": 19.037000000000003
+        "y": 26.799
       },
       {
         "x": 9.8,
@@ -15188,12 +15207,8 @@ window.__KEV_OVERRIDES = {
         "y": 56.22200000000001
       },
       {
-        "x": 9.8,
-        "y": 47.809000000000005
-      },
-      {
         "x": 8.1,
-        "y": 1.252
+        "y": 2.98
       },
       {
         "x": 7.5,
@@ -15205,7 +15220,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 0.623
+        "y": 1.26
       },
       {
         "x": 9.8,
@@ -15240,10 +15255,6 @@ window.__KEV_OVERRIDES = {
         "y": 7.116
       },
       {
-        "x": 9.8,
-        "y": 12.334
-      },
-      {
         "x": 9.1,
         "y": 3.911
       },
@@ -15260,288 +15271,32 @@ window.__KEV_OVERRIDES = {
         "y": 0.979
       },
       {
-        "x": 9.9,
-        "y": 86.268
-      },
-      {
-        "x": 8.6,
-        "y": 1.865
-      },
-      {
-        "x": 7.5,
-        "y": 38.428000000000004
-      },
-      {
-        "x": 8.2,
-        "y": 4.173
-      },
-      {
-        "x": 5.8,
-        "y": 3.395
-      },
-      {
-        "x": 9.8,
-        "y": 10.543
-      },
-      {
-        "x": 9.8,
-        "y": 81.512
-      },
-      {
         "x": 5.3,
         "y": 78.572
-      },
-      {
-        "x": 9.8,
-        "y": 22.162000000000003
       },
       {
         "x": 5.3,
         "y": 0.914
       },
       {
-        "x": 9.8,
-        "y": 33.157
-      },
-      {
-        "x": 9.8,
-        "y": 32.304
-      },
-      {
-        "x": 6.1,
-        "y": 97.253
-      },
-      {
-        "x": 8.8,
-        "y": 12.693999999999999
-      },
-      {
-        "x": 4.3,
-        "y": 16.882
-      },
-      {
-        "x": 9.8,
-        "y": 92.472
-      },
-      {
-        "x": 9.8,
-        "y": 88.333
-      },
-      {
-        "x": 9.8,
-        "y": 4.756
-      },
-      {
-        "x": 9.8,
-        "y": 74.232
-      },
-      {
-        "x": 7.5,
-        "y": 20.084
-      },
-      {
-        "x": 9.8,
-        "y": 76.75800000000001
-      },
-      {
-        "x": 6.1,
-        "y": 0.201
-      },
-      {
-        "x": 10,
-        "y": 61.355000000000004
-      },
-      {
-        "x": 9.8,
-        "y": 17.313000000000002
-      },
-      {
-        "x": 9.8,
-        "y": 2.904
-      },
-      {
-        "x": 5.3,
-        "y": 0.814
-      },
-      {
-        "x": 5.3,
-        "y": 88.874
-      },
-      {
-        "x": 9.8,
-        "y": 10.700999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 99.815
-      },
-      {
-        "x": 7.3,
-        "y": 70.68799999999999
-      },
-      {
-        "x": 9.8,
-        "y": 95.657
-      },
-      {
-        "x": 6.3,
-        "y": 73.52499999999999
-      },
-      {
         "x": 7.5,
         "y": 17.808
       },
       {
-        "x": 9.4,
-        "y": 37.606
-      },
-      {
-        "x": 9.3,
-        "y": 69.46799999999999
+        "x": 6.5,
+        "y": 0.325
       },
       {
         "x": 10,
-        "y": 90.732
+        "y": 34.52
       },
       {
         "x": 9.8,
-        "y": 61.080999999999996
-      },
-      {
-        "x": 8.8,
-        "y": 85.82499999999999
-      },
-      {
-        "x": 7.5,
-        "y": 7.736
-      },
-      {
-        "x": 7.5,
-        "y": 27.149
-      },
-      {
-        "x": 9.1,
-        "y": 94.836
-      },
-      {
-        "x": 7.5,
-        "y": 6.343999999999999
+        "y": 81.512
       },
       {
         "x": 9.8,
-        "y": 23.926
-      },
-      {
-        "x": 7.5,
-        "y": 56.924
-      },
-      {
-        "x": 9.8,
-        "y": 93.967
-      },
-      {
-        "x": 7.5,
-        "y": 4
-      },
-      {
-        "x": 6.5,
-        "y": 13.751
-      },
-      {
-        "x": 5.4,
-        "y": 79.605
-      },
-      {
-        "x": 8.8,
-        "y": 27.297
-      },
-      {
-        "x": 8.8,
-        "y": 25.135
-      },
-      {
-        "x": 9.8,
-        "y": 80.682
-      },
-      {
-        "x": 4.8,
-        "y": 1.2930000000000001
-      },
-      {
-        "x": 9.8,
-        "y": 75.711
-      },
-      {
-        "x": 9.8,
-        "y": 6.276
-      },
-      {
-        "x": 6.3,
-        "y": 35.825
-      },
-      {
-        "x": 6.3,
-        "y": 86.489
-      },
-      {
-        "x": 9.8,
-        "y": 9.792
-      },
-      {
-        "x": 7.5,
-        "y": 2.963
-      },
-      {
-        "x": 9.8,
-        "y": 73.398
-      },
-      {
-        "x": 4.9,
-        "y": 28.802
-      },
-      {
-        "x": 9.8,
-        "y": 12.442
-      },
-      {
-        "x": 9.8,
-        "y": 87.33
-      },
-      {
-        "x": 9.8,
-        "y": 10.22
-      },
-      {
-        "x": 7.5,
-        "y": 55.864000000000004
-      },
-      {
-        "x": 9.8,
-        "y": 25.282
-      },
-      {
-        "x": 7.2,
-        "y": 94.622
-      },
-      {
-        "x": 9.3,
-        "y": 68.45
-      },
-      {
-        "x": 9.8,
-        "y": 38.97
-      },
-      {
-        "x": 9.8,
-        "y": 36.126000000000005
-      },
-      {
-        "x": 9.8,
-        "y": 51.468
-      },
-      {
-        "x": 7.2,
-        "y": 23.1
+        "y": 22.162000000000003
       },
       {
         "x": 7.5,
@@ -15549,119 +15304,79 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.61
-      },
-      {
-        "x": 9.8,
-        "y": 22.133
+        "y": 95.415
       },
       {
         "x": 7.5,
-        "y": 3.304
-      },
-      {
-        "x": 8.3,
-        "y": 94.721
-      },
-      {
-        "x": 9.1,
-        "y": 11.401
+        "y": 4
       },
       {
         "x": 9.8,
-        "y": 11.225999999999999
+        "y": 44.295
+      },
+      {
+        "x": 8.6,
+        "y": 1.865
+      },
+      {
+        "x": 8.6,
+        "y": 11.125
       },
       {
         "x": 9.8,
-        "y": 77.307
-      },
-      {
-        "x": 8.8,
-        "y": 82.16499999999999
-      },
-      {
-        "x": 8.3,
-        "y": 3.592
-      },
-      {
-        "x": 6.5,
-        "y": 48.492000000000004
-      },
-      {
-        "x": 7.5,
-        "y": 10.612
-      },
-      {
-        "x": 6.1,
-        "y": 7.055
-      },
-      {
-        "x": 7.5,
-        "y": 48.656
-      },
-      {
-        "x": 6.3,
-        "y": 5.8709999999999996
-      },
-      {
-        "x": 7.5,
-        "y": 5.6160000000000005
-      },
-      {
-        "x": 7.5,
-        "y": 91.984
+        "y": 95.097
       },
       {
         "x": 9.8,
-        "y": 7.9079999999999995
-      },
-      {
-        "x": 9.8,
-        "y": 43.683
-      },
-      {
-        "x": 9.3,
-        "y": 5.063
-      },
-      {
-        "x": 5.3,
-        "y": 66.932
-      },
-      {
-        "x": 8.8,
-        "y": 63.797000000000004
-      },
-      {
-        "x": 7.2,
-        "y": 42.556
-      },
-      {
-        "x": 7.5,
-        "y": 81.028
-      },
-      {
-        "x": 9.8,
-        "y": 6.178999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 25.691999999999997
-      },
-      {
-        "x": 9.8,
-        "y": 93.913
-      },
-      {
-        "x": 9.8,
-        "y": 86.205
+        "y": 81.911
       },
       {
         "x": 7.8,
         "y": 7.927
       },
       {
+        "x": 5.8,
+        "y": 3.395
+      },
+      {
+        "x": 9.8,
+        "y": 32.304
+      },
+      {
+        "x": 10,
+        "y": 90.732
+      },
+      {
+        "x": 9.8,
+        "y": 75.711
+      },
+      {
+        "x": 6.1,
+        "y": 7.055
+      },
+      {
+        "x": 6.5,
+        "y": 48.492000000000004
+      },
+      {
+        "x": 8.6,
+        "y": 89.189
+      },
+      {
+        "x": 9.8,
+        "y": 22.133
+      },
+      {
         "x": 9.8,
         "y": 23.413999999999998
+      },
+      {
+        "x": 9.1,
+        "y": 94.836
+      },
+      {
+        "x": 9.8,
+        "y": 25.691999999999997
       },
       {
         "x": 8.8,
@@ -15669,59 +15384,75 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 6.74
+        "y": 23.926
+      },
+      {
+        "x": 4.9,
+        "y": 28.802
       },
       {
         "x": 9.8,
-        "y": 44.295
-      },
-      {
-        "x": 9.8,
-        "y": 4.99
+        "y": 25.282
       },
       {
         "x": 7.5,
-        "y": 57.984
+        "y": 2.963
+      },
+      {
+        "x": 7.2,
+        "y": 94.622
       },
       {
         "x": 9.8,
-        "y": 81.899
+        "y": 99.815
+      },
+      {
+        "x": 7.5,
+        "y": 81.028
       },
       {
         "x": 9.8,
-        "y": 29.557
+        "y": 17.313000000000002
+      },
+      {
+        "x": 9.8,
+        "y": 10.700999999999999
+      },
+      {
+        "x": 9.3,
+        "y": 69.46799999999999
+      },
+      {
+        "x": 9.8,
+        "y": 93.967
+      },
+      {
+        "x": 6.3,
+        "y": 5.8709999999999996
+      },
+      {
+        "x": 7.5,
+        "y": 91.984
+      },
+      {
+        "x": 5.4,
+        "y": 79.605
       },
       {
         "x": 9.8,
         "y": 61.273999999999994
       },
       {
-        "x": 9.8,
-        "y": 77.58500000000001
+        "x": 7.5,
+        "y": 56.924
       },
       {
         "x": 9.8,
-        "y": 8.415000000000001
-      },
-      {
-        "x": 9.8,
-        "y": 9.973
-      },
-      {
-        "x": 9.8,
-        "y": 92.31899999999999
-      },
-      {
-        "x": 8.6,
-        "y": 11.125
+        "y": 88.333
       },
       {
         "x": 6.3,
-        "y": 11.407
-      },
-      {
-        "x": 5.3,
-        "y": 7.989
+        "y": 86.489
       },
       {
         "x": 9.8,
@@ -15729,11 +15460,43 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 39.544000000000004
+        "y": 61.080999999999996
       },
       {
         "x": 9.8,
-        "y": 95.097
+        "y": 11.225999999999999
+      },
+      {
+        "x": 9.8,
+        "y": 94.61
+      },
+      {
+        "x": 8.8,
+        "y": 25.135
+      },
+      {
+        "x": 9.8,
+        "y": 38.97
+      },
+      {
+        "x": 9.8,
+        "y": 92.472
+      },
+      {
+        "x": 7.5,
+        "y": 6.343999999999999
+      },
+      {
+        "x": 9.8,
+        "y": 71.722
+      },
+      {
+        "x": 9.8,
+        "y": 73.398
+      },
+      {
+        "x": 9.8,
+        "y": 51.468
       },
       {
         "x": 7.5,
@@ -15741,39 +15504,215 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 5.554
+        "y": 46.109
+      },
+      {
+        "x": 9.4,
+        "y": 37.606
       },
       {
         "x": 10,
         "y": 53.64
       },
       {
-        "x": 9.8,
-        "y": 67.914
+        "x": 6.5,
+        "y": 13.751
+      },
+      {
+        "x": 6.3,
+        "y": 35.825
+      },
+      {
+        "x": 9.3,
+        "y": 5.063
       },
       {
         "x": 9.8,
-        "y": 71.722
+        "y": 5.554
+      },
+      {
+        "x": 6.3,
+        "y": 73.52499999999999
+      },
+      {
+        "x": 9.8,
+        "y": 6.276
+      },
+      {
+        "x": 7.5,
+        "y": 5.6160000000000005
+      },
+      {
+        "x": 7.5,
+        "y": 38.428000000000004
+      },
+      {
+        "x": 7.5,
+        "y": 27.149
+      },
+      {
+        "x": 9.8,
+        "y": 76.75800000000001
+      },
+      {
+        "x": 9.8,
+        "y": 33.157
+      },
+      {
+        "x": 7.5,
+        "y": 7.736
+      },
+      {
+        "x": 8.8,
+        "y": 85.82499999999999
       },
       {
         "x": 8.1,
         "y": 13.882
       },
       {
-        "x": 9.8,
-        "y": 36.114000000000004
+        "x": 4.3,
+        "y": 16.882
       },
       {
-        "x": 8.6,
-        "y": 89.189
+        "x": 9.8,
+        "y": 43.683
+      },
+      {
+        "x": 9.8,
+        "y": 10.22
       },
       {
         "x": 7.5,
         "y": 16.183
       },
       {
+        "x": 5.3,
+        "y": 66.932
+      },
+      {
         "x": 9.8,
-        "y": 81.911
+        "y": 80.682
+      },
+      {
+        "x": 5.3,
+        "y": 7.989
+      },
+      {
+        "x": 8.3,
+        "y": 3.592
+      },
+      {
+        "x": 9.8,
+        "y": 77.58500000000001
+      },
+      {
+        "x": 8.8,
+        "y": 12.693999999999999
+      },
+      {
+        "x": 7.3,
+        "y": 70.68799999999999
+      },
+      {
+        "x": 9.8,
+        "y": 8.415000000000001
+      },
+      {
+        "x": 6.1,
+        "y": 97.253
+      },
+      {
+        "x": 9.8,
+        "y": 86.205
+      },
+      {
+        "x": 10,
+        "y": 61.355000000000004
+      },
+      {
+        "x": 6.1,
+        "y": 0.201
+      },
+      {
+        "x": 9.3,
+        "y": 68.45
+      },
+      {
+        "x": 9.8,
+        "y": 4.99
+      },
+      {
+        "x": 8.2,
+        "y": 4.173
+      },
+      {
+        "x": 7.5,
+        "y": 57.984
+      },
+      {
+        "x": 9.8,
+        "y": 67.914
+      },
+      {
+        "x": 7.5,
+        "y": 10.612
+      },
+      {
+        "x": 9.8,
+        "y": 12.442
+      },
+      {
+        "x": 9.1,
+        "y": 11.401
+      },
+      {
+        "x": 9.8,
+        "y": 74.232
+      },
+      {
+        "x": 9.8,
+        "y": 10.543
+      },
+      {
+        "x": 5.3,
+        "y": 0.814
+      },
+      {
+        "x": 9.8,
+        "y": 36.114000000000004
+      },
+      {
+        "x": 8.8,
+        "y": 27.297
+      },
+      {
+        "x": 7.5,
+        "y": 55.864000000000004
+      },
+      {
+        "x": 9.8,
+        "y": 9.973
+      },
+      {
+        "x": 9.8,
+        "y": 77.307
+      },
+      {
+        "x": 8.8,
+        "y": 63.797000000000004
+      },
+      {
+        "x": 4.8,
+        "y": 1.2930000000000001
+      },
+      {
+        "x": 9.8,
+        "y": 29.557
+      },
+      {
+        "x": 9.8,
+        "y": 2.904
       },
       {
         "x": 9.8,
@@ -15781,23 +15720,107 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 84.575
-      },
-      {
-        "x": 6.5,
-        "y": 0.302
+        "y": 81.899
       },
       {
         "x": 9.8,
-        "y": 46.109
+        "y": 4.756
       },
       {
-        "x": 10,
-        "y": 34.52
+        "x": 9.8,
+        "y": 39.544000000000004
+      },
+      {
+        "x": 8.3,
+        "y": 94.721
       },
       {
         "x": 7.5,
-        "y": 2.98
+        "y": 20.084
+      },
+      {
+        "x": 7.5,
+        "y": 3.304
+      },
+      {
+        "x": 7.2,
+        "y": 42.556
+      },
+      {
+        "x": 5.3,
+        "y": 88.874
+      },
+      {
+        "x": 7.5,
+        "y": 48.656
+      },
+      {
+        "x": 8.8,
+        "y": 82.16499999999999
+      },
+      {
+        "x": 9.8,
+        "y": 7.9079999999999995
+      },
+      {
+        "x": 9.8,
+        "y": 87.33
+      },
+      {
+        "x": 9.8,
+        "y": 92.31899999999999
+      },
+      {
+        "x": 9.8,
+        "y": 9.792
+      },
+      {
+        "x": 6.3,
+        "y": 11.407
+      },
+      {
+        "x": 9.8,
+        "y": 6.178999999999999
+      },
+      {
+        "x": 9.8,
+        "y": 95.657
+      },
+      {
+        "x": 7.2,
+        "y": 23.1
+      },
+      {
+        "x": 9.8,
+        "y": 6.74
+      },
+      {
+        "x": 9.8,
+        "y": 84.575
+      },
+      {
+        "x": 9.8,
+        "y": 47.809000000000005
+      },
+      {
+        "x": 5.3,
+        "y": 0.198
+      },
+      {
+        "x": 9.8,
+        "y": 38.374
+      },
+      {
+        "x": 7.5,
+        "y": 39.704
+      },
+      {
+        "x": 9.9,
+        "y": 86.268
+      },
+      {
+        "x": 9.8,
+        "y": 12.334
       },
       {
         "x": 10,
@@ -16285,7 +16308,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 62.182
+        "y": 61.958999999999996
       },
       {
         "x": 9.1,
@@ -16433,7 +16456,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.9,
-        "y": 16.892
+        "y": 17.025000000000002
       },
       {
         "x": 9.9,
@@ -16545,7 +16568,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 57.204
+        "y": 56.248
       },
       {
         "x": 9.3,
@@ -16649,7 +16672,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 68.84599999999999
+        "y": 75.323
       },
       {
         "x": 9.8,
@@ -17089,7 +17112,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 2.559
+        "y": 3.2
       },
       {
         "x": 7.4,
@@ -17133,7 +17156,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 3.2,
-        "y": 0.094
+        "y": 0.106
       },
       {
         "x": 7.2,
@@ -17265,7 +17288,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.1,
-        "y": 6.014
+        "y": 6.563
       },
       {
         "x": 10,
@@ -17349,7 +17372,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 19.793
+        "y": 23.429
       },
       {
         "x": 7.3,
@@ -17465,7 +17488,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 21.26
+        "y": 20.655
       },
       {
         "x": 5.9,
@@ -17529,7 +17552,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 0.551
+        "y": 0.562
       },
       {
         "x": 5.3,
@@ -17545,7 +17568,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 1.184
+        "y": 1.205
       },
       {
         "x": 5.3,
@@ -17621,19 +17644,15 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 43.788
+        "y": 72.253
       },
       {
         "x": 9.8,
-        "y": 4.756
+        "y": 40.992
       },
       {
         "x": 5.3,
         "y": 62.269
-      },
-      {
-        "x": 9.8,
-        "y": 54.254000000000005
       },
       {
         "x": 9.8,
@@ -17656,16 +17675,8 @@ window.__KEV_OVERRIDES = {
         "y": 0.233
       },
       {
-        "x": 10,
-        "y": 0.565
-      },
-      {
-        "x": 10,
-        "y": 4.5089999999999995
-      },
-      {
         "x": 9.1,
-        "y": 0.8099999999999999
+        "y": 1.008
       },
       {
         "x": 7.8,
@@ -17681,7 +17692,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 89.20400000000001
+        "y": 90.798
       },
       {
         "x": 9.8,
@@ -17721,7 +17732,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 1.239
+        "y": 1.656
       },
       {
         "x": 9.8,
@@ -17744,10 +17755,6 @@ window.__KEV_OVERRIDES = {
         "y": 38.656
       },
       {
-        "x": 5.8,
-        "y": 0.755
-      },
-      {
         "x": 5.3,
         "y": 0.659
       },
@@ -17761,11 +17768,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 18.911
-      },
-      {
-        "x": 8.8,
-        "y": 46.17
+        "y": 20.631
       },
       {
         "x": 7.5,
@@ -17774,10 +17777,6 @@ window.__KEV_OVERRIDES = {
       {
         "x": 8.1,
         "y": 76.198
-      },
-      {
-        "x": 10,
-        "y": 44.185
       },
       {
         "x": 9.3,
@@ -17789,83 +17788,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 0.774
-      },
-      {
-        "x": 7.5,
-        "y": 82.036
-      },
-      {
-        "x": 9.8,
-        "y": 98.725
-      },
-      {
-        "x": 9.1,
-        "y": 26.939
-      },
-      {
-        "x": 7.5,
-        "y": 2.763
-      },
-      {
-        "x": 6.2,
-        "y": 0.876
-      },
-      {
-        "x": 9.8,
-        "y": 29.451
-      },
-      {
-        "x": 8.8,
-        "y": 78.191
-      },
-      {
-        "x": 10,
-        "y": 94.378
-      },
-      {
-        "x": 5.3,
-        "y": 4.735
-      },
-      {
-        "x": 8.1,
-        "y": 94.106
-      },
-      {
-        "x": 7.5,
-        "y": 2.9899999999999998
-      },
-      {
-        "x": 9.8,
-        "y": 65.237
-      },
-      {
-        "x": 7.4,
-        "y": 2.186
-      },
-      {
-        "x": 9.8,
-        "y": 45.361000000000004
-      },
-      {
-        "x": 6.5,
-        "y": 3.159
-      },
-      {
-        "x": 9.8,
-        "y": 98.27799999999999
-      },
-      {
-        "x": 9.8,
-        "y": 63.113
-      },
-      {
-        "x": 5.3,
-        "y": 4.446
-      },
-      {
-        "x": 7.5,
-        "y": 36.765
+        "y": 1.391
       },
       {
         "x": 4.3,
@@ -17873,383 +17796,31 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 15.576
-      },
-      {
-        "x": 9.8,
-        "y": 71.328
-      },
-      {
-        "x": 7.5,
-        "y": 2.101
-      },
-      {
-        "x": 5.3,
-        "y": 18.066
-      },
-      {
-        "x": 4.3,
-        "y": 1.183
-      },
-      {
-        "x": 7.5,
-        "y": 12.851
-      },
-      {
-        "x": 9.8,
-        "y": 3.1220000000000003
-      },
-      {
-        "x": 9.8,
-        "y": 88.94800000000001
-      },
-      {
-        "x": 5.4,
-        "y": 3.977
-      },
-      {
-        "x": 9.8,
-        "y": 68.398
-      },
-      {
-        "x": 9.8,
-        "y": 35.437000000000005
-      },
-      {
-        "x": 9.8,
-        "y": 46.642
-      },
-      {
-        "x": 9.1,
-        "y": 83.163
-      },
-      {
-        "x": 9.8,
-        "y": 97.639
+        "y": 34.525
       },
       {
         "x": 7.5,
         "y": 86.182
       },
       {
-        "x": 6.1,
-        "y": 26.118000000000002
-      },
-      {
         "x": 7.5,
         "y": 4.311
-      },
-      {
-        "x": 9.9,
-        "y": 93.971
-      },
-      {
-        "x": 8.6,
-        "y": 15.101999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 95.44200000000001
-      },
-      {
-        "x": 9.8,
-        "y": 35.708
-      },
-      {
-        "x": 9.8,
-        "y": 9.046999999999999
-      },
-      {
-        "x": 8.8,
-        "y": 96
-      },
-      {
-        "x": 7.5,
-        "y": 16.505
-      },
-      {
-        "x": 9.8,
-        "y": 3.7969999999999997
-      },
-      {
-        "x": 7.5,
-        "y": 5.408
-      },
-      {
-        "x": 9.9,
-        "y": 4.518
       },
       {
         "x": 4.3,
         "y": 1.24
       },
       {
-        "x": 7.5,
-        "y": 66.54299999999999
-      },
-      {
-        "x": 7.3,
-        "y": 51.881
-      },
-      {
-        "x": 7.5,
-        "y": 17.982
-      },
-      {
-        "x": 9.8,
-        "y": 5.4239999999999995
-      },
-      {
-        "x": 9.8,
-        "y": 18.33
-      },
-      {
-        "x": 9.8,
-        "y": 86.896
-      },
-      {
-        "x": 6.3,
-        "y": 8.388
-      },
-      {
-        "x": 9.8,
-        "y": 82.956
-      },
-      {
-        "x": 6.1,
-        "y": 1.028
-      },
-      {
-        "x": 6.1,
-        "y": 36.995
-      },
-      {
-        "x": 7.5,
-        "y": 8.17
-      },
-      {
-        "x": 9.8,
-        "y": 29.195999999999998
-      },
-      {
-        "x": 8.8,
-        "y": 0.983
-      },
-      {
-        "x": 9.8,
-        "y": 82.248
-      },
-      {
-        "x": 9.8,
-        "y": 31.730000000000004
-      },
-      {
-        "x": 7.5,
-        "y": 5.408
-      },
-      {
-        "x": 9.8,
-        "y": 99.397
-      },
-      {
-        "x": 9.8,
-        "y": 9.044
-      },
-      {
-        "x": 6.1,
-        "y": 15.701
-      },
-      {
-        "x": 6.5,
-        "y": 5.5969999999999995
-      },
-      {
-        "x": 8.4,
-        "y": 8.17
-      },
-      {
-        "x": 8.2,
-        "y": 31.59
-      },
-      {
-        "x": 9.8,
-        "y": 23.138
-      },
-      {
-        "x": 6.5,
-        "y": 0.746
-      },
-      {
-        "x": 5.3,
-        "y": 1.008
-      },
-      {
-        "x": 9.8,
-        "y": 78.751
-      },
-      {
-        "x": 7.5,
-        "y": 26.717000000000002
-      },
-      {
-        "x": 7.5,
-        "y": 14.396999999999998
-      },
-      {
-        "x": 9.9,
-        "y": 33.094
-      },
-      {
-        "x": 9.8,
-        "y": 14.002999999999998
-      },
-      {
         "x": 9.8,
         "y": 5.727
-      },
-      {
-        "x": 7.5,
-        "y": 51.466
-      },
-      {
-        "x": 8,
-        "y": 25.115
-      },
-      {
-        "x": 8.8,
-        "y": 16.519000000000002
-      },
-      {
-        "x": 6.3,
-        "y": 86.533
-      },
-      {
-        "x": 8.8,
-        "y": 14.725
-      },
-      {
-        "x": 7.5,
-        "y": 13.120999999999999
-      },
-      {
-        "x": 6.1,
-        "y": 3.673
-      },
-      {
-        "x": 7.5,
-        "y": 70.589
-      },
-      {
-        "x": 9.8,
-        "y": 58.879000000000005
-      },
-      {
-        "x": 7.5,
-        "y": 39.078
-      },
-      {
-        "x": 9.8,
-        "y": 49.918
-      },
-      {
-        "x": 7.7,
-        "y": 21.173000000000002
       },
       {
         "x": 9.8,
         "y": 15.256
       },
       {
-        "x": 6.1,
-        "y": 3.313
-      },
-      {
-        "x": 7.5,
-        "y": 7.845000000000001
-      },
-      {
         "x": 9.8,
-        "y": 3.8580000000000005
-      },
-      {
-        "x": 4.9,
-        "y": 37.099
-      },
-      {
-        "x": 8.6,
-        "y": 4.088
-      },
-      {
-        "x": 10,
-        "y": 71.974
-      },
-      {
-        "x": 7.5,
-        "y": 52.332
-      },
-      {
-        "x": 6.5,
-        "y": 3.012
-      },
-      {
-        "x": 7.5,
-        "y": 57.778
-      },
-      {
-        "x": 9.8,
-        "y": 26.228
-      },
-      {
-        "x": 9.8,
-        "y": 64.113
-      },
-      {
-        "x": 6.5,
-        "y": 80.308
-      },
-      {
-        "x": 6.1,
-        "y": 1.0710000000000002
-      },
-      {
-        "x": 9.8,
-        "y": 90.339
-      },
-      {
-        "x": 9.8,
-        "y": 54.766000000000005
-      },
-      {
-        "x": 9.8,
-        "y": 17.572
-      },
-      {
-        "x": 9.8,
-        "y": 13.746
-      },
-      {
-        "x": 8.6,
-        "y": 51.364
-      },
-      {
-        "x": 9.8,
-        "y": 83.321
-      },
-      {
-        "x": 7.5,
-        "y": 3.888
-      },
-      {
-        "x": 7.5,
-        "y": 12.245000000000001
-      },
-      {
-        "x": 6.3,
-        "y": 47.109
-      },
-      {
-        "x": 9.8,
-        "y": 18.703
+        "y": 16.739
       },
       {
         "x": 6.5,
@@ -18257,7 +17828,459 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.1,
-        "y": 23.018
+        "y": 53.31
+      },
+      {
+        "x": 9.8,
+        "y": 88.94800000000001
+      },
+      {
+        "x": 7.4,
+        "y": 2.186
+      },
+      {
+        "x": 9.8,
+        "y": 99.397
+      },
+      {
+        "x": 6.5,
+        "y": 3.012
+      },
+      {
+        "x": 8.6,
+        "y": 15.101999999999999
+      },
+      {
+        "x": 7.5,
+        "y": 14.396999999999998
+      },
+      {
+        "x": 7.5,
+        "y": 70.589
+      },
+      {
+        "x": 7.5,
+        "y": 8.17
+      },
+      {
+        "x": 9.9,
+        "y": 4.518
+      },
+      {
+        "x": 7.5,
+        "y": 2.101
+      },
+      {
+        "x": 6.1,
+        "y": 26.118000000000002
+      },
+      {
+        "x": 6.5,
+        "y": 3.159
+      },
+      {
+        "x": 7.5,
+        "y": 17.982
+      },
+      {
+        "x": 9.8,
+        "y": 14.002999999999998
+      },
+      {
+        "x": 9.1,
+        "y": 26.939
+      },
+      {
+        "x": 7.7,
+        "y": 21.173000000000002
+      },
+      {
+        "x": 9.8,
+        "y": 63.113
+      },
+      {
+        "x": 8.6,
+        "y": 4.088
+      },
+      {
+        "x": 7.5,
+        "y": 7.845000000000001
+      },
+      {
+        "x": 7.5,
+        "y": 51.466
+      },
+      {
+        "x": 9.8,
+        "y": 65.237
+      },
+      {
+        "x": 9.8,
+        "y": 78.751
+      },
+      {
+        "x": 6.3,
+        "y": 47.109
+      },
+      {
+        "x": 9.8,
+        "y": 5.4239999999999995
+      },
+      {
+        "x": 7.5,
+        "y": 12.245000000000001
+      },
+      {
+        "x": 8.1,
+        "y": 94.106
+      },
+      {
+        "x": 6.5,
+        "y": 0.746
+      },
+      {
+        "x": 8.8,
+        "y": 14.725
+      },
+      {
+        "x": 6.1,
+        "y": 3.673
+      },
+      {
+        "x": 7.5,
+        "y": 16.505
+      },
+      {
+        "x": 9.8,
+        "y": 64.113
+      },
+      {
+        "x": 4.3,
+        "y": 1.183
+      },
+      {
+        "x": 9.8,
+        "y": 58.879000000000005
+      },
+      {
+        "x": 9.8,
+        "y": 23.138
+      },
+      {
+        "x": 6.1,
+        "y": 3.313
+      },
+      {
+        "x": 9.8,
+        "y": 29.195999999999998
+      },
+      {
+        "x": 7.5,
+        "y": 5.408
+      },
+      {
+        "x": 9.9,
+        "y": 33.094
+      },
+      {
+        "x": 9.8,
+        "y": 54.766000000000005
+      },
+      {
+        "x": 5.4,
+        "y": 3.977
+      },
+      {
+        "x": 9.8,
+        "y": 9.046999999999999
+      },
+      {
+        "x": 8.8,
+        "y": 16.519000000000002
+      },
+      {
+        "x": 9.1,
+        "y": 83.163
+      },
+      {
+        "x": 7.5,
+        "y": 12.851
+      },
+      {
+        "x": 8.4,
+        "y": 8.17
+      },
+      {
+        "x": 9.8,
+        "y": 26.228
+      },
+      {
+        "x": 6.1,
+        "y": 1.028
+      },
+      {
+        "x": 9.8,
+        "y": 3.8580000000000005
+      },
+      {
+        "x": 9.8,
+        "y": 97.639
+      },
+      {
+        "x": 9.8,
+        "y": 95.44200000000001
+      },
+      {
+        "x": 9.8,
+        "y": 17.572
+      },
+      {
+        "x": 10,
+        "y": 44.185
+      },
+      {
+        "x": 9.8,
+        "y": 82.248
+      },
+      {
+        "x": 10,
+        "y": 71.974
+      },
+      {
+        "x": 4.9,
+        "y": 37.099
+      },
+      {
+        "x": 9.8,
+        "y": 3.1220000000000003
+      },
+      {
+        "x": 9.8,
+        "y": 68.398
+      },
+      {
+        "x": 5.3,
+        "y": 4.735
+      },
+      {
+        "x": 7.5,
+        "y": 2.9899999999999998
+      },
+      {
+        "x": 6.1,
+        "y": 1.0710000000000002
+      },
+      {
+        "x": 9.8,
+        "y": 3.7969999999999997
+      },
+      {
+        "x": 7.5,
+        "y": 52.332
+      },
+      {
+        "x": 8.2,
+        "y": 31.59
+      },
+      {
+        "x": 8.8,
+        "y": 0.983
+      },
+      {
+        "x": 6.3,
+        "y": 8.388
+      },
+      {
+        "x": 6.1,
+        "y": 15.701
+      },
+      {
+        "x": 9.8,
+        "y": 31.730000000000004
+      },
+      {
+        "x": 9.8,
+        "y": 82.956
+      },
+      {
+        "x": 8.8,
+        "y": 96
+      },
+      {
+        "x": 9.8,
+        "y": 86.896
+      },
+      {
+        "x": 6.1,
+        "y": 71.601
+      },
+      {
+        "x": 7.5,
+        "y": 66.54299999999999
+      },
+      {
+        "x": 5.3,
+        "y": 4.446
+      },
+      {
+        "x": 5.3,
+        "y": 1.008
+      },
+      {
+        "x": 9.8,
+        "y": 98.239
+      },
+      {
+        "x": 7.5,
+        "y": 57.778
+      },
+      {
+        "x": 7.5,
+        "y": 36.765
+      },
+      {
+        "x": 9.8,
+        "y": 46.642
+      },
+      {
+        "x": 7.5,
+        "y": 5.408
+      },
+      {
+        "x": 8.6,
+        "y": 51.364
+      },
+      {
+        "x": 9.8,
+        "y": 98.725
+      },
+      {
+        "x": 9.8,
+        "y": 83.321
+      },
+      {
+        "x": 9.8,
+        "y": 35.708
+      },
+      {
+        "x": 9.8,
+        "y": 49.918
+      },
+      {
+        "x": 9.8,
+        "y": 45.361000000000004
+      },
+      {
+        "x": 9.8,
+        "y": 18.33
+      },
+      {
+        "x": 6.5,
+        "y": 5.5969999999999995
+      },
+      {
+        "x": 7.5,
+        "y": 82.036
+      },
+      {
+        "x": 8.8,
+        "y": 46.17
+      },
+      {
+        "x": 5.3,
+        "y": 18.066
+      },
+      {
+        "x": 9.8,
+        "y": 9.044
+      },
+      {
+        "x": 9.8,
+        "y": 29.451
+      },
+      {
+        "x": 7.5,
+        "y": 26.717000000000002
+      },
+      {
+        "x": 8,
+        "y": 25.115
+      },
+      {
+        "x": 7.5,
+        "y": 39.078
+      },
+      {
+        "x": 6.2,
+        "y": 0.876
+      },
+      {
+        "x": 6.5,
+        "y": 94.453
+      },
+      {
+        "x": 7.3,
+        "y": 51.881
+      },
+      {
+        "x": 7.5,
+        "y": 3.888
+      },
+      {
+        "x": 9.8,
+        "y": 71.328
+      },
+      {
+        "x": 7.5,
+        "y": 13.120999999999999
+      },
+      {
+        "x": 9.8,
+        "y": 90.339
+      },
+      {
+        "x": 6.3,
+        "y": 86.533
+      },
+      {
+        "x": 9.9,
+        "y": 93.971
+      },
+      {
+        "x": 7.5,
+        "y": 2.763
+      },
+      {
+        "x": 9.8,
+        "y": 15.576
+      },
+      {
+        "x": 10,
+        "y": 94.378
+      },
+      {
+        "x": 8.8,
+        "y": 78.191
+      },
+      {
+        "x": 9.8,
+        "y": 54.254000000000005
+      },
+      {
+        "x": 9.8,
+        "y": 12.633
+      },
+      {
+        "x": 8.1,
+        "y": 0.641
+      },
+      {
+        "x": 5.8,
+        "y": 0.755
+      },
+      {
+        "x": 9.8,
+        "y": 13.746
       },
       {
         "x": 9,
@@ -18521,7 +18544,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 0.44
+        "y": 0.46499999999999997
       },
       {
         "x": 9.8,
@@ -18853,7 +18876,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 90.485
+        "y": 90.039
       },
       {
         "x": 7.5,
@@ -19553,7 +19576,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 43.502
+        "y": 42.814
       },
       {
         "x": 7.6,
@@ -19825,7 +19848,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 11.946
+        "y": 12.966
       },
       {
         "x": 9.8,
@@ -19869,7 +19892,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 5.4,
-        "y": 3.2039999999999997
+        "y": 3.779
       },
       {
         "x": 7.5,
@@ -20165,7 +20188,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.2,
-        "y": 1.085
+        "y": 1.068
       },
       {
         "x": 7.5,
@@ -20181,19 +20204,15 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 4.982
+        "y": 4.726
       },
       {
         "x": 9.8,
         "y": 40.353
       },
       {
-        "x": 9.8,
-        "y": 3.766
-      },
-      {
         "x": 10,
-        "y": 0.29
+        "y": 0.28200000000000003
       },
       {
         "x": 6.3,
@@ -20201,15 +20220,15 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.6,
-        "y": 95.89
+        "y": 98.57000000000001
       },
       {
         "x": 7.8,
-        "y": 93.057
+        "y": 92.64099999999999
       },
       {
         "x": 8.8,
-        "y": 92.16499999999999
+        "y": 93.418
       },
       {
         "x": 8.1,
@@ -20217,15 +20236,11 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 8.1,
-        "y": 4.03
+        "y": 4.175
       },
       {
         "x": 8.6,
-        "y": 16.775000000000002
-      },
-      {
-        "x": 9.8,
-        "y": 32.714
+        "y": 17.281
       },
       {
         "x": 9.8,
@@ -20245,7 +20260,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 0.39699999999999996
+        "y": 0.459
       },
       {
         "x": 9.8,
@@ -20253,11 +20268,11 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.3,
-        "y": 1.304
+        "y": 1.323
       },
       {
         "x": 8.8,
-        "y": 0.368
+        "y": 14.335
       },
       {
         "x": 8.8,
@@ -20289,15 +20304,11 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 0.459
+        "y": 0.514
       },
       {
         "x": 9.8,
         "y": 57.709999999999994
-      },
-      {
-        "x": 9.8,
-        "y": 39.688
       },
       {
         "x": 10,
@@ -20332,20 +20343,12 @@ window.__KEV_OVERRIDES = {
         "y": 2.96
       },
       {
-        "x": 8.8,
-        "y": 4.169
-      },
-      {
-        "x": 8.5,
-        "y": 5.367
-      },
-      {
         "x": 9.8,
         "y": 6.172
       },
       {
         "x": 9.8,
-        "y": 66.168
+        "y": 48.668
       },
       {
         "x": 8.8,
@@ -20372,52 +20375,48 @@ window.__KEV_OVERRIDES = {
         "y": 31.944
       },
       {
-        "x": 10,
-        "y": 78.572
-      },
-      {
-        "x": 9.4,
-        "y": 2.169
-      },
-      {
         "x": 9.8,
         "y": 3.177
       },
       {
         "x": 9.8,
-        "y": 0.8659999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 70.866
+        "y": 0.9339999999999999
       },
       {
         "x": 9.8,
         "y": 11.927
       },
       {
-        "x": 7.5,
-        "y": 59.152
+        "x": 8.8,
+        "y": 2.104
       },
       {
-        "x": 3.3,
-        "y": 0.674
+        "x": 9.8,
+        "y": 5.633
       },
       {
-        "x": 7.5,
-        "y": 11.615
+        "x": 8.2,
+        "y": 99.856
+      },
+      {
+        "x": 8,
+        "y": 27.71
+      },
+      {
+        "x": 5.5,
+        "y": 0.993
+      },
+      {
+        "x": 10,
+        "y": 90.387
+      },
+      {
+        "x": 7.4,
+        "y": 3.857
       },
       {
         "x": 8.6,
-        "y": 74.818
-      },
-      {
-        "x": 9.8,
-        "y": 48.957
-      },
-      {
-        "x": 9.8,
-        "y": 7.131
+        "y": 37.366
       },
       {
         "x": 9.8,
@@ -20425,63 +20424,91 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 2.65
-      },
-      {
-        "x": 7.5,
-        "y": 3.573
-      },
-      {
-        "x": 8,
-        "y": 27.71
-      },
-      {
-        "x": 6.1,
-        "y": 2.205
-      },
-      {
-        "x": 6.1,
-        "y": 10.52
-      },
-      {
-        "x": 9.8,
-        "y": 93.243
-      },
-      {
-        "x": 9.8,
-        "y": 3.848
+        "y": 3.1109999999999998
       },
       {
         "x": 8.6,
-        "y": 67.715
+        "y": 49.851
+      },
+      {
+        "x": 7.5,
+        "y": 5.8790000000000004
       },
       {
         "x": 9.8,
-        "y": 97.10600000000001
+        "y": 79.257
       },
       {
         "x": 9.8,
-        "y": 53.879
+        "y": 48.957
       },
       {
-        "x": 5,
-        "y": 3.92
+        "x": 7.5,
+        "y": 5.116
+      },
+      {
+        "x": 7.5,
+        "y": 59.152
+      },
+      {
+        "x": 9.8,
+        "y": 12.744
+      },
+      {
+        "x": 9.8,
+        "y": 96.986
+      },
+      {
+        "x": 9.8,
+        "y": 2.65
       },
       {
         "x": 7.5,
         "y": 8.519
       },
       {
-        "x": 5.3,
-        "y": 32.028
+        "x": 9.4,
+        "y": 2.169
+      },
+      {
+        "x": 9.8,
+        "y": 4.795
+      },
+      {
+        "x": 9.8,
+        "y": 84.6
       },
       {
         "x": 8.1,
-        "y": 73.566
+        "y": 37.835
+      },
+      {
+        "x": 9.8,
+        "y": 57.298
       },
       {
         "x": 6.1,
-        "y": 80.907
+        "y": 2.205
+      },
+      {
+        "x": 8.8,
+        "y": 71.084
+      },
+      {
+        "x": 9.8,
+        "y": 12.408
+      },
+      {
+        "x": 7.5,
+        "y": 10.562000000000001
+      },
+      {
+        "x": 7.5,
+        "y": 45.974
+      },
+      {
+        "x": 9.8,
+        "y": 93.243
       },
       {
         "x": 9.8,
@@ -20492,220 +20519,68 @@ window.__KEV_OVERRIDES = {
         "y": 28.477999999999998
       },
       {
-        "x": 7.5,
-        "y": 45.974
-      },
-      {
-        "x": 9.8,
-        "y": 97.011
-      },
-      {
-        "x": 9.8,
-        "y": 49.787
-      },
-      {
-        "x": 5.3,
-        "y": 45.241
-      },
-      {
-        "x": 8.2,
-        "y": 99.856
-      },
-      {
-        "x": 9.8,
-        "y": 79.257
-      },
-      {
-        "x": 9.8,
-        "y": 3.1109999999999998
-      },
-      {
-        "x": 7.5,
-        "y": 2.005
-      },
-      {
-        "x": 7.5,
-        "y": 10.562000000000001
-      },
-      {
-        "x": 6.5,
-        "y": 7.497
-      },
-      {
-        "x": 7.5,
-        "y": 3.096
-      },
-      {
-        "x": 6.5,
-        "y": 2.128
-      },
-      {
-        "x": 5.3,
-        "y": 2.053
-      },
-      {
-        "x": 6.3,
-        "y": 0.655
-      },
-      {
-        "x": 7.5,
-        "y": 6.348
-      },
-      {
-        "x": 7.4,
-        "y": 3.857
-      },
-      {
-        "x": 9.8,
-        "y": 14.421999999999999
-      },
-      {
-        "x": 7.5,
-        "y": 5.8790000000000004
+        "x": 9.1,
+        "y": 50.622
       },
       {
         "x": 8.6,
-        "y": 16.399
-      },
-      {
-        "x": 8.8,
-        "y": 21.331
+        "y": 74.818
       },
       {
         "x": 9.8,
-        "y": 99.273
-      },
-      {
-        "x": 8.8,
-        "y": 89.633
-      },
-      {
-        "x": 7.5,
-        "y": 93.188
-      },
-      {
-        "x": 7.5,
-        "y": 78.431
-      },
-      {
-        "x": 6.1,
-        "y": 56.172
+        "y": 6.744
       },
       {
         "x": 9.8,
         "y": 68.794
       },
       {
-        "x": 9.8,
-        "y": 50.224000000000004
-      },
-      {
-        "x": 9.8,
-        "y": 39.973
-      },
-      {
-        "x": 5.5,
-        "y": 0.42100000000000004
-      },
-      {
-        "x": 8.8,
-        "y": 1.414
-      },
-      {
-        "x": 9.8,
-        "y": 97.969
-      },
-      {
-        "x": 9.8,
-        "y": 44.455
-      },
-      {
-        "x": 9.3,
-        "y": 79.133
-      },
-      {
-        "x": 5.3,
-        "y": 25.679999999999996
-      },
-      {
-        "x": 8.8,
-        "y": 98.092
-      },
-      {
-        "x": 9.8,
-        "y": 69.631
-      },
-      {
-        "x": 5.3,
-        "y": 1.022
-      },
-      {
-        "x": 6.1,
-        "y": 4.511
-      },
-      {
-        "x": 8.6,
-        "y": 37.366
-      },
-      {
-        "x": 6.1,
-        "y": 4.17
-      },
-      {
         "x": 7.5,
-        "y": 96.438
-      },
-      {
-        "x": 5,
-        "y": 86.196
-      },
-      {
-        "x": 8.6,
-        "y": 49.851
+        "y": 9.239
       },
       {
         "x": 10,
         "y": 20.053
       },
       {
-        "x": 9.8,
-        "y": 34.195
+        "x": 7.5,
+        "y": 3.096
       },
       {
-        "x": 7.3,
-        "y": 36.747
+        "x": 9.8,
+        "y": 82.93700000000001
+      },
+      {
+        "x": 9.8,
+        "y": 44.455
+      },
+      {
+        "x": 5.3,
+        "y": 25.679999999999996
       },
       {
         "x": 7.5,
-        "y": 8.853
+        "y": 6.348
+      },
+      {
+        "x": 8.8,
+        "y": 98.092
+      },
+      {
+        "x": 6.1,
+        "y": 10.52
       },
       {
         "x": 9.8,
         "y": 70.908
       },
       {
-        "x": 9.8,
-        "y": 12.744
+        "x": 8.1,
+        "y": 73.566
       },
       {
         "x": 9.8,
-        "y": 94.75
-      },
-      {
-        "x": 8.8,
-        "y": 71.084
-      },
-      {
-        "x": 9.1,
-        "y": 50.622
-      },
-      {
-        "x": 9.8,
-        "y": 8.774999999999999
-      },
-      {
-        "x": 6.3,
-        "y": 30.659999999999997
+        "y": 6.171
       },
       {
         "x": 7.5,
@@ -20713,15 +20588,55 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 6.171
+        "y": 3.848
+      },
+      {
+        "x": 5.3,
+        "y": 49.236000000000004
+      },
+      {
+        "x": 6.5,
+        "y": 7.497
+      },
+      {
+        "x": 7.5,
+        "y": 3.573
+      },
+      {
+        "x": 5.3,
+        "y": 32.028
+      },
+      {
+        "x": 5.3,
+        "y": 1.022
       },
       {
         "x": 9.8,
-        "y": 11.176
+        "y": 14.421999999999999
       },
       {
         "x": 9.8,
-        "y": 4.795
+        "y": 53.879
+      },
+      {
+        "x": 6.1,
+        "y": 80.907
+      },
+      {
+        "x": 9.8,
+        "y": 94.75
+      },
+      {
+        "x": 9.8,
+        "y": 4.2700000000000005
+      },
+      {
+        "x": 6.3,
+        "y": 0.655
+      },
+      {
+        "x": 6.1,
+        "y": 4.511
       },
       {
         "x": 9.8,
@@ -20729,35 +20644,7 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 87.154
-      },
-      {
-        "x": 9.8,
-        "y": 82.93700000000001
-      },
-      {
-        "x": 5.5,
-        "y": 0.993
-      },
-      {
-        "x": 7.3,
-        "y": 61.043000000000006
-      },
-      {
-        "x": 5.3,
-        "y": 49.236000000000004
-      },
-      {
-        "x": 9.8,
-        "y": 17.904999999999998
-      },
-      {
-        "x": 9.8,
-        "y": 4.2700000000000005
-      },
-      {
-        "x": 7.8,
-        "y": 12.836
+        "y": 49.787
       },
       {
         "x": 9.8,
@@ -20765,27 +20652,15 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 12.408
+        "y": 11.176
       },
       {
         "x": 9.8,
-        "y": 57.298
-      },
-      {
-        "x": 7.5,
-        "y": 83.042
-      },
-      {
-        "x": 7.5,
-        "y": 5.116
-      },
-      {
-        "x": 8.1,
-        "y": 37.835
+        "y": 50.224000000000004
       },
       {
         "x": 9.8,
-        "y": 6.744
+        "y": 97.969
       },
       {
         "x": 10,
@@ -20793,19 +20668,39 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 94.089
-      },
-      {
-        "x": 7.5,
-        "y": 7.849
-      },
-      {
-        "x": 7.5,
-        "y": 8.76
+        "y": 39.973
       },
       {
         "x": 9.8,
-        "y": 4.756
+        "y": 87.154
+      },
+      {
+        "x": 7.3,
+        "y": 61.043000000000006
+      },
+      {
+        "x": 9.8,
+        "y": 12.350999999999999
+      },
+      {
+        "x": 9.3,
+        "y": 79.133
+      },
+      {
+        "x": 8.8,
+        "y": 89.633
+      },
+      {
+        "x": 7.5,
+        "y": 83.042
+      },
+      {
+        "x": 6.5,
+        "y": 2.128
+      },
+      {
+        "x": 9.8,
+        "y": 7.131
       },
       {
         "x": 7.5,
@@ -20813,27 +20708,151 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 84.6
-      },
-      {
-        "x": 10,
-        "y": 90.387
-      },
-      {
-        "x": 9.8,
-        "y": 12.350999999999999
-      },
-      {
-        "x": 9.8,
-        "y": 96.986
-      },
-      {
-        "x": 9.8,
-        "y": 77.91900000000001
+        "y": 8.774999999999999
       },
       {
         "x": 7.5,
-        "y": 1.652
+        "y": 96.58
+      },
+      {
+        "x": 5.3,
+        "y": 2.053
+      },
+      {
+        "x": 7.5,
+        "y": 93.188
+      },
+      {
+        "x": 6.3,
+        "y": 30.659999999999997
+      },
+      {
+        "x": 9.8,
+        "y": 69.631
+      },
+      {
+        "x": 7.5,
+        "y": 78.431
+      },
+      {
+        "x": 7.3,
+        "y": 36.747
+      },
+      {
+        "x": 8.8,
+        "y": 1.414
+      },
+      {
+        "x": 9.8,
+        "y": 99.273
+      },
+      {
+        "x": 5,
+        "y": 86.196
+      },
+      {
+        "x": 5.5,
+        "y": 0.42100000000000004
+      },
+      {
+        "x": 7.5,
+        "y": 8.76
+      },
+      {
+        "x": 9.8,
+        "y": 94.089
+      },
+      {
+        "x": 3.3,
+        "y": 0.674
+      },
+      {
+        "x": 7.5,
+        "y": 11.615
+      },
+      {
+        "x": 9.8,
+        "y": 97.011
+      },
+      {
+        "x": 6.1,
+        "y": 56.172
+      },
+      {
+        "x": 9.8,
+        "y": 3.766
+      },
+      {
+        "x": 9.8,
+        "y": 17.904999999999998
+      },
+      {
+        "x": 8.6,
+        "y": 16.399
+      },
+      {
+        "x": 5,
+        "y": 3.92
+      },
+      {
+        "x": 5.3,
+        "y": 45.241
+      },
+      {
+        "x": 9.8,
+        "y": 97.10600000000001
+      },
+      {
+        "x": 7.5,
+        "y": 7.849
+      },
+      {
+        "x": 7.8,
+        "y": 12.836
+      },
+      {
+        "x": 7.5,
+        "y": 2.005
+      },
+      {
+        "x": 6.1,
+        "y": 4.17
+      },
+      {
+        "x": 9.8,
+        "y": 4.756
+      },
+      {
+        "x": 8.6,
+        "y": 67.715
+      },
+      {
+        "x": 9.8,
+        "y": 34.195
+      },
+      {
+        "x": 8.8,
+        "y": 21.331
+      },
+      {
+        "x": 10,
+        "y": 78.572
+      },
+      {
+        "x": 9.8,
+        "y": 32.714
+      },
+      {
+        "x": 9.8,
+        "y": 70.866
+      },
+      {
+        "x": 7.5,
+        "y": 1.6389999999999998
+      },
+      {
+        "x": 9.8,
+        "y": 39.688
       },
       {
         "x": 5,
@@ -20841,267 +20860,31 @@ window.__KEV_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 69.663
-      },
-      {
-        "x": 9.8,
         "y": 15.504999999999999
       },
       {
         "x": 9.8,
-        "y": 29.110000000000003
+        "y": 79.487
       },
       {
         "x": 8.8,
-        "y": 2.289
+        "y": 3.972
+      },
+      {
+        "x": 8.5,
+        "y": 6.92
       },
       {
         "x": 9.8,
-        "y": 5.633
+        "y": 28.986
+      },
+      {
+        "x": 9.8,
+        "y": 69.663
       },
       {
         "x": 6.5,
         "y": 0.49300000000000005
-      },
-      {
-        "x": 10,
-        "y": 0.623
-      },
-      {
-        "x": 6,
-        "y": 0.42900000000000005
-      },
-      {
-        "x": 7.5,
-        "y": 70.56099999999999
-      },
-      {
-        "x": 5.3,
-        "y": 98.631
-      },
-      {
-        "x": 8.8,
-        "y": 72.648
-      },
-      {
-        "x": 7.5,
-        "y": 70.81
-      },
-      {
-        "x": 6.5,
-        "y": 0.321
-      },
-      {
-        "x": 5.3,
-        "y": 0.47600000000000003
-      },
-      {
-        "x": 7.1,
-        "y": 0.3
-      },
-      {
-        "x": 9.8,
-        "y": 1.008
-      },
-      {
-        "x": 9.8,
-        "y": 23.674
-      },
-      {
-        "x": 9.9,
-        "y": 1.093
-      },
-      {
-        "x": 9.9,
-        "y": 1.1280000000000001
-      },
-      {
-        "x": 9.9,
-        "y": 1.1280000000000001
-      },
-      {
-        "x": 9.9,
-        "y": 1.173
-      },
-      {
-        "x": 9.8,
-        "y": 0.47600000000000003
-      },
-      {
-        "x": 8.8,
-        "y": 49.088
-      },
-      {
-        "x": 9.1,
-        "y": 11.963
-      },
-      {
-        "x": 8.8,
-        "y": 7.093000000000001
-      },
-      {
-        "x": 9.3,
-        "y": 23.455000000000002
-      },
-      {
-        "x": 10,
-        "y": 0.618
-      },
-      {
-        "x": 7,
-        "y": 0.371
-      },
-      {
-        "x": 6.1,
-        "y": 0.215
-      },
-      {
-        "x": 8,
-        "y": 0.911
-      },
-      {
-        "x": 7.5,
-        "y": 1.34
-      },
-      {
-        "x": 9.1,
-        "y": 1.101
-      },
-      {
-        "x": 7.8,
-        "y": 0.11800000000000001
-      },
-      {
-        "x": 8.2,
-        "y": 0.266
-      },
-      {
-        "x": 7.5,
-        "y": 73.97399999999999
-      },
-      {
-        "x": 9,
-        "y": 0.938
-      },
-      {
-        "x": 3.6,
-        "y": 0.22100000000000003
-      },
-      {
-        "x": 8.2,
-        "y": 0.618
-      },
-      {
-        "x": 7.4,
-        "y": 0.592
-      },
-      {
-        "x": 6.5,
-        "y": 0.11299999999999999
-      },
-      {
-        "x": 6.1,
-        "y": 0.272
-      },
-      {
-        "x": 7.2,
-        "y": 0.303
-      },
-      {
-        "x": 7.2,
-        "y": 0.303
-      },
-      {
-        "x": 7.2,
-        "y": 0.232
-      },
-      {
-        "x": 9.8,
-        "y": 6.658
-      },
-      {
-        "x": 6.8,
-        "y": 0.2
-      },
-      {
-        "x": 8.8,
-        "y": 0.571
-      },
-      {
-        "x": 8.1,
-        "y": 0.53
-      },
-      {
-        "x": 8.8,
-        "y": 8.794
-      },
-      {
-        "x": 8.8,
-        "y": 10.171
-      },
-      {
-        "x": 8.8,
-        "y": 0.44400000000000006
-      },
-      {
-        "x": 9.8,
-        "y": 0.475
-      },
-      {
-        "x": 2.8,
-        "y": 3.2390000000000003
-      },
-      {
-        "x": 6.3,
-        "y": 0.964
-      },
-      {
-        "x": 8.8,
-        "y": 11.609
-      },
-      {
-        "x": 9.8,
-        "y": 99.348
-      },
-      {
-        "x": 8.1,
-        "y": 13.547999999999998
-      },
-      {
-        "x": 7.8,
-        "y": 0.629
-      },
-      {
-        "x": 8.1,
-        "y": 1.1119999999999999
-      },
-      {
-        "x": 8.1,
-        "y": 6.116
-      },
-      {
-        "x": 8.8,
-        "y": 1.476
-      },
-      {
-        "x": 8.2,
-        "y": 0.347
-      },
-      {
-        "x": 8.4,
-        "y": 0.6799999999999999
-      },
-      {
-        "x": 9.3,
-        "y": 93.813
-      },
-      {
-        "x": 8.8,
-        "y": 0.39699999999999996
-      },
-      {
-        "x": 9.9,
-        "y": 97.78099999999999
       },
       {
         "x": 8.8,
@@ -21142,37 +20925,33 @@ window.__KEV_OVERRIDES = {
       {
         "x": 9.8,
         "y": 0.966
-      },
-      {
-        "x": 6.1,
-        "y": 0.8880000000000001
       }
     ],
-    "count": 4937,
-    "totalKev": 5055
+    "count": 4884,
+    "totalKev": 4998
   },
   "kevCisaOverlap": {
     "available": true,
-    "kevTotal": 5055,
-    "otherTotal": 1623,
-    "both": 1623,
-    "kevOnly": 3432,
+    "kevTotal": 4998,
+    "otherTotal": 1627,
+    "both": 1627,
+    "kevOnly": 3371,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs (combined catalog)"
       },
       {
-        "number": "1,623",
+        "number": "1,627",
         "desc": "In both KEVs and CISA KEV"
       },
       {
-        "number": "1,623",
+        "number": "1,627",
         "desc": "CISA KEV catalog"
       }
     ],
-    "cisaTotal": 1623,
+    "cisaTotal": 1627,
     "cisaOnly": 0,
     "labels": [
       "KEVs only",
@@ -21180,33 +20959,33 @@ window.__KEV_OVERRIDES = {
       "CISA KEV only"
     ],
     "data": [
-      3432,
-      1623,
+      3371,
+      1627,
       0
     ]
   },
   "kevVulncheckOverlap": {
     "available": true,
-    "kevTotal": 5055,
-    "otherTotal": 4977,
-    "both": 4977,
-    "kevOnly": 78,
+    "kevTotal": 4998,
+    "otherTotal": 4985,
+    "both": 4985,
+    "kevOnly": 13,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs (combined catalog)"
       },
       {
-        "number": "4,977",
+        "number": "4,985",
         "desc": "In both KEVs and VulnCheck KEV"
       },
       {
-        "number": "4,977",
+        "number": "4,985",
         "desc": "VulnCheck KEV catalog"
       }
     ],
-    "vulncheckTotal": 4977,
+    "vulncheckTotal": 4985,
     "vulncheckOnly": 0,
     "labels": [
       "KEVs only",
@@ -21214,21 +20993,21 @@ window.__KEV_OVERRIDES = {
       "VulnCheck only"
     ],
     "data": [
-      78,
-      4977,
+      13,
+      4985,
       0
     ]
   },
   "kevEnisaOverlap": {
     "available": true,
-    "kevTotal": 5055,
+    "kevTotal": 4998,
     "otherTotal": 32,
     "both": 32,
-    "kevOnly": 5023,
+    "kevOnly": 4966,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs (combined catalog)"
       },
       {
@@ -21246,29 +21025,29 @@ window.__KEV_OVERRIDES = {
       "ENISA only"
     ],
     "data": [
-      5023,
+      4966,
       32,
       0
     ]
   },
   "kevEuvdOverlap": {
     "available": true,
-    "kevTotal": 5055,
-    "otherTotal": 1623,
-    "both": 1623,
-    "kevOnly": 3432,
+    "kevTotal": 4998,
+    "otherTotal": 1627,
+    "both": 1627,
+    "kevOnly": 3371,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs (combined catalog)"
       },
       {
-        "number": "1,623",
+        "number": "1,627",
         "desc": "In both KEVs and EUVD KEV"
       },
       {
-        "number": "1,623",
+        "number": "1,627",
         "desc": "EUVD KEV catalog"
       }
     ],
@@ -21278,21 +21057,21 @@ window.__KEV_OVERRIDES = {
       "EUVD KEV only"
     ],
     "data": [
-      3432,
-      1623,
+      3371,
+      1627,
       0
     ]
   },
   "kevGoogleP0Overlap": {
     "available": true,
-    "kevTotal": 5055,
+    "kevTotal": 4998,
     "otherTotal": 404,
     "both": 404,
-    "kevOnly": 4651,
+    "kevOnly": 4594,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs"
       },
       {
@@ -21312,21 +21091,21 @@ window.__KEV_OVERRIDES = {
       "Google P0 only"
     ],
     "data": [
-      4651,
+      4594,
       404,
       0
     ]
   },
   "kevDbirOverlap": {
     "available": true,
-    "kevTotal": 5055,
+    "kevTotal": 4998,
     "otherTotal": 35,
     "both": 35,
-    "kevOnly": 5020,
+    "kevOnly": 4963,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs (combined catalog)"
       },
       {
@@ -21346,21 +21125,21 @@ window.__KEV_OVERRIDES = {
       "DBIR only"
     ],
     "data": [
-      5020,
+      4963,
       35,
       0
     ]
   },
   "kevMandiantOverlap": {
     "available": true,
-    "kevTotal": 5055,
+    "kevTotal": 4998,
     "otherTotal": 25,
     "both": 25,
-    "kevOnly": 5030,
+    "kevOnly": 4973,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs (combined catalog)"
       },
       {
@@ -21378,21 +21157,21 @@ window.__KEV_OVERRIDES = {
       "Mandiant only"
     ],
     "data": [
-      5030,
+      4973,
       25,
       0
     ]
   },
   "kevMetasploitOverlap": {
     "available": true,
-    "kevTotal": 5055,
-    "otherTotal": 3161,
+    "kevTotal": 4998,
+    "otherTotal": 3163,
     "both": 965,
-    "kevOnly": 4090,
-    "otherOnly": 2196,
+    "kevOnly": 4033,
+    "otherOnly": 2198,
     "stats": [
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs (combined catalog)"
       },
       {
@@ -21400,7 +21179,7 @@ window.__KEV_OVERRIDES = {
         "desc": "In both KEVs and Metasploit"
       },
       {
-        "number": "3,161",
+        "number": "3,163",
         "desc": "Metasploit catalog"
       }
     ],
@@ -21410,29 +21189,29 @@ window.__KEV_OVERRIDES = {
       "Metasploit only"
     ],
     "data": [
-      4090,
+      4033,
       965,
-      2196
+      2198
     ]
   },
   "kevNucleiOverlap": {
     "available": true,
-    "kevTotal": 5055,
-    "otherTotal": 4238,
-    "both": 1797,
-    "kevOnly": 3258,
-    "otherOnly": 2441,
+    "kevTotal": 4998,
+    "otherTotal": 4240,
+    "both": 1795,
+    "kevOnly": 3203,
+    "otherOnly": 2445,
     "stats": [
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs (combined catalog)"
       },
       {
-        "number": "1,797",
+        "number": "1,795",
         "desc": "In both KEVs and Nuclei"
       },
       {
-        "number": "4,238",
+        "number": "4,240",
         "desc": "Nuclei catalog"
       }
     ],
@@ -21442,25 +21221,25 @@ window.__KEV_OVERRIDES = {
       "Nuclei only"
     ],
     "data": [
-      3258,
-      1797,
-      2441
+      3203,
+      1795,
+      2445
     ]
   },
   "kevExploitdbOverlap": {
     "available": true,
-    "kevTotal": 5055,
+    "kevTotal": 4998,
     "otherTotal": 25025,
-    "both": 1120,
-    "kevOnly": 3935,
-    "otherOnly": 23905,
+    "both": 1113,
+    "kevOnly": 3885,
+    "otherOnly": 23912,
     "stats": [
       {
-        "number": "22.2%",
+        "number": "22.3%",
         "desc": "of KEVs are in ExploitDB"
       },
       {
-        "number": "4.5%",
+        "number": "4.4%",
         "desc": "of ExploitDB are in KEVs"
       }
     ],
@@ -21470,25 +21249,25 @@ window.__KEV_OVERRIDES = {
       "ExploitDB only"
     ],
     "data": [
-      3935,
-      1120,
-      23905
+      3885,
+      1113,
+      23912
     ]
   },
   "kevExploitRefsOverlap": {
     "available": true,
-    "kevTotal": 5055,
-    "otherTotal": 34697,
-    "both": 816,
-    "kevOnly": 4239,
-    "otherOnly": 33881,
+    "kevTotal": 4998,
+    "otherTotal": 34763,
+    "both": 810,
+    "kevOnly": 4188,
+    "otherOnly": 33953,
     "stats": [
       {
-        "number": "16.1%",
+        "number": "16.2%",
         "desc": "of KEVs have exploit refs in cvelistV5"
       },
       {
-        "number": "2.4%",
+        "number": "2.3%",
         "desc": "of exploit refs (cvelistV5) are in KEVs"
       }
     ],
@@ -21498,63 +21277,63 @@ window.__KEV_OVERRIDES = {
       "Exploit refs only"
     ],
     "data": [
-      4239,
-      816,
-      33881
+      4188,
+      810,
+      33953
     ]
   },
   "kevGreenboneOverlap": {
     "available": true,
-    "kevTotal": 5055,
-    "otherTotal": 75572,
-    "both": 1862,
-    "kevOnly": 3193,
-    "otherOnly": 73710,
+    "kevTotal": 4998,
+    "otherTotal": 75573,
+    "both": 1841,
+    "kevOnly": 3157,
+    "otherOnly": 73732,
     "stats": [
       {
         "number": "36.8%",
         "desc": "of KEVs have an OpenVAS NASL"
       },
       {
-        "number": "2.5%",
+        "number": "2.4%",
         "desc": "of OpenVAS NASL CVEs are in KEVs"
       }
     ],
-    "greenboneTotal": 75572,
-    "greenboneOnly": 73710,
+    "greenboneTotal": 75573,
+    "greenboneOnly": 73732,
     "labels": [
       "KEVs only",
       "Both",
       "OpenVAS only"
     ],
     "data": [
-      3193,
-      1862,
-      73710
+      3157,
+      1841,
+      73732
     ]
   },
   "kevKevintelOverlap": {
     "available": true,
-    "kevTotal": 5055,
-    "otherTotal": 2491,
-    "both": 2491,
-    "kevOnly": 2564,
+    "kevTotal": 4998,
+    "otherTotal": 2641,
+    "both": 2641,
+    "kevOnly": 2357,
     "otherOnly": 0,
     "stats": [
       {
-        "number": "5,055",
+        "number": "4,998",
         "desc": "KEVs (combined catalog)"
       },
       {
-        "number": "2,491",
+        "number": "2,641",
         "desc": "In both KEVs and KEVIntel"
       },
       {
-        "number": "2,491",
+        "number": "2,641",
         "desc": "KEVIntel catalog"
       }
     ],
-    "kevintelTotal": 2491,
+    "kevintelTotal": 2641,
     "kevintelOnly": 0,
     "labels": [
       "KEVs only",
@@ -21562,8 +21341,8 @@ window.__KEV_OVERRIDES = {
       "KEVIntel only"
     ],
     "data": [
-      2564,
-      2491,
+      2357,
+      2641,
       0
     ]
   },
@@ -21576,8 +21355,8 @@ window.__KEV_OVERRIDES = {
         "Medium (157,785, 43.9%)",
         "Low (14,691, 4.1%)",
         "No-score (23,010, 6.4%)",
-        "KEVs (5,055, 1.4%)",
-        "No breach (354,144, 98.6%)"
+        "KEVs (4,998, 1.4%)",
+        "No breach (354,201, 98.6%)"
       ],
       "color": [
         "#c62828",
@@ -21615,16 +21394,16 @@ window.__KEV_OVERRIDES = {
         5
       ],
       "value": [
-        40259,
-        119486,
-        156851,
-        14656,
-        22892,
-        1848,
-        2120,
-        934,
-        35,
-        118
+        40272,
+        119514,
+        156861,
+        14658,
+        22896,
+        1835,
+        2092,
+        924,
+        33,
+        114
       ]
     },
     "title": "CVE CVSS (NVD) Severity (left) → KEVs / No breach (right)"
@@ -21696,14 +21475,14 @@ window.__KEV_OVERRIDES = {
   "kevHero": {
     "stats": [
       {
-        "value": 5055,
+        "value": 4998,
         "suffix": "",
         "isAccent": false,
         "isStatic": false,
         "desc": "KEVs: exploited in the wild"
       },
       {
-        "value": "32.1%",
+        "value": "32.6%",
         "isAccent": true,
         "isStatic": true,
         "desc": "KEVs that overlap with CISA KEV"
@@ -21716,12 +21495,12 @@ window.__KEV_OVERRIDES = {
         "desc": "KEV sources combined"
       },
       {
-        "value": "36.6%",
+        "value": "36.7%",
         "isAccent": true,
         "isStatic": true,
         "desc": "KEVs scored CVSS ≥9.0"
       }
     ]
   },
-  "lastUpdated": "2026/06/23"
+  "lastUpdated": "2026/06/24"
 };
