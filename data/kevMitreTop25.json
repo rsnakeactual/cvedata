@@ -21,8 +21,8 @@
     "CWE-119 (MITRE #6)",
     "CWE-863 (MITRE #8)",
     "CWE-190 (MITRE #3)",
-    "CWE-798 (MITRE #4)",
     "CWE-125 (MITRE #20)",
+    "CWE-798 (MITRE #4)",
     "CWE-352 (MITRE #22)",
     "CWE-400 (MITRE #2)",
     "CWE-476 (MITRE #5)"
@@ -48,7 +48,7 @@
     60,
     38,
     24,
-    23,
+    24,
     23,
     18,
     15,
@@ -75,8 +75,8 @@
     "CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer",
     "CWE-863: Incorrect Authorization",
     "CWE-190: Integer Overflow or Wraparound",
-    "CWE-798: Use of Hard-coded Credentials",
     "CWE-125: Out-of-bounds Read",
+    "CWE-798: Use of Hard-coded Credentials",
     "CWE-352: Cross-Site Request Forgery (CSRF)",
     "CWE-400: Uncontrolled Resource Consumption",
     "CWE-476: NULL Pointer Dereference"
