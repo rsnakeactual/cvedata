@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 42106,
+      "value": 42107,
       "color": "#E63946"
     },
     {
@@ -13,12 +13,12 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 4990,
+      "value": 4993,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1627,
+      "value": 1629,
       "color": "#DC2626"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 42106,
+  "maxValue": 42107,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,7 +45,7 @@
         "Qualcomm"
       ],
       "data": [
-        3418,
+        3419,
         1906,
         1788,
         1054,
@@ -122,8 +122,8 @@
     "CISA KEV": {
       "labels": [
         "Microsoft",
-        "Apple",
         "Cisco",
+        "Apple",
         "Adobe",
         "Google",
         "Oracle",
@@ -137,7 +137,7 @@
       "data": [
         377,
         93,
-        92,
+        93,
         79,
         72,
         44,
@@ -182,8 +182,8 @@
   },
   "vendorLabels": [
     "Microsoft",
-    "Apple",
     "Cisco",
+    "Apple",
     "Adobe",
     "Google",
     "Oracle",
@@ -197,7 +197,7 @@
   "vendorData": [
     377,
     93,
-    92,
+    93,
     79,
     72,
     44,
