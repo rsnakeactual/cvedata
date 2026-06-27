@@ -2,9 +2,9 @@
   "available": true,
   "items": [
     {
-      "num": "361,117",
+      "num": "361,460",
       "title": "The CVE flood",
-      "body": "28,279 CVEs were published in 2026. Total has passed 361,117 and keeps growing."
+      "body": "28,599 CVEs were published in 2026. Total has passed 361,460 and keeps growing."
     },
     {
       "num": "4.35%",
@@ -27,7 +27,7 @@
       "body": "Duplicates, errors, and non-vulnerabilities that slipped through. Quality control is straining."
     },
     {
-      "num": "32 days",
+      "num": "31 days",
       "title": "Publication delay",
       "body": "Median time from discovery to CVE publication. The gap leaves flaws known but untracked."
     }
