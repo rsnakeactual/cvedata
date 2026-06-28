@@ -3,17 +3,17 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 42107,
+      "value": 42292,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 765,
+      "value": 764,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 4994,
+      "value": 4995,
       "color": "#EAB308"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 42107,
+  "maxValue": 42292,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -36,8 +36,8 @@
         "Adobe",
         "Google",
         "Apple",
-        "Mozilla",
         "Oracle",
+        "Mozilla",
         "Tenda",
         "Cisco",
         "Hp",
@@ -45,17 +45,17 @@
         "Qualcomm"
       ],
       "data": [
-        3419,
-        1906,
+        3452,
+        1910,
         1788,
-        1054,
+        1058,
         915,
-        786,
-        778,
+        845,
+        790,
         568,
-        563,
+        564,
         541,
-        530,
+        531,
         530
       ]
     },
