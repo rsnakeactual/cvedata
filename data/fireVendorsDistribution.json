@@ -8,23 +8,23 @@
     "Ivanti",
     "Adobe",
     "Apache Software Foundation",
-    "Atlassian",
     "Oracle",
+    "Atlassian",
     "Other"
   ],
   "data": [
     86,
-    31,
+    34,
     24,
-    22,
+    23,
     21,
     15,
     15,
+    11,
     10,
-    10,
-    373
+    377
   ],
-  "fireTotal": 606,
+  "fireTotal": 615,
   "naCount": 207,
   "stats": [
     {
@@ -32,7 +32,7 @@
       "desc": "Largest vendor bucket: Microsoft"
     },
     {
-      "number": "373",
+      "number": "377",
       "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
     },
     {
