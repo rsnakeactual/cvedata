@@ -1,21 +1,21 @@
 {
   "available": true,
   "fireTotal": 606,
-  "otherTotal": 1631,
-  "both": 417,
-  "fireOnly": 189,
-  "otherOnly": 1214,
+  "otherTotal": 1633,
+  "both": 416,
+  "fireOnly": 190,
+  "otherOnly": 1217,
   "stats": [
     {
       "number": "606",
       "desc": "FIRE vulnerabilities"
     },
     {
-      "number": "417",
+      "number": "416",
       "desc": "In both FIRE and EUVD KEV"
     },
     {
-      "number": "1,631",
+      "number": "1,633",
       "desc": "EUVD KEV catalog"
     }
   ],
@@ -25,8 +25,8 @@
     "EUVD KEV only"
   ],
   "data": [
-    189,
-    417,
-    1214
+    190,
+    416,
+    1217
   ]
 }
