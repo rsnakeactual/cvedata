@@ -13,12 +13,12 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5001,
+      "value": 5004,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1630,
+      "value": 1631,
       "color": "#DC2626"
     },
     {
@@ -105,7 +105,7 @@
         "Ivanti"
       ],
       "data": [
-        680,
+        681,
         151,
         147,
         130,
@@ -135,7 +135,7 @@
         "Vmware"
       ],
       "data": [
-        377,
+        378,
         93,
         93,
         79,
@@ -195,7 +195,7 @@
     "Vmware"
   ],
   "vendorData": [
-    377,
+    378,
     93,
     93,
     79,
