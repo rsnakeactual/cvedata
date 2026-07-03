@@ -47,7 +47,7 @@
       "desc": "CVEs jointly scored by NVD and CNA/ADP"
     },
     {
-      "number": "0.21",
+      "number": "0.22",
       "desc": "Average absolute score difference"
     }
   ]
