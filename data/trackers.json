@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 42292,
+      "value": 42518,
       "color": "#E63946"
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5012,
+      "value": 5013,
       "color": "#EAB308"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 42292,
+  "maxValue": 42518,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -42,21 +42,21 @@
         "Cisco",
         "Hp",
         "Ibm",
-        "Qualcomm"
+        "Apache"
       ],
       "data": [
-        3452,
-        1910,
-        1788,
-        1058,
-        915,
+        3546,
+        1913,
+        1796,
+        1119,
+        916,
         845,
-        790,
+        791,
         568,
-        564,
+        567,
         541,
-        531,
-        530
+        534,
+        531
       ]
     },
     "EPSS Critical (≥0.9)": {
@@ -112,7 +112,7 @@
         125,
         90,
         84,
-        70,
+        71,
         53,
         52,
         51,
