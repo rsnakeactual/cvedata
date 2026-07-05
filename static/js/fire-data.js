@@ -249,8 +249,8 @@ window.__FIRE_OVERRIDES = {
       1,
       6,
       1,
-      5,
-      3,
+      4,
+      4,
       5,
       3,
       0,
@@ -275,8 +275,8 @@ window.__FIRE_OVERRIDES = {
       3,
       2,
       1,
-      2,
-      1,
+      3,
+      0,
       1,
       2,
       0,
@@ -529,10 +529,10 @@ window.__FIRE_OVERRIDES = {
   "fireExploitRefsOverlap": {
     "available": true,
     "fireTotal": 615,
-    "otherTotal": 35374,
+    "otherTotal": 35436,
     "both": 88,
     "fireOnly": 527,
-    "otherOnly": 35286,
+    "otherOnly": 35348,
     "stats": [
       {
         "number": "14.3%",
@@ -551,7 +551,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       527,
       88,
-      35286
+      35348
     ]
   },
   "fireGreenboneOverlap": {
@@ -871,7 +871,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 81.844
+        "y": 81.971
       },
       {
         "x": 4.9,
@@ -1171,7 +1171,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 43.062
+        "y": 42.164
       },
       {
         "x": 9.8,
@@ -1815,7 +1815,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 99.618
+        "y": 99.649
       },
       {
         "x": 9.8,
@@ -2091,7 +2091,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 93.159
+        "y": 93.29899999999999
       },
       {
         "x": 8.8,
@@ -2307,7 +2307,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.9,
-        "y": 16.282
+        "y": 17.218
       },
       {
         "x": 10,
@@ -2647,7 +2647,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 96.598
+        "y": 96.63199999999999
       },
       {
         "x": 7.8,
@@ -3207,23 +3207,23 @@ window.__FIRE_OVERRIDES = {
     },
     "cnvd": {
       "data": [
-        46,
-        52,
-        11,
+        19,
+        24,
+        3,
         0,
         0
       ],
-      "total": 109
+      "total": 46
     },
     "jvn": {
       "data": [
-        306,
-        214,
+        303,
+        213,
         69,
         1,
         1
       ],
-      "total": 591
+      "total": 587
     },
     "bdu": {
       "data": [
@@ -8946,5 +8946,5 @@ window.__FIRE_OVERRIDES = {
       }
     ]
   },
-  "lastUpdated": "2026/07/04"
+  "lastUpdated": "2026/07/05"
 };
