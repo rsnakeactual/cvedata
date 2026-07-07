@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 615,
-  "otherTotal": 32,
+  "otherTotal": 34,
   "both": 23,
   "fireOnly": 592,
-  "otherOnly": 9,
+  "otherOnly": 11,
   "stats": [
     {
       "number": "615",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and ENISA EU KEV"
     },
     {
-      "number": "32",
+      "number": "34",
       "desc": "ENISA EU KEV catalog"
     }
   ],
@@ -27,6 +27,6 @@
   "data": [
     592,
     23,
-    9
+    11
   ]
 }
