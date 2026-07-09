@@ -202,7 +202,7 @@
     0,
     1002,
     4,
-    24295,
+    24296,
     1124,
     6372
   ],
@@ -408,15 +408,15 @@
     0,
     91.0909090909091,
     1.3333333333333333,
-    24295,
+    24296,
     20.436363636363637,
     374.8235294117647
   ],
   "topOverrepresented": [
     {
       "score": "9.8",
-      "ratio": 24295,
-      "actual": 24295
+      "ratio": 24296,
+      "actual": 24296
     },
     {
       "score": "10.0",
@@ -442,14 +442,14 @@
   "stats": [
     {
       "number": "9.8",
-      "desc": "Most overrepresented score (24295.0:1 ratio — CVEs per theoretical combination)"
+      "desc": "Most overrepresented score (24296.0:1 ratio — CVEs per theoretical combination)"
     },
     {
       "number": "9.8, 10.0, 6.5, 7.8, 3.5",
       "desc": "Top 5 overrepresented scores"
     },
     {
-      "number": "339,760",
+      "number": "339,761",
       "desc": "Scored CVEs in distribution"
     }
   ]
