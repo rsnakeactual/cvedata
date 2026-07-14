@@ -8,22 +8,22 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 766,
+      "value": 767,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5030,
+      "value": 5031,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1637,
+      "value": 1638,
       "color": "#DC2626"
     },
     {
       "name": "ENISA KEV",
-      "value": 34,
+      "value": 35,
       "color": "#2563EB"
     }
   ],
@@ -76,7 +76,7 @@
       ],
       "data": [
         79,
-        78,
+        79,
         39,
         31,
         29,
@@ -108,7 +108,7 @@
         683,
         151,
         148,
-        130,
+        131,
         125,
         90,
         84,
@@ -136,7 +136,7 @@
       ],
       "data": [
         378,
-        93,
+        94,
         93,
         80,
         72,
@@ -155,10 +155,10 @@
         "Microsoft",
         "Fortinet",
         "Red Hat",
+        "Joomshaper",
         "Citrix",
         "Apache",
         "Widget Factory (pty) Ltd",
-        "Joomshaper",
         "Beyondtrust",
         "Webpros",
         "Roundcube",
@@ -171,7 +171,7 @@
         3,
         2,
         2,
-        1,
+        2,
         1,
         1,
         1,
@@ -196,7 +196,7 @@
   ],
   "vendorData": [
     378,
-    93,
+    94,
     93,
     80,
     72,
