@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 615,
-  "p0Total": 404,
+  "p0Total": 406,
   "both": 54,
   "fireOnly": 561,
-  "p0Only": 350,
+  "p0Only": 352,
   "stats": [
     {
       "number": "615",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and Google P0 \"0day in the wild\""
     },
     {
-      "number": "404",
+      "number": "406",
       "desc": "Google Project Zero catalog"
     }
   ]
