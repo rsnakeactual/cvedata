@@ -18,7 +18,7 @@
     },
     {
       "name": "CISA KEV",
-      "value": 1644,
+      "value": 1647,
       "color": "#DC2626"
     },
     {
@@ -129,13 +129,13 @@
         "Oracle",
         "Apache",
         "Ivanti",
+        "Fortinet",
         "Linux",
         "D-link",
-        "Fortinet",
         "Vmware"
       ],
       "data": [
-        380,
+        381,
         94,
         93,
         80,
@@ -143,7 +143,7 @@
         45,
         39,
         35,
-        26,
+        28,
         26,
         26,
         26
@@ -189,13 +189,13 @@
     "Oracle",
     "Apache",
     "Ivanti",
+    "Fortinet",
     "Linux",
     "D-link",
-    "Fortinet",
     "Vmware"
   ],
   "vendorData": [
-    380,
+    381,
     94,
     93,
     80,
@@ -203,7 +203,7 @@
     45,
     39,
     35,
-    26,
+    28,
     26,
     26,
     26
