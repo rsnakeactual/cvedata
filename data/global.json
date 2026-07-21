@@ -1,56 +1,56 @@
 {
   "available": true,
-  "cvelistTotal": 367614,
+  "cvelistTotal": 367905,
   "bars": [
     {
       "name": "EUVD (EU)",
       "overlapPct": 100,
-      "overlapCount": 367255,
-      "dbTotal": 425613,
+      "overlapCount": 367537,
+      "dbTotal": 425893,
       "scoreDisagreePct": 19
     },
     {
       "name": "JVN iPedia (Japan)",
-      "overlapPct": 80,
-      "overlapCount": 293054,
-      "dbTotal": 293124,
-      "scoreDisagreePct": 19
+      "overlapPct": 68,
+      "overlapCount": 251386,
+      "dbTotal": 251452,
+      "scoreDisagreePct": 21
     },
     {
       "name": "BDU (Russia)",
       "overlapPct": 22,
-      "overlapCount": 80839,
-      "dbTotal": 81091,
+      "overlapCount": 80955,
+      "dbTotal": 81206,
       "scoreDisagreePct": 13
     },
     {
       "name": "CNVD (China)",
-      "overlapPct": 15,
-      "overlapCount": 54609,
-      "dbTotal": 54737,
-      "scoreDisagreePct": 23
+      "overlapPct": 12,
+      "overlapCount": 45199,
+      "dbTotal": 45288,
+      "scoreDisagreePct": 19
     }
   ],
   "stats": [
     {
-      "number": "367,614",
+      "number": "367,905",
       "desc": "CVEs in cvelistV5 (baseline)"
     },
     {
-      "number": "367,255 overlap (100% of cvelistV5)",
-      "desc": "EUVD (EU): 425,613 total"
+      "number": "367,537 overlap (100% of cvelistV5)",
+      "desc": "EUVD (EU): 425,893 total"
     },
     {
-      "number": "293,054 overlap (80% of cvelistV5)",
-      "desc": "JVN iPedia (Japan): 293,124 total"
+      "number": "251,386 overlap (68% of cvelistV5)",
+      "desc": "JVN iPedia (Japan): 251,452 total"
     },
     {
-      "number": "80,839 overlap (22% of cvelistV5)",
-      "desc": "BDU (Russia): 81,091 total"
+      "number": "80,955 overlap (22% of cvelistV5)",
+      "desc": "BDU (Russia): 81,206 total"
     },
     {
-      "number": "54,609 overlap (15% of cvelistV5)",
-      "desc": "CNVD (China): 54,737 total"
+      "number": "45,199 overlap (12% of cvelistV5)",
+      "desc": "CNVD (China): 45,288 total"
     }
   ]
 }
