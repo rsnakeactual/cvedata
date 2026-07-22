@@ -44,22 +44,22 @@
     89,
     118,
     146,
-    213,
+    214,
     131,
     164,
     164,
     183,
-    94
+    97
   ],
   "firstYear": 2002,
   "stats": [
     {
-      "number": "1,647",
+      "number": "1,651",
       "isAccent": true,
       "desc": "Total KEVs in CISA's catalog — the definitive list of \"known used\" vulnerabilities"
     },
     {
-      "number": "213",
+      "number": "214",
       "isAccent": false,
       "desc": "KEVs in 2021 — the peak year"
     },

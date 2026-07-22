@@ -1,10 +1,10 @@
 {
-  "totalCVEs": 367905,
-  "headlineHTML": "367,905 CVEs.<br><span>Here's what actually matters.</span>",
+  "totalCVEs": 369364,
+  "headlineHTML": "369,364 CVEs.<br><span>Here's what actually matters.</span>",
   "subtext": "Software vulnerabilities are flaws that attackers can exploit to break into systems. Thousands are discovered every year. Most of the data about them is hard to parse. Here it is in plain English.",
   "stats": [
     {
-      "value": 44974,
+      "value": 44976,
       "suffix": "",
       "isAccent": false,
       "isStatic": false,
@@ -24,7 +24,7 @@
       "desc": "Median time between discovery and CVE publication"
     },
     {
-      "value": 1647,
+      "value": 1651,
       "suffix": "",
       "isAccent": true,
       "isStatic": false,
