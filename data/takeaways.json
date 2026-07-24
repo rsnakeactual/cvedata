@@ -2,9 +2,9 @@
   "available": true,
   "items": [
     {
-      "num": "369,569",
+      "num": "369,957",
       "title": "The CVE flood",
-      "body": "36,510 CVEs were published in 2026. Total has passed 369,569 and keeps growing."
+      "body": "36,890 CVEs were published in 2026. Total has passed 369,957 and keeps growing."
     },
     {
       "num": "4.35%",
@@ -22,12 +22,12 @@
       "body": "CVSS 9.8 appears far more often than the calculator would predict (24510:1 ratio). Researchers and hackers have strong preferences."
     },
     {
-      "num": "17,700",
+      "num": "17,702",
       "title": "Rejected CVEs",
       "body": "Duplicates, errors, and non-vulnerabilities that slipped through. Quality control is straining."
     },
     {
-      "num": "31 days",
+      "num": "30 days",
       "title": "Publication delay",
       "body": "Median time from discovery to CVE publication. The gap leaves flaws known but untracked."
     }
