@@ -3,12 +3,12 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 43323,
+      "value": 43328,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 779,
+      "value": 777,
       "color": "#F97316"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 43323,
+  "maxValue": 43328,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -35,8 +35,8 @@
         "Microsoft",
         "Adobe",
         "Google",
-        "Apple",
         "Oracle",
+        "Apple",
         "Mozilla",
         "Tenda",
         "Cisco",
@@ -45,18 +45,18 @@
         "Ibm"
       ],
       "data": [
-        4139,
-        1935,
+        4016,
+        1936,
         1810,
-        1123,
+        1127,
+        919,
         916,
-        846,
-        797,
+        829,
         572,
         568,
         551,
         541,
-        535
+        536
       ]
     },
     "EPSS Critical (≥0.9)": {
@@ -71,8 +71,8 @@
         "Atlassian",
         "Dlink",
         "Vmware",
-        "Aladdin",
-        "Fortinet"
+        "Fortinet",
+        "Aladdin"
       ],
       "data": [
         80,
@@ -85,8 +85,8 @@
         16,
         14,
         14,
-        11,
-        10
+        10,
+        9
       ]
     },
     "VulnCheck KEV": {
