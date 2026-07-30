@@ -8,12 +8,12 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 776,
+      "value": 775,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5068,
+      "value": 5071,
       "color": "#EAB308"
     },
     {
@@ -108,7 +108,7 @@
         687,
         151,
         148,
-        131,
+        132,
         128,
         90,
         85,
