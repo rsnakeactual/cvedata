@@ -1,21 +1,21 @@
 {
   "available": true,
-  "kevTotal": 5086,
-  "otherTotal": 1659,
-  "both": 1659,
-  "kevOnly": 3427,
+  "kevTotal": 5089,
+  "otherTotal": 1657,
+  "both": 1657,
+  "kevOnly": 3432,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "5,086",
+      "number": "5,089",
       "desc": "KEVs (combined catalog)"
     },
     {
-      "number": "1,659",
+      "number": "1,657",
       "desc": "In both KEVs and EUVD KEV"
     },
     {
-      "number": "1,659",
+      "number": "1,657",
       "desc": "EUVD KEV catalog"
     }
   ],
@@ -25,8 +25,8 @@
     "EUVD KEV only"
   ],
   "data": [
-    3427,
-    1659,
+    3432,
+    1657,
     0
   ]
 }

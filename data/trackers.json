@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 43328,
+      "value": 43331,
       "color": "#E63946"
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5071,
+      "value": 5075,
       "color": "#EAB308"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 43328,
+  "maxValue": 43331,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,7 +45,7 @@
         "Ibm"
       ],
       "data": [
-        4016,
+        4019,
         1936,
         1810,
         1127,
@@ -105,11 +105,11 @@
         "Fortinet"
       ],
       "data": [
-        687,
+        688,
         151,
         148,
         132,
-        128,
+        129,
         90,
         85,
         71,
