@@ -1,56 +1,56 @@
 {
   "available": true,
-  "cvelistTotal": 372115,
+  "cvelistTotal": 372328,
   "bars": [
     {
       "name": "EUVD (EU)",
       "overlapPct": 100,
-      "overlapCount": 371746,
-      "dbTotal": 430096,
-      "scoreDisagreePct": 19
+      "overlapCount": 371908,
+      "dbTotal": 430258,
+      "scoreDisagreePct": 18
     },
     {
       "name": "JVN iPedia (Japan)",
-      "overlapPct": 77,
-      "overlapCount": 286664,
-      "dbTotal": 286732,
-      "scoreDisagreePct": 20
+      "overlapPct": 67,
+      "overlapCount": 248917,
+      "dbTotal": 248972,
+      "scoreDisagreePct": 19
     },
     {
       "name": "BDU (Russia)",
       "overlapPct": 22,
-      "overlapCount": 81425,
-      "dbTotal": 81675,
-      "scoreDisagreePct": 14
+      "overlapCount": 81664,
+      "dbTotal": 81917,
+      "scoreDisagreePct": 13
     },
     {
       "name": "CNVD (China)",
-      "overlapPct": 17,
-      "overlapCount": 63753,
-      "dbTotal": 63909,
-      "scoreDisagreePct": 20
+      "overlapPct": 16,
+      "overlapCount": 60694,
+      "dbTotal": 60832,
+      "scoreDisagreePct": 21
     }
   ],
   "stats": [
     {
-      "number": "372,115",
+      "number": "372,328",
       "desc": "CVEs in cvelistV5 (baseline)"
     },
     {
-      "number": "371,746 overlap (100% of cvelistV5)",
-      "desc": "EUVD (EU): 430,096 total"
+      "number": "371,908 overlap (100% of cvelistV5)",
+      "desc": "EUVD (EU): 430,258 total"
     },
     {
-      "number": "286,664 overlap (77% of cvelistV5)",
-      "desc": "JVN iPedia (Japan): 286,732 total"
+      "number": "248,917 overlap (67% of cvelistV5)",
+      "desc": "JVN iPedia (Japan): 248,972 total"
     },
     {
-      "number": "81,425 overlap (22% of cvelistV5)",
-      "desc": "BDU (Russia): 81,675 total"
+      "number": "81,664 overlap (22% of cvelistV5)",
+      "desc": "BDU (Russia): 81,917 total"
     },
     {
-      "number": "63,753 overlap (17% of cvelistV5)",
-      "desc": "CNVD (China): 63,909 total"
+      "number": "60,694 overlap (16% of cvelistV5)",
+      "desc": "CNVD (China): 60,832 total"
     }
   ]
 }

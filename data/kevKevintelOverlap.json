@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 5089,
+  "kevTotal": 5096,
   "otherTotal": 2696,
   "both": 2696,
-  "kevOnly": 2393,
+  "kevOnly": 2400,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "5,089",
+      "number": "5,096",
       "desc": "KEVs (combined catalog)"
     },
     {
@@ -27,7 +27,7 @@
     "KEVIntel only"
   ],
   "data": [
-    2393,
+    2400,
     2696,
     0
   ]

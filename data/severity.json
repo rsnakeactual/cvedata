@@ -8,8 +8,8 @@
     },
     {
       "level": "high",
-      "flex": 36,
-      "tooltipText": "High: 36%"
+      "flex": 37,
+      "tooltipText": "High: 37%"
     },
     {
       "level": "medium",
@@ -26,25 +26,25 @@
     {
       "level": "critical",
       "name": "Critical",
-      "count": "43,331",
+      "count": "43,699",
       "pct": "13% of scored CVEs"
     },
     {
       "level": "high",
       "name": "High",
-      "count": "126,050",
-      "pct": "36% of scored CVEs"
+      "count": "127,342",
+      "pct": "37% of scored CVEs"
     },
     {
       "level": "medium",
       "name": "Medium",
-      "count": "161,840",
+      "count": "162,005",
       "pct": "47% of scored CVEs"
     },
     {
       "level": "low",
       "name": "Low",
-      "count": "15,151",
+      "count": "15,195",
       "pct": "4% of scored CVEs"
     }
   ],
@@ -105,8 +105,8 @@
     3564,
     3493,
     3695,
-    3543,
-    3910
+    3648,
+    4173
   ],
   "high": [
     580,
@@ -134,9 +134,9 @@
     9489,
     9643,
     10306,
-    12762,
-    15215,
-    14248
+    12764,
+    15830,
+    14923
   ],
   "medium": [
     563,
@@ -164,9 +164,9 @@
     9633,
     12072,
     15013,
-    19899,
-    19955,
-    14821
+    19900,
+    19529,
+    15411
   ],
   "low": [
     162,
@@ -195,7 +195,7 @@
     865,
     1259,
     1618,
-    2012,
-    1510
+    2011,
+    1555
   ]
 }

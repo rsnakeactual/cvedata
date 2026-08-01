@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 5089,
+  "kevTotal": 5096,
   "otherTotal": 3171,
   "both": 969,
-  "kevOnly": 4120,
+  "kevOnly": 4127,
   "otherOnly": 2202,
   "stats": [
     {
-      "number": "5,089",
+      "number": "5,096",
       "desc": "KEVs (combined catalog)"
     },
     {
@@ -25,7 +25,7 @@
     "Metasploit only"
   ],
   "data": [
-    4120,
+    4127,
     969,
     2202
   ]

@@ -8,8 +8,8 @@
     "Cisco",
     "Oracle",
     "Fortinet",
+    "SonicWall",
     "Ivanti",
-    "Adobe",
     "Other"
   ],
   "data": [
@@ -20,11 +20,11 @@
     79,
     48,
     44,
+    39,
     33,
-    32,
     4541
   ],
-  "kevTotal": 5089,
+  "kevTotal": 5096,
   "naCount": 2361,
   "stats": [
     {
