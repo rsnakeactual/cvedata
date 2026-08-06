@@ -209,6 +209,15 @@
       "fireTotal": 122
     },
     {
+      "x": 116,
+      "y": 152,
+      "r": 11,
+      "label": "ShinyHunters",
+      "attackId": "G1057",
+      "kevTotal": 268,
+      "fireTotal": 116
+    },
+    {
       "x": 105,
       "y": 150,
       "r": 11,
@@ -526,7 +535,7 @@
   ],
   "stats": [
     {
-      "number": "63",
+      "number": "64",
       "desc": "ATT&CK groups also in Zywave-sourced Loss Data"
     },
     {

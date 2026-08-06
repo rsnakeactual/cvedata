@@ -1,21 +1,21 @@
 {
   "available": true,
-  "fireTotal": 240,
-  "otherTotal": 602,
-  "both": 4,
+  "fireTotal": 241,
+  "otherTotal": 611,
+  "both": 5,
   "fireOnly": 236,
-  "otherOnly": 598,
+  "otherOnly": 606,
   "stats": [
     {
-      "number": "240",
+      "number": "241",
       "desc": "PrivTools EU groups"
     },
     {
-      "number": "4",
+      "number": "5",
       "desc": "In both PrivTools and ATT&CK"
     },
     {
-      "number": "602",
+      "number": "611",
       "desc": "ATT&CK groups"
     }
   ],
@@ -26,7 +26,7 @@
   ],
   "data": [
     236,
-    4,
-    598
+    5,
+    606
   ]
 }
