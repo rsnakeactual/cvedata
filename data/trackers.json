@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 44027,
+      "value": 44167,
       "color": "#E63946"
     },
     {
@@ -13,21 +13,21 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5100,
+      "value": 5106,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1661,
+      "value": 1662,
       "color": "#DC2626"
     },
     {
       "name": "ENISA KEV",
-      "value": 35,
+      "value": 36,
       "color": "#2563EB"
     }
   ],
-  "maxValue": 44027,
+  "maxValue": 44167,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -38,25 +38,25 @@
         "Oracle",
         "Apple",
         "Mozilla",
+        "Apache",
         "Tenda",
         "Cisco",
-        "Apache",
-        "Hp",
-        "Ibm"
+        "Ibm",
+        "Hp"
       ],
       "data": [
-        4192,
-        1943,
-        1810,
-        1179,
-        1027,
+        4252,
+        1945,
+        1818,
+        1182,
+        1047,
         971,
-        829,
+        830,
+        581,
         572,
         568,
-        567,
-        541,
-        537
+        542,
+        541
       ]
     },
     "EPSS Critical (≥0.9)": {
@@ -111,7 +111,7 @@
         132,
         129,
         90,
-        85,
+        86,
         71,
         53,
         53,
@@ -155,14 +155,14 @@
         "Microsoft",
         "Fortinet",
         "Red Hat",
+        "Atlassian",
         "Joomshaper",
         "Citrix",
         "Apache",
         "Widget Factory (pty) Ltd",
         "Beyondtrust",
         "Webpros",
-        "Roundcube",
-        "Meta"
+        "Roundcube"
       ],
       "data": [
         8,
@@ -172,7 +172,7 @@
         2,
         2,
         2,
-        1,
+        2,
         1,
         1,
         1,
