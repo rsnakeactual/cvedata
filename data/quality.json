@@ -58,7 +58,7 @@
     634,
     776,
     1763,
-    611
+    612
   ],
   "disputed": [
     0,
@@ -92,7 +92,7 @@
   ],
   "stats": [
     {
-      "number": "17,843",
+      "number": "17,844",
       "desc": "Total rejected CVEs (duplicates, errors, non-vulnerabilities)"
     },
     {
