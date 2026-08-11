@@ -1,10 +1,10 @@
 {
-  "totalCVEs": 374418,
-  "headlineHTML": "374,418 CVEs.<br><span>Here's what actually matters.</span>",
+  "totalCVEs": 375184,
+  "headlineHTML": "375,184 CVEs.<br><span>Here's what actually matters.</span>",
   "subtext": "Software vulnerabilities are flaws that attackers can exploit to break into systems. Thousands are discovered every year. Most of the data about them is hard to parse. Here it is in plain English.",
   "stats": [
     {
-      "value": 45083,
+      "value": 45095,
       "suffix": "",
       "isAccent": false,
       "isStatic": false,

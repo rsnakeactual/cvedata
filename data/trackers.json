@@ -13,7 +13,7 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5108,
+      "value": 5111,
       "color": "#EAB308"
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "name": "ENISA KEV",
-      "value": 36,
+      "value": 37,
       "color": "#2563EB"
     }
   ],
@@ -159,10 +159,10 @@
         "Joomshaper",
         "Citrix",
         "Apache",
+        "Oracle Corporation",
         "Widget Factory (pty) Ltd",
         "Beyondtrust",
-        "Webpros",
-        "Roundcube"
+        "Webpros"
       ],
       "data": [
         8,

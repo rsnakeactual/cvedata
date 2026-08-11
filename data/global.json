@@ -1,56 +1,56 @@
 {
   "available": true,
-  "cvelistTotal": 374418,
+  "cvelistTotal": 375184,
   "bars": [
     {
       "name": "EUVD (EU)",
       "overlapPct": 100,
-      "overlapCount": 373960,
-      "dbTotal": 432310,
+      "overlapCount": 374671,
+      "dbTotal": 433021,
       "scoreDisagreePct": 18
     },
     {
       "name": "JVN iPedia (Japan)",
-      "overlapPct": 78,
-      "overlapCount": 293822,
-      "dbTotal": 293893,
+      "overlapPct": 79,
+      "overlapCount": 297544,
+      "dbTotal": 297616,
       "scoreDisagreePct": 19
     },
     {
       "name": "BDU (Russia)",
       "overlapPct": 22,
-      "overlapCount": 81970,
-      "dbTotal": 82220,
+      "overlapCount": 82084,
+      "dbTotal": 82345,
       "scoreDisagreePct": 12
     },
     {
       "name": "CNVD (China)",
-      "overlapPct": 14,
-      "overlapCount": 52941,
-      "dbTotal": 53064,
-      "scoreDisagreePct": 22
+      "overlapPct": 19,
+      "overlapCount": 71367,
+      "dbTotal": 71545,
+      "scoreDisagreePct": 18
     }
   ],
   "stats": [
     {
-      "number": "374,418",
+      "number": "375,184",
       "desc": "CVEs in cvelistV5 (baseline)"
     },
     {
-      "number": "373,960 overlap (100% of cvelistV5)",
-      "desc": "EUVD (EU): 432,310 total"
+      "number": "374,671 overlap (100% of cvelistV5)",
+      "desc": "EUVD (EU): 433,021 total"
     },
     {
-      "number": "293,822 overlap (78% of cvelistV5)",
-      "desc": "JVN iPedia (Japan): 293,893 total"
+      "number": "297,544 overlap (79% of cvelistV5)",
+      "desc": "JVN iPedia (Japan): 297,616 total"
     },
     {
-      "number": "81,970 overlap (22% of cvelistV5)",
-      "desc": "BDU (Russia): 82,220 total"
+      "number": "82,084 overlap (22% of cvelistV5)",
+      "desc": "BDU (Russia): 82,345 total"
     },
     {
-      "number": "52,941 overlap (14% of cvelistV5)",
-      "desc": "CNVD (China): 53,064 total"
+      "number": "71,367 overlap (19% of cvelistV5)",
+      "desc": "CNVD (China): 71,545 total"
     }
   ]
 }
