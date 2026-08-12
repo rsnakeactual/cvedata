@@ -7,7 +7,7 @@
     ],
     "data": [
       1204,
-      3280
+      3281
     ],
     "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
   },
@@ -18,7 +18,7 @@
     ],
     "data": [
       19634,
-      258297
+      258296
     ],
     "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
   }
