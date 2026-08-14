@@ -1,13 +1,13 @@
 {
   "available": true,
-  "fireTotal": 615,
+  "fireTotal": 617,
   "otherTotal": 39,
   "both": 25,
-  "fireOnly": 590,
+  "fireOnly": 592,
   "otherOnly": 14,
   "stats": [
     {
-      "number": "615",
+      "number": "617",
       "desc": "FIRE vulnerabilities"
     },
     {
@@ -25,7 +25,7 @@
     "ENISA only"
   ],
   "data": [
-    590,
+    592,
     25,
     14
   ]

@@ -1,56 +1,56 @@
 {
   "available": true,
-  "cvelistTotal": 377174,
+  "cvelistTotal": 377308,
   "bars": [
     {
       "name": "EUVD (EU)",
       "overlapPct": 100,
-      "overlapCount": 376625,
-      "dbTotal": 434974,
+      "overlapCount": 376736,
+      "dbTotal": 435085,
       "scoreDisagreePct": 18
     },
     {
       "name": "JVN iPedia (Japan)",
-      "overlapPct": 67,
-      "overlapCount": 250933,
-      "dbTotal": 250986,
+      "overlapPct": 66,
+      "overlapCount": 249363,
+      "dbTotal": 249415,
       "scoreDisagreePct": 19
     },
     {
       "name": "BDU (Russia)",
       "overlapPct": 22,
-      "overlapCount": 82195,
-      "dbTotal": 82460,
+      "overlapCount": 82351,
+      "dbTotal": 82616,
       "scoreDisagreePct": 12
     },
     {
       "name": "CNVD (China)",
-      "overlapPct": 11,
-      "overlapCount": 42649,
-      "dbTotal": 42727,
-      "scoreDisagreePct": 18
+      "overlapPct": 28,
+      "overlapCount": 106275,
+      "dbTotal": 106467,
+      "scoreDisagreePct": 19
     }
   ],
   "stats": [
     {
-      "number": "377,174",
+      "number": "377,308",
       "desc": "CVEs in cvelistV5 (baseline)"
     },
     {
-      "number": "376,625 overlap (100% of cvelistV5)",
-      "desc": "EUVD (EU): 434,974 total"
+      "number": "376,736 overlap (100% of cvelistV5)",
+      "desc": "EUVD (EU): 435,085 total"
     },
     {
-      "number": "250,933 overlap (67% of cvelistV5)",
-      "desc": "JVN iPedia (Japan): 250,986 total"
+      "number": "249,363 overlap (66% of cvelistV5)",
+      "desc": "JVN iPedia (Japan): 249,415 total"
     },
     {
-      "number": "82,195 overlap (22% of cvelistV5)",
-      "desc": "BDU (Russia): 82,460 total"
+      "number": "82,351 overlap (22% of cvelistV5)",
+      "desc": "BDU (Russia): 82,616 total"
     },
     {
-      "number": "42,649 overlap (11% of cvelistV5)",
-      "desc": "CNVD (China): 42,727 total"
+      "number": "106,275 overlap (28% of cvelistV5)",
+      "desc": "CNVD (China): 106,467 total"
     }
   ]
 }
