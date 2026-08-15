@@ -1,6 +1,6 @@
 {
-  "totalCVEs": 377308,
-  "headlineHTML": "377,308 CVEs.<br><span>Here's what actually matters.</span>",
+  "totalCVEs": 377899,
+  "headlineHTML": "377,899 CVEs.<br><span>Here's what actually matters.</span>",
   "subtext": "Software vulnerabilities are flaws that attackers can exploit to break into systems. Thousands are discovered every year. Most of the data about them is hard to parse. Here it is in plain English.",
   "stats": [
     {
@@ -17,7 +17,7 @@
       "desc": "Of all vulnerabilities are in CISA's Known Exploited Vulnerabilities (KEV) list"
     },
     {
-      "value": 30,
+      "value": 29,
       "suffix": " days",
       "isAccent": false,
       "isStatic": false,
