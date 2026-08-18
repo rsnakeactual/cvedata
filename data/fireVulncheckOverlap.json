@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 617,
-  "otherTotal": 5132,
+  "otherTotal": 5139,
   "both": 520,
   "fireOnly": 97,
-  "otherOnly": 4612,
+  "otherOnly": 4619,
   "stats": [
     {
       "number": "617",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and VulnCheck KEV"
     },
     {
-      "number": "5,132",
+      "number": "5,139",
       "desc": "VulnCheck KEV catalog"
     }
   ],
@@ -27,6 +27,6 @@
   "data": [
     97,
     520,
-    4612
+    4619
   ]
 }

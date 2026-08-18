@@ -8,17 +8,17 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 783,
+      "value": 782,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5132,
+      "value": 5139,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1665,
+      "value": 1666,
       "color": "#DC2626"
     },
     {
@@ -79,7 +79,7 @@
         77,
         39,
         31,
-        31,
+        30,
         20,
         17,
         16,
@@ -102,7 +102,7 @@
         "Vmware",
         "Linux",
         "Totolink",
-        "Fortinet"
+        "Ivanti"
       ],
       "data": [
         690,
@@ -111,7 +111,7 @@
         133,
         129,
         90,
-        86,
+        87,
         73,
         55,
         53,
