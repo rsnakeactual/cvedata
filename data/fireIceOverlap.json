@@ -1,21 +1,21 @@
 {
   "available": true,
-  "fireTotal": 617,
-  "otherTotal": 5156,
-  "both": 520,
-  "fireOnly": 97,
+  "fireTotal": 619,
+  "otherTotal": 5157,
+  "both": 521,
+  "fireOnly": 98,
   "otherOnly": 4636,
   "stats": [
     {
-      "number": "617",
+      "number": "619",
       "desc": "FIRE vulnerabilities"
     },
     {
-      "number": "520",
+      "number": "521",
       "desc": "In both FIRE and ICE (combined)"
     },
     {
-      "number": "5,156",
+      "number": "5,157",
       "desc": "ICE (combined) catalog"
     }
   ],
@@ -25,8 +25,8 @@
     "ICE only"
   ],
   "data": [
-    97,
-    520,
+    98,
+    521,
     4636
   ]
 }

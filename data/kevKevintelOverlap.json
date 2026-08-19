@@ -1,25 +1,25 @@
 {
   "available": true,
-  "kevTotal": 5156,
-  "otherTotal": 2750,
-  "both": 2750,
-  "kevOnly": 2406,
+  "kevTotal": 5157,
+  "otherTotal": 2650,
+  "both": 2650,
+  "kevOnly": 2507,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "5,156",
+      "number": "5,157",
       "desc": "KEVs (combined catalog)"
     },
     {
-      "number": "2,750",
+      "number": "2,650",
       "desc": "In both KEVs and KEVIntel"
     },
     {
-      "number": "2,750",
+      "number": "2,650",
       "desc": "KEVIntel catalog"
     }
   ],
-  "kevintelTotal": 2750,
+  "kevintelTotal": 2650,
   "kevintelOnly": 0,
   "labels": [
     "KEVs only",
@@ -27,8 +27,8 @@
     "KEVIntel only"
   ],
   "data": [
-    2406,
-    2750,
+    2507,
+    2650,
     0
   ]
 }
