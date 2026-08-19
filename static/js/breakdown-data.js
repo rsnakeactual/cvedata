@@ -7,8 +7,8 @@ window.__BREAKDOWN_DATA = {
   "scannableFireComplete": 179,
   "notScannableFire": 206,
   "cveUniverseSplit": {
-    "noKnownBreach": "372,868 (98.6%)",
-    "breachesOnly": "4,632 (1.2%)",
+    "noKnownBreach": "372,867 (98.6%)",
+    "breachesOnly": "4,636 (1.2%)",
     "breachesLosses": "617 (0.2%)"
   },
   "modals": {
@@ -106,5 +106,5 @@ window.__BREAKDOWN_DATA = {
     }
   },
   "note": "cveUniverseSplit is read from fireSankey.json when that graph output exists; otherwise editorial placeholders. fireTotal/scannableFire/notScannableFire and presence/complete splits are computed from FIRE_vulns.csv (or raw sources) and vulnerabilities/templates/scannable YAML tags.",
-  "lastUpdated": "2026/08/18"
+  "lastUpdated": "2026/08/19"
 };

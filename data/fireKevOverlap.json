@@ -1,21 +1,21 @@
 {
   "available": true,
   "fireTotal": 617,
-  "kevTotal": 1666,
-  "both": 426,
-  "fireOnly": 191,
-  "kevOnly": 1240,
+  "kevTotal": 1670,
+  "both": 427,
+  "fireOnly": 190,
+  "kevOnly": 1243,
   "stats": [
     {
       "number": "617",
       "desc": "FIRE vulnerabilities"
     },
     {
-      "number": "426",
+      "number": "427",
       "desc": "In both FIRE and CISA KEV"
     },
     {
-      "number": "1,666",
+      "number": "1,670",
       "desc": "CISA KEV catalog"
     }
   ]
