@@ -2,6 +2,11 @@
   "available": true,
   "points": [
     {
+      "cve": "CVE-2026-64849",
+      "cvss": 9.3,
+      "epss": 1.1
+    },
+    {
       "cve": "CVE-2026-33824",
       "cvss": 9.8,
       "epss": 77.9
@@ -8352,6 +8357,6 @@
       "epss": 90.2
     }
   ],
-  "totalKev": 1670,
-  "totalPlotted": 1670
+  "totalKev": 1671,
+  "totalPlotted": 1671
 }

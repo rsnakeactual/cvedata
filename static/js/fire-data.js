@@ -108,10 +108,10 @@ window.__FIRE_OVERRIDES = {
   "fireKevOverlap": {
     "available": true,
     "fireTotal": 619,
-    "kevTotal": 1670,
+    "kevTotal": 1671,
     "both": 428,
     "fireOnly": 191,
-    "kevOnly": 1242,
+    "kevOnly": 1243,
     "stats": [
       {
         "number": "619",
@@ -122,7 +122,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and CISA KEV"
       },
       {
-        "number": "1,670",
+        "number": "1,671",
         "desc": "CISA KEV catalog"
       }
     ]
@@ -373,10 +373,10 @@ window.__FIRE_OVERRIDES = {
   "fireVulncheckOverlap": {
     "available": true,
     "fireTotal": 619,
-    "otherTotal": 5142,
+    "otherTotal": 5137,
     "both": 521,
     "fireOnly": 98,
-    "otherOnly": 4621,
+    "otherOnly": 4616,
     "stats": [
       {
         "number": "619",
@@ -387,7 +387,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and VulnCheck KEV"
       },
       {
-        "number": "5,142",
+        "number": "5,137",
         "desc": "VulnCheck KEV catalog"
       }
     ],
@@ -399,7 +399,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       98,
       521,
-      4621
+      4616
     ]
   },
   "fireDbirOverlap": {
@@ -437,10 +437,10 @@ window.__FIRE_OVERRIDES = {
   "fireNucleiOverlap": {
     "available": true,
     "fireTotal": 619,
-    "otherTotal": 4374,
+    "otherTotal": 4375,
     "both": 239,
     "fireOnly": 380,
-    "otherOnly": 4135,
+    "otherOnly": 4136,
     "stats": [
       {
         "number": "619",
@@ -451,7 +451,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and Nuclei"
       },
       {
-        "number": "4,374",
+        "number": "4,375",
         "desc": "Nuclei catalog"
       }
     ],
@@ -463,7 +463,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       380,
       239,
-      4135
+      4136
     ]
   },
   "fireMetasploitOverlap": {
@@ -529,10 +529,10 @@ window.__FIRE_OVERRIDES = {
   "fireExploitRefsOverlap": {
     "available": true,
     "fireTotal": 619,
-    "otherTotal": 38713,
+    "otherTotal": 38765,
     "both": 88,
     "fireOnly": 531,
-    "otherOnly": 38625,
+    "otherOnly": 38677,
     "stats": [
       {
         "number": "14.2%",
@@ -551,7 +551,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       531,
       88,
-      38625
+      38677
     ]
   },
   "fireGreenboneOverlap": {
@@ -585,21 +585,21 @@ window.__FIRE_OVERRIDES = {
   "fireKevintelOverlap": {
     "available": true,
     "fireTotal": 619,
-    "otherTotal": 2650,
-    "both": 418,
-    "fireOnly": 201,
-    "otherOnly": 2232,
+    "otherTotal": 2750,
+    "both": 450,
+    "fireOnly": 169,
+    "otherOnly": 2300,
     "stats": [
       {
         "number": "619",
         "desc": "FIRE vulnerabilities"
       },
       {
-        "number": "418",
+        "number": "450",
         "desc": "In both FIRE and KEVIntel"
       },
       {
-        "number": "2,650",
+        "number": "2,750",
         "desc": "KEVIntel catalog"
       }
     ],
@@ -609,9 +609,9 @@ window.__FIRE_OVERRIDES = {
       "KEVIntel only"
     ],
     "data": [
-      201,
-      418,
-      2232
+      169,
+      450,
+      2300
     ]
   },
   "fireEnisaOverlap": {
@@ -649,10 +649,10 @@ window.__FIRE_OVERRIDES = {
   "fireEuvdKevOverlap": {
     "available": true,
     "fireTotal": 619,
-    "otherTotal": 1677,
+    "otherTotal": 1678,
     "both": 429,
     "fireOnly": 190,
-    "otherOnly": 1248,
+    "otherOnly": 1249,
     "stats": [
       {
         "number": "619",
@@ -663,7 +663,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and EUVD KEV"
       },
       {
-        "number": "1,677",
+        "number": "1,678",
         "desc": "EUVD KEV catalog"
       }
     ],
@@ -675,7 +675,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       190,
       429,
-      1248
+      1249
     ]
   },
   "fireEpssCorrelation": {
@@ -3122,8 +3122,8 @@ window.__FIRE_OVERRIDES = {
         "Medium (163,289, 42.9%)",
         "Low (15,339, 4.0%)",
         "No-score (25,032, 6.6%)",
-        "No breach/loss (374,994, 98.6%)",
-        "ICE (4,636, 1.2%)",
+        "No breach/loss (374,997, 98.6%)",
+        "ICE (4,633, 1.2%)",
         "FIRE (619, 0.2%)"
       ],
       "color": [
@@ -3173,14 +3173,14 @@ window.__FIRE_OVERRIDES = {
         7
       ],
       "value": [
-        42968,
-        129483,
-        162330,
+        42969,
+        129484,
+        162331,
         15306,
         24907,
-        1629,
-        1973,
-        889,
+        1628,
+        1972,
+        888,
         32,
         70,
         222,
@@ -3223,23 +3223,23 @@ window.__FIRE_OVERRIDES = {
     },
     "cnvd": {
       "data": [
-        134,
-        111,
-        25,
+        12,
+        22,
+        1,
         0,
         0
       ],
-      "total": 270
+      "total": 35
     },
     "jvn": {
       "data": [
-        245,
-        152,
-        53,
+        248,
+        155,
+        54,
         1,
         1
       ],
-      "total": 452
+      "total": 459
     },
     "bdu": {
       "data": [
@@ -3255,10 +3255,10 @@ window.__FIRE_OVERRIDES = {
   "fireIceOverlap": {
     "available": true,
     "fireTotal": 619,
-    "otherTotal": 5157,
+    "otherTotal": 5154,
     "both": 521,
     "fireOnly": 98,
-    "otherOnly": 4636,
+    "otherOnly": 4633,
     "stats": [
       {
         "number": "619",
@@ -3269,7 +3269,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and ICE (combined)"
       },
       {
-        "number": "5,157",
+        "number": "5,154",
         "desc": "ICE (combined) catalog"
       }
     ],
@@ -3281,7 +3281,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       98,
       521,
-      4636
+      4633
     ]
   },
   "fireMandiantOverlap": {
@@ -8971,7 +8971,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "Overlap with CISA KEV"
       },
       {
-        "value": 4636,
+        "value": 4633,
         "suffix": "",
         "isAccent": false,
         "isStatic": false,
@@ -8985,5 +8985,5 @@ window.__FIRE_OVERRIDES = {
       }
     ]
   },
-  "lastUpdated": "2026/08/19"
+  "lastUpdated": "2026/08/20"
 };
