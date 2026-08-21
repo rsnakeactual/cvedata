@@ -47,27 +47,27 @@
     65,
     111,
     97,
-    106,
+    108,
     133,
     215,
     260,
-    290,
+    291,
     383,
-    510,
-    480,
+    513,
+    481,
     549,
     668,
     573,
-    300
+    309
   ],
-  "total": 5154,
+  "total": 5170,
   "stats": [
     {
       "number": "27",
       "desc": "The oldest vulnerability in the KEVs catalog is 27 years old."
     },
     {
-      "number": "5,154",
+      "number": "5,170",
       "desc": "KEVs in catalog"
     },
     {
