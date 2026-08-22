@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 619,
-  "otherTotal": 1680,
+  "otherTotal": 1681,
   "both": 429,
   "fireOnly": 190,
-  "otherOnly": 1251,
+  "otherOnly": 1252,
   "stats": [
     {
       "number": "619",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and EUVD KEV"
     },
     {
-      "number": "1,680",
+      "number": "1,681",
       "desc": "EUVD KEV catalog"
     }
   ],
@@ -27,6 +27,6 @@
   "data": [
     190,
     429,
-    1251
+    1252
   ]
 }
