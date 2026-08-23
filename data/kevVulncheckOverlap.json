@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 5172,
+  "kevTotal": 5173,
   "otherTotal": 5158,
   "both": 5158,
-  "kevOnly": 14,
+  "kevOnly": 15,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "5,172",
+      "number": "5,173",
       "desc": "KEVs (combined catalog)"
     },
     {
@@ -27,7 +27,7 @@
     "VulnCheck only"
   ],
   "data": [
-    14,
+    15,
     5158,
     0
   ]
