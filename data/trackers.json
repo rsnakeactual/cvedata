@@ -8,12 +8,12 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 786,
+      "value": 773,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5158,
+      "value": 5160,
       "color": "#EAB308"
     },
     {
@@ -75,12 +75,12 @@
         "Aladdin"
       ],
       "data": [
-        79,
         78,
-        39,
+        77,
+        37,
         31,
         30,
-        20,
+        19,
         17,
         16,
         14,
@@ -99,10 +99,10 @@
         "Google",
         "Oracle",
         "D-link",
-        "Linux",
         "Vmware",
+        "Linux",
         "Totolink",
-        "Fortinet"
+        "Ivanti"
       ],
       "data": [
         691,
