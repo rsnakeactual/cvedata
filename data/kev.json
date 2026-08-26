@@ -49,12 +49,12 @@
     164,
     164,
     185,
-    119
+    120
   ],
   "firstYear": 2002,
   "stats": [
     {
-      "number": "1,675",
+      "number": "1,676",
       "isAccent": true,
       "desc": "Total KEVs in CISA's catalog — the definitive list of \"known used\" vulnerabilities"
     },
@@ -67,6 +67,11 @@
       "number": "1.3",
       "isAccent": false,
       "desc": "New KEVs added per week on average since the catalog's first year of known vulnerabilites in  2002"
+    },
+    {
+      "number": "1",
+      "isAccent": true,
+      "desc": "KEVs with no CVSS score at all. Companies can't prioritize these by CVSS alone, yet hackers are using them."
     }
   ]
 }

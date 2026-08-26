@@ -8,17 +8,17 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 796,
+      "value": 795,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5162,
+      "value": 5170,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1675,
+      "value": 1676,
       "color": "#DC2626"
     },
     {
@@ -76,7 +76,7 @@
       ],
       "data": [
         80,
-        80,
+        79,
         39,
         31,
         30,
@@ -105,7 +105,7 @@
         "Fortinet"
       ],
       "data": [
-        691,
+        692,
         153,
         150,
         133,
