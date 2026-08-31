@@ -58,7 +58,7 @@
     6003,
     6292,
     4812,
-    1788
+    1789
   ],
   "cna": [
     5,
@@ -88,12 +88,12 @@
     25394,
     32935,
     40394,
-    49247
+    49379
   ],
-  "cnaPctLatest": 96,
+  "cnaPctLatest": 97,
   "insights": [
     {
-      "number": "96%",
+      "number": "97%",
       "desc": "Of CVEs in latest year were assigned by CNAs (companies), not MITRE."
     },
     {
