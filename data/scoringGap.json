@@ -107,21 +107,21 @@
     },
     {
       "year": "2025",
-      "pct": 91.1
+      "pct": 91
     },
     {
       "year": "2026",
-      "pct": 90.4
+      "pct": 90.5
     }
   ],
   "stats": [
     {
-      "number": "4,950",
+      "number": "4,948",
       "isAccent": true,
       "desc": "Unscored CVEs in 2026,  NVD backlog varies by year"
     },
     {
-      "number": "9.6%",
+      "number": "9.5%",
       "isAccent": false,
       "desc": "Of 2026 CVEs had no severity score — 2.5% unscored in 1999"
     }
