@@ -6,8 +6,8 @@
   "scannableFireComplete": 179,
   "notScannableFire": 208,
   "cveUniverseSplit": {
-    "noKnownBreach": "380,284 (98.6%)",
-    "breachesOnly": "4,708 (1.2%)",
+    "noKnownBreach": "380,543 (98.6%)",
+    "breachesOnly": "4,711 (1.2%)",
     "breachesLosses": "619 (0.2%)"
   },
   "modals": {
