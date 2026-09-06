@@ -3,12 +3,12 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 45666,
+      "value": 45694,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 797,
+      "value": 782,
       "color": "#F97316"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 45666,
+  "maxValue": 45694,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,11 +45,11 @@
         "Hp"
       ],
       "data": [
-        5214,
-        1980,
+        5225,
+        1982,
         1826,
         1243,
-        1194,
+        1195,
         973,
         859,
         613,
@@ -75,12 +75,12 @@
         "Aladdin"
       ],
       "data": [
-        80,
         79,
-        39,
+        78,
+        37,
         31,
         30,
-        20,
+        19,
         18,
         16,
         14,
