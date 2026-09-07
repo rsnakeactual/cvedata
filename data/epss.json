@@ -7,10 +7,10 @@
     "50-100%"
   ],
   "data": [
-    79.2,
-    16.2,
+    79.4,
+    15.9,
     3.5,
-    1.1
+    1.2
   ],
   "colors": [
     "#D4D4D4",
@@ -20,7 +20,7 @@
   ],
   "insights": [
     {
-      "number": "60%",
+      "number": "61%",
       "desc": "Of all vulnerabilities have less than a 1% chance of being exploited in the next month."
     },
     {
