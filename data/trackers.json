@@ -3,22 +3,22 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 45694,
+      "value": 45732,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 798,
+      "value": 799,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5230,
+      "value": 5241,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1695,
+      "value": 1699,
       "color": "#DC2626"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 45694,
+  "maxValue": 45732,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,7 +45,7 @@
         "Hp"
       ],
       "data": [
-        5225,
+        5263,
         1982,
         1826,
         1243,
@@ -105,18 +105,18 @@
         "Fortinet"
       ],
       "data": [
-        692,
+        694,
         153,
-        151,
+        152,
         133,
         129,
         91,
         87,
-        74,
+        75,
         59,
-        56,
+        57,
         55,
-        46
+        47
       ]
     },
     "CISA KEV": {
@@ -135,10 +135,10 @@
         "Vmware"
       ],
       "data": [
-        386,
+        388,
         96,
         94,
-        80,
+        81,
         73,
         46,
         40,
@@ -195,10 +195,10 @@
     "Vmware"
   ],
   "vendorData": [
-    386,
+    388,
     96,
     94,
-    80,
+    81,
     73,
     46,
     40,
