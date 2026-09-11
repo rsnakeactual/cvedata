@@ -6,8 +6,8 @@
       "Other vectors"
     ],
     "data": [
-      1245,
-      3372
+      1248,
+      3381
     ],
     "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
   },
@@ -18,7 +18,7 @@
     ],
     "data": [
       20446,
-      269804
+      269815
     ],
     "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
   }
