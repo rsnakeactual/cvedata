@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 619,
-  "otherTotal": 2846,
+  "otherTotal": 2851,
   "both": 451,
   "fireOnly": 168,
-  "otherOnly": 2395,
+  "otherOnly": 2400,
   "stats": [
     {
       "number": "619",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and KEVIntel"
     },
     {
-      "number": "2,846",
+      "number": "2,851",
       "desc": "KEVIntel catalog"
     }
   ],
@@ -27,6 +27,6 @@
   "data": [
     168,
     451,
-    2395
+    2400
   ]
 }
