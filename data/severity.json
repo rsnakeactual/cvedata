@@ -26,25 +26,25 @@
     {
       "level": "critical",
       "name": "Critical",
-      "count": "45,954",
+      "count": "45,964",
       "pct": "13% of scored CVEs"
     },
     {
       "level": "high",
       "name": "High",
-      "count": "135,519",
+      "count": "135,547",
       "pct": "37% of scored CVEs"
     },
     {
       "level": "medium",
       "name": "Medium",
-      "count": "166,696",
+      "count": "166,748",
       "pct": "46% of scored CVEs"
     },
     {
       "level": "low",
       "name": "Low",
-      "count": "15,759",
+      "count": "15,764",
       "pct": "4% of scored CVEs"
     }
   ],
@@ -106,7 +106,7 @@
     3534,
     3808,
     3677,
-    6187
+    6197
   ],
   "high": [
     580,
@@ -136,7 +136,7 @@
     10568,
     13340,
     15885,
-    21928
+    21956
   ],
   "medium": [
     563,
@@ -166,7 +166,7 @@
     14879,
     19236,
     19612,
-    21072
+    21124
   ],
   "low": [
     162,
@@ -196,6 +196,6 @@
     1261,
     1609,
     2031,
-    2105
+    2110
   ]
 }
