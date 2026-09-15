@@ -1,14 +1,14 @@
 {
   "available": true,
-  "fireTotal": 619,
+  "fireTotal": 617,
   "scannableFire": 411,
   "scannableFirePresence": 232,
   "scannableFireComplete": 179,
-  "notScannableFire": 208,
+  "notScannableFire": 206,
   "cveUniverseSplit": {
-    "noKnownBreach": "385,323 (98.6%)",
-    "breachesOnly": "4,764 (1.2%)",
-    "breachesLosses": "619 (0.2%)"
+    "noKnownBreach": "385,503 (98.6%)",
+    "breachesOnly": "4,771 (1.2%)",
+    "breachesLosses": "617 (0.2%)"
   },
   "modals": {
     "root": {
