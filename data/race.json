@@ -18,15 +18,15 @@
       "color": "#F97316"
     },
     {
-      "dayRange": "Day 114 – 268",
-      "value": "268",
+      "dayRange": "Day 114 – 267",
+      "value": "267",
       "label": "90th percentile",
       "sublabel": "10% of CVEs still haven't been published by this point",
       "desc": "These are the stragglers in the system.",
       "color": "#E63946"
     },
     {
-      "dayRange": "Day 269+",
+      "dayRange": "Day 268+",
       "value": "6,263+",
       "label": "Long tail",
       "sublabel": "",
