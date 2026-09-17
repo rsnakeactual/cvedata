@@ -2,15 +2,15 @@
   "available": true,
   "speedMetrics": [
     {
-      "dayRange": "Day 0 – 29",
-      "value": "29",
+      "dayRange": "Day 0 – 28",
+      "value": "28",
       "label": "Median",
       "sublabel": "50% published",
-      "desc": "Half of all CVEs are published within 29 days of discovery. This is the fastest half of the pipeline.",
+      "desc": "Half of all CVEs are published within 28 days of discovery. This is the fastest half of the pipeline.",
       "color": "#22C55E"
     },
     {
-      "dayRange": "Day 30 – 113",
+      "dayRange": "Day 29 – 113",
       "value": "113",
       "label": "Mean",
       "sublabel": "average point",
