@@ -320,17 +320,17 @@ window.__FIRE_OVERRIDES = {
       5,
       11,
       9,
-      8,
       7,
+      8,
       10,
       6,
       8,
       3,
-      7,
-      14,
+      8,
+      13,
       16,
-      9,
-      15,
+      10,
+      14,
       19,
       138,
       0
@@ -437,10 +437,10 @@ window.__FIRE_OVERRIDES = {
   "fireNucleiOverlap": {
     "available": true,
     "fireTotal": 616,
-    "otherTotal": 4486,
+    "otherTotal": 4487,
     "both": 243,
     "fireOnly": 373,
-    "otherOnly": 4243,
+    "otherOnly": 4244,
     "stats": [
       {
         "number": "616",
@@ -451,7 +451,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and Nuclei"
       },
       {
-        "number": "4,486",
+        "number": "4,487",
         "desc": "Nuclei catalog"
       }
     ],
@@ -463,7 +463,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       373,
       243,
-      4243
+      4244
     ]
   },
   "fireMetasploitOverlap": {
@@ -529,10 +529,10 @@ window.__FIRE_OVERRIDES = {
   "fireExploitRefsOverlap": {
     "available": true,
     "fireTotal": 616,
-    "otherTotal": 41534,
+    "otherTotal": 41605,
     "both": 88,
     "fireOnly": 528,
-    "otherOnly": 41446,
+    "otherOnly": 41517,
     "stats": [
       {
         "number": "14.3%",
@@ -551,7 +551,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       528,
       88,
-      41446
+      41517
     ]
   },
   "fireGreenboneOverlap": {
@@ -1875,11 +1875,11 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 5.3,
-        "y": 95
+        "y": 93
       },
       {
         "x": 5.3,
-        "y": 86
+        "y": 85
       },
       {
         "x": 7.5,
@@ -2379,7 +2379,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 100
+        "y": 99
       },
       {
         "x": 10,
@@ -3223,23 +3223,23 @@ window.__FIRE_OVERRIDES = {
     },
     "cnvd": {
       "data": [
-        19,
-        24,
-        3,
+        53,
+        56,
+        14,
         0,
         0
       ],
-      "total": 46
+      "total": 123
     },
     "jvn": {
       "data": [
-        206,
-        109,
+        208,
+        112,
         40,
         1,
         0
       ],
-      "total": 356
+      "total": 361
     },
     "bdu": {
       "data": [
@@ -8985,5 +8985,5 @@ window.__FIRE_OVERRIDES = {
       }
     ]
   },
-  "lastUpdated": "2026/09/20"
+  "lastUpdated": "2026/09/21"
 };
