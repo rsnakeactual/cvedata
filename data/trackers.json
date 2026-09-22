@@ -8,17 +8,17 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 802,
+      "value": 788,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5335,
+      "value": 5340,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1716,
+      "value": 1717,
       "color": "#DC2626"
     },
     {
@@ -75,12 +75,12 @@
         "Aladdin"
       ],
       "data": [
-        80,
         79,
-        40,
+        78,
+        38,
         32,
         31,
-        20,
+        19,
         18,
         16,
         15,
