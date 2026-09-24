@@ -257,10 +257,10 @@ window.__FIRE_OVERRIDES = {
       2,
       3,
       3,
-      4,
+      3,
       2,
       3,
-      1,
+      2,
       8,
       5,
       6,
@@ -373,10 +373,10 @@ window.__FIRE_OVERRIDES = {
   "fireVulncheckOverlap": {
     "available": true,
     "fireTotal": 616,
-    "otherTotal": 5353,
+    "otherTotal": 5356,
     "both": 521,
     "fireOnly": 95,
-    "otherOnly": 4832,
+    "otherOnly": 4835,
     "stats": [
       {
         "number": "616",
@@ -387,7 +387,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and VulnCheck KEV"
       },
       {
-        "number": "5,353",
+        "number": "5,356",
         "desc": "VulnCheck KEV catalog"
       }
     ],
@@ -399,7 +399,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       95,
       521,
-      4832
+      4835
     ]
   },
   "fireDbirOverlap": {
@@ -437,10 +437,10 @@ window.__FIRE_OVERRIDES = {
   "fireNucleiOverlap": {
     "available": true,
     "fireTotal": 616,
-    "otherTotal": 4492,
+    "otherTotal": 4494,
     "both": 243,
     "fireOnly": 373,
-    "otherOnly": 4249,
+    "otherOnly": 4251,
     "stats": [
       {
         "number": "616",
@@ -451,7 +451,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and Nuclei"
       },
       {
-        "number": "4,492",
+        "number": "4,494",
         "desc": "Nuclei catalog"
       }
     ],
@@ -463,7 +463,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       373,
       243,
-      4249
+      4251
     ]
   },
   "fireMetasploitOverlap": {
@@ -529,10 +529,10 @@ window.__FIRE_OVERRIDES = {
   "fireExploitRefsOverlap": {
     "available": true,
     "fireTotal": 616,
-    "otherTotal": 41832,
+    "otherTotal": 41973,
     "both": 88,
     "fireOnly": 528,
-    "otherOnly": 41744,
+    "otherOnly": 41885,
     "stats": [
       {
         "number": "14.3%",
@@ -551,7 +551,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       528,
       88,
-      41744
+      41885
     ]
   },
   "fireGreenboneOverlap": {
@@ -1571,7 +1571,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 6.9
+        "y": 6.7
       },
       {
         "x": 10,
@@ -1619,7 +1619,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 1.9
+        "y": 2
       },
       {
         "x": 9.8,
@@ -1947,7 +1947,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.6,
-        "y": 24
+        "y": 28
       },
       {
         "x": 8.8,
@@ -2311,7 +2311,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 15
+        "y": 16
       },
       {
         "x": 9.9,
@@ -2411,7 +2411,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 0.5
+        "y": 0.51
       },
       {
         "x": 9.8,
@@ -3117,13 +3117,13 @@ window.__FIRE_OVERRIDES = {
     "available": true,
     "node": {
       "label": [
-        "Critical (46,482, 11.8%)",
+        "Critical (46,483, 11.8%)",
         "High (137,663, 34.8%)",
         "Medium (168,083, 42.5%)",
         "Low (15,899, 4.0%)",
-        "No-score (27,361, 6.9%)",
+        "No-score (27,363, 6.9%)",
         "No breach/loss (390,026, 98.6%)",
-        "ICE (4,846, 1.2%)",
+        "ICE (4,849, 1.2%)",
         "FIRE (616, 0.2%)"
       ],
       "color": [
@@ -3173,19 +3173,19 @@ window.__FIRE_OVERRIDES = {
         7
       ],
       "value": [
-        44445,
+        44446,
         135395,
-        167095,
+        167094,
         15866,
         27225,
         1723,
         2046,
-        918,
+        919,
         32,
         70,
         222,
         314,
-        127,
+        129,
         1,
         9
       ]
@@ -3223,23 +3223,23 @@ window.__FIRE_OVERRIDES = {
     },
     "cnvd": {
       "data": [
-        12,
-        22,
-        1,
+        21,
+        33,
+        5,
         0,
         0
       ],
-      "total": 35
+      "total": 59
     },
     "jvn": {
       "data": [
-        308,
-        215,
-        69,
+        297,
+        196,
+        67,
         1,
         0
       ],
-      "total": 593
+      "total": 561
     },
     "bdu": {
       "data": [
@@ -3255,10 +3255,10 @@ window.__FIRE_OVERRIDES = {
   "fireIceOverlap": {
     "available": true,
     "fireTotal": 616,
-    "otherTotal": 5367,
+    "otherTotal": 5370,
     "both": 521,
     "fireOnly": 95,
-    "otherOnly": 4846,
+    "otherOnly": 4849,
     "stats": [
       {
         "number": "616",
@@ -3269,7 +3269,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and ICE (combined)"
       },
       {
-        "number": "5,367",
+        "number": "5,370",
         "desc": "ICE (combined) catalog"
       }
     ],
@@ -3281,7 +3281,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       95,
       521,
-      4846
+      4849
     ]
   },
   "fireMandiantOverlap": {
@@ -8949,7 +8949,7 @@ window.__FIRE_OVERRIDES = {
         "Other vectors"
       ],
       "data": [
-        20760,
+        20761,
         275026
       ],
       "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
@@ -8971,7 +8971,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "Overlap with CISA KEV"
       },
       {
-        "value": 4846,
+        "value": 4849,
         "suffix": "",
         "isAccent": false,
         "isStatic": false,
@@ -8985,5 +8985,5 @@ window.__FIRE_OVERRIDES = {
       }
     ]
   },
-  "lastUpdated": "2026/09/23"
+  "lastUpdated": "2026/09/24"
 };
