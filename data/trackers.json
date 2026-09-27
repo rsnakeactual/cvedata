@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 46683,
+      "value": 46703,
       "color": "#E63946"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 46683,
+  "maxValue": 46703,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,14 +45,14 @@
         "Hp"
       ],
       "data": [
-        5886,
-        2022,
-        1850,
+        5881,
+        2030,
+        1856,
         1302,
         1257,
         981,
         861,
-        628,
+        629,
         596,
         574,
         572,
