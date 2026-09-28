@@ -8,17 +8,17 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 794,
+      "value": 795,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5362,
+      "value": 5365,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1726,
+      "value": 1728,
       "color": "#DC2626"
     },
     {
@@ -131,8 +131,8 @@
         "Ivanti",
         "Linux",
         "Fortinet",
-        "D-link",
-        "Vmware"
+        "Citrix",
+        "D-link"
       ],
       "data": [
         389,
@@ -191,8 +191,8 @@
     "Ivanti",
     "Linux",
     "Fortinet",
-    "D-link",
-    "Vmware"
+    "Citrix",
+    "D-link"
   ],
   "vendorData": [
     389,
