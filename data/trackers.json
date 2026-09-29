@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 46703,
+      "value": 46722,
       "color": "#E63946"
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5365,
+      "value": 5372,
       "color": "#EAB308"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 46703,
+  "maxValue": 46722,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,7 +45,7 @@
         "Hp"
       ],
       "data": [
-        5881,
+        5900,
         2030,
         1856,
         1302,
@@ -106,7 +106,7 @@
       ],
       "data": [
         698,
-        153,
+        154,
         152,
         136,
         130,
