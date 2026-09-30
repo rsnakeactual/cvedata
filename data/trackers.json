@@ -8,17 +8,17 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 795,
+      "value": 796,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5372,
+      "value": 5375,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1728,
+      "value": 1729,
       "color": "#DC2626"
     },
     {
@@ -137,7 +137,7 @@
       "data": [
         389,
         99,
-        94,
+        95,
         82,
         75,
         46,
@@ -197,7 +197,7 @@
   "vendorData": [
     389,
     99,
-    94,
+    95,
     82,
     75,
     46,
