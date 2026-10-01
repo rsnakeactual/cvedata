@@ -1,25 +1,25 @@
 {
   "available": true,
-  "kevTotal": 5389,
-  "otherTotal": 410,
-  "both": 410,
-  "kevOnly": 4979,
+  "kevTotal": 5398,
+  "otherTotal": 411,
+  "both": 411,
+  "kevOnly": 4987,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "5,389",
+      "number": "5,398",
       "desc": "KEVs"
     },
     {
-      "number": "410",
+      "number": "411",
       "desc": "In both KEVs and Google P0 \"0day in the wild\""
     },
     {
-      "number": "410",
+      "number": "411",
       "desc": "Google Project Zero catalog"
     }
   ],
-  "p0Total": 410,
+  "p0Total": 411,
   "p0Only": 0,
   "labels": [
     "KEVs only",
@@ -27,8 +27,8 @@
     "Google P0 only"
   ],
   "data": [
-    4979,
-    410,
+    4987,
+    411,
     0
   ]
 }
