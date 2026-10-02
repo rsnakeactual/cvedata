@@ -2,6 +2,26 @@
   "available": true,
   "points": [
     {
+      "cve": "CVE-2026-76504",
+      "cvss": 9.8,
+      "epss": 1.1
+    },
+    {
+      "cve": "CVE-2026-86950",
+      "cvss": 8.8,
+      "epss": 1.2
+    },
+    {
+      "cve": "CVE-2026-88772",
+      "cvss": 8.1,
+      "epss": 1.3
+    },
+    {
+      "cve": "CVE-2026-88771",
+      "cvss": 9.8,
+      "epss": 1.1
+    },
+    {
       "cve": "CVE-2026-67279",
       "cvss": 6.5,
       "epss": 1
@@ -104,7 +124,7 @@
     {
       "cve": "CVE-2026-85706",
       "cvss": 10,
-      "epss": 91.4
+      "epss": 93
     },
     {
       "cve": "CVE-2026-86060",
@@ -119,7 +139,7 @@
     {
       "cve": "CVE-2026-19490",
       "cvss": 9.8,
-      "epss": 7
+      "epss": 8
     },
     {
       "cve": "CVE-2025-25249",
@@ -8632,6 +8652,6 @@
       "epss": 90.2
     }
   ],
-  "totalKev": 1730,
-  "totalPlotted": 1726
+  "totalKev": 1731,
+  "totalPlotted": 1730
 }

@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 616,
-  "otherTotal": 3211,
+  "otherTotal": 3213,
   "both": 234,
   "fireOnly": 382,
-  "otherOnly": 2977,
+  "otherOnly": 2979,
   "stats": [
     {
       "number": "616",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and Metasploit"
     },
     {
-      "number": "3,211",
+      "number": "3,213",
       "desc": "Metasploit catalog"
     }
   ],
@@ -27,6 +27,6 @@
   "data": [
     382,
     234,
-    2977
+    2979
   ]
 }
