@@ -58,16 +58,16 @@
     567,
     682,
     591,
-    464
+    465
   ],
-  "total": 5426,
+  "total": 5427,
   "stats": [
     {
       "number": "27",
       "desc": "The oldest vulnerability in the KEVs catalog is 27 years old."
     },
     {
-      "number": "5,426",
+      "number": "5,427",
       "desc": "KEVs in catalog"
     },
     {
