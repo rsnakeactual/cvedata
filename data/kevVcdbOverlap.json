@@ -1,9 +1,9 @@
 {
   "available": true,
   "kevTotal": 5446,
-  "otherTotal": 39,
-  "both": 39,
-  "kevOnly": 5407,
+  "otherTotal": 35,
+  "both": 35,
+  "kevOnly": 5411,
   "otherOnly": 0,
   "stats": [
     {
@@ -11,22 +11,24 @@
       "desc": "KEVs (combined catalog)"
     },
     {
-      "number": "39",
-      "desc": "In both KEVs and ENISA EU KEV"
+      "number": "35",
+      "desc": "In both KEVs and VCDB"
     },
     {
-      "number": "39",
-      "desc": "ENISA EU KEV catalog"
+      "number": "35",
+      "desc": "VCDB catalog"
     }
   ],
+  "dbirTotal": 35,
+  "dbirOnly": 0,
   "labels": [
     "KEVs only",
     "Both",
-    "ENISA only"
+    "VCDB only"
   ],
   "data": [
-    5407,
-    39,
+    5411,
+    35,
     0
   ]
 }

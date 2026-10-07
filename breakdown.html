@@ -402,15 +402,30 @@
 
     var EDITORIAL_CVE_UNIVERSE = { noKnownBreach: '97.8-98.6%', breachesOnly: '1.2-2.1%', breachesLosses: '0.2%' };
 
-    function buildTree(m) {
+    /**
+     * The FIRE node's percentage and the '<n> CVEs' node below it are the same
+     * quantity, so they must come from the same file and the same pipeline run.
+     * Resolve them as a pair: breakdown-data.js first, then fire-data.js, then
+     * editorial. Taking one from each file is what made the page show 616 and
+     * 617 side by side.
+     */
+    function resolveUniverse(m) {
+      if (m && m.cveUniverseSplit && typeof m.fireTotal === 'number' && m.fireTotal > 0) {
+        return { U: m.cveUniverseSplit, ft: m.fireTotal };
+      }
       var cveSplit = computeCveUniverseSplit();
-      var U = cveSplit
-        ? { noKnownBreach: cveSplit.noKnownBreach, breachesOnly: cveSplit.breachesOnly, breachesLosses: cveSplit.breachesLosses }
-        : ((m && m.cveUniverseSplit) || EDITORIAL_CVE_UNIVERSE);
+      var fireTotal = getFireTotalFromFireOverrides();
+      if (cveSplit && fireTotal > 0) {
+        return { U: cveSplit, ft: fireTotal };
+      }
+      return { U: EDITORIAL_CVE_UNIVERSE, ft: 0 };
+    }
+
+    function buildTree(m) {
+      var resolved = resolveUniverse(m);
+      var U = resolved.U;
+      var ft = resolved.ft;
       var cvesPctStr = '25-30%';
-      var ftFromBreakdown = (m && typeof m.fireTotal === 'number' && m.fireTotal > 0) ? m.fireTotal : 0;
-      var ftFromFire = getFireTotalFromFireOverrides();
-      var ft = ftFromBreakdown || ftFromFire || 0;
       var hasScanSplit =
         m &&
         Object.prototype.hasOwnProperty.call(m, 'scannableFire') &&

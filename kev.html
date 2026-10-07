@@ -43,7 +43,7 @@
     <div class="hero-content">
       <div>
         <h1>KEVs Report</h1>
-        <p>Known Exploited Vulnerabilities (KEVs) are CVEs with public evidence of being exploited by attackers in the wild. This page is built strictly from publicly available KEV catalogs. Private KEV lists held by incident response firms, intelligence vendors, and government partners almost certainly see and track exploitation that is not visible here, so treating these public sources as a complete picture will understate what is really being exploited. No single public catalog is complete on its own either, so this page combines eight of them: CISA KEV, the ENISA EU CSIRT Network KEV list, ENISA EUVD entries flagged exploited-in-the-wild (EUVD KEV), VCDB, VulnCheck, Google Project Zero, Mandiant M-Trends, and the CrowdStrike Global Threat Report.</p>
+        <p>Known Exploited Vulnerabilities (KEVs) are CVEs with public evidence of being exploited by attackers in the wild. This page is built strictly from publicly available KEV catalogs. Private KEV lists held by incident response firms, intelligence vendors, and government partners almost certainly see and track exploitation that is not visible here, so treating these public sources as a complete picture will understate what is really being exploited. No single public catalog is complete on its own either, so this page combines them: CISA KEV, the ENISA EU CSIRT Network KEV list, ENISA EUVD entries flagged exploited-in-the-wild (EUVD KEV), VCDB, VulnCheck, Google Project Zero, Mandiant M-Trends, the CrowdStrike Global Threat Report, the CIRCL Vulnerability-Lookup catalogs (CIRCL, Shadowserver, Previdian), and the Verizon DBIR aggregate. The DBIR figures come from private incident data behind the published report and are distinct from the open VCDB corpus.</p>
         <div class="scroll-hint">
           <div class="arrow">&darr;</div>
           <span>Scroll to explore</span>
@@ -87,14 +87,13 @@
     <div class="section-header">
       <div class="section-label-row"><span class="label">02: KEV Overlap</span><button class="copy-link-btn" data-anchor="kev-kev-overlap" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
       <h2>KEVs vs individual Known Exploited catalogs</h2>
-      <p>The KEVs catalog on this page is the union of multiple KEV lists and DFIR-style sources, because no single list is complete on its own. Each catalog has different inclusion criteria, and even the largest individual list misses a significant fraction of what the others flag. The components shown in these tabs are CISA KEV, VulnCheck, the ENISA EU CSIRT Network KEV list, and ENISA EUVD entries flagged as exploited in the wild (EUVD KEV); the full union additionally incorporates VCDB, Google Project Zero, Mandiant M-Trends, and the CrowdStrike Global Threat Report.</p>
+      <p>The KEVs catalog on this page is the union of multiple KEV lists and DFIR-style sources, because no single list is complete on its own. Each catalog has different inclusion criteria, and even the largest individual list misses a significant fraction of what the others flag. The components shown in these tabs are CISA KEV, VulnCheck, the ENISA EU CSIRT Network KEV list, and ENISA EUVD entries flagged as exploited in the wild (EUVD KEV); the full union additionally incorporates VCDB, Google Project Zero, Mandiant M-Trends, the CrowdStrike Global Threat Report, the CIRCL catalogs, and the Verizon DBIR aggregate.</p>
     </div>
     <div class="toggle-group" id="kevOverlapTabs">
       <button class="toggle-btn active" data-tab="kev">CISA KEV</button>
       <button class="toggle-btn" data-tab="vulncheck">VulnCheck</button>
       <button class="toggle-btn" data-tab="enisa">ENISA EU KEV</button>
       <button class="toggle-btn" data-tab="euvd-kev">EUVD KEV</button>
-      <button class="toggle-btn" data-tab="kevintel">KEVIntel</button>
     </div>
     <div class="tab-panel active" id="tab-kev">
       <div class="chart-container" style="height: 350px;">
@@ -119,12 +118,6 @@
         <p class="data-unavailable">Data unavailable. Run kev and euvd-kev processors, then regenerate graphs.</p>
       </div>
       <div class="insight-cards" id="kevEuvdStats"></div>
-    </div>
-    <div class="tab-panel" id="tab-kevintel">
-      <div class="chart-container" style="height: 350px;" id="kevKevintelContainer">
-        <p class="data-unavailable">Data unavailable. Run kev and kevintel processors. (Disable with KEVINTEL_ENABLED=false.)</p>
-      </div>
-      <div class="insight-cards" id="kevKevintelStats"></div>
     </div>
   </div>
 </section>
@@ -246,14 +239,21 @@
       <p>Verizon DBIR and Mandiant M-Trends track CVEs from breach investigations for a single year at a time. They overlap with KEVs to some extent, but so few new vulnerabilities are used in breaches each year that the year-over-year numbers are very low.</p>
     </div>
     <div class="toggle-group" id="forensicsTabs">
-      <button class="toggle-btn active" data-tab="dbir">Verizon DBIR (VCDB)</button>
+      <button class="toggle-btn active" data-tab="dbir">Verizon DBIR</button>
+      <button class="toggle-btn" data-tab="vcdb">VCDB</button>
       <button class="toggle-btn" data-tab="mandiant">Mandiant M-Trends</button>
     </div>
     <div class="tab-panel active" id="tab-dbir">
       <div class="chart-container" style="height: 350px;" id="kevDbirContainer">
-        <p class="data-unavailable">Data unavailable. Run kev and vcdb processors.</p>
+        <p class="data-unavailable">Data unavailable. Place <code>DBIR_YYYY.csv</code> under <code>data/raw/DBIR/</code> and run the pipeline.</p>
       </div>
       <div class="insight-cards" id="kevDbirStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-vcdb">
+      <div class="chart-container" style="height: 350px;" id="kevVcdbContainer">
+        <p class="data-unavailable">Data unavailable. Run kev and vcdb processors.</p>
+      </div>
+      <div class="insight-cards" id="kevVcdbStats"></div>
     </div>
     <div class="tab-panel" id="tab-mandiant">
       <div class="chart-container" style="height: 350px;" id="kevMandiantContainer">
@@ -503,10 +503,13 @@
       <a href="https://services.google.com/fh/files/misc/m-trends-2025-en.pdf" target="_blank">Mandiant (2025 M-Trends)</a>,
       <a href="https://www.crowdstrike.com/en-us/global-threat-report/" target="_blank">CrowdStrike (2026 Global Threat Report)</a>,
       <a href="https://github.com/vz-risk/VCDB" target="_blank">VCDB</a>,
+      <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank">Verizon DBIR</a>,
       <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV</a>,
       <a href="https://www.first.org/epss/" target="_blank">FIRST EPSS</a>,
       <a href="https://vulncheck.io/" target="_blank">VulnCheck</a>,
-      <a href="https://kevintel.com/" target="_blank">KEVIntel</a>,
+      <a href="https://vulnerability.circl.lu/known-exploited-vulnerabilities-catalog/" target="_blank">CIRCL KEV</a>,
+      <a href="https://vulnerability.circl.lu/known-exploited-vulnerabilities-catalog/?catalog_uuid=c8fb6bf1-f81f-4cb8-95b1-eadbb3b54ee8" target="_blank">Shadowserver (via CIRCL)</a>,
+      <a href="https://vulnerability.circl.lu/known-exploited-vulnerabilities-catalog/?catalog_uuid=caeb2787-0d58-4236-9039-7c86c3e566f3" target="_blank">Previdian (via CIRCL)</a>,
       <a href="https://github.com/vulndb/vulndb" target="_blank">VulnDB</a>,
       <a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view?gid=0#gid=0" target="_blank">Google Project Zero</a>,
       <a href="https://github.com/rapid7/metasploit-framework" target="_blank">Metasploit</a>,
@@ -939,7 +942,6 @@
     renderOverlapInto('kevVulncheckContainer', 'kevVulncheckChart', 'kevVulncheckOverlap', 'VC', 'KEVs', 'VulnCheck KEV', 'KEVs', ['#F97316', '#1565c0', '#3B82F6'], 'kevVulncheckStats');
     renderOverlapInto('kevEnisaContainer', 'kevEnisaChart', 'kevEnisaOverlap', 'ENISA', 'KEVs', 'ENISA EU KEV', 'KEVs', ['#F97316', '#1565c0', '#06B6D4'], 'kevEnisaStats');
     renderOverlapInto('kevEuvdContainer', 'kevEuvdChart', 'kevEuvdOverlap', 'EUVD', 'KEVs', 'EUVD KEV', 'KEVs', ['#F97316', '#1565c0', '#7C3AED'], 'kevEuvdStats');
-    renderOverlapInto('kevKevintelContainer', 'kevKevintelChart', 'kevKevintelOverlap', 'KI', 'KEVs', 'KEVIntel', 'KEVs', ['#F97316', '#1565c0', '#14B8A6'], 'kevKevintelStats');
   });
 
   /* 03: KEVs vs GOOGLE P0 (Venn) */
@@ -1167,7 +1169,10 @@
   whenChartInView('kevVulncheckContainer', function() { renderOverlapInto('kevVulncheckContainer', 'kevVulncheckChart', 'kevVulncheckOverlap', 'VC', 'KEVs', 'VulnCheck KEV', 'KEVs', ['#F97316', '#1565c0', '#3B82F6'], 'kevVulncheckStats'); });
 
   /* 06: KEVs-DBIR Overlap (Venn) */
-  whenChartInView('kevDbirContainer', function() { renderOverlapInto('kevDbirContainer', 'kevDbirChart', 'kevDbirOverlap', 'DBIR', 'KEVs', 'Verizon DBIR', 'KEVs', ['#F97316', '#1565c0', '#22C55E'], 'kevDbirStats'); });
+  whenChartInView('kevDbirContainer', function() {
+    renderOverlapInto('kevDbirContainer', 'kevDbirChart', 'kevDbirOverlap', 'DBIR', 'KEVs', 'Verizon DBIR', 'KEVs', ['#F97316', '#1565c0', '#22C55E'], 'kevDbirStats');
+    renderOverlapInto('kevVcdbContainer', 'kevVcdbChart', 'kevVcdbOverlap', 'VCDB', 'KEVs', 'VCDB', 'KEVs', ['#F97316', '#1565c0', '#0D9488'], 'kevVcdbStats');
+  });
 
   /* 07: Vulncheck-DBIR Overlap (Venn) */
   /* 08: KEVs-Nuclei Overlap (Venn) */
@@ -1188,7 +1193,6 @@
 
   /* 13b: EUVD KEV–KEVs Overlap (Venn) */
   whenChartInView('kevEuvdContainer', function() { renderOverlapInto('kevEuvdContainer', 'kevEuvdChart', 'kevEuvdOverlap', 'EUVD', 'KEVs', 'EUVD KEV', 'KEVs', ['#F97316', '#1565c0', '#7C3AED'], 'kevEuvdStats'); });
-  whenChartInView('kevKevintelContainer', function() { renderOverlapInto('kevKevintelContainer', 'kevKevintelChart', 'kevKevintelOverlap', 'KI', 'KEVs', 'KEVIntel', 'KEVs', ['#F97316', '#1565c0', '#14B8A6'], 'kevKevintelStats'); });
 
   /* KEVs-Mandiant (when data exists) */
   whenChartInView('kevMandiantContainer', function() { renderOverlapInto('kevMandiantContainer', 'kevMandiantChart', 'kevMandiantOverlap', 'Mandiant', 'KEVs', 'Mandiant M-Trends', 'KEVs', ['#F97316', '#1565c0', '#c62828'], 'kevMandiantStats'); });

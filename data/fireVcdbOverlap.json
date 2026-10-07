@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "fireTotal": 616,
+  "otherTotal": 35,
+  "both": 20,
+  "fireOnly": 596,
+  "otherOnly": 15,
+  "stats": [
+    {
+      "number": "616",
+      "desc": "FIRE vulnerabilities"
+    },
+    {
+      "number": "20",
+      "desc": "In both FIRE and VCDB"
+    },
+    {
+      "number": "35",
+      "desc": "VCDB catalog"
+    }
+  ],
+  "labels": [
+    "FIRE only",
+    "Both",
+    "VCDB only"
+  ],
+  "data": [
+    596,
+    20,
+    15
+  ]
+}

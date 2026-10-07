@@ -1,34 +1,32 @@
 {
   "available": true,
-  "kevTotal": 5430,
-  "otherTotal": 35,
-  "both": 35,
-  "kevOnly": 5395,
+  "kevTotal": 5446,
+  "otherTotal": 74,
+  "both": 74,
+  "kevOnly": 5372,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "5,430",
+      "number": "5,446",
       "desc": "KEVs (combined catalog)"
     },
     {
-      "number": "35",
+      "number": "74",
       "desc": "In both KEVs and Verizon DBIR"
     },
     {
-      "number": "35",
+      "number": "74",
       "desc": "Verizon DBIR catalog"
     }
   ],
-  "dbirTotal": 35,
-  "dbirOnly": 0,
   "labels": [
     "KEVs only",
     "Both",
     "DBIR only"
   ],
   "data": [
-    5395,
-    35,
+    5372,
+    74,
     0
   ]
 }
