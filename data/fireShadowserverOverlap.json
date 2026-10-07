@@ -1,13 +1,13 @@
 {
   "available": true,
-  "fireTotal": 616,
+  "fireTotal": 610,
   "otherTotal": 1254,
   "both": 168,
-  "fireOnly": 448,
+  "fireOnly": 442,
   "otherOnly": 1086,
   "stats": [
     {
-      "number": "616",
+      "number": "610",
       "desc": "FIRE vulnerabilities"
     },
     {
@@ -25,7 +25,7 @@
     "Shadowserver only"
   ],
   "data": [
-    448,
+    442,
     168,
     1086
   ]

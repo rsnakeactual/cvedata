@@ -22,21 +22,21 @@
     15,
     12,
     10,
-    375
+    369
   ],
-  "fireTotal": 616,
-  "naCount": 204,
+  "fireTotal": 610,
+  "naCount": 203,
   "stats": [
     {
       "number": "86",
       "desc": "Largest vendor bucket: Microsoft"
     },
     {
-      "number": "375",
+      "number": "369",
       "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
     },
     {
-      "number": "204",
+      "number": "203",
       "desc": "FIRE CVEs missing from CVElist or without CNA vendor field"
     }
   ]

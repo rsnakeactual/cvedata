@@ -1,13 +1,13 @@
 {
   "available": true,
-  "fireTotal": 616,
+  "fireTotal": 610,
   "otherTotal": 5419,
   "both": 521,
-  "fireOnly": 95,
+  "fireOnly": 89,
   "otherOnly": 4898,
   "stats": [
     {
-      "number": "616",
+      "number": "610",
       "desc": "FIRE vulnerabilities"
     },
     {
@@ -25,7 +25,7 @@
     "VulnCheck only"
   ],
   "data": [
-    95,
+    89,
     521,
     4898
   ]
