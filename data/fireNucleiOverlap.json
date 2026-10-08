@@ -1,9 +1,9 @@
 {
   "available": true,
   "fireTotal": 610,
-  "otherTotal": 4513,
-  "both": 244,
-  "fireOnly": 366,
+  "otherTotal": 4514,
+  "both": 245,
+  "fireOnly": 365,
   "otherOnly": 4269,
   "stats": [
     {
@@ -11,11 +11,11 @@
       "desc": "FIRE vulnerabilities"
     },
     {
-      "number": "244",
+      "number": "245",
       "desc": "In both FIRE and Nuclei"
     },
     {
-      "number": "4,513",
+      "number": "4,514",
       "desc": "Nuclei catalog"
     }
   ],
@@ -25,8 +25,8 @@
     "Nuclei only"
   ],
   "data": [
-    366,
-    244,
+    365,
+    245,
     4269
   ]
 }
