@@ -40,20 +40,20 @@ window.__FIRE_OVERRIDES = {
       44,
       37,
       89,
-      55,
-      75,
-      80,
+      57,
+      77,
+      82,
       77,
       33
     ],
-    "total": 610,
+    "total": 616,
     "stats": [
       {
         "number": "20",
         "desc": "The oldest vulnerability used in financial loss is 20 years old."
       },
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities in catalog"
       },
       {
@@ -86,35 +86,35 @@ window.__FIRE_OVERRIDES = {
       15,
       12,
       10,
-      369
+      375
     ],
-    "fireTotal": 610,
-    "naCount": 203,
+    "fireTotal": 616,
+    "naCount": 204,
     "stats": [
       {
         "number": "86",
         "desc": "Largest vendor bucket: Microsoft"
       },
       {
-        "number": "369",
+        "number": "375",
         "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
       },
       {
-        "number": "203",
+        "number": "204",
         "desc": "FIRE CVEs missing from CVElist or without CNA vendor field"
       }
     ]
   },
   "fireKevOverlap": {
     "available": true,
-    "fireTotal": 610,
-    "kevTotal": 1739,
+    "fireTotal": 616,
+    "kevTotal": 1728,
     "both": 429,
-    "fireOnly": 181,
-    "kevOnly": 1310,
+    "fireOnly": 187,
+    "kevOnly": 1299,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -122,7 +122,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and CISA KEV"
       },
       {
-        "number": "1,739",
+        "number": "1,728",
         "desc": "CISA KEV catalog"
       }
     ]
@@ -233,15 +233,15 @@ window.__FIRE_OVERRIDES = {
       "1.00"
     ],
     "data": [
-      33,
-      27,
+      38,
+      28,
       17,
       16,
       12,
       8,
-      7,
-      4,
-      4,
+      8,
+      6,
+      2,
       4,
       7,
       2,
@@ -252,43 +252,43 @@ window.__FIRE_OVERRIDES = {
       2,
       1,
       6,
+      4,
+      0,
+      2,
+      3,
+      2,
+      2,
+      2,
       3,
       1,
+      10,
+      5,
+      6,
+      1,
+      2,
+      1,
+      1,
+      2,
       1,
       4,
-      2,
-      2,
-      2,
-      3,
-      1,
-      9,
-      6,
-      6,
       1,
       2,
-      1,
-      1,
       2,
-      1,
-      3,
-      2,
-      3,
-      1,
       1,
       3,
       0,
       1,
+      2,
+      1,
+      4,
+      1,
+      2,
+      2,
+      1,
       3,
-      1,
-      4,
-      1,
-      1,
       2,
-      2,
-      2,
-      2,
-      2,
-      4,
+      3,
+      3,
       1,
       1,
       1,
@@ -317,30 +317,30 @@ window.__FIRE_OVERRIDES = {
       5,
       5,
       7,
-      7,
-      10,
-      7,
       6,
-      10,
+      11,
+      7,
+      8,
+      8,
       9,
       6,
       9,
       1,
-      10,
-      12,
+      9,
       13,
-      12,
+      11,
+      13,
       14,
       18,
       137,
       0
     ],
-    "matched": 602,
-    "totalFire": 610,
+    "matched": 608,
+    "totalFire": 616,
     "stats": [
       {
-        "number": "602",
-        "desc": "FIRE CVEs with EPSS scores (of 610)"
+        "number": "608",
+        "desc": "FIRE CVEs with EPSS scores (of 616)"
       },
       {
         "number": "0.99–1.00",
@@ -350,14 +350,14 @@ window.__FIRE_OVERRIDES = {
   },
   "fireGoogleP0Overlap": {
     "available": true,
-    "fireTotal": 610,
-    "p0Total": 411,
+    "fireTotal": 616,
+    "p0Total": 410,
     "both": 54,
-    "fireOnly": 556,
-    "p0Only": 357,
+    "fireOnly": 562,
+    "p0Only": 356,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -365,21 +365,21 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and Google P0 \"0day in the wild\""
       },
       {
-        "number": "411",
+        "number": "410",
         "desc": "Google Project Zero catalog"
       }
     ]
   },
   "fireVulncheckOverlap": {
     "available": true,
-    "fireTotal": 610,
-    "otherTotal": 5428,
+    "fireTotal": 616,
+    "otherTotal": 5372,
     "both": 521,
-    "fireOnly": 89,
-    "otherOnly": 4907,
+    "fireOnly": 95,
+    "otherOnly": 4851,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -387,7 +387,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and VulnCheck KEV"
       },
       {
-        "number": "5,428",
+        "number": "5,372",
         "desc": "VulnCheck KEV catalog"
       }
     ],
@@ -397,21 +397,21 @@ window.__FIRE_OVERRIDES = {
       "VulnCheck only"
     ],
     "data": [
-      89,
+      95,
       521,
-      4907
+      4851
     ]
   },
   "fireVcdbOverlap": {
     "available": true,
-    "fireTotal": 610,
+    "fireTotal": 616,
     "otherTotal": 35,
     "both": 20,
-    "fireOnly": 590,
+    "fireOnly": 596,
     "otherOnly": 15,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -429,25 +429,25 @@ window.__FIRE_OVERRIDES = {
       "VCDB only"
     ],
     "data": [
-      590,
+      596,
       20,
       15
     ]
   },
   "fireDbirOverlap": {
     "available": true,
-    "fireTotal": 610,
+    "fireTotal": 616,
     "otherTotal": 74,
-    "both": 56,
-    "fireOnly": 554,
-    "otherOnly": 18,
+    "both": 60,
+    "fireOnly": 556,
+    "otherOnly": 14,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
-        "number": "56",
+        "number": "60",
         "desc": "In both FIRE and Verizon DBIR"
       },
       {
@@ -461,29 +461,29 @@ window.__FIRE_OVERRIDES = {
       "DBIR only"
     ],
     "data": [
-      554,
-      56,
-      18
+      556,
+      60,
+      14
     ]
   },
   "fireNucleiOverlap": {
     "available": true,
-    "fireTotal": 610,
-    "otherTotal": 4514,
-    "both": 245,
-    "fireOnly": 365,
-    "otherOnly": 4269,
+    "fireTotal": 616,
+    "otherTotal": 4504,
+    "both": 244,
+    "fireOnly": 372,
+    "otherOnly": 4260,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
-        "number": "245",
+        "number": "244",
         "desc": "In both FIRE and Nuclei"
       },
       {
-        "number": "4,514",
+        "number": "4,504",
         "desc": "Nuclei catalog"
       }
     ],
@@ -493,21 +493,21 @@ window.__FIRE_OVERRIDES = {
       "Nuclei only"
     ],
     "data": [
-      365,
-      245,
-      4269
+      372,
+      244,
+      4260
     ]
   },
   "fireMetasploitOverlap": {
     "available": true,
-    "fireTotal": 610,
-    "otherTotal": 3220,
+    "fireTotal": 616,
+    "otherTotal": 3208,
     "both": 234,
-    "fireOnly": 376,
-    "otherOnly": 2986,
+    "fireOnly": 382,
+    "otherOnly": 2974,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -515,7 +515,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and Metasploit"
       },
       {
-        "number": "3,220",
+        "number": "3,208",
         "desc": "Metasploit catalog"
       }
     ],
@@ -525,21 +525,21 @@ window.__FIRE_OVERRIDES = {
       "Metasploit only"
     ],
     "data": [
-      376,
+      382,
       234,
-      2986
+      2974
     ]
   },
   "fireExploitdbOverlap": {
     "available": true,
-    "fireTotal": 610,
-    "otherTotal": 25091,
+    "fireTotal": 616,
+    "otherTotal": 25086,
     "both": 154,
-    "fireOnly": 456,
-    "otherOnly": 24937,
+    "fireOnly": 462,
+    "otherOnly": 24932,
     "stats": [
       {
-        "number": "25.2%",
+        "number": "25.0%",
         "desc": "of FIRE vulns are in ExploitDB"
       },
       {
@@ -553,18 +553,18 @@ window.__FIRE_OVERRIDES = {
       "ExploitDB only"
     ],
     "data": [
-      456,
+      462,
       154,
-      24937
+      24932
     ]
   },
   "fireExploitRefsOverlap": {
     "available": true,
-    "fireTotal": 610,
-    "otherTotal": 43312,
-    "both": 87,
-    "fireOnly": 523,
-    "otherOnly": 43225,
+    "fireTotal": 616,
+    "otherTotal": 41230,
+    "both": 88,
+    "fireOnly": 528,
+    "otherOnly": 41142,
     "stats": [
       {
         "number": "14.3%",
@@ -581,21 +581,21 @@ window.__FIRE_OVERRIDES = {
       "Exploit refs only"
     ],
     "data": [
-      523,
-      87,
-      43225
+      528,
+      88,
+      41142
     ]
   },
   "fireGreenboneOverlap": {
     "available": true,
-    "fireTotal": 610,
-    "otherTotal": 75648,
-    "both": 173,
-    "fireOnly": 437,
-    "otherOnly": 75475,
+    "fireTotal": 616,
+    "otherTotal": 75641,
+    "both": 176,
+    "fireOnly": 440,
+    "otherOnly": 75465,
     "stats": [
       {
-        "number": "28.4%",
+        "number": "28.6%",
         "desc": "of FIRE vulns have an OpenVAS NASL"
       },
       {
@@ -609,21 +609,21 @@ window.__FIRE_OVERRIDES = {
       "OpenVAS only"
     ],
     "data": [
-      437,
-      173,
-      75475
+      440,
+      176,
+      75465
     ]
   },
   "fireShadowserverOverlap": {
     "available": true,
-    "fireTotal": 610,
+    "fireTotal": 616,
     "otherTotal": 1254,
     "both": 168,
-    "fireOnly": 442,
+    "fireOnly": 448,
     "otherOnly": 1086,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -641,21 +641,21 @@ window.__FIRE_OVERRIDES = {
       "Shadowserver only"
     ],
     "data": [
-      442,
+      448,
       168,
       1086
     ]
   },
   "fireEnisaOverlap": {
     "available": true,
-    "fireTotal": 610,
+    "fireTotal": 616,
     "otherTotal": 39,
     "both": 25,
-    "fireOnly": 585,
+    "fireOnly": 591,
     "otherOnly": 14,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -673,21 +673,21 @@ window.__FIRE_OVERRIDES = {
       "ENISA only"
     ],
     "data": [
-      585,
+      591,
       25,
       14
     ]
   },
   "fireEuvdKevOverlap": {
     "available": true,
-    "fireTotal": 610,
-    "otherTotal": 1752,
+    "fireTotal": 616,
+    "otherTotal": 1740,
     "both": 430,
-    "fireOnly": 180,
-    "otherOnly": 1322,
+    "fireOnly": 186,
+    "otherOnly": 1310,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -695,7 +695,7 @@ window.__FIRE_OVERRIDES = {
         "desc": "In both FIRE and EUVD KEV"
       },
       {
-        "number": "1,752",
+        "number": "1,740",
         "desc": "EUVD KEV catalog"
       }
     ],
@@ -705,9 +705,9 @@ window.__FIRE_OVERRIDES = {
       "EUVD KEV only"
     ],
     "data": [
-      180,
+      186,
       430,
-      1322
+      1310
     ]
   },
   "fireEpssCorrelation": {
@@ -919,7 +919,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 8.4
+        "y": 7.8
       },
       {
         "x": 9.8,
@@ -931,7 +931,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 29
+        "y": 28
       },
       {
         "x": 7.8,
@@ -943,7 +943,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 30
+        "y": 29
       },
       {
         "x": 6.6,
@@ -1043,7 +1043,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 8.1
+        "y": 8
       },
       {
         "x": 7.5,
@@ -1067,7 +1067,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 8.3
+        "y": 7.7
       },
       {
         "x": 8.1,
@@ -1119,7 +1119,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 6.5,
-        "y": 19
+        "y": 18
       },
       {
         "x": 6.8,
@@ -1207,7 +1207,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.8,
-        "y": 45
+        "y": 49
       },
       {
         "x": 8.8,
@@ -1283,7 +1283,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 4.9,
-        "y": 52
+        "y": 51
       },
       {
         "x": 9.8,
@@ -1574,12 +1574,16 @@ window.__FIRE_OVERRIDES = {
         "y": 83
       },
       {
+        "x": 8.8,
+        "y": 0.92
+      },
+      {
         "x": 9.8,
         "y": 100
       },
       {
         "x": 9.8,
-        "y": 91
+        "y": 92
       },
       {
         "x": 8.8,
@@ -1607,7 +1611,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.5,
-        "y": 94
+        "y": 85
       },
       {
         "x": 7.2,
@@ -1620,6 +1624,10 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 9.8,
         "y": 100
+      },
+      {
+        "x": 7.8,
+        "y": 0.29
       },
       {
         "x": 9.8,
@@ -1802,6 +1810,10 @@ window.__FIRE_OVERRIDES = {
         "y": 78
       },
       {
+        "x": 5.4,
+        "y": 0.55
+      },
+      {
         "x": 7.5,
         "y": 81
       },
@@ -1923,7 +1935,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 90
+        "y": 91
       },
       {
         "x": 9.6,
@@ -1972,6 +1984,10 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 8.8,
         "y": 100
+      },
+      {
+        "x": 5.4,
+        "y": 0.38
       },
       {
         "x": 9.8,
@@ -2058,6 +2074,10 @@ window.__FIRE_OVERRIDES = {
         "y": 13
       },
       {
+        "x": 8.8,
+        "y": 1.3
+      },
+      {
         "x": 9.8,
         "y": 83
       },
@@ -2120,6 +2140,10 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 10,
         "y": 100
+      },
+      {
+        "x": 4.3,
+        "y": 0.33
       },
       {
         "x": 9.8,
@@ -2355,7 +2379,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 4.2,
-        "y": 0.22
+        "y": 0.21
       },
       {
         "x": 9.8,
@@ -2403,7 +2427,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 6.5
+        "y": 6.4
       },
       {
         "x": 8.8,
@@ -2479,7 +2503,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 22
+        "y": 21
       },
       {
         "x": 9,
@@ -2539,7 +2563,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.1,
-        "y": 97
+        "y": 96
       },
       {
         "x": 9.8,
@@ -2639,7 +2663,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 9.3,
-        "y": 85
+        "y": 6.3
       },
       {
         "x": 5.1,
@@ -2971,7 +2995,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7.8,
-        "y": 1.1
+        "y": 1
       },
       {
         "x": 4.3,
@@ -3043,7 +3067,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 8.8,
-        "y": 2.5
+        "y": 2.3
       },
       {
         "x": 10,
@@ -3055,7 +3079,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 5.4,
-        "y": 4.7
+        "y": 4.3
       },
       {
         "x": 6.1,
@@ -3118,21 +3142,21 @@ window.__FIRE_OVERRIDES = {
         "y": 12
       }
     ],
-    "count": 601,
-    "totalFire": 610
+    "count": 607,
+    "totalFire": 616
   },
   "fireSankey": {
     "available": true,
     "node": {
       "label": [
-        "Critical (47,146, 11.7%)",
-        "High (140,116, 34.8%)",
-        "Medium (170,623, 42.3%)",
-        "Low (16,192, 4.0%)",
-        "No-score (28,888, 7.2%)",
-        "No breach/loss (397,422, 98.6%)",
-        "ICE (4,933, 1.2%)",
-        "FIRE (610, 0.2%)"
+        "Critical (46,722, 11.7%)",
+        "High (138,661, 34.8%)",
+        "Medium (169,057, 42.4%)",
+        "Low (16,030, 4.0%)",
+        "No-score (28,124, 7.1%)",
+        "No breach/loss (393,112, 98.6%)",
+        "ICE (4,866, 1.2%)",
+        "FIRE (616, 0.2%)"
       ],
       "color": [
         "#c62828",
@@ -3181,19 +3205,19 @@ window.__FIRE_OVERRIDES = {
         7
       ],
       "value": [
-        45078,
-        137814,
-        169623,
-        16158,
-        28749,
-        1754,
-        2083,
-        933,
-        33,
-        67,
-        219,
+        44678,
+        136383,
+        168065,
+        15997,
+        27989,
+        1730,
+        2056,
+        922,
+        32,
+        70,
+        222,
         314,
-        130,
+        126,
         1,
         9
       ]
@@ -3212,72 +3236,72 @@ window.__FIRE_OVERRIDES = {
     "nvd": {
       "data": [
         314,
-        219,
-        67,
+        222,
+        70,
         1,
         9
       ],
-      "total": 610
+      "total": 616
     },
     "euvd": {
       "data": [
         314,
-        219,
-        67,
+        222,
+        70,
         1,
         9
       ],
-      "total": 610
+      "total": 616
     },
     "cnvd": {
       "data": [
-        136,
+        134,
         111,
         25,
         0,
         0
       ],
-      "total": 272
+      "total": 270
     },
     "jvn": {
       "data": [
-        308,
-        212,
-        66,
+        258,
+        169,
+        59,
         1,
         0
       ],
-      "total": 587
+      "total": 487
     },
     "bdu": {
       "data": [
         292,
-        197,
+        199,
         47,
         1,
         0
       ],
-      "total": 537
+      "total": 539
     }
   },
   "fireIceOverlap": {
     "available": true,
-    "fireTotal": 610,
-    "otherTotal": 5456,
-    "both": 523,
-    "fireOnly": 87,
-    "otherOnly": 4933,
+    "fireTotal": 616,
+    "otherTotal": 5398,
+    "both": 527,
+    "fireOnly": 89,
+    "otherOnly": 4871,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
-        "number": "523",
+        "number": "527",
         "desc": "In both FIRE and ICE (combined)"
       },
       {
-        "number": "5,456",
+        "number": "5,398",
         "desc": "ICE (combined) catalog"
       }
     ],
@@ -3287,21 +3311,21 @@ window.__FIRE_OVERRIDES = {
       "ICE only"
     ],
     "data": [
-      87,
-      523,
-      4933
+      89,
+      527,
+      4871
     ]
   },
   "fireMandiantOverlap": {
     "available": true,
-    "fireTotal": 610,
+    "fireTotal": 616,
     "otherTotal": 25,
     "both": 20,
-    "fireOnly": 590,
+    "fireOnly": 596,
     "otherOnly": 5,
     "stats": [
       {
-        "number": "610",
+        "number": "616",
         "desc": "FIRE vulnerabilities"
       },
       {
@@ -3319,7 +3343,7 @@ window.__FIRE_OVERRIDES = {
       "Mandiant only"
     ],
     "data": [
-      590,
+      596,
       20,
       5
     ]
@@ -3337,16 +3361,16 @@ window.__FIRE_OVERRIDES = {
       "CWE-287",
       "CWE-416",
       "CWE-89",
-      "CWE-284",
       "CWE-918",
+      "CWE-284",
       "CWE-288",
       "CWE-122",
       "CWE-434",
       "CWE-863",
       "CWE-121",
+      "CWE-79",
       "CWE-77",
       "CWE-59",
-      "CWE-79",
       "CWE-120",
       "CWE-119",
       "CWE-269",
@@ -3387,6 +3411,7 @@ window.__FIRE_OVERRIDES = {
       "CWE-674",
       "CWE-664",
       "CWE-610",
+      "CWE-908",
       "CWE-352",
       "CWE-197",
       "CWE-807",
@@ -3408,6 +3433,7 @@ window.__FIRE_OVERRIDES = {
       "CWE-259",
       "CWE-44",
       "CWE-321",
+      "CWE-457",
       "CWE-93",
       "CWE-501",
       "CWE-23",
@@ -3429,13 +3455,13 @@ window.__FIRE_OVERRIDES = {
       36,
       34,
       29,
-      26,
+      25,
       23,
       23,
       20,
-      16,
+      17,
       15,
-      13,
+      14,
       13,
       12,
       11,
@@ -3444,7 +3470,7 @@ window.__FIRE_OVERRIDES = {
       10,
       9,
       9,
-      7,
+      9,
       7,
       6,
       5,
@@ -3476,6 +3502,8 @@ window.__FIRE_OVERRIDES = {
       2,
       2,
       2,
+      1,
+      1,
       1,
       1,
       1,
@@ -3533,16 +3561,16 @@ window.__FIRE_OVERRIDES = {
       "CWE-287: Improper Authentication",
       "CWE-416: Use After Free",
       "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
-      "CWE-284: Improper Access Control",
       "CWE-918: Server-Side Request Forgery (SSRF)",
+      "CWE-284: Improper Access Control",
       "CWE-288: Authentication Bypass Using an Alternate Path or Channel",
       "CWE-122: Heap-based Buffer Overflow",
       "CWE-434: Unrestricted Upload of File with Dangerous Type",
       "CWE-863: Incorrect Authorization",
       "CWE-121: Stack-based Buffer Overflow",
+      "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
       "CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')",
       "CWE-59: Improper Link Resolution Before File Access ('Link Following')",
-      "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
       "CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
       "CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer",
       "CWE-269: Improper Privilege Management",
@@ -3583,6 +3611,7 @@ window.__FIRE_OVERRIDES = {
       "CWE-674: Uncontrolled Recursion",
       "CWE-664: Improper Control of a Resource Through its Lifetime",
       "CWE-610: Externally Controlled Reference to a Resource in Another Sphere",
+      "CWE-908: Use of Uninitialized Resource",
       "CWE-352: Cross-Site Request Forgery (CSRF)",
       "CWE-197: Numeric Truncation Error",
       "CWE-807: Reliance on Untrusted Inputs in a Security Decision",
@@ -3604,6 +3633,7 @@ window.__FIRE_OVERRIDES = {
       "CWE-259: Use of Hard-coded Password",
       "CWE-44: Path Equivalence: 'file.name' (Internal Dot)",
       "CWE-321: Use of Hard-coded Cryptographic Key",
+      "CWE-457: Use of Uninitialized Variable",
       "CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')",
       "CWE-501: Trust Boundary Violation",
       "CWE-23: Relative Path Traversal",
@@ -3655,17 +3685,17 @@ window.__FIRE_OVERRIDES = {
       36,
       34,
       29,
-      26,
+      25,
       23,
       23,
       20,
-      16,
+      17,
       15,
-      13,
+      14,
       11,
       10,
       9,
-      7,
+      9,
       6,
       5,
       4,
@@ -3712,16 +3742,16 @@ window.__FIRE_OVERRIDES = {
       "CWEs without FIRE vulns"
     ],
     "data": [
-      96,
-      873
+      98,
+      871
     ],
     "stats": [
       {
-        "number": "96",
+        "number": "98",
         "desc": "CWEs with ≥1 FIRE vulnerability"
       },
       {
-        "number": "9.9%",
+        "number": "10.1%",
         "desc": "Of all CWEs in CWE catalog"
       }
     ]
@@ -3741,8 +3771,8 @@ window.__FIRE_OVERRIDES = {
       "A09: Security Logging & Alerting Failures"
     ],
     "data": [
-      136,
-      104,
+      137,
+      105,
       71,
       40,
       28,
@@ -4929,14 +4959,14 @@ window.__FIRE_OVERRIDES = {
   },
   "privtoolsMitre": {
     "available": true,
-    "fireTotal": 300,
+    "fireTotal": 296,
     "otherTotal": 611,
     "both": 5,
-    "fireOnly": 295,
+    "fireOnly": 291,
     "otherOnly": 606,
     "stats": [
       {
-        "number": "300",
+        "number": "296",
         "desc": "PrivTools EU groups"
       },
       {
@@ -4954,21 +4984,21 @@ window.__FIRE_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      295,
+      291,
       5,
       606
     ]
   },
   "ransomfeedMitre": {
     "available": true,
-    "fireTotal": 312,
+    "fireTotal": 307,
     "otherTotal": 611,
     "both": 7,
-    "fireOnly": 305,
+    "fireOnly": 300,
     "otherOnly": 604,
     "stats": [
       {
-        "number": "312",
+        "number": "307",
         "desc": "RansomFeed.it gangs"
       },
       {
@@ -4986,7 +5016,7 @@ window.__FIRE_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      305,
+      300,
       7,
       604
     ]
@@ -4997,68 +5027,72 @@ window.__FIRE_OVERRIDES = {
       "CL0P",
       "BlackCat/ALPHV",
       "Black Basta",
-      "Roman Valerevich Seleznev, aka 'Track2'",
       "LockBit",
+      "Roman Valerevich Seleznev, aka 'Track2'",
       "Wizard Spider",
       "Anonymous",
       "BlackCat (ALPHV)",
       "Frederick Eugene Wood",
       "ALPHV/BlackCat",
       "Lazarus Group",
+      "RHYSIDA",
       "GOLD SOUTHFIELD",
-      "SamSam",
-      "Maze",
       "Conti",
-      "Rhysida",
-      "Carl Jack Smith",
-      "Sherwin Hue, Edward Morris, David Edme, Veronica Devaughn, Willie Reynolds, Carlos Irwin, Cassandra Davis, Sabrina Smith, Christina Smith and Kayla Brady",
-      "Hive",
-      "DoppelPaymer",
-      "Magecart",
-      "Erica Hall, Jasmin Rembert, Sharelle Finnie, Rufus Bethea, Bianca Cook, Courtney Gissendanner, Brandi Johnson, Demarcus Hough, Darren Baldwin, Aaron Hough, Minnie Powell, and Eloise Sermons",
+      "Maze",
       "BlackSuit",
+      "SamSam",
+      "Sherwin Hue, Edward Morris, David Edme, Veronica Devaughn, Willie Reynolds, Carlos Irwin, Cassandra Davis, Sabrina Smith, Christina Smith and Kayla Brady",
+      "Carl Jack Smith",
+      "Hunters International",
+      "Magecart",
+      "Hive",
+      "Bianlian",
+      "DoppelPaymer",
+      "Royal",
+      "Erica Hall, Jasmin Rembert, Sharelle Finnie, Rufus Bethea, Bianca Cook, Courtney Gissendanner, Brandi Johnson, Demarcus Hough, Darren Baldwin, Aaron Hough, Minnie Powell, and Eloise Sermons",
+      "Vice Society",
+      "Shanell Angelia Bowser and Michelle Courtney Johnson",
+      "ShinyHunters",
+      "Lorenz",
       "Play",
       "Michael Mills, Jr., Velente Hill and Aaron Jones",
       "APT38",
       "CircusSpider",
-      "Lorenz",
       "INC Ransom",
-      "Shanell Angelia Bowser and Michelle Courtney Johnson",
-      "Igors Nagaicevs",
-      "Royal",
-      "RansomHub",
-      "NotPetya Ransomware Group",
-      "ShinyHunters",
-      "DarkSide",
-      "Vice Society",
-      "Ragnar_Locker",
+      "Qilin",
       "Akira",
-      "Qilin"
+      "Igors Nagaicevs",
+      "RansomHub",
+      "NotPetya Ransomware Group"
     ],
     "data": [
-      944,
-      22,
+      1078,
+      25,
+      20,
       19,
       18,
-      16,
       15,
       13,
+      13,
       12,
-      12,
+      11,
       10,
       10,
+      9,
       9,
       8,
       8,
       8,
-      8,
       7,
       7,
+      7,
       6,
       6,
       6,
       6,
       6,
+      6,
+      6,
       5,
       5,
       5,
@@ -5070,63 +5104,59 @@ window.__FIRE_OVERRIDES = {
       5,
       5,
       5,
-      4,
-      4,
-      4,
-      4,
-      4,
-      3
+      5,
+      5
     ],
     "points": [
       {
-        "x": 944,
-        "y": 7071133659.110001,
-        "r": 6.071909833821458,
+        "x": 1078,
+        "y": 10408336359.109999,
+        "r": 6.1158627424019665,
         "label": "CL0P",
-        "events": 944,
-        "totalAmount": 7071133659.110001,
-        "avgAmount": 7490607.68973517
+        "events": 1078,
+        "totalAmount": 10408336359.109999,
+        "avgAmount": 9655228.533497216
       },
       {
-        "x": 22,
-        "y": 6225494510.17,
-        "r": 8.716579422619636,
+        "x": 25,
+        "y": 7836649883.17,
+        "r": 9.7615919439216,
         "label": "BlackCat/ALPHV",
-        "events": 22,
-        "totalAmount": 6225494510.17,
-        "avgAmount": 282977023.18954545
+        "events": 25,
+        "totalAmount": 7836649883.17,
+        "avgAmount": 313465995.3268
+      },
+      {
+        "x": 20,
+        "y": 215479641.35000002,
+        "r": 6.12928778481,
+        "label": "Black Basta",
+        "events": 20,
+        "totalAmount": 215479641.35000002,
+        "avgAmount": 10773982.0675
       },
       {
         "x": 19,
-        "y": 214294641.35000002,
-        "r": 6.108275187208421,
-        "label": "Black Basta",
+        "y": 198710654,
+        "r": 6.12550146568421,
+        "label": "LockBit",
         "events": 19,
-        "totalAmount": 214294641.35000002,
-        "avgAmount": 11278665.334210528
+        "totalAmount": 198710654,
+        "avgAmount": 10458455.47368421
       },
       {
         "x": 18,
         "y": 2316007.27,
-        "r": 6.001235203877333,
+        "r": 6.001544004846667,
         "label": "Roman Valerevich Seleznev, aka 'Track2'",
         "events": 18,
         "totalAmount": 2316007.27,
         "avgAmount": 128667.07055555556
       },
       {
-        "x": 16,
-        "y": 191785654,
-        "r": 6.1150713924,
-        "label": "LockBit",
-        "events": 16,
-        "totalAmount": 191785654,
-        "avgAmount": 11986603.375
-      },
-      {
         "x": 15,
         "y": 165333800,
-        "r": 6.105813632,
+        "r": 6.13226704,
         "label": "Wizard Spider",
         "events": 15,
         "totalAmount": 165333800,
@@ -5135,70 +5165,79 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 13,
         "y": 11119088.620000001,
-        "r": 6.008211019288615,
+        "r": 6.010263774110769,
         "label": "Anonymous",
         "events": 13,
         "totalAmount": 11119088.620000001,
         "avgAmount": 855314.5092307694
       },
       {
-        "x": 12,
-        "y": 267344200.05,
-        "r": 6.21387536004,
+        "x": 13,
+        "y": 271344200.05,
+        "r": 6.2504715692769235,
         "label": "BlackCat (ALPHV)",
-        "events": 12,
-        "totalAmount": 267344200.05,
-        "avgAmount": 22278683.337500002
+        "events": 13,
+        "totalAmount": 271344200.05,
+        "avgAmount": 20872630.773076925
       },
       {
         "x": 12,
-        "y": 24213.680000000004,
-        "r": 6.000019370944,
+        "y": 24213.68,
+        "r": 6.00002421368,
         "label": "Frederick Eugene Wood",
         "events": 12,
-        "totalAmount": 24213.680000000004,
-        "avgAmount": 2017.806666666667
+        "totalAmount": 24213.68,
+        "avgAmount": 2017.8066666666666
       },
       {
-        "x": 10,
-        "y": 135528000,
-        "r": 6.13010688,
+        "x": 11,
+        "y": 216778000,
+        "r": 6.236485090909091,
         "label": "ALPHV/BlackCat",
-        "events": 10,
-        "totalAmount": 135528000,
-        "avgAmount": 13552800
+        "events": 11,
+        "totalAmount": 216778000,
+        "avgAmount": 19707090.90909091
       },
       {
         "x": 10,
-        "y": 717495605.6200001,
-        "r": 6.6887957813952,
+        "y": 652495605.6200001,
+        "r": 6.7829947267440005,
         "label": "Lazarus Group",
         "events": 10,
-        "totalAmount": 717495605.6200001,
-        "avgAmount": 71749560.562
+        "totalAmount": 652495605.6200001,
+        "avgAmount": 65249560.562000014
+      },
+      {
+        "x": 10,
+        "y": 59177015.5,
+        "r": 6.0710124186,
+        "label": "RHYSIDA",
+        "events": 10,
+        "totalAmount": 59177015.5,
+        "avgAmount": 5917701.55
       },
       {
         "x": 9,
         "y": 34967405,
-        "r": 6.037298565333334,
+        "r": 6.046623206666666,
         "label": "GOLD SOUTHFIELD",
         "events": 9,
         "totalAmount": 34967405,
         "avgAmount": 3885267.222222222
       },
       {
-        "x": 8,
-        "y": 41417756,
-        "r": 6.0497013072,
-        "label": "SamSam",
-        "events": 8,
-        "totalAmount": 41417756,
-        "avgAmount": 5177219.5
+        "x": 9,
+        "y": 188791855.16,
+        "r": 6.251722473546667,
+        "label": "Conti",
+        "events": 9,
+        "totalAmount": 188791855.16,
+        "avgAmount": 20976872.795555554
       },
       {
         "x": 8,
         "y": 95829532.58,
-        "r": 6.114995439096,
+        "r": 6.14374429887,
         "label": "Maze",
         "events": 8,
         "totalAmount": 95829532.58,
@@ -5206,26 +5245,35 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 8,
-        "y": 187809600,
-        "r": 6.22537152,
-        "label": "Conti",
+        "y": 159294913,
+        "r": 6.2389423695,
+        "label": "BlackSuit",
         "events": 8,
-        "totalAmount": 187809600,
-        "avgAmount": 23476200
+        "totalAmount": 159294913,
+        "avgAmount": 19911864.125
       },
       {
         "x": 8,
-        "y": 55777015.5,
-        "r": 6.0669324186,
-        "label": "Rhysida",
+        "y": 41417756,
+        "r": 6.062126634,
+        "label": "SamSam",
         "events": 8,
-        "totalAmount": 55777015.5,
-        "avgAmount": 6972126.9375
+        "totalAmount": 41417756,
+        "avgAmount": 5177219.5
+      },
+      {
+        "x": 7,
+        "y": 4242143.01,
+        "r": 6.00727224516,
+        "label": "Sherwin Hue, Edward Morris, David Edme, Veronica Devaughn, Willie Reynolds, Carlos Irwin, Cassandra Davis, Sabrina Smith, Christina Smith and Kayla Brady",
+        "events": 7,
+        "totalAmount": 4242143.01,
+        "avgAmount": 606020.4299999999
       },
       {
         "x": 7,
         "y": 144700.01875,
-        "r": 6.00019844574,
+        "r": 6.000248057175,
         "label": "Carl Jack Smith",
         "events": 7,
         "totalAmount": 144700.01875,
@@ -5233,35 +5281,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 7,
-        "y": 4242143.01,
-        "r": 6.005817796128,
-        "label": "Sherwin Hue, Edward Morris, David Edme, Veronica Devaughn, Willie Reynolds, Carlos Irwin, Cassandra Davis, Sabrina Smith, Christina Smith and Kayla Brady",
+        "y": 37890000,
+        "r": 6.064954285714285,
+        "label": "Hunters International",
         "events": 7,
-        "totalAmount": 4242143.01,
-        "avgAmount": 606020.4299999999
-      },
-      {
-        "x": 6,
-        "y": 76646984,
-        "r": 6.1226351744,
-        "label": "Hive",
-        "events": 6,
-        "totalAmount": 76646984,
-        "avgAmount": 12774497.333333334
-      },
-      {
-        "x": 6,
-        "y": 13433000,
-        "r": 6.0214928,
-        "label": "DoppelPaymer",
-        "events": 6,
-        "totalAmount": 13433000,
-        "avgAmount": 2238833.3333333335
+        "totalAmount": 37890000,
+        "avgAmount": 5412857.142857143
       },
       {
         "x": 6,
         "y": 37974278,
-        "r": 6.0607588448,
+        "r": 6.075948556,
         "label": "Magecart",
         "events": 6,
         "totalAmount": 37974278,
@@ -5269,8 +5299,44 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 6,
+        "y": 76646984,
+        "r": 6.153293968,
+        "label": "Hive",
+        "events": 6,
+        "totalAmount": 76646984,
+        "avgAmount": 12774497.333333334
+      },
+      {
+        "x": 6,
+        "y": 11855000,
+        "r": 6.02371,
+        "label": "Bianlian",
+        "events": 6,
+        "totalAmount": 11855000,
+        "avgAmount": 1975833.3333333333
+      },
+      {
+        "x": 6,
+        "y": 13433000,
+        "r": 6.026866,
+        "label": "DoppelPaymer",
+        "events": 6,
+        "totalAmount": 13433000,
+        "avgAmount": 2238833.3333333335
+      },
+      {
+        "x": 6,
+        "y": 19871571.77,
+        "r": 6.03974314354,
+        "label": "Royal",
+        "events": 6,
+        "totalAmount": 19871571.77,
+        "avgAmount": 3311928.6283333334
+      },
+      {
+        "x": 6,
         "y": 1047264.5800000001,
-        "r": 6.001675623328,
+        "r": 6.00209452916,
         "label": "Erica Hall, Jasmin Rembert, Sharelle Finnie, Rufus Bethea, Bianca Cook, Courtney Gissendanner, Brandi Johnson, Demarcus Hough, Darren Baldwin, Aaron Hough, Minnie Powell, and Eloise Sermons",
         "events": 6,
         "totalAmount": 1047264.5800000001,
@@ -5278,26 +5344,53 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 6,
-        "y": 158365787,
-        "r": 6.2533852592,
-        "label": "BlackSuit",
+        "y": 15478000,
+        "r": 6.030956,
+        "label": "Vice Society",
         "events": 6,
-        "totalAmount": 158365787,
-        "avgAmount": 26394297.833333332
+        "totalAmount": 15478000,
+        "avgAmount": 2579666.6666666665
       },
       {
         "x": 5,
-        "y": 13882500,
-        "r": 6.0266544,
+        "y": 407254.22000000003,
+        "r": 6.000977410128,
+        "label": "Shanell Angelia Bowser and Michelle Courtney Johnson",
+        "events": 5,
+        "totalAmount": 407254.22000000003,
+        "avgAmount": 81450.84400000001
+      },
+      {
+        "x": 5,
+        "y": 27670000,
+        "r": 6.066408,
+        "label": "ShinyHunters",
+        "events": 5,
+        "totalAmount": 27670000,
+        "avgAmount": 5534000
+      },
+      {
+        "x": 5,
+        "y": 6266176.49,
+        "r": 6.015038823576,
+        "label": "Lorenz",
+        "events": 5,
+        "totalAmount": 6266176.49,
+        "avgAmount": 1253235.298
+      },
+      {
+        "x": 5,
+        "y": 31999260,
+        "r": 6.076798224,
         "label": "Play",
         "events": 5,
-        "totalAmount": 13882500,
-        "avgAmount": 2776500
+        "totalAmount": 31999260,
+        "avgAmount": 6399852
       },
       {
         "x": 5,
         "y": 213925.44000000003,
-        "r": 6.0004107368448,
+        "r": 6.000513421056,
         "label": "Michael Mills, Jr., Velente Hill and Aaron Jones",
         "events": 5,
         "totalAmount": 213925.44000000003,
@@ -5306,7 +5399,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 5,
         "y": 165316524,
-        "r": 6.31740772608,
+        "r": 6.3967596576,
         "label": "APT38",
         "events": 5,
         "totalAmount": 165316524,
@@ -5315,7 +5408,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 5,
         "y": 4013795,
-        "r": 6.0077064864,
+        "r": 6.009633108,
         "label": "CircusSpider",
         "events": 5,
         "totalAmount": 4013795,
@@ -5323,35 +5416,35 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 5,
-        "y": 6266176.49,
-        "r": 6.0120310588608,
-        "label": "Lorenz",
-        "events": 5,
-        "totalAmount": 6266176.49,
-        "avgAmount": 1253235.298
-      },
-      {
-        "x": 5,
-        "y": 3047880,
-        "r": 6.0058519296,
+        "y": 4497880,
+        "r": 6.010794912,
         "label": "INC Ransom",
         "events": 5,
-        "totalAmount": 3047880,
-        "avgAmount": 609576
+        "totalAmount": 4497880,
+        "avgAmount": 899576
       },
       {
         "x": 5,
-        "y": 407254.22000000003,
-        "r": 6.0007819281024,
-        "label": "Shanell Angelia Bowser and Michelle Courtney Johnson",
+        "y": 18108475,
+        "r": 6.04346034,
+        "label": "Qilin",
         "events": 5,
-        "totalAmount": 407254.22000000003,
-        "avgAmount": 81450.84400000001
+        "totalAmount": 18108475,
+        "avgAmount": 3621695
+      },
+      {
+        "x": 5,
+        "y": 7173925,
+        "r": 6.01721742,
+        "label": "Akira",
+        "events": 5,
+        "totalAmount": 7173925,
+        "avgAmount": 1434785
       },
       {
         "x": 5,
         "y": 874886,
-        "r": 6.00167978112,
+        "r": 6.0020997264,
         "label": "Igors Nagaicevs",
         "events": 5,
         "totalAmount": 874886,
@@ -5359,17 +5452,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 5,
-        "y": 19816571.77,
-        "r": 6.0380478177984,
-        "label": "Royal",
-        "events": 5,
-        "totalAmount": 19816571.77,
-        "avgAmount": 3963314.354
-      },
-      {
-        "x": 5,
         "y": 87480000,
-        "r": 6.1679616,
+        "r": 6.209952,
         "label": "RansomHub",
         "events": 5,
         "totalAmount": 87480000,
@@ -5378,7 +5462,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 5,
         "y": 1884470300,
-        "r": 9.618182976,
+        "r": 10.52272872,
         "label": "NotPetya Ransomware Group",
         "events": 5,
         "totalAmount": 1884470300,
@@ -5386,17 +5470,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 4,
-        "y": 11270000,
-        "r": 6.027048,
-        "label": "ShinyHunters",
+        "y": 522420088.5,
+        "r": 7.5672602655,
+        "label": "DragonForce",
         "events": 4,
-        "totalAmount": 11270000,
-        "avgAmount": 2817500
+        "totalAmount": 522420088.5,
+        "avgAmount": 130605022.125
       },
       {
         "x": 4,
         "y": 43775000,
-        "r": 6.10506,
+        "r": 6.131325,
         "label": "DarkSide",
         "events": 4,
         "totalAmount": 43775000,
@@ -5404,17 +5488,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 4,
-        "y": 10828000,
-        "r": 6.0259872,
-        "label": "Vice Society",
-        "events": 4,
-        "totalAmount": 10828000,
-        "avgAmount": 2707000
-      },
-      {
-        "x": 4,
         "y": 90619994.6,
-        "r": 6.21748798704,
+        "r": 6.2718599838,
         "label": "Ragnar_Locker",
         "events": 4,
         "totalAmount": 90619994.6,
@@ -5422,53 +5497,35 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 4,
-        "y": 5673925,
-        "r": 6.01361742,
-        "label": "Akira",
+        "y": 67336000,
+        "r": 6.202008,
+        "label": "Cactus",
         "events": 4,
-        "totalAmount": 5673925,
-        "avgAmount": 1418481.25
+        "totalAmount": 67336000,
+        "avgAmount": 16834000
+      },
+      {
+        "x": 4,
+        "y": 26300000,
+        "r": 6.0789,
+        "label": "Safepay",
+        "events": 4,
+        "totalAmount": 26300000,
+        "avgAmount": 6575000
       },
       {
         "x": 3,
-        "y": 2376475,
-        "r": 6.00760472,
-        "label": "Qilin",
+        "y": 9208000,
+        "r": 6.036832,
+        "label": "FIN7",
         "events": 3,
-        "totalAmount": 2376475,
-        "avgAmount": 792158.3333333334
-      },
-      {
-        "x": 3,
-        "y": 5900000,
-        "r": 6.01888,
-        "label": "Embargo",
-        "events": 3,
-        "totalAmount": 5900000,
-        "avgAmount": 1966666.6666666667
-      },
-      {
-        "x": 3,
-        "y": 5000000,
-        "r": 6.016,
-        "label": "Marius Vintila",
-        "events": 3,
-        "totalAmount": 5000000,
-        "avgAmount": 1666666.6666666667
-      },
-      {
-        "x": 3,
-        "y": 10085000,
-        "r": 6.032272,
-        "label": "BianLian",
-        "events": 3,
-        "totalAmount": 10085000,
-        "avgAmount": 3361666.6666666665
+        "totalAmount": 9208000,
+        "avgAmount": 3069333.3333333335
       },
       {
         "x": 3,
         "y": 40027732,
-        "r": 6.1280887424,
+        "r": 6.160110928,
         "label": "CryptoLocker",
         "events": 3,
         "totalAmount": 40027732,
@@ -5476,8 +5533,35 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 3,
+        "y": 5000000,
+        "r": 6.02,
+        "label": "Marius Vintila",
+        "events": 3,
+        "totalAmount": 5000000,
+        "avgAmount": 1666666.6666666667
+      },
+      {
+        "x": 3,
+        "y": 5900000,
+        "r": 6.0236,
+        "label": "Embargo",
+        "events": 3,
+        "totalAmount": 5900000,
+        "avgAmount": 1966666.6666666667
+      },
+      {
+        "x": 3,
+        "y": 1081931,
+        "r": 6.004327724,
+        "label": "Mespinoza",
+        "events": 3,
+        "totalAmount": 1081931,
+        "avgAmount": 360643.6666666667
+      },
+      {
+        "x": 3,
         "y": 767159,
-        "r": 6.0024549088,
+        "r": 6.003068636,
         "label": "Martin Gottesfeld",
         "events": 3,
         "totalAmount": 767159,
@@ -5486,7 +5570,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 3,
         "y": 27719292,
-        "r": 6.0887017344,
+        "r": 6.110877168,
         "label": "Ransomexx",
         "events": 3,
         "totalAmount": 27719292,
@@ -5494,17 +5578,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 3,
-        "y": 10190000,
-        "r": 6.032608,
-        "label": "Hunters International",
+        "y": 132587265.69,
+        "r": 6.53034906276,
+        "label": "Tian Yinyin and Li Jiadong",
         "events": 3,
-        "totalAmount": 10190000,
-        "avgAmount": 3396666.6666666665
+        "totalAmount": 132587265.69,
+        "avgAmount": 44195755.23
+      },
+      {
+        "x": 3,
+        "y": 473371490,
+        "r": 7.89348596,
+        "label": "Scattered Spider",
+        "events": 3,
+        "totalAmount": 473371490,
+        "avgAmount": 157790496.66666666
       },
       {
         "x": 3,
         "y": 2800000,
-        "r": 6.00896,
+        "r": 6.0112,
         "label": "Oluwatunji Oluwatosin",
         "events": 3,
         "totalAmount": 2800000,
@@ -5513,7 +5606,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 3,
         "y": 66671666,
-        "r": 6.2133493312,
+        "r": 6.266686664,
         "label": "Nathan Leroux, Sanadodeh Nesheiwat, David Pokora, and Austin Alcala",
         "events": 3,
         "totalAmount": 66671666,
@@ -5521,8 +5614,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 3,
+        "y": 6728000,
+        "r": 6.026912,
+        "label": "Karakurt",
+        "events": 3,
+        "totalAmount": 6728000,
+        "avgAmount": 2242666.6666666665
+      },
+      {
+        "x": 3,
+        "y": 5639000000,
+        "r": 28.556,
+        "label": "Scattered Lapsus$ Hunters",
+        "events": 3,
+        "totalAmount": 5639000000,
+        "avgAmount": 1879666666.6666667
+      },
+      {
+        "x": 3,
         "y": 2032500,
-        "r": 6.006504,
+        "r": 6.00813,
         "label": "Hive Ransomware Group",
         "events": 3,
         "totalAmount": 2032500,
@@ -5530,17 +5641,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 3,
-        "y": 801038000,
-        "r": 8.5633216,
-        "label": "Scattered Spider",
+        "y": 10029987,
+        "r": 6.040119948,
+        "label": "Calin Mateias",
         "events": 3,
-        "totalAmount": 801038000,
-        "avgAmount": 267012666.66666666
+        "totalAmount": 10029987,
+        "avgAmount": 3343329
+      },
+      {
+        "x": 3,
+        "y": 1755000,
+        "r": 6.00702,
+        "label": "AvosLocker",
+        "events": 3,
+        "totalAmount": 1755000,
+        "avgAmount": 585000
       },
       {
         "x": 2,
         "y": 5170,
-        "r": 6.000024816,
+        "r": 6.00003102,
         "label": "Carlos Bonilla",
         "events": 2,
         "totalAmount": 5170,
@@ -5548,17 +5668,35 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
-        "y": 875000,
-        "r": 6.0042,
-        "label": "FIN7",
+        "y": 1825000,
+        "r": 6.01095,
+        "label": "Daixin",
         "events": 2,
-        "totalAmount": 875000,
-        "avgAmount": 437500
+        "totalAmount": 1825000,
+        "avgAmount": 912500
+      },
+      {
+        "x": 2,
+        "y": 7900000,
+        "r": 6.0474,
+        "label": "Snatch",
+        "events": 2,
+        "totalAmount": 7900000,
+        "avgAmount": 3950000
+      },
+      {
+        "x": 2,
+        "y": 12258259.98,
+        "r": 6.07354955988,
+        "label": "Lockbit 3.0",
+        "events": 2,
+        "totalAmount": 12258259.98,
+        "avgAmount": 6129129.99
       },
       {
         "x": 2,
         "y": 77732.36,
-        "r": 6.000373115328,
+        "r": 6.00046639416,
         "label": "ADIL YAHYA ZAKARIA SHAKOUR",
         "events": 2,
         "totalAmount": 77732.36,
@@ -5566,26 +5704,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
-        "y": 12127.17,
-        "r": 6.000058210416,
-        "label": "CabinCr3w",
+        "y": 77912.66,
+        "r": 6.00046747596,
+        "label": "Curtis Lawrence Luckey",
         "events": 2,
-        "totalAmount": 12127.17,
-        "avgAmount": 6063.585
-      },
-      {
-        "x": 2,
-        "y": 7846969.82,
-        "r": 6.037665455136,
-        "label": "Adam Mudd",
-        "events": 2,
-        "totalAmount": 7846969.82,
-        "avgAmount": 3923484.91
+        "totalAmount": 77912.66,
+        "avgAmount": 38956.33
       },
       {
         "x": 2,
         "y": 77805.33,
-        "r": 6.000373465584,
+        "r": 6.00046683198,
         "label": "DD4BC",
         "events": 2,
         "totalAmount": 77805.33,
@@ -5593,8 +5722,44 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
+        "y": 87221775,
+        "r": 6.52333065,
+        "label": "LockerGoga Ransomware Group",
+        "events": 2,
+        "totalAmount": 87221775,
+        "avgAmount": 43610887.5
+      },
+      {
+        "x": 2,
+        "y": 10085630,
+        "r": 6.06051378,
+        "label": "Matthew Beddoes",
+        "events": 2,
+        "totalAmount": 10085630,
+        "avgAmount": 5042815
+      },
+      {
+        "x": 2,
+        "y": 12127.17,
+        "r": 6.00007276302,
+        "label": "CabinCr3w",
+        "events": 2,
+        "totalAmount": 12127.17,
+        "avgAmount": 6063.585
+      },
+      {
+        "x": 2,
+        "y": 1223000,
+        "r": 6.007338,
+        "label": "Lizard Squad",
+        "events": 2,
+        "totalAmount": 1223000,
+        "avgAmount": 611500
+      },
+      {
+        "x": 2,
         "y": 3900000,
-        "r": 6.01872,
+        "r": 6.0234,
         "label": "Zammis Clark",
         "events": 2,
         "totalAmount": 3900000,
@@ -5603,7 +5768,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 2,
         "y": 2400000,
-        "r": 6.01152,
+        "r": 6.0144,
         "label": "Akira Ransomware Group",
         "events": 2,
         "totalAmount": 2400000,
@@ -5611,44 +5776,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
-        "y": 77912.66,
-        "r": 6.000373980768,
-        "label": "Curtis Lawrence Luckey",
+        "y": 6325000,
+        "r": 6.03795,
+        "label": "BlackBasta",
         "events": 2,
-        "totalAmount": 77912.66,
-        "avgAmount": 38956.33
+        "totalAmount": 6325000,
+        "avgAmount": 3162500
       },
       {
         "x": 2,
-        "y": 10085630,
-        "r": 6.048411024,
-        "label": "Matthew Beddoes",
+        "y": 7846969.82,
+        "r": 6.04708181892,
+        "label": "Adam Mudd",
         "events": 2,
-        "totalAmount": 10085630,
-        "avgAmount": 5042815
-      },
-      {
-        "x": 2,
-        "y": 1223000,
-        "r": 6.0058704,
-        "label": "Lizard Squad",
-        "events": 2,
-        "totalAmount": 1223000,
-        "avgAmount": 611500
-      },
-      {
-        "x": 2,
-        "y": 87221775,
-        "r": 6.41866452,
-        "label": "LockerGoga Ransomware Group",
-        "events": 2,
-        "totalAmount": 87221775,
-        "avgAmount": 43610887.5
+        "totalAmount": 7846969.82,
+        "avgAmount": 3923484.91
       },
       {
         "x": 2,
         "y": 77777.54,
-        "r": 6.000373332192,
+        "r": 6.00046666524,
         "label": "DD4BC Group",
         "events": 2,
         "totalAmount": 77777.54,
@@ -5656,17 +5803,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
-        "y": 1825000,
-        "r": 6.00876,
-        "label": "Daixin",
-        "events": 2,
-        "totalAmount": 1825000,
-        "avgAmount": 912500
-      },
-      {
-        "x": 2,
         "y": 1150000,
-        "r": 6.00552,
+        "r": 6.0069,
         "label": "BlackByte",
         "events": 2,
         "totalAmount": 1150000,
@@ -5674,17 +5812,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
-        "y": 12258259.98,
-        "r": 6.058839647904,
-        "label": "Lockbit 3.0",
-        "events": 2,
-        "totalAmount": 12258259.98,
-        "avgAmount": 6129129.99
-      },
-      {
-        "x": 2,
         "y": 6150000,
-        "r": 6.02952,
+        "r": 6.0369,
         "label": "BianLian Ransomware Group",
         "events": 2,
         "totalAmount": 6150000,
@@ -5693,7 +5822,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 2,
         "y": 473084000,
-        "r": 8.2708032,
+        "r": 8.838504,
         "label": "Peace",
         "events": 2,
         "totalAmount": 473084000,
@@ -5702,7 +5831,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 2,
         "y": 9312000,
-        "r": 6.0446976,
+        "r": 6.055872,
         "label": "Vladimir Drinkman, Aleksander Kalinin, Roman Kotov, Dmitriy Smilianets and Mikhail Rytikov",
         "events": 2,
         "totalAmount": 9312000,
@@ -5710,8 +5839,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
+        "y": 9975000,
+        "r": 6.05985,
+        "label": "Money Message",
+        "events": 2,
+        "totalAmount": 9975000,
+        "avgAmount": 4987500
+      },
+      {
+        "x": 2,
         "y": 6270000,
-        "r": 6.030096,
+        "r": 6.03762,
         "label": "Black Suit",
         "events": 2,
         "totalAmount": 6270000,
@@ -5720,7 +5858,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 2,
         "y": 4031,
-        "r": 6.0000193488,
+        "r": 6.000024186,
         "label": "Adam V. Corbett",
         "events": 2,
         "totalAmount": 4031,
@@ -5728,17 +5866,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
-        "y": 65611000,
-        "r": 6.3149328,
-        "label": "Cactus",
-        "events": 2,
-        "totalAmount": 65611000,
-        "avgAmount": 32805500
-      },
-      {
-        "x": 2,
         "y": 2100000,
-        "r": 6.01008,
+        "r": 6.0126,
         "label": "Acid House King",
         "events": 2,
         "totalAmount": 2100000,
@@ -5746,8 +5875,35 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
+        "y": 520128.3,
+        "r": 6.0031207698,
+        "label": "NoEscape",
+        "events": 2,
+        "totalAmount": 520128.3,
+        "avgAmount": 260064.15
+      },
+      {
+        "x": 2,
+        "y": 142000000,
+        "r": 6.852,
+        "label": "Dark Angels",
+        "events": 2,
+        "totalAmount": 142000000,
+        "avgAmount": 71000000
+      },
+      {
+        "x": 2,
+        "y": 9000000,
+        "r": 6.054,
+        "label": "Cl0p ransomware",
+        "events": 2,
+        "totalAmount": 9000000,
+        "avgAmount": 4500000
+      },
+      {
+        "x": 2,
         "y": 901000000,
-        "r": 10.3248,
+        "r": 11.406,
         "label": "Sven Jaschan",
         "events": 2,
         "totalAmount": 901000000,
@@ -5756,7 +5912,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 2,
         "y": 86000,
-        "r": 6.0004128,
+        "r": 6.000516,
         "label": "Alecia Rae Bolton",
         "events": 2,
         "totalAmount": 86000,
@@ -5764,26 +5920,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
-        "y": 2978000,
-        "r": 6.0142944,
-        "label": "Karakurt",
+        "y": 2500000,
+        "r": 6.015,
+        "label": "Medusa",
         "events": 2,
-        "totalAmount": 2978000,
-        "avgAmount": 1489000
-      },
-      {
-        "x": 2,
-        "y": 1355000,
-        "r": 6.006504,
-        "label": "AvosLocker",
-        "events": 2,
-        "totalAmount": 1355000,
-        "avgAmount": 677500
+        "totalAmount": 2500000,
+        "avgAmount": 1250000
       },
       {
         "x": 2,
         "y": 74042.51,
-        "r": 6.000355404048,
+        "r": 6.00044425506,
         "label": "Pacific North West hacking trio",
         "events": 2,
         "totalAmount": 74042.51,
@@ -5792,7 +5939,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 2,
         "y": 1550000,
-        "r": 6.00744,
+        "r": 6.0093,
         "label": "TheDarkOverlord (TDO)",
         "events": 2,
         "totalAmount": 1550000,
@@ -5800,17 +5947,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
-        "y": 5029987,
-        "r": 6.0241439376,
-        "label": "Calin Mateias",
+        "y": 7404409.42,
+        "r": 6.04442645652,
+        "label": "RansomHouse",
         "events": 2,
-        "totalAmount": 5029987,
-        "avgAmount": 2514993.5
+        "totalAmount": 7404409.42,
+        "avgAmount": 3702204.71
       },
       {
         "x": 2,
         "y": 777500,
-        "r": 6.003732,
+        "r": 6.004665,
         "label": "Ako",
         "events": 2,
         "totalAmount": 777500,
@@ -5818,44 +5965,35 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 2,
-        "y": 706931,
-        "r": 6.0033932688,
-        "label": "Mespinoza",
-        "events": 2,
-        "totalAmount": 706931,
-        "avgAmount": 353465.5
-      },
-      {
-        "x": 2,
-        "y": 102000000,
-        "r": 6.4896,
-        "label": "Dark Angels",
-        "events": 2,
-        "totalAmount": 102000000,
-        "avgAmount": 51000000
-      },
-      {
-        "x": 2,
         "y": 42500000,
-        "r": 6.204,
+        "r": 6.255,
         "label": "Play Ransomware Group",
         "events": 2,
         "totalAmount": 42500000,
         "avgAmount": 21250000
       },
       {
-        "x": 1,
-        "y": 90000,
-        "r": 6.000864,
-        "label": "Darkside Hackers",
-        "events": 1,
-        "totalAmount": 90000,
-        "avgAmount": 90000
+        "x": 2,
+        "y": 3350000,
+        "r": 6.0201,
+        "label": "Everest",
+        "events": 2,
+        "totalAmount": 3350000,
+        "avgAmount": 1675000
+      },
+      {
+        "x": 2,
+        "y": 329392330,
+        "r": 7.97635398,
+        "label": "The Charlotte-Mecklenburg Hospital Authority",
+        "events": 2,
+        "totalAmount": 329392330,
+        "avgAmount": 164696165
       },
       {
         "x": 1,
         "y": 857074,
-        "r": 6.0082279104,
+        "r": 6.010284888,
         "label": "Imtiaz Khan",
         "events": 1,
         "totalAmount": 857074,
@@ -5864,7 +6002,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 91814.68,
-        "r": 6.000881420928,
+        "r": 6.00110177616,
         "label": "LEUNG",
         "events": 1,
         "totalAmount": 91814.68,
@@ -5872,26 +6010,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 272354.71,
-        "r": 6.002614605216,
-        "label": "Brett Shannon Johnson & Eric Kasheef Mcfatl",
+        "y": 1199251,
+        "r": 6.014391012,
+        "label": "Derek Wai Hung Tam Sing",
         "events": 1,
-        "totalAmount": 272354.71,
-        "avgAmount": 272354.71
-      },
-      {
-        "x": 1,
-        "y": 50000,
-        "r": 6.00048,
-        "label": "Rex Mundi",
-        "events": 1,
-        "totalAmount": 50000,
-        "avgAmount": 50000
+        "totalAmount": 1199251,
+        "avgAmount": 1199251
       },
       {
         "x": 1,
         "y": 600000,
-        "r": 6.00576,
+        "r": 6.0072,
         "label": "Daniel Kaye",
         "events": 1,
         "totalAmount": 600000,
@@ -5900,7 +6029,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 7000000,
-        "r": 6.0672,
+        "r": 6.084,
         "label": "IsHaKdZ",
         "events": 1,
         "totalAmount": 7000000,
@@ -5909,7 +6038,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 580000,
-        "r": 6.005568,
+        "r": 6.00696,
         "label": "Cochen International Ltd",
         "events": 1,
         "totalAmount": 580000,
@@ -5918,7 +6047,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 250000,
-        "r": 6.0024,
+        "r": 6.003,
         "label": "Reyes Daniel Ruiz",
         "events": 1,
         "totalAmount": 250000,
@@ -5926,8 +6055,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 1000000,
+        "r": 6.012,
+        "label": "Ara Keshishyan",
+        "events": 1,
+        "totalAmount": 1000000,
+        "avgAmount": 1000000
+      },
+      {
+        "x": 1,
+        "y": 39000,
+        "r": 6.000468,
+        "label": "Rodelyn Lamour and Nestor Armando Ficquire Herrera",
+        "events": 1,
+        "totalAmount": 39000,
+        "avgAmount": 39000
+      },
+      {
+        "x": 1,
         "y": 6600000,
-        "r": 6.06336,
+        "r": 6.0792,
         "label": "Alexey Bilyuchenko and Aleksandr Verner",
         "events": 1,
         "totalAmount": 6600000,
@@ -5935,17 +6082,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 95861.1,
-        "r": 6.00092026656,
-        "label": "White Hat Hacker",
-        "events": 1,
-        "totalAmount": 95861.1,
-        "avgAmount": 95861.1
-      },
-      {
-        "x": 1,
         "y": 9,
-        "r": 6.0000000864,
+        "r": 6.000000108,
         "label": "Killsec",
         "events": 1,
         "totalAmount": 9,
@@ -5954,7 +6092,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 200000,
-        "r": 6.00192,
+        "r": 6.0024,
         "label": "HiveLeaks",
         "events": 1,
         "totalAmount": 200000,
@@ -5962,17 +6100,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 21254,
-        "r": 6.0002040384,
-        "label": "Daniel Sullivan",
+        "y": 2400000,
+        "r": 6.0288,
+        "label": "Monti",
         "events": 1,
-        "totalAmount": 21254,
-        "avgAmount": 21254
+        "totalAmount": 2400000,
+        "avgAmount": 2400000
+      },
+      {
+        "x": 1,
+        "y": 49018200,
+        "r": 6.5882184,
+        "label": "drussellx",
+        "events": 1,
+        "totalAmount": 49018200,
+        "avgAmount": 49018200
       },
       {
         "x": 1,
         "y": 1312123.35,
-        "r": 6.01259638416,
+        "r": 6.0157454802,
         "label": "Osarhieme Uyi Obaygbona",
         "events": 1,
         "totalAmount": 1312123.35,
@@ -5980,17 +6127,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 1000,
-        "r": 6.0000096,
-        "label": "Kia James",
+        "y": 90000,
+        "r": 6.00108,
+        "label": "Darkside Hackers",
         "events": 1,
-        "totalAmount": 1000,
-        "avgAmount": 1000
+        "totalAmount": 90000,
+        "avgAmount": 90000
+      },
+      {
+        "x": 1,
+        "y": 272354.71,
+        "r": 6.00326825652,
+        "label": "Brett Shannon Johnson & Eric Kasheef Mcfatl",
+        "events": 1,
+        "totalAmount": 272354.71,
+        "avgAmount": 272354.71
       },
       {
         "x": 1,
         "y": 515000,
-        "r": 6.004944,
+        "r": 6.00618,
         "label": "Neil A. Thomsen",
         "events": 1,
         "totalAmount": 515000,
@@ -5998,26 +6154,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 500000,
-        "r": 6.0048,
-        "label": "Jason Needham",
+        "y": 50000,
+        "r": 6.0006,
+        "label": "Rex Mundi",
         "events": 1,
-        "totalAmount": 500000,
-        "avgAmount": 500000
+        "totalAmount": 50000,
+        "avgAmount": 50000
       },
       {
         "x": 1,
-        "y": 100000,
-        "r": 6.00096,
-        "label": "GandCrab Ransomware Group",
+        "y": 4500000,
+        "r": 6.054,
+        "label": "Freddie Howard",
         "events": 1,
-        "totalAmount": 100000,
-        "avgAmount": 100000
+        "totalAmount": 4500000,
+        "avgAmount": 4500000
       },
       {
         "x": 1,
         "y": 1000000,
-        "r": 6.0096,
+        "r": 6.012,
         "label": "Erebus Ransomware Gang",
         "events": 1,
         "totalAmount": 1000000,
@@ -6025,35 +6181,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 2901,
-        "r": 6.0000278496,
-        "label": "Quebec Hamburglar",
+        "y": 1450000,
+        "r": 6.0174,
+        "label": "IntelBroker and Cyber Niggers",
         "events": 1,
-        "totalAmount": 2901,
-        "avgAmount": 2901
-      },
-      {
-        "x": 1,
-        "y": 2950000,
-        "r": 6.02832,
-        "label": "Advanced Persistent Threat 69420 (Arson Cats)",
-        "events": 1,
-        "totalAmount": 2950000,
-        "avgAmount": 2950000
-      },
-      {
-        "x": 1,
-        "y": 47000,
-        "r": 6.0004512,
-        "label": "Daniel Devereux (His Royal Gingerness)",
-        "events": 1,
-        "totalAmount": 47000,
-        "avgAmount": 47000
+        "totalAmount": 1450000,
+        "avgAmount": 1450000
       },
       {
         "x": 1,
         "y": 1083645,
-        "r": 6.010402992,
+        "r": 6.01300374,
         "label": "Snatch Ransomware Group",
         "events": 1,
         "totalAmount": 1083645,
@@ -6062,7 +6200,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 48000,
-        "r": 6.0004608,
+        "r": 6.000576,
         "label": "Damon Charles Dubose",
         "events": 1,
         "totalAmount": 48000,
@@ -6070,17 +6208,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 10000000,
-        "r": 6.096,
-        "label": "BO Team",
-        "events": 1,
-        "totalAmount": 10000000,
-        "avgAmount": 10000000
-      },
-      {
-        "x": 1,
         "y": 350000,
-        "r": 6.00336,
+        "r": 6.0042,
         "label": "Medusa Locker Group",
         "events": 1,
         "totalAmount": 350000,
@@ -6089,7 +6218,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 7000000,
-        "r": 6.0672,
+        "r": 6.084,
         "label": "BlackCat",
         "events": 1,
         "totalAmount": 7000000,
@@ -6097,8 +6226,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 95861.1,
+        "r": 6.0011503332,
+        "label": "White Hat Hacker",
+        "events": 1,
+        "totalAmount": 95861.1,
+        "avgAmount": 95861.1
+      },
+      {
+        "x": 1,
         "y": 9300,
-        "r": 6.00008928,
+        "r": 6.0001116,
         "label": "John Savage III",
         "events": 1,
         "totalAmount": 9300,
@@ -6106,8 +6244,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 36955189,
+        "r": 6.443462268,
+        "label": "Lazarus Hacking Group",
+        "events": 1,
+        "totalAmount": 36955189,
+        "avgAmount": 36955189
+      },
+      {
+        "x": 1,
         "y": 1000,
-        "r": 6.0000096,
+        "r": 6.000012,
         "label": "Erick Volonski",
         "events": 1,
         "totalAmount": 1000,
@@ -6115,8 +6262,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 21254,
+        "r": 6.000255048,
+        "label": "Daniel Sullivan",
+        "events": 1,
+        "totalAmount": 21254,
+        "avgAmount": 21254
+      },
+      {
+        "x": 1,
         "y": 43337.51,
-        "r": 6.000416040096,
+        "r": 6.00052005012,
         "label": "Dariusz J. Prugar",
         "events": 1,
         "totalAmount": 43337.51,
@@ -6125,7 +6281,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 50000000,
-        "r": 6.48,
+        "r": 6.6,
         "label": "Evaldas Rimasauskas",
         "events": 1,
         "totalAmount": 50000000,
@@ -6133,17 +6289,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 4500000,
-        "r": 6.0432,
-        "label": "Freddie Howard",
+        "y": 500000,
+        "r": 6.006,
+        "label": "Jason Needham",
         "events": 1,
-        "totalAmount": 4500000,
-        "avgAmount": 4500000
+        "totalAmount": 500000,
+        "avgAmount": 500000
+      },
+      {
+        "x": 1,
+        "y": 100000,
+        "r": 6.0012,
+        "label": "GandCrab Ransomware Group",
+        "events": 1,
+        "totalAmount": 100000,
+        "avgAmount": 100000
       },
       {
         "x": 1,
         "y": 12500,
-        "r": 6.00012,
+        "r": 6.00015,
         "label": "Jordan Paul Jernigan",
         "events": 1,
         "totalAmount": 12500,
@@ -6152,7 +6317,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 205755,
-        "r": 6.001975248,
+        "r": 6.00246906,
         "label": "masterballz",
         "events": 1,
         "totalAmount": 205755,
@@ -6160,17 +6325,62 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 1450000,
-        "r": 6.01392,
-        "label": "IntelBroker and Cyber Niggers",
+        "y": 2950000,
+        "r": 6.0354,
+        "label": "Advanced Persistent Threat 69420 (Arson Cats)",
         "events": 1,
-        "totalAmount": 1450000,
-        "avgAmount": 1450000
+        "totalAmount": 2950000,
+        "avgAmount": 2950000
+      },
+      {
+        "x": 1,
+        "y": 1300000,
+        "r": 6.0156,
+        "label": "Donut Leaks",
+        "events": 1,
+        "totalAmount": 1300000,
+        "avgAmount": 1300000
+      },
+      {
+        "x": 1,
+        "y": 47000,
+        "r": 6.000564,
+        "label": "Daniel Devereux (His Royal Gingerness)",
+        "events": 1,
+        "totalAmount": 47000,
+        "avgAmount": 47000
+      },
+      {
+        "x": 1,
+        "y": 30000000,
+        "r": 6.36,
+        "label": "FIN7 Hacking Group",
+        "events": 1,
+        "totalAmount": 30000000,
+        "avgAmount": 30000000
+      },
+      {
+        "x": 1,
+        "y": 220621,
+        "r": 6.002647452,
+        "label": "Miklos Daniel Brody",
+        "events": 1,
+        "totalAmount": 220621,
+        "avgAmount": 220621
       },
       {
         "x": 1,
         "y": 5000000,
-        "r": 6.048,
+        "r": 6.06,
+        "label": "Max Vance",
+        "events": 1,
+        "totalAmount": 5000000,
+        "avgAmount": 5000000
+      },
+      {
+        "x": 1,
+        "y": 5000000,
+        "r": 6.06,
         "label": "Lapsus$ Group",
         "events": 1,
         "totalAmount": 5000000,
@@ -6178,17 +6388,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 325000,
-        "r": 6.00312,
-        "label": "BlackBasta",
+        "y": 1091790,
+        "r": 6.01310148,
+        "label": "The Lampo Group LLC",
         "events": 1,
-        "totalAmount": 325000,
-        "avgAmount": 325000
+        "totalAmount": 1091790,
+        "avgAmount": 1091790
       },
       {
         "x": 1,
         "y": 1400000,
-        "r": 6.01344,
+        "r": 6.0168,
         "label": "Edwin Andres Pena",
         "events": 1,
         "totalAmount": 1400000,
@@ -6197,7 +6407,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 400000,
-        "r": 6.00384,
+        "r": 6.0048,
         "label": "Benjamin Munoz, III",
         "events": 1,
         "totalAmount": 400000,
@@ -6205,17 +6415,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 80000,
-        "r": 6.000768,
-        "label": "Walter Powell",
-        "events": 1,
-        "totalAmount": 80000,
-        "avgAmount": 80000
-      },
-      {
-        "x": 1,
         "y": 33657,
-        "r": 6.0003231072,
+        "r": 6.000403884,
         "label": "Providencia Llanos",
         "events": 1,
         "totalAmount": 33657,
@@ -6223,17 +6424,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 1199251,
-        "r": 6.0115128096,
-        "label": "Derek Wai Hung Tam Sing",
+        "y": 1000,
+        "r": 6.000012,
+        "label": "Kia James",
         "events": 1,
-        "totalAmount": 1199251,
-        "avgAmount": 1199251
+        "totalAmount": 1000,
+        "avgAmount": 1000
       },
       {
         "x": 1,
         "y": 61999,
-        "r": 6.0005951904,
+        "r": 6.000743988,
         "label": "Randolph Hurst",
         "events": 1,
         "totalAmount": 61999,
@@ -6241,8 +6442,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 80000,
+        "r": 6.00096,
+        "label": "Walter Powell",
+        "events": 1,
+        "totalAmount": 80000,
+        "avgAmount": 80000
+      },
+      {
+        "x": 1,
         "y": 10000,
-        "r": 6.000096,
+        "r": 6.00012,
         "label": "Michael Leeper",
         "events": 1,
         "totalAmount": 10000,
@@ -6250,8 +6460,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 2901,
+        "r": 6.000034812,
+        "label": "Quebec Hamburglar",
+        "events": 1,
+        "totalAmount": 2901,
+        "avgAmount": 2901
+      },
+      {
+        "x": 1,
         "y": 27352.51,
-        "r": 6.000262584096,
+        "r": 6.00032823012,
         "label": "David Chesley Goodyear",
         "events": 1,
         "totalAmount": 27352.51,
@@ -6259,35 +6478,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 6800000,
-        "r": 6.06528,
-        "label": "Snatch",
+        "y": 3841.25,
+        "r": 6.000046095,
+        "label": "Recovery Partners LLC",
         "events": 1,
-        "totalAmount": 6800000,
-        "avgAmount": 6800000
+        "totalAmount": 3841.25,
+        "avgAmount": 3841.25
       },
       {
         "x": 1,
-        "y": 39000,
-        "r": 6.0003744,
-        "label": "Rodelyn Lamour and Nestor Armando Ficquire Herrera",
+        "y": 10000000,
+        "r": 6.12,
+        "label": "BO Team",
         "events": 1,
-        "totalAmount": 39000,
-        "avgAmount": 39000
-      },
-      {
-        "x": 1,
-        "y": 850000,
-        "r": 6.00816,
-        "label": "DragonForce",
-        "events": 1,
-        "totalAmount": 850000,
-        "avgAmount": 850000
+        "totalAmount": 10000000,
+        "avgAmount": 10000000
       },
       {
         "x": 1,
         "y": 700000,
-        "r": 6.00672,
+        "r": 6.0084,
         "label": "India_X_Kr3w",
         "events": 1,
         "totalAmount": 700000,
@@ -6296,7 +6506,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 1741000,
-        "r": 6.0167136,
+        "r": 6.020892,
         "label": "c0mrade",
         "events": 1,
         "totalAmount": 1741000,
@@ -6304,26 +6514,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 130000,
-        "r": 6.001248,
-        "label": "Dayton Diaz & Fitzroy Carter",
-        "events": 1,
-        "totalAmount": 130000,
-        "avgAmount": 130000
-      },
-      {
-        "x": 1,
-        "y": 91222.08,
-        "r": 6.000875731968,
-        "label": "Edward Burn",
-        "events": 1,
-        "totalAmount": 91222.08,
-        "avgAmount": 91222.08
-      },
-      {
-        "x": 1,
         "y": 70000,
-        "r": 6.000672,
+        "r": 6.00084,
         "label": "The Deceptive Duo",
         "events": 1,
         "totalAmount": 70000,
@@ -6332,7 +6524,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 200000,
-        "r": 6.00192,
+        "r": 6.0024,
         "label": "Ivan Maksakov, Alexander Petro and Denis Stepanov",
         "events": 1,
         "totalAmount": 200000,
@@ -6341,7 +6533,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 5000,
-        "r": 6.000048,
+        "r": 6.00006,
         "label": "Lawrence R. Marino",
         "events": 1,
         "totalAmount": 5000,
@@ -6350,7 +6542,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 89578.13,
-        "r": 6.000859950048,
+        "r": 6.00107493756,
         "label": "EBK and Slacker",
         "events": 1,
         "totalAmount": 89578.13,
@@ -6358,8 +6550,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 130000,
+        "r": 6.00156,
+        "label": "Dayton Diaz & Fitzroy Carter",
+        "events": 1,
+        "totalAmount": 130000,
+        "avgAmount": 130000
+      },
+      {
+        "x": 1,
         "y": 400000,
-        "r": 6.00384,
+        "r": 6.0048,
         "label": "Edwin Mejia",
         "events": 1,
         "totalAmount": 400000,
@@ -6367,8 +6568,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 91222.08,
+        "r": 6.00109466496,
+        "label": "Edward Burn",
+        "events": 1,
+        "totalAmount": 91222.08,
+        "avgAmount": 91222.08
+      },
+      {
+        "x": 1,
         "y": 65000000,
-        "r": 6.624,
+        "r": 6.78,
         "label": "Hieu Minh Ngo",
         "events": 1,
         "totalAmount": 65000000,
@@ -6377,7 +6587,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 10620.32,
-        "r": 6.000101955072,
+        "r": 6.00012744384,
         "label": "Fidel Salinas",
         "events": 1,
         "totalAmount": 10620.32,
@@ -6386,7 +6596,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 230000,
-        "r": 6.002208,
+        "r": 6.00276,
         "label": "Konrads Voits",
         "events": 1,
         "totalAmount": 230000,
@@ -6395,7 +6605,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 1020959.5,
-        "r": 6.0098012112,
+        "r": 6.012251514,
         "label": "LockBit 2.0",
         "events": 1,
         "totalAmount": 1020959.5,
@@ -6404,7 +6614,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 10000000,
-        "r": 6.096,
+        "r": 6.12,
         "label": "Musacchio, Brown and Kelly",
         "events": 1,
         "totalAmount": 10000000,
@@ -6413,7 +6623,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 10000,
-        "r": 6.000096,
+        "r": 6.00012,
         "label": "Roman Meydbray",
         "events": 1,
         "totalAmount": 10000,
@@ -6422,7 +6632,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 632250,
-        "r": 6.0060696,
+        "r": 6.007587,
         "label": "Fog",
         "events": 1,
         "totalAmount": 632250,
@@ -6431,7 +6641,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 46000,
-        "r": 6.0004416,
+        "r": 6.000552,
         "label": "USDoD",
         "events": 1,
         "totalAmount": 46000,
@@ -6440,7 +6650,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 16800000,
-        "r": 6.16128,
+        "r": 6.2016,
         "label": "Waste",
         "events": 1,
         "totalAmount": 16800000,
@@ -6449,7 +6659,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 5000,
-        "r": 6.000048,
+        "r": 6.00006,
         "label": "Eric Burns",
         "events": 1,
         "totalAmount": 5000,
@@ -6458,7 +6668,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 2600000,
-        "r": 6.02496,
+        "r": 6.0312,
         "label": "Glenn Cazenave & Amaya Marinella",
         "events": 1,
         "totalAmount": 2600000,
@@ -6466,17 +6676,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 7000000,
-        "r": 6.0672,
-        "label": "Scott Levine",
-        "events": 1,
-        "totalAmount": 7000000,
-        "avgAmount": 7000000
-      },
-      {
-        "x": 1,
         "y": 80000,
-        "r": 6.000768,
+        "r": 6.00096,
         "label": "Jesus Diaz",
         "events": 1,
         "totalAmount": 80000,
@@ -6485,7 +6686,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 1616680,
-        "r": 6.015520128,
+        "r": 6.01940016,
         "label": "Olawasegun Adekunle",
         "events": 1,
         "totalAmount": 1616680,
@@ -6493,8 +6694,26 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 7000000,
+        "r": 6.084,
+        "label": "Scott Levine",
+        "events": 1,
+        "totalAmount": 7000000,
+        "avgAmount": 7000000
+      },
+      {
+        "x": 1,
+        "y": 892455,
+        "r": 6.01070946,
+        "label": "Rishpal Singh",
+        "events": 1,
+        "totalAmount": 892455,
+        "avgAmount": 892455
+      },
+      {
+        "x": 1,
         "y": 1000000,
-        "r": 6.0096,
+        "r": 6.012,
         "label": "Shaheed Bilal",
         "events": 1,
         "totalAmount": 1000000,
@@ -6502,17 +6721,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 7000,
-        "r": 6.0000672,
-        "label": "Remy Charmoz",
-        "events": 1,
-        "totalAmount": 7000,
-        "avgAmount": 7000
-      },
-      {
-        "x": 1,
         "y": 13137.3,
-        "r": 6.00012611808,
+        "r": 6.0001576476,
         "label": "Internet Feds",
         "events": 1,
         "totalAmount": 13137.3,
@@ -6520,8 +6730,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 7000,
+        "r": 6.000084,
+        "label": "Remy Charmoz",
+        "events": 1,
+        "totalAmount": 7000,
+        "avgAmount": 7000
+      },
+      {
+        "x": 1,
         "y": 15000,
-        "r": 6.000144,
+        "r": 6.00018,
         "label": "John Kelsey Gammell",
         "events": 1,
         "totalAmount": 15000,
@@ -6530,7 +6749,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 5850,
-        "r": 6.00005616,
+        "r": 6.0000702,
         "label": "Armada Collective",
         "events": 1,
         "totalAmount": 5850,
@@ -6539,7 +6758,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 600,
-        "r": 6.00000576,
+        "r": 6.0000072,
         "label": "TeslaCrypt",
         "events": 1,
         "totalAmount": 600,
@@ -6548,7 +6767,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 3000000,
-        "r": 6.0288,
+        "r": 6.036,
         "label": "Silence",
         "events": 1,
         "totalAmount": 3000000,
@@ -6557,7 +6776,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 350000,
-        "r": 6.00336,
+        "r": 6.0042,
         "label": "Nicholas Burks of Antioch",
         "events": 1,
         "totalAmount": 350000,
@@ -6566,7 +6785,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 64396.67,
-        "r": 6.000618208032,
+        "r": 6.00077276004,
         "label": "Stormous Ransomware Group",
         "events": 1,
         "totalAmount": 64396.67,
@@ -6575,7 +6794,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 400000,
-        "r": 6.00384,
+        "r": 6.0048,
         "label": "Quantum",
         "events": 1,
         "totalAmount": 400000,
@@ -6584,7 +6803,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 5000000,
-        "r": 6.048,
+        "r": 6.06,
         "label": "Ercan Findikoglu",
         "events": 1,
         "totalAmount": 5000000,
@@ -6593,7 +6812,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 30000,
-        "r": 6.000288,
+        "r": 6.00036,
         "label": "Izz ad-Din al-Qassam Cyber Fighters",
         "events": 1,
         "totalAmount": 30000,
@@ -6602,7 +6821,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 235000000,
-        "r": 8.256,
+        "r": 8.82,
         "label": "Lazarus",
         "events": 1,
         "totalAmount": 235000000,
@@ -6610,8 +6829,35 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 1000000,
+        "r": 6.012,
+        "label": "Kairos",
+        "events": 1,
+        "totalAmount": 1000000,
+        "avgAmount": 1000000
+      },
+      {
+        "x": 1,
+        "y": 300000,
+        "r": 6.0036,
+        "label": "Cl0p Ransomware Group",
+        "events": 1,
+        "totalAmount": 300000,
+        "avgAmount": 300000
+      },
+      {
+        "x": 1,
+        "y": 2000000,
+        "r": 6.024,
+        "label": "Christina Kelly",
+        "events": 1,
+        "totalAmount": 2000000,
+        "avgAmount": 2000000
+      },
+      {
+        "x": 1,
         "y": 1446000,
-        "r": 6.0138816,
+        "r": 6.017352,
         "label": "Jasper Grayson and James Malloy",
         "events": 1,
         "totalAmount": 1446000,
@@ -6620,7 +6866,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 6000,
-        "r": 6.0000576,
+        "r": 6.000072,
         "label": "Darnell H. Albert-El",
         "events": 1,
         "totalAmount": 6000,
@@ -6629,7 +6875,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 16218.99,
-        "r": 6.000155702304,
+        "r": 6.00019462788,
         "label": "Terri Jo Huber",
         "events": 1,
         "totalAmount": 16218.99,
@@ -6638,7 +6884,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 180000,
-        "r": 6.001728,
+        "r": 6.00216,
         "label": "Jonathan Cowden",
         "events": 1,
         "totalAmount": 180000,
@@ -6647,7 +6893,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 45530.26,
-        "r": 6.000437090496,
+        "r": 6.00054636312,
         "label": "LulzKnightz",
         "events": 1,
         "totalAmount": 45530.26,
@@ -6656,7 +6902,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 340000,
-        "r": 6.003264,
+        "r": 6.00408,
         "label": "Charles Whitlock",
         "events": 1,
         "totalAmount": 340000,
@@ -6665,7 +6911,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 50000,
-        "r": 6.00048,
+        "r": 6.0006,
         "label": "Juan Rodriguez",
         "events": 1,
         "totalAmount": 50000,
@@ -6674,7 +6920,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 2950000,
-        "r": 6.02832,
+        "r": 6.0354,
         "label": "TeleBots Group",
         "events": 1,
         "totalAmount": 2950000,
@@ -6683,7 +6929,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 220000,
-        "r": 6.002112,
+        "r": 6.00264,
         "label": "TA505",
         "events": 1,
         "totalAmount": 220000,
@@ -6692,7 +6938,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 70092.5,
-        "r": 6.000672888,
+        "r": 6.00084111,
         "label": "Dinesh Kumar",
         "events": 1,
         "totalAmount": 70092.5,
@@ -6701,7 +6947,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 100000,
-        "r": 6.00096,
+        "r": 6.0012,
         "label": "NoEscape Ransomware Group",
         "events": 1,
         "totalAmount": 100000,
@@ -6710,7 +6956,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 1189536,
-        "r": 6.0114195456,
+        "r": 6.014274432,
         "label": "HAO 'HOWIE' WANG",
         "events": 1,
         "totalAmount": 1189536,
@@ -6719,7 +6965,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 25000000,
-        "r": 6.24,
+        "r": 6.3,
         "label": "LockBit 2.0 Ransomware Group",
         "events": 1,
         "totalAmount": 25000000,
@@ -6727,17 +6973,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 250000,
-        "r": 6.0024,
-        "label": "Omega",
-        "events": 1,
-        "totalAmount": 250000,
-        "avgAmount": 250000
-      },
-      {
-        "x": 1,
         "y": 300000,
-        "r": 6.00288,
+        "r": 6.0036,
         "label": "Donex",
         "events": 1,
         "totalAmount": 300000,
@@ -6745,8 +6982,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 250000,
+        "r": 6.003,
+        "label": "Omega",
+        "events": 1,
+        "totalAmount": 250000,
+        "avgAmount": 250000
+      },
+      {
+        "x": 1,
         "y": 4000,
-        "r": 6.0000384,
+        "r": 6.000048,
         "label": "Andrew West",
         "events": 1,
         "totalAmount": 4000,
@@ -6754,8 +7000,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 919829,
+        "r": 6.011037948,
+        "label": "LV Ransomware Gang",
+        "events": 1,
+        "totalAmount": 919829,
+        "avgAmount": 919829
+      },
+      {
+        "x": 1,
         "y": 40000,
-        "r": 6.000384,
+        "r": 6.00048,
         "label": "Nicholas Mamich",
         "events": 1,
         "totalAmount": 40000,
@@ -6764,7 +7019,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 6620,
-        "r": 6.000063552,
+        "r": 6.00007944,
         "label": "Wang Jiajun",
         "events": 1,
         "totalAmount": 6620,
@@ -6773,7 +7028,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 9902.75,
-        "r": 6.0000950664,
+        "r": 6.000118833,
         "label": "Mark Hopkins",
         "events": 1,
         "totalAmount": 9902.75,
@@ -6782,7 +7037,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 146661292.5,
-        "r": 7.407948408,
+        "r": 7.75993551,
         "label": "Albert Gonzalez",
         "events": 1,
         "totalAmount": 146661292.5,
@@ -6791,7 +7046,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 180000,
-        "r": 6.001728,
+        "r": 6.00216,
         "label": "Nick Luu",
         "events": 1,
         "totalAmount": 180000,
@@ -6800,7 +7055,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 5000,
-        "r": 6.000048,
+        "r": 6.00006,
         "label": "Anonymous / Internet Feds",
         "events": 1,
         "totalAmount": 5000,
@@ -6809,7 +7064,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 156580.9,
-        "r": 6.00150317664,
+        "r": 6.0018789708,
         "label": "Timothy Darrell Fultz",
         "events": 1,
         "totalAmount": 156580.9,
@@ -6818,7 +7073,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 23000,
-        "r": 6.0002208,
+        "r": 6.000276,
         "label": "Rhonda Everett",
         "events": 1,
         "totalAmount": 23000,
@@ -6827,7 +7082,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 2000,
-        "r": 6.0000192,
+        "r": 6.000024,
         "label": "Dodge Watson",
         "events": 1,
         "totalAmount": 2000,
@@ -6835,8 +7090,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 12000,
+        "r": 6.000144,
+        "label": "team-ooga",
+        "events": 1,
+        "totalAmount": 12000,
+        "avgAmount": 12000
+      },
+      {
+        "x": 1,
         "y": 11000000,
-        "r": 6.1056,
+        "r": 6.132,
         "label": "Obinwanne Okeke",
         "events": 1,
         "totalAmount": 11000000,
@@ -6845,7 +7109,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 2100000,
-        "r": 6.02016,
+        "r": 6.0252,
         "label": "BitPaymer",
         "events": 1,
         "totalAmount": 2100000,
@@ -6854,7 +7118,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 9494000,
-        "r": 6.0911424,
+        "r": 6.113928,
         "label": "Hades",
         "events": 1,
         "totalAmount": 9494000,
@@ -6863,7 +7127,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 3750000,
-        "r": 6.036,
+        "r": 6.045,
         "label": "Cuba Ransomware Group",
         "events": 1,
         "totalAmount": 3750000,
@@ -6872,7 +7136,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 1134000,
-        "r": 6.0108864,
+        "r": 6.013608,
         "label": "Black Shadow",
         "events": 1,
         "totalAmount": 1134000,
@@ -6881,7 +7145,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 15994.4,
-        "r": 6.00015354624,
+        "r": 6.0001919328,
         "label": "ALTDOS",
         "events": 1,
         "totalAmount": 15994.4,
@@ -6890,7 +7154,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 40,
-        "r": 6.000000384,
+        "r": 6.00000048,
         "label": "Alexandra Otero",
         "events": 1,
         "totalAmount": 40,
@@ -6898,17 +7162,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 81419.58,
-        "r": 6.000781627968,
-        "label": "Brad Stephenson",
-        "events": 1,
-        "totalAmount": 81419.58,
-        "avgAmount": 81419.58
-      },
-      {
-        "x": 1,
         "y": 1000000,
-        "r": 6.0096,
+        "r": 6.012,
         "label": "Hardy Jones",
         "events": 1,
         "totalAmount": 1000000,
@@ -6916,8 +7171,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 81419.58,
+        "r": 6.00097703496,
+        "label": "Brad Stephenson",
+        "events": 1,
+        "totalAmount": 81419.58,
+        "avgAmount": 81419.58
+      },
+      {
+        "x": 1,
         "y": 10200000,
-        "r": 6.09792,
+        "r": 6.1224,
         "label": "LockBit Ransomware Gang",
         "events": 1,
         "totalAmount": 10200000,
@@ -6926,7 +7190,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 23500000,
-        "r": 6.2256,
+        "r": 6.282,
         "label": "Sercan Oyuntur",
         "events": 1,
         "totalAmount": 23500000,
@@ -6935,7 +7199,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 15600000,
-        "r": 6.14976,
+        "r": 6.1872,
         "label": "Pysa/Mespinoza Ransomware Group",
         "events": 1,
         "totalAmount": 15600000,
@@ -6943,26 +7207,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 5000000,
-        "r": 6.048,
+        "y": 18300000,
+        "r": 6.2196,
         "label": "Brain Cipher",
         "events": 1,
-        "totalAmount": 5000000,
-        "avgAmount": 5000000
-      },
-      {
-        "x": 1,
-        "y": 4700000,
-        "r": 6.04512,
-        "label": "Money Message",
-        "events": 1,
-        "totalAmount": 4700000,
-        "avgAmount": 4700000
+        "totalAmount": 18300000,
+        "avgAmount": 18300000
       },
       {
         "x": 1,
         "y": 200000,
-        "r": 6.00192,
+        "r": 6.0024,
         "label": "Lee Graham Walker and Axel Gembe",
         "events": 1,
         "totalAmount": 200000,
@@ -6970,170 +7225,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 71.94,
-        "r": 6.000000690624,
-        "label": "Aderuku Adedayo",
+        "y": 21636,
+        "r": 6.000259632,
+        "label": "Richard Glenn Dopps",
         "events": 1,
-        "totalAmount": 71.94,
-        "avgAmount": 71.94
-      },
-      {
-        "x": 1,
-        "y": 6816.82,
-        "r": 6.000065441472,
-        "label": "Maxn3y",
-        "events": 1,
-        "totalAmount": 6816.82,
-        "avgAmount": 6816.82
-      },
-      {
-        "x": 1,
-        "y": 50000,
-        "r": 6.00048,
-        "label": "Joseph Patrick Nolan",
-        "events": 1,
-        "totalAmount": 50000,
-        "avgAmount": 50000
-      },
-      {
-        "x": 1,
-        "y": 199727.54,
-        "r": 6.001917384384,
-        "label": "Anthony Johnson",
-        "events": 1,
-        "totalAmount": 199727.54,
-        "avgAmount": 199727.54
-      },
-      {
-        "x": 1,
-        "y": 1430000,
-        "r": 6.013728,
-        "label": "White Hat",
-        "events": 1,
-        "totalAmount": 1430000,
-        "avgAmount": 1430000
-      },
-      {
-        "x": 1,
-        "y": 18200000,
-        "r": 6.17472,
-        "label": "RobbinHood Ransomware Group",
-        "events": 1,
-        "totalAmount": 18200000,
-        "avgAmount": 18200000
-      },
-      {
-        "x": 1,
-        "y": 198000,
-        "r": 6.0019008,
-        "label": "Markus P. Lukawinsky",
-        "events": 1,
-        "totalAmount": 198000,
-        "avgAmount": 198000
-      },
-      {
-        "x": 1,
-        "y": 6450000,
-        "r": 6.06192,
-        "label": "Devman",
-        "events": 1,
-        "totalAmount": 6450000,
-        "avgAmount": 6450000
-      },
-      {
-        "x": 1,
-        "y": 5000,
-        "r": 6.000048,
-        "label": "Andrew Michael Shelnutt",
-        "events": 1,
-        "totalAmount": 5000,
-        "avgAmount": 5000
-      },
-      {
-        "x": 1,
-        "y": 1200000,
-        "r": 6.01152,
-        "label": "Olatunji Oluwatosin",
-        "events": 1,
-        "totalAmount": 1200000,
-        "avgAmount": 1200000
-      },
-      {
-        "x": 1,
-        "y": 1500000,
-        "r": 6.0144,
-        "label": "Bruce W. Bridges, Joseph M. Cherry II and Pamela Dunbar",
-        "events": 1,
-        "totalAmount": 1500000,
-        "avgAmount": 1500000
-      },
-      {
-        "x": 1,
-        "y": 213000,
-        "r": 6.0020448,
-        "label": "Zeekill",
-        "events": 1,
-        "totalAmount": 213000,
-        "avgAmount": 213000
-      },
-      {
-        "x": 1,
-        "y": 48770,
-        "r": 6.000468192,
-        "label": "David Ernest Everett Jr.",
-        "events": 1,
-        "totalAmount": 48770,
-        "avgAmount": 48770
-      },
-      {
-        "x": 1,
-        "y": 1225,
-        "r": 6.00001176,
-        "label": "Basil Galarnyk",
-        "events": 1,
-        "totalAmount": 1225,
-        "avgAmount": 1225
-      },
-      {
-        "x": 1,
-        "y": 734.325,
-        "r": 6.00000704952,
-        "label": "Nilesh Morar",
-        "events": 1,
-        "totalAmount": 734.325,
-        "avgAmount": 734.325
-      },
-      {
-        "x": 1,
-        "y": 600000,
-        "r": 6.00576,
-        "label": "LulzSec",
-        "events": 1,
-        "totalAmount": 600000,
-        "avgAmount": 600000
-      },
-      {
-        "x": 1,
-        "y": 750000,
-        "r": 6.0072,
-        "label": "Hunters",
-        "events": 1,
-        "totalAmount": 750000,
-        "avgAmount": 750000
-      },
-      {
-        "x": 1,
-        "y": 59881.4,
-        "r": 6.00057486144,
-        "label": "Vignesh Kannan",
-        "events": 1,
-        "totalAmount": 59881.4,
-        "avgAmount": 59881.4
+        "totalAmount": 21636,
+        "avgAmount": 21636
       },
       {
         "x": 1,
         "y": 175875,
-        "r": 6.0016884,
+        "r": 6.0021105,
         "label": "Lawrence Siaw",
         "events": 1,
         "totalAmount": 175875,
@@ -7141,17 +7243,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 1000000,
-        "r": 6.0096,
-        "label": "Shao",
-        "events": 1,
-        "totalAmount": 1000000,
-        "avgAmount": 1000000
-      },
-      {
-        "x": 1,
         "y": 5000,
-        "r": 6.000048,
+        "r": 6.00006,
         "label": "Jacob Jeremiah Loyd",
         "events": 1,
         "totalAmount": 5000,
@@ -7159,8 +7252,53 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 2000000000,
+        "r": 30,
+        "label": "People's Republic of China (PRC)",
+        "events": 1,
+        "totalAmount": 2000000000,
+        "avgAmount": 2000000000
+      },
+      {
+        "x": 1,
+        "y": 600000,
+        "r": 6.0072,
+        "label": "LulzSec",
+        "events": 1,
+        "totalAmount": 600000,
+        "avgAmount": 600000
+      },
+      {
+        "x": 1,
+        "y": 59881.4,
+        "r": 6.0007185768,
+        "label": "Vignesh Kannan",
+        "events": 1,
+        "totalAmount": 59881.4,
+        "avgAmount": 59881.4
+      },
+      {
+        "x": 1,
+        "y": 734.325,
+        "r": 6.0000088119,
+        "label": "Nilesh Morar",
+        "events": 1,
+        "totalAmount": 734.325,
+        "avgAmount": 734.325
+      },
+      {
+        "x": 1,
+        "y": 1790000,
+        "r": 6.02148,
+        "label": "Spiral",
+        "events": 1,
+        "totalAmount": 1790000,
+        "avgAmount": 1790000
+      },
+      {
+        "x": 1,
         "y": 96000,
-        "r": 6.0009216,
+        "r": 6.001152,
         "label": "Randall Scott Foster",
         "events": 1,
         "totalAmount": 96000,
@@ -7169,7 +7307,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 2800000,
-        "r": 6.02688,
+        "r": 6.0336,
         "label": "Stormous",
         "events": 1,
         "totalAmount": 2800000,
@@ -7177,17 +7315,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 1790000,
-        "r": 6.017184,
-        "label": "Spiral",
-        "events": 1,
-        "totalAmount": 1790000,
-        "avgAmount": 1790000
-      },
-      {
-        "x": 1,
         "y": 32000,
-        "r": 6.0003072,
+        "r": 6.000384,
         "label": "Khoi Nguyen",
         "events": 1,
         "totalAmount": 32000,
@@ -7195,80 +7324,35 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 21636,
-        "r": 6.0002077056,
-        "label": "Richard Glenn Dopps",
+        "y": 1000000,
+        "r": 6.012,
+        "label": "Shao",
         "events": 1,
-        "totalAmount": 21636,
-        "avgAmount": 21636
+        "totalAmount": 1000000,
+        "avgAmount": 1000000
       },
       {
         "x": 1,
-        "y": 2000000000,
-        "r": 25.200000000000003,
-        "label": "People's Republic of China (PRC)",
+        "y": 750000,
+        "r": 6.009,
+        "label": "Hunters",
         "events": 1,
-        "totalAmount": 2000000000,
-        "avgAmount": 2000000000
+        "totalAmount": 750000,
+        "avgAmount": 750000
       },
       {
         "x": 1,
-        "y": 6050,
-        "r": 6.00005808,
-        "label": "Jay Vern Heim",
+        "y": 755977,
+        "r": 6.009071724,
+        "label": "Zestix",
         "events": 1,
-        "totalAmount": 6050,
-        "avgAmount": 6050
-      },
-      {
-        "x": 1,
-        "y": 2275000,
-        "r": 6.02184,
-        "label": "IRIDIUM",
-        "events": 1,
-        "totalAmount": 2275000,
-        "avgAmount": 2275000
-      },
-      {
-        "x": 1,
-        "y": 900000,
-        "r": 6.00864,
-        "label": "Mount Locker",
-        "events": 1,
-        "totalAmount": 900000,
-        "avgAmount": 900000
-      },
-      {
-        "x": 1,
-        "y": 4985000,
-        "r": 6.047856,
-        "label": "Ioan Leusca and Dezso Gyapias",
-        "events": 1,
-        "totalAmount": 4985000,
-        "avgAmount": 4985000
-      },
-      {
-        "x": 1,
-        "y": 4060,
-        "r": 6.000038976,
-        "label": "Christopher Doyon aka Commander X",
-        "events": 1,
-        "totalAmount": 4060,
-        "avgAmount": 4060
-      },
-      {
-        "x": 1,
-        "y": 220000,
-        "r": 6.002112,
-        "label": "Reilly Foam Corp",
-        "events": 1,
-        "totalAmount": 220000,
-        "avgAmount": 220000
+        "totalAmount": 755977,
+        "avgAmount": 755977
       },
       {
         "x": 1,
         "y": 17500000,
-        "r": 6.168,
+        "r": 6.21,
         "label": "Kathy Chen",
         "events": 1,
         "totalAmount": 17500000,
@@ -7276,44 +7360,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 2058.4,
-        "r": 6.00001976064,
-        "label": "Harendra Kumar, Ramesh Patel, Ashish Kumar",
-        "events": 1,
-        "totalAmount": 2058.4,
-        "avgAmount": 2058.4
-      },
-      {
-        "x": 1,
-        "y": 304446860,
-        "r": 8.922689856,
-        "label": "DragonForce Ransomware Group",
-        "events": 1,
-        "totalAmount": 304446860,
-        "avgAmount": 304446860
-      },
-      {
-        "x": 1,
-        "y": 13000000,
-        "r": 6.1248,
-        "label": "Endurance",
-        "events": 1,
-        "totalAmount": 13000000,
-        "avgAmount": 13000000
-      },
-      {
-        "x": 1,
-        "y": 672744,
-        "r": 6.0064583424,
-        "label": "SunCrypt",
-        "events": 1,
-        "totalAmount": 672744,
-        "avgAmount": 672744
-      },
-      {
-        "x": 1,
         "y": 1340477,
-        "r": 6.0128685792,
+        "r": 6.016085724,
         "label": "Sanjay Patel, Leena Patel, Librada Santos Comduran.",
         "events": 1,
         "totalAmount": 1340477,
@@ -7321,35 +7369,35 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 1550000,
-        "r": 6.01488,
-        "label": "NWGEN",
+        "y": 6050,
+        "r": 6.0000726,
+        "label": "Jay Vern Heim",
         "events": 1,
-        "totalAmount": 1550000,
-        "avgAmount": 1550000
+        "totalAmount": 6050,
+        "avgAmount": 6050
       },
       {
         "x": 1,
-        "y": 4131731.45,
-        "r": 6.03966462192,
-        "label": "LAX or Ebay",
+        "y": 4060,
+        "r": 6.00004872,
+        "label": "Christopher Doyon aka Commander X",
         "events": 1,
-        "totalAmount": 4131731.45,
-        "avgAmount": 4131731.45
+        "totalAmount": 4060,
+        "avgAmount": 4060
       },
       {
         "x": 1,
-        "y": 2300000,
-        "r": 6.02208,
-        "label": "DarkAngels",
+        "y": 4985000,
+        "r": 6.05982,
+        "label": "Ioan Leusca and Dezso Gyapias",
         "events": 1,
-        "totalAmount": 2300000,
-        "avgAmount": 2300000
+        "totalAmount": 4985000,
+        "avgAmount": 4985000
       },
       {
         "x": 1,
         "y": 172000,
-        "r": 6.0016512,
+        "r": 6.002064,
         "label": "Sherifdeen Mogaji",
         "events": 1,
         "totalAmount": 172000,
@@ -7357,71 +7405,98 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 9933,
-        "r": 6.0000953568,
-        "label": "CryTOX",
+        "y": 900000,
+        "r": 6.0108,
+        "label": "Mount Locker",
         "events": 1,
-        "totalAmount": 9933,
-        "avgAmount": 9933
+        "totalAmount": 900000,
+        "avgAmount": 900000
       },
       {
         "x": 1,
-        "y": 566261,
-        "r": 6.0054361056,
-        "label": "Stephanie Twyman",
+        "y": 1550000,
+        "r": 6.0186,
+        "label": "NWGEN",
         "events": 1,
-        "totalAmount": 566261,
-        "avgAmount": 566261
+        "totalAmount": 1550000,
+        "avgAmount": 1550000
       },
       {
         "x": 1,
-        "y": 90000000,
-        "r": 6.864,
-        "label": "Evil Corp",
+        "y": 2058.4,
+        "r": 6.0000247008,
+        "label": "Harendra Kumar, Ramesh Patel, Ashish Kumar",
         "events": 1,
-        "totalAmount": 90000000,
-        "avgAmount": 90000000
+        "totalAmount": 2058.4,
+        "avgAmount": 2058.4
       },
       {
         "x": 1,
-        "y": 13500000,
-        "r": 6.1296,
-        "label": "Interlock",
+        "y": 13000000,
+        "r": 6.156,
+        "label": "Endurance",
         "events": 1,
-        "totalAmount": 13500000,
-        "avgAmount": 13500000
+        "totalAmount": 13000000,
+        "avgAmount": 13000000
       },
       {
         "x": 1,
-        "y": 516000,
-        "r": 6.0049536,
-        "label": "Gbenga A. Fadipe",
+        "y": 2275000,
+        "r": 6.0273,
+        "label": "IRIDIUM",
         "events": 1,
-        "totalAmount": 516000,
-        "avgAmount": 516000
+        "totalAmount": 2275000,
+        "avgAmount": 2275000
       },
       {
         "x": 1,
-        "y": 2516890,
-        "r": 6.024162144,
-        "label": "RedAlert",
+        "y": 672744,
+        "r": 6.008072928,
+        "label": "SunCrypt",
         "events": 1,
-        "totalAmount": 2516890,
-        "avgAmount": 2516890
+        "totalAmount": 672744,
+        "avgAmount": 672744
       },
       {
         "x": 1,
-        "y": 7470.8822,
-        "r": 6.00007172046912,
-        "label": "Kami Haxor",
+        "y": 2300000,
+        "r": 6.0276,
+        "label": "DarkAngels",
         "events": 1,
-        "totalAmount": 7470.8822,
-        "avgAmount": 7470.8822
+        "totalAmount": 2300000,
+        "avgAmount": 2300000
+      },
+      {
+        "x": 1,
+        "y": 4131731.45,
+        "r": 6.0495807774,
+        "label": "LAX or Ebay",
+        "events": 1,
+        "totalAmount": 4131731.45,
+        "avgAmount": 4131731.45
+      },
+      {
+        "x": 1,
+        "y": 220000,
+        "r": 6.00264,
+        "label": "Reilly Foam Corp",
+        "events": 1,
+        "totalAmount": 220000,
+        "avgAmount": 220000
+      },
+      {
+        "x": 1,
+        "y": 304446860,
+        "r": 9.65336232,
+        "label": "DragonForce Ransomware Group",
+        "events": 1,
+        "totalAmount": 304446860,
+        "avgAmount": 304446860
       },
       {
         "x": 1,
         "y": 57000,
-        "r": 6.0005472,
+        "r": 6.000684,
         "label": "Evgeniy Mikhaylovich Bogachev",
         "events": 1,
         "totalAmount": 57000,
@@ -7429,17 +7504,62 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 6335546.86,
-        "r": 6.060821249856,
-        "label": "JokerStash (FIN7)",
+        "y": 1000000,
+        "r": 6.012,
+        "label": "Michael Martin of Texarkana, Michelle Coppolla of Virginia and Osazuwa Peter Okunoghae",
         "events": 1,
-        "totalAmount": 6335546.86,
-        "avgAmount": 6335546.86
+        "totalAmount": 1000000,
+        "avgAmount": 1000000
+      },
+      {
+        "x": 1,
+        "y": 566261,
+        "r": 6.006795132,
+        "label": "Stephanie Twyman",
+        "events": 1,
+        "totalAmount": 566261,
+        "avgAmount": 566261
+      },
+      {
+        "x": 1,
+        "y": 844779000,
+        "r": 16.137348,
+        "label": "Choi",
+        "events": 1,
+        "totalAmount": 844779000,
+        "avgAmount": 844779000
+      },
+      {
+        "x": 1,
+        "y": 7470.8822,
+        "r": 6.0000896505864,
+        "label": "Kami Haxor",
+        "events": 1,
+        "totalAmount": 7470.8822,
+        "avgAmount": 7470.8822
+      },
+      {
+        "x": 1,
+        "y": 402197,
+        "r": 6.004826364,
+        "label": "Christopher Hoang Do",
+        "events": 1,
+        "totalAmount": 402197,
+        "avgAmount": 402197
+      },
+      {
+        "x": 1,
+        "y": 516000,
+        "r": 6.006192,
+        "label": "Gbenga A. Fadipe",
+        "events": 1,
+        "totalAmount": 516000,
+        "avgAmount": 516000
       },
       {
         "x": 1,
         "y": 100000,
-        "r": 6.00096,
+        "r": 6.0012,
         "label": "Sodinokibi Ransomware Group",
         "events": 1,
         "totalAmount": 100000,
@@ -7448,7 +7568,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 10000000,
-        "r": 6.096,
+        "r": 6.12,
         "label": "Evil Corp.",
         "events": 1,
         "totalAmount": 10000000,
@@ -7456,179 +7576,44 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 402197,
-        "r": 6.0038610912,
-        "label": "Christopher Hoang Do",
+        "y": 9933,
+        "r": 6.000119196,
+        "label": "CryTOX",
         "events": 1,
-        "totalAmount": 402197,
-        "avgAmount": 402197
+        "totalAmount": 9933,
+        "avgAmount": 9933
       },
       {
         "x": 1,
-        "y": 1000000,
-        "r": 6.0096,
-        "label": "Michael Martin of Texarkana, Michelle Coppolla of Virginia and Osazuwa Peter Okunoghae",
+        "y": 2516890,
+        "r": 6.03020268,
+        "label": "RedAlert",
         "events": 1,
-        "totalAmount": 1000000,
-        "avgAmount": 1000000
+        "totalAmount": 2516890,
+        "avgAmount": 2516890
       },
       {
         "x": 1,
-        "y": 844779000,
-        "r": 14.1098784,
-        "label": "Choi",
+        "y": 35000000,
+        "r": 6.42,
+        "label": "Evil Corp",
         "events": 1,
-        "totalAmount": 844779000,
-        "avgAmount": 844779000
-      },
-      {
-        "x": 1,
-        "y": 48000000,
-        "r": 6.4608,
-        "label": "New York Stock Exchange",
-        "events": 1,
-        "totalAmount": 48000000,
-        "avgAmount": 48000000
-      },
-      {
-        "x": 1,
-        "y": 3750000,
-        "r": 6.036,
-        "label": "ProLock Ransomware gang",
-        "events": 1,
-        "totalAmount": 3750000,
-        "avgAmount": 3750000
-      },
-      {
-        "x": 1,
-        "y": 250000,
-        "r": 6.0024,
-        "label": "PYSA",
-        "events": 1,
-        "totalAmount": 250000,
-        "avgAmount": 250000
-      },
-      {
-        "x": 1,
-        "y": 10000,
-        "r": 6.000096,
-        "label": "Ivy Johnson",
-        "events": 1,
-        "totalAmount": 10000,
-        "avgAmount": 10000
-      },
-      {
-        "x": 1,
-        "y": 409337.83,
-        "r": 6.003929643168,
-        "label": "Jon Paul Oson",
-        "events": 1,
-        "totalAmount": 409337.83,
-        "avgAmount": 409337.83
-      },
-      {
-        "x": 1,
-        "y": 87836.6,
-        "r": 6.00084323136,
-        "label": "Jean-Francois Pare",
-        "events": 1,
-        "totalAmount": 87836.6,
-        "avgAmount": 87836.6
-      },
-      {
-        "x": 1,
-        "y": 5858000,
-        "r": 6.0562368,
-        "label": "RansomHouse",
-        "events": 1,
-        "totalAmount": 5858000,
-        "avgAmount": 5858000
-      },
-      {
-        "x": 1,
-        "y": 14000000,
-        "r": 6.1344,
-        "label": "Qendrim Dobruna",
-        "events": 1,
-        "totalAmount": 14000000,
-        "avgAmount": 14000000
-      },
-      {
-        "x": 1,
-        "y": 32000000,
-        "r": 6.3072,
-        "label": "Buttler",
-        "events": 1,
-        "totalAmount": 32000000,
-        "avgAmount": 32000000
-      },
-      {
-        "x": 1,
-        "y": 199000000,
-        "r": 7.9104,
-        "label": "Federico Jaime",
-        "events": 1,
-        "totalAmount": 199000000,
-        "avgAmount": 199000000
-      },
-      {
-        "x": 1,
-        "y": 97915.91,
-        "r": 6.000939992736,
-        "label": "Gregory V. Revson",
-        "events": 1,
-        "totalAmount": 97915.91,
-        "avgAmount": 97915.91
-      },
-      {
-        "x": 1,
-        "y": 7600,
-        "r": 6.00007296,
-        "label": "Edmund Lee McCall, Nakeisha Rochelle Richardson Moore, Corey Gerard Harris, Rosie Lee Murphy, Andrew Milton Williams, and Vanessa Valease Gordon",
-        "events": 1,
-        "totalAmount": 7600,
-        "avgAmount": 7600
-      },
-      {
-        "x": 1,
-        "y": 500000,
-        "r": 6.0048,
-        "label": "Medusa",
-        "events": 1,
-        "totalAmount": 500000,
-        "avgAmount": 500000
-      },
-      {
-        "x": 1,
-        "y": 4400000,
-        "r": 6.04224,
-        "label": "Marketo",
-        "events": 1,
-        "totalAmount": 4400000,
-        "avgAmount": 4400000
-      },
-      {
-        "x": 1,
-        "y": 65437.6,
-        "r": 6.00062820096,
-        "label": "Ryan James Fisher",
-        "events": 1,
-        "totalAmount": 65437.6,
-        "avgAmount": 65437.6
-      },
-      {
-        "x": 1,
-        "y": 2500000000,
-        "r": 30,
-        "label": "Scattered Lapsus$ Hunters",
-        "events": 1,
-        "totalAmount": 2500000000,
-        "avgAmount": 2500000000
+        "totalAmount": 35000000,
+        "avgAmount": 35000000
       },
       {
         "x": 1,
         "y": 13500000,
-        "r": 6.1296,
+        "r": 6.162,
+        "label": "Interlock",
+        "events": 1,
+        "totalAmount": 13500000,
+        "avgAmount": 13500000
+      },
+      {
+        "x": 1,
+        "y": 13500000,
+        "r": 6.162,
         "label": "Roland L.",
         "events": 1,
         "totalAmount": 13500000,
@@ -7636,44 +7621,179 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 13100000,
-        "r": 6.12576,
-        "label": "MoneyMessage",
+        "y": 10000,
+        "r": 6.00012,
+        "label": "Ivy Johnson",
         "events": 1,
-        "totalAmount": 13100000,
-        "avgAmount": 13100000
+        "totalAmount": 10000,
+        "avgAmount": 10000
       },
       {
         "x": 1,
-        "y": 219.81,
-        "r": 6.000002110176,
-        "label": "Harak1r1",
+        "y": 7600,
+        "r": 6.0000912,
+        "label": "Edmund Lee McCall, Nakeisha Rochelle Richardson Moore, Corey Gerard Harris, Rosie Lee Murphy, Andrew Milton Williams, and Vanessa Valease Gordon",
         "events": 1,
-        "totalAmount": 219.81,
-        "avgAmount": 219.81
+        "totalAmount": 7600,
+        "avgAmount": 7600
       },
       {
         "x": 1,
-        "y": 2700000,
-        "r": 6.02592,
-        "label": "New World Hackers/Anonymous/Spainsquad",
+        "y": 409337.83,
+        "r": 6.00491205396,
+        "label": "Jon Paul Oson",
         "events": 1,
-        "totalAmount": 2700000,
-        "avgAmount": 2700000
+        "totalAmount": 409337.83,
+        "avgAmount": 409337.83
       },
       {
         "x": 1,
-        "y": 2839375,
-        "r": 6.027258,
-        "label": "Kateryna Abourched and Mohamed Abourched",
+        "y": 97915.91,
+        "r": 6.00117499092,
+        "label": "Gregory V. Revson",
         "events": 1,
-        "totalAmount": 2839375,
-        "avgAmount": 2839375
+        "totalAmount": 97915.91,
+        "avgAmount": 97915.91
+      },
+      {
+        "x": 1,
+        "y": 65437.6,
+        "r": 6.0007852512,
+        "label": "Ryan James Fisher",
+        "events": 1,
+        "totalAmount": 65437.6,
+        "avgAmount": 65437.6
+      },
+      {
+        "x": 1,
+        "y": 14000000,
+        "r": 6.168,
+        "label": "Qendrim Dobruna",
+        "events": 1,
+        "totalAmount": 14000000,
+        "avgAmount": 14000000
+      },
+      {
+        "x": 1,
+        "y": 3750000,
+        "r": 6.045,
+        "label": "ProLock Ransomware gang",
+        "events": 1,
+        "totalAmount": 3750000,
+        "avgAmount": 3750000
+      },
+      {
+        "x": 1,
+        "y": 4400000,
+        "r": 6.0528,
+        "label": "Marketo",
+        "events": 1,
+        "totalAmount": 4400000,
+        "avgAmount": 4400000
+      },
+      {
+        "x": 1,
+        "y": 87836.6,
+        "r": 6.0010540392,
+        "label": "Jean-Francois Pare",
+        "events": 1,
+        "totalAmount": 87836.6,
+        "avgAmount": 87836.6
+      },
+      {
+        "x": 1,
+        "y": 199000000,
+        "r": 8.388,
+        "label": "Federico Jaime",
+        "events": 1,
+        "totalAmount": 199000000,
+        "avgAmount": 199000000
+      },
+      {
+        "x": 1,
+        "y": 177000000,
+        "r": 8.123999999999999,
+        "label": "MajorNelson",
+        "events": 1,
+        "totalAmount": 177000000,
+        "avgAmount": 177000000
+      },
+      {
+        "x": 1,
+        "y": 48000000,
+        "r": 6.5760000000000005,
+        "label": "New York Stock Exchange",
+        "events": 1,
+        "totalAmount": 48000000,
+        "avgAmount": 48000000
+      },
+      {
+        "x": 1,
+        "y": 2600000,
+        "r": 6.0312,
+        "label": "AlphVM/Blackcat",
+        "events": 1,
+        "totalAmount": 2600000,
+        "avgAmount": 2600000
+      },
+      {
+        "x": 1,
+        "y": 32000000,
+        "r": 6.384,
+        "label": "Buttler",
+        "events": 1,
+        "totalAmount": 32000000,
+        "avgAmount": 32000000
+      },
+      {
+        "x": 1,
+        "y": 250000,
+        "r": 6.003,
+        "label": "PYSA",
+        "events": 1,
+        "totalAmount": 250000,
+        "avgAmount": 250000
+      },
+      {
+        "x": 1,
+        "y": 2600000,
+        "r": 6.0312,
+        "label": "Meow",
+        "events": 1,
+        "totalAmount": 2600000,
+        "avgAmount": 2600000
+      },
+      {
+        "x": 1,
+        "y": 1200000,
+        "r": 6.0144,
+        "label": "Olatunji Oluwatosin",
+        "events": 1,
+        "totalAmount": 1200000,
+        "avgAmount": 1200000
+      },
+      {
+        "x": 1,
+        "y": 4300000,
+        "r": 6.0516,
+        "label": "Magecart Group 6",
+        "events": 1,
+        "totalAmount": 4300000,
+        "avgAmount": 4300000
+      },
+      {
+        "x": 1,
+        "y": 2000000,
+        "r": 6.024,
+        "label": "Gordon Welterlen and Nicole Milan",
+        "events": 1,
+        "totalAmount": 2000000,
+        "avgAmount": 2000000
       },
       {
         "x": 1,
         "y": 10000,
-        "r": 6.000096,
+        "r": 6.00012,
         "label": "Stephen L. Suplita, III",
         "events": 1,
         "totalAmount": 10000,
@@ -7681,26 +7801,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 5000,
-        "r": 6.000048,
-        "label": "BRIAN P. JOHNSON",
-        "events": 1,
-        "totalAmount": 5000,
-        "avgAmount": 5000
-      },
-      {
-        "x": 1,
-        "y": 95000000,
-        "r": 6.912,
-        "label": "Solntsepek",
-        "events": 1,
-        "totalAmount": 95000000,
-        "avgAmount": 95000000
-      },
-      {
-        "x": 1,
         "y": 167000,
-        "r": 6.0016032,
+        "r": 6.002004,
         "label": "Christopher Andrew Phillips",
         "events": 1,
         "totalAmount": 167000,
@@ -7708,80 +7810,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 12000000,
-        "r": 6.1152,
-        "label": "Ashley Mitchell",
-        "events": 1,
-        "totalAmount": 12000000,
-        "avgAmount": 12000000
-      },
-      {
-        "x": 1,
-        "y": 3562164,
-        "r": 6.0341967744,
-        "label": "Adeniyi Ajao",
-        "events": 1,
-        "totalAmount": 3562164,
-        "avgAmount": 3562164
-      },
-      {
-        "x": 1,
-        "y": 10400000,
-        "r": 6.09984,
-        "label": "Advanced Persistent Threat 18 (APT18)",
-        "events": 1,
-        "totalAmount": 10400000,
-        "avgAmount": 10400000
-      },
-      {
-        "x": 1,
-        "y": 90000,
-        "r": 6.000864,
-        "label": "Donte L. Battin, Ted Joe Armstead, Dymond Chappelle, Camron B. Witkowski and Cameron M. Allen",
-        "events": 1,
-        "totalAmount": 90000,
-        "avgAmount": 90000
-      },
-      {
-        "x": 1,
-        "y": 150000,
-        "r": 6.00144,
-        "label": "Robert Unique Haines",
-        "events": 1,
-        "totalAmount": 150000,
-        "avgAmount": 150000
-      },
-      {
-        "x": 1,
-        "y": 87000,
-        "r": 6.0008352,
-        "label": "Cameron Allen and Dymond Chappelle",
-        "events": 1,
-        "totalAmount": 87000,
-        "avgAmount": 87000
-      },
-      {
-        "x": 1,
-        "y": 40000,
-        "r": 6.000384,
-        "label": "Stefan Stojanovic",
-        "events": 1,
-        "totalAmount": 40000,
-        "avgAmount": 40000
-      },
-      {
-        "x": 1,
-        "y": 710738150,
-        "r": 12.82308624,
-        "label": "Adam Arzoomanian; Sanford Wallace; Scott Shaw",
-        "events": 1,
-        "totalAmount": 710738150,
-        "avgAmount": 710738150
-      },
-      {
-        "x": 1,
         "y": 25007,
-        "r": 6.0002400672,
+        "r": 6.000300084,
         "label": "Sylvestre",
         "events": 1,
         "totalAmount": 25007,
@@ -7789,8 +7819,80 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 150000,
+        "r": 6.0018,
+        "label": "Robert Unique Haines",
+        "events": 1,
+        "totalAmount": 150000,
+        "avgAmount": 150000
+      },
+      {
+        "x": 1,
+        "y": 710738150,
+        "r": 14.528857799999999,
+        "label": "Adam Arzoomanian; Sanford Wallace; Scott Shaw",
+        "events": 1,
+        "totalAmount": 710738150,
+        "avgAmount": 710738150
+      },
+      {
+        "x": 1,
+        "y": 12000000,
+        "r": 6.144,
+        "label": "Ashley Mitchell",
+        "events": 1,
+        "totalAmount": 12000000,
+        "avgAmount": 12000000
+      },
+      {
+        "x": 1,
+        "y": 90000,
+        "r": 6.00108,
+        "label": "Donte L. Battin, Ted Joe Armstead, Dymond Chappelle, Camron B. Witkowski and Cameron M. Allen",
+        "events": 1,
+        "totalAmount": 90000,
+        "avgAmount": 90000
+      },
+      {
+        "x": 1,
+        "y": 10400000,
+        "r": 6.1248,
+        "label": "Advanced Persistent Threat 18 (APT18)",
+        "events": 1,
+        "totalAmount": 10400000,
+        "avgAmount": 10400000
+      },
+      {
+        "x": 1,
+        "y": 40000,
+        "r": 6.00048,
+        "label": "Stefan Stojanovic",
+        "events": 1,
+        "totalAmount": 40000,
+        "avgAmount": 40000
+      },
+      {
+        "x": 1,
+        "y": 2700000,
+        "r": 6.0324,
+        "label": "New World Hackers/Anonymous/Spainsquad",
+        "events": 1,
+        "totalAmount": 2700000,
+        "avgAmount": 2700000
+      },
+      {
+        "x": 1,
+        "y": 219.81,
+        "r": 6.00000263772,
+        "label": "Harak1r1",
+        "events": 1,
+        "totalAmount": 219.81,
+        "avgAmount": 219.81
+      },
+      {
+        "x": 1,
         "y": 62104.18,
-        "r": 6.000596200128,
+        "r": 6.00074525016,
         "label": "Laurent Chavet",
         "events": 1,
         "totalAmount": 62104.18,
@@ -7798,53 +7900,80 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 230000,
-        "r": 6.002208,
-        "label": "DualPools",
-        "events": 1,
-        "totalAmount": 230000,
-        "avgAmount": 230000
-      },
-      {
-        "x": 1,
-        "y": 1003720,
-        "r": 6.009635712,
-        "label": "Aktia Bank Plc",
-        "events": 1,
-        "totalAmount": 1003720,
-        "avgAmount": 1003720
-      },
-      {
-        "x": 1,
-        "y": 209243,
-        "r": 6.0020087328,
-        "label": "Roderick Dewayne Neal",
-        "events": 1,
-        "totalAmount": 209243,
-        "avgAmount": 209243
-      },
-      {
-        "x": 1,
         "y": 5000,
-        "r": 6.000048,
-        "label": "Conor LaHiff",
+        "r": 6.00006,
+        "label": "BRIAN P. JOHNSON",
         "events": 1,
         "totalAmount": 5000,
         "avgAmount": 5000
       },
       {
         "x": 1,
-        "y": 200000,
-        "r": 6.00192,
-        "label": "'cam0', '@Freak' and 'leetjones'",
+        "y": 2839375,
+        "r": 6.0340725,
+        "label": "Kateryna Abourched and Mohamed Abourched",
         "events": 1,
-        "totalAmount": 200000,
-        "avgAmount": 200000
+        "totalAmount": 2839375,
+        "avgAmount": 2839375
+      },
+      {
+        "x": 1,
+        "y": 95000000,
+        "r": 7.140000000000001,
+        "label": "Solntsepek",
+        "events": 1,
+        "totalAmount": 95000000,
+        "avgAmount": 95000000
+      },
+      {
+        "x": 1,
+        "y": 87000,
+        "r": 6.001044,
+        "label": "Cameron Allen and Dymond Chappelle",
+        "events": 1,
+        "totalAmount": 87000,
+        "avgAmount": 87000
+      },
+      {
+        "x": 1,
+        "y": 3562164,
+        "r": 6.042745968,
+        "label": "Adeniyi Ajao",
+        "events": 1,
+        "totalAmount": 3562164,
+        "avgAmount": 3562164
+      },
+      {
+        "x": 1,
+        "y": 13100000,
+        "r": 6.1572,
+        "label": "MoneyMessage",
+        "events": 1,
+        "totalAmount": 13100000,
+        "avgAmount": 13100000
+      },
+      {
+        "x": 1,
+        "y": 13691.9,
+        "r": 6.0001643028,
+        "label": "GhostR",
+        "events": 1,
+        "totalAmount": 13691.9,
+        "avgAmount": 13691.9
+      },
+      {
+        "x": 1,
+        "y": 425000,
+        "r": 6.0051,
+        "label": "ElDorado",
+        "events": 1,
+        "totalAmount": 425000,
+        "avgAmount": 425000
       },
       {
         "x": 1,
         "y": 141000,
-        "r": 6.0013536,
+        "r": 6.001692,
         "label": "Goro Nakahashi, Ko Hakata",
         "events": 1,
         "totalAmount": 141000,
@@ -7853,7 +7982,7 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 1300000,
-        "r": 6.01248,
+        "r": 6.0156,
         "label": "ALEKSANDR KALININ & NIKOLAY NASENKOV",
         "events": 1,
         "totalAmount": 1300000,
@@ -7861,17 +7990,8 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 920000,
-        "r": 6.008832,
-        "label": "MoneyTaker",
-        "events": 1,
-        "totalAmount": 920000,
-        "avgAmount": 920000
-      },
-      {
-        "x": 1,
         "y": 25389.99,
-        "r": 6.000243743904,
+        "r": 6.00030467988,
         "label": "Sharelle Finnie",
         "events": 1,
         "totalAmount": 25389.99,
@@ -7879,8 +7999,17 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
+        "y": 209243,
+        "r": 6.002510916,
+        "label": "Roderick Dewayne Neal",
+        "events": 1,
+        "totalAmount": 209243,
+        "avgAmount": 209243
+      },
+      {
+        "x": 1,
         "y": 5000,
-        "r": 6.000048,
+        "r": 6.00006,
         "label": "Jacob Raine",
         "events": 1,
         "totalAmount": 5000,
@@ -7888,89 +8017,80 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 1,
-        "y": 155000000,
-        "r": 7.4879999999999995,
-        "label": "ALPHV",
+        "y": 920000,
+        "r": 6.01104,
+        "label": "MoneyTaker",
         "events": 1,
-        "totalAmount": 155000000,
-        "avgAmount": 155000000
+        "totalAmount": 920000,
+        "avgAmount": 920000
       },
       {
         "x": 1,
-        "y": 40000,
-        "r": 6.000384,
-        "label": "Adam Flanagan",
+        "y": 4000000,
+        "r": 6.048,
+        "label": "Egregor",
         "events": 1,
-        "totalAmount": 40000,
-        "avgAmount": 40000
+        "totalAmount": 4000000,
+        "avgAmount": 4000000
       },
       {
         "x": 1,
-        "y": 700000,
-        "r": 6.00672,
-        "label": "Steffan Needham",
+        "y": 5000,
+        "r": 6.00006,
+        "label": "Conor LaHiff",
         "events": 1,
-        "totalAmount": 700000,
-        "avgAmount": 700000
+        "totalAmount": 5000,
+        "avgAmount": 5000
       },
       {
         "x": 1,
-        "y": 50000,
-        "r": 6.00048,
-        "label": "David Garnett and Quindella Carter",
+        "y": 230000,
+        "r": 6.00276,
+        "label": "DualPools",
         "events": 1,
-        "totalAmount": 50000,
-        "avgAmount": 50000
+        "totalAmount": 230000,
+        "avgAmount": 230000
       },
       {
         "x": 1,
-        "y": 6100000,
-        "r": 6.05856,
-        "label": "Jose R. Diaz, Joel Pichardo, Rodrigo Zamorano and Julian Zamorano",
+        "y": 380000,
+        "r": 6.00456,
+        "label": "nSafe Ransomware Group",
         "events": 1,
-        "totalAmount": 6100000,
-        "avgAmount": 6100000
+        "totalAmount": 380000,
+        "avgAmount": 380000
       },
       {
         "x": 1,
-        "y": 400000,
-        "r": 6.00384,
-        "label": "Everest",
+        "y": 200000,
+        "r": 6.0024,
+        "label": "'cam0', '@Freak' and 'leetjones'",
         "events": 1,
-        "totalAmount": 400000,
-        "avgAmount": 400000
+        "totalAmount": 200000,
+        "avgAmount": 200000
       },
       {
         "x": 1,
-        "y": 4400000,
-        "r": 6.04224,
-        "label": "REvil",
+        "y": 1003720,
+        "r": 6.01204464,
+        "label": "Aktia Bank Plc",
         "events": 1,
-        "totalAmount": 4400000,
-        "avgAmount": 4400000
+        "totalAmount": 1003720,
+        "avgAmount": 1003720
       },
       {
         "x": 1,
-        "y": 600000,
-        "r": 6.00576,
-        "label": "Chris Suhail Folad and Khaled Nabil Abdel Fattah",
+        "y": 20000000,
+        "r": 6.24,
+        "label": "Silent Ransom Group",
         "events": 1,
-        "totalAmount": 600000,
-        "avgAmount": 600000
-      },
-      {
-        "x": 1,
-        "y": 15000,
-        "r": 6.000144,
-        "label": "Ragnarok",
-        "events": 1,
-        "totalAmount": 15000,
-        "avgAmount": 15000
+        "totalAmount": 20000000,
+        "avgAmount": 20000000
       },
       {
         "x": 1,
         "y": 1000000,
-        "r": 6.0096,
+        "r": 6.012,
         "label": "Bibiana Benson and Adedeyo Benson",
         "events": 1,
         "totalAmount": 1000000,
@@ -7979,11 +8099,254 @@ window.__FIRE_OVERRIDES = {
       {
         "x": 1,
         "y": 351432,
-        "r": 6.0033737472,
+        "r": 6.004217184,
         "label": "Kok Meng Ng",
         "events": 1,
         "totalAmount": 351432,
         "avgAmount": 351432
+      },
+      {
+        "x": 1,
+        "y": 6100000,
+        "r": 6.0732,
+        "label": "Jose R. Diaz, Joel Pichardo, Rodrigo Zamorano and Julian Zamorano",
+        "events": 1,
+        "totalAmount": 6100000,
+        "avgAmount": 6100000
+      },
+      {
+        "x": 1,
+        "y": 600000,
+        "r": 6.0072,
+        "label": "Chris Suhail Folad and Khaled Nabil Abdel Fattah",
+        "events": 1,
+        "totalAmount": 600000,
+        "avgAmount": 600000
+      },
+      {
+        "x": 1,
+        "y": 40000,
+        "r": 6.00048,
+        "label": "Adam Flanagan",
+        "events": 1,
+        "totalAmount": 40000,
+        "avgAmount": 40000
+      },
+      {
+        "x": 1,
+        "y": 50000,
+        "r": 6.0006,
+        "label": "David Garnett and Quindella Carter",
+        "events": 1,
+        "totalAmount": 50000,
+        "avgAmount": 50000
+      },
+      {
+        "x": 1,
+        "y": 15000,
+        "r": 6.00018,
+        "label": "Ragnarok",
+        "events": 1,
+        "totalAmount": 15000,
+        "avgAmount": 15000
+      },
+      {
+        "x": 1,
+        "y": 1700000,
+        "r": 6.0204,
+        "label": "Avaddon",
+        "events": 1,
+        "totalAmount": 1700000,
+        "avgAmount": 1700000
+      },
+      {
+        "x": 1,
+        "y": 4400000,
+        "r": 6.0528,
+        "label": "REvil",
+        "events": 1,
+        "totalAmount": 4400000,
+        "avgAmount": 4400000
+      },
+      {
+        "x": 1,
+        "y": 700000,
+        "r": 6.0084,
+        "label": "Steffan Needham",
+        "events": 1,
+        "totalAmount": 700000,
+        "avgAmount": 700000
+      },
+      {
+        "x": 1,
+        "y": 155000000,
+        "r": 7.859999999999999,
+        "label": "ALPHV",
+        "events": 1,
+        "totalAmount": 155000000,
+        "avgAmount": 155000000
+      },
+      {
+        "x": 1,
+        "y": 750000,
+        "r": 6.009,
+        "label": "RunSomeWarez",
+        "events": 1,
+        "totalAmount": 750000,
+        "avgAmount": 750000
+      },
+      {
+        "x": 1,
+        "y": 198000,
+        "r": 6.002376,
+        "label": "Markus P. Lukawinsky",
+        "events": 1,
+        "totalAmount": 198000,
+        "avgAmount": 198000
+      },
+      {
+        "x": 1,
+        "y": 1500000,
+        "r": 6.018,
+        "label": "Bruce W. Bridges, Joseph M. Cherry II and Pamela Dunbar",
+        "events": 1,
+        "totalAmount": 1500000,
+        "avgAmount": 1500000
+      },
+      {
+        "x": 1,
+        "y": 50000,
+        "r": 6.0006,
+        "label": "Joseph Patrick Nolan",
+        "events": 1,
+        "totalAmount": 50000,
+        "avgAmount": 50000
+      },
+      {
+        "x": 1,
+        "y": 5000,
+        "r": 6.00006,
+        "label": "Andrew Michael Shelnutt",
+        "events": 1,
+        "totalAmount": 5000,
+        "avgAmount": 5000
+      },
+      {
+        "x": 1,
+        "y": 48770,
+        "r": 6.00058524,
+        "label": "David Ernest Everett Jr.",
+        "events": 1,
+        "totalAmount": 48770,
+        "avgAmount": 48770
+      },
+      {
+        "x": 1,
+        "y": 6816.82,
+        "r": 6.00008180184,
+        "label": "Maxn3y",
+        "events": 1,
+        "totalAmount": 6816.82,
+        "avgAmount": 6816.82
+      },
+      {
+        "x": 1,
+        "y": 213000,
+        "r": 6.002556,
+        "label": "Zeekill",
+        "events": 1,
+        "totalAmount": 213000,
+        "avgAmount": 213000
+      },
+      {
+        "x": 1,
+        "y": 199727.54,
+        "r": 6.00239673048,
+        "label": "Anthony Johnson",
+        "events": 1,
+        "totalAmount": 199727.54,
+        "avgAmount": 199727.54
+      },
+      {
+        "x": 1,
+        "y": 18200000,
+        "r": 6.2184,
+        "label": "RobbinHood Ransomware Group",
+        "events": 1,
+        "totalAmount": 18200000,
+        "avgAmount": 18200000
+      },
+      {
+        "x": 1,
+        "y": 71.94,
+        "r": 6.00000086328,
+        "label": "Aderuku Adedayo",
+        "events": 1,
+        "totalAmount": 71.94,
+        "avgAmount": 71.94
+      },
+      {
+        "x": 1,
+        "y": 1225,
+        "r": 6.0000147,
+        "label": "Basil Galarnyk",
+        "events": 1,
+        "totalAmount": 1225,
+        "avgAmount": 1225
+      },
+      {
+        "x": 1,
+        "y": 1430000,
+        "r": 6.01716,
+        "label": "White Hat",
+        "events": 1,
+        "totalAmount": 1430000,
+        "avgAmount": 1430000
+      },
+      {
+        "x": 1,
+        "y": 350000,
+        "r": 6.0042,
+        "label": "Clop",
+        "events": 1,
+        "totalAmount": 350000,
+        "avgAmount": 350000
+      },
+      {
+        "x": 1,
+        "y": 6450000,
+        "r": 6.0774,
+        "label": "Devman",
+        "events": 1,
+        "totalAmount": 6450000,
+        "avgAmount": 6450000
+      },
+      {
+        "x": 1,
+        "y": 1970,
+        "r": 6.00002364,
+        "label": "Schiavini",
+        "events": 1,
+        "totalAmount": 1970,
+        "avgAmount": 1970
+      },
+      {
+        "x": 1,
+        "y": 6335546.86,
+        "r": 6.07602656232,
+        "label": "JokerStash (FIN7)",
+        "events": 1,
+        "totalAmount": 6335546.86,
+        "avgAmount": 6335546.86
+      },
+      {
+        "x": 1,
+        "y": 1000000,
+        "r": 6.012,
+        "label": "Michael Mumbauer",
+        "events": 1,
+        "totalAmount": 1000000,
+        "avgAmount": 1000000
       }
     ]
   },
@@ -7991,252 +8354,252 @@ window.__FIRE_OVERRIDES = {
     "available": true,
     "points": [
       {
-        "x": 579,
-        "y": 13566199762.969501,
-        "r": 25.510712314295017,
-        "naicsCode": "31",
-        "naicsIndustry": "MANUFACTURING",
-        "events": 579,
-        "totalAmount": 13566199762.969501,
-        "avgAmount": 23430396.827235755,
-        "label": "MANUFACTURING"
-      },
-      {
-        "x": 983,
-        "y": 28331611529.279995,
-        "r": 30,
-        "naicsCode": "51",
-        "naicsIndustry": "INFORMATION",
-        "events": 983,
-        "totalAmount": 28331611529.279995,
-        "avgAmount": 28821578.361424208,
-        "label": "INFORMATION"
-      },
-      {
-        "x": 1565,
-        "y": 26022188032.089993,
-        "r": 19.84595609147673,
+        "x": 1735,
+        "y": 23809905402.14999,
+        "r": 16.862785375924137,
         "naicsCode": "52",
         "naicsIndustry": "FINANCE AND INSURANCE",
-        "events": 1565,
-        "totalAmount": 26022188032.089993,
-        "avgAmount": 16627596.186638974,
+        "events": 1735,
+        "totalAmount": 23809905402.14999,
+        "avgAmount": 13723288.416224778,
         "label": "FINANCE AND INSURANCE"
       },
       {
-        "x": 862,
-        "y": 9675311853.743898,
-        "r": 15.3465468548866,
-        "naicsCode": "54",
-        "naicsIndustry": "PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES",
-        "events": 862,
-        "totalAmount": 9675311853.743898,
-        "avgAmount": 11224259.691118212,
-        "label": "PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"
-      },
-      {
-        "x": 257,
-        "y": 4280448682.17,
-        "r": 19.869143848443343,
-        "naicsCode": "N/A",
-        "naicsIndustry": "Unknown",
-        "events": 257,
-        "totalAmount": 4280448682.17,
-        "avgAmount": 16655442.34307393,
-        "label": "Unknown"
-      },
-      {
-        "x": 209,
-        "y": 3078992231.07,
-        "r": 18.267492134911176,
-        "naicsCode": "42",
-        "naicsIndustry": "WHOLESALE TRADE",
-        "events": 209,
-        "totalAmount": 3078992231.07,
-        "avgAmount": 14732020.244354067,
-        "label": "WHOLESALE TRADE"
-      },
-      {
-        "x": 1297,
-        "y": 6300722315.272199,
-        "r": 10.045235827504264,
-        "naicsCode": "56",
-        "naicsIndustry": "ADMINISTRATIVE AND SUPPORT AND WASTE MANAGEMENT AND REMEDIATION SERVICES",
-        "events": 1297,
-        "totalAmount": 6300722315.272199,
-        "avgAmount": 4857920.05803562,
-        "label": "ADMINISTRATIVE AND SUPPORT AND WASTE MANAGEMENT AND REMEDIATION SERVICES"
-      },
-      {
-        "x": 710,
-        "y": 16856875569.425,
-        "r": 25.77025238720971,
-        "naicsCode": "92",
-        "naicsIndustry": "PUBLIC ADMINISTRATION",
-        "events": 710,
-        "totalAmount": 16856875569.425,
-        "avgAmount": 23742078.266795773,
-        "label": "PUBLIC ADMINISTRATION"
-      },
-      {
-        "x": 474,
-        "y": 6744547419.889999,
-        "r": 17.84862492993217,
-        "naicsCode": "44",
-        "naicsIndustry": "RETAIL TRADE",
-        "events": 474,
-        "totalAmount": 6744547419.889999,
-        "avgAmount": 14229002.995548522,
-        "label": "RETAIL TRADE"
-      },
-      {
-        "x": 793,
-        "y": 12483523422.759003,
-        "r": 19.10863510112293,
+        "x": 887,
+        "y": 16159200354.079002,
+        "r": 20.420464641384637,
         "naicsCode": "62",
         "naicsIndustry": "HEALTH CARE AND SOCIAL ASSISTANCE",
-        "events": 793,
-        "totalAmount": 12483523422.759003,
-        "avgAmount": 15742148.074097103,
+        "events": 887,
+        "totalAmount": 16159200354.079002,
+        "avgAmount": 18217813.25149831,
         "label": "HEALTH CARE AND SOCIAL ASSISTANCE"
       },
       {
-        "x": 131,
-        "y": 611531771.6899999,
-        "r": 9.887238711004528,
+        "x": 1344,
+        "y": 6728454037.552197,
+        "r": 9.962771486944504,
+        "naicsCode": "56",
+        "naicsIndustry": "ADMINISTRATIVE AND SUPPORT AND WASTE MANAGEMENT AND REMEDIATION SERVICES",
+        "events": 1344,
+        "totalAmount": 6728454037.552197,
+        "avgAmount": 5006290.206512052,
+        "label": "ADMINISTRATIVE AND SUPPORT AND WASTE MANAGEMENT AND REMEDIATION SERVICES"
+      },
+      {
+        "x": 135,
+        "y": 652234210.1200001,
+        "r": 9.824307575225847,
         "naicsCode": "23",
         "naicsIndustry": "CONSTRUCTION",
-        "events": 131,
-        "totalAmount": 611531771.6899999,
-        "avgAmount": 4668181.463282443,
+        "events": 135,
+        "totalAmount": 652234210.1200001,
+        "avgAmount": 4831364.519407408,
         "label": "CONSTRUCTION"
       },
       {
-        "x": 402,
-        "y": 1917898327.3962,
-        "r": 9.972766211638941,
+        "x": 766,
+        "y": 17038999991.074999,
+        "r": 23.6075261147524,
+        "naicsCode": "92",
+        "naicsIndustry": "PUBLIC ADMINISTRATION",
+        "events": 766,
+        "totalAmount": 17038999991.074999,
+        "avgAmount": 22244125.31471932,
+        "label": "PUBLIC ADMINISTRATION"
+      },
+      {
+        "x": 433,
+        "y": 2567141394.5762005,
+        "r": 10.69293891644138,
         "naicsCode": "61",
         "naicsIndustry": "EDUCATIONAL SERVICES",
-        "events": 402,
-        "totalAmount": 1917898327.3962,
-        "avgAmount": 4770891.361682089,
+        "events": 433,
+        "totalAmount": 2567141394.5762005,
+        "avgAmount": 5928733.012878061,
         "label": "EDUCATIONAL SERVICES"
       },
       {
-        "x": 254,
-        "y": 1941461207.8699994,
-        "r": 12.364854526671476,
-        "naicsCode": "81",
-        "naicsIndustry": "OTHER SERVICES (EXCEPT PUBLIC ADMINISTRATION)",
-        "events": 254,
-        "totalAmount": 1941461207.8699994,
-        "avgAmount": 7643548.062480313,
-        "label": "OTHER SERVICES (EXCEPT PUBLIC ADMINISTRATION)"
+        "x": 613,
+        "y": 16782251214.8,
+        "r": 27.67069059013339,
+        "naicsCode": "31",
+        "naicsIndustry": "MANUFACTURING",
+        "events": 613,
+        "totalAmount": 16782251214.8,
+        "avgAmount": 27377245.048613377,
+        "label": "MANUFACTURING"
       },
       {
-        "x": 138,
-        "y": 754145666.002,
-        "r": 10.550610183649457,
-        "naicsCode": "53",
-        "naicsIndustry": "REAL ESTATE AND RENTAL AND LEASING",
-        "events": 138,
-        "totalAmount": 754145666.002,
-        "avgAmount": 5464823.666681159,
-        "label": "REAL ESTATE AND RENTAL AND LEASING"
+        "x": 1043,
+        "y": 31623689849.963,
+        "r": 30,
+        "naicsCode": "51",
+        "naicsIndustry": "INFORMATION",
+        "events": 1043,
+        "totalAmount": 31623689849.963,
+        "avgAmount": 30319932.742054652,
+        "label": "INFORMATION"
       },
       {
-        "x": 105,
-        "y": 442028243.74,
-        "r": 9.50553414783835,
-        "naicsCode": "22",
-        "naicsIndustry": "UTILITIES",
-        "events": 105,
-        "totalAmount": 442028243.74,
-        "avgAmount": 4209792.79752381,
-        "label": "UTILITIES"
+        "x": 502,
+        "y": 7354252016.78,
+        "r": 17.596256131987964,
+        "naicsCode": "44",
+        "naicsIndustry": "RETAIL TRADE",
+        "events": 502,
+        "totalAmount": 7354252016.78,
+        "avgAmount": 14649904.415896414,
+        "label": "RETAIL TRADE"
       },
       {
-        "x": 91,
-        "y": 854612665.8209997,
-        "r": 13.820263991058571,
-        "naicsCode": "71",
-        "naicsIndustry": "ARTS, ENTERTAINMENT, AND RECREATION",
-        "events": 91,
-        "totalAmount": 854612665.8209997,
-        "avgAmount": 9391347.976054942,
-        "label": "ARTS, ENTERTAINMENT, AND RECREATION"
+        "x": 921,
+        "y": 16861628638.903904,
+        "r": 20.491818898207395,
+        "naicsCode": "54",
+        "naicsIndustry": "PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES",
+        "events": 921,
+        "totalAmount": 16861628638.903904,
+        "avgAmount": 18307957.262653533,
+        "label": "PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES"
       },
       {
-        "x": 186,
-        "y": 1226443111.2799997,
-        "r": 11.490702905012906,
-        "naicsCode": "72",
-        "naicsIndustry": "ACCOMMODATION AND FOOD SERVICES",
-        "events": 186,
-        "totalAmount": 1226443111.2799997,
-        "avgAmount": 6593780.168172042,
-        "label": "ACCOMMODATION AND FOOD SERVICES"
+        "x": 215,
+        "y": 3259830551.9500003,
+        "r": 18.001611768363183,
+        "naicsCode": "42",
+        "naicsIndustry": "WHOLESALE TRADE",
+        "events": 215,
+        "totalAmount": 3259830551.9500003,
+        "avgAmount": 15162002.567209303,
+        "label": "WHOLESALE TRADE"
       },
       {
-        "x": 218,
-        "y": 4479464170.692,
-        "r": 23.110513956162496,
+        "x": 310,
+        "y": 5169241330.881999,
+        "r": 19.19921558689307,
         "naicsCode": "55",
         "naicsIndustry": "MANAGEMENT OF COMPANIES AND ENTERPRISES",
-        "events": 218,
-        "totalAmount": 4479464170.692,
-        "avgAmount": 20548000.78299083,
+        "events": 310,
+        "totalAmount": 5169241330.881999,
+        "avgAmount": 16674972.035103222,
         "label": "MANAGEMENT OF COMPANIES AND ENTERPRISES"
       },
       {
-        "x": 142,
-        "y": 2303627855.81,
-        "r": 19.508821349484503,
+        "x": 137,
+        "y": 520939859.2620001,
+        "r": 9.00988587822241,
+        "naicsCode": "53",
+        "naicsIndustry": "REAL ESTATE AND RENTAL AND LEASING",
+        "events": 137,
+        "totalAmount": 520939859.2620001,
+        "avgAmount": 3802480.7245401465,
+        "label": "REAL ESTATE AND RENTAL AND LEASING"
+      },
+      {
+        "x": 111,
+        "y": 544753292.3399999,
+        "r": 9.884721534283301,
+        "naicsCode": "22",
+        "naicsIndustry": "UTILITIES",
+        "events": 111,
+        "totalAmount": 544753292.3399999,
+        "avgAmount": 4907687.318378378,
+        "label": "UTILITIES"
+      },
+      {
+        "x": 101,
+        "y": 1347568652.6009998,
+        "r": 16.561182177267163,
+        "naicsCode": "71",
+        "naicsIndustry": "ARTS, ENTERTAINMENT, AND RECREATION",
+        "events": 101,
+        "totalAmount": 1347568652.6009998,
+        "avgAmount": 13342263.887138613,
+        "label": "ARTS, ENTERTAINMENT, AND RECREATION"
+      },
+      {
+        "x": 281,
+        "y": 1969919573.5899994,
+        "r": 11.54913363528235,
+        "naicsCode": "81",
+        "naicsIndustry": "OTHER SERVICES (EXCEPT PUBLIC ADMINISTRATION)",
+        "events": 281,
+        "totalAmount": 1969919573.5899994,
+        "avgAmount": 7010389.941601422,
+        "label": "OTHER SERVICES (EXCEPT PUBLIC ADMINISTRATION)"
+      },
+      {
+        "x": 193,
+        "y": 1260991315.6300004,
+        "r": 11.171753234672785,
+        "naicsCode": "72",
+        "naicsIndustry": "ACCOMMODATION AND FOOD SERVICES",
+        "events": 193,
+        "totalAmount": 1260991315.6300004,
+        "avgAmount": 6533633.759740935,
+        "label": "ACCOMMODATION AND FOOD SERVICES"
+      },
+      {
+        "x": 106,
+        "y": 537671969.8499999,
+        "r": 10.015083107638478,
+        "naicsCode": "N/A",
+        "naicsIndustry": "Unknown",
+        "events": 106,
+        "totalAmount": 537671969.8499999,
+        "avgAmount": 5072377.074056603,
+        "label": "Unknown"
+      },
+      {
+        "x": 147,
+        "y": 2433316172.26,
+        "r": 19.102803134048543,
         "naicsCode": "48",
         "naicsIndustry": "TRANSPORTATION AND WAREHOUSING",
-        "events": 142,
-        "totalAmount": 2303627855.81,
-        "avgAmount": 16222731.378943661,
+        "events": 147,
+        "totalAmount": 2433316172.26,
+        "avgAmount": 16553171.239863947,
         "label": "TRANSPORTATION AND WAREHOUSING"
       },
       {
         "x": 21,
-        "y": 290316674,
-        "r": 17.51187767757745,
+        "y": 328416667.5,
+        "r": 18.37909521366173,
         "naicsCode": "11",
         "naicsIndustry": "AGRICULTURE, FORESTRY, FISHING AND HUNTING",
         "events": 21,
-        "totalAmount": 290316674,
-        "avgAmount": 13824603.523809524,
+        "totalAmount": 328416667.5,
+        "avgAmount": 15638888.92857143,
         "label": "AGRICULTURE, FORESTRY, FISHING AND HUNTING"
       },
       {
-        "x": 30,
-        "y": 163893956.41000003,
-        "r": 10.549201417209304,
+        "x": 31,
+        "y": 212327156.41000003,
+        "r": 11.421592324708453,
         "naicsCode": "21",
         "naicsIndustry": "MINING, QUARRYING, AND OIL AND GAS EXTRACTION",
-        "events": 30,
-        "totalAmount": 163893956.41000003,
-        "avgAmount": 5463131.880333334,
+        "events": 31,
+        "totalAmount": 212327156.41000003,
+        "avgAmount": 6849263.110000001,
         "label": "MINING, QUARRYING, AND OIL AND GAS EXTRACTION"
       }
     ]
   },
   "zywaveMitre": {
     "available": true,
-    "fireTotal": 7821,
+    "fireTotal": 10127,
     "otherTotal": 611,
-    "both": 80,
-    "fireOnly": 7741,
-    "otherOnly": 531,
+    "both": 87,
+    "fireOnly": 10040,
+    "otherOnly": 524,
     "stats": [
       {
-        "number": "7,821",
+        "number": "10,127",
         "desc": "FIRE vulnerabilities"
       },
       {
-        "number": "80",
+        "number": "87",
         "desc": "In both FIRE and ATT&CK"
       },
       {
@@ -8250,9 +8613,9 @@ window.__FIRE_OVERRIDES = {
       "ATT&CK only"
     ],
     "data": [
-      7741,
-      80,
-      531
+      10040,
+      87,
+      524
     ]
   },
   "zywaveMitreApt": {
@@ -8367,6 +8730,15 @@ window.__FIRE_OVERRIDES = {
         "fireTotal": 129
       },
       {
+        "x": 119,
+        "y": 190,
+        "r": 11,
+        "label": "FIN6",
+        "attackId": "G0037",
+        "kevTotal": 309,
+        "fireTotal": 119
+      },
+      {
         "x": 120,
         "y": 186,
         "r": 11,
@@ -8473,6 +8845,15 @@ window.__FIRE_OVERRIDES = {
         "attackId": "G1057",
         "kevTotal": 268,
         "fireTotal": 116
+      },
+      {
+        "x": 122,
+        "y": 143,
+        "r": 11,
+        "label": "TeamPCP",
+        "attackId": "G1056",
+        "kevTotal": 265,
+        "fireTotal": 122
       },
       {
         "x": 105,
@@ -8610,6 +8991,15 @@ window.__FIRE_OVERRIDES = {
         "fireTotal": 51
       },
       {
+        "x": 68,
+        "y": 96,
+        "r": 11,
+        "label": "LAPSUS$",
+        "attackId": "G1004",
+        "kevTotal": 164,
+        "fireTotal": 68
+      },
+      {
         "x": 64,
         "y": 98,
         "r": 11,
@@ -8662,6 +9052,15 @@ window.__FIRE_OVERRIDES = {
         "attackId": "G0119",
         "kevTotal": 144,
         "fireTotal": 61
+      },
+      {
+        "x": 63,
+        "y": 77,
+        "r": 11,
+        "label": "Chimera",
+        "attackId": "G0114",
+        "kevTotal": 140,
+        "fireTotal": 63
       },
       {
         "x": 46,
@@ -8792,7 +9191,7 @@ window.__FIRE_OVERRIDES = {
     ],
     "stats": [
       {
-        "number": "64",
+        "number": "68",
         "desc": "ATT&CK groups also in Zywave-sourced Loss Data"
       },
       {
@@ -8848,9 +9247,9 @@ window.__FIRE_OVERRIDES = {
         "Local"
       ],
       "data": [
-        501,
+        506,
         9,
-        73
+        74
       ]
     },
     "ac": {
@@ -8859,7 +9258,7 @@ window.__FIRE_OVERRIDES = {
         "High"
       ],
       "data": [
-        544,
+        550,
         39
       ]
     },
@@ -8870,9 +9269,9 @@ window.__FIRE_OVERRIDES = {
         "High"
       ],
       "data": [
-        448,
-        95,
-        40
+        451,
+        97,
+        41
       ]
     },
     "ui": {
@@ -8881,8 +9280,8 @@ window.__FIRE_OVERRIDES = {
         "Required"
       ],
       "data": [
-        501,
-        82
+        502,
+        87
       ]
     },
     "scope": {
@@ -8891,8 +9290,8 @@ window.__FIRE_OVERRIDES = {
         "Changed"
       ],
       "data": [
-        484,
-        99
+        489,
+        100
       ]
     },
     "confidentiality": {
@@ -8903,8 +9302,8 @@ window.__FIRE_OVERRIDES = {
       ],
       "data": [
         33,
-        26,
-        524
+        29,
+        527
       ]
     },
     "integrity": {
@@ -8915,8 +9314,8 @@ window.__FIRE_OVERRIDES = {
       ],
       "data": [
         72,
-        35,
-        476
+        38,
+        479
       ]
     },
     "availability": {
@@ -8926,9 +9325,9 @@ window.__FIRE_OVERRIDES = {
         "High"
       ],
       "data": [
-        115,
-        19,
-        449
+        117,
+        20,
+        452
       ]
     }
   },
@@ -8941,7 +9340,7 @@ window.__FIRE_OVERRIDES = {
       ],
       "data": [
         217,
-        366
+        372
       ],
       "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     },
@@ -8951,8 +9350,8 @@ window.__FIRE_OVERRIDES = {
         "Other vectors"
       ],
       "data": [
-        21007,
-        280731
+        20848,
+        277281
       ],
       "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
@@ -8960,32 +9359,32 @@ window.__FIRE_OVERRIDES = {
   "fireHero": {
     "stats": [
       {
-        "value": 610,
+        "value": 616,
         "suffix": "",
         "isAccent": false,
         "isStatic": false,
         "desc": "FIRE vulnerabilities in catalog"
       },
       {
-        "value": "70.3%",
+        "value": "69.6%",
         "isAccent": true,
         "isStatic": true,
         "desc": "Overlap with CISA KEV"
       },
       {
-        "value": 4933,
+        "value": 4871,
         "suffix": "",
         "isAccent": false,
         "isStatic": false,
         "desc": "ICE vulns: breach but not loss"
       },
       {
-        "value": "51.5%",
+        "value": "51.0%",
         "isAccent": true,
         "isStatic": true,
         "desc": "FIRE vulns CVSS ≥9.0"
       }
     ]
   },
-  "lastUpdated": "2026/10/09"
+  "lastUpdated": "2026/10/06"
 };
