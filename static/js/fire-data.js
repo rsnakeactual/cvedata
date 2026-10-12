@@ -236,8 +236,8 @@ window.__FIRE_OVERRIDES = {
       33,
       27,
       17,
-      16,
-      12,
+      17,
+      11,
       8,
       7,
       4,
@@ -278,9 +278,9 @@ window.__FIRE_OVERRIDES = {
       3,
       0,
       1,
-      3,
+      2,
       1,
-      4,
+      5,
       1,
       1,
       2,
@@ -561,10 +561,10 @@ window.__FIRE_OVERRIDES = {
   "fireExploitRefsOverlap": {
     "available": true,
     "fireTotal": 610,
-    "otherTotal": 43495,
+    "otherTotal": 43608,
     "both": 87,
     "fireOnly": 523,
-    "otherOnly": 43408,
+    "otherOnly": 43521,
     "stats": [
       {
         "number": "14.3%",
@@ -583,7 +583,7 @@ window.__FIRE_OVERRIDES = {
     "data": [
       523,
       87,
-      43408
+      43521
     ]
   },
   "fireGreenboneOverlap": {
@@ -2211,7 +2211,7 @@ window.__FIRE_OVERRIDES = {
       },
       {
         "x": 10,
-        "y": 46
+        "y": 48
       },
       {
         "x": 8.8,
@@ -3125,12 +3125,12 @@ window.__FIRE_OVERRIDES = {
     "available": true,
     "node": {
       "label": [
-        "Critical (47,230, 11.7%)",
-        "High (140,404, 34.8%)",
-        "Medium (170,990, 42.3%)",
-        "Low (16,225, 4.0%)",
-        "No-score (28,945, 7.2%)",
-        "No breach/loss (398,246, 98.6%)",
+        "Critical (47,298, 11.7%)",
+        "High (140,526, 34.8%)",
+        "Medium (171,154, 42.3%)",
+        "Low (16,233, 4.0%)",
+        "No-score (28,939, 7.2%)",
+        "No breach/loss (398,602, 98.6%)",
         "ICE (4,938, 1.2%)",
         "FIRE (610, 0.2%)"
       ],
@@ -3181,11 +3181,11 @@ window.__FIRE_OVERRIDES = {
         7
       ],
       "value": [
-        45159,
-        138100,
-        169990,
-        16191,
-        28806,
+        45227,
+        138222,
+        170154,
+        16199,
+        28800,
         1757,
         2085,
         933,
@@ -8951,8 +8951,8 @@ window.__FIRE_OVERRIDES = {
         "Other vectors"
       ],
       "data": [
-        21053,
-        281459
+        21113,
+        281761
       ],
       "topVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
@@ -8987,5 +8987,5 @@ window.__FIRE_OVERRIDES = {
       }
     ]
   },
-  "lastUpdated": "2026/10/11"
+  "lastUpdated": "2026/10/12"
 };
