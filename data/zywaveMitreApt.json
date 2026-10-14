@@ -227,6 +227,24 @@
       "fireTotal": 105
     },
     {
+      "x": 120,
+      "y": 134,
+      "r": 11,
+      "label": "Salt Typhoon",
+      "attackId": "G1045",
+      "kevTotal": 254,
+      "fireTotal": 120
+    },
+    {
+      "x": 113,
+      "y": 134,
+      "r": 11,
+      "label": "The Gentlemen",
+      "attackId": "G1058",
+      "kevTotal": 247,
+      "fireTotal": 113
+    },
+    {
       "x": 114,
       "y": 127,
       "r": 11,
@@ -234,6 +252,15 @@
       "attackId": "G1040",
       "kevTotal": 241,
       "fireTotal": 114
+    },
+    {
+      "x": 96,
+      "y": 144,
+      "r": 11,
+      "label": "APT38",
+      "attackId": "G0082",
+      "kevTotal": 240,
+      "fireTotal": 96
     },
     {
       "x": 87,
@@ -299,15 +326,6 @@
       "fireTotal": 107
     },
     {
-      "x": 84,
-      "y": 119,
-      "r": 11,
-      "label": "APT38",
-      "attackId": "G0082",
-      "kevTotal": 203,
-      "fireTotal": 84
-    },
-    {
       "x": 82,
       "y": 116,
       "r": 11,
@@ -360,15 +378,6 @@
       "attackId": "G0022",
       "kevTotal": 162,
       "fireTotal": 64
-    },
-    {
-      "x": 88,
-      "y": 74,
-      "r": 11,
-      "label": "Salt Typhoon",
-      "attackId": "G1045",
-      "kevTotal": 162,
-      "fireTotal": 88
     },
     {
       "x": 61,
@@ -535,11 +544,11 @@
   ],
   "stats": [
     {
-      "number": "64",
+      "number": "65",
       "desc": "ATT&CK groups also in Zywave-sourced Loss Data"
     },
     {
-      "number": "416",
+      "number": "417",
       "desc": "Unique CISA KEV CVEs they use"
     },
     {

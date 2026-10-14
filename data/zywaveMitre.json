@@ -1,21 +1,21 @@
 {
   "available": true,
   "fireTotal": 7821,
-  "otherTotal": 611,
-  "both": 80,
-  "fireOnly": 7741,
-  "otherOnly": 531,
+  "otherTotal": 618,
+  "both": 81,
+  "fireOnly": 7740,
+  "otherOnly": 537,
   "stats": [
     {
       "number": "7,821",
       "desc": "FIRE vulnerabilities"
     },
     {
-      "number": "80",
+      "number": "81",
       "desc": "In both FIRE and ATT&CK"
     },
     {
-      "number": "611",
+      "number": "618",
       "desc": "ATT&CK catalog"
     }
   ],
@@ -25,8 +25,8 @@
     "ATT&CK only"
   ],
   "data": [
-    7741,
-    80,
-    531
+    7740,
+    81,
+    537
   ]
 }

@@ -56,15 +56,15 @@
     190214,
     217771,
     249230,
-    288490,
-    333846,
-    405106
+    288496,
+    333858,
+    407394
   ],
   "peakYear": "2026",
-  "peakCount": 71260,
+  "peakCount": 73536,
   "insights": [
     {
-      "number": "71,260",
+      "number": "73,536",
       "desc": "CVEs published in 2026 so far — already the highest single-year total ever recorded, and the year is not over"
     },
     {
@@ -72,7 +72,7 @@
       "desc": "Increase of new CVEs reported from 2024 to 2025. The number of new CVEs published each year is accelerating."
     },
     {
-      "number": "405,106",
+      "number": "407,394",
       "desc": "Total CVEs since 1999. The first 100,000 took 18 years. The last 100,000 took just 2."
     }
   ]
