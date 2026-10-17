@@ -1,13 +1,13 @@
 {
   "available": true,
-  "fireTotal": 610,
+  "fireTotal": 619,
   "otherTotal": 74,
   "both": 56,
-  "fireOnly": 554,
+  "fireOnly": 563,
   "otherOnly": 18,
   "stats": [
     {
-      "number": "610",
+      "number": "619",
       "desc": "FIRE vulnerabilities"
     },
     {
@@ -25,7 +25,7 @@
     "DBIR only"
   ],
   "data": [
-    554,
+    563,
     56,
     18
   ]

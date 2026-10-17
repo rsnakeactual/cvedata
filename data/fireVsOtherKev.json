@@ -667,6 +667,118 @@
       "kevCount": 41
     },
     {
+      "x": 82,
+      "y": 116,
+      "label": "Scattered Spider",
+      "fireCount": 82,
+      "kevCount": 116
+    },
+    {
+      "x": 53,
+      "y": 71,
+      "label": "LuminousMoth",
+      "fireCount": 53,
+      "kevCount": 71
+    },
+    {
+      "x": 63,
+      "y": 77,
+      "label": "Chimera",
+      "fireCount": 63,
+      "kevCount": 77
+    },
+    {
+      "x": 124,
+      "y": 142,
+      "label": "GALLIUM",
+      "fireCount": 124,
+      "kevCount": 142
+    },
+    {
+      "x": 64,
+      "y": 98,
+      "label": "APT3",
+      "fireCount": 64,
+      "kevCount": 98
+    },
+    {
+      "x": 46,
+      "y": 92,
+      "label": "ZIRCONIUM",
+      "fireCount": 46,
+      "kevCount": 92
+    },
+    {
+      "x": 128,
+      "y": 169,
+      "label": "BlackByte",
+      "fireCount": 128,
+      "kevCount": 169
+    },
+    {
+      "x": 107,
+      "y": 99,
+      "label": "Agrius",
+      "fireCount": 107,
+      "kevCount": 99
+    },
+    {
+      "x": 59,
+      "y": 58,
+      "label": "TeamTNT",
+      "fireCount": 59,
+      "kevCount": 58
+    },
+    {
+      "x": 101,
+      "y": 85,
+      "label": "GOLD SOUTHFIELD",
+      "fireCount": 101,
+      "kevCount": 85
+    },
+    {
+      "x": 111,
+      "y": 119,
+      "label": "INC Ransom",
+      "fireCount": 111,
+      "kevCount": 119
+    },
+    {
+      "x": 121,
+      "y": 128,
+      "label": "Medusa Group",
+      "fireCount": 121,
+      "kevCount": 128
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "label": "DarkVishnya",
+      "fireCount": 10,
+      "kevCount": 3
+    },
+    {
+      "x": 116,
+      "y": 152,
+      "label": "ShinyHunters",
+      "fireCount": 116,
+      "kevCount": 152
+    },
+    {
+      "x": 21,
+      "y": 27,
+      "label": "Carbanak",
+      "fireCount": 21,
+      "kevCount": 27
+    },
+    {
+      "x": 47,
+      "y": 44,
+      "label": "Akira",
+      "fireCount": 47,
+      "kevCount": 44
+    },
+    {
       "x": 96,
       "y": 102,
       "label": "Rocke",
@@ -702,32 +814,11 @@
       "kevCount": 95
     },
     {
-      "x": 101,
-      "y": 85,
-      "label": "GOLD SOUTHFIELD",
-      "fireCount": 101,
-      "kevCount": 85
-    },
-    {
-      "x": 116,
-      "y": 152,
-      "label": "ShinyHunters",
-      "fireCount": 116,
-      "kevCount": 152
-    },
-    {
       "x": 118,
       "y": 125,
       "label": "FIN13",
       "fireCount": 118,
       "kevCount": 125
-    },
-    {
-      "x": 121,
-      "y": 128,
-      "label": "Medusa Group",
-      "fireCount": 121,
-      "kevCount": 128
     },
     {
       "x": 121,
@@ -751,25 +842,11 @@
       "kevCount": 113
     },
     {
-      "x": 128,
-      "y": 169,
-      "label": "BlackByte",
-      "fireCount": 128,
-      "kevCount": 169
-    },
-    {
       "x": 113,
       "y": 134,
       "label": "The Gentlemen",
       "fireCount": 113,
       "kevCount": 134
-    },
-    {
-      "x": 107,
-      "y": 99,
-      "label": "Agrius",
-      "fireCount": 107,
-      "kevCount": 99
     },
     {
       "x": 102,
@@ -786,25 +863,11 @@
       "kevCount": 81
     },
     {
-      "x": 124,
-      "y": 142,
-      "label": "GALLIUM",
-      "fireCount": 124,
-      "kevCount": 142
-    },
-    {
       "x": 95,
       "y": 92,
       "label": "Volatile Cedar",
       "fireCount": 95,
       "kevCount": 92
-    },
-    {
-      "x": 111,
-      "y": 119,
-      "label": "INC Ransom",
-      "fireCount": 111,
-      "kevCount": 119
     },
     {
       "x": 123,
@@ -856,11 +919,11 @@
       "kevCount": 134
     },
     {
-      "x": 82,
-      "y": 116,
-      "label": "Scattered Spider",
-      "fireCount": 82,
-      "kevCount": 116
+      "x": 68,
+      "y": 96,
+      "label": "LAPSUS$",
+      "fireCount": 68,
+      "kevCount": 96
     },
     {
       "x": 74,
@@ -877,25 +940,11 @@
       "kevCount": 57
     },
     {
-      "x": 53,
-      "y": 71,
-      "label": "LuminousMoth",
-      "fireCount": 53,
-      "kevCount": 71
-    },
-    {
       "x": 55,
       "y": 64,
       "label": "APT18",
       "fireCount": 55,
       "kevCount": 64
-    },
-    {
-      "x": 59,
-      "y": 58,
-      "label": "TeamTNT",
-      "fireCount": 59,
-      "kevCount": 58
     },
     {
       "x": 22,
@@ -919,13 +968,6 @@
       "kevCount": 24
     },
     {
-      "x": 46,
-      "y": 92,
-      "label": "ZIRCONIUM",
-      "fireCount": 46,
-      "kevCount": 92
-    },
-    {
       "x": 26,
       "y": 26,
       "label": "Metador",
@@ -938,48 +980,6 @@
       "label": "Mustard Tempest",
       "fireCount": 21,
       "kevCount": 59
-    },
-    {
-      "x": 64,
-      "y": 98,
-      "label": "APT3",
-      "fireCount": 64,
-      "kevCount": 98
-    },
-    {
-      "x": 63,
-      "y": 77,
-      "label": "Chimera",
-      "fireCount": 63,
-      "kevCount": 77
-    },
-    {
-      "x": 10,
-      "y": 3,
-      "label": "DarkVishnya",
-      "fireCount": 10,
-      "kevCount": 3
-    },
-    {
-      "x": 21,
-      "y": 27,
-      "label": "Carbanak",
-      "fireCount": 21,
-      "kevCount": 27
-    },
-    {
-      "x": 47,
-      "y": 44,
-      "label": "Akira",
-      "fireCount": 47,
-      "kevCount": 44
-    },
-    {
-      "x": 68,
-      "y": 96,
-      "label": "LAPSUS$",
-      "fireCount": 68,
-      "kevCount": 96
     },
     {
       "x": 25,
@@ -1031,6 +1031,20 @@
       "kevCount": 38
     },
     {
+      "x": 6,
+      "y": 0,
+      "label": "CopyKittens",
+      "fireCount": 6,
+      "kevCount": 0
+    },
+    {
+      "x": 23,
+      "y": 27,
+      "label": "POLONIUM",
+      "fireCount": 23,
+      "kevCount": 27
+    },
+    {
       "x": 17,
       "y": 9,
       "label": "Lotus Blossom",
@@ -1059,13 +1073,6 @@
       "kevCount": 29
     },
     {
-      "x": 23,
-      "y": 27,
-      "label": "POLONIUM",
-      "fireCount": 23,
-      "kevCount": 27
-    },
-    {
       "x": 20,
       "y": 29,
       "label": "Silent Librarian",
@@ -1078,13 +1085,6 @@
       "label": "Water Galura",
       "fireCount": 10,
       "kevCount": 5
-    },
-    {
-      "x": 6,
-      "y": 0,
-      "label": "CopyKittens",
-      "fireCount": 6,
-      "kevCount": 0
     },
     {
       "x": 4,

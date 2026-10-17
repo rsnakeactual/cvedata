@@ -1,17 +1,17 @@
 {
   "available": true,
-  "fireTotal": 610,
+  "fireTotal": 619,
   "otherTotal": 1254,
-  "both": 168,
-  "fireOnly": 442,
-  "otherOnly": 1086,
+  "both": 169,
+  "fireOnly": 450,
+  "otherOnly": 1085,
   "stats": [
     {
-      "number": "610",
+      "number": "619",
       "desc": "FIRE vulnerabilities"
     },
     {
-      "number": "168",
+      "number": "169",
       "desc": "In both FIRE and Shadowserver"
     },
     {
@@ -25,8 +25,8 @@
     "Shadowserver only"
   ],
   "data": [
-    442,
-    168,
-    1086
+    450,
+    169,
+    1085
   ]
 }
