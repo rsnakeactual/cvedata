@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 5603,
+  "kevTotal": 5604,
   "otherTotal": 39,
   "both": 39,
-  "kevOnly": 5564,
+  "kevOnly": 5565,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "5,603",
+      "number": "5,604",
       "desc": "KEVs (combined catalog)"
     },
     {
@@ -25,7 +25,7 @@
     "ENISA only"
   ],
   "data": [
-    5564,
+    5565,
     39,
     0
   ]

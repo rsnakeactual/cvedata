@@ -2,9 +2,9 @@
   "available": true,
   "items": [
     {
-      "num": "409,208",
+      "num": "409,298",
       "title": "The CVE flood",
-      "body": "75,326 CVEs were published in 2026. Total has passed 409,208 and keeps growing."
+      "body": "75,414 CVEs were published in 2026. Total has passed 409,298 and keeps growing."
     },
     {
       "num": "4.35%",
@@ -22,7 +22,7 @@
       "body": "CVSS 9.8 appears far more often than the calculator would predict (26885:1 ratio). Researchers and hackers have strong preferences."
     },
     {
-      "num": "18,501",
+      "num": "18,506",
       "title": "Rejected CVEs",
       "body": "Duplicates, errors, and non-vulnerabilities that slipped through. Quality control is straining."
     },
