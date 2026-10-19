@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 5604,
+  "kevTotal": 5611,
   "otherTotal": 75647,
   "both": 1888,
-  "kevOnly": 3716,
+  "kevOnly": 3723,
   "otherOnly": 73759,
   "stats": [
     {
-      "number": "33.7%",
+      "number": "33.6%",
       "desc": "of KEVs have an OpenVAS NASL"
     },
     {
@@ -23,7 +23,7 @@
     "OpenVAS only"
   ],
   "data": [
-    3716,
+    3723,
     1888,
     73759
   ]
