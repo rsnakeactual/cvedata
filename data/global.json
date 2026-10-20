@@ -1,12 +1,12 @@
 {
   "available": true,
-  "cvelistTotal": 409875,
+  "cvelistTotal": 410457,
   "bars": [
     {
       "name": "EUVD (EU)",
       "overlapPct": 100,
-      "overlapCount": 409019,
-      "dbTotal": 467154,
+      "overlapCount": 409513,
+      "dbTotal": 467637,
       "scoreDisagreePct": 19
     },
     {
@@ -33,12 +33,12 @@
   ],
   "stats": [
     {
-      "number": "409,875",
+      "number": "410,457",
       "desc": "CVEs in cvelistV5 (baseline)"
     },
     {
-      "number": "409,019 overlap (100% of cvelistV5)",
-      "desc": "EUVD (EU): 467,154 total"
+      "number": "409,513 overlap (100% of cvelistV5)",
+      "desc": "EUVD (EU): 467,637 total"
     },
     {
       "number": "311,191 overlap (76% of cvelistV5)",
