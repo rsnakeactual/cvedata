@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 5640,
+  "kevTotal": 5651,
   "otherTotal": 1754,
   "both": 1754,
-  "kevOnly": 3886,
+  "kevOnly": 3897,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "5,640",
+      "number": "5,651",
       "desc": "KEVs (combined catalog)"
     },
     {
@@ -27,7 +27,7 @@
     "CISA KEV only"
   ],
   "data": [
-    3886,
+    3897,
     1754,
     0
   ]
