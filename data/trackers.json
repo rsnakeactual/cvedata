@@ -3,22 +3,22 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 47608,
+      "value": 47934,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 804,
+      "value": 805,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5652,
+      "value": 5666,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1754,
+      "value": 1756,
       "color": "#DC2626"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 47608,
+  "maxValue": 47934,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -38,22 +38,22 @@
         "Oracle",
         "Apple",
         "Mozilla",
-        "Ibm",
         "Apache",
+        "Ibm",
         "Cisco",
         "Tenda",
         "Hp"
       ],
       "data": [
-        6490,
-        2051,
-        1861,
-        1358,
-        1264,
+        6725,
+        2081,
+        1865,
+        1387,
+        1265,
         981,
-        897,
-        641,
-        641,
+        901,
+        644,
+        643,
         579,
         572,
         551
@@ -77,7 +77,7 @@
       "data": [
         79,
         79,
-        40,
+        41,
         31,
         30,
         20,
@@ -116,7 +116,7 @@
         63,
         58,
         57,
-        50
+        51
       ]
     },
     "CISA KEV": {
