@@ -2,23 +2,23 @@
   "available": true,
   "speedMetrics": [
     {
-      "dayRange": "Day 0 – 28",
-      "value": "28",
+      "dayRange": "Day 0 – 27",
+      "value": "27",
       "label": "Median",
       "sublabel": "50% published",
-      "desc": "Half of all CVEs are published within 28 days of discovery. This is the fastest half of the pipeline.",
+      "desc": "Half of all CVEs are published within 27 days of discovery. This is the fastest half of the pipeline.",
       "color": "#22C55E"
     },
     {
-      "dayRange": "Day 29 – 109",
-      "value": "109",
+      "dayRange": "Day 28 – 108",
+      "value": "108",
       "label": "Mean",
       "sublabel": "average point",
       "desc": "The average publication point, skewed upward by outliers. Most CVEs in this range are still being processed.",
       "color": "#F97316"
     },
     {
-      "dayRange": "Day 110 – 258",
+      "dayRange": "Day 109 – 258",
       "value": "258",
       "label": "90th percentile",
       "sublabel": "10% of CVEs still haven't been published by this point",
@@ -43,7 +43,7 @@
     "365+ days"
   ],
   "delayData": [
-    34.2,
+    34.3,
     17.9,
     19.5,
     12.5,
