@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 619,
-  "otherTotal": 4601,
+  "otherTotal": 4606,
   "both": 248,
   "fireOnly": 371,
-  "otherOnly": 4353,
+  "otherOnly": 4358,
   "stats": [
     {
       "number": "619",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and Nuclei"
     },
     {
-      "number": "4,601",
+      "number": "4,606",
       "desc": "Nuclei catalog"
     }
   ],
@@ -27,6 +27,6 @@
   "data": [
     371,
     248,
-    4353
+    4358
   ]
 }
