@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 619,
-  "otherTotal": 1395,
+  "otherTotal": 1396,
   "both": 180,
   "fireOnly": 439,
-  "otherOnly": 1215,
+  "otherOnly": 1216,
   "stats": [
     {
       "number": "619",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and Shadowserver"
     },
     {
-      "number": "1,395",
+      "number": "1,396",
       "desc": "Shadowserver catalog"
     }
   ],
@@ -27,6 +27,6 @@
   "data": [
     439,
     180,
-    1215
+    1216
   ]
 }

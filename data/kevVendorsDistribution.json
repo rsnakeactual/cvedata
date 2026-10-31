@@ -4,8 +4,8 @@
     "Microsoft",
     "Apple",
     "Apache Software Foundation",
-    "Google",
     "Cisco",
+    "Google",
     "Oracle",
     "Fortinet",
     "SonicWall",
@@ -13,30 +13,30 @@
     "Other"
   ],
   "data": [
-    427,
+    428,
     133,
     100,
+    97,
     95,
-    87,
     51,
     49,
     43,
     37,
-    5164
+    5179
   ],
-  "kevTotal": 5764,
-  "naCount": 2482,
+  "kevTotal": 5790,
+  "naCount": 2486,
   "stats": [
     {
-      "number": "427",
+      "number": "428",
       "desc": "Largest vendor bucket: Microsoft"
     },
     {
-      "number": "5,164",
+      "number": "5,179",
       "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
     },
     {
-      "number": "2,482",
+      "number": "2,486",
       "desc": "KEVs missing from CVElist or without CNA vendor field"
     }
   ]
