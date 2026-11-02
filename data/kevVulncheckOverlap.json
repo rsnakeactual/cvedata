@@ -1,25 +1,25 @@
 {
   "available": true,
-  "kevTotal": 5798,
-  "otherTotal": 5749,
-  "both": 5749,
+  "kevTotal": 5799,
+  "otherTotal": 5750,
+  "both": 5750,
   "kevOnly": 49,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "5,798",
+      "number": "5,799",
       "desc": "KEVs (combined catalog)"
     },
     {
-      "number": "5,749",
+      "number": "5,750",
       "desc": "In both KEVs and VulnCheck KEV"
     },
     {
-      "number": "5,749",
+      "number": "5,750",
       "desc": "VulnCheck KEV catalog"
     }
   ],
-  "vulncheckTotal": 5749,
+  "vulncheckTotal": 5750,
   "vulncheckOnly": 0,
   "labels": [
     "KEVs only",
@@ -28,7 +28,7 @@
   ],
   "data": [
     49,
-    5749,
+    5750,
     0
   ]
 }
