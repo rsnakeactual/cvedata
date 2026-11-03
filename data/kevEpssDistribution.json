@@ -104,7 +104,7 @@
     "1.00"
   ],
   "data": [
-    1008,
+    1010,
     541,
     311,
     249,
@@ -160,7 +160,7 @@
     27,
     20,
     26,
-    17,
+    18,
     17,
     13,
     23,
@@ -206,12 +206,12 @@
     264,
     0
   ],
-  "matched": 5794,
-  "totalKev": 5811,
+  "matched": 5797,
+  "totalKev": 5814,
   "stats": [
     {
-      "number": "5,794",
-      "desc": "KEVs with EPSS scores (of 5811)"
+      "number": "5,797",
+      "desc": "KEVs with EPSS scores (of 5814)"
     },
     {
       "number": "0.00–0.01",

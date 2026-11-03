@@ -1,13 +1,13 @@
 {
   "available": true,
-  "fireTotal": 619,
+  "fireTotal": 628,
   "otherTotal": 75645,
-  "both": 173,
-  "fireOnly": 446,
-  "otherOnly": 75472,
+  "both": 174,
+  "fireOnly": 454,
+  "otherOnly": 75471,
   "stats": [
     {
-      "number": "27.9%",
+      "number": "27.7%",
       "desc": "of FIRE vulns have an OpenVAS NASL"
     },
     {
@@ -21,8 +21,8 @@
     "OpenVAS only"
   ],
   "data": [
-    446,
-    173,
-    75472
+    454,
+    174,
+    75471
   ]
 }

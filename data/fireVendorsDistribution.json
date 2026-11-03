@@ -13,26 +13,26 @@
     "Other"
   ],
   "data": [
-    86,
+    87,
     35,
-    26,
+    28,
     23,
-    21,
+    22,
     15,
     15,
-    12,
+    13,
     10,
-    377
+    381
   ],
-  "fireTotal": 619,
+  "fireTotal": 628,
   "naCount": 203,
   "stats": [
     {
-      "number": "86",
+      "number": "87",
       "desc": "Largest vendor bucket: Microsoft"
     },
     {
-      "number": "377",
+      "number": "381",
       "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
     },
     {

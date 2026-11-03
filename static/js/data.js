@@ -1061,7 +1061,7 @@ window.__CVEDATA_OVERRIDES = {
         "number": "1.46%",
         "isAccent": false,
         "color": null,
-        "desc": "Of all scored CVEs (386,457) are in VulnCheck (5,629 exploited) meaning that the vast majority of vulnerabilities are not actually exploited."
+        "desc": "Of all scored CVEs (386,457) are in VulnCheck (5,632 exploited) meaning that the vast majority of vulnerabilities are not actually exploited."
       }
     ]
   },
@@ -11165,7 +11165,7 @@ window.__CVEDATA_OVERRIDES = {
       },
       {
         "name": "VulnCheck KEV",
-        "value": 5762,
+        "value": 5765,
         "color": "#EAB308"
       },
       {

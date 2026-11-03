@@ -1,17 +1,17 @@
 {
   "available": true,
-  "fireTotal": 619,
+  "fireTotal": 628,
   "otherTotal": 138,
-  "both": 93,
-  "fireOnly": 526,
-  "otherOnly": 45,
+  "both": 94,
+  "fireOnly": 534,
+  "otherOnly": 44,
   "stats": [
     {
-      "number": "619",
+      "number": "628",
       "desc": "FIRE vulnerabilities"
     },
     {
-      "number": "93",
+      "number": "94",
       "desc": "In both FIRE and Verizon DBIR"
     },
     {
@@ -25,8 +25,8 @@
     "DBIR only"
   ],
   "data": [
-    526,
-    93,
-    45
+    534,
+    94,
+    44
   ]
 }
