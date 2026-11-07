@@ -83,23 +83,23 @@
     },
     {
       "year": "2019",
-      "pct": 91.3
+      "pct": 91
     },
     {
       "year": "2020",
-      "pct": 91.9
+      "pct": 91.7
     },
     {
       "year": "2021",
-      "pct": 96.2
+      "pct": 96.1
     },
     {
       "year": "2022",
-      "pct": 95.1
+      "pct": 94.9
     },
     {
       "year": "2023",
-      "pct": 96.2
+      "pct": 96.1
     },
     {
       "year": "2024",
@@ -116,7 +116,7 @@
   ],
   "stats": [
     {
-      "number": "10,106",
+      "number": "10,070",
       "isAccent": true,
       "desc": "Unscored CVEs in 2026,  NVD backlog varies by year"
     },
