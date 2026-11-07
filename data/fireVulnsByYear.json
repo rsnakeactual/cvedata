@@ -40,18 +40,18 @@
     89,
     56,
     76,
-    80,
-    84,
-    42
+    81,
+    85,
+    45
   ],
-  "total": 628,
+  "total": 633,
   "stats": [
     {
       "number": "20",
       "desc": "The oldest vulnerability used in financial loss is 20 years old."
     },
     {
-      "number": "628",
+      "number": "633",
       "desc": "FIRE vulnerabilities in catalog"
     },
     {

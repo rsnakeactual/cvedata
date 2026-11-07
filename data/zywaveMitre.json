@@ -1,17 +1,17 @@
 {
   "available": true,
-  "fireTotal": 7821,
+  "fireTotal": 12016,
   "otherTotal": 618,
-  "both": 81,
-  "fireOnly": 7740,
-  "otherOnly": 537,
+  "both": 89,
+  "fireOnly": 11927,
+  "otherOnly": 529,
   "stats": [
     {
-      "number": "7,821",
+      "number": "12,016",
       "desc": "FIRE vulnerabilities"
     },
     {
-      "number": "81",
+      "number": "89",
       "desc": "In both FIRE and ATT&CK"
     },
     {
@@ -25,8 +25,8 @@
     "ATT&CK only"
   ],
   "data": [
-    7740,
-    81,
-    537
+    11927,
+    89,
+    529
   ]
 }

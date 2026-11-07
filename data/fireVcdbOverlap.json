@@ -1,13 +1,13 @@
 {
   "available": true,
-  "fireTotal": 628,
+  "fireTotal": 633,
   "otherTotal": 35,
   "both": 20,
-  "fireOnly": 608,
+  "fireOnly": 613,
   "otherOnly": 15,
   "stats": [
     {
-      "number": "628",
+      "number": "633",
       "desc": "FIRE vulnerabilities"
     },
     {
@@ -25,7 +25,7 @@
     "VCDB only"
   ],
   "data": [
-    608,
+    613,
     20,
     15
   ]

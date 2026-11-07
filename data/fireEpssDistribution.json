@@ -105,9 +105,9 @@
   ],
   "data": [
     38,
-    24,
-    19,
-    15,
+    25,
+    20,
+    17,
     13,
     8,
     7,
@@ -146,7 +146,7 @@
     4,
     1,
     2,
-    3,
+    4,
     0,
     2,
     3,
@@ -206,12 +206,12 @@
     142,
     0
   ],
-  "matched": 620,
-  "totalFire": 628,
+  "matched": 625,
+  "totalFire": 633,
   "stats": [
     {
-      "number": "620",
-      "desc": "FIRE CVEs with EPSS scores (of 628)"
+      "number": "625",
+      "desc": "FIRE CVEs with EPSS scores (of 633)"
     },
     {
       "number": "0.99–1.00",
