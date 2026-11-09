@@ -1,12 +1,12 @@
 {
   "available": true,
-  "cvelistTotal": 421074,
+  "cvelistTotal": 421301,
   "bars": [
     {
       "name": "EUVD (EU)",
       "overlapPct": 100,
-      "overlapCount": 419829,
-      "dbTotal": 477759,
+      "overlapCount": 420054,
+      "dbTotal": 477984,
       "scoreDisagreePct": 19
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "name": "CNVD (China)",
-      "overlapPct": 26,
+      "overlapPct": 25,
       "overlapCount": 107394,
       "dbTotal": 107577,
       "scoreDisagreePct": 20
@@ -33,12 +33,12 @@
   ],
   "stats": [
     {
-      "number": "421,074",
+      "number": "421,301",
       "desc": "CVEs in cvelistV5 (baseline)"
     },
     {
-      "number": "419,829 overlap (100% of cvelistV5)",
-      "desc": "EUVD (EU): 477,759 total"
+      "number": "420,054 overlap (100% of cvelistV5)",
+      "desc": "EUVD (EU): 477,984 total"
     },
     {
       "number": "315,119 overlap (75% of cvelistV5)",
@@ -49,7 +49,7 @@
       "desc": "BDU (Russia): 89,047 total"
     },
     {
-      "number": "107,394 overlap (26% of cvelistV5)",
+      "number": "107,394 overlap (25% of cvelistV5)",
       "desc": "CNVD (China): 107,577 total"
     }
   ]
