@@ -1,31 +1,31 @@
 {
   "available": true,
-  "vulncheckTotal": 5840,
-  "dbirTotal": 35,
-  "both": 33,
-  "vulncheckOnly": 5807,
-  "dbirOnly": 2,
+  "vulncheckTotal": 5858,
+  "dbirTotal": 37,
+  "both": 34,
+  "vulncheckOnly": 5824,
+  "dbirOnly": 3,
   "labels": [
     "VulnCheck only",
     "Both",
     "VCDB only"
   ],
   "data": [
-    5807,
-    33,
-    2
+    5824,
+    34,
+    3
   ],
   "stats": [
     {
-      "number": "5,840",
+      "number": "5,858",
       "desc": "VulnCheck KEV"
     },
     {
-      "number": "33",
+      "number": "34",
       "desc": "In both VulnCheck and DBIR"
     },
     {
-      "number": "35",
+      "number": "37",
       "desc": "VCDB"
     }
   ]
