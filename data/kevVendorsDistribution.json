@@ -15,28 +15,28 @@
   "data": [
     431,
     134,
-    101,
+    102,
     98,
     96,
     51,
     49,
     44,
     37,
-    5308
+    5329
   ],
-  "kevTotal": 5927,
-  "naCount": 2506,
+  "kevTotal": 5949,
+  "naCount": 2513,
   "stats": [
     {
       "number": "431",
       "desc": "Largest vendor bucket: Microsoft"
     },
     {
-      "number": "5,308",
+      "number": "5,329",
       "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
     },
     {
-      "number": "2,506",
+      "number": "2,513",
       "desc": "KEVs missing from CVElist or without CNA vendor field"
     }
   ]

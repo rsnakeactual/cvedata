@@ -8,12 +8,12 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 826,
+      "value": 827,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 5877,
+      "value": 5899,
       "color": "#EAB308"
     },
     {
@@ -94,8 +94,8 @@
         "Microsoft",
         "Apple",
         "Adobe",
-        "Cisco",
         "Apache",
+        "Cisco",
         "Google",
         "Oracle",
         "D-link",
@@ -108,8 +108,8 @@
         705,
         155,
         153,
+        141,
         140,
-        139,
         95,
         89,
         78,
