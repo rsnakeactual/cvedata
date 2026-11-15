@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 5965,
+  "kevTotal": 5979,
   "otherTotal": 37,
   "both": 37,
-  "kevOnly": 5928,
+  "kevOnly": 5942,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "5,965",
+      "number": "5,979",
       "desc": "KEVs (combined catalog)"
     },
     {
@@ -27,7 +27,7 @@
     "VCDB only"
   ],
   "data": [
-    5928,
+    5942,
     37,
     0
   ]
