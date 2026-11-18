@@ -1,17 +1,17 @@
 {
   "available": true,
-  "fireTotal": 326,
+  "fireTotal": 327,
   "otherTotal": 618,
-  "both": 7,
+  "both": 8,
   "fireOnly": 319,
-  "otherOnly": 611,
+  "otherOnly": 610,
   "stats": [
     {
-      "number": "326",
+      "number": "327",
       "desc": "RansomFeed.it gangs"
     },
     {
-      "number": "7",
+      "number": "8",
       "desc": "In both RansomFeed and ATT&CK"
     },
     {
@@ -26,7 +26,7 @@
   ],
   "data": [
     319,
-    7,
-    611
+    8,
+    610
   ]
 }

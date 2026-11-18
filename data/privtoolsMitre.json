@@ -2,16 +2,16 @@
   "available": true,
   "fireTotal": 315,
   "otherTotal": 618,
-  "both": 5,
-  "fireOnly": 310,
-  "otherOnly": 613,
+  "both": 6,
+  "fireOnly": 309,
+  "otherOnly": 612,
   "stats": [
     {
       "number": "315",
       "desc": "PrivTools EU groups"
     },
     {
-      "number": "5",
+      "number": "6",
       "desc": "In both PrivTools and ATT&CK"
     },
     {
@@ -25,8 +25,8 @@
     "ATT&CK only"
   ],
   "data": [
-    310,
-    5,
-    613
+    309,
+    6,
+    612
   ]
 }
