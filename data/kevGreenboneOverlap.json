@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 6020,
+  "kevTotal": 6114,
   "otherTotal": 75650,
-  "both": 1914,
-  "kevOnly": 4106,
-  "otherOnly": 73736,
+  "both": 1921,
+  "kevOnly": 4193,
+  "otherOnly": 73729,
   "stats": [
     {
-      "number": "31.8%",
+      "number": "31.4%",
       "desc": "of KEVs have an OpenVAS NASL"
     },
     {
@@ -16,15 +16,15 @@
     }
   ],
   "greenboneTotal": 75650,
-  "greenboneOnly": 73736,
+  "greenboneOnly": 73729,
   "labels": [
     "KEVs only",
     "Both",
     "OpenVAS only"
   ],
   "data": [
-    4106,
-    1914,
-    73736
+    4193,
+    1921,
+    73729
   ]
 }
