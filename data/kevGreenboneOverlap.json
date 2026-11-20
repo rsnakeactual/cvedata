@@ -1,10 +1,10 @@
 {
   "available": true,
-  "kevTotal": 6114,
+  "kevTotal": 6122,
   "otherTotal": 75650,
-  "both": 1921,
-  "kevOnly": 4193,
-  "otherOnly": 73729,
+  "both": 1922,
+  "kevOnly": 4200,
+  "otherOnly": 73728,
   "stats": [
     {
       "number": "31.4%",
@@ -16,15 +16,15 @@
     }
   ],
   "greenboneTotal": 75650,
-  "greenboneOnly": 73729,
+  "greenboneOnly": 73728,
   "labels": [
     "KEVs only",
     "Both",
     "OpenVAS only"
   ],
   "data": [
-    4193,
-    1921,
-    73729
+    4200,
+    1922,
+    73728
   ]
 }
