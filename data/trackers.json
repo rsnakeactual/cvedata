@@ -8,12 +8,12 @@
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 833,
+      "value": 836,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 6095,
+      "value": 6071,
       "color": "#EAB308"
     },
     {
@@ -63,8 +63,8 @@
       "labels": [
         "Microsoft",
         "Apache",
-        "Oracle",
         "Unknown",
+        "Oracle",
         "Adobe",
         "Ivanti",
         "Zohocorp",
@@ -77,7 +77,7 @@
       "data": [
         79,
         78,
-        41,
+        44,
         41,
         30,
         28,
@@ -92,10 +92,10 @@
     "VulnCheck KEV": {
       "labels": [
         "Microsoft",
-        "Apple",
         "Adobe",
         "Apache",
         "Cisco",
+        "Apple",
         "Google",
         "Oracle",
         "D-link",
@@ -106,10 +106,10 @@
       ],
       "data": [
         705,
-        155,
         153,
         145,
         141,
+        129,
         95,
         90,
         78,
