@@ -2,8 +2,8 @@
   "available": true,
   "labels": [
     "Microsoft",
-    "Apple",
     "Apache Software Foundation",
+    "Apple",
     "Cisco",
     "Google",
     "Oracle",
@@ -15,28 +15,28 @@
   "data": [
     431,
     108,
-    107,
+    108,
     99,
     96,
     52,
     49,
     44,
     37,
-    5518
+    5531
   ],
-  "kevTotal": 6118,
-  "naCount": 2543,
+  "kevTotal": 6132,
+  "naCount": 2544,
   "stats": [
     {
       "number": "431",
       "desc": "Largest vendor bucket: Microsoft"
     },
     {
-      "number": "5,518",
+      "number": "5,531",
       "desc": "Other: vendors beyond top 9, plus CVEs without CNA vendor"
     },
     {
-      "number": "2,543",
+      "number": "2,544",
       "desc": "KEVs missing from CVElist or without CNA vendor field"
     }
   ]

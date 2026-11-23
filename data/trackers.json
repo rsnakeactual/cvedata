@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 39816,
+      "value": 49169,
       "color": "#E63946"
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 6073,
+      "value": 6087,
       "color": "#EAB308"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 39816,
+  "maxValue": 49169,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -35,57 +35,57 @@
         "Microsoft",
         "Adobe",
         "Google",
-        "Apple",
         "Oracle",
+        "Apple",
         "Mozilla",
+        "Ibm",
+        "Apache",
         "Cisco",
         "Tenda",
-        "Hp",
-        "Qualcomm",
-        "Ibm"
+        "Linux"
       ],
       "data": [
-        2640,
-        1844,
-        1777,
-        961,
-        911,
-        704,
+        7620,
+        2103,
+        1879,
+        1467,
+        1331,
+        993,
+        901,
         696,
-        558,
-        549,
-        540,
-        529,
-        521
+        650,
+        580,
+        572,
+        570
       ]
     },
     "EPSS Critical (≥0.9)": {
       "labels": [
-        "Microsoft",
         "Apache",
-        "Unknown",
+        "Microsoft",
         "Oracle",
         "Adobe",
         "Ivanti",
-        "Zohocorp",
         "Cisco",
+        "Zohocorp",
         "Atlassian",
         "Dlink",
         "Vmware",
+        "Fortinet",
         "Aladdin"
       ],
       "data": [
+        80,
         79,
-        78,
-        45,
-        41,
-        30,
-        28,
+        42,
+        32,
+        32,
+        21,
         20,
-        19,
-        16,
+        17,
         15,
         14,
+        12,
         9
       ]
     },
@@ -107,7 +107,7 @@
       "data": [
         705,
         153,
-        145,
+        146,
         141,
         129,
         95,

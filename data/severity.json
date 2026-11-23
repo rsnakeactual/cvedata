@@ -3,18 +3,18 @@
   "bar": [
     {
       "level": "critical",
-      "flex": 13,
-      "tooltipText": "Critical: 13%"
+      "flex": 12,
+      "tooltipText": "Critical: 12%"
     },
     {
       "level": "high",
-      "flex": 36,
-      "tooltipText": "High: 36%"
+      "flex": 38,
+      "tooltipText": "High: 38%"
     },
     {
       "level": "medium",
-      "flex": 47,
-      "tooltipText": "Medium: 47%"
+      "flex": 46,
+      "tooltipText": "Medium: 46%"
     },
     {
       "level": "low",
@@ -26,25 +26,25 @@
     {
       "level": "critical",
       "name": "Critical",
-      "count": "39,816",
-      "pct": "13% of scored CVEs"
+      "count": "49,169",
+      "pct": "12% of scored CVEs"
     },
     {
       "level": "high",
       "name": "High",
-      "count": "113,731",
-      "pct": "36% of scored CVEs"
+      "count": "150,170",
+      "pct": "38% of scored CVEs"
     },
     {
       "level": "medium",
       "name": "Medium",
-      "count": "145,854",
-      "pct": "47% of scored CVEs"
+      "count": "181,238",
+      "pct": "46% of scored CVEs"
     },
     {
       "level": "low",
       "name": "Low",
-      "count": "13,689",
+      "count": "17,497",
       "pct": "4% of scored CVEs"
     }
   ],
@@ -106,7 +106,7 @@
     3540,
     3814,
     3698,
-    0
+    9353
   ],
   "high": [
     579,
@@ -136,7 +136,7 @@
     10583,
     13354,
     15931,
-    0
+    36439
   ],
   "medium": [
     564,
@@ -166,7 +166,7 @@
     14902,
     19271,
     19743,
-    0
+    35384
   ],
   "low": [
     162,
@@ -196,6 +196,6 @@
     1276,
     1612,
     2050,
-    0
+    3808
   ]
 }
