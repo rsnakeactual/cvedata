@@ -49,19 +49,19 @@
     166,
     166,
     190,
-    216
+    218
   ],
   "firstYear": 2002,
   "stats": [
     {
-      "number": "1,790",
+      "number": "1,792",
       "isAccent": true,
       "desc": "Total KEVs in CISA's catalog — the definitive list of \"known used\" vulnerabilities"
     },
     {
-      "number": "216",
+      "number": "218",
       "isAccent": false,
-      "desc": "KEVs in 2021 — the peak year"
+      "desc": "KEVs in 2026 — the peak year"
     },
     {
       "number": "1.4",

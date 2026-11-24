@@ -2,6 +2,11 @@
   "available": true,
   "points": [
     {
+      "cve": "CVE-2026-133968",
+      "cvss": 9.8,
+      "epss": 3.7
+    },
+    {
       "cve": "CVE-2026-129448",
       "cvss": 9.8,
       "epss": 5.5
@@ -8952,6 +8957,6 @@
       "epss": 90
     }
   ],
-  "totalKev": 1790,
-  "totalPlotted": 1790
+  "totalKev": 1792,
+  "totalPlotted": 1791
 }

@@ -13,12 +13,12 @@
     },
     {
       "name": "VulnCheck KEV",
-      "value": 6087,
+      "value": 6095,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1790,
+      "value": 1792,
       "color": "#DC2626"
     },
     {
@@ -105,7 +105,7 @@
         "Fortinet"
       ],
       "data": [
-        705,
+        706,
         153,
         146,
         141,
