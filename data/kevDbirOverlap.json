@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 6139,
+  "kevTotal": 6146,
   "otherTotal": 138,
   "both": 138,
-  "kevOnly": 6001,
+  "kevOnly": 6008,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "6,139",
+      "number": "6,146",
       "desc": "KEVs (combined catalog)"
     },
     {
@@ -25,7 +25,7 @@
     "DBIR only"
   ],
   "data": [
-    6001,
+    6008,
     138,
     0
   ]

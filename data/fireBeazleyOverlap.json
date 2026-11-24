@@ -1,0 +1,32 @@
+{
+  "available": true,
+  "fireTotal": 633,
+  "otherTotal": 122,
+  "both": 55,
+  "fireOnly": 578,
+  "otherOnly": 67,
+  "stats": [
+    {
+      "number": "633",
+      "desc": "FIRE vulnerabilities"
+    },
+    {
+      "number": "55",
+      "desc": "In both FIRE and Beazley Security"
+    },
+    {
+      "number": "122",
+      "desc": "Beazley Security catalog"
+    }
+  ],
+  "labels": [
+    "FIRE only",
+    "Both",
+    "Beazley only"
+  ],
+  "data": [
+    578,
+    55,
+    67
+  ]
+}

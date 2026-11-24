@@ -90,7 +90,7 @@
     <div class="section-header">
       <div class="section-label-row"><span class="label">02: KEV Overlap</span><button class="copy-link-btn" data-anchor="fire-kev-overlap" title="Copy link" aria-label="Copy section link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button></div>
       <h2>FIRE vs Known Exploited catalogs</h2>
-      <p>There is overlap between FIRE and various KEV lists, but none of them are complete. Each catalog has different inclusion criteria. Even when the KEV lists are combined, they still miss a significant number of FIRE vulnerabilities. ICE (Incident Causing Exposures) means breaches with no evidence of financial loss in carrier data yet. ICE sources used here include DFIR-style signals, CISA KEV, the ENISA EU CSIRT Network KEV list, ENISA EUVD entries flagged as exploited in the wild (EUVD KEV), VCDB, VulnCheck, Google P0, Mandiant M-Trends, CrowdStrike Global Threat Report, the Verizon DBIR aggregate, and the CIRCL Vulnerability-Lookup catalogs (CIRCL, Shadowserver, and Previdian).</p>
+      <p>There is overlap between FIRE and various KEV lists, but none of them are complete. Each catalog has different inclusion criteria. Even when the KEV lists are combined, they still miss a significant number of FIRE vulnerabilities. ICE (Incident Causing Exposures) means breaches with no evidence of financial loss in carrier data yet. ICE sources used here include DFIR-style signals, CISA KEV, the ENISA EU CSIRT Network KEV list, ENISA EUVD entries flagged as exploited in the wild (EUVD KEV), VCDB, VulnCheck, Google P0, Mandiant M-Trends, CrowdStrike Global Threat Report, the Verizon DBIR aggregate, the CIRCL Vulnerability-Lookup catalogs (CIRCL, Shadowserver, and Previdian), and Beazley Security&rsquo;s published advisories.</p>
     </div>
     <div class="toggle-group" id="kevOverlapTabs">
       <button class="toggle-btn active" data-tab="kev">CISA KEV</button>
@@ -98,6 +98,7 @@
       <button class="toggle-btn" data-tab="enisa">ENISA EU KEV</button>
       <button class="toggle-btn" data-tab="euvd-kev">EUVD KEV</button>
       <button class="toggle-btn" data-tab="shadowserver">Shadowserver</button>
+      <button class="toggle-btn" data-tab="beazley">Beazley Security</button>
       <button class="toggle-btn" data-tab="ice">ICE (combined)</button>
     </div>
     <div class="tab-panel active" id="tab-kev">
@@ -129,6 +130,12 @@
         <p class="data-unavailable">Data unavailable. Run fire and circl-kev processors.</p>
       </div>
       <div class="insight-cards" id="fireShadowserverStats"></div>
+    </div>
+    <div class="tab-panel" id="tab-beazley">
+      <div class="chart-container" style="height: 350px;" id="fireBeazleyContainer">
+        <p class="data-unavailable">Data unavailable. Place a CVE list at <code>data/raw/Beazley_Security/beazley_kevs.txt</code> and regenerate graphs.</p>
+      </div>
+      <div class="insight-cards" id="fireBeazleyStats"></div>
     </div>
     <div class="tab-panel" id="tab-ice">
       <div class="chart-container" style="height: 350px;" id="fireIceContainer">
@@ -578,6 +585,7 @@
       <a href="https://vulnerability.circl.lu/known-exploited-vulnerabilities-catalog/" target="_blank">CIRCL KEV</a>,
       <a href="https://vulnerability.circl.lu/known-exploited-vulnerabilities-catalog/?catalog_uuid=c8fb6bf1-f81f-4cb8-95b1-eadbb3b54ee8" target="_blank">Shadowserver (via CIRCL)</a>,
       <a href="https://vulnerability.circl.lu/known-exploited-vulnerabilities-catalog/?catalog_uuid=caeb2787-0d58-4236-9039-7c86c3e566f3" target="_blank">Previdian (via CIRCL)</a>,
+      <a href="https://labs.beazley.security/advisories" target="_blank">Beazley Security</a>,
       <a href="https://github.com/vulndb/vulndb" target="_blank">VulnDB</a>,
       <a href="https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY/view?gid=0#gid=0" target="_blank">Google Project Zero</a>,
       <a href="https://github.com/rapid7/metasploit-framework" target="_blank">Metasploit</a>,
@@ -1019,6 +1027,7 @@
     renderOverlapInto('enisaFireContainer', 'enisaFireChart', 'fireEnisaOverlap', 'ENISA', 'FIRE', 'ENISA EU KEV', 'FIRE', ['#F97316', '#E63946', '#06B6D4'], 'fireEnisaStats');
     renderOverlapInto('euvdKevFireContainer', 'euvdKevFireChart', 'fireEuvdKevOverlap', 'EUVD', 'FIRE', 'EUVD KEV', 'FIRE', ['#F97316', '#E63946', '#7C3AED'], 'fireEuvdKevStats');
     renderOverlapInto('fireShadowserverContainer', 'fireShadowserverChart', 'fireShadowserverOverlap', 'SS', 'FIRE', 'Shadowserver', 'FIRE', ['#F97316', '#E63946', '#0EA5E9'], 'fireShadowserverStats');
+    renderOverlapInto('fireBeazleyContainer', 'fireBeazleyChart', 'fireBeazleyOverlap', 'BZ', 'FIRE', 'Beazley Security', 'FIRE', ['#F97316', '#E63946', '#8B5CF6'], 'fireBeazleyStats');
     renderOverlapInto('fireIceContainer', 'fireIceChart', 'fireIceOverlap', 'ICE', 'FIRE', 'ICE (combined)', 'FIRE', ['#F97316', '#E63946', '#1565c0'], 'fireIceStats');
   });
 
@@ -1256,6 +1265,7 @@
   /* Fire-ICE, Fire-Mandiant (when data exists) */
   whenChartInView('fireIceContainer', function() { renderOverlapInto('fireIceContainer', 'fireIceChart', 'fireIceOverlap', 'ICE', 'FIRE', 'ICE (combined)', 'FIRE', ['#F97316', '#E63946', '#1565c0'], 'fireIceStats'); });
   whenChartInView('fireShadowserverContainer', function() { renderOverlapInto('fireShadowserverContainer', 'fireShadowserverChart', 'fireShadowserverOverlap', 'SS', 'FIRE', 'Shadowserver', 'FIRE', ['#F97316', '#E63946', '#0EA5E9'], 'fireShadowserverStats'); });
+  whenChartInView('fireBeazleyContainer', function() { renderOverlapInto('fireBeazleyContainer', 'fireBeazleyChart', 'fireBeazleyOverlap', 'BZ', 'FIRE', 'Beazley Security', 'FIRE', ['#F97316', '#E63946', '#8B5CF6'], 'fireBeazleyStats'); });
   whenChartInView('fireMandiantContainer', function() { renderOverlapInto('fireMandiantContainer', 'fireMandiantChart', 'fireMandiantOverlap', 'Mandiant', 'FIRE', 'Mandiant M-Trends', 'FIRE', ['#F97316', '#E63946', '#c62828']); });
 
   /* 21: ATT&CK FIRE vs other KEV scatter - square, 45° line, tooltip: group, CISA KEV, FIRE; color: blue=more KEV, red=more FIRE */
