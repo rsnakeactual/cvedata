@@ -12,7 +12,7 @@
     "4.0+"
   ],
   "data": [
-    85.6,
+    85.5,
     4.2,
     5.4,
     2.1,
@@ -35,15 +35,15 @@
   ],
   "stats": [
     {
-      "number": "81%",
+      "number": "80%",
       "desc": "Exact agreement (delta &lt; 0.05) when both NVD and CNA score the same CVE"
     },
     {
-      "number": "19%",
+      "number": "20%",
       "desc": "Disagreement where scores differ by 0.05 or more"
     },
     {
-      "number": "228,962",
+      "number": "229,323",
       "desc": "CVEs jointly scored by NVD and CNA/ADP"
     },
     {

@@ -3,22 +3,22 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 49169,
+      "value": 49200,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 837,
+      "value": 854,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 6099,
+      "value": 6109,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1792,
+      "value": 1795,
       "color": "#DC2626"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 49169,
+  "maxValue": 49200,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,10 +45,10 @@
         "Linux"
       ],
       "data": [
-        7620,
-        2103,
+        7634,
+        2107,
         1879,
-        1467,
+        1469,
         1331,
         993,
         901,
@@ -61,8 +61,8 @@
     },
     "EPSS Critical (≥0.9)": {
       "labels": [
-        "Apache",
         "Microsoft",
+        "Apache",
         "Oracle",
         "Adobe",
         "Ivanti",
@@ -76,14 +76,14 @@
       ],
       "data": [
         80,
-        79,
+        80,
         42,
         32,
         32,
-        21,
+        23,
         20,
         17,
-        15,
+        16,
         14,
         12,
         9
@@ -107,12 +107,12 @@
       "data": [
         706,
         153,
-        146,
+        147,
         141,
         129,
         95,
         90,
-        78,
+        79,
         63,
         58,
         58,
