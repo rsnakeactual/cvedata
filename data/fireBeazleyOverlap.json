@@ -1,10 +1,10 @@
 {
   "available": true,
   "fireTotal": 633,
-  "otherTotal": 122,
+  "otherTotal": 124,
   "both": 55,
   "fireOnly": 578,
-  "otherOnly": 67,
+  "otherOnly": 69,
   "stats": [
     {
       "number": "633",
@@ -15,7 +15,7 @@
       "desc": "In both FIRE and Beazley Security"
     },
     {
-      "number": "122",
+      "number": "124",
       "desc": "Beazley Security catalog"
     }
   ],
@@ -27,6 +27,6 @@
   "data": [
     578,
     55,
-    67
+    69
   ]
 }

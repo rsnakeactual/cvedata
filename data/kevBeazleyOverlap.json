@@ -1,21 +1,21 @@
 {
   "available": true,
-  "kevTotal": 6156,
-  "otherTotal": 122,
-  "both": 122,
-  "kevOnly": 6034,
+  "kevTotal": 6183,
+  "otherTotal": 124,
+  "both": 124,
+  "kevOnly": 6059,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "6,156",
+      "number": "6,183",
       "desc": "KEVs (combined catalog)"
     },
     {
-      "number": "122",
+      "number": "124",
       "desc": "In both KEVs and Beazley Security"
     },
     {
-      "number": "122",
+      "number": "124",
       "desc": "Beazley Security catalog"
     }
   ],
@@ -25,8 +25,8 @@
     "Beazley only"
   ],
   "data": [
-    6034,
-    122,
+    6059,
+    124,
     0
   ]
 }
