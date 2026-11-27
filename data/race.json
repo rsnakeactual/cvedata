@@ -10,15 +10,15 @@
       "color": "#22C55E"
     },
     {
-      "dayRange": "Day 27 – 106",
-      "value": "106",
+      "dayRange": "Day 27 – 105",
+      "value": "105",
       "label": "Mean",
       "sublabel": "average point",
       "desc": "The average publication point, skewed upward by outliers. Most CVEs in this range are still being processed.",
       "color": "#F97316"
     },
     {
-      "dayRange": "Day 107 – 250",
+      "dayRange": "Day 106 – 250",
       "value": "250",
       "label": "90th percentile",
       "sublabel": "10% of CVEs still haven't been published by this point",

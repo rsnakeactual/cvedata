@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 6183,
+  "kevTotal": 6203,
   "otherTotal": 25,
   "both": 25,
-  "kevOnly": 6158,
+  "kevOnly": 6178,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "6,183",
+      "number": "6,203",
       "desc": "KEVs (combined catalog)"
     },
     {
@@ -25,7 +25,7 @@
     "Mandiant only"
   ],
   "data": [
-    6158,
+    6178,
     25,
     0
   ]

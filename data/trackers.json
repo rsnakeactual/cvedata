@@ -3,17 +3,17 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 49290,
+      "value": 49315,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 559,
+      "value": 561,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 6136,
+      "value": 6157,
       "color": "#EAB308"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 49290,
+  "maxValue": 49315,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,10 +45,10 @@
         "Linux"
       ],
       "data": [
-        7717,
-        2111,
+        7731,
+        2116,
         1879,
-        1469,
+        1470,
         1331,
         993,
         901,
@@ -69,8 +69,8 @@
         "Zohocorp",
         "Ivanti",
         "Dlink",
-        "Atlassian",
         "Vmware",
+        "Atlassian",
         "Aladdin",
         "Jenkins"
       ],
@@ -83,7 +83,7 @@
         14,
         14,
         12,
-        11,
+        12,
         11,
         9,
         8
@@ -107,12 +107,12 @@
       "data": [
         706,
         153,
-        148,
+        149,
         141,
         129,
         95,
         90,
-        79,
+        80,
         63,
         60,
         58,
