@@ -1,13 +1,13 @@
 {
   "available": true,
-  "kevTotal": 6203,
+  "kevTotal": 6216,
   "otherTotal": 124,
   "both": 124,
-  "kevOnly": 6079,
+  "kevOnly": 6092,
   "otherOnly": 0,
   "stats": [
     {
-      "number": "6,203",
+      "number": "6,216",
       "desc": "KEVs (combined catalog)"
     },
     {
@@ -25,7 +25,7 @@
     "Beazley only"
   ],
   "data": [
-    6079,
+    6092,
     124,
     0
   ]

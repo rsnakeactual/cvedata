@@ -3,22 +3,22 @@
   "items": [
     {
       "name": "CVSS Critical (≥9.0)",
-      "value": 49315,
+      "value": 49343,
       "color": "#E63946"
     },
     {
       "name": "EPSS Critical (≥0.9)",
-      "value": 561,
+      "value": 564,
       "color": "#F97316"
     },
     {
       "name": "VulnCheck KEV",
-      "value": 6157,
+      "value": 6170,
       "color": "#EAB308"
     },
     {
       "name": "CISA KEV",
-      "value": 1805,
+      "value": 1808,
       "color": "#DC2626"
     },
     {
@@ -27,7 +27,7 @@
       "color": "#2563EB"
     }
   ],
-  "maxValue": 49315,
+  "maxValue": 49343,
   "vendorsByTracker": {
     "CVSS Critical (≥9.0)": {
       "labels": [
@@ -45,7 +45,7 @@
         "Linux"
       ],
       "data": [
-        7731,
+        7759,
         2116,
         1879,
         1470,
@@ -106,8 +106,8 @@
       ],
       "data": [
         706,
-        153,
-        149,
+        154,
+        150,
         141,
         129,
         95,
